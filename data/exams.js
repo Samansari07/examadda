@@ -23,5 +23,15 @@ window.EXAMS=[
 {id:"sbi-clerk",name:"SBI Clerk",org:"SBI",category:"Banking",levels:["Graduate"],jobs:"Junior Associate in SBI",url:"https://sbi.co.in/"},
 {id:"rbi-grade-b",name:"RBI Grade B",org:"RBI",category:"Banking",levels:["Graduate"],jobs:"Grade B officer roles in RBI",url:"https://www.rbi.org.in/"},
 {id:"sebi-grade-a",name:"SEBI Grade A",org:"SEBI",category:"Banking",levels:["Graduate"],jobs:"Assistant Manager roles in SEBI",url:"https://www.sebi.gov.in/"},
+{id:"upsc-geo",name:"UPSC Combined Geo-Scientist",org:"UPSC",category:"UPSC",levels:["Engineering"],jobs:"Geologist, Geophysicist, Chemist and Hydrogeologist services",url:"https://www.upsc.gov.in/"},
+{id:"upsc-ies-iss",name:"UPSC IES / ISS",org:"UPSC",category:"UPSC",levels:["Graduate"],jobs:"Indian Economic Service and Indian Statistical Service",url:"https://www.upsc.gov.in/"},
+{id:"upsc-forest",name:"UPSC Indian Forest Service",org:"UPSC",category:"UPSC",levels:["Graduate"],jobs:"Indian Forest Service officer",url:"https://www.upsc.gov.in/"},
+{id:"ssc-steno",name:"SSC Stenographer Grade C & D",org:"SSC",category:"SSC",levels:["12th"],jobs:"Stenographer Grade C and Grade D",url:"https://ssc.gov.in/"},
+{id:"ssc-selection",name:"SSC Selection Post",org:"SSC",category:"SSC",levels:["10th","12th","Graduate"],jobs:"Post-specific central government positions",url:"https://ssc.gov.in/"},
+{id:"rrb-technician",name:"RRB Technician",org:"Railway Recruitment Boards",category:"Railway",levels:["12th","Engineering"],jobs:"Technician Grade I and Grade III posts",url:"https://indianrailways.gov.in/"},
+{id:"rrb-rpf",name:"RPF Constable / SI",org:"Railway Protection Force",category:"Railway",levels:["10th","Graduate"],jobs:"Constable and Sub-Inspector in RPF",url:"https://indianrailways.gov.in/"},
+{id:"afcat",name:"AFCAT",org:"Indian Air Force",category:"Defence",levels:["Graduate"],jobs:"Flying and Ground Duty officer branches",url:"https://careerindianairforce.cdac.in/"},
+{id:"coast-guard",name:"Indian Coast Guard Recruitment",org:"Indian Coast Guard",category:"Defence",levels:["12th","Engineering"],jobs:"Officer and enrolled personnel entries",url:"https://joinindiancoastguard.cdac.in/"},
+{id:"lic-aao",name:"LIC AAO",org:"LIC",category:"Other Central",levels:["Graduate"],jobs:"Assistant Administrative Officer",url:"https://licindia.in/"},
 {id:"nabard-grade-a",name:"NABARD Grade A",org:"NABARD",category:"Banking",levels:["Graduate"],jobs:"Assistant Manager roles in NABARD",url:"https://www.nabard.org/"}
 ];
