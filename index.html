@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ExamAdda — Government Exams & Jobs in India</title>
+<meta name="description" content="ExamAdda brings Indian government exams and government jobs into one structured place: eligibility, syllabus, pattern, dates, vacancies, selection process and official links.">
+<link rel="canonical" href="https://examadda.in/">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap nav"><a class="brand" href="/"><span>Exam</span>Adda</a><nav><a href="#exams">Exams</a><a href="#jobs">Jobs</a><a href="#calendar">Calendar</a><a href="#resources">Resources</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap hero-inner"><div class="eyebrow">INDIA'S GOVERNMENT EXAM & JOB HUB</div><h1>Every Government Exam.<br><span>Everything You Need.</span></h1><p>Find central government exams, jobs, eligibility, syllabus, exam pattern, dates, vacancies, selection process and official notifications — structured in one place.</p><div class="search"><input id="search" placeholder="Search exam, job, qualification or department…"><button onclick="runSearch()">Search</button></div><div class="quick"><button onclick="filterBy('10th')">10th Pass</button><button onclick="filterBy('12th')">12th Pass</button><button onclick="filterBy('Graduate')">Graduate</button><button onclick="filterBy('Engineering')">Engineering</button></div></div></section>
+<section class="wrap section"><div class="section-head"><div><div class="eyebrow">EXPLORE</div><h2>Government exams by category</h2></div></div><div class="categories" id="categories"></div></section>
+<section id="exams" class="wrap section"><div class="section-head"><div><div class="eyebrow">EXAM DIRECTORY</div><h2>Find your exam</h2><p id="resultCount"></p></div><div class="filters"><select id="categoryFilter" onchange="renderExams()"><option value="All">All categories</option></select><select id="levelFilter" onchange="renderExams()"><option value="All">All qualifications</option><option>10th</option><option>12th</option><option>Graduate</option><option>Engineering</option><option>Medical</option></select></div></div><div class="exam-grid" id="examGrid"></div></section>
+<section id="calendar" class="wrap section split"><div><div class="eyebrow">ONE VIEW</div><h2>Exam calendar</h2><p>Upcoming notification, application and examination timelines will be organized exam-wise, with every important date linked back to the official source.</p><a class="button" href="#exams">Explore exams</a></div><div class="calendar-card"><div class="calendar-row"><b>Notification</b><span>Official notice date</span></div><div class="calendar-row"><b>Application</b><span>Start & closing date</span></div><div class="calendar-row"><b>Exam</b><span>CBT / written / physical / interview</span></div><div class="calendar-row"><b>Result</b><span>Result & next-stage updates</span></div></div></section>
+<section id="jobs" class="wrap section"><div class="eyebrow">JOB DISCOVERY</div><h2>Find the job behind the exam</h2><p class="lead">Every exam page will clearly show the posts/services it can lead to, department, group/classification, qualification, age rules, pay information, duties and selection stages.</p><div class="job-points"><div>🎓 Qualification → eligible exams</div><div>💼 Post → recruiting exam</div><div>📅 Date → application status</div><div>🏛️ Department → official source</div></div></section>
+<section id="resources" class="wrap section"><div class="eyebrow">TRUSTED INFORMATION</div><h2>Official-source first</h2><p class="lead">ExamAdda will distinguish official notifications from explanatory content and send users to the recruiting body's official website for applications and authoritative notices.</p><div class="source-grid"><a href="https://www.upsc.gov.in/" target="_blank" rel="noopener">UPSC</a><a href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC</a><a href="https://indianrailways.gov.in/" target="_blank" rel="noopener">Indian Railways</a><a href="https://www.ibps.in/" target="_blank" rel="noopener">IBPS</a></div></section>
+</main>
+<footer><div class="wrap footer"><div class="brand"><span>Exam</span>Adda</div><p>Government exam & job information, organized for students.</p><small>Always verify application details with the official recruiting authority.</small></div></footer>
+<script src="data/exams.js"></script><script src="app.js"></script>
+</body></html>
