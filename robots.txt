@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://examadda.in/sitemap.xml
