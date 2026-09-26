@@ -1,0 +1,2 @@
+import {NextResponse} from "next/server"; import {exams} from "@/lib/exams";
+export async function GET(req:Request){const u=new URL(req.url),q=(u.searchParams.get("q")||"").toLowerCase(),category=u.searchParams.get("category")||"";const data=exams.filter(e=>(!category||e.category===category)&&(!q||[e.name,e.organization,e.category].join(" ").toLowerCase().includes(q)));return NextResponse.json({data,total:data.length})}
