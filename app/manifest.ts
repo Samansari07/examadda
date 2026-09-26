@@ -1,0 +1,1 @@
+import {MetadataRoute} from "next"; export default function manifest():MetadataRoute.Manifest{return {name:"SarkariHub",short_name:"SarkariHub",description:"Government exam portal for India",start_url:"/",display:"standalone",background_color:"#ffffff",theme_color:"#138808",icons:[]}}
