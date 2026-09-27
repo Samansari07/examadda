@@ -13,7 +13,7 @@ export default function ExamPage({params}:{params:{slug:string}}){
  const family=e.status==="family"; const liveVerified=e.dataStatus==="official-verified";
  const age=e.minAge===0?"Check latest notification":e.minAge+"–"+e.maxAge+" years";
  const verificationLabel=liveVerified?"Officially verified current cycle":family?"Reference family":"Historical/reference data";
- const sourceCheck=sourceStatuses[e.organization];
+ const sourceCheck=Object.values(sourceStatuses).find(s=>{try{return new URL(e.officialUrl).hostname===new URL(s.sourceUrl).hostname}catch{return s.organization===e.organization}});
  return <main className="detailPage"><div className="wrap">
   <a className="backLink" href="/exams">← Back to SarkariPrep exams</a>
   <div className="detailHero"><span className="tag">{e.category}</span><span className="dataBadge">{liveVerified?"OFFICIAL VERIFIED":family?"REFERENCE FAMILY":"HISTORICAL REFERENCE"}</span><h1>{e.name}</h1><p>{e.organization} · {family?"Recurring recruitment/exam family":liveVerified?"Current official cycle":"Historical / reference cycle"}</p>{e.description&&<p>{e.description}</p>}<div className="cardLinks"><a className="primaryLink detailOfficial" href={e.officialUrl} target="_blank" rel="noopener noreferrer">Official portal ↗</a>{e.notificationUrl&&<a className="detailOfficial" href={e.notificationUrl} target="_blank" rel="noopener noreferrer">Notification ↗</a>}{e.applyUrl&&<a className="detailOfficial" href={e.applyUrl} target="_blank" rel="noopener noreferrer">Apply ↗</a>}</div></div>
