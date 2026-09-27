@@ -43,12 +43,12 @@ jobs:
 
       - name: Commit changed official feed
         run: |
-          if git diff --quiet -- lib/auto-notifications.ts lib/source-status.ts; then
+          if git diff --quiet -- lib/auto-notifications.ts lib/source-status.ts lib/auto-exam-data.ts; then
             echo "No official-feed change detected."
             exit 0
           fi
           git config user.name "sarkariprep-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add lib/auto-notifications.ts lib/source-status.ts
+          git add lib/auto-notifications.ts lib/source-status.ts lib/auto-exam-data.ts
           git commit -m "chore: refresh official notification feed"
           git push
