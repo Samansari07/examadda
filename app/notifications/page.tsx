@@ -3,7 +3,7 @@ import {autoNotifications,autoNotificationMeta} from "@/lib/auto-notifications";
 import {officialSources} from "@/lib/official-sources";
 import {sourceStatuses} from "@/lib/source-status";
 
-export const metadata={title:"Latest Government Notifications | SarkariPrep",description:"Official-source government exam and recruitment notification tracker."};
+export const metadata={title:"Latest Government Notifications | SarkariPrep",description:"Latest government exam and recruitment notifications from registered official sources.",alternates:{canonical:"https://sarkariprep.online/notifications"},openGraph:{title:"Latest Government Notifications | SarkariPrep",description:"Latest government exam and recruitment notifications from registered official sources.",url:"https://sarkariprep.online/notifications",siteName:"SarkariPrep",type:"website",locale:"en_IN",images:[{url:"https://sarkariprep.online/opengraph-image",width:1200,height:630,alt:"SarkariPrep notifications"}]},twitter:{card:"summary_large_image",title:"Latest Government Notifications | SarkariPrep",description:"Latest government exam and recruitment notifications from registered official sources.",images:["https://sarkariprep.online/opengraph-image"]}};
 
 type NotificationCardItem={
  id:string; title:string; organization:string; category:string;
