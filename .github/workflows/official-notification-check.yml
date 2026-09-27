@@ -15,24 +15,36 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
       - name: Check official sources
         run: node scripts/check-official-notifications.mjs
 
+      - name: Validate production build
+        run: npm run build
+
       - name: Commit changed official feed
         run: |
-          if git diff --quiet -- lib/auto-notifications.ts; then
+          if git diff --quiet -- lib/auto-notifications.ts lib/source-status.ts; then
             echo "No official-feed change detected."
             exit 0
           fi
           git config user.name "sarkariprep-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add lib/auto-notifications.ts
+          git add lib/auto-notifications.ts lib/source-status.ts
           git commit -m "chore: refresh official notification feed"
           git push
