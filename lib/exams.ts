@@ -4,6 +4,7 @@ export type Exam={
  minAge:number; maxAge:number; qualifications:string; categories:string[];
  examDate:string; lastDate:string; officialUrl:string; salary:string;
  status?: "cycle"|"family"; description?:string;
+ dataStatus?: "official-verified"|"official-calendar"|"historical-reference"|"reference-family"; lastVerified?: string; sourceUrl?: string; notificationUrl?: string; applyUrl?: string;
 };
 
 const cycleExams:Exam[]=[
@@ -36,7 +37,19 @@ const familyExams:Exam[]=familySeeds.map(([slug,name,organization,category,quali
  status:"family",description:"Reference guide for "+name+". Current vacancies, dates, eligibility, fees and selection stages must be verified from the latest official notification."
 }));
 
+const cycleWithIntegrity=cycleExams.map(e=>({...e,status:"cycle" as const,dataStatus:"historical-reference" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl,description:e.description||"Historical 2026 cycle reference. Dates and vacancies are not treated as live. Verify the latest official notification before applying."}));
+const verifiedCurrent:Exam[]=[{
+ slug:"upsc-ese-2027",name:"UPSC Engineering Services (Preliminary) Examination 2027",organization:"UPSC",category:"Engineering",
+ vacancies:"See official notification",minAge:21,maxAge:30,qualifications:"Engineering degree / prescribed qualification",
+ categories:["General","OBC","SC","ST","EWS","PwBD"],examDate:"31 January 2027",lastDate:"06 October 2026 · 6:00 PM",
+ officialUrl:"https://www.upsc.gov.in/examinations/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202027",
+ salary:"Pay level varies by service/post",status:"cycle",dataStatus:"official-verified",lastVerified:"2026-09-27",
+ sourceUrl:"https://www.upsc.gov.in/exams-related-info/exam-notification",notificationUrl:"https://www.upsc.gov.in/exams-related-info/exam-notification",
+ applyUrl:"https://upsconline.nic.in",description:"Current UPSC notification verified against the official examination-notification page. Check the PDF for branch-wise vacancies, fee, age rules and other conditions."
+}];
+
 export const exams:Exam[]=[
- ...cycleExams.map(e=>({...e,status:"cycle" as const})),
- ...familyExams.filter(f=>!cycleExams.some(e=>e.slug===f.slug))
+ ...verifiedCurrent,
+ ...cycleWithIntegrity, 
+ ...familyExams.map(e=>({...e,dataStatus:"reference-family" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl}))
 ];
