@@ -53,7 +53,7 @@ const verifiedCurrent:Exam[]=[{
  applyUrl:"https://ssc.gov.in/",
  description:"Current SSC CGL 2026 cycle. SSC published a tentative vacancy statement of 10,731 posts as on 24 September 2026. Tier-I is scheduled from 30 September to 30 October 2026. The official notification and later SSC notices remain controlling."
 },
-
+{
  slug:"upsc-ese-2027",name:"UPSC Engineering Services (Preliminary) Examination 2027",organization:"UPSC",category:"Engineering",
  vacancies:"See official notification",minAge:21,maxAge:30,qualifications:"Engineering degree / prescribed qualification",
  categories:["General","OBC","SC","ST","EWS","PwBD"],examDate:"31 January 2027",lastDate:"06 October 2026 · 6:00 PM",
