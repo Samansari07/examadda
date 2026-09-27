@@ -1,4 +1,5 @@
 name: Automatic Official Notification Check
+# Refresh trigger: keep GitHub Actions and Vercel deployment path active.
 
 on:
   schedule:
