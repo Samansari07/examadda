@@ -7,8 +7,8 @@ export const metadata={title:"Latest Government Notifications | SarkariPrep",des
 
 type NotificationCardItem={
  id:string; title:string; organization:string; category:string;
- stage:"Application Open"|"Upcoming"|"Admit Card"|"Answer Key"|"Result"|"Recruitment";
- status:"Verified official"; lastChecked:string; officialUrl:string;
+ stage:"Application Open"|"Upcoming"|"Admit Card"|"Answer Key"|"Result"|"Recruitment"|"Notice";
+ status:"Verified official"|"Detected on official source"; lastChecked:string; officialUrl:string;
  notificationUrl?:string; applyUrl?:string; applicationLastDate?:string; examDate?:string; qualification?:string; description:string;
 };
 
