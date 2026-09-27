@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
+  push:
+    paths:
+      - "config/official-sources.json"
+      - "scripts/check-official-notifications.mjs"
+      - ".github/workflows/official-notification-check.yml"
 
 permissions:
   contents: write
