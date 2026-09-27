@@ -61,7 +61,7 @@ const verifiedCurrent:Exam[]=[{
  salary:"Pay level varies by service/post",status:"cycle",dataStatus:"official-verified",lastVerified:"2026-09-27",
  sourceUrl:"https://www.upsc.gov.in/exams-related-info/exam-notification",notificationUrl:"https://www.upsc.gov.in/exams-related-info/exam-notification",
  applyUrl:"https://upsconline.nic.in",description:"Current UPSC notification verified against the official examination-notification page. Check the PDF for branch-wise vacancies, fee, age rules and other conditions."
-,
+},
 {
  slug:"cds-ii-2026",name:"CDS II 2026",organization:"UPSC",category:"Defence",
  vacancies:"451 notified",minAge:19,maxAge:25,qualifications:"Bachelor’s degree; academy-specific subject requirements apply",
