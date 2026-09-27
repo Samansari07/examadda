@@ -1,13 +1,11 @@
 import {notFound} from "next/navigation";
 import {exams} from "@/lib/exams";
 
-export function generateStaticParams(){return exams.map(e=>({slug:e.slug}))}
-export function generateMetadata({params}:{params:{slug:string}}){
- const e=exams.find(x=>x.slug===params.slug);
- return {title:e?e.name+" | SarkariPrep":"Exam Guide | SarkariPrep",description:e?e.description||("Eligibility, preparation and official-source guide for "+e.name):"Government exam guide"};
-}
+export const dynamic = "force-dynamic";
+
 export default function ExamPage({params}:{params:{slug:string}}){
- const e=exams.find(x=>x.slug===params.slug); if(!e) notFound();
+ const e=exams.find(x=>x.slug===params.slug);
+ if(!e) notFound();
  const age=e.minAge===0?"Check latest notification":e.minAge+"–"+e.maxAge+" years";
  const family=e.status==="family";
  return <main className="detailPage"><div className="wrap">
