@@ -1,1 +1,1 @@
-Production deployment trigger for feec89c59afc05753845a5959af90263f51aeb89
+Production deployment trigger for ${GITHUB_SHA}
