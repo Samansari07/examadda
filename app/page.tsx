@@ -33,6 +33,8 @@ export default function Home(){
 
  <section className="section" id="saved"><div className="wrap"><div className="sectionHead"><div><span className="eyebrow">YOUR SHORTLIST</span><h2>Saved exams.</h2></div></div>{saved.length?<div className="savedGrid">{saved.map(s=>{const e=exams.find(x=>x.slug===s);return e?<a className="savedCard" href={"/exams/"+e.slug} key={s}><b>{e.name}</b><span>{e.category} · {e.organization}</span></a>:null})}</div>:<div className="empty">Exam cards par ☆ tap karke apni shortlist banao.</div>}</div></section>
 
+ <section className="section compact contactSection" id="contact"><div className="wrap"><div className="contactPanel"><div><span className="eyebrow">HELP & SUPPORT</span><h2>Exam, notes ya kisi notification ke baare mein jaana hai?</h2><p>Notes ke liye WhatsApp ya Gmail karein. Koi problem, confusion, particular job/exam/notification ki information chahiye ho to directly contact karein.</p></div><div className="contactActions"><a className="contactWhatsapp" href="https://wa.me/917979748481" target="_blank" rel="noopener noreferrer">WhatsApp · 7979748481</a><a className="contactEmail" href="mailto:saheebmahmood5@gmail.com?subject=SarkariPrep%20Exam%20%2F%20Notes%20Enquiry">Gmail · saheebmahmood5@gmail.com</a></div></div></div></section>
+
  <footer className="footer"><div className="wrap footerInner"><div><div className="brand">Sarkari<span>Prep</span></div><p>Independent student-information platform for Indian government exams and recruitment routes.</p></div><div><b>Important</b><p>Not a government website. Current vacancy, dates, eligibility, fees and selection rules must be verified in the latest official notification.</p></div></div></footer>
  </div>
 }
