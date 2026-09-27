@@ -20,14 +20,18 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  refresh:
+  scan:
+    name: Scan official sources batch ${{ matrix.batch }}
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        batch: [0,1,2,3,4,5,6,7]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -36,15 +40,56 @@ jobs:
 
       - name: Install PDF extractor
         run: |
-          sudo apt-get update
-          sudo apt-get install -y poppler-utils
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
 
-      - name: Refresh official sources
-        run: node scripts/check-official-notifications.mjs
+      - name: Scan batch
+        env:
+          SOURCE_BATCH: ${{ matrix.batch }}
+          SOURCE_BATCH_COUNT: 8
+        run: node scripts/check-official-batch.mjs
 
-      - name: Validate generated files
+      - name: Upload batch result
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-batch-${{ matrix.batch }}
+          path: official-refresh-batches/batch-${{ matrix.batch }}.json
+          if-no-files-found: error
+          retention-days: 3
+
+  aggregate:
+    name: Aggregate official data
+    needs: scan
+    if: ${{ always() && needs.scan.result != 'cancelled' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Download batch results
+        uses: actions/download-artifact@v5
+        with:
+          pattern: official-batch-*
+          path: official-refresh-batches
+          merge-multiple: true
+
+      - name: Validate batch coverage
         run: |
-          node --check scripts/check-official-notifications.mjs
+          count=$(find official-refresh-batches -name 'batch-*.json' | wc -l)
+          echo "Batch files: $count"
+          test "$count" -eq 8
+
+      - name: Aggregate
+        run: |
+          node scripts/aggregate-official-data.mjs
+          node --check scripts/check-official-batch.mjs
+          node --check scripts/aggregate-official-data.mjs
           test -s lib/auto-notifications.ts
           test -s lib/auto-exam-data.ts
           test -s lib/source-status.ts
