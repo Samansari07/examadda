@@ -1,4 +1,4 @@
-import sourceRegistry from "@/config/official-sources.json";
+import sourceRegistryJson from "@/config/official-sources.json";
 
 export type OfficialSource={
  id:string;
@@ -10,4 +10,4 @@ export type OfficialSource={
  scope:string;
 };
 
-export const officialSources:OfficialSource[]=sourceRegistry;
+export const officialSources:OfficialSource[]=sourceRegistryJson as OfficialSource[];
