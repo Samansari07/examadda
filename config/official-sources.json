@@ -22,7 +22,10 @@
     "category": "Banking",
     "region": "Central",
     "updatesUrl": "https://www.ibps.in/index.php/crp-updates/",
-    "scope": "Banking recruitment notifications, corrigenda, calendars, results and vacancy updates."
+    "scope": "Banking recruitment notifications, corrigenda, calendars, results and vacancy updates.",
+    "fallbackUrls": [
+      "https://www.ibps.in/"
+    ]
   },
   {
     "id": "nta",
@@ -46,7 +49,14 @@
     "category": "Railway",
     "region": "Central",
     "updatesUrl": "https://indianrailways.gov.in/",
-    "scope": "Railway recruitment information; regional RRB/CEN notice remains controlling source."
+    "scope": "Railway recruitment information; regional RRB/CEN notice remains controlling source.",
+    "fallbackUrls": [
+      "https://www.rrbcdg.gov.in/",
+      "https://rrbbhopal.gov.in/",
+      "https://rrbpatna.gov.in/",
+      "https://rrbranchi.gov.in/",
+      "https://rrbbbs.gov.in/"
+    ]
   },
   {
     "id": "rbi",
@@ -62,7 +72,11 @@
     "category": "Banking",
     "region": "Central",
     "updatesUrl": "https://sbi.co.in/web/careers",
-    "scope": "SBI recruitment advertisements, applications, admit cards and results."
+    "scope": "SBI recruitment advertisements, applications, admit cards and results.",
+    "fallbackUrls": [
+      "https://sbi.co.in/web/careers/current-openings",
+      "https://bank.sbi/careers/"
+    ]
   },
   {
     "id": "lic",
@@ -78,7 +92,10 @@
     "category": "Central Government",
     "region": "Central",
     "updatesUrl": "https://www.epfindia.gov.in/site_en/Recruitments.php",
-    "scope": "EPFO recruitment notices and updates."
+    "scope": "EPFO recruitment notices and updates.",
+    "fallbackUrls": [
+      "https://www.epfindia.gov.in/site_en/Recruitments.php"
+    ]
   },
   {
     "id": "isro",
@@ -94,7 +111,10 @@
     "category": "Science & Engineering",
     "region": "Central",
     "updatesUrl": "https://www.drdo.gov.in/careers",
-    "scope": "DRDO recruitment and career notices."
+    "scope": "DRDO recruitment and career notices.",
+    "fallbackUrls": [
+      "https://www.drdo.gov.in/drdo/offerings/vacancies"
+    ]
   },
   {
     "id": "aiims",
@@ -142,7 +162,10 @@
     "category": "State Government",
     "region": "Andhra Pradesh",
     "updatesUrl": "https://psc.ap.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://portal-psc.ap.gov.in/"
+    ]
   },
   {
     "id": "arunachal-pradesh-psc",
