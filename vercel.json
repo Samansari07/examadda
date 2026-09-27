@@ -1,1 +1,11 @@
-{"framework":"nextjs","buildCommand":"npm run build","installCommand":"npm install","devCommand":"next dev"}
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "devCommand": "next dev",
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  }
+}
