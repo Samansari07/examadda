@@ -8,7 +8,9 @@ const sources=[
   ["ctet","CTET","Teaching","https://ctet.nic.in/"],
   ["jpsc","Jharkhand Public Service Commission","State Government","https://jpsc.gov.in/"],
   ["jssc","Jharkhand Staff Selection Commission","State Government","https://jssc.jharkhand.gov.in/"],
-  ["sbi","State Bank of India","Banking","https://sbi.co.in/web/careers"]
+  ["sbi","State Bank of India","Banking","https://sbi.co.in/web/careers"],
+  ["rbi","Reserve Bank of India","Banking","https://opportunities.rbi.org.in/"],
+  ["railways","Railway Recruitment Boards","Railway","https://www.rrbcdg.gov.in/"]
 ];
 
 const keywords=/notification|advertisement|recruitment|corrigendum|admit.?card|answer.?key|result|vacanc|examination|exam.?notice/i;
