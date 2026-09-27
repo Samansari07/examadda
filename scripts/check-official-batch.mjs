@@ -4,9 +4,8 @@ import {execFile} from "node:child_process";
 import {promisify} from "node:util";
 import path from "node:path";
 const execFileAsync=promisify(execFile);
-const UA="SarkariPrep-Official-Checker/6.0";
+const UA="SarkariPrep-Official-Checker/7.0";
 const HEADERS={"user-agent":UA,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-IN,en;q=0.9","cache-control":"no-cache","pragma":"no-cache"};
-const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const today=()=>new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"});
 const clean=s=>String(s).replace(/&nbsp;/gi," ").replace(/&amp;/gi,"&").replace(/&quot;/gi,'"').replace(/&#39;/gi,"'").replace(/<[^>]+>/g," ").replace(/\s+/g," ").trim();
 const norm=s=>String(s).toLowerCase().replace(/&amp;/g," and ").replace(/[^a-z0-9]+/g," ").replace(/\s+/g," ").trim();
@@ -16,31 +15,98 @@ const BAD_TEMPLATE=/\{\{|\}\}|translate|_hm['"]/i;
 const KEYWORDS=/notification|notice|recruitment|vacanc|corrigendum|application|apply|admit card|answer key|result|calendar|schedule|examination|exam|shortlist|interview|extension|registration|provisional|final|advertisement|engagement|appointment|selection/i;
 const URL_HINTS=/notification|notice|recruit|vacanc|advert|corrig|application|apply|admit|hall.?ticket|answer.?key|result|calendar|schedule|exam|selection|appointment|pdf/i;
 const stage=t=>{t=t.toLowerCase();if(/admit card|hall ticket/.test(t))return"Admit Card";if(/answer key|response sheet/.test(t))return"Answer Key";if(/result|score card|cut.?off/.test(t))return"Result";if(/apply|application|registration|notification/.test(t))return"Application Open";if(/vacanc|recruitment|corrigendum|advertisement|engagement/.test(t))return"Recruitment";return"Upcoming"};
+
 async function fetchSource(source){
- const urls=[source.updatesUrl,...(source.fallbackUrls||[])].filter(Boolean),attempts=[];
- for(const url of [...new Set(urls)]){
-  for(const delay of [0,1000,2500]){
-   if(delay)await sleep(delay);
-   try{const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(22000)});const ct=r.headers.get("content-type")||"";if(r.ok&&(ct.includes("html")||ct.includes("xml")||ct.includes("text"))){const html=await r.text();if(html.length>120)return{url,html,method:"fetch"}}attempts.push(url+" -> HTTP "+r.status)}catch(e){attempts.push(url+" -> "+e)}
+  const urls=[source.updatesUrl,...(source.fallbackUrls||[])].filter(Boolean).slice(0,3),attempts=[];
+  for(const url of [...new Set(urls)]){
+    try{
+      const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(7000)});
+      const ct=r.headers.get("content-type")||"";
+      if(r.ok&&(ct.includes("html")||ct.includes("xml")||ct.includes("text"))){
+        const html=await r.text();
+        if(html.length>120)return{url,html,method:"fetch"};
+      }
+      attempts.push(url+" -> HTTP "+r.status);
+    }catch(e){attempts.push(url+" -> "+String(e))}
+    try{
+      const {stdout}=await execFileAsync("curl",["-L","--max-time","10","--retry","0","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:20*1024*1024});
+      if(stdout.length>120)return{url,html:stdout,method:"curl"};
+    }catch(e){attempts.push(url+" -> curl "+String(e))}
   }
-  try{const {stdout}=await execFileAsync("curl",["-L","--max-time","30","--retry","2","--retry-delay","1","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:25*1024*1024});if(stdout.length>120)return{url,html:stdout,method:"curl"}}catch(e){attempts.push(url+" -> curl "+e)}
- }
- throw new Error(attempts.join(" | "));
+  throw new Error(attempts.join(" | "));
 }
+
 function extractLinks(html,source){
- const out=[],seen=new Set(),re=/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;let m;
- while((m=re.exec(html))&&out.length<150){const title=clean(m[2]),href=m[1].trim();if(title.length<12||title.length>500||BAD_TITLES.test(title)||BAD_PHRASES.test(title)||BAD_TEMPLATE.test(title)||!KEYWORDS.test(title))continue;if(/^(#|javascript:|mailto:|tel:)/i.test(href))continue;let url;try{url=new URL(href,source.updatesUrl).href}catch{continue}if(!URL_HINTS.test(url)&&!KEYWORDS.test(title))continue;const key=url.split("#")[0];if(seen.has(key))continue;seen.add(key);out.push({id:"auto-"+source.id+"-"+Buffer.from(key).toString("base64url").slice(0,28),title,organization:source.organization,category:source.category,stage:stage(title),status:"Detected on official source",lastChecked:today(),officialUrl:source.updatesUrl,notificationUrl:url,description:"Detected automatically from the registered official "+source.organization+" source. The original authority notice remains the controlling source."})}
- return out;
+  const out=[],seen=new Set(),re=/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;let m;
+  while((m=re.exec(html))&&out.length<100){
+    const title=clean(m[2]),href=m[1].trim();
+    if(title.length<12||title.length>500||BAD_TITLES.test(title)||BAD_PHRASES.test(title)||BAD_TEMPLATE.test(title)||!KEYWORDS.test(title))continue;
+    if(/^(#|javascript:|mailto:|tel:)/i.test(href))continue;
+    let url;try{url=new URL(href,source.updatesUrl).href}catch{continue}
+    if(!URL_HINTS.test(url)&&!KEYWORDS.test(title))continue;
+    const key=url.split("#")[0];if(seen.has(key))continue;seen.add(key);
+    out.push({id:"auto-"+source.id+"-"+Buffer.from(key).toString("base64url").slice(0,28),title,organization:source.organization,category:source.category,stage:stage(title),status:"Detected on official source",lastChecked:today(),officialUrl:source.updatesUrl,notificationUrl:url,description:"Detected automatically from the registered official "+source.organization+" source. The original authority notice remains the controlling source."});
+  }
+  return out;
 }
+
 async function pdfText(url){
- const dir=await fs.mkdtemp(path.join("/tmp/","sarkariprep-")),pdf=path.join(dir,"notice.pdf"),txt=path.join(dir,"notice.txt");
- try{const r=await fetch(url,{headers:{...HEADERS,accept:"application/pdf,text/html"},redirect:"follow",signal:AbortSignal.timeout(25000)});if(!r.ok)return"";const b=Buffer.from(await r.arrayBuffer());if(b.length<1000)return"";await fs.writeFile(pdf,b);await execFileAsync("pdftotext",["-layout",pdf,txt],{maxBuffer:12*1024*1024});return(await fs.readFile(txt,"utf8")).slice(0,180000)}catch{return""}finally{await fs.rm(dir,{recursive:true,force:true}).catch(()=>{})}
+  const dir=await fs.mkdtemp(path.join("/tmp/","sarkariprep-")),pdf=path.join(dir,"notice.pdf"),txt=path.join(dir,"notice.txt");
+  try{
+    const r=await fetch(url,{headers:{...HEADERS,accept:"application/pdf,text/html"},redirect:"follow",signal:AbortSignal.timeout(10000)});
+    if(!r.ok)return"";
+    const b=Buffer.from(await r.arrayBuffer());if(b.length<1000)return"";
+    await fs.writeFile(pdf,b);
+    await execFileAsync("pdftotext",["-layout",pdf,txt],{maxBuffer:8*1024*1024,timeout:9000});
+    return(await fs.readFile(txt,"utf8")).slice(0,180000);
+  }catch{return""}finally{await fs.rm(dir,{recursive:true,force:true}).catch(()=>{})}
 }
-async function findPdf(url){if(/\.pdf(?:[?#].*)?$/i.test(url))return url;try{const r=await fetch(url,{headers:{...HEADERS,accept:"application/pdf,text/html"},redirect:"follow",signal:AbortSignal.timeout(18000)});if((r.headers.get("content-type")||"").includes("pdf"))return url;const html=await r.text();const m=html.match(/href=["']([^"']+\.pdf(?:[?#][^"']*)?)["']/i);return m?new URL(m[1],url).href:null}catch{return null}}
-function parseStructured(t){const out={},e=[];t=t.replace(/[ \t]+/g," ").replace(/\n+/g,"\n");let m;m=t.match(/(?:last date for (?:submission of )?(?:online )?application)[^\d]*(\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);if(m){out.lastDate=m[1];e.push("lastDate")}m=t.match(/(?:date of (?:the )?examination|exam(?:ination)? will be held|examination.*?scheduled)[^\d]{0,80}(\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);if(m){out.examDate=m[1];e.push("examDate")}m=t.match(/(?:number of )?(?:vacancies|vacant posts|total posts|posts)[^\d]{0,30}(\d[\d,]{2,})/i);if(m){out.vacancies=m[1]+" notified";e.push("vacancies")}m=t.match(/(?:minimum age|minimum age limit)[^\d]{0,30}(\d{1,2})[^\d]{0,80}(?:maximum age|upper age)[^\d]{0,30}(\d{1,2})/i);if(m){out.minAge=+m[1];out.maxAge=+m[2];e.push("age")}m=t.match(/(?:application fee|examination fee|exam fee)[^\n:]{0,80}(?:rs\.?|₹)\s*([\d,]+)/i);if(m){out.fee="₹"+m[1];e.push("fee")}return{data:out,evidence:e}}
-const config=JSON.parse(await fs.readFile("config/official-sources.json","utf8"));const batch=Number(process.env.SOURCE_BATCH||0),count=Number(process.env.SOURCE_BATCH_COUNT||8),selected=config.filter((_,i)=>i%count===batch);
-const failures=[],statuses=[],results=[],overrides={};const exams=(await fs.readFile("lib/exams.ts","utf8")).match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"/g)?.map(x=>{const m=x.match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"/);return{slug:m[1],name:m[2],organization:m[3]}})||[];
-const matchExam=(title,source,evidence="")=>{const pool=exams.filter(e=>e.organization.toLowerCase()===source.organization.toLowerCase());const t=norm(title),et=norm(evidence);let best=null;for(const e of pool){let s=0;for(const a of [norm(e.slug),norm(e.name),...e.name.match(/\b[A-Z][A-Z0-9-]{1,}\b/g)?.map(norm)||[]])if(a.length>3&&(t.includes(a)||et.includes(a)))s+=a.length>8?5:3;if(!best||s>best.s)best={e,s}}return best&&best.s>=5?best.e:null};
-for(const source of selected){try{const f=await fetchSource(source),det=extractLinks(f.html,source);results.push(...det);for(const item of det.slice(0,40)){const exam=matchExam(item.title,source);if(!exam)continue;const pdf=await findPdf(item.notificationUrl);if(!pdf)continue;const txt=await pdfText(pdf);if(!txt)continue;const p=parseStructured(txt);if(p.evidence.length<2)continue;overrides[exam.slug]={...p.data,slug:exam.slug,name:exam.name,organization:exam.organization,notificationUrl:pdf,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence:p.evidence.length>=4?"high":"medium",evidenceCount:p.evidence.length,evidence:p.evidence}}statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:f.url,ok:true,detected:det.length,lastChecked:today(),method:f.method})}catch(e){failures.push({source:source.organization,error:String(e)});statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:source.updatesUrl,ok:false,detected:0,lastChecked:today(),error:String(e)})}}
-const unique=[],seen=new Set();for(const x of results){const k=x.notificationUrl?.split("#")[0]||x.title;if(seen.has(k))continue;seen.add(k);unique.push(x)}
-await fs.mkdir("official-refresh-batches",{recursive:true});await fs.writeFile(`official-refresh-batches/batch-${batch}.json`,JSON.stringify({batch,sourceCount:selected.length,results:unique,statuses,failures,overrides},null,2));console.log(`batch ${batch}: ${selected.length} sources, ${statuses.filter(x=>x.ok).length} successful, ${unique.length} updates, ${Object.keys(overrides).length} overrides`);
+async function findPdf(url){
+  if(/\.pdf(?:[?#].*)?$/i.test(url))return url;
+  try{
+    const r=await fetch(url,{headers:{...HEADERS,accept:"application/pdf,text/html"},redirect:"follow",signal:AbortSignal.timeout(7000)});
+    if((r.headers.get("content-type")||"").includes("pdf"))return url;
+    const html=await r.text();const m=html.match(/href=["']([^"']+\.pdf(?:[?#][^"']*)?)["']/i);
+    return m?new URL(m[1],url).href:null;
+  }catch{return null}
+}
+function parseStructured(t){
+  const out={},e=[];t=t.replace(/[ \t]+/g," ").replace(/\n+/g,"\n");let m;
+  m=t.match(/(?:last date for (?:submission of )?(?:online )?application)[^\d]*(\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);if(m){out.lastDate=m[1];e.push("lastDate")}
+  m=t.match(/(?:date of (?:the )?examination|exam(?:ination)? will be held|examination.*?scheduled)[^\d]{0,80}(\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);if(m){out.examDate=m[1];e.push("examDate")}
+  m=t.match(/(?:number of )?(?:vacancies|vacant posts|total posts|posts)[^\d]{0,30}(\d[\d,]{2,})/i);if(m){out.vacancies=m[1]+" notified";e.push("vacancies")}
+  m=t.match(/(?:minimum age|minimum age limit)[^\d]{0,30}(\d{1,2})[^\d]{0,80}(?:maximum age|upper age)[^\d]{0,30}(\d{1,2})/i);if(m){out.minAge=+m[1];out.maxAge=+m[2];e.push("age")}
+  m=t.match(/(?:application fee|examination fee|exam fee)[^\n:]{0,80}(?:rs\.?|₹)\s*([\d,]+)/i);if(m){out.fee="₹"+m[1];e.push("fee")}
+  return{data:out,evidence:e};
+}
+const config=JSON.parse(await fs.readFile("config/official-sources.json","utf8"));
+const batch=Number(process.env.SOURCE_BATCH||0),count=Number(process.env.SOURCE_BATCH_COUNT||8);
+const selected=config.filter((_,i)=>i%count===batch);
+const failures=[],statuses=[],results=[],overrides={};
+const exams=(await fs.readFile("lib/exams.ts","utf8")).match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"/g)?.map(x=>{const m=x.match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"/);return{slug:m[1],name:m[2],organization:m[3]}})||[];
+const matchExam=(title,source,evidence="")=>{
+  const pool=exams.filter(e=>e.organization.toLowerCase()===source.organization.toLowerCase()),t=norm(title),et=norm(evidence);let best=null;
+  for(const e of pool){let s=0;for(const a of [norm(e.slug),norm(e.name),...e.name.match(/\b[A-Z][A-Z0-9-]{1,}\b/g)?.map(norm)||[]])if(a.length>3&&(t.includes(a)||et.includes(a)))s+=a.length>8?5:3;if(!best||s>best.s)best={e,s}}
+  return best&&best.s>=5?best.e:null;
+};
+for(const source of selected){
+  try{
+    const f=await fetchSource(source),det=extractLinks(f.html,source);results.push(...det);
+    const candidates=det.filter(x=>matchExam(x.title,source)).slice(0,8);
+    for(const item of candidates){
+      const exam=matchExam(item.title,source),pdf=await findPdf(item.notificationUrl);if(!pdf)continue;
+      const txt=await pdfText(pdf);if(!txt)continue;
+      const p=parseStructured(txt);if(p.evidence.length<2)continue;
+      overrides[exam.slug]={...p.data,slug:exam.slug,name:exam.name,organization:exam.organization,notificationUrl:pdf,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence:p.evidence.length>=4?"high":"medium",evidenceCount:p.evidence.length,evidence:p.evidence};
+    }
+    statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:f.url,ok:true,detected:det.length,lastChecked:today(),method:f.method});
+  }catch(e){
+    failures.push({source:source.organization,error:String(e)});
+    statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:source.updatesUrl,ok:false,detected:0,lastChecked:today(),error:String(e)});
+  }
+}
+const unique=[],seen=new Set();
+for(const x of results){const k=x.notificationUrl?.split("#")[0]||x.title;if(seen.has(k))continue;seen.add(k);unique.push(x)}
+await fs.mkdir("official-refresh-batches",{recursive:true});
+await fs.writeFile(`official-refresh-batches/batch-${batch}.json`,JSON.stringify({batch,sourceCount:selected.length,results:unique,statuses,failures,overrides},null,2));
+console.log(`batch ${batch}: ${selected.length} sources, ${statuses.filter(x=>x.ok).length} successful, ${unique.length} updates, ${Object.keys(overrides).length} overrides`);
