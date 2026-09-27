@@ -90,10 +90,23 @@ jobs:
         run: |
           git config user.name "SarkariPrep Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add lib/auto-notifications.ts lib/auto-exam-data.ts lib/source-status.ts
-          if git diff --cached --quiet; then
-            echo "No official-data changes detected."
-          else
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            node scripts/aggregate-official-data.mjs
+            git add lib/auto-notifications.ts lib/auto-exam-data.ts lib/source-status.ts
+            if git diff --cached --quiet; then
+              echo "No official-data changes detected."
+              exit 0
+            fi
             git commit -m "chore: refresh official exam data"
-            git push origin main
-          fi
+            if git push origin HEAD:main; then
+              echo "Official data pushed successfully."
+              exit 0
+            fi
+            echo "Push race detected; retrying from latest origin/main..."
+            git reset --hard HEAD~1
+            sleep 2
+          done
+          echo "Could not publish official data after 3 attempts."
+          exit 1
