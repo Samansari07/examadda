@@ -5,8 +5,12 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
+    if: github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[vercel-authorized]')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,3 +19,13 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm run build
+
+      - name: Create Vercel-authorized deployment commit
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "Samansari07"
+          git config user.email "saheebmahmood5@gmail.com"
+          printf 'Production deployment trigger for %s\n' "${GITHUB_SHA}" > .vercel-deploy-trigger
+          git add .vercel-deploy-trigger
+          git commit -m "[vercel-authorized] deploy current production build"
+          git push origin HEAD:main
