@@ -1,3 +1,4 @@
+// DATA INTEGRITY HARDENING
 export type Exam={
  slug:string; name:string; organization:string; category:string; vacancies:string;
  minAge:number; maxAge:number; qualifications:string; categories:string[];
