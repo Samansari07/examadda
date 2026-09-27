@@ -1,0 +1,9 @@
+"use client";
+import {useMemo,useState} from "react";
+import {exams} from "@/lib/exams";
+export default function ExamsDirectory(){
+ const[q,setQ]=useState(""); const[cat,setCat]=useState("All");
+ const cats=["All",...Array.from(new Set(exams.map(e=>e.category)))];
+ const list=useMemo(()=>exams.filter(e=>(cat==="All"||e.category===cat)&&(!q||[e.name,e.organization,e.category,e.qualifications].join(" ").toLowerCase().includes(q.toLowerCase()))),[q,cat]);
+ return <main><section className="section light"><div className="wrap"><a className="backLink" href="/">← SarkariPrep home</a><div className="sectionHead"><div><span className="eyebrow">EXAM DIRECTORY</span><h1>All Government Exams</h1></div><p>{list.length} exam profiles</p></div><div className="heroSearch directorySearch"><span>⌕</span><input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search exam, organisation or qualification…"/></div><div className="filterBar"><div className="filterScroll">{cats.map(c=><button className={cat===c?"filter active":"filter"} key={c} onClick={()=>setCat(c)}>{c}</button>)}</div></div><div className="examGrid">{list.map(e=><article className="examCard" key={e.slug}><span className="tag">{e.category}</span><h3>{e.name}</h3><p className="org">{e.organization}</p><div className="miniFacts"><div><small>Qualification</small><b>{e.qualifications}</b></div><div><small>Age</small><b>{e.minAge===0?"Check notification":e.minAge+"–"+e.maxAge+" yrs"}</b></div><div><small>Vacancies</small><b>{e.vacancies}</b></div></div><div className="cardLinks"><a className="primaryLink" href={"/exams/"+e.slug}>Complete guide →</a><a href={e.officialUrl} target="_blank" rel="noopener noreferrer">Official ↗</a></div></article>)}</div></div></section></main>
+}
