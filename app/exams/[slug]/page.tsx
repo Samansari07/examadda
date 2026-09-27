@@ -6,7 +6,7 @@ import {sourceStatuses} from "@/lib/source-status";
 export function generateStaticParams(){return exams.map(e=>({slug:e.slug}))}
 export function generateMetadata({params}:{params:{slug:string}}){
  const e=exams.find(x=>x.slug===params.slug);
- return {title:e?e.name+" | SarkariPrep":"Exam Guide | SarkariPrep",description:e?e.description||("Eligibility, preparation and official-source guide for "+e.name):"Government exam guide"};
+ return {title:e?e.name:"Exam Guide",description:e?e.description||("Eligibility, preparation and official-source guide for "+e.name):"Government exam guide",alternates:{canonical:e?"/exams/"+e.slug:"/exams"}};
 }
 export default function ExamPage({params}:{params:{slug:string}}){
  const e=exams.find(x=>x.slug===params.slug); if(!e) notFound();
