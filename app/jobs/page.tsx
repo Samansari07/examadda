@@ -20,7 +20,7 @@ export default function JobsPage() {
         <div className="directoryHero">
           <span className="tag">CAREER DISCOVERY</span>
           <h1>Government Jobs</h1>
-          <p>Qualification aur career category ke hisaab se government exam routes explore karo.</p>
+          <p>Apni qualification ke hisaab se government jobs explore karo — aur har vacancy ke liye latest official notification se final details verify karo.</p>
         </div>
         <section className="section compact">
           <div className="categoryGrid">
