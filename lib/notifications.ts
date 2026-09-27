@@ -1,6 +1,9 @@
+import {autoNotifications} from "./auto-notifications";
+import type {NotificationItem} from "./notification-types";
+
 export type NotificationItem={
  id:string; title:string; organization:string; category:string; stage:"Application Open"|"Upcoming"|"Admit Card"|"Answer Key"|"Result"|"Recruitment";
- status:"Verified official"; publishedDate:string; lastChecked:string; applicationLastDate?:string; examDate?:string; vacancies?:string; qualification?:string;
+ status:"Verified official"|"Auto-detected official link"; publishedDate:string; lastChecked:string; applicationLastDate?:string; examDate?:string; vacancies?:string; qualification?:string;
  officialUrl:string; notificationUrl?:string; applyUrl?:string; description:string;
 };
 
@@ -11,3 +14,4 @@ export const notifications:NotificationItem[]=[
  {id:"upsc-active-2026",title:"UPSC Active Examinations — official tracker",organization:"UPSC",category:"Civil Services",stage:"Upcoming",status:"Verified official",publishedDate:"2026-09-27",lastChecked:"2026-09-27",officialUrl:"https://www.upsc.gov.in/examinations/active-exams",description:"Official UPSC active-examinations index covering current examination cycles, including CSE Main 2026, CDS II 2026, NDA II 2026, CMS 2026 and CAPF 2026."},
  {id:"ssc-calendar-2026-27",title:"SSC Tentative Examination Calendar 2026–27",organization:"Staff Selection Commission",category:"Central Government",stage:"Upcoming",status:"Verified official",publishedDate:"2026-01-08",lastChecked:"2026-09-27",officialUrl:"https://ssc.gov.in/api/attachment/uploads/masterData/ExamCalendar/Tentative_Calendar2026_27_08012026.pdf",description:"Official SSC tentative calendar. It provides advertisement, closing and tentative examination periods; dates can change, so check the latest SSC notice before acting."}
 ];
+export const allNotifications:NotificationItem[]=[...notifications,...autoNotifications];
