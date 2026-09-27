@@ -37,7 +37,7 @@ const familyExams:Exam[]=familySeeds.map(([slug,name,organization,category,quali
  status:"family",description:"Reference guide for "+name+". Current vacancies, dates, eligibility, fees and selection stages must be verified from the latest official notification."
 }));
 
-const cycleWithIntegrity=cycleExams.filter(e=>e.slug!=="ssc-cgl-2026").map(e=>({...e,status:"cycle" as const,dataStatus:"historical-reference" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl,vacancies:"See latest official notification",minAge:0,maxAge:100,qualifications:"Post-specific; see latest official notification",examDate:"See latest official notification",lastDate:"See latest official notification",description:e.description||"Historical 2026 cycle reference. Exact dates, vacancies and eligibility are not treated as live. Verify the latest official notification before applying."}));
+const cycleWithIntegrity=cycleExams.filter(e=>e.slug!=="ssc-cgl-2026" && e.slug!=="cds-ii-2026").map(e=>({...e,status:"cycle" as const,dataStatus:"historical-reference" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl,vacancies:"See latest official notification",minAge:0,maxAge:100,qualifications:"Post-specific; see latest official notification",examDate:"See latest official notification",lastDate:"See latest official notification",description:e.description||"Historical 2026 cycle reference. Exact dates, vacancies and eligibility are not treated as live. Verify the latest official notification before applying."}));
 const verifiedCurrent:Exam[]=[{
  slug:"ssc-cgl-2026",name:"SSC CGL 2026",organization:"Staff Selection Commission",category:"Central Government",
  vacancies:"10,731 tentative (as on 24 September 2026)",minAge:18,maxAge:32,
@@ -61,6 +61,14 @@ const verifiedCurrent:Exam[]=[{
  salary:"Pay level varies by service/post",status:"cycle",dataStatus:"official-verified",lastVerified:"2026-09-27",
  sourceUrl:"https://www.upsc.gov.in/exams-related-info/exam-notification",notificationUrl:"https://www.upsc.gov.in/exams-related-info/exam-notification",
  applyUrl:"https://upsconline.nic.in",description:"Current UPSC notification verified against the official examination-notification page. Check the PDF for branch-wise vacancies, fee, age rules and other conditions."
+,
+{
+ slug:"cds-ii-2026",name:"CDS II 2026",organization:"UPSC",category:"Defence",
+ vacancies:"451 notified",minAge:19,maxAge:25,qualifications:"Bachelor’s degree; academy-specific subject requirements apply",
+ categories:["General","OBC","SC","ST","EWS"],examDate:"13 September 2026",lastDate:"Application closed · 11 June 2026, 6:00 PM",
+ officialUrl:"https://upsc.gov.in",salary:"Level 10 ₹56,100–₹1,77,500 + applicable MSP",status:"cycle",dataStatus:"official-verified",lastVerified:"2026-09-27",
+ sourceUrl:"https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026",notificationUrl:"https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026",
+ description:"Official CDS II 2026 cycle. UPSC published the notification on 20 May 2026; the written examination was held on 13 September 2026 and applications closed on 11 June 2026. The UPSC examination page is the controlling source."
 }];
 
 export const exams:Exam[]=[
