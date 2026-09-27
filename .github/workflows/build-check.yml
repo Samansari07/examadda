@@ -25,7 +25,9 @@ jobs:
         run: |
           git config user.name "Samansari07"
           git config user.email "saheebmahmood5@gmail.com"
-          printf 'Production deployment trigger for %s\n' "${GITHUB_SHA}" > .vercel-deploy-trigger
+          printf 'Production deployment trigger for ${GITHUB_SHA}\n' "${GITHUB_SHA}" > .vercel-deploy-trigger
           git add .vercel-deploy-trigger
           git commit -m "[vercel-authorized] deploy current production build"
           git push origin HEAD:main
+
+# Vercel integration healthcheck
