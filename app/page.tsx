@@ -2,7 +2,7 @@
 import {useMemo,useState} from "react";
 import {exams} from "@/lib/exams";
 const categories=["All",...Array.from(new Set(exams.map(e=>e.category)))];
-const links=[["UPSC","https://www.upsc.gov.in/"],["SSC","https://ssc.gov.in/"],["IBPS","https://www.ibps.in/"],["Railways","https://indianrailways.gov.in/"],["NTA","https://www.nta.ac.in/"],["RBI","https://www.rbi.org.in/"],["SBI Careers","https://sbi.co.in/web/careers"],["CTET","https://ctet.nic.in/"],["JPSC","https://jpsc.gov.in/"],["Army","https://joinindianarmy.nic.in/"],["Navy","https://www.joinindiannavy.co.in/"],["AFCAT","https://afcat.cdac.in/"]];
+const links=[["UPSC","https://www.upsc.gov.in/"],["SSC","https://ssc.gov.in/"],["IBPS","https://www.ibps.in/"],["Railways","https://indianrailways.gov.in/"],["NTA","https://www.nta.ac.in/"],["RBI","https://www.rbi.org.in/"],["SBI Careers","https://sbi.co.in/web/careers"],["CTET","https://ctet.nic.in/"],["JPSC","https://jpsc.gov.in/"],["Army","https://joinindianarmy.nic.in/"],["Navy","https://www.joinindiannavy.gov.in/"],["AFCAT","https://afcat.edcil.co.in/"]];
 const ageText=(e:any)=>e.minAge===0?"No general age limit stated":e.minAge+"–"+e.maxAge+" years (verify notification)";
 export default function Home(){
 const[q,setQ]=useState(""),[cat,setCat]=useState("All"),[age,setAge]=useState(""),[edu,setEdu]=useState("Graduate"),[result,setResult]=useState<any[]|null>(null);
