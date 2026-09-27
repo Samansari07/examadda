@@ -1,0 +1,2 @@
+import {notifications} from "@/lib/notifications";
+export async function GET(){return Response.json({updatedAt:"2026-09-27",sourcePolicy:"Official-source verified; final details must be checked on authority portals.",count:notifications.length,items:notifications});}
