@@ -12,8 +12,11 @@ export type AutoNotification = {
   description:string;
 };
 
-export const autoNotificationMeta = {
+export const autoNotificationMeta: { generatedAt:string; sourceCount:number; successfulSources:number; failedSources:string[]; sourcePolicy:string } = {
   generatedAt: "2026-09-27",
+  sourceCount: 63,
+  successfulSources: 0,
+  failedSources: [],
   sourcePolicy: "Automatically checked official authority pages; original authority links remain the controlling source."
 };
 
