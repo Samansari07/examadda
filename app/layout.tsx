@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   description: "Discover Indian government exams, jobs, eligibility, preparation routes and official recruitment notifications in one student-first platform.",
   keywords: ["government exams India","Sarkari Naukri","government jobs","government exam syllabus","UPSC","SSC","Banking exams","Railway jobs","Defence exams","State government exams"],
   alternates: { canonical: "/" },
-  openGraph: { title: "SarkariPrep — Indian Government Exams & Jobs", description: "Explore government exams, jobs, preparation routes and official recruitment sources.", url: siteUrl, siteName: "SarkariPrep", locale: "en_IN", type: "website" },
-  twitter: { card: "summary_large_image", title: "SarkariPrep — Indian Government Exams & Jobs", description: "A student-first platform for Indian government exams, jobs and official recruitment sources." },
+  openGraph: { title: "SarkariPrep — Indian Government Exams & Jobs", description: "Explore government exams, jobs, preparation routes and official recruitment sources.", url: siteUrl, siteName: "SarkariPrep", locale: "en_IN", type: "website", images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "SarkariPrep — Indian Government Exams & Jobs" }] },
+  twitter: { card: "summary_large_image", images: ["/opengraph-image"], title: "SarkariPrep — Indian Government Exams & Jobs", description: "A student-first platform for Indian government exams, jobs and official recruitment sources." },
   robots: { index: true, follow: true },
 };
 
