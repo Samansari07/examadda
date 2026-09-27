@@ -1,6 +1,13 @@
 name: Refresh official exam data
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "config/**"
+      - "lib/exams.ts"
+      - ".github/workflows/refresh-official-data.yml"
   workflow_dispatch:
   schedule:
     - cron: "0 */6 * * *"
