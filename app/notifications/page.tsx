@@ -4,8 +4,15 @@ import {officialSources} from "@/lib/official-sources";
 
 export const metadata={title:"Latest Government Notifications | SarkariPrep",description:"Official-source government exam and recruitment notification tracker."};
 
+type NotificationCardItem={
+ id:string; title:string; organization:string; category:string;
+ stage:"Application Open"|"Upcoming"|"Admit Card"|"Answer Key"|"Result"|"Recruitment";
+ status:"Verified official"; lastChecked:string; officialUrl:string;
+ notificationUrl?:string; applyUrl?:string; applicationLastDate?:string; examDate?:string; qualification?:string; description:string;
+};
+
 export default function NotificationsPage(){
- const merged=[...autoNotifications,...notifications.filter(n=>!autoNotifications.some(a=>a.notificationUrl===n.notificationUrl))];
+ const merged:NotificationCardItem[]=[...autoNotifications,...notifications.filter(n=>!autoNotifications.some(a=>a.notificationUrl===n.notificationUrl))];
  const open=merged.filter(n=>n.stage==="Application Open");
  const other=merged.filter(n=>n.stage!=="Application Open");
  return <main className="directoryPage"><div className="wrap">
@@ -18,6 +25,6 @@ export default function NotificationsPage(){
   <section className="section compact"><div className="alertPanel"><div><span className="eyebrow">ALERTS</span><h2>Don&apos;t miss important dates.</h2><p>Automatic source checking is active through the repository scheduler. Exam save karna local hai; email/push alerts ke liye account backend alag se connect karna hoga.</p></div><a className="primaryLink" href="/#exams">Save an exam →</a></div></section>
  </div></main>
 }
-function NotificationCard({n}:{n:(typeof notifications)[number]|(typeof autoNotifications)[number]}){
+function NotificationCard({n}:{n:NotificationCardItem}){
  return <article className="notificationCard"><div className="examMeta"><span className="tag">{n.stage}</span><span className="verified">✓ {n.status}</span></div><h3>{n.title}</h3><p className="org">{n.organization} · {n.category}</p><div className="miniFacts">{n.applicationLastDate&&<div><small>Last date</small><b>{n.applicationLastDate}</b></div>}{n.examDate&&<div><small>Exam date</small><b>{n.examDate}</b></div>}{n.qualification&&<div><small>Qualification</small><b>{n.qualification}</b></div>}<div><small>Last checked</small><b>{n.lastChecked}</b></div></div><p>{n.description}</p><div className="cardLinks"><a className="primaryLink" href={n.notificationUrl||n.officialUrl} target="_blank" rel="noopener noreferrer">Original notice ↗</a>{n.applyUrl&&<a href={n.applyUrl} target="_blank" rel="noopener noreferrer">Apply ↗</a>}</div></article>
 }
