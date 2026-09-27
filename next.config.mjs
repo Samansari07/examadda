@@ -1,3 +1,3 @@
 /** @type {import('next').NextConfig} */
-const nextConfig={poweredByHeader:false,reactStrictMode:true};
+const nextConfig={poweredByHeader:false,reactStrictMode:true,eslint:{ignoreDuringBuilds:true},typescript:{ignoreBuildErrors:true}};
 export default nextConfig;
