@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// National source registry refresh trigger: 2026-09-27
 import fs from "node:fs/promises";
 
 const SOURCES = JSON.parse(await fs.readFile(new URL("../config/official-sources.json", import.meta.url), "utf8"));
