@@ -23,7 +23,7 @@ jobs:
   scan:
     name: Scan official sources batch ${{ matrix.batch }}
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 10
     strategy:
       fail-fast: false
       max-parallel: 8
@@ -32,23 +32,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-
       - name: Install PDF extractor
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq poppler-utils
-
       - name: Scan batch
+        timeout-minutes: 8
         env:
           SOURCE_BATCH: ${{ matrix.batch }}
           SOURCE_BATCH_COUNT: 8
         run: node scripts/check-official-batch.mjs
-
       - name: Upload batch result
         uses: actions/upload-artifact@v4
         with:
@@ -66,25 +63,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-
       - name: Download batch results
         uses: actions/download-artifact@v5
         with:
           pattern: official-batch-*
           path: official-refresh-batches
           merge-multiple: true
-
       - name: Validate batch coverage
         run: |
           count=$(find official-refresh-batches -name 'batch-*.json' | wc -l)
           echo "Batch files: $count"
           test "$count" -eq 8
-
       - name: Aggregate
         run: |
           node scripts/aggregate-official-data.mjs
@@ -93,7 +86,6 @@ jobs:
           test -s lib/auto-notifications.ts
           test -s lib/auto-exam-data.ts
           test -s lib/source-status.ts
-
       - name: Commit refreshed data
         run: |
           git config user.name "SarkariPrep Bot"
