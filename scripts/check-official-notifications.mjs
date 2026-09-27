@@ -39,7 +39,7 @@ const SOURCES=JSON.parse(await fs.readFile(new URL("../config/official-sources.j
 const EXAMS_TEXT=await fs.readFile(new URL("../lib/exams.ts",import.meta.url),"utf8");
 const KEYWORDS=/notification|notice|recruitment|vacanc|corrigendum|application|apply|admit card|answer key|result|calendar|schedule|examination|exam|shortlist|interview|extension|registration|provisional|final|advertisement|engagement|appointment|selection/i;
 const URL_HINTS=/notification|notice|recruit|vacanc|advert|corrig|application|apply|admit|hall.?ticket|answer.?key|result|calendar|schedule|exam|selection|appointment|pdf/i;
-const BAD_TITLES=/^\s*(home|about|contact|login|register|registration|click here|click here to view|menu|search|read more|view more|notifications?|notices?|announcements?|upcoming exams?|examinations?|recruitment|careers?|current openings?|online application|apply online|important links?|quick links?)\s*$/i;
+const BAD_TITLES=/^\s*(home|about|contact|login|register|registration|click here|click here to view|menu|search|read more|view more|notifications?|notices?|announcements?|upcoming exams?|examinations?|recruitment|careers?|current openings?|online application|apply online|important links?|quick links?|miscellaneous notice|general notice|important notice|exam calendar|exam calender|one time registration|proceed to registration|advertisement|recruitments?)\s*$/i;
 const BAD_TEMPLATE=/\{\{|\}\}|translate|_hm['"]/i;
 const STAGE=(title)=>{const t=title.toLowerCase();if(/admit card|hall ticket/.test(t))return"Admit Card";if(/answer key|response sheet/.test(t))return"Answer Key";if(/result|score card|cut.?off/.test(t))return"Result";if(/apply|application|registration|notification/.test(t))return"Application Open";if(/vacanc|recruitment|corrigendum|advertisement|engagement/.test(t))return"Recruitment";return"Upcoming"};
 const clean=(s)=>s.replace(/&nbsp;/gi," ").replace(/&amp;/gi,"&").replace(/&quot;/gi,'"').replace(/&#39;/gi,"'").replace(/<[^>]+>/g," ").replace(/\s+/g," ").trim();
@@ -57,7 +57,7 @@ function registryExams(){
 }
 const EXAMS=registryExams();
 const aliasFor=(e)=>{const s=e.slug.replace(/^family-/,"").replace(/[-_]+/g," ");const n=norm(e.name);const aliases=[s];if(/^[a-z0-9 ]+$/.test(s))aliases.push(...s.split(" ").filter(x=>x.length>=3));const acr=[...e.name.matchAll(/\b[A-Z][A-Z0-9-]{1,}\b/g)].map(x=>x[0].toLowerCase());aliases.push(...acr);return [...new Set(aliases.map(norm).filter(x=>x.length>=3))]};
-const matchExam=(title,source)=>{const t=norm(title);const pool=EXAMS.filter(e=>e.organization.toLowerCase()===source.organization.toLowerCase()||t.includes(norm(e.organization)));if(!pool.length)return null;const scored=pool.map(e=>{let score=0;for(const a of aliasFor(e)){if(t.includes(a))score=Math.max(score,a.includes(" ") ? 7 : 5)}const toks=norm(e.name).split(" ").filter(x=>x.length>3&&!["examination","recruitment","examination","posts","government"].includes(x));const hits=toks.filter(x=>t.includes(x)).length;if(hits>=2)score=Math.max(score,4);return{e,score}}).sort((a,b)=>b.score-a.score);if(!scored[0]||scored[0].score<5)return null;if(scored[1]&&scored[1].score===scored[0].score)return null;return scored[0].e};
+const matchExam=(title,source,evidenceText="")=>{const t=norm(title);const et=norm(evidenceText.slice(0,50000));const pool=EXAMS.filter(e=>e.organization.toLowerCase()===source.organization.toLowerCase()||t.includes(norm(e.organization)));if(!pool.length)return null;const scored=pool.map(e=>{let score=0;for(const a of aliasFor(e)){if(t.includes(a))score=Math.max(score,a.includes(" ") ? 7 : 5); if(et.includes(a))score=Math.max(score,a.includes(" ") ? 6 : 4)}const toks=norm(e.name).split(" ").filter(x=>x.length>3&&!["examination","recruitment","examination","posts","government"].includes(x));const hits=toks.filter(x=>t.includes(x)||et.includes(x)).length;if(hits>=2)score=Math.max(score,4);return{e,score}}).sort((a,b)=>b.score-a.score);if(!scored[0]||scored[0].score<5)return null;if(scored[1]&&scored[1].score===scored[0].score)return null;return scored[0].e};
 
 function extractNearbyDate(html,offset){ const before=html.slice(Math.max(0,offset-1800),offset); const m=before.match(/(?:posted|published|date|on|dated)[^\d]{0,80}(\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i)||before.match(/(\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})[^<]{0,30}$/i); return m?prettyDate(m[1]):undefined; }\n\nfunction extractLinks(html,source){
  const out=[];const seen=new Set();const re=/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;let m;
@@ -113,7 +113,7 @@ async function main(){
     if(!text)continue;
     const parsed=parseStructured(text);if(parsed.evidence.length<2)continue;
     const existing=overrides[exam.slug];
-    const confidence=parsed.evidence.length>=3?"high":"medium";
+    const confidence=parsed.evidence.length>=4?"high":"medium";
     if(!existing||confidence==="high"||(existing.confidence!=="high"&&parsed.evidence.length>existing.evidenceCount)){
       overrides[exam.slug]={...parsed.data,slug:exam.slug,name:exam.name,organization:exam.organization,notificationUrl:pdf||item.notificationUrl,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence,evidenceCount:parsed.evidence.length,evidence:parsed.evidence};
     }
