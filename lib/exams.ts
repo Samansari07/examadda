@@ -37,8 +37,23 @@ const familyExams:Exam[]=familySeeds.map(([slug,name,organization,category,quali
  status:"family",description:"Reference guide for "+name+". Current vacancies, dates, eligibility, fees and selection stages must be verified from the latest official notification."
 }));
 
-const cycleWithIntegrity=cycleExams.map(e=>({...e,status:"cycle" as const,dataStatus:"historical-reference" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl,vacancies:"See latest official notification",minAge:0,maxAge:100,qualifications:"Post-specific; see latest official notification",examDate:"See latest official notification",lastDate:"See latest official notification",description:e.description||"Historical 2026 cycle reference. Exact dates, vacancies and eligibility are not treated as live. Verify the latest official notification before applying."}));
+const cycleWithIntegrity=cycleExams.filter(e=>e.slug!=="ssc-cgl-2026").map(e=>({...e,status:"cycle" as const,dataStatus:"historical-reference" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl,vacancies:"See latest official notification",minAge:0,maxAge:100,qualifications:"Post-specific; see latest official notification",examDate:"See latest official notification",lastDate:"See latest official notification",description:e.description||"Historical 2026 cycle reference. Exact dates, vacancies and eligibility are not treated as live. Verify the latest official notification before applying."}));
 const verifiedCurrent:Exam[]=[{
+ slug:"ssc-cgl-2026",name:"SSC CGL 2026",organization:"Staff Selection Commission",category:"Central Government",
+ vacancies:"10,731 tentative (as on 24 September 2026)",minAge:18,maxAge:32,
+ qualifications:"Bachelor's degree for most posts; post-specific conditions apply",
+ categories:["General","OBC","SC","ST","EWS","PwBD"],
+ examDate:"Tier-I: 30 September–30 October 2026",
+ lastDate:"Application closed · 25 June 2026; correction 01–03 July 2026",
+ officialUrl:"https://ssc.gov.in",
+ salary:"Pay Level 4–8, post-wise",
+ status:"cycle",dataStatus:"official-verified",lastVerified:"2026-09-27",
+ sourceUrl:"https://ssc.gov.in/",
+ notificationUrl:"https://ssc.gov.in/",
+ applyUrl:"https://ssc.gov.in/",
+ description:"Current SSC CGL 2026 cycle. SSC published a tentative vacancy statement of 10,731 posts as on 24 September 2026. Tier-I is scheduled from 30 September to 30 October 2026. The official notification and later SSC notices remain controlling."
+},
+
  slug:"upsc-ese-2027",name:"UPSC Engineering Services (Preliminary) Examination 2027",organization:"UPSC",category:"Engineering",
  vacancies:"See official notification",minAge:21,maxAge:30,qualifications:"Engineering degree / prescribed qualification",
  categories:["General","OBC","SC","ST","EWS","PwBD"],examDate:"31 January 2027",lastDate:"06 October 2026 · 6:00 PM",
