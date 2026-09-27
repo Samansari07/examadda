@@ -1,5 +1,5 @@
 export type SyllabusTopic={subject:string;topics:string[]};
-export type ExamSyllabus={slug:string;title:string;status:"official-structured";sourceUrl:string;lastVerified:string;subjects:SyllabusTopic[]};
+export type ExamSyllabus={slug:string;title:string;status:"official-structured"|"official-source";sourceUrl:string;lastVerified:string;subjects:SyllabusTopic[]};
 
 export const syllabusBySlug:Record<string,ExamSyllabus>={
 
@@ -96,5 +96,6 @@ export const syllabusBySlug:Record<string,ExamSyllabus>={
 {subject:"Mains — General Hindi & General English",topics:["Essay","Precis","Comprehension","Grammar","Translation","Vocabulary","Correct usage"]},
 {subject:"Mains — General Studies",topics:["History","Geography","Polity","Economy","Science and technology","Environment","Current affairs","Jharkhand-specific studies"]},
 {subject:"Mains — Optional / prescribed papers",topics:["Subject-specific papers according to the current JPSC notification and rules"]}]
-}
+},
+
 };
