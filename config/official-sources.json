@@ -1,0 +1,507 @@
+[
+  {
+    "id": "upsc",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "region": "Central",
+    "updatesUrl": "https://www.upsc.gov.in/whats-new",
+    "applicationUrl": "https://upsconline.nic.in",
+    "scope": "Examinations, recruitment advertisements, admit cards, results, corrigenda and notices."
+  },
+  {
+    "id": "ssc",
+    "organization": "Staff Selection Commission",
+    "category": "Central Government",
+    "region": "Central",
+    "updatesUrl": "https://ssc.gov.in/",
+    "scope": "Recruitment notices, calendars, admit cards, answer keys and results."
+  },
+  {
+    "id": "ibps",
+    "organization": "IBPS",
+    "category": "Banking",
+    "region": "Central",
+    "updatesUrl": "https://www.ibps.in/index.php/crp-updates/",
+    "scope": "Banking recruitment notifications, corrigenda, calendars, results and vacancy updates."
+  },
+  {
+    "id": "nta",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "region": "Central",
+    "updatesUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "scope": "NTA examination/public notices including NEET, JEE Main, UGC-NET and CUET."
+  },
+  {
+    "id": "ctet",
+    "organization": "CTET",
+    "category": "Teaching",
+    "region": "Central",
+    "updatesUrl": "https://ctet.nic.in/",
+    "scope": "CTET bulletins, application notices, admit cards, answer keys and results."
+  },
+  {
+    "id": "railways",
+    "organization": "Indian Railways / RRB",
+    "category": "Railway",
+    "region": "Central",
+    "updatesUrl": "https://indianrailways.gov.in/",
+    "scope": "Railway recruitment information; regional RRB/CEN notice remains controlling source."
+  },
+  {
+    "id": "rbi",
+    "organization": "Reserve Bank of India",
+    "category": "Banking",
+    "region": "Central",
+    "updatesUrl": "https://opportunities.rbi.org.in/",
+    "scope": "RBI recruitment opportunities and official recruitment notices."
+  },
+  {
+    "id": "sbi",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "region": "Central",
+    "updatesUrl": "https://sbi.co.in/web/careers",
+    "scope": "SBI recruitment advertisements, applications, admit cards and results."
+  },
+  {
+    "id": "lic",
+    "organization": "LIC",
+    "category": "Insurance",
+    "region": "Central",
+    "updatesUrl": "https://licindia.in/careers",
+    "scope": "LIC recruitment and career notices."
+  },
+  {
+    "id": "epfo",
+    "organization": "EPFO",
+    "category": "Central Government",
+    "region": "Central",
+    "updatesUrl": "https://www.epfindia.gov.in/site_en/Recruitments.php",
+    "scope": "EPFO recruitment notices and updates."
+  },
+  {
+    "id": "isro",
+    "organization": "ISRO",
+    "category": "Science & Engineering",
+    "region": "Central",
+    "updatesUrl": "https://www.isro.gov.in/Careers.html",
+    "scope": "ISRO careers and recruitment notices."
+  },
+  {
+    "id": "drdo",
+    "organization": "DRDO",
+    "category": "Science & Engineering",
+    "region": "Central",
+    "updatesUrl": "https://www.drdo.gov.in/careers",
+    "scope": "DRDO recruitment and career notices."
+  },
+  {
+    "id": "aiims",
+    "organization": "AIIMS",
+    "category": "Medical",
+    "region": "Central",
+    "updatesUrl": "https://www.aiimsexams.ac.in/",
+    "scope": "AIIMS examination and recruitment-related notices."
+  },
+  {
+    "id": "esic",
+    "organization": "ESIC",
+    "category": "Medical",
+    "region": "Central",
+    "updatesUrl": "https://www.esic.gov.in/recruitments",
+    "scope": "ESIC recruitment notices."
+  },
+  {
+    "id": "indiapost",
+    "organization": "India Post",
+    "category": "Central Government",
+    "region": "Central",
+    "updatesUrl": "https://indiapost.gov.in/gdsonlineengagement",
+    "scope": "India Post recruitment/engagement notices where published."
+  },
+  {
+    "id": "employment-news",
+    "organization": "Employment News",
+    "category": "Government Jobs",
+    "region": "Central",
+    "updatesUrl": "https://employmentnews.gov.in/",
+    "scope": "Government recruitment advertisements and Employment News listings."
+  },
+  {
+    "id": "andhra-pradesh-psc",
+    "organization": "Andhra Pradesh Public Service Commission",
+    "category": "State Government",
+    "region": "Andhra Pradesh",
+    "updatesUrl": "https://psc.ap.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "arunachal-pradesh-psc",
+    "organization": "Arunachal Pradesh Public Service Commission",
+    "category": "State Government",
+    "region": "Arunachal Pradesh",
+    "updatesUrl": "https://appsc.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "assam-psc",
+    "organization": "Assam Public Service Commission",
+    "category": "State Government",
+    "region": "Assam",
+    "updatesUrl": "https://apsc.nic.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "bihar-psc",
+    "organization": "Bihar Public Service Commission",
+    "category": "State Government",
+    "region": "Bihar",
+    "updatesUrl": "https://bpsc.bihar.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "chhattisgarh-psc",
+    "organization": "Chhattisgarh Public Service Commission",
+    "category": "State Government",
+    "region": "Chhattisgarh",
+    "updatesUrl": "https://psc.cg.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "goa-psc",
+    "organization": "Goa Public Service Commission",
+    "category": "State Government",
+    "region": "Goa",
+    "updatesUrl": "https://gpsc.goa.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "gujarat-psc",
+    "organization": "Gujarat Public Service Commission",
+    "category": "State Government",
+    "region": "Gujarat",
+    "updatesUrl": "https://gpsc.gujarat.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "haryana-psc",
+    "organization": "Haryana Public Service Commission",
+    "category": "State Government",
+    "region": "Haryana",
+    "updatesUrl": "https://hpsc.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "himachal-psc",
+    "organization": "Himachal Pradesh Public Service Commission",
+    "category": "State Government",
+    "region": "Himachal Pradesh",
+    "updatesUrl": "https://hppsc.hp.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "jk-psc",
+    "organization": "Jammu & Kashmir Public Service Commission",
+    "category": "State/UT Government",
+    "region": "Jammu & Kashmir",
+    "updatesUrl": "https://jkpsc.nic.in/",
+    "scope": "PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "jharkhand-psc",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "region": "Jharkhand",
+    "updatesUrl": "https://www.jpsc.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "karnataka-psc",
+    "organization": "Karnataka Public Service Commission",
+    "category": "State Government",
+    "region": "Karnataka",
+    "updatesUrl": "https://kpsc.kar.nic.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "kerala-psc",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "region": "Kerala",
+    "updatesUrl": "https://www.keralapsc.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "madhya-pradesh-psc",
+    "organization": "Madhya Pradesh Public Service Commission",
+    "category": "State Government",
+    "region": "Madhya Pradesh",
+    "updatesUrl": "https://mppsc.mp.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "maharashtra-psc",
+    "organization": "Maharashtra Public Service Commission",
+    "category": "State Government",
+    "region": "Maharashtra",
+    "updatesUrl": "https://mpsc.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "manipur-psc",
+    "organization": "Manipur Public Service Commission",
+    "category": "State Government",
+    "region": "Manipur",
+    "updatesUrl": "https://mpscmanipur.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "meghalaya-psc",
+    "organization": "Meghalaya Public Service Commission",
+    "category": "State Government",
+    "region": "Meghalaya",
+    "updatesUrl": "https://mpsc.meghalaya.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "mizoram-psc",
+    "organization": "Mizoram Public Service Commission",
+    "category": "State Government",
+    "region": "Mizoram",
+    "updatesUrl": "https://mpsc.mizoram.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "nagaland-psc",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "region": "Nagaland",
+    "updatesUrl": "https://npsc.nagaland.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "odisha-psc",
+    "organization": "Odisha Public Service Commission",
+    "category": "State Government",
+    "region": "Odisha",
+    "updatesUrl": "https://www.opsc.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "punjab-psc",
+    "organization": "Punjab Public Service Commission",
+    "category": "State Government",
+    "region": "Punjab",
+    "updatesUrl": "https://www.ppsc.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "rajasthan-psc",
+    "organization": "Rajasthan Public Service Commission",
+    "category": "State Government",
+    "region": "Rajasthan",
+    "updatesUrl": "https://rpsc.rajasthan.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "sikkim-psc",
+    "organization": "Sikkim Public Service Commission",
+    "category": "State Government",
+    "region": "Sikkim",
+    "updatesUrl": "https://spsc.sikkim.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "tamil-nadu-psc",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "region": "Tamil Nadu",
+    "updatesUrl": "https://www.tnpsc.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "telangana-psc",
+    "organization": "Telangana Public Service Commission",
+    "category": "State Government",
+    "region": "Telangana",
+    "updatesUrl": "https://www.tspsc.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "tripura-psc",
+    "organization": "Tripura Public Service Commission",
+    "category": "State Government",
+    "region": "Tripura",
+    "updatesUrl": "https://tpsc.tripura.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "uttar-pradesh-psc",
+    "organization": "Uttar Pradesh Public Service Commission",
+    "category": "State Government",
+    "region": "Uttar Pradesh",
+    "updatesUrl": "https://uppsc.up.nic.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "uttarakhand-psc",
+    "organization": "Uttarakhand Public Service Commission",
+    "category": "State Government",
+    "region": "Uttarakhand",
+    "updatesUrl": "https://psc.uk.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "west-bengal-psc",
+    "organization": "West Bengal Public Service Commission",
+    "category": "State Government",
+    "region": "West Bengal",
+    "updatesUrl": "https://psc.wb.gov.in/",
+    "scope": "State PSC recruitment, examinations, notices and results."
+  },
+  {
+    "id": "ncs",
+    "organization": "National Career Service",
+    "category": "Government Jobs",
+    "region": "All India",
+    "updatesUrl": "https://ncs.gov.in/devPortalList",
+    "scope": "Government employment-portal directory used for state/department source discovery."
+  },
+  {
+    "id": "india-gov-directory",
+    "organization": "National Portal of India",
+    "category": "Government Directory",
+    "region": "All India",
+    "updatesUrl": "https://www.india.gov.in/directory/public-utilities",
+    "scope": "Official government directory for state/UT departments, boards, commissions and institutions."
+  },
+  {
+    "id": "jharkhand-recruitment",
+    "organization": "Jharkhand Government Recruitment Portal",
+    "category": "State Government",
+    "region": "Jharkhand",
+    "updatesUrl": "https://recruitment.jharkhand.gov.in/",
+    "scope": "Jharkhand government recruitment source."
+  },
+  {
+    "id": "delhi-employment",
+    "organization": "Delhi Employment Portal",
+    "category": "State/UT Government",
+    "region": "Delhi",
+    "updatesUrl": "https://onlineemploymentportal.delhi.gov.in/",
+    "scope": "Delhi employment/recruitment source."
+  },
+  {
+    "id": "gujarat-employment",
+    "organization": "Gujarat Employment Portal",
+    "category": "State Government",
+    "region": "Gujarat",
+    "updatesUrl": "https://anubandham.gujarat.gov.in/",
+    "scope": "Gujarat employment/recruitment source."
+  },
+  {
+    "id": "haryana-employment",
+    "organization": "Haryana Employment Portal",
+    "category": "State Government",
+    "region": "Haryana",
+    "updatesUrl": "https://www.hrex.gov.in/",
+    "scope": "Haryana employment/recruitment source."
+  },
+  {
+    "id": "himachal-employment",
+    "organization": "Himachal Pradesh Employment Portal",
+    "category": "State Government",
+    "region": "Himachal Pradesh",
+    "updatesUrl": "https://eemis.hp.gov.in/",
+    "scope": "Himachal Pradesh employment/recruitment source."
+  },
+  {
+    "id": "jk-employment",
+    "organization": "Jammu & Kashmir Employment Portal",
+    "category": "State/UT Government",
+    "region": "Jammu & Kashmir",
+    "updatesUrl": "https://jakemp.nic.in/",
+    "scope": "Jammu & Kashmir employment/recruitment source."
+  },
+  {
+    "id": "karnataka-employment",
+    "organization": "Karnataka Employment Wing",
+    "category": "State Government",
+    "region": "Karnataka",
+    "updatesUrl": "https://itiemp.karnataka.gov.in/13/employment-wing/en",
+    "scope": "Karnataka employment/recruitment source."
+  },
+  {
+    "id": "kerala-employment",
+    "organization": "Kerala Employment Portal",
+    "category": "State Government",
+    "region": "Kerala",
+    "updatesUrl": "https://www.employment.kerala.gov.in/",
+    "scope": "Kerala employment/recruitment source."
+  },
+  {
+    "id": "madhya-pradesh-employment",
+    "organization": "Madhya Pradesh Employment Portal",
+    "category": "State Government",
+    "region": "Madhya Pradesh",
+    "updatesUrl": "https://mprojgar.gov.in/home",
+    "scope": "Madhya Pradesh employment/recruitment source."
+  },
+  {
+    "id": "maharashtra-employment",
+    "organization": "Maharashtra Employment Portal",
+    "category": "State Government",
+    "region": "Maharashtra",
+    "updatesUrl": "https://rojgar.mahaswayam.gov.in/#/home/index",
+    "scope": "Maharashtra employment/recruitment source."
+  },
+  {
+    "id": "odisha-employment",
+    "organization": "Odisha Employment Portal",
+    "category": "State Government",
+    "region": "Odisha",
+    "updatesUrl": "https://empmission.odisha.gov.in/Exchange/Entry.jsp",
+    "scope": "Odisha employment/recruitment source."
+  },
+  {
+    "id": "punjab-employment",
+    "organization": "Punjab Employment Portal",
+    "category": "State Government",
+    "region": "Punjab",
+    "updatesUrl": "https://www.pgrkam.com/",
+    "scope": "Punjab employment/recruitment source."
+  },
+  {
+    "id": "rajasthan-employment",
+    "organization": "Rajasthan Employment Portal",
+    "category": "State Government",
+    "region": "Rajasthan",
+    "updatesUrl": "https://rajemployment.rajasthan.gov.in/",
+    "scope": "Rajasthan employment/recruitment source."
+  },
+  {
+    "id": "tamil-nadu-employment",
+    "organization": "Tamil Nadu Employment Portal",
+    "category": "State Government",
+    "region": "Tamil Nadu",
+    "updatesUrl": "https://tnvelaivaaippu.gov.in/",
+    "scope": "Tamil Nadu employment/recruitment source."
+  },
+  {
+    "id": "uttar-pradesh-employment",
+    "organization": "Uttar Pradesh Employment Portal",
+    "category": "State Government",
+    "region": "Uttar Pradesh",
+    "updatesUrl": "http://sewayojan.up.nic.in/",
+    "scope": "Uttar Pradesh employment/recruitment source."
+  },
+  {
+    "id": "west-bengal-employment",
+    "organization": "West Bengal Employment Bank",
+    "category": "State Government",
+    "region": "West Bengal",
+    "updatesUrl": "https://employmentbankwb.gov.in/index.php",
+    "scope": "West Bengal employment/recruitment source."
+  }
+]
