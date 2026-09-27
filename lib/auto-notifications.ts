@@ -1,6 +1,6 @@
 export type AutoNotification = {
   id:string; title:string; organization:string; category:string;
-  stage:"Application Open"|"Upcoming"|"Admit Card"|"Answer Key"|"Result"|"Recruitment";
+  stage:"Application Open"|"Upcoming"|"Admit Card"|"Answer Key"|"Result"|"Recruitment"|"Notice";
   status:"Verified official"|"Detected on official source"; publishedDate?:string; lastChecked:string;
   officialUrl:string; notificationUrl?:string; description:string;
 };
@@ -8,70 +8,47 @@ export type AutoNotification = {
 export const autoNotificationMeta = {
   "generatedAt": "2026-09-28",
   "sourceCount": 64,
-  "successfulSources": 33,
+  "successfulSources": 32,
   "failedSources": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    "Haryana Public Service Commission",
+    "Tamil Nadu Public Service Commission",
+    "Jharkhand Government Recruitment Portal",
+    "Madhya Pradesh Employment Portal",
+    "Andhra Pradesh Public Service Commission",
+    "Himachal Pradesh Public Service Commission",
+    "Telangana Public Service Commission",
+    "Maharashtra Employment Portal",
+    "IBPS",
+    "Jammu & Kashmir Public Service Commission",
+    "Tripura Public Service Commission",
+    "Gujarat Employment Portal",
+    "Odisha Employment Portal",
+    "Assam Public Service Commission",
+    "Haryana Employment Portal",
+    "CTET",
+    "Bihar Public Service Commission",
+    "Uttarakhand Public Service Commission",
+    "Himachal Pradesh Employment Portal",
+    "Indian Railways / RRB",
+    "ESIC",
+    "Chhattisgarh Public Service Commission",
+    "Punjab Public Service Commission",
+    "West Bengal Public Service Commission",
+    "Jammu & Kashmir Employment Portal",
+    "Tamil Nadu Employment Portal",
+    "Madhya Pradesh Public Service Commission",
+    "Rajasthan Public Service Commission",
+    "Karnataka Employment Wing",
+    "Gujarat Public Service Commission",
+    "Sikkim Public Service Commission",
+    "West Bengal Employment Bank"
   ],
   "sourcePolicy": "Parallel direct official-source checks with retries and curl fallback. Detected links are never treated as authoritative over the original notice."
 };
 
 export const autoNotifications:AutoNotification[] = [
   {
-    "id": "auto-aiims-aHR0cHM6Ly93d3cuYWlpbXNleGFt",
-    "title": "notifications Notices",
-    "organization": "AIIMS",
-    "category": "Medical",
-    "stage": "Application Open",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://www.aiimsexams.ac.in/",
-    "notificationUrl": "https://www.aiimsexams.ac.in/landingpage/notice",
-    "description": "Detected automatically from the registered official AIIMS source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-aiims-aHR0cHM6Ly93d3cuYWlpbXNleGFt",
-    "title": "work Recruitments",
-    "organization": "AIIMS",
-    "category": "Medical",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://www.aiimsexams.ac.in/",
-    "notificationUrl": "https://www.aiimsexams.ac.in/landingpage/courses/undefined",
-    "description": "Detected automatically from the registered official AIIMS source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-arunachal-pradesh-psc-aHR0cHM6Ly9hcHBzYy5nb3YuaW4v",
+    "id": "auto-arunachal-pradesh-psc-e53ad6929de8d4aa",
     "title": "Answer Key Challenge",
     "organization": "Arunachal Pradesh Public Service Commission",
     "category": "State Government",
@@ -83,7 +60,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Arunachal Pradesh Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-arunachal-pradesh-psc-aHR0cHM6Ly9hcHBzYy5nb3YuaW4v",
+    "id": "auto-arunachal-pradesh-psc-c426957caccccd62",
     "title": "FINAL RESULT NOTIFICATION OF TRAINED GRADUATE TEACHER EXAMINATION - 2026 (SECONDARY LEVEL)",
     "organization": "Arunachal Pradesh Public Service Commission",
     "category": "State Government",
@@ -95,163 +72,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Arunachal Pradesh Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-ctet-aHR0cHM6Ly9jZG5iYnNyLnMzd2Fh",
-    "title": "CTET PUBLIC NOTICE SEPT 2026",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/2026051163782266.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-aHR0cHM6Ly9jdGV0Lm5pYy5pbi9k",
-    "title": "Duplicate Certificate and Marksheet of CTET Examination upto 2016",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://ctet.nic.in/duplicate-marks-sheet-and-certificate/",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-aHR0cHM6Ly9jdGV0Lm5pYy5pbi9w",
-    "title": "FINAL ANSWER KEY",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Answer Key",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://ctet.nic.in/previous-year-final-answer-key/",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-aHR0cHM6Ly9jZG5iYnNyLnMzd2Fh",
-    "title": "Office Memorandum, dated 19 Aug 2018 : Guidelines for conducting written examination for Persons with Benchmark Disabilities",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032515.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-aHR0cHM6Ly9jZG5iYnNyLnMzd2Fh",
-    "title": "PUBLIC NOTICE : Validity Period of TET qualifying certificate",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/04/2022042551.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-aHR0cHM6Ly9jZG5iYnNyLnMzd2Fh",
-    "title": "PUBLIC NOTICE &#8211; CTET Feb 2026 &#8211; RESULT",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/03/202603311458590440.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-aHR0cHM6Ly9jZG5iYnNyLnMzd2Fh",
-    "title": "Public Notice: Calculation Sheet / Copy of OMR",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/04/202604011187448306.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-aHR0cHM6Ly9jZG5iYnNyLnMzd2Fh",
-    "title": "Public Notice: CTET Feb-2026 Key Challenge / Scanned Images of OMR (last Date 15/03/2026,up-to 11:59 PM)",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/03/202603121086699841.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-aHR0cHM6Ly9jZG5iYnNyLnMzd2Fh",
-    "title": "PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/06/202606151389616278.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-aHR0cHM6Ly9jZG5iYnNyLnMzd2Fh",
-    "title": "PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW (last date 10.09.2026)",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260907461266783.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-aHR0cHM6Ly9jZG5iYnNyLnMzd2Fh",
-    "title": "PUBLIC NOTICE: Exam Dates for 22nd edition of CTET",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260914325514446.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-aHR0cHM6Ly9jZG5iYnNyLnMzd2Fh",
-    "title": "Public Notice: re opening of Online Applications for the 22nd Edition of CTET",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Application Open",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/08/20260825641447501.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-aHR0cHM6Ly9jZG5iYnNyLnMzd2Fh",
-    "title": "re-exam PUBLIC NOTICE: Dated 24/02/2026",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-28",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/02/202602251588838774.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-indiapost-aHR0cHM6Ly9pbmRpYXBvc3QuZ292",
+    "id": "auto-indiapost-07c5e2d3ebaf0e02",
     "title": "GDS Online Engagement",
     "organization": "India Post",
     "category": "Central Government",
@@ -263,7 +84,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official India Post source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-indian-navy-aHR0cHM6Ly93d3cuam9pbmluZGlh",
+    "id": "auto-indian-navy-fa8644a3bdd1f55d",
     "title": "10+2 B.Tech Cadet Entry Jan 27 - Callups for SSBs scheduled in Sep 26 issued. Login to download.",
     "organization": "Indian Navy",
     "category": "Defence",
@@ -275,7 +96,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Indian Navy source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-indian-navy-aHR0cHM6Ly93d3cuam9pbmluZGlh",
+    "id": "auto-indian-navy-fc8ce075b9325362",
     "title": "Application window for AVR MR (Musician) 02/26 batch extended till 30 Apr 26. (Closed)",
     "organization": "Indian Navy",
     "category": "Defence",
@@ -287,7 +108,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Indian Navy source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-indian-navy-aHR0cHM6Ly93d3cuam9pbmluZGlh",
+    "id": "auto-indian-navy-bee893c1c1b93ff0",
     "title": "IN Calendar - 2026",
     "organization": "Indian Navy",
     "category": "Defence",
@@ -299,11 +120,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Indian Navy source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-indian-navy-aHR0cHM6Ly93d3cuam9pbmluZGlh",
+    "id": "auto-indian-navy-e27dc2d13522507d",
     "title": "Instructions for Written Exam",
     "organization": "Indian Navy",
     "category": "Defence",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.joinindiannavy.gov.in/",
@@ -311,7 +132,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Indian Navy source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-indian-navy-aHR0cHM6Ly93d3cuam9pbmluZGlh",
+    "id": "auto-indian-navy-91b73e4c87bdae3a",
     "title": "Online application for AVR (SSR), AVR (MR) and SSR (Med) for INET 26 is live from 14 Mar 26. Download advertisements. (Closed)",
     "organization": "Indian Navy",
     "category": "Defence",
@@ -323,7 +144,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Indian Navy source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-indian-navy-aHR0cHM6Ly93d3cuam9pbmluZGlh",
+    "id": "auto-indian-navy-9125f9ee650650e3",
     "title": "Online application window for 10+2 B.Tech Cadet entry for Jan 27 course is extended upto 29 Jun 26. Login to apply. (Closed)",
     "organization": "Indian Navy",
     "category": "Defence",
@@ -335,7 +156,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Indian Navy source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-indian-navy-aHR0cHM6Ly93d3cuam9pbmluZGlh",
+    "id": "auto-indian-navy-7d82d03870195519",
     "title": "Online application window for SSC (various entries) Jan 27 Course is live. Download Advertisement. Login to apply. (Closed)",
     "organization": "Indian Navy",
     "category": "Defence",
@@ -347,7 +168,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Indian Navy source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-indian-navy-aHR0cHM6Ly93d3cuam9pbmluZGlh",
+    "id": "auto-indian-navy-c3a0788734861286",
     "title": "Online application window for SSC (various entries) Jun 27 Course is extended upto 03 Aug 26. Login to apply. (Closed)",
     "organization": "Indian Navy",
     "category": "Defence",
@@ -359,11 +180,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Indian Navy source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-indian-navy-aHR0cHM6Ly93d3cuam9pbmluZGlh",
+    "id": "auto-indian-navy-d1312a04e1163834",
     "title": "Selection procedure",
     "organization": "Indian Navy",
     "category": "Defence",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.joinindiannavy.gov.in/",
@@ -371,11 +192,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Indian Navy source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-indian-navy-aHR0cHM6Ly93d3cuam9pbmluZGlh",
+    "id": "auto-indian-navy-0c5072b51a327a3c",
     "title": "Selection Procedure",
     "organization": "Indian Navy",
     "category": "Defence",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.joinindiannavy.gov.in/",
@@ -383,7 +204,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Indian Navy source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-indian-navy-aHR0cHM6Ly93d3cuam9pbmluZGlh",
+    "id": "auto-indian-navy-e4eced0bd6af1631",
     "title": "SSC - Jun 27 Course - Callups for SSBs scheduled in Nov - Dec 26 issued. Login to download.",
     "organization": "Indian Navy",
     "category": "Defence",
@@ -395,7 +216,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Indian Navy source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-49ea6cc13a2dfc22",
     "title": "Admit Card Download Link – CBT For Recruitment Of Assistants, Junior Personal Assistants, Upper Division Clerks & Stenographers (Advertisement No.: ISRO:ICRB:01(A-JPA):2026 dated 27-07-2026 & Corrigendum dated 11-08-2026) Scheduled to be Held on 21-09-2026. Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -407,7 +228,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-93694548b579540b",
     "title": "Advertisement No. DS_IX-14011/1/2026-Section_9-DOS dated 12.08.2026 - Inviting applications for the post of Director (T&S) in NewSpace India Limited (NSIL) on Immediate Absorption basis. Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -419,7 +240,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-d18b8d371dbb2346",
     "title": "Advt No. DS_IX-14011/1/2024-Section_9-DOS dated 21.08.2026 - Inviting applications for the post of Chairman-cum-Managing Director in NSIL on Deputation/Contract Basis Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -431,7 +252,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-f43d7aa6e0241ca3",
     "title": "Advt No. ISRO:ICRB:02(EMC):2025 dated 27.05.2025 - Schedule of Interview for the post of Scientist/Engineer ‘SC’ [Mechanical] - BE002 - Phase-IV Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -443,7 +264,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-027e6b845c47a84b",
     "title": "Advt No. ISRO:ICRB:03(EMC):2026 dated 27-08-2026 - Inviting applications for the post of Scientist/Engineer ‘SC’ Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -455,7 +276,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-f4121771caa69a39",
     "title": "Advt No. LPSC/02/2026 dated 15.08.2026 Recruitment to the post of Technical Assistant, Technician 'B', Draughtsman 'B' and Fireman 'A' in LPSC. Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -467,7 +288,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-4c7b38e56c098b8b",
     "title": "Advt No. SAC:02:2026 dated 10.09.2026 - Inviting online applications for the posts of Junior Research Fellows, Research Associate and Project Scientist-I. Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -479,7 +300,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-5810e5a48e6d1e85",
     "title": "ADVT. NO. 01/2026 dated 25-07-2026 - Recruitment to the post of Administrative Officer, Accounts Officer, Purchase and Stores Officer Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -491,7 +312,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-2e7d07f510cc5935",
     "title": "Advt. No. HSFC:01:RMT:2026 Dated.10.08.2026 Recruitment to the post of Scientist/Engineer - SD Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -503,7 +324,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-d75d46432e3a654e",
     "title": "Advt. No. IPRC/RMT/2026/01 dated 12.09.2026 - Inviting online applications for the posts of Technical Assistant, Technician 'B', Cook 'A' and Fireman 'A'. Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -515,11 +336,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-b233fa4b73263639",
     "title": "Advt. No. ISRO:ICRB:02(EMC-CEPO):2026 dated 28-07-2026 - List of candidates screened-in for interview Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
@@ -527,7 +348,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-3ab90b393ed54006",
     "title": "Advt. No. ISTRAC:02:2026 dated 27.06.2026 - Download Admit Card for Computer Based Test (CBT) Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -539,7 +360,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-771a32497e47f2c6",
     "title": "Advt. No. NRSC/RMT/1/2026 Dated.01.08.2026 Recruitment to the post of Temporary Research Personnel (Research Scientist,Project Associate-I,Project Associate-II,Project Scientist-I,Project Scientist-B,Junior Research Fellow ) Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -551,7 +372,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-b7fdf26a0f380ae7",
     "title": "Advt. No. SDSC SHAR/RMT/02/2026 dated June 23, 2026 - Recruitment to the position of Research Associat (RA-I). Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -563,7 +384,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-7d20f47b5cd16ab6",
     "title": "Advt. No. URSC:03:2026 Dated:29.07.2026 - INVITING ONLINE APPLICATIONS FOR ENGAGEMENT OF CANDIDATES AS GRADUATE AND DIPLOMA APPRENTICES IN DIFFERENT STREAMS AT URSC, BENGALURU. THE LINK FOR RECEIPT OF ONLINE APPLICATIONS WILL BE ACTIVE FROM 29.07.2026 TO 28.08.2026. Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -575,7 +396,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-b62d1717ae852663",
     "title": "ADVT. NO.NESAC/RMT-TEMP/WI-02/2026 dated 17.07.2026 - Recruitment for the positions of Research Scientists, Junior Research Fellows and Project Associate - I Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -587,7 +408,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-isro-aHR0cHM6Ly93d3cuaXNyby5nb3Yu",
+    "id": "auto-isro-b4c9d6ecdc9c30a4",
     "title": "Selection Panel for the post of Medical Officer- 'SC' against Advertisement No. URSC:01:2026 dated 21.03.2026. Read More",
     "organization": "ISRO",
     "category": "Science & Engineering",
@@ -599,7 +420,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-0b26468152a5a3ac",
     "title": "Advertisements",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -611,11 +432,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-a93e5a3215b28be2",
     "title": "Exam Information �",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.jpsc.gov.in/",
@@ -623,7 +444,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-d632f1bed14936bf",
     "title": "Examination Calendar-2026",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -635,11 +456,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-592058e1dd83cce0",
     "title": "Important Jharkhand Govt. Circular and Notices",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.jpsc.gov.in/",
@@ -647,11 +468,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-9b84092d95fc89f7",
     "title": "JPSC Circular & Notices",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.jpsc.gov.in/",
@@ -659,7 +480,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-8f842f583d9dc0d8",
     "title": "Know your Registration No. and Bank Reference No. of Accounts Officer Advt. No. 06/2017",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -671,7 +492,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-afdc41612096573c",
     "title": "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -683,11 +504,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-2b103e0cd8a96e4c",
     "title": "Notice/ Press Release",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.jpsc.gov.in/",
@@ -695,7 +516,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly9qcHNjb3RyLmNvbS8",
+    "id": "auto-jharkhand-psc-6d5adf1953cb171d",
     "title": "One Time Registration (OTR)",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -707,7 +528,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-83f1f31fa505c802",
     "title": "Online Application Form (OAS)",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -719,11 +540,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-637e934b073804ed",
     "title": "Press release regarding Combined Civil Services Main Examination Advt.No.01/2026 uploaded date :14-07-2026",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.jpsc.gov.in/",
@@ -731,11 +552,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-c81eb535f46f2eea",
     "title": "Press Release regarding Combined Civil Services Main Examination Uploaded date:-09-07-2026",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.jpsc.gov.in/",
@@ -743,7 +564,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-4996e1c2484128ee",
     "title": "Press Release regarding Email ID for general queries recruitment & legal matters uploaded Date 18-12-2025",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -755,7 +576,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-ed88a7150ef54438",
     "title": "Press release regarding recruitment of Civil Judge (Junior Division) Main Examination Advt.No.-22/2023 (17-07-2026)",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -767,7 +588,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-0643b4ca5330d789",
     "title": "Press release regarding Recruitment of Forest Range Officer and Assistant Conservator of Forest (Advt.No.-04/2024 and 03/2024) Dtd.10-08-2026",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -779,11 +600,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-bb54486f7c001869",
     "title": "Previous Exam Question Paper(s)",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.jpsc.gov.in/",
@@ -791,11 +612,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-56190778469045e4",
     "title": "Public Notice",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.jpsc.gov.in/",
@@ -803,11 +624,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-4cda18614985865e",
     "title": "Recent Examinations/Interview",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.jpsc.gov.in/",
@@ -815,7 +636,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-7bf609cd6d514aa3",
     "title": "Recruitment for Non-Teaching Posts in Universities of Jharkhand, Advt. No.23/2023",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -827,7 +648,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-6f0ab184d884a8b8",
     "title": "Recruitment of 6th limited Deputy Collector, Advt. No.11/2018",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -839,7 +660,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-3fe0e34d92974a9c",
     "title": "Recruitment of Assistant Conservator of Forest,Advt.No.-03/2024",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -851,7 +672,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-fd3cd47ff46bf182",
     "title": "Recruitment of Assistant Director/Senior Scientific Officer (Backlog), Advt. No. 10/2025",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -863,7 +684,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-90a2b7305d584c3d",
     "title": "Recruitment of Assistant Director/Senior Scientific Officer (Regular), Advt. No. 11/2025",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -875,7 +696,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-3421fc0a39716932",
     "title": "Recruitment of Assistant Professor in Government Engineering colleges (Backlog),Advt.No.-02/2026",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -887,7 +708,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-091c9c132b90612d",
     "title": "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -899,7 +720,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-9cc2b01cb2a582c2",
     "title": "Recruitment of Assistant Professor-cum-Junior Scientist (Regular),Advt.No.-12/2023",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -911,7 +732,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-c4e54d02add8b089",
     "title": "Recruitment of Assistant Professors (Backlog) in Universities of Jharkhand Advt.No. 05/2018",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -923,7 +744,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-6a67562d9a9def3d",
     "title": "Recruitment of Assistant Professors (Regular) in Universities of Jharkhand Advt.No. 04/2018",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -935,7 +756,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-80fa072643400197",
     "title": "Recruitment of Assistant Public Prosecutor (Backlog),Advt.No.-05/2025",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -947,7 +768,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-3b568029db13200b",
     "title": "Recruitment of Assistant Public Prosecutor (Regular),Advt.No.-06/2025",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -959,7 +780,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-1f3f1e10087efadf",
     "title": "Recruitment of Associate Professor cum Senior Scientist in Ranchi Agriculture College Under Birsa Agricultural University, Advt. No. 19/2017",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -971,7 +792,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-b84af4f05f250857",
     "title": "Recruitment of Associate Professor-cum-Senior Scientist (Regular),Advt.No.-11/2023",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -983,7 +804,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-9d6292f0313dcb28",
     "title": "Recruitment of Associate Professor-cum-Senior Scientist (Regular),Advt.No.-17/2023",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -995,7 +816,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-86df5a2a1f62c614",
     "title": "Recruitment of Associate Professor-Cum-Senior Scientist in Ranchi Veterinary College Under Birsa Agricultural University, Advt. No.23/2017",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1007,7 +828,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-b41482f9ef839c9c",
     "title": "Recruitment of Associate Professors in all universities of Jharkhand, Advt No.-41/2016",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1019,7 +840,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-d0b1ed4aff657512",
     "title": "Recruitment of Ayurvedic Medical Officer (Regular),Advt.No.-09/2022",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1031,7 +852,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-c62c4d24d9962c54",
     "title": "Recruitment of Boiler Inspector Advt.No.-02/2025",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1043,7 +864,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-55b841b1fd23445e",
     "title": "Recruitment of Civil Judge (Junior Division),Advt.No.-22/2023",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1055,7 +876,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-5f673d0b1077b568",
     "title": "Recruitment of Dean in Ranchi Agriculture College Under Birsa Agricultural University, Advt. No. 18/2017.",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1067,7 +888,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-dfed8a0ee00cfa42",
     "title": "Recruitment of Director Advt.No.-07/2025",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1079,7 +900,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-09075adccaf4ecfe",
     "title": "Recruitment of Drug Inspector Advt.No.-12/2025",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1091,7 +912,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-b3a0fc3be5d9731c",
     "title": "Recruitment of Food Analyst,Advt. No.-05/2024",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1103,7 +924,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-f8fb5e3b86dc82ec",
     "title": "Recruitment of Forest Range Officer,Advt.No.-04/2024",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1115,7 +936,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-9c45b7da95443d75",
     "title": "Recruitment of Homeopathic Medical Officer (Regular),Advt.No.-10/2022",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1127,7 +948,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-f621862df5026193",
     "title": "Recruitment of Inspector of Factories Advt.No.-01/2025",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1139,7 +960,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-3a54ed8b71cb7c1e",
     "title": "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2023 Advt.No.-06/2026",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1151,7 +972,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-11b40353bd3574c0",
     "title": "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1163,7 +984,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-3f43f7cbf735c73f",
     "title": "Recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1175,7 +996,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-fbd90d5328a96473",
     "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women&#039;s Polytechnic(Backlog),Advt.No.-03/2026",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1187,7 +1008,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-0c63a95a104cd26a",
     "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women&#039;s Polytechnic(Regular), Advt.No.-04/2026",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1199,7 +1020,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-0a13afc7e7158b4e",
     "title": "Recruitment of Non-Teaching Posts in Universities of Jharkhand. Advt. No. 09/2025",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1211,7 +1032,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-c7a1dd0756dd8478",
     "title": "Recruitment of Professor, Associate Professor, Assistant Professor and Assistant Librarian in Jharkhand Raksha Shakti University, Ranchi, Advt. No. 02/2021",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1223,7 +1044,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-23f07bc2b7a5bda3",
     "title": "Recruitment of Professors in all universities of Jharkhand, Advt No.-40/2016",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1235,7 +1056,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-fb1f5c612ff244b2",
     "title": "Recruitment of Project Manager and equivalent,advt.No.-04/2025",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1247,7 +1068,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-6df3e3c14b82070a",
     "title": "Recruitment of Unani Medical Officer (Regular),Advt.No.-11/2022",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1259,7 +1080,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-e1d2563e9dbd5b27",
     "title": "Recruitment of university Professor-cum-chief Scientist (Regular),Advt.No.-10/2023",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1271,7 +1092,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-d506da366d19762d",
     "title": "Recruitment of University Professor-Cum-Chief Scientist in Ranchi Veterinary College Under Birsa Agricultural University, Advt. No. 08/2017",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1283,7 +1104,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-0a027ba8038bc5d5",
     "title": "Results/ Answer Keys",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1295,7 +1116,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-jharkhand-psc-aHR0cHM6Ly93d3cuanBzYy5nb3Yu",
+    "id": "auto-jharkhand-psc-962fc114b86e9b8c",
     "title": "The Jharkhand Examination (Measures Control and Prevention of Unfair Means in Recruitment) Act, 2023 (Jharkhand Act, 15,2023) uploaded date :29-11-2023",
     "organization": "Jharkhand Public Service Commission",
     "category": "State Government",
@@ -1307,7 +1128,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-employment-aHR0cHM6Ly9lZW1wbG95bWVudC5r",
+    "id": "auto-kerala-employment-e943aee081fbe573",
     "title": "Online Registration",
     "organization": "Kerala Employment Portal",
     "category": "State Government",
@@ -1319,7 +1140,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Employment Portal source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cua2VyYWxhcHNj",
+    "id": "auto-kerala-psc-37c45556314fa75d",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -1331,7 +1152,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cua2VyYWxhcHNj",
+    "id": "auto-kerala-psc-274a1d8e868c2d27",
     "title": "Answer key-Online Exam",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -1343,7 +1164,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cua2VyYWxhcHNj",
+    "id": "auto-kerala-psc-8c8ce17210be5dd1",
     "title": "Candidates Registration",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -1355,7 +1176,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cua2VyYWxhcHNj",
+    "id": "auto-kerala-psc-d9b4642e91559d29",
     "title": "Exam Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -1367,11 +1188,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cua2VyYWxhcHNj",
+    "id": "auto-kerala-psc-b789b81a3c6161aa",
     "title": "INTERVIEW - Assistant Professor in Community Medicine & Medical Gastroenterology (I NCA -Dheevara & III NCA - Muslim) - Medical Education (Cat.No.812/2025&895/25)",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.keralapsc.gov.in/",
@@ -1379,7 +1200,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cua2VyYWxhcHNj",
+    "id": "auto-kerala-psc-39e61c0337589778",
     "title": "Interview Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -1391,11 +1212,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cua2VyYWxhcHNj",
+    "id": "auto-kerala-psc-1a0737318f088aac",
     "title": "OMR Exam/ Online Exam - date change (Cat.No.187/25 , 188/25 , 451-453/25 & 629/25)",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.keralapsc.gov.in/",
@@ -1403,11 +1224,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cueW91dHViZS5j",
+    "id": "auto-kerala-psc-7fece0ffbd912272",
     "title": "Online Examination Video",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.keralapsc.gov.in/",
@@ -1415,7 +1236,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cua2VyYWxhcHNj",
+    "id": "auto-kerala-psc-1a0587f41dadec15",
     "title": "OTV Schedule and Driving Test",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -1427,11 +1248,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cua2VyYWxhcHNj",
+    "id": "auto-kerala-psc-1709d751f92d2140",
     "title": "Procedure for Interview Date Change Requests",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.keralapsc.gov.in/",
@@ -1439,11 +1260,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cua2VyYWxhcHNj",
+    "id": "auto-kerala-psc-8c1bb50db9d6dc08",
     "title": "PSC Examination updates",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.keralapsc.gov.in/",
@@ -1451,11 +1272,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cua2VyYWxhcHNj",
+    "id": "auto-kerala-psc-e89d8cfee71410b4",
     "title": "Question paper for Descriptive Examinations",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.keralapsc.gov.in/",
@@ -1463,7 +1284,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cua2VyYWxhcHNj",
+    "id": "auto-kerala-psc-31909921f02fd148",
     "title": "Reporting Vacancies",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -1475,11 +1296,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-aHR0cHM6Ly93d3cua2VyYWxhcHNj",
+    "id": "auto-kerala-psc-0c95777c26494c9d",
     "title": "Selection Pending for want",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.keralapsc.gov.in/",
@@ -1487,7 +1308,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-lic-aHR0cHM6Ly9saWNpbmRpYS5pbi9k",
+    "id": "auto-lic-88a255d7a0f1111e",
     "title": "Certificate of Registration (PoP) with PFRDA",
     "organization": "LIC",
     "category": "Insurance",
@@ -1499,7 +1320,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official LIC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-lic-aHR0cHM6Ly9saWNpbmRpYS5pbi9l",
+    "id": "auto-lic-34daaf95b0f069b8",
     "title": "Engagement of Chief Financial Officer- on contract basis",
     "organization": "LIC",
     "category": "Insurance",
@@ -1511,7 +1332,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official LIC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-lic-aHR0cHM6Ly9saWNpbmRpYS5pbi9y",
+    "id": "auto-lic-d34b124cde70b7df",
     "title": "Recruitment of AAO Generalists Specialists Assistant Engineers 2025",
     "organization": "LIC",
     "category": "Insurance",
@@ -1523,7 +1344,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official LIC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-manipur-psc-aHR0cHM6Ly9tcHNjbWFuaXB1ci5n",
+    "id": "auto-manipur-psc-215d3be19814771f",
     "title": "Final Results",
     "organization": "Manipur Public Service Commission",
     "category": "State Government",
@@ -1535,7 +1356,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-manipur-psc-aHR0cHM6Ly9tcHNjbWFuaXB1ci5n",
+    "id": "auto-manipur-psc-fab0926e6bd08712",
     "title": "Recruitment Advertisements",
     "organization": "Manipur Public Service Commission",
     "category": "State Government",
@@ -1547,7 +1368,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-manipur-psc-aHR0cHM6Ly9tcHNjbWFuaXB1ci5n",
+    "id": "auto-manipur-psc-d12aaab1691f5163",
     "title": "Schedule of Written Examination for Recruitment of Research Assistant in Planning Department Updated: 28/08/2026",
     "organization": "Manipur Public Service Commission",
     "category": "State Government",
@@ -1559,7 +1380,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-manipur-psc-aHR0cHM6Ly9tcHNjbWFuaXB1ci5n",
+    "id": "auto-manipur-psc-dfef64bcb0cb2c58",
     "title": "Schedule of Written Examination for Recruitment of Under Secretary (Law) and Law Officers in the Law & Legislative Affairs Department New Updated: 15/09/2026",
     "organization": "Manipur Public Service Commission",
     "category": "State Government",
@@ -1571,7 +1392,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-manipur-psc-aHR0cHM6Ly9tcHNjbWFuaXB1ci5n",
+    "id": "auto-manipur-psc-9a1104352518f745",
     "title": "Written Results",
     "organization": "Manipur Public Service Commission",
     "category": "State Government",
@@ -1583,7 +1404,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-bd014d85331ba1b7",
     "title": "Advertisements",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -1595,7 +1416,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-d1fb1f451ae638a0",
     "title": "CORRIGENDUM In reference to this Office Notice vide No. MPSC/Ex-C/ll/2023-2024/103, dated 1st May, 2025 the date(s) of the Personal Interview for the post of Junior Accounts Assistant under the Administrative Control of the Director of Accounts and Treasuries, Meghalaya (Sept, 2023) appearing at SI.1 shall be read as 6th, 7th & 8th May, 2025 instead of 6th, 7th and 9th May, 2025.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -1607,7 +1428,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-cbc91d3a38da7bea",
     "title": "CORRIGENDUM This is for general information of all candidates appearing in Govt Boys' Higher Secondary School, Tura that there is minor change to allotted Roll Nos. for the post of Inspector of Housing in Housing Department (April, 2025) (Morning Session) and for the post of Junior Engineer Grade -I (Civil) under various Department (April, 2025) in the Evening Session.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -1619,7 +1440,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-b3ffb31ec720bcd1",
     "title": "CORRIGENDUM This is for general information to all the concerned candidates that the Screening Test for the Post(s) of Food Safety Officer under the Commissionerate of Food Safety [April 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -1631,7 +1452,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-a7018450bd9565f8",
     "title": "Corrigendum/Addendum",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -1643,7 +1464,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9ycGEubWVnaGFsYXlh",
+    "id": "auto-meghalaya-psc-b18deeb291268506",
     "title": "Download Admit Card for Post after August 2025.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -1655,7 +1476,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tZWdyZWNydWl0bWVu",
+    "id": "auto-meghalaya-psc-490bb67a63427b49",
     "title": "Download Admit Card for Post prior to August 2025",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -1667,11 +1488,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-83ac4a4311b4506f",
     "title": "In partial modification to our Programme published vide Letter No.MPSC/EX-c/7/2023-2024/189, dated 4th November, 2025. the Competitive Examinations for the period is hereby confirmed for the following posts as shown below:- Assistant Employment Officer (Gazetted Group 'B') under the Directorate of Employment & Craftsmen Training Department of Labour, Employment & Skill Development [June 2025] Typist in various Heads of Department [July 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1679,7 +1500,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-dd8ee6369cb4dd0e",
     "title": "NOTICE CORRIGENDUM ON PROGRAMME OF EXAMINATION. Publicity Assistant cum Khasi Translator under the Directorate of Sericulture & Weaving Department of Textiles (March 2026) Wireman Instructor under the Directorate of Employment & Craftmen Training, Departmentof Labour Emplyment and Skill Development (March 2026) Librarian in the Directorate of Soil and Water Conservation Department (December 2025)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -1691,11 +1512,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-579ec8310f4dc493",
     "title": "NOTICE PROGRAMME OF EXAMINATION FOR THE MONTH OF AUGUST, 2026. Lower Division Assistant under the Heads of Department (July 2025)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1703,11 +1524,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-8e06a055629655b1",
     "title": "NOTICE PROGRAMME OF EXAMINATION FOR THE MONTH OF JANUARY, 2026. Library Assistant at State Central Library, Shillong (Non-Gazetted) [April 2025] Librarian in the Directorate of Information and Public Relations [April 2025] Assistant Soil & Conservation Officer (AS&WCO) under Soil and Water Conservation Department [June 2025] Liaison Officer in the Office of the Additional Resident Commissioner, Meghalaya House, Mumbai under General Administration (A) Department.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1715,11 +1536,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-461493f3a662360b",
     "title": "NOTICE PROGRAMME OF EXAMINATION FOR THE MONTH OF JUNE, 2026. Mechanic Motor Vehicle (M.V) Instructor under the Directorate of Employment & Craftsmen Training, Department of Labour, Employment & Skill Development [June 2025] Electrician Instructor under the Directorate of Employment & Craftsmen Training, Department of Labour Employment & Skill Develoment [June 2025] Sub Divisional Officer / Assistant Engineer (Electrical) under P.H.E Department [May 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1727,11 +1548,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-87ebfa8e48b444f1",
     "title": "NOTICE PROGRAMME OF PERSONAL INTERVIEW Mechanic Motor Vehicle (M.V) Instructor under the Directorate of Employment & Craftsmen Training, Department of Labour, Employment & Skill Development [June 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1739,11 +1560,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-567181e62efddbcf",
     "title": "NOTICE The Personal Interview has been fixed by the Commission for the Post(s) mentioned below:- Assistant Inspector of Excise under the Commissioner of Excise [Nov 2024] Lower Division Assistant in the various Heads of Department [Nov 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1751,11 +1572,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-6462b38821c686b1",
     "title": "NOTICE The Personal Interview has been fixed by the Commission for the Post(s) mentioned below:- Junior Informatics Officer in the Directorate of Information Technology & Communications Department (Sept - 2024) Primary Investigator/Computor under the Directorate of Economics & Statistics [Dec 2024] Field Assistant under the Directorate of Economics & Statistics [Dec 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1763,11 +1584,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-15d384d1f11c58c2",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of ASSISTANT ENGINEER (CIVIL) IN FISHERIES DEPARTMENT (DEC 2021) Account Assistant under the Directorate of Food Civil Supplies & Consumer Affairs [Dec 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1775,11 +1596,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-fbb16a1a2ab8dced",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Assistant Engineer-Group-B in the Office of the Chief Engineer Water Resources Department [May 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1787,11 +1608,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-f4ba21051e4403a2",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Assistant Inspector of Excise under the Commissioner of Excise [Nov 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1799,11 +1620,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-8c7ae6d6bc447fbc",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Draughtsman Grade-II/Surveyor Grade-II under the Directorate of Soil and Water Conservation [April 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1811,11 +1632,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-9e28b8e9c40d1e9e",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Field Assistant under the Directorate of Economics & Statistics [Dec 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1823,11 +1644,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-115defc73df37208",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Food Safety Officer under the Commissionerate of Food Safety [April 2025] Motor Vehicle Inspectors under Transport Department [April 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1835,11 +1656,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-879dde2c1a93650f",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of FOREST RANGERS UNDER THE OFFICE OF THE PRINCIPAL CHIEF CONSERVATOR OF FORESTS & HEADS OF FOREST FORCE, MEGHALAYA. (SEP 2023) FOREST RANGERS UNDER THE OFFICE OF PRINCIPAL CHIEF CONSERVATOR OF FOREST & HEAD OF FOREST FORCE, MEGHALAYA (APRIL 2018) Senior Scientific Assistant in the Mobile Forensic Crime Scene Unit under the Directorate of Forensic Science (Sept - 2024))",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1847,11 +1668,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-8daa00adfcebdbfe",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Inspector of Housing in Housing Department [April 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1859,11 +1680,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-0ad75e9bf9e6e478",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Junior Divisional Accountant under the Administrative Control of the Director of Accounts and Treasuries [Sept 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1871,11 +1692,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-429d1bdc6074c519",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Junior Engineer Grade - I (Civil) under Various Departments [April 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1883,11 +1704,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-b11369aa225c991e",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Junior Informatics Officer in the Directorate of Information Technology & Communications Department (Sept - 2024)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1895,11 +1716,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-4ce0c4f5e960ca8e",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Liaison Officer in the Office of the Officer on Special Duty, Meghalaya House, Guwahati and Meghalaya House, Vellore under General Admn.(A) Deptt [April 2025] Inspector of Legal Metrology in the Office of the Controller of Legal Metrology [April 2025] Junior Engineer Grade-I (Electrical) under P.H.E Department [April 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1907,11 +1728,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-6b5cd12ceefc5684",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Lower Division Assistant in the various Heads of Department [Nov 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1919,11 +1740,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-1060df787d80b5a0",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Lower Division Assistant under the Meghalaya (C) Secretariat [May 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1931,11 +1752,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-bcad07c7de6b4c4a",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Scientific Officer in the Mobile Forensic Crime Scene Unit under the Directorate of Forensic Science (Sept - 2024)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1943,11 +1764,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-ad79e3e9a2eaeef8",
     "title": "NOTICE This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Surveyor Grade-I in Housing Department [April 2025] Soil & Water Conservation Ranger (Overseer/Draughtsman-I) in the Office of the Directorate of Soil & Water Conservation[April 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1955,11 +1776,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-4b6e996c4b9bc1d0",
     "title": "NOTICE This is for general information to all the concerned candidates that the Screening Test for the Post(s) of Food Safety Officer under the Commissionerate of Food Safety [April 2025] has been postponed.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1967,7 +1788,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-e908e1b9eec7b3fb",
     "title": "Notification for Answer Keys",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -1979,11 +1800,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-29b69c62dccbbbba",
     "title": "Notification for Personal Interview",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -1991,11 +1812,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-5ee77b871678ecb0",
     "title": "Notification for Screening/Written Examination",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2003,11 +1824,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-a4fd753319525cf7",
     "title": "Notification for Viewing Marks",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2015,11 +1836,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-5aea3e8cd243a5e0",
     "title": "PROGRAMME FOR EXAMINATION. Assistant Librarian under Meghalaya Administrative Training Institute (December 2025)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2027,11 +1848,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-e9f21251c527c4a5",
     "title": "PROGRAMME FOR EXAMINATION. Investigator in the Directorate of Housing [March 2026] Sub Inspector of Supply in the Directorate of Food Civil Supplies and Consumer Affairs [Sep 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2039,11 +1860,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-0cd7d79b2a355edd",
     "title": "PROGRAMME FOR EXAMINATION. LABOUR INSPECTORS UNDER THE ADMINISTRATIVE CONTROL OF LABOUR DEPARTMENT (DEC 2021) Draftsman Grade-II Group-C in the Office of the Chief Engineer Water Resources Department [May 2025] INDUSTRIAL PROMOTION OFFICER OR ASSISTANT INDUSTRIES OFFICER OR ASSISTANT MANAGER,CFSW OR SUPERINTENDENT OF INDUSTRIES IN COMMERCE & INDUSTRIES DEPARTMENT [JAN 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2051,11 +1872,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-4f9e179ce5e16e6b",
     "title": "PROGRAMME FOR EXAMINATION. MEGHALAYA CIVIL SERVICE (MCS) [OCTOBER 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2063,11 +1884,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-ca3c380771e55e49",
     "title": "PROGRAMME FOR EXAMINATION. Scientific Officer for (Chemistry Division) under the Directorate of Forensic Science [May 2025] Senior Scientific Assistant in the Documents Division of the Directorate of Forensic Sciences [ April 2025)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2075,11 +1896,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-94096ebb6320690f",
     "title": "PROGRAMME FOR THE HALF YEARLY DEPARTMENTAL EXAMINATION FOR IAS & IPS OFFICERS DECEMBER, 2025.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2087,11 +1908,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-b30400d32c4bafb5",
     "title": "PROGRAMME FOR THE HALF YEARLY DEPARTMENTAL EXAMINATION FOR IAS & IPS OFFICERS FEBRUARY, 2025.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2099,11 +1920,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-a6a464f38191d3db",
     "title": "PROGRAMME FOR THE HALF YEARLY DEPARTMENTAL EXAMINATION FOR IAS & IPS OFFICERS JUNE, 2026.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2111,11 +1932,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-ecd32db9ad2f9848",
     "title": "PROGRAMME FOR THE HALF YEARLY DEPARTMENTAL EXAMINATION FOR IAS & IPS OFFICERS NOVEMBER, 2026.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2123,11 +1944,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-a9e419edd2b4d793",
     "title": "PROGRAMME FOR THE HALF YEARLY DEPARTMENTAL EXAMINATION FOR THE MEGHALAYA CIVIL SERVICES, MEGHALAYA POLICE SERVICES, MEGHALAYA FOREST SERVICES,CO-OPERATION, EXCISE AND LABOUR OFFICERS JANUARY, 2025.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2135,11 +1956,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-048fb043628e3123",
     "title": "PROGRAMME FOR THE HALF YEARLY DEPARTMENTAL EXAMINATION FOR THE MEGHALAYA CIVIL SERVICES, MEGHALAYA POLICE SERVICES, MEGHALAYA FOREST SERVICES,CO-OPERATION, EXCISE AND LABOUR OFFICERS JUNE, 2026.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2147,11 +1968,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-4207cfd03c97aab9",
     "title": "PROGRAMME FOR THE HALF YEARLY DEPARTMENTAL EXAMINATION FOR THE MEGHALAYA CIVIL SERVICES, MEGHALAYA POLICE SERVICES, MEGHALAYA FOREST SERVICES,CO-OPERATION, EXCISE AND LABOUR OFFICERS NOVEMBER, 2025.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2159,11 +1980,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-a9ea4008cdc0a834",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF APRIL, 2025. Account Assistant under the Directorate of Food Civil Supplies & Consumer Affairs [Dec 2024] Field Assistant under the Directorate of Economics & Statistics [Dec 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2171,11 +1992,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-fc7b8ab9f2f6a855",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF APRIL, 2025. Junior Divisional Accountant (JDA) Under the Administrative Control of the Director of Accounts & Treasuries (Sept-2024)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2183,11 +2004,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-92eeecb0a18cb16f",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF APRIL, 2025. Primary Investigator under the Directorate of Economics & Statistics [Dec 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2195,11 +2016,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-2725319bc7323306",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF AUGUST, 2024 BIOMETRICIAN (GAZETTED) OFFICE OF THE PRINCIPAL CHIEF CONSERVATOR OF FORESTS AND HoFF, SHILLONG (DEC 2020) ASSISTANT ARCHITECT, GAZETTED GROUP A UNDER PUBLIC WORKS DEPARTMENT (R&B), MEGHALAYA [JAN 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2207,11 +2028,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-44bd79b979cd7bb5",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF JANUARY & FEBRUARY, 2025. Stenographer Grade III in the Meghalaya Secretariat and Heads of department [Nov 2024] Child Development Project Officer under Social Welfare department [Nov 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2219,11 +2040,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-f130b737e0801a99",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF JANUARY, 2025. Assistant Curator at the District Museum, Tura (Gazetted) (Sept - 2024) Sub-Divisional Public Relations Officer under the Directorate of information and Public Relations in the subordinate offices(Sept - 2024) Piano Instructor at State Institute of Arts & Culture (Non Gazetted) (Sept - 2024) Guitar Instructor at State Institute of Arts & Culture (Non Gazetted) (Sept - 2024)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2231,11 +2052,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-150c2e3e338f372f",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF JULY 2026. Research Assistant under P.H.E. Department (July 2019) Junior Engineer (Electrical) under P. W.D. (December 2021) Assistant Engineer in Urban Affairs Department (December 2021)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2243,11 +2064,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-f5eaa85d929f4b53",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF JULY, 2025. Counsellor in the District Prisons & Correctional Homes (Sept - 2024)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2255,11 +2076,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-50712044473dc5e8",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF JULY,2024",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2267,11 +2088,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-d97b78377e5d834a",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF JUNE ,2024",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2279,11 +2100,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-ec61f858e663f90b",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF JUNE, 2025. ENVIRONMENT PLANNING AND PROTECTION ASSISTANT (EPPA) UNDER PLANNING CELL, OFFICE OF CHIEF CONSERVATOR OF FORESTS, SOCIAL FORESTRY AND ENVIRONMENT, MEGHALAYA (DEC 2021) TRAINING OFFICER UNDER LABOUR DEPARTMENT (JAN-2018) Dairy Officer under the Directorate of Dairy Development (Sept - 2024) Inspector of Excise in the Office of the Commissioner of Excise [Dec 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2291,11 +2112,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-756ee356e55dfa63",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF MARCH, 2025. ASSISTANT ENGINEER (CIVIL) IN FISHERIES DEPARTMENT (DEC 2021) Junior Informatics Officer in the Directorate of Information Technology & Communications Department (Sept - 2024)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2303,11 +2124,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-ff46fe782bf3be22",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF MARCH, 2025. Assistant Inspector of Excise under the Commissioner of Excise [Nov 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2315,11 +2136,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-5128bea4098de436",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF MARCH, 2025. Lower Division Assistant in the various Heads of Department [Nov 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2327,11 +2148,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-a15777a310cbee17",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF MARCH, 2025. Scientific Assistant in the Mobile Forensic Crime Scene Unit under the Directorate of Forensic Science (Sept-2024) Scientific Officer in the Mobile Forensic Crime Scene Unit under the Directorate of Forensic Science (Sept - 2024) Senior Scientific Assistant in the Mobile Forensic Crime Scene Unit under the Directorate of Forensic Science (Sept - 2024)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2339,11 +2160,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-c0b50af7c45052e2",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF MAY ,2024",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2351,11 +2172,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-b5fba727d98d7b7f",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF NOVEMBER & DECEMBER, 2024. ASSISTANT SYSTEM ENGINEER IN THE DEPARTMENT OF ELECTIONS. JULY 2019 ASSISTANT ENGINEER (ELECTRICAL) IN THE OFFICE OF THE CHIEF ENGG, WATER RESOURCES DEPARTMENT, MEGHALAYA (APRIL 2018) JUNIOR GRADE (FINANCE & ACCOUNTS OFFICERS OR TREASURY OFFICERS) OF MEGHALAYA FINANCE SERVICE [JAN 2024][MAINS] Junior Accounts Assistant under the Administrative Control of the Director of Accounts & Treasuries, Meghalaya.[MAINS]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2363,11 +2184,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-916e09dc39894efa",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF NOVEMBER 2025 Inspector of Housing in Housing Department [April 2025] Junior Engineer Grade - I (Civil) under Various Departments [April 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2375,11 +2196,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-e96dcd2110723e2d",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF OCTOBER, 2024. FOR THE POST OF MEGHALAYA CIVIL SERVICES (MAINS) EXAMINATIONS",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2387,11 +2208,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-452359b90de381d4",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF SEPTEMBER 2024. SUB-DIVISIONAL OFFICER (HEW) UNDER HEALTH & FAMILY WELFARE DEPARTMENT (JULY 2019 & DEC 2021) HELPDESK PERSONNEL (CONTRACTUAL) IN THE OFFICE OF THE MEGHALAYA PUBLIC SERVICE COMMISSION",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2399,11 +2220,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-bafb4f17abeef2bb",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF SEPTEMBER 2025 In continuation to our Tentative Programme published vide Letter No. MPSC/EX-c/7/2023-2024/139, dated 04th July, 2025, the Competitive Examinations for the period is hereby confirmed for the following posts as shown below:-. Junior Co-operative Officer under the Cooperation Department [May 2025] Soil & Water Conservation Ranger (Overseer/Draughtsman-I) in the Office of the Directorate of Soil & Water Conservation[April 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2411,11 +2232,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-f5b991023fc97c4c",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF SEPTEMBER 2025 In continuation to our Tentative Programme published vide Letter No. MPSC/EX-c/7/2023-2024/139, dated 04th July, 2025, the Competitive Examinations for the period is hereby confirmed for the following posts as shown below:-. Lower Division Assistant under the Meghalaya (C) Secretariat [May 2025] Surveyor Grade-I in Housing Department [April 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2423,11 +2244,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-80c8625dd958e183",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF SEPTEMBER 2025 In continuation to our Tentative Programme published vide Letter No. MPSC/EX-c/7/2023-2024/140, dated 29th July, 2025, the Competitive Examinations for the period is hereby confirmed for the following posts as shown below:-. Computer Programmer in Planning, Investment Promotion & Sustainable Development Department [May 2025] Vice Principal in ITI(s) under the Directorate of Employment & Craftsmen Training, Labour Department [April 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2435,11 +2256,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-1f0bb02b7f800b20",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF SEPTEMBER 2025 Stenographer Grade-I under Meghalaya Civil Secretariat [May 2025] Stenographer Grade-III under Commissionerate of Food Safety and Inspector General of Prisons and Correctional Services [May 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2447,11 +2268,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-ab5f04341c68b531",
     "title": "PROGRAMME OF EXAMINATION FOR THE MONTH OF SEPTEMBER, 2024 RESEARCH ASSISTANT UNDER PLANNING DEPARTMENT (MAR 2024) ACCOUNT ASSISTANT IN THE DIRECTORATE OF FOOD CIVIL SUPPLIES AND CONSUMER AFFAIRS, MEGHALAYA, SHILLONG (DEC 2020).",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2459,11 +2280,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-421d2f422c4c56c0",
     "title": "PROGRAMME OF EXAMINATION FOR THE POST OF FOREST RANGERS UNDER THE OFFICE OF PRINCIPAL CHIEF CONSERVATOR OF FOREST & HEAD OF FOREST FORCE, MEGHALAYA (2018) FOR THE MONTH OF NOVEMBER 2024. FOREST RANGERS UNDER THE OFFICE OF PRINCIPAL CHIEF CONSERVATOR OF FOREST & HEAD OF FOREST FORCE, MEGHALAYA (2018)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2471,11 +2292,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-2b71b7a7cc2dcf8e",
     "title": "PROGRAMME OF EXAMINATION FOR THE POST OF LOWER DIVISION ASSISTANT IN THE OFFICE OF THE MEGHALAYA PUBLIC SERVICE COMMISSION (OCT 2023). LOWER DIVISION ASSISTANT IN THE OFFICE OF THE MEGHALAYA PUBLIC SERVICE COMMISSION (OCT 2023)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2483,11 +2304,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-4894bd29ef7e8cc7",
     "title": "PROGRAMME OF EXAMINATION FOR THE POST OF MEGHALAYA CIVIL SERVICES (MAINS) EXAMINATIONS FOR THE MONTH OF OCTOBER, 2024.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2495,11 +2316,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-c7004bfbfc15cbed",
     "title": "PROGRAMME OF EXAMINATION FOR THE POST(S) OF FOREST RANGERS UNDER THE OFFICE OF THE PRINCIPAL CHIEF CONSERVATOR OF FORESTS & HEADS OF FOREST FORCE, MEGHALAYA. (SEP 2023)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2507,11 +2328,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-cb0766b74a09a699",
     "title": "PROGRAMME OF PERSONAL INTERVIEW FOR THE MONTH OF JUNE,2024",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2519,11 +2340,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-b84e23ff16d9d512",
     "title": "PROGRAMME OF PERSONAL INTERVIEW THe Personal Interview has been fixed by the Commission for the posts mentioned below:-. Dairy Officer under the Directorate of Dairy Development (Sept - 2024) TRAINING OFFICER UNDER LABOUR DEPARTMENT (JAN-2018) Inspector of Excise in the Office of the Commissioner of Excise [Dec 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2531,11 +2352,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-f8da9cdb0bfb94fc",
     "title": "PROGRAMME OF PERSONAL INTERVIEW This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of ENVIRONMENT PLANNING AND PROTECTION ASSISTANT (EPPA) UNDER PLANNING CELL, OFFICE OF CHIEF CONSERVATOR OF FORESTS, SOCIAL FORESTRY AND ENVIRONMENT, MEGHALAYA (DEC 2021) Junior Badminton Coach under the Directorate of Sports and Youth Affairs Junior Karate Coach under the Directorate of Sports and Youth Affairs",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2543,11 +2364,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-e9df63d00719c7fa",
     "title": "PROGRAMME OF PERSONAL INTERVIEW. Electrician Instructor under the Directorate of Employment & Craftsmen Training, Department of Labour Employment & Skill Develoment [June 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2555,11 +2376,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-4a0d303c2aaf8ec9",
     "title": "PROGRAMME OF PERSONAL INTERVIEW. Inspector of Excise in the Office of the Commissioner of Excise [Dec 2024] Library Assistant at State Central Library, Shillong (Non-Gazetted) [April 2025] Librarian in the Directorate of Information and Public Relations [April 2025] LIAISON OFFICER IN THE OFFICE OF THE ADDITIONAL RESIDENT COMMISSIONER, MEGHALAYA HOUSE, MUMBAI UNDER GENERAL ADMINISTRATION (A) DEPARTMENT[SEPT 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2567,11 +2388,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-0e738ba2d4ca6558",
     "title": "PROGRAMME OF PERSONAL INTERVIEW/VIVA VOCE FOR THE POST OF ASSISTANT DIRECTOR OF SURVEY UNDER REVENUE AND DISASTER MANAGEMENT DEPARTMENT, MEGHALAYA, SHILLONG (DEC 2020) SOIL AND WATER CONSERVATION RANGERS UNDER SOIL AND WATER CONSERVATION DEPARTMENT (DEC 2020)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2579,11 +2400,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-968befdc9c6a291b",
     "title": "PROGRAMME OF PERSONAL INTERVIEW/VIVA VOCE FOR THE POST OF Inspector of Legal Metrology under the Directorate of Legal Metrology, Meghalaya RESEARCH OFFICER UNDER PLANNING DEPARTMENT OF THE GOVERNMENT OF MEGHALAYA [AUG 2023] STATISTICAL OFFICER UNDER DIRECTORATE OF A.H. AND VETERINARY (DEC 2020) TOURIST OFFICER UNDER TOURISM DEPARTMENT (AUG 2023) PROGRAMMER (CONTRACTUAL) in the Office of the Meghalaya Public Service Commission LOWER DIVISION ASSISTANT IN THE MEGHALAYA SECRETARIAT (OCT 2023)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2591,11 +2412,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-64a2e4ac18095c5e",
     "title": "PROGRAMME OF PERSONAL INTERVIEW/VIVA VOCE FOR THE POST OF JUNIOR ENGINEER GRADE - 1 (MECHANICAL) UNDER P.H.E. DEPARTMENT. JULY 2019 LOWER DIVISION ASSISTANT. JULY 2019",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2603,11 +2424,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-423477c7c907699b",
     "title": "PROGRAMME OF PERSONAL INTERVIEW/VIVA VOCE FOR THE POST OF MEGHALAYA POLICE SERVICE UNDER HOME POLICE DEPARTMENT (AUG 2019)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2615,11 +2436,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-69616e58c6b5c78f",
     "title": "PROGRAMME OF PERSONAL INTERVIEW/VIVA VOCE FOR THE POST OF MEGHALAYA POLICE SERVICE UNDER HOME POLICE DEPARTMENT (AUG 2019)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2627,7 +2448,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-173d86210172ce04",
     "title": "PROGRAMME OF PRELIMINARY EXAMINATION FOR THE MONTH OF JANUARY, 2025. Junior Divisional Accountant (JDA) Under the Administrative Control of the Director of Accounts & Treasuries (Sept-2024) (Fresh Vacancy-53, Unfilled-36)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -2639,11 +2460,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-8c705a56c776c149",
     "title": "PROGRAMME OF WRITTEN EXAMINATION FOR THE MONTH OF APRIL, 2025. Stenographer Grade III in the Meghalaya Secretariat and Heads of department [Nov 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2651,7 +2472,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-667038e26a56fc6c",
     "title": "Programme Schedule",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -2663,7 +2484,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-a13fe269e27aacdc",
     "title": "Results of Personal Interview",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -2675,7 +2496,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-42c16975e4745309",
     "title": "Results of Screening Test",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -2687,7 +2508,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-900218e5945aa174",
     "title": "Stages of Recruitment",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -2699,11 +2520,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-1f216aaaf6d8746a",
     "title": "TENTATIVE PROGRAMME FOR EXAMINATION. Assistant Librarian under Meghalaya Administrative Training Institute (December 2025) Sub-Inspector of Supply in the Directorate of Food Civil Supplies and Consumer Affairs (September 2025)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2711,11 +2532,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-b3ba70f1df49b37e",
     "title": "TENTATIVE PROGRAMME FOR EXAMINATION. LABOUR INSPECTORS UNDER THE ADMINISTRATIVE CONTROL OF LABOUR DEPARTMENT (DEC 2021) Draftsman Grade-II Group-C in the Office of the Chief Engineer Water Resources Department [May 2025] INDUSTRIAL PROMOTION OFFICER OR ASSISTANT INDUSTRIES OFFICER OR ASSISTANT MANAGER,CFSW OR SUPERINTENDENT OF INDUSTRIES IN COMMERCE & INDUSTRIES DEPARTMENT [JAN 2024]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2723,11 +2544,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-04d210093f950508",
     "title": "TENTATIVE PROGRAMME FOR EXAMINATION. Scientific Officer for (Chemistry Division) under the Directorate of Forensic Science [May 2025] Senior Scientific Assistant in the Documents Division of the Directorate of Forensic Sciences [ April 2025) Investigator in the Directorate of Housing [March 2026]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2735,11 +2556,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-8bef68f409e7ff07",
     "title": "TENTATIVE PROGRAMME FOR THE MONTH OF OCTOBER, 2024. MAS (MEGHALAYA AGRICULTURAL SERVICE - III OFFICERS / {Agriculture Development Officer/ Horticulture Development Officer / Scientific Officer (Research/Seed/ Technology/Soil Testing/Seed Testing etc)}) (MARCH 2024) MEGHALAYA CIVIL SERVICES (MAINS EXAMINATION) (FEB, 2022 & JULY, 2023)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2747,11 +2568,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-2aea41a0877b7daa",
     "title": "TENTATIVE PROGRAMME OF EXAMINATION FOR THE MONTH OF MARCH, 2025. ASSISTANT ENGINEER (CIVIL) IN FISHERIES DEPARTMENT (DEC 2021) Junior Informatics Officer in the Directorate of Information Technology & Communications Department (Sept - 2024)",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2759,7 +2580,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-68a1cf9cd2b4fe63",
     "title": "Tentative Programme Schedule",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
@@ -2771,11 +2592,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-meghalaya-psc-aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5",
+    "id": "auto-meghalaya-psc-3db8685b343d0d8f",
     "title": "This is for general information to all the concerned candidates that the Personal Interview for the Post(s) of Inspector of Statistics under the Directorate of Economics and Statistics Department [April 2025] Account Assistant under the Directorate of Community and Rural Development [April 2025] Environmental Planning and Protection Assistant in the Office of PCCF and HOFF, Meghalaya [April 2025] Junior Co-operative Officer under the Cooperation Department [May 2025]",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
@@ -2783,7 +2604,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nagaland-psc-aHR0cHM6Ly9ucHNjLm5hZ2FsYW5k",
+    "id": "auto-nagaland-psc-d71598122ff3fbde",
     "title": "E-Admit Card",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
@@ -2795,7 +2616,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nagaland-psc-aHR0cHM6Ly9ucHNjLm5hZ2FsYW5k",
+    "id": "auto-nagaland-psc-f4671f71158ee869",
     "title": "Exams View and Apply Exams. Open",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
@@ -2807,11 +2628,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nagaland-psc-aHR0cHM6Ly9ucHNjLm5hZ2FsYW5k",
+    "id": "auto-nagaland-psc-76cf7315d9eb6c4a",
     "title": "Limited Dept. Exam 2022 Marksheet",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://npsc.nagaland.gov.in/",
@@ -2819,7 +2640,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nagaland-psc-aHR0cHM6Ly9ucHNjLm5hZ2FsYW5k",
+    "id": "auto-nagaland-psc-f9965db5fb91d3d4",
     "title": "Notification No. NPSC/CESE-12/AK/2021 dt. 16.09.2026 (Corrected Answer Keys of Common Educational Services Examination 2026) New",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
@@ -2831,11 +2652,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nagaland-psc-aHR0cHM6Ly9ucHNjLm5hZ2FsYW5k",
+    "id": "auto-nagaland-psc-ae02c5b23e7cb59b",
     "title": "Notification No. NPSC/EXAM-21/2023 dt. 17.09.2026 (Incomplete Score Sheet/Documents CESE 2026) New",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://npsc.nagaland.gov.in/",
@@ -2843,11 +2664,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nagaland-psc-aHR0cHM6Ly9ucHNjLm5hZ2FsYW5k",
+    "id": "auto-nagaland-psc-46fb9e1e4ccd6c1d",
     "title": "Notification No. NPSC/EXAM-7/2022 dt. 17.09.2026 ( CTSE 2026 Admission Certificate) New",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://npsc.nagaland.gov.in/",
@@ -2855,11 +2676,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nagaland-psc-aHR0cHM6Ly9ucHNjLm5hZ2FsYW5k",
+    "id": "auto-nagaland-psc-0714c538819f14fd",
     "title": "Notification NO.NPSC.ADVT-1/04(VOL-1) dt. 21.09.2026 (CTSE 2026 Use of Calculator) New",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://npsc.nagaland.gov.in/",
@@ -2867,11 +2688,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nagaland-psc-aHR0cHM6Ly9ucHNjLm5hZ2FsYW5k",
+    "id": "auto-nagaland-psc-1834ce196b1d1743",
     "title": "Notification NO.NPSC.ADVT-1/04(VOL-1) dt. 25.09.2026 (CTSE 2026 Microbiology Exam cancelled ) New",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://npsc.nagaland.gov.in/",
@@ -2879,11 +2700,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nagaland-psc-aHR0cHM6Ly9ucHNjLm5hZ2FsYW5k",
+    "id": "auto-nagaland-psc-fd106816a910b3d4",
     "title": "Notifications Browse and view all the notifications issued. Open",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://npsc.nagaland.gov.in/",
@@ -2891,7 +2712,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nagaland-psc-aHR0cHM6Ly9ucHNjLm5hZ2FsYW5k",
+    "id": "auto-nagaland-psc-b792be0ded91ff7f",
     "title": "OTR OTR service is currently closed. Please apply during the notified period. Open",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
@@ -2903,7 +2724,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nagaland-psc-aHR0cHM6Ly9ucHNjLm5hZ2FsYW5k",
+    "id": "auto-nagaland-psc-8883392d71997d22",
     "title": "Results Browse and view the archives of results. Open",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
@@ -2915,7 +2736,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-ncs-aHR0cHM6Ly9uY3MuZ292LmluL2Fz",
+    "id": "auto-ncs-4c6b4d4748ced6a7",
     "title": "Employer Registration Flowchart",
     "organization": "National Career Service",
     "category": "Government Jobs",
@@ -2927,7 +2748,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Career Service source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-ncs-aHR0cHM6Ly9uY3MuZ292LmluL2Fz",
+    "id": "auto-ncs-5e76d3c949bbdfd4",
     "title": "Indian Staffing Federation (ISF Registration Flow)",
     "organization": "National Career Service",
     "category": "Government Jobs",
@@ -2939,7 +2760,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Career Service source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-ncs-aHR0cHM6Ly9lbWlncmF0ZS5nb3Yu",
+    "id": "auto-ncs-494bb125adbce6bc",
     "title": "Recruitment Agencies/International Employer",
     "organization": "National Career Service",
     "category": "Government Jobs",
@@ -2951,7 +2772,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Career Service source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-ncs-aHR0cHM6Ly9uY3MuZ292LmluL2Fz",
+    "id": "auto-ncs-1351413953b1bc15",
     "title": "Registration Flowchart",
     "organization": "National Career Service",
     "category": "Government Jobs",
@@ -2963,11 +2784,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Career Service source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cHM6Ly9leGFtcy5udGEubmlj",
+    "id": "auto-nta-64eed72aa307e9ec",
     "title": "All India Sainik School Entrance Exam (AISSEE)",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -2975,7 +2796,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cHM6Ly9leGFtaW5hdGlvbnNl",
+    "id": "auto-nta-ee1fb699794aeb12",
     "title": "Apply for Subject Matter Experts",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -2987,7 +2808,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cHM6Ly9leGFtaW5hdGlvbnNl",
+    "id": "auto-nta-7639ad9d29f85748",
     "title": "Apply for Translation Reviewers",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -2999,11 +2820,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3d3dy5udGEuYWMuaW4v",
+    "id": "auto-nta-d3ed90a39c3dcbab",
     "title": "As a Precaution against COVID - 19, our helpdesk is operating with limited resources. For exam related queries text us on the given numbers under the Contact US section. For all other queries, please check the website regularly.",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3011,7 +2832,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3d3dy5udGEuYWMuaW4v",
+    "id": "auto-nta-00aa87a5c65a1aa0",
     "title": "Call for TPC Registration from Schools & Colleges",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3023,7 +2844,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL2h0dHBzLy9zd2F5YW0u",
+    "id": "auto-nta-5c3d60a58fd2844f",
     "title": "Display of Admit Cards of Study Webs of Active–Learning for Young Aspiring Minds (SWAYAM) July 2021 Semester",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3035,7 +2856,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL250YW9iamVjdGlvbi5j",
+    "id": "auto-nta-6463a5b7f1b74d8e",
     "title": "DUET July 2019 Result",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3047,11 +2868,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cHM6Ly9leGFtcy5udGEubmlj",
+    "id": "auto-nta-aca9cc9c80e4ca6e",
     "title": "Hotel Management Joint Entrance Examination (NCHM-JEE)",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3059,11 +2880,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cHM6Ly9leGFtcy5udGEubmlj",
+    "id": "auto-nta-2ac88fbf4ff2124f",
     "title": "ICAR's All India Entrance Examination (ICAR-AIEEA/AICE-JRF/SRF-Ph.D.)",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3071,7 +2892,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL2NtYXQubnRhLm5pYy5p",
+    "id": "auto-nta-bd25eae3b9088cc4",
     "title": "Inviting Online Applications for Common Management Admission Test (CMAT)-2022",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3083,7 +2904,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL2dwYXQubnRhLm5pYy5p",
+    "id": "auto-nta-81b87b23d610b7bf",
     "title": "Inviting Online Applications for Graduate Pharmacy Aptitude Test (GPAT)-2022",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3095,11 +2916,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cHM6Ly9qZWVtYWluLm50YS5u",
+    "id": "auto-nta-a91a82825e4a8231",
     "title": "Joint Entrance Examination (JEE)",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3107,7 +2928,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3d3dy5udGEuYWMuaW4v",
+    "id": "auto-nta-bdf1be450e15e1a8",
     "title": "National Essay Writing Competition December 2019 Result",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3119,7 +2940,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3d3dy5udGEuYWMuaW4v",
+    "id": "auto-nta-942b1be4561f0434",
     "title": "National Essay Writing Competition January 2020 Result",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3131,11 +2952,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cHM6Ly9leGFtcy5udGEubmlj",
+    "id": "auto-nta-2b79830880db811a",
     "title": "National Institute of Fashion Technology Entrance Examination (NIFTEE)",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3143,11 +2964,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL2pvYnMubnRhLmFjLmlu",
+    "id": "auto-nta-259baec424a6691f",
     "title": "NOTIFICATION :Recruitment of various posts at National Testing Agency (NTA).",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Application Open",
+    "stage": "Recruitment",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3155,7 +2976,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cHM6Ly93d3cubnRhLmFjLmlu",
+    "id": "auto-nta-75ad5aee38aff865",
     "title": "NTA Registration and MoA",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3167,7 +2988,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3d3dy5udGFjbWF0Lm5p",
+    "id": "auto-nta-599029cd70b27a80",
     "title": "Press Release CMAT-GPAT 2019 Result",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3179,7 +3000,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3d3dy5qZWVtYWluLm5p",
+    "id": "auto-nta-42fd30759a966297",
     "title": "Press Release JEE Main - 2019 Paper 2 Result",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3191,7 +3012,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3d3dy5udGFuY2htLm5p",
+    "id": "auto-nta-6ec11a5577257565",
     "title": "Press Release NCHM JEE - 2019 Result",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3203,7 +3024,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL250YXJlc3VsdHMubmlj",
+    "id": "auto-nta-f79a0abcc74a134b",
     "title": "PRESS RELEASE- Result of National Eligibility cum Entrance Test (UG) – 2020",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3215,11 +3036,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL2pudWV4YW1zLm50YS5u",
+    "id": "auto-nta-c176fae43e753483",
     "title": "PRESS RELEASE: JAWAHARLAL NEHRU UNIVERSITY ENTRANCE EXAMINATION (JNUEE)-2020",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3227,7 +3048,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL25lZXQubnRhLm5pYy5p",
+    "id": "auto-nta-a5afe8e098e03c12",
     "title": "PRESS RELEASE: Result of National Eligibility cum Entrance Test (UG) – 2021",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3239,7 +3060,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3VnY25ldC5udGEubmlj",
+    "id": "auto-nta-d5afceb912e2b8f4",
     "title": "Press Release: UGC-NET December 2020 & June 2021 Result",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3251,7 +3072,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL250YWV4YW0yMDIxLmNi",
+    "id": "auto-nta-9d504beb399369ec",
     "title": "Public Notice 22.09.2021 Release of Admit Card for Delhi University Entrance Test (DUET)-2021",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3263,11 +3084,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL2lpZnQubnRhLm5pYy5p",
+    "id": "auto-nta-8e7d2be5a20a9e48",
     "title": "Public Notice for IIFT 2019",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3275,11 +3096,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3d3dy5udGFpY2FyLm5p",
+    "id": "auto-nta-b6ba6c75013ea2fa",
     "title": "Public Notice ICAR Examinations 2019",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3287,11 +3108,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL2plZW1haW4ubnRhLm5p",
+    "id": "auto-nta-27b1ac404db34880",
     "title": "PUBLIC NOTICE JEE MAIN 2020 Extension of Last Date",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3299,11 +3120,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovLzE0LjEzOS4xMTYuMTY6",
+    "id": "auto-nta-bf71547acb6c3ba0",
     "title": "PUBLIC NOTICE National Eligibility-cum-Entrance Test (UG) – 2020",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3311,11 +3132,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3d3dy5udGFuZWV0Lm5p",
+    "id": "auto-nta-69a599733ce411c1",
     "title": "PUBLIC Notice NEET Scanned Images of OMR",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3323,11 +3144,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3d3dy5udGFuZXQubmlj",
+    "id": "auto-nta-302364f5748d99d3",
     "title": "Public Notice UGC-NET June 2019",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3335,11 +3156,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL2FvLm50YS5hYy5pbi8",
+    "id": "auto-nta-6bccf6c52c14816e",
     "title": "PUBLIC NOTICE: ASSAM OLYMPIAD 2021",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3347,7 +3168,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL250YWV4YW0yMDIwLmNi",
+    "id": "auto-nta-fc5e338d4973ec16",
     "title": "PUBLIC NOTICE: Display of Score Card for 55 PG Courses of Delhi University Entrance Test-2020",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3359,11 +3180,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL2ljYXIubnRhLm5pYy5p",
+    "id": "auto-nta-f352a9eb6f8aed6d",
     "title": "PUBLIC NOTICE: Indian Council of Agricultural Research (ICAR) AIEEA 2020",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3371,7 +3192,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL2NzaXJuZXQubnRhLm5p",
+    "id": "auto-nta-49c6007f8e6e8d7b",
     "title": "Public Notice: Inviting Answer Key challenges for Joint CSIR-UGC NET June 2021 Examinations and display of Questions, Marked Responses and Provisional Answer Keys.",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3383,7 +3204,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL250YWV4YW0yMDIwLmNi",
+    "id": "auto-nta-57fc757627609727",
     "title": "PUBLIC NOTICE: Release of Admit Card for Delhi University Entrance Test (DUET) Sep. 2020.",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3395,11 +3216,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cHM6Ly9leGFtcy5udGEubmlj",
+    "id": "auto-nta-bcbbf4d33a7f5937",
     "title": "Rashtriya Indian Military College Entrance Examination (RIMCEE)",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3407,7 +3228,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cHM6Ly9udGFyZWNydWl0bWVu",
+    "id": "auto-nta-0458608d66e66c41",
     "title": "Recruitment (on Deputation)",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3419,7 +3240,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cHM6Ly9jYnRjLm50YS5hYy5p",
+    "id": "auto-nta-5fd426eb83e10864",
     "title": "Recruitment (Young Professionals)",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3431,7 +3252,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cHM6Ly90cGNzci5udGEuYWMu",
+    "id": "auto-nta-9088f37d608efc1a",
     "title": "Registration For Mock Test @TPC",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3443,7 +3264,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL2NidGMubnRhLmFjLmlu",
+    "id": "auto-nta-fe0b6b1d8517ce5e",
     "title": "Registration for observers of NTA is open. All eligible observer are requested to register themselves.",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3455,7 +3276,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3d3dy5udGEuYWMuaW4v",
+    "id": "auto-nta-33ba14a3608201f7",
     "title": "Registration of Central Universities (CUs) and Others for Common University Entrance Test (CUET) - 2022",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3467,7 +3288,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL250YWV4YW0uY2J0ZXhh",
+    "id": "auto-nta-d2168b400948b0db",
     "title": "Release of Admit Card of DUET 2019",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3479,7 +3300,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3d3dy5udGFqbnUubmlj",
+    "id": "auto-nta-a712569d5da8d697",
     "title": "Release of Admit Card of JNUEE and CEEB 2019",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3491,7 +3312,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL3d3dy5udGEuYWMuaW4v",
+    "id": "auto-nta-13b6e9c7e676e7e6",
     "title": "Release of Admit Card of UGC-NET June 2019",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
@@ -3503,11 +3324,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL25lZXRjbGFpbS5jZW50",
+    "id": "auto-nta-8ff264ab572151ed",
     "title": "Reporting of Suspicious Claims in NEET(UG) 2025 Examination",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3515,11 +3336,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-aHR0cDovL2h0dHBzLy9udGEuYWMu",
+    "id": "auto-nta-80bf45bddca967af",
     "title": "Weeding out of waste paper (Confidential Records) of Examination",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
@@ -3527,7 +3348,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-odisha-psc-aHR0cHM6Ly93d3cub3BzYy5nb3Yu",
+    "id": "auto-odisha-psc-2b3a312bfdd78fc1",
     "title": "Advertisements",
     "organization": "Odisha Public Service Commission",
     "category": "State Government",
@@ -3539,11 +3360,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Odisha Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-odisha-psc-aHR0cHM6Ly93d3cub3BzYy5nb3Yu",
+    "id": "auto-odisha-psc-ba23e879ad41af39",
     "title": "Examination Syllabus",
     "organization": "Odisha Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.opsc.gov.in/",
@@ -3551,7 +3372,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Odisha Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-odisha-psc-aHR0cHM6Ly93d3cub3BzYy5nb3Yu",
+    "id": "auto-odisha-psc-dbe4a62d17c13e57",
     "title": "Recruitment Calendar",
     "organization": "Odisha Public Service Commission",
     "category": "State Government",
@@ -3563,11 +3384,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Odisha Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-odisha-psc-aHR0cHM6Ly93d3cub3BzYy5nb3Yu",
+    "id": "auto-odisha-psc-878febe8d821089a",
     "title": "Rejection Notice",
     "organization": "Odisha Public Service Commission",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.opsc.gov.in/",
@@ -3575,11 +3396,35 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Odisha Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-sbi-2d017bc98e1f0f41",
+    "title": "Recruitment Results",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-09-28",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/recruitment-results",
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-sbi-b15b11ca79df3384",
+    "title": "Recruitment Results & Archive",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-09-28",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/recruitment-results-archive",
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-1e704a4ee163e39b",
     "title": "Active Examinations",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3587,11 +3432,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-bfa86c13a3d72b55",
     "title": "Addendum Notice: 01 post of Assistant Director Grade-I (IEDS) (Metal Finishing) in Ministry of MSME",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3599,11 +3444,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-40d661734bee8d67",
     "title": "Addendum Notice: 02 posts of Assistant Director Grade-I (IEDS) (Chemical) in Ministry of MSME",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3611,11 +3456,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-bdb3e089dcbdd45a",
     "title": "Addendum Notice: 02 posts of Assistant Director Grade-I (IEDS) (Hosiery) in Ministry of MSME",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3623,11 +3468,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-603e75e2e71ea5e7",
     "title": "Addendum Notice: 03 posts of Assistant Director Grade-I (IEDS) (Food) in Ministry of MSME",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3635,11 +3480,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-2d4f4847163047ec",
     "title": "Addendum Notice: 03 posts of Assistant Director Grade-I (IEDS) (Leather & Footwear) in Ministry of MSME",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3647,11 +3492,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-965c7fa1e90dcac3",
     "title": "Addendum Notice: 03 posts of Assistant Director Grade-II (IEDS) (Chemical) in Ministry of MSME",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3659,11 +3504,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-f282263b97a09f1d",
     "title": "Addendum Notice: 04 posts of Assistant Director Grade-II (IEDS) (Food) in Ministry of MSME",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3671,11 +3516,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-83712c3a98043ad2",
     "title": "Addendum Notice: 04 posts of Assistant Director Grade-II (IEDS) (Hosiery) in Ministry of MSME",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3683,11 +3528,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-2426d5ebb6c5ed81",
     "title": "Addendum Notice: 04 posts of Assistant Director Grade-II (IEDS) (Leather & Footwear) in Ministry of MSME",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3695,11 +3540,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-f2e8df6b40a9f793",
     "title": "Addendum Notice: 06 Posts Deputy Central Intelligence Officer (DCIO) (Technical), Ministry of Home Affairs",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3707,11 +3552,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-d26e5d9beacb5e7a",
     "title": "Addendum Notice: 07 posts of Scientist-B (Atmospheric Sciences) in Ministry of Earth Sciences",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3719,11 +3564,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-3faac164903c0546",
     "title": "Addendum Notice: 08 Posts of Administrative Officer Grade - I, Ministry of Defence",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3731,11 +3576,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-93bfb6a177d94443",
     "title": "Addendum Notice: 09 posts of Scientist-B (Instrumentation) in Ministry of Earth Sciences",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3743,11 +3588,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-f43999f5fd8ffc6f",
     "title": "Addendum Notice: 19 Posts of Manager Grade - I - Section Officer, Ministry of Defence",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3755,11 +3600,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-04b373f0914e394d",
     "title": "Addendum Notice: 30 posts of Scientist-B (General Meteorology) in Ministry of Earth Sciences",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3767,11 +3612,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-71dc2a46c960b6a9",
     "title": "Addendum Notice: 32 Posts of Accounts Officer, Administration of Union Territory of Ladakh",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3779,7 +3624,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-5dbbca7b9df838a1",
     "title": "Advertisement No.52 - 2026 (Special)",
     "organization": "UPSC",
     "category": "Central Government",
@@ -3791,7 +3636,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-17550cbaa53d4780",
     "title": "Advertisements",
     "organization": "UPSC",
     "category": "Central Government",
@@ -3803,7 +3648,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-aa7dac9c0942bc5e",
     "title": "e - Admit Card: Combined Defence Services Examination (II), 2026",
     "organization": "UPSC",
     "category": "Central Government",
@@ -3815,7 +3660,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-22cb1c999439a93e",
     "title": "e - Admit Card: National Defence Academy and Naval Academy Examination (II), 2026",
     "organization": "UPSC",
     "category": "Central Government",
@@ -3827,11 +3672,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-ac9ae6278f96d876",
     "title": "Exam Notification: Combined Geo-Scientist (Preliminary) Examination, 2027",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3839,11 +3684,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-bd78bdc4db1a2084",
     "title": "Examination Time Table: Combined Defence Services Examination (II), 2026",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3851,11 +3696,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-614830a79ee1dbda",
     "title": "Examination Time Table: National Defence Academy and Naval Academy Examination (II), 2026",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3863,7 +3708,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-fe85a7814b80b34b",
     "title": "Final Result: 03 Posts of Assistant Director (Corporate Law), Ministry of Corporate Affairs",
     "organization": "UPSC",
     "category": "Central Government",
@@ -3875,7 +3720,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-0d9ab59bf4f73e0e",
     "title": "Final Result: 03 Posts of Assistant Director Grade-II (IEDS) (Chemical), Ministry of MSME",
     "organization": "UPSC",
     "category": "Central Government",
@@ -3887,7 +3732,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-9291ceb581726939",
     "title": "Final Result: 20 Posts of Drugs Inspector (Medical Devices), Ministry of Health and Family Welfare",
     "organization": "UPSC",
     "category": "Central Government",
@@ -3899,7 +3744,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-4de0eb242ced21f6",
     "title": "Final Result: 25 Posts of Public Prosecutor in CBI",
     "organization": "UPSC",
     "category": "Central Government",
@@ -3911,7 +3756,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-8c9a5bad5f53e8dd",
     "title": "Final Result: CISF AC(EXE) LDCE-2026",
     "organization": "UPSC",
     "category": "Central Government",
@@ -3923,11 +3768,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-d6c5b3fedeeeee1c",
     "title": "Forthcoming Examinations",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3935,7 +3780,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-302b0e06d5394dc1",
     "title": "Interview Schedule: Combined Geo-Scientist (Main) Examination, 2026",
     "organization": "UPSC",
     "category": "Central Government",
@@ -3947,7 +3792,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-bebf6319ad84e819",
     "title": "Interview Schedule: Engineering Services (Main) Examination, 2026",
     "organization": "UPSC",
     "category": "Central Government",
@@ -3959,11 +3804,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-386f2131ccd5eb1d",
     "title": "Marks of Recommended Candidates (Reserve List): Central Armed Police Forces (ACs) Examination, 2024",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3971,11 +3816,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-50a46f6e30575ca1",
     "title": "Marks of Recommended Candidates: Central Armed Police Forces (ACs) Examination, 2025",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3983,11 +3828,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-347e38c1028c38a8",
     "title": "Marks of Recommended Candidates: Combined Defence Services Examination (II), 2025",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -3995,7 +3840,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-e78c52290e669ba2",
     "title": "Notice regarding change in recruitment process for six (06) posts advertised vide Advt. No. 13-2025",
     "organization": "UPSC",
     "category": "Central Government",
@@ -4007,11 +3852,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-b7749fe9f48a1227",
     "title": "Notice: 02 Posts of Senior Scientific Assistant (Electrical), Ministry of Defence",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -4019,11 +3864,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-468fed28f477a7b3",
     "title": "Notice: Central Armed Police Forces (ACs) Examination, 2026",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -4031,11 +3876,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-5e7d585af0e9915f",
     "title": "Notice: Combined Medical Services Examination, 2026",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -4043,7 +3888,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly91cHNjb25saW5lLm5p",
+    "id": "auto-upsc-548473395b50b85f",
     "title": "Online Recruitment Application (ORA)",
     "organization": "UPSC",
     "category": "Central Government",
@@ -4055,11 +3900,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-779cf323a8036c45",
     "title": "Press Note: Combined Defence Services Examination (II), 2026",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -4067,11 +3912,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-bf32886e20052faf",
     "title": "Press Note: National Defence Academy and Naval Academy Examination (II), 2026",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
@@ -4079,7 +3924,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-6db5c4ba16d574a6",
     "title": "Recruitment cases kept on hold on account of Pending Litigations",
     "organization": "UPSC",
     "category": "Central Government",
@@ -4091,7 +3936,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-b0e622d5b59f082e",
     "title": "Recruitment Requisition",
     "organization": "UPSC",
     "category": "Central Government",
@@ -4103,7 +3948,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-b1863f90cbfb986d",
     "title": "Recruitment Tests",
     "organization": "UPSC",
     "category": "Central Government",
@@ -4115,7 +3960,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-d91b0be9059c32bb",
     "title": "Status of Lateral Recruitment Cases (Advertisement-wise)",
     "organization": "UPSC",
     "category": "Central Government",
@@ -4127,7 +3972,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-2359d8c2c97ce9ef",
     "title": "Status of Recruitment Cases (Advertisement-wise)",
     "organization": "UPSC",
     "category": "Central Government",
@@ -4139,7 +3984,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-3a8a6a81f8c58134",
     "title": "Written Result (with name): Central Armed Police Forces (ACs) Examination, 2026",
     "organization": "UPSC",
     "category": "Central Government",
@@ -4151,7 +3996,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-1ddcc850f235d00b",
     "title": "Written Result (with name): Combined Medical Services Examination, 2026",
     "organization": "UPSC",
     "category": "Central Government",
@@ -4163,7 +4008,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-446f2ed29e34e67b",
     "title": "Written Result: Central Armed Police Forces (ACs) Examination, 2026",
     "organization": "UPSC",
     "category": "Central Government",
@@ -4175,7 +4020,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-aHR0cHM6Ly93d3cudXBzYy5nb3Yu",
+    "id": "auto-upsc-77ab69d34db22cd9",
     "title": "Written Result: Combined Medical Services Examination, 2026",
     "organization": "UPSC",
     "category": "Central Government",
@@ -4187,11 +4032,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-uttar-pradesh-employment-aHR0cDovL3d3dy5pYnBzLmluLw",
+    "id": "auto-uttar-pradesh-employment-976f2e917cd0e812",
     "title": "Institute of Banking Personnel Selection &nbsp",
     "organization": "Uttar Pradesh Employment Portal",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "http://sewayojan.up.nic.in/",
@@ -4199,7 +4044,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Uttar Pradesh Employment Portal source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-uttar-pradesh-employment-aHR0cDovL3VwcGJwYi5nb3YuaW4v",
+    "id": "auto-uttar-pradesh-employment-19a4585c4caca936",
     "title": "Police Recruitment and Promotion Board &nbsp",
     "organization": "Uttar Pradesh Employment Portal",
     "category": "State Government",
@@ -4211,11 +4056,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Uttar Pradesh Employment Portal source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-uttar-pradesh-employment-aHR0cHM6Ly9zc2MubmljLmluLw",
+    "id": "auto-uttar-pradesh-employment-cbb95938cbc06f37",
     "title": "Staff Selection Commission &nbsp",
     "organization": "Uttar Pradesh Employment Portal",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "http://sewayojan.up.nic.in/",
@@ -4223,11 +4068,11 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Uttar Pradesh Employment Portal source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-uttar-pradesh-employment-aHR0cDovL3Vwc3NzYy5nb3YuaW4v",
+    "id": "auto-uttar-pradesh-employment-078882adfb1a5d58",
     "title": "Subordinate Services Selection Commission &nbsp",
     "organization": "Uttar Pradesh Employment Portal",
     "category": "State Government",
-    "stage": "Upcoming",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-09-28",
     "officialUrl": "http://sewayojan.up.nic.in/",
@@ -4235,7 +4080,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Uttar Pradesh Employment Portal source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-uttar-pradesh-employment-aHR0cHM6Ly9ucmkudXAuZ292Lmlu",
+    "id": "auto-uttar-pradesh-employment-def7010c104534b6",
     "title": "UPFC Overseas Manpower Recruitment Agency",
     "organization": "Uttar Pradesh Employment Portal",
     "category": "State Government",
