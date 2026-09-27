@@ -8,7 +8,7 @@ import {getDetailProfile} from "@/lib/exam-detail";
 export function generateStaticParams(){return exams.map(e=>({slug:e.slug}))}
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}){
  const {slug}=await params; const e=exams.find(x=>x.slug===slug);
- return {title:e?e.name:"Exam Guide",description:e?e.description||("Eligibility, preparation and official-source guide for "+e.name):"Government exam guide",alternates:{canonical:e?"/exams/"+e.slug:"/exams"}};
+ return {title:e?e.name:"Exam Guide",description:e?e.description||("Eligibility, preparation and official-source guide for "+e.name):"Government exam guide",alternates:{canonical:e?"/exams/"+e.slug:"/exams"},openGraph:e?{title:e.name+" | SarkariPrep",description:e.description||("Eligibility, preparation and official-source guide for "+e.name),url:"https://sarkariprep.online/exams/"+e.slug,type:"article",images:[{url:"https://sarkariprep.online/opengraph-image",width:1200,height:630,alt:e.name+" | SarkariPrep"}]}:undefined,twitter:e?{card:"summary_large_image",title:e.name+" | SarkariPrep",description:e.description||("Eligibility, preparation and official-source guide for "+e.name),images:["https://sarkariprep.online/opengraph-image"]}:undefined};
 }
 export default async function ExamPage({params}:{params:Promise<{slug:string}>}){
  const {slug}=await params; const e=exams.find(x=>x.slug===slug); if(!e) notFound();
