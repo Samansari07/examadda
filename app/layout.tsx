@@ -1,3 +1,48 @@
+import type { Metadata } from "next";
 import "./globals.css";
-export const metadata={title:"SarkariPrep — Indian Government Exams & Jobs",description:"Student-first platform for Indian government exams, jobs, eligibility, syllabus, preparation and official recruitment links.",keywords:["government exams India","Sarkari Naukri","UPSC","SSC","Banking","Railway","Defence","Government Jobs"]};
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://sarkariprep.in"),
+  title: {
+    default: "SarkariPrep — Indian Government Exams & Jobs",
+    template: "%s | SarkariPrep",
+  },
+  description:
+    "Discover Indian government exams, jobs, eligibility, preparation routes and official recruitment notifications in one student-first platform.",
+  keywords: [
+    "government exams India",
+    "Sarkari Naukri",
+    "government jobs",
+    "UPSC",
+    "SSC",
+    "Banking exams",
+    "Railway jobs",
+    "Defence exams",
+    "State government exams",
+  ],
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "SarkariPrep — Indian Government Exams & Jobs",
+    description:
+      "Explore government exams, jobs, preparation routes and official recruitment sources.",
+    url: "https://sarkariprep.in",
+    siteName: "SarkariPrep",
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SarkariPrep — Indian Government Exams & Jobs",
+    description:
+      "A student-first platform for Indian government exams, jobs and official recruitment sources.",
+  },
+  robots: { index: true, follow: true },
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en-IN">
+      <body>{children}</body>
+    </html>
+  );
+}
