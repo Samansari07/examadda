@@ -7,6 +7,24 @@ import os from "node:os";
 import path from "node:path";
 
 const execFileAsync=promisify(execFile);
+const UA="SarkariPrep-Official-Checker/4.0";
+async function fetchWithRetry(url,options={}){
+  let last;
+  for(let attempt=0;attempt<3;attempt++){
+    try{
+      const r=await fetch(url,{...options,headers:{...options.headers,"user-agent":UA},redirect:"follow",signal:AbortSignal.timeout(20000)});
+      if(r.ok||[401,403,404].includes(r.status))return r;
+      last=new Error("HTTP "+r.status);
+    }catch(error){last=error}
+    await new Promise(resolve=>setTimeout(resolve,1000*(attempt+1)));
+  }
+  try{
+    const {stdout,stderr}=await execFileAsync("curl",["-L","--max-time","25","--retry","2","--retry-delay","1","-A",UA,"-H","Accept: text/html,application/xhtml+xml","-H","Accept-Language: en-IN,en;q=0.9",url],{maxBuffer:20*1024*1024});
+    if(stdout) return new Response(stdout,{status:200,headers:{"content-type":"text/html; charset=utf-8"}});
+    last=new Error(stderr||"curl returned no content");
+  }catch(error){last=error}
+  throw last;
+}
 const SOURCES=JSON.parse(await fs.readFile(new URL("../config/official-sources.json",import.meta.url),"utf8"));
 const EXAMS_TEXT=await fs.readFile(new URL("../lib/exams.ts",import.meta.url),"utf8");
 const KEYWORDS=/notification|notice|recruitment|vacanc|corrigendum|application|apply|admit card|answer key|result|calendar|schedule|examination|exam|shortlist|interview|extension|registration|provisional|final|advertisement|engagement/i;
@@ -35,11 +53,11 @@ function extractLinks(html,source){
 }
 async function findPdf(url){
  if(/\.pdf(?:[?#].*)?$/i.test(url))return url;
- try{const r=await fetch(url,{headers:{"user-agent":"SarkariPrep-Official-Checker/3.0"},redirect:"follow"});if(!r.ok)return null;const ct=r.headers.get("content-type")||"";if(ct.includes("pdf"))return url;const html=await r.text();const re=/<a\b[^>]*href=["']([^"']+\.pdf(?:[?#][^"']*)?)["']/ig;const m=re.exec(html);if(!m)return null;return new URL(m[1],url).href}catch{return null}
+ try{const r=await fetchWithRetry(url,{headers:{"accept":"application/pdf,text/html"}});if(!r.ok)return null;const ct=r.headers.get("content-type")||"";if(ct.includes("pdf"))return url;const html=await r.text();const re=/<a\b[^>]*href=["']([^"']+\.pdf(?:[?#][^"']*)?)["']/ig;const m=re.exec(html);if(!m)return null;return new URL(m[1],url).href}catch{return null}
 }
 async function pdfText(url){
  const dir=await fs.mkdtemp(path.join(os.tmpdir(),"sarkariprep-"));const pdf=path.join(dir,"notice.pdf");const txt=path.join(dir,"notice.txt");
- try{const r=await fetch(url,{headers:{"user-agent":"SarkariPrep-Official-Checker/3.0"},redirect:"follow"});if(!r.ok)return"";const b=Buffer.from(await r.arrayBuffer());if(b.length<1000)return"";await fs.writeFile(pdf,b);await execFileAsync("pdftotext",["-layout",pdf,txt],{maxBuffer:10*1024*1024});return(await fs.readFile(txt,"utf8")).replace(/\r/g," ").replace(/\n+/g,"\n").slice(0,180000)}catch{return""}finally{await fs.rm(dir,{recursive:true,force:true}).catch(()=>{})}
+ try{const r=await fetchWithRetry(url,{headers:{"accept":"application/pdf,text/html"}});if(!r.ok)return"";const b=Buffer.from(await r.arrayBuffer());if(b.length<1000)return"";await fs.writeFile(pdf,b);await execFileAsync("pdftotext",["-layout",pdf,txt],{maxBuffer:10*1024*1024});return(await fs.readFile(txt,"utf8")).replace(/\r/g," ").replace(/\n+/g,"\n").slice(0,180000)}catch{return""}finally{await fs.rm(dir,{recursive:true,force:true}).catch(()=>{})}
 }
 function parseStructured(text){
  const t=text.replace(/[ \t]+/g," ").replace(/\n+/g,"\n");const out={};const evidence=[];const date=/(\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/;
@@ -63,7 +81,7 @@ async function main(){
  const results=[];const failures=[];const sourceStatus=[];const overrides={};
  for(const source of SOURCES){
   try{
-   const response=await fetch(source.updatesUrl,{headers:{"user-agent":"SarkariPrep-Official-Checker/3.0","accept":"text/html,application/xhtml+xml","accept-language":"en-IN,en;q=0.9"},redirect:"follow"});
+   const response=await fetchWithRetry(source.updatesUrl,{headers:{"accept":"text/html,application/xhtml+xml","accept-language":"en-IN,en;q=0.9"}});
    if(!response.ok)throw new Error("HTTP "+response.status);
    const contentType=response.headers.get("content-type")||"";if(!contentType.includes("html")&&!contentType.includes("xml")&&!contentType.includes("text"))throw new Error("Unsupported content type "+contentType);
    const html=await response.text();const detected=extractLinks(html,source);results.push(...detected);
@@ -83,9 +101,10 @@ async function main(){
  }
  const unique=[];const seen=new Set();for(const item of results){const key=(item.notificationUrl||item.title).replace(/#.*$/,"");if(seen.has(key))continue;seen.add(key);unique.push(item)}unique.sort((a,b)=>b.lastChecked.localeCompare(a.lastChecked)||a.organization.localeCompare(b.organization)||a.title.localeCompare(b.title));
  await fs.writeFile("lib/source-status.ts","export type SourceStatus = {id:string; organization:string; category:string; region:string; sourceUrl:string; ok:boolean; detected:number; lastChecked:string; error?:string};\n\nexport const sourceStatuses:Record<string,SourceStatus> = "+JSON.stringify(Object.fromEntries(sourceStatus.map(x=>[x.id,x])),null,2)+";\n","utf8");
- await fs.writeFile("lib/auto-notifications.ts",["export type AutoNotification = {","  id:string; title:string; organization:string; category:string;","  stage:\"Application Open\"|\"Upcoming\"|\"Admit Card\"|\"Answer Key\"|\"Result\"|\"Recruitment\";","  status:\"Verified official\"; publishedDate:string; lastChecked:string;","  officialUrl:string; notificationUrl?:string; description:string;","};","", "export const autoNotificationMeta = "+JSON.stringify({generatedAt:today(),sourceCount:SOURCES.length,successfulSources:SOURCES.length-failures.length,failedSources:failures.map(x=>x.source),sourcePolicy:"Automatically checked registered official authority pages; original authority links remain the controlling source."},null,2)+";","", "export const autoNotifications:AutoNotification[] = "+JSON.stringify(unique,null,2)+";",""].join("\n"),"utf8");
+ await fs.writeFile("lib/auto-notifications.ts",["export type AutoNotification = {","  id:string; title:string; organization:string; category:string;","  stage:\"Application Open\"|\"Upcoming\"|\"Admit Card\"|\"Answer Key\"|\"Result\"|\"Recruitment\";","  status:\"Verified official\"; publishedDate:string; lastChecked:string;","  officialUrl:string; notificationUrl?:string; description:string;","};","", "export const autoNotificationMeta = "+JSON.stringify({generatedAt:today(),sourceCount:SOURCES.length,successfulSources:SOURCES.length-failures.length,failedSources:failures.map(x=>x.organization),sourcePolicy:"Automatically checked registered official authority pages; original authority links remain the controlling source."},null,2)+";","", "export const autoNotifications:AutoNotification[] = "+JSON.stringify(unique,null,2)+";",""].join("\n"),"utf8");
  const autoBody=["export type AutoExamOverride = {"," slug:string; name:string; organization:string; notificationUrl:string; sourceUrl:string; lastVerified:string; detectedAt:string; confidence:\"medium\"|\"high\"; evidenceCount:number; evidence:string[];"," applicationDates?:string; lastDate?:string; examDate?:string; vacancies?:string; minAge?:number; maxAge?:number; fee?:string; correctionDates?:string;","};","", "export const autoExamDataMeta = "+JSON.stringify({generatedAt:today(),sourceCount:SOURCES.length,overrideCount:Object.keys(overrides).length,policy:"Only conservative values extracted from an official notice/bulletin are applied. Missing or ambiguous fields are never invented."},null,2)+";","", "export const autoExamData:Record<string,AutoExamOverride> = "+JSON.stringify(overrides,null,2)+";",""].join("\n");
  await fs.writeFile("lib/auto-exam-data.ts",autoBody,"utf8");
  console.log("Wrote",unique.length,"official updates and",Object.keys(overrides).length,"exam data overrides from",SOURCES.length,"sources");
+ if(failures.length) console.log("Failed sources:",failures.map(x=>x.organization).join(", "));
 }
 main().catch(error=>{console.error(error);process.exit(1)});
