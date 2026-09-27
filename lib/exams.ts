@@ -1,3 +1,5 @@
+import {autoExamData} from "@/lib/auto-exam-data";
+
 // DATA INTEGRITY HARDENING
 export type Exam={
  slug:string; name:string; organization:string; category:string; vacancies:string;
@@ -71,8 +73,25 @@ const verifiedCurrent:Exam[]=[{
  description:"Official CDS II 2026 cycle. UPSC published the notification on 20 May 2026; the written examination was held on 13 September 2026 and applications closed on 11 June 2026. The UPSC examination page is the controlling source."
 }];
 
+const applyAutoExamData=(e:Exam):Exam=>{
+ const o=autoExamData[e.slug]; if(!o) return e;
+ const verified=o.confidence==="high" && o.evidenceCount>=3;
+ return {
+  ...e,
+  ...(o.vacancies?{vacancies:o.vacancies}:{}),
+  ...(typeof o.minAge==="number"?{minAge:o.minAge}:{}),
+  ...(typeof o.maxAge==="number"?{maxAge:o.maxAge}:{}),
+  ...(o.examDate?{examDate:o.examDate}:{}),
+  ...(o.applicationDates||o.lastDate||o.correctionDates?{lastDate:[o.applicationDates,o.lastDate,o.correctionDates?("Correction: "+o.correctionDates):""].filter(Boolean).join(" · ")}:{}),
+  notificationUrl:o.notificationUrl,
+  sourceUrl:o.sourceUrl,
+  lastVerified:o.lastVerified,
+  dataStatus:verified?"official-verified":(e.dataStatus==="official-verified"?"official-verified":"official-calendar"),
+  description:(e.description?e.description+" ":"")+"Automatically refreshed from an official notice on "+o.lastVerified+".",
+ };
+};
 export const exams:Exam[]=[
  ...verifiedCurrent,
- ...cycleWithIntegrity, 
+ ...cycleWithIntegrity,
  ...familyExams.map(e=>({...e,dataStatus:"reference-family" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl}))
-];
+].map(applyAutoExamData);
