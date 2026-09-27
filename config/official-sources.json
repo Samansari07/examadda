@@ -121,6 +121,14 @@
     "scope": "India Post recruitment/engagement notices where published."
   },
   {
+    "id": "indian-navy",
+    "organization": "Indian Navy",
+    "category": "Defence",
+    "region": "Central",
+    "updatesUrl": "https://www.joinindiannavy.gov.in/",
+    "scope": "Indian Navy officer and sailor recruitment notices, application-window updates, admit cards, results and official recruitment instructions."
+  },
+  {
     "id": "employment-news",
     "organization": "Employment News",
     "category": "Government Jobs",
