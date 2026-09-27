@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-const siteUrl = "https://examadda.vercel.app";
+const siteUrl = "https://sarkariprep.online";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: "SarkariPrep — Indian Government Exams & Jobs", template: "%s | SarkariPrep" },
