@@ -61,15 +61,18 @@ function extract(html, source) {
 async function main(){
   const results=[];
   const failures=[];
+  const sourceStatus=[];
   for(const source of SOURCES){
     try{
       const response=await fetch(source.url,{headers:{"user-agent":"SarkariPrep-Official-Checker/1.0","accept":"text/html,application/xhtml+xml"}});
       if(!response.ok) throw new Error("HTTP "+response.status);
       const html=await response.text();
       results.push(...extract(html,source));
+      sourceStatus.push({id:source.id,organization:source.organization,sourceUrl:source.url,ok:true,lastChecked:new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"})});
       console.log("OK",source.organization,results.length);
     }catch(error){
       failures.push({source:source.organization,error:String(error)});
+      sourceStatus.push({id:source.id,organization:source.organization,sourceUrl:source.url,ok:false,lastChecked:new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"}),error:String(error)});
       console.error("FAIL",source.organization,String(error));
     }
   }
@@ -86,6 +89,14 @@ async function main(){
   unique.sort((a,b)=>b.lastChecked.localeCompare(a.lastChecked)||a.organization.localeCompare(b.organization)||a.title.localeCompare(b.title));
 
   const today=new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"});
+  const statusBody=[
+    "export type SourceStatus = {id:string; organization:string; sourceUrl:string; ok:boolean; lastChecked:string; error?:string};",
+    "",
+    "export const sourceStatuses:Record<string,SourceStatus> = "+JSON.stringify(Object.fromEntries(sourceStatus.map(x=>[x.organization,x])),null,2)+";",
+    ""
+  ].join("\\n");
+  await fs.writeFile("lib/source-status.ts",statusBody,"utf8");
+
   const body=[
     "export type AutoNotification = {",
     "  id:string; title:string; organization:string; category:string;",
