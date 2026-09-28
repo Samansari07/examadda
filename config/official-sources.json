@@ -48,13 +48,12 @@
     "organization": "Indian Railways / RRB",
     "category": "Railway",
     "region": "Central",
-    "updatesUrl": "https://indianrailways.gov.in/",
+    "updatesUrl": "https://rrb.indianrailways.gov.in/",
     "scope": "Railway recruitment information; regional RRB/CEN notice remains controlling source.",
     "fallbackUrls": [
       "https://www.rrbcdg.gov.in/",
-      "https://rrbbhopal.gov.in/",
-      "https://rrbpatna.gov.in/",
-      "https://rrbranchi.gov.in/",
+      "https://www.rrbthiruvananthapuram.gov.in/",
+      "https://rrbsecunderabad.gov.in/",
       "https://rrbbbs.gov.in/"
     ]
   },
