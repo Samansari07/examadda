@@ -4,6 +4,7 @@ import "./globals.css";
 const siteUrl = "https://sarkariprep.online";
 
 export const metadata: Metadata = {
+  applicationName: "SarkariPrep",
   metadataBase: new URL(siteUrl),
   title: { default: "SarkariPrep — Indian Government Exams & Jobs", template: "%s | SarkariPrep" },
   description: "Discover Indian government exams, jobs, eligibility, preparation routes and official recruitment notifications in one student-first platform.",
