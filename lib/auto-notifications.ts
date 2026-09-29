@@ -8,7 +8,7 @@ export type AutoNotification = {
 export const autoNotificationMeta = {
   "generatedAt": "2026-09-29",
   "sourceCount": 64,
-  "successfulSources": 32,
+  "successfulSources": 31,
   "failedSources": [
     "Haryana Public Service Commission",
     "Tamil Nadu Public Service Commission",
@@ -25,8 +25,10 @@ export const autoNotificationMeta = {
     "Odisha Employment Portal",
     "Assam Public Service Commission",
     "Haryana Employment Portal",
+    "CTET",
     "Bihar Public Service Commission",
     "Uttarakhand Public Service Commission",
+    "Himachal Pradesh Employment Portal",
     "Indian Railways / RRB",
     "ESIC",
     "Chhattisgarh Public Service Commission",
@@ -40,7 +42,6 @@ export const autoNotificationMeta = {
     "Indian Navy",
     "Gujarat Public Service Commission",
     "Sikkim Public Service Commission",
-    "Kerala Employment Portal",
     "West Bengal Employment Bank"
   ],
   "sourcePolicy": "Parallel direct official-source checks with retries and curl fallback. Detected links are never treated as authoritative over the original notice."
@@ -70,162 +71,6 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://appsc.gov.in/",
     "notificationUrl": "https://appsc.gov.in/Index/sub_page/doc12233/Notifications",
     "description": "Detected automatically from the registered official Arunachal Pradesh Public Service Commission source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-c3530337d2101d93",
-    "title": "CTET PUBLIC NOTICE SEPT 2026",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/2026051163782266.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-da58ec7c67e2874d",
-    "title": "Duplicate Certificate and Marksheet of CTET Examination upto 2016",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://ctet.nic.in/duplicate-marks-sheet-and-certificate/",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-65b953b91c3e8ca2",
-    "title": "FINAL ANSWER KEY",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Answer Key",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://ctet.nic.in/previous-year-final-answer-key/",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-62baff57b3854bd2",
-    "title": "Office Memorandum, dated 19 Aug 2018 : Guidelines for conducting written examination for Persons with Benchmark Disabilities",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032515.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-c31534fbbda464a8",
-    "title": "PUBLIC NOTICE : Validity Period of TET qualifying certificate",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/04/2022042551.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-3263ad107f9d8029",
-    "title": "PUBLIC NOTICE &#8211; CTET Feb 2026 &#8211; RESULT",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/03/202603311458590440.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-edf81a7aa7484554",
-    "title": "Public Notice: Calculation Sheet / Copy of OMR",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/04/202604011187448306.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-988ed4272bbf3f80",
-    "title": "Public Notice: CTET Feb-2026 Key Challenge / Scanned Images of OMR (last Date 15/03/2026,up-to 11:59 PM)",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/03/202603121086699841.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-96e4ef1fd56a6b3d",
-    "title": "PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/06/202606151389616278.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-e3d502ed3ef8ab05",
-    "title": "PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW (last date 10.09.2026)",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260907461266783.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-5a670a71eaa755a5",
-    "title": "PUBLIC NOTICE: Exam Dates for 22nd edition of CTET",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260914325514446.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-339bbee92773cd8f",
-    "title": "Public Notice: re opening of Online Applications for the 22nd Edition of CTET",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Application Open",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/08/20260825641447501.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-6d9936db032fe15f",
-    "title": "re-exam PUBLIC NOTICE: Dated 24/02/2026",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-09-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/02/202602251588838774.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-indiapost-07c5e2d3ebaf0e02",
@@ -924,7 +769,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-37c45556314fa75d",
+    "id": "auto-kerala-psc-b0408e9076d75cad",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -932,11 +777,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-09-29",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_omrexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_omrexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-274a1d8e868c2d27",
+    "id": "auto-kerala-psc-bfc1c395481cde09",
     "title": "Answer key-Online Exam",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -944,11 +789,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-09-29",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_onlineexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_onlineexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-d9b4642e91559d29",
+    "id": "auto-kerala-psc-bf299afc332070c2",
     "title": "Exam Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -956,7 +801,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-09-29",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/examinations",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/examinations",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -972,7 +817,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-39e61c0337589778",
+    "id": "auto-kerala-psc-05de1912b0b5a28f",
     "title": "Interview Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -980,7 +825,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-09-29",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/interviews",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/interviews",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -1008,7 +853,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-1a0587f41dadec15",
+    "id": "auto-kerala-psc-0011c91375f8ca04",
     "title": "OTV Schedule and Driving Test",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -1016,11 +861,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-09-29",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/otv-schedule-and-driving-test",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/otv-schedule-and-driving-test",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-1709d751f92d2140",
+    "id": "auto-kerala-psc-c019d0c423cf10b5",
     "title": "Procedure for Interview Date Change Requests",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -1028,11 +873,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-09-29",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-8c1bb50db9d6dc08",
+    "id": "auto-kerala-psc-0f5b932826256159",
     "title": "PSC Examination updates",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -1040,11 +885,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-09-29",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/psc-examination-updates",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/psc-examination-updates",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-e89d8cfee71410b4",
+    "id": "auto-kerala-psc-c4f57dea207a1fb4",
     "title": "Question paper for Descriptive Examinations",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -1052,7 +897,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-09-29",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/question-paper-descriptive-exam",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/question-paper-descriptive-exam",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
