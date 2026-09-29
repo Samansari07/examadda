@@ -6,7 +6,7 @@ export type Exam={
  minAge:number; maxAge:number; qualifications:string; categories:string[];
  examDate:string; lastDate:string; officialUrl:string; salary:string;
  status?: "cycle"|"family"; description?:string;
- dataStatus?: "official-verified"|"official-calendar"|"historical-reference"|"reference-family"; lastVerified?: string; sourceUrl?: string; notificationUrl?: string; applyUrl?: string;
+ dataStatus?: "official-verified"|"official-calendar"|"historical-reference"|"reference-family"; lastVerified?: string; sourceUrl?: string; notificationUrl?: string; applyUrl?: string; applicationStatus?: "open"|"closed"|"upcoming"|"unknown";
 };
 
 const cycleExams:Exam[]=[
