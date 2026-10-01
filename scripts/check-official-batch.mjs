@@ -5,7 +5,7 @@ import {promisify} from "node:util";
 import path from "node:path";
 import {createHash} from "node:crypto";
 const execFileAsync=promisify(execFile);
-const UA="SarkariPrep-Official-Checker/8.0";
+const UA="SarkariPrep-Official-Checker/9.0";
 const HEADERS={"user-agent":UA,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","accept-language":"en-IN,en;q=0.9","cache-control":"no-cache","pragma":"no-cache"};
 const today=()=>new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"});
 const clean=s=>String(s).replace(/&nbsp;/gi," ").replace(/&amp;/gi,"&").replace(/&quot;/gi,'"').replace(/&#39;/gi,"'").replace(/<[^>]+>/g," ").replace(/\s+/g," ").trim();
@@ -73,34 +73,76 @@ async function findPdf(url){
     return m?new URL(m[1],url).href:null;
   }catch{return null}
 }
+const MONTHS="january|february|march|april|may|june|july|august|september|october|november|december";
+const DATE_TOKEN="(\\d{1,2}\\s+(?:"+MONTHS+")\\s+\\d{4}|\\d{1,2}[.\\/-]\\d{1,2}[.\\/-]\\d{2,4})";
+function fieldEvidence(text,re,label){const m=text.match(re);if(!m)return null;const i=m.index||0;return {value:m[1]?.trim(),label,snippet:text.slice(Math.max(0,i-100),Math.min(text.length,i+Math.max(220,m[0].length+100))).replace(/\\s+/g," ").trim()};}
 function parseStructured(t){
-  const out={},e=[];t=t.replace(/[ \t]+/g," ").replace(/\n+/g,"\n");let m;
-  m=t.match(/(?:last date for (?:submission of )?(?:online )?application)[^\d]*(\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);if(m){out.lastDate=m[1];e.push("lastDate")}
-  m=t.match(/(?:date of (?:the )?examination|exam(?:ination)? will be held|examination.*?scheduled)[^\d]{0,80}(\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);if(m){out.examDate=m[1];e.push("examDate")}
-  m=t.match(/(?:number of )?(?:vacancies|vacant posts|total posts|posts)[^\d]{0,30}(\d[\d,]{2,})/i);if(m){out.vacancies=m[1]+" notified";e.push("vacancies")}
-  m=t.match(/(?:minimum age|minimum age limit)[^\d]{0,30}(\d{1,2})[^\d]{0,80}(?:maximum age|upper age)[^\d]{0,30}(\d{1,2})/i);if(m){out.minAge=+m[1];out.maxAge=+m[2];e.push("age")}
-  m=t.match(/(?:application fee|examination fee|exam fee)[^\n:]{0,80}(?:rs\.?|₹)\s*([\d,]+)/i);if(m){out.fee="₹"+m[1];e.push("fee")}
-  return{data:out,evidence:e};
+  const text=t.replace(/[ \\t]+/g," ").replace(/\\n+/g," ").replace(/\\s+/g," ").trim();
+  const out={},e=[],evidenceSnippets=[];let m;
+  const last=fieldEvidence(text,new RegExp("(?:last date|closing date|last date for (?:submission of )?(?:online )?application)[^0-9]*"+DATE_TOKEN,"i"),"lastDate");
+  if(last?.value){out.lastDate=last.value;e.push("lastDate");evidenceSnippets.push(last.snippet);}
+  const exam=fieldEvidence(text,new RegExp("(?:date of (?:the )?examination|date of examination|exam(?:ination)? (?:will be held|scheduled|shall be held)|examination.*?scheduled)[^0-9]*"+DATE_TOKEN,"i"),"examDate");
+  if(exam?.value){out.examDate=exam.value;e.push("examDate");evidenceSnippets.push(exam.snippet);}
+  const vacancy=fieldEvidence(text,/(?:number of )?(?:vacancies|vacant posts|total posts|total vacancies)[^0-9]{0,50}([0-9][0-9,]{2,})/i,"vacancies");
+  if(vacancy?.value){out.vacancies=vacancy.value+" notified";e.push("vacancies");evidenceSnippets.push(vacancy.snippet);}
+  m=text.match(/(?:minimum age|minimum age limit)[^0-9]{0,40}([0-9]{1,2})[^0-9]{0,100}(?:maximum age|upper age)[^0-9]{0,40}([0-9]{1,2})/i);
+  if(m){out.minAge=+m[1];out.maxAge=+m[2];e.push("age");evidenceSnippets.push(m[0].slice(0,260));}
+  m=text.match(/(?:application fee|examination fee|exam fee)[^\\n:]{0,100}(?:rs\\.?|₹)\\s*([0-9][0-9,]*)/i);
+  if(m){out.fee="₹"+m[1];e.push("fee");evidenceSnippets.push(m[0].slice(0,260));}
+  return{data:out,evidence:e,evidenceSnippets};
 }
 const config=JSON.parse(await fs.readFile("config/official-sources.json","utf8"));
 const batch=Number(process.env.SOURCE_BATCH||0),count=Number(process.env.SOURCE_BATCH_COUNT||8);
 const selected=config.filter((_,i)=>i%count===batch);
 const failures=[],statuses=[],results=[],overrides={};
 const exams=(await fs.readFile("lib/exams.ts","utf8")).match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"/g)?.map(x=>{const m=x.match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"/);return{slug:m[1],name:m[2],organization:m[3]}})||[];
+const ORG_ALIASES={
+  "Staff Selection Commission":["ssc"],
+  "Indian Railways / RRB":["rrb","railway recruitment board"],
+  "National Testing Agency":["nta"],
+  "CTET":["ctet","central teacher eligibility test"],
+  "State Bank of India":["sbi"],
+  "Reserve Bank of India":["rbi"],
+  "Indian Navy":["navy"],
+  "Indian Air Force":["iaf","air force","afcat"],
+  "Jharkhand Public Service Commission":["jpsc"],
+  "Bihar Public Service Commission":["bpsc"],
+  "West Bengal Public Service Commission":["wbpsc"],
+  "Andhra Pradesh Public Service Commission":["appsc"],
+  "Telangana Public Service Commission":["tspsc","tgpsc"]
+};
 const matchExam=(title,source,evidence="")=>{
-  const pool=exams.filter(e=>e.organization.toLowerCase()===source.organization.toLowerCase()),t=norm(title),et=norm(evidence);let best=null;
-  for(const e of pool){let s=0;for(const a of [norm(e.slug),norm(e.name),...e.name.match(/\b[A-Z][A-Z0-9-]{1,}\b/g)?.map(norm)||[]])if(a.length>3&&(t.includes(a)||et.includes(a)))s+=a.length>8?5:3;if(!best||s>best.s)best={e,s}}
-  return best&&best.s>=5?best.e:null;
+  const sourceNames=[source.organization,...(ORG_ALIASES[source.organization]||[])].map(norm);
+  const t=norm(title+" "+evidence);let best=null;
+  for(const e of exams){
+    const orgMatch=sourceNames.some(a=>a&&norm(e.organization)===a)||sourceNames.some(a=>a&&t.includes(a));
+    if(!orgMatch)continue;
+    const aliases=[norm(e.slug),norm(e.name),...(e.name.match(/\\b[A-Z][A-Z0-9-]{1,}\\b/g)||[]).map(norm)];
+    let score=0;
+    for(const a of aliases.filter(x=>x.length>2))if(t.includes(a))score+=a.length>=8?8:4;
+    const year=(e.name.match(/\\b20\\d{2}\\b/)||[])[0];if(year&&t.includes(year))score+=5;
+    if(!best||score>best.score)best={e,score};
+  }
+  return best&&best.score>=8?best.e:null;
 };
 for(const source of selected){
   try{
     const f=await fetchSource(source),det=extractLinks(f.html,source);results.push(...det);
-    const candidates=det.filter(x=>matchExam(x.title,source)).slice(0,8);
-    for(const item of candidates){
-      const exam=matchExam(item.title,source),pdf=await findPdf(item.notificationUrl);if(!pdf)continue;
+    const candidates=det
+      .filter(x=>!["Result","Admit Card","Answer Key"].includes(x.stage))
+      .map(x=>({item:x,exam:matchExam(x.title,source)}))
+      .filter(x=>x.exam)
+      .slice(0,12);
+    for(const {item,exam} of candidates){
+      const pdf=await findPdf(item.notificationUrl);if(!pdf)continue;
       const txt=await pdfText(pdf);if(!txt)continue;
-      const p=parseStructured(txt);if(p.evidence.length<2)continue;
-      overrides[exam.slug]={...p.data,slug:exam.slug,name:exam.name,organization:exam.organization,notificationUrl:pdf,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence:p.evidence.length>=4?"high":"medium",evidenceCount:p.evidence.length,evidence:p.evidence};
+      const normalized=norm(txt.slice(0,80000));
+      const aliases=[norm(exam.name),norm(exam.slug),...(exam.name.match(/\\b[A-Z][A-Z0-9-]{1,}\\b/g)||[]).map(norm)].filter(x=>x.length>3);
+      const identityMatches=aliases.filter(k=>normalized.includes(k)).length;
+      const p=parseStructured(txt);
+      if(identityMatches<1 || p.evidence.length<2 || (!p.data.examDate && !p.data.lastDate))continue;
+      const confidence=identityMatches>=2 && p.evidence.length>=3 ? "high" : "medium";
+      overrides[exam.slug]={...p.data,slug:exam.slug,name:exam.name,organization:exam.organization,notificationUrl:pdf,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence,evidenceCount:p.evidence.length,evidence:p.evidence,evidenceSnippets:p.evidenceSnippets,sourceTitle:item.title};
     }
     statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:f.url,ok:true,detected:det.length,lastChecked:today(),method:f.method});
   }catch(e){
