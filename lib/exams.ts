@@ -76,6 +76,7 @@ const verifiedCurrent:Exam[]=[{
 const applyAutoExamData=(e:Exam):Exam=>{
  const o=autoExamData[e.slug]; if(!o) return e;
  const verified=o.confidence==="high" && o.evidenceCount>=3;
+ if(!verified) return e;
  return {
   ...e,
   ...(o.vacancies?{vacancies:o.vacancies}:{}),
