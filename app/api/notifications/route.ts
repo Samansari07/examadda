@@ -1,11 +1,18 @@
 import {NextResponse} from "next/server";
 import {notifications} from "@/lib/notifications";
 import {autoNotifications,autoNotificationMeta} from "@/lib/auto-notifications";
+import {discoveredOfficialNotices} from "@/lib/discovered-official-notices";
 import {officialSources} from "@/lib/official-sources";
 import {sourceStatuses} from "@/lib/source-status";
 
+const notificationKey=(n:{title:string;notificationUrl?:string;officialUrl?:string})=>
+ (n.notificationUrl||n.officialUrl||n.title).split("#")[0].replace(/\/$/,"").toLowerCase();
+
 export async function GET(){
- const items=[...autoNotifications,...notifications.filter(n=>!autoNotifications.some(a=>a.notificationUrl===n.notificationUrl))];
+ const items=Array.from(new Map(
+   [...autoNotifications,...discoveredOfficialNotices,...notifications]
+     .map(n=>[notificationKey(n),n] as const)
+ ).values());
  return NextResponse.json({
   updatedAt:autoNotificationMeta.generatedAt,
   sourcePolicy:"Official-source checked; original authority links remain the controlling source.",
