@@ -19,10 +19,11 @@ const URL_HINTS=/notification|notice|recruit|vacanc|advert|corrig|application|ap
 const stage=t=>{t=t.toLowerCase();const years=[...t.matchAll(/\b(?:19|20)\d{2}\b/g)].map(m=>Number(m[0]));if(/admit card|hall ticket/.test(t))return"Admit Card";if(/answer key|response sheet/.test(t))return"Answer Key";if(/result|score card|cut.?off/.test(t))return"Result";if(/closed|last date.*(?:over|passed)|application.*closed/.test(t))return"Notice";if(years.length&&!years.some(y=>y>=new Date().getUTCFullYear()))return"Notice";if(/apply|application/.test(t))return"Application Open";if(/vacanc|recruitment|corrigendum|advertisement|engagement/.test(t))return"Recruitment";if(/calendar|schedule|upcoming|exam date/.test(t))return"Upcoming";return"Notice"};
 
 async function fetchSource(source){
-  const urls=[source.updatesUrl,...(source.fallbackUrls||[])].filter(Boolean).slice(0,3),attempts=[];
+  const extraFallbacks=source.id==="indian-army"?["https://www.joinindianarmy.nic.in/"]:source.id==="indian-coast-guard"?["https://indiancoastguard.gov.in/recruitment"]:[];
+  const urls=[source.updatesUrl,...(source.fallbackUrls||[]),...extraFallbacks].filter(Boolean).slice(0,4),attempts=[];
   for(const url of [...new Set(urls)]){
     try{
-      const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(7000)});
+      const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(12000)});
       const ct=r.headers.get("content-type")||"";
       if(r.ok&&(ct.includes("html")||ct.includes("xml")||ct.includes("text"))){
         const html=await r.text();
@@ -31,7 +32,7 @@ async function fetchSource(source){
       attempts.push(url+" -> HTTP "+r.status);
     }catch(e){attempts.push(url+" -> "+String(e))}
     try{
-      const {stdout}=await execFileAsync("curl",["-L","--max-time","10","--retry","0","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:20*1024*1024});
+      const {stdout}=await execFileAsync("curl",["-L","--max-time","20","--retry","1","--retry-delay","1","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:20*1024*1024});
       if(stdout.length>120)return{url,html:stdout,method:"curl"};
     }catch(e){attempts.push(url+" -> curl "+String(e))}
   }
