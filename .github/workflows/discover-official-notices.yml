@@ -1,6 +1,11 @@
 name: Discover official recruitment notices
 
 on:
+  push:
+    paths:
+      - "scripts/discover-official-notices.mjs"
+      - "config/official-sources.json"
+      - ".github/workflows/discover-official-notices.yml"
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
