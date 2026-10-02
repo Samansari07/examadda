@@ -1,16 +1,16 @@
 import Link from "next/link";
 
 const categories = [
-  "Civil Services",
-  "SSC",
-  "Railway",
-  "Banking",
-  "Defence",
-  "Teaching",
-  "Medical",
-  "Engineering",
-  "State Government",
-];
+  ["Civil Services", "/government-jobs"],
+  ["SSC", "/government-jobs"],
+  ["Railway", "/railway-government-jobs"],
+  ["Banking", "/banking-government-jobs"],
+  ["Defence", "/defence-government-jobs"],
+  ["Teaching", "/teaching-government-jobs"],
+  ["Medical", "/medical-government-exams"],
+  ["Engineering", "/engineering-government-jobs"],
+  ["State Government", "/government-jobs"],
+] as const;
 
 export default function JobsPage() {
   return (
@@ -24,14 +24,10 @@ export default function JobsPage() {
         </div>
         <section className="section compact">
           <div className="categoryGrid">
-            {categories.map((category) => (
-              <Link
-                className="categoryTile"
-                href={`/exams?category=${encodeURIComponent(category)}`}
-                key={category}
-              >
+            {categories.map(([category, href]) => (
+              <Link className="categoryTile" href={href} key={category}>
                 <b>{category}</b>
-                <span>Explore exams →</span>
+                <span>Explore jobs →</span>
               </Link>
             ))}
           </div>
