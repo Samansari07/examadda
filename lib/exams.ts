@@ -14,7 +14,7 @@ const cycleExams:Exam[]=[
 {slug:"ssc-cgl-2026",name:"SSC CGL 2026",organization:"Staff Selection Commission",category:"Central Government",vacancies:"Notification-wise",minAge:18,maxAge:32,qualifications:"Graduate degree",categories:["General","OBC","SC","ST"],examDate:"2026-09-01",lastDate:"2026-07-31",officialUrl:"https://ssc.gov.in",salary:"Pay Level 4–7"},
 {slug:"ibps-po-2026",name:"IBPS PO/MT XVI",organization:"IBPS",category:"Banking",vacancies:"Notification-wise",minAge:20,maxAge:30,qualifications:"Graduate degree",categories:["General","OBC","SC","ST"],examDate:"2026-08-22",lastDate:"2026-07-01",officialUrl:"https://ibps.in",salary:"Bank officer scale"},
 {slug:"ibps-clerk-2026",name:"IBPS Customer Service Associate XVI",organization:"IBPS",category:"Banking",vacancies:"Notification-wise",minAge:20,maxAge:28,qualifications:"Graduate degree",categories:["General","OBC","SC","ST"],examDate:"2026-10-10",lastDate:"2026-08-01",officialUrl:"https://ibps.in",salary:"Bank clerical scale"},
-{slug:"rrb-ntpc-2026",name:"RRB NTPC Graduate",organization:"Railway Recruitment Boards",category:"Railway",vacancies:"11,558",minAge:18,maxAge:33,qualifications:"Graduate degree",categories:["General","OBC","SC","ST"],examDate:"2026-11-01",lastDate:"2026-09-01",officialUrl:"https://indianrailways.gov.in",salary:"Pay Level 5–6"},
+{slug:"rrb-ntpc-2026",name:"RRB NTPC Graduate 2026",organization:"Railway Recruitment Boards",category:"Railway",vacancies:"3,477 tentative",minAge:0,maxAge:100,qualifications:"Graduate degree; final eligibility is controlled by the detailed CEN 06/2026",categories:["General","OBC","SC","ST","EWS","PwBD"],examDate:"To be announced",lastDate:"Applications tentatively 08 October–06 November 2026 (11:59 PM)",officialUrl:"https://rrb.indianrailways.gov.in/",salary:"Pay Level 5–6",status:"cycle",dataStatus:"official-verified",lastVerified:"2026-10-02",sourceUrl:"https://rrb.indianrailways.gov.in/",notificationUrl:"https://rrb.indianrailways.gov.in/",applyUrl:"https://www.rrbapply.gov.in/",applicationStatus:"upcoming",description:"Current RRB NTPC Graduate 2026 cycle under CEN 06/2026. RRB has issued an indicative notice for 3,477 tentative vacancies; applications are tentatively scheduled from 08 October to 06 November 2026. The detailed CEN controls final eligibility, post-wise vacancies, fees and selection conditions."},
 {slug:"ctet-2026",name:"CTET 2026",organization:"CBSE",category:"Teaching",vacancies:"Eligibility test",minAge:18,maxAge:60,qualifications:"D.El.Ed/B.Ed or prescribed qualification",categories:["General","OBC","SC","ST"],examDate:"2026-12-01",lastDate:"2026-10-01",officialUrl:"https://ctet.nic.in",salary:"Depends on recruiting authority"},
 {slug:"nda-ii-2026",name:"NDA II 2026",organization:"UPSC",category:"Defence",vacancies:"Notification-wise",minAge:16,maxAge:19,qualifications:"12th pass; stream requirements vary",categories:["General","OBC","SC","ST"],examDate:"2026-09-13",lastDate:"2026-06-09",officialUrl:"https://upsc.gov.in",salary:"Defence officer pay matrix"},
 {slug:"cds-ii-2026",name:"CDS II 2026",organization:"UPSC",category:"Defence",vacancies:"451 notified",minAge:19,maxAge:25,qualifications:"Bachelor’s degree; academy-specific subject requirements apply",categories:["General","OBC","SC","ST","EWS"],examDate:"13 September 2026",lastDate:"Application closed · 11 June 2026, 6:00 PM",officialUrl:"https://upsc.gov.in",salary:"Level 10 ₹56,100–₹1,77,500 + applicable MSP",status:"cycle",dataStatus:"official-verified",lastVerified:"2026-09-27",sourceUrl:"https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026",notificationUrl:"https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026",description:"Official CDS II 2026 cycle. UPSC published the notification on 20 May 2026; the written examination was held on 13 September 2026 and applications closed on 11 June 2026. The UPSC examination page is the controlling source."},
@@ -41,34 +41,6 @@ const familyExams:Exam[]=familySeeds.map(([slug,name,organization,category,quali
 
 const cycleWithIntegrity=cycleExams.filter(e=>e.slug!=="ssc-cgl-2026" && e.slug!=="cds-ii-2026" && e.slug!=="rrb-ntpc-2026").map(e=>({...e,status:"cycle" as const,dataStatus:"historical-reference" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl,vacancies:"See latest official notification",minAge:0,maxAge:100,qualifications:"Post-specific; see latest official notification",examDate:"See latest official notification",lastDate:"See latest official notification",description:e.description||"Historical 2026 cycle reference. Exact dates, vacancies and eligibility are not treated as live. Verify the latest official notification before applying."}));
 const verifiedCurrent:Exam[]=[{
- slug:"rrb-ntpc-2026",name:"RRB NTPC Graduate 2026",organization:"Railway Recruitment Boards",category:"Railway",
- vacancies:"3,477 tentative",minAge:0,maxAge:100,
- qualifications:"Graduate degree; final eligibility is controlled by the detailed CEN 06/2026",
- categories:["General","OBC","SC","ST","EWS","PwBD"],
- examDate:"To be announced",
- lastDate:"Applications tentatively 08 October–06 November 2026 (11:59 PM)",
- officialUrl:"https://rrb.indianrailways.gov.in/",
- salary:"Pay Level 5–6",
- status:"cycle",dataStatus:"official-verified",lastVerified:"2026-10-02",
- sourceUrl:"https://rrb.indianrailways.gov.in/",notificationUrl:"https://rrb.indianrailways.gov.in/",
- applyUrl:"https://www.rrbapply.gov.in/",applicationStatus:"upcoming",
- description:"Current RRB NTPC Graduate 2026 cycle under CEN 06/2026. RRB has issued an indicative notice for 3,477 tentative vacancies; applications are tentatively scheduled from 08 October to 06 November 2026. The detailed CEN controls final eligibility, post-wise vacancies, fees and selection conditions."
-},
-{
- slug:"family-rrb-ntpc-ug",name:"RRB NTPC Undergraduate 2026",organization:"Railway Recruitment Boards",category:"Railway",
- vacancies:"1,688 tentative",minAge:0,maxAge:100,
- qualifications:"12th pass; final eligibility is controlled by the detailed CEN 07/2026",
- categories:["General","OBC","SC","ST","EWS","PwBD"],
- examDate:"To be announced",
- lastDate:"Applications tentatively 15 October–13 November 2026 (11:59 PM)",
- officialUrl:"https://rrb.indianrailways.gov.in/",
- salary:"Pay Level 2–3",
- status:"cycle",dataStatus:"official-verified",lastVerified:"2026-10-02",
- sourceUrl:"https://rrb.indianrailways.gov.in/",notificationUrl:"https://rrb.indianrailways.gov.in/",
- applyUrl:"https://www.rrbapply.gov.in/",applicationStatus:"upcoming",
- description:"Current RRB NTPC Undergraduate 2026 cycle under CEN 07/2026. RRB has issued an indicative notice for 1,688 tentative vacancies; applications are tentatively scheduled from 15 October to 13 November 2026. The detailed CEN controls final eligibility, post-wise vacancies, fees and selection conditions."
-},
-
  slug:"ssc-cgl-2026",name:"SSC CGL 2026",organization:"Staff Selection Commission",category:"Central Government",
  vacancies:"10,731 tentative (as on 24 September 2026)",minAge:18,maxAge:32,
  qualifications:"Bachelor's degree for most posts; post-specific conditions apply",
@@ -122,5 +94,5 @@ const applyAutoExamData=(e:Exam):Exam=>{
 export const exams:Exam[]=[
  ...verifiedCurrent,
  ...cycleWithIntegrity,
- ...familyExams.filter(e=>e.slug!=="family-rrb-ntpc-ug").map(e=>({...e,dataStatus:"reference-family" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl}))
+ ...familyExams.map(e=>({...e,dataStatus:"reference-family" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl}))
 ].map(applyAutoExamData);
