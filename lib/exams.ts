@@ -41,7 +41,7 @@ const familyExams:Exam[]=familySeeds.map(([slug,name,organization,category,quali
 }));
 
 const autoCurrentCycles:Exam[]=Object.values(autoExamData)
- .filter(o=>o.familySlug&&o.cycleSlug&&o.cycleYear&&o.confidence==="high"&&o.evidenceCount>=3)
+ .filter(o=>o.familySlug&&o.cycleSlug&&o.cycleYear&&o.confidence==="high"&&o.evidenceCount>=2)
  .map(o=>{
    const family=familyExams.find(f=>f.slug===o.familySlug);
    if(!family) return null;
