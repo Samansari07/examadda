@@ -148,6 +148,38 @@
     "scope": "Indian Navy officer and sailor recruitment notices, application-window updates, admit cards, results and official recruitment instructions."
   },
   {
+    "id": "indian-coast-guard",
+    "organization": "Indian Coast Guard",
+    "category": "Defence",
+    "region": "Central",
+    "updatesUrl": "https://www.indiancoastguard.gov.in/recruitment",
+    "scope": "Indian Coast Guard recruitment notifications, civilian and uniformed recruitment notices, application updates and selection notices.",
+    "fallbackUrls": [
+      "https://www.indiancoastguard.gov.in/archive-recruitment",
+      "https://joinindiancoastguard.cdac.in/"
+    ]
+  },
+  {
+    "id": "indian-air-force",
+    "organization": "Indian Air Force",
+    "category": "Defence",
+    "region": "Central",
+    "updatesUrl": "https://agnipathvayu.cdac.in/",
+    "scope": "Indian Air Force recruitment and Agniveervayu intake notices, application windows, selection-test updates and official instructions.",
+    "fallbackUrls": [
+      "https://iafrecruitment.edcil.co.in/agniveervayu/",
+      "https://afcat.cdac.in/"
+    ]
+  },
+  {
+    "id": "indian-army",
+    "organization": "Indian Army",
+    "category": "Defence",
+    "region": "Central",
+    "updatesUrl": "https://joinindianarmy.nic.in/",
+    "scope": "Indian Army recruitment, Agniveer/regular cadre CEE notices, application windows, admit cards, results and recruitment instructions."
+  },
+  {
     "id": "employment-news",
     "organization": "Employment News",
     "category": "Government Jobs",
