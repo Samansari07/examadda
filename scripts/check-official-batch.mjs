@@ -171,7 +171,7 @@ for(const source of selected){
       const isFamily=exam.slug.startsWith("family-");
       if(identityMatches<1 || p.evidence.length<2 || (!p.data.examDate && !p.data.lastDate))continue;
       if(isFamily && !cycleYear)continue;
-      const confidence=identityMatches>=2 && p.evidence.length>=3 ? "high" : "medium";
+      const confidence=identityMatches>=2 && p.evidence.length>=2 ? "high" : "medium";
       const cycleSlug=isFamily ? exam.slug.replace(/^family-/,"")+"-"+cycleYear : exam.slug;
       const cycleName=isFamily ? (cycleYear ? exam.name+" "+cycleYear : exam.name) : exam.name;
       overrides[cycleSlug]={...p.data,slug:cycleSlug,cycleSlug,familySlug:isFamily?exam.slug:undefined,cycleYear:isFamily?cycleYear:undefined,name:cycleName,organization:exam.organization,notificationUrl:pdf,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence,evidenceCount:p.evidence.length,evidence:p.evidence,evidenceSnippets:p.evidenceSnippets,sourceTitle:item.title};
