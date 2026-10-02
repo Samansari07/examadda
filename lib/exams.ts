@@ -103,7 +103,7 @@ const verifiedCurrent:Exam[]=[{
 
 const applyAutoExamData=(e:Exam):Exam=>{
  const o=autoExamData[e.slug]; if(!o) return e;
- const verified=o.confidence==="high" && o.evidenceCount>=3;
+ const verified=o.confidence==="high" && o.evidenceCount>=2;
  if(!verified) return e;
  return {
   ...e,
