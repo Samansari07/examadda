@@ -31,7 +31,20 @@ export default async function ExamPage({params}:{params:Promise<{slug:string}>})
  const jsonLd={"@context":"https://schema.org","@type":"Article","headline":e.name+" — SarkariPrep Exam Guide","description":e.description||("Eligibility, syllabus, dates and official-source guide for "+e.name),"mainEntityOfPage":"https://sarkariprep.online/exams/"+e.slug,"dateModified":e.lastVerified||undefined,"publisher":{"@type":"Organization","name":"SarkariPrep","url":"https://sarkariprep.online"}};
  return <main className="detailPage"><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(jsonLd)}}/><div className="wrap">
   <a className="backLink" href="/exams">← Back to SarkariPrep exams</a>
+  <nav aria-label="Breadcrumb" className="cardHint" style={{marginBottom: "18px"}}><a href="/">Home</a> / <a href="/exams">Exams</a> / <span>{e.name}</span></nav>
   <div className="detailHero"><span className="tag">{e.category}</span><span className="dataBadge">{liveVerified?"OFFICIAL VERIFIED":family?(sourceTracked?"OFFICIAL SOURCE TRACKED":"REFERENCE FAMILY"):"HISTORICAL REFERENCE"}</span><h1>{e.name}</h1><p>{e.organization} · {family?"Recurring recruitment/exam family":liveVerified?"Current official cycle":"Historical / reference cycle"}</p>{e.description&&<p>{e.description}</p>}<div className="cardLinks"><a className="primaryLink detailOfficial" href={e.notificationUrl||e.sourceUrl||e.officialUrl} target="_blank" rel="noopener noreferrer">Latest notification ↗</a><a className="detailOfficial" href={e.officialUrl} target="_blank" rel="noopener noreferrer">Official website ↗</a>{canApply&&<a className="detailOfficial" href={e.applyUrl!} target="_blank" rel="noopener noreferrer">Apply online ↗</a>}{applicationStatus!=="open"&&e.applicationStatus&&<span className="detailOfficial">{applicationAction}</span>}</div></div>
+  <section className="detailCard" style={{marginBottom: "24px"}}>
+    <h2>Explore related government exams</h2>
+    <p>Compare related routes and continue to another relevant SarkariPrep guide.</p>
+    <div className="cardLinks">
+      {exams.filter(x => x.slug !== e.slug && (x.category === e.category || x.organization === e.organization)).slice(0,4).map(x => <a href={"/exams/" + x.slug} key={x.slug}>{x.name} →</a>)}
+    </div>
+    <div className="cardLinks">
+      <a href="/government-jobs">Government jobs →</a>
+      <a href="/upcoming-government-exams">Upcoming exams →</a>
+      <a href="/jobs-after-graduation">Jobs after graduation →</a>
+    </div>
+  </section>
   <div className="detailGrid">
    <section className="detailCard"><h2>At a glance</h2><div className="detailFacts"><div><small>Qualification</small><b>{e.qualifications}</b></div><div><small>Age</small><b>{age}</b></div><div><small>Vacancies</small><b>{e.vacancies}</b></div><div><small>Exam / cycle</small><b>{e.examDate}</b></div><div><small>Application</small><b>{e.lastDate}</b></div><div><small>Pay / outcome</small><b>{e.salary}</b></div></div></section>
    <section className="detailCard"><h2>Eligibility</h2><p><b>Education:</b> {e.qualifications}</p><p><b>Age:</b> {age}; category/post-specific relaxation may apply.</p><p><b>Categories:</b> {e.categories.join(", ")}</p><div className="studentTip"><b>Student shortcut:</b> Exact eligibility, age, vacancies, fees and dates change with each recruitment cycle. <a href={e.notificationUrl||e.sourceUrl||e.officialUrl} target="_blank" rel="noopener noreferrer">Open the latest official notification</a> before applying.</div></section>
