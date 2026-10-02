@@ -1,7 +1,7 @@
 "use client";
 import {useEffect,useMemo,useState} from "react";
 import {exams} from "@/lib/exams";
-import {LiveExamDashboard} from "@/app/components/LiveExamDashboard";
+import {LiveExamDashboard} from "@/components/LiveExamDashboard";
 
 const official=[["UPSC","https://www.upsc.gov.in/"],["SSC","https://ssc.gov.in/"],["IBPS","https://www.ibps.in/"],["Railways","https://indianrailways.gov.in/"],["NTA","https://nta.nic.in/"],["RBI","https://www.rbi.org.in/"],["SBI Careers","https://sbi.co.in/web/careers"],["CTET","https://ctet.nic.in/"],["JPSC","https://jpsc.gov.in/"],["JSSC","https://jssc.jharkhand.gov.in/"],["Army","https://joinindianarmy.nic.in/"],["Navy","https://www.joinindiannavy.gov.in/"]];
 
