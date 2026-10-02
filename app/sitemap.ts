@@ -6,7 +6,7 @@ const base = "https://sarkariprep.online";
 
 function latestExamUpdate() {
   const dates = exams.map(e => e.lastVerified).filter(Boolean).map(x => new Date(x as string).getTime()).filter(Number.isFinite);
-  return new Date(Math.max(...dates, Date.now()));
+  return new Date(Math.max(...dates, new Date("2026-10-01T00:00:00Z").getTime()));
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
