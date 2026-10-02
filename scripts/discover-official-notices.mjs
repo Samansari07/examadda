@@ -39,10 +39,10 @@ async function fetchText(url) {
   }
 }
 
-function extractLinks(html, source) {
+function extractLinks(html, source, pageUrl) {
   const results = [];
   const seen = new Set();
-  const base = new URL(source.updatesUrl);
+  const base = new URL(pageUrl);
   const re = /<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
   let match;
   while ((match = re.exec(html)) && results.length < MAX_PER_SOURCE) {
@@ -80,9 +80,24 @@ function extractLinks(html, source) {
 const discovered = [];
 const sourceResults = [];
 for (const source of sources) {
-  const html = await fetchText(source.updatesUrl);
-  const items = html ? extractLinks(html, source) : [];
-  sourceResults.push({ id: source.id, discovered: items.length, checked: Boolean(html) });
+  const candidateUrls = [source.updatesUrl, ...(Array.isArray(source.fallbackUrls) ? source.fallbackUrls : [])]
+    .filter((url, index, list) => url && list.indexOf(url) === index);
+  let html = null;
+  let fetchedUrl = null;
+  for (const candidateUrl of candidateUrls) {
+    html = await fetchText(candidateUrl);
+    if (html) {
+      fetchedUrl = candidateUrl;
+      break;
+    }
+  }
+  const items = html && fetchedUrl ? extractLinks(html, source, fetchedUrl) : [];
+  sourceResults.push({
+    id: source.id,
+    discovered: items.length,
+    checked: Boolean(html),
+    fetchedUrl
+  });
   discovered.push(...items);
 }
 
