@@ -37,12 +37,25 @@ jobs:
 
       - name: Commit discovery feed
         run: |
-          if git diff --quiet -- lib/discovered-official-notices.ts; then
-            echo "No discovery changes."
-            exit 0
-          fi
           git config user.name "sarkariprep-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add lib/discovered-official-notices.ts
-          git commit -m "chore: refresh discovered official notices"
-          git push
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            node scripts/discover-official-notices.mjs
+            git add lib/discovered-official-notices.ts
+            if git diff --cached --quiet; then
+              echo "No discovery changes."
+              exit 0
+            fi
+            git commit -m "chore: refresh discovered official notices"
+            if git push origin HEAD:main; then
+              echo "Discovery feed pushed successfully."
+              exit 0
+            fi
+            echo "Push race detected; retrying from latest origin/main..."
+            git reset --hard HEAD~1
+            sleep 2
+          done
+          echo "Could not publish discovery feed after 3 attempts."
+          exit 1
