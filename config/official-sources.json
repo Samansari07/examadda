@@ -533,5 +533,77 @@
     "region": "West Bengal",
     "updatesUrl": "https://employmentbankwb.gov.in/index.php",
     "scope": "West Bengal employment/recruitment source."
+  },
+  {
+    "id": "powergrid",
+    "organization": "POWERGRID",
+    "category": "PSU / Engineering",
+    "region": "Central",
+    "updatesUrl": "https://www.powergrid.in/en/job-opportunities1",
+    "scope": "Official employment opportunities, recruitment advertisements and application-window updates."
+  },
+  {
+    "id": "bhel",
+    "organization": "BHEL",
+    "category": "PSU / Engineering",
+    "region": "Central",
+    "updatesUrl": "https://www.bhel.com/recruitment",
+    "scope": "Official BHEL recruitment and current job openings."
+  },
+  {
+    "id": "gail",
+    "organization": "GAIL India",
+    "category": "PSU / Engineering",
+    "region": "Central",
+    "updatesUrl": "https://www.gailonline.com/Vacancies.html",
+    "scope": "Official GAIL vacancies, recruitment advertisements and career opportunities."
+  },
+  {
+    "id": "iocl",
+    "organization": "IndianOil",
+    "category": "PSU / Engineering",
+    "region": "Central",
+    "updatesUrl": "https://iocl.com/latest-job-opening",
+    "scope": "Official IndianOil job openings and recruitment notices."
+  },
+  {
+    "id": "ntpc",
+    "organization": "NTPC",
+    "category": "PSU / Engineering",
+    "region": "Central",
+    "updatesUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
+    "scope": "Official NTPC jobs, recruitment advertisements and career opportunities."
+  },
+  {
+    "id": "hpcl",
+    "organization": "HPCL",
+    "category": "PSU / Engineering",
+    "region": "Central",
+    "updatesUrl": "https://www.hindustanpetroleum.com/job-openings",
+    "scope": "Official HPCL job openings, recruitment advertisements and selection updates."
+  },
+  {
+    "id": "nhpc",
+    "organization": "NHPC",
+    "category": "PSU / Engineering",
+    "region": "Central",
+    "updatesUrl": "https://www.nhpcindia.com/welcome/job",
+    "scope": "Official NHPC job listings, recruitment and apprenticeship notices."
+  },
+  {
+    "id": "ongc",
+    "organization": "ONGC",
+    "category": "PSU / Engineering",
+    "region": "Central",
+    "updatesUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
+    "scope": "Official ONGC recruitment notices, consultant, apprentice and professional recruitment."
+  },
+  {
+    "id": "npcil",
+    "organization": "NPCIL",
+    "category": "PSU / Science & Engineering",
+    "region": "Central",
+    "updatesUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+    "scope": "Official NPCIL job opportunities, apprenticeships and recruitment advertisements."
   }
 ]
