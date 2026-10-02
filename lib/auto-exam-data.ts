@@ -1,11 +1,12 @@
 export type AutoExamOverride = {
- slug:string; name:string; organization:string; notificationUrl:string; sourceUrl:string; lastVerified:string; detectedAt:string; confidence:"medium"|"high"; evidenceCount:number; evidence:string[]; evidenceSnippets?:string[]; sourceTitle?:string; familySlug?:string; cycleSlug?:string; cycleYear?:number;
+ slug:string; name:string; organization:string; notificationUrl:string; sourceUrl:string; lastVerified:string; detectedAt:string; confidence:"medium"|"high"; evidenceCount:number; evidence:string[]; evidenceSnippets?:string[]; sourceTitle?:string;
+ familySlug?:string; cycleSlug?:string; cycleYear?:number;
  applicationDates?:string; lastDate?:string; examDate?:string; vacancies?:string; minAge?:number; maxAge?:number; fee?:string; correctionDates?:string;
 };
 
 export const autoExamDataMeta = {
   "generatedAt": "2026-10-02",
-  "sourceCount": 73,
+  "sourceCount": 76,
   "overrideCount": 0,
   "policy": "Only conservative values extracted from an official notice/bulletin are applied. Missing or ambiguous fields are never invented."
 };

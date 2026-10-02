@@ -23,6 +23,336 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "lastChecked": "2026-10-02",
     "method": "fetch"
   },
+  "indian-coast-guard": {
+    "id": "indian-coast-guard",
+    "organization": "Indian Coast Guard",
+    "category": "Defence",
+    "region": "Central",
+    "sourceUrl": "https://www.indiancoastguard.gov.in/recruitment",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://www.indiancoastguard.gov.in/recruitment -> TypeError: fetch failed | https://www.indiancoastguard.gov.in/recruitment -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.indiancoastguard.gov.in/recruitment\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n | https://www.indiancoastguard.gov.in/archive-recruitment -> TypeError: fetch failed | https://www.indiancoastguard.gov.in/archive-recruitment -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.indiancoastguard.gov.in/archive-recruitment\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n | https://joinindiancoastguard.cdac.in/ -> TypeError: fetch failed | https://joinindiancoastguard.cdac.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://joinindiancoastguard.cdac.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
+  },
+  "chhattisgarh-psc": {
+    "id": "chhattisgarh-psc",
+    "organization": "Chhattisgarh Public Service Commission",
+    "category": "State Government",
+    "region": "Chhattisgarh",
+    "sourceUrl": "https://psc.cg.gov.in/",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://psc.cg.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://psc.cg.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://psc.cg.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
+  },
+  "kerala-psc": {
+    "id": "kerala-psc",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "region": "Kerala",
+    "sourceUrl": "https://www.keralapsc.gov.in/",
+    "ok": true,
+    "detected": 13,
+    "lastChecked": "2026-10-02",
+    "method": "fetch"
+  },
+  "punjab-psc": {
+    "id": "punjab-psc",
+    "organization": "Punjab Public Service Commission",
+    "category": "State Government",
+    "region": "Punjab",
+    "sourceUrl": "https://www.ppsc.gov.in/",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://www.ppsc.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://www.ppsc.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.ppsc.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
+  },
+  "west-bengal-psc": {
+    "id": "west-bengal-psc",
+    "organization": "West Bengal Public Service Commission",
+    "category": "State Government",
+    "region": "West Bengal",
+    "sourceUrl": "https://psc.wb.gov.in/",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://psc.wb.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://psc.wb.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://psc.wb.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
+  },
+  "jk-employment": {
+    "id": "jk-employment",
+    "organization": "Jammu & Kashmir Employment Portal",
+    "category": "State/UT Government",
+    "region": "Jammu & Kashmir",
+    "sourceUrl": "https://jakemp.nic.in/",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://jakemp.nic.in/ -> TimeoutError: The operation was aborted due to timeout | https://jakemp.nic.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://jakemp.nic.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
+  },
+  "tamil-nadu-employment": {
+    "id": "tamil-nadu-employment",
+    "organization": "Tamil Nadu Employment Portal",
+    "category": "State Government",
+    "region": "Tamil Nadu",
+    "sourceUrl": "https://tnvelaivaaippu.gov.in/",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://tnvelaivaaippu.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://tnvelaivaaippu.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://tnvelaivaaippu.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
+  },
+  "hpcl": {
+    "id": "hpcl",
+    "organization": "HPCL",
+    "category": "PSU / Engineering",
+    "region": "Central",
+    "sourceUrl": "https://www.hindustanpetroleum.com/job-openings",
+    "ok": true,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "method": "curl"
+  },
+  "ssc": {
+    "id": "ssc",
+    "organization": "Staff Selection Commission",
+    "category": "Central Government",
+    "region": "Central",
+    "sourceUrl": "https://ssc.gov.in/",
+    "ok": true,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "method": "fetch"
+  },
+  "epfo": {
+    "id": "epfo",
+    "organization": "EPFO",
+    "category": "Central Government",
+    "region": "Central",
+    "sourceUrl": "https://www.epfindia.gov.in/site_en/Recruitments.php",
+    "ok": true,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "method": "curl"
+  },
+  "indian-air-force": {
+    "id": "indian-air-force",
+    "organization": "Indian Air Force",
+    "category": "Defence",
+    "region": "Central",
+    "sourceUrl": "https://iafrecruitment.edcil.co.in/agniveervayu/",
+    "ok": true,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "method": "curl"
+  },
+  "goa-psc": {
+    "id": "goa-psc",
+    "organization": "Goa Public Service Commission",
+    "category": "State Government",
+    "region": "Goa",
+    "sourceUrl": "https://gpsc.goa.gov.in/",
+    "ok": true,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "method": "curl"
+  },
+  "madhya-pradesh-psc": {
+    "id": "madhya-pradesh-psc",
+    "organization": "Madhya Pradesh Public Service Commission",
+    "category": "State Government",
+    "region": "Madhya Pradesh",
+    "sourceUrl": "https://mppsc.mp.gov.in/",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://mppsc.mp.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://mppsc.mp.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://mppsc.mp.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
+  },
+  "rajasthan-psc": {
+    "id": "rajasthan-psc",
+    "organization": "Rajasthan Public Service Commission",
+    "category": "State Government",
+    "region": "Rajasthan",
+    "sourceUrl": "https://rpsc.rajasthan.gov.in/",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://rpsc.rajasthan.gov.in/ -> TypeError: fetch failed | https://rpsc.rajasthan.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://rpsc.rajasthan.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
+  },
+  "ncs": {
+    "id": "ncs",
+    "organization": "National Career Service",
+    "category": "Government Jobs",
+    "region": "All India",
+    "sourceUrl": "https://ncs.gov.in/devPortalList",
+    "ok": true,
+    "detected": 4,
+    "lastChecked": "2026-10-02",
+    "method": "fetch"
+  },
+  "karnataka-employment": {
+    "id": "karnataka-employment",
+    "organization": "Karnataka Employment Wing",
+    "category": "State Government",
+    "region": "Karnataka",
+    "sourceUrl": "https://itiemp.karnataka.gov.in/13/employment-wing/en",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://itiemp.karnataka.gov.in/13/employment-wing/en -> TimeoutError: The operation was aborted due to timeout | https://itiemp.karnataka.gov.in/13/employment-wing/en -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://itiemp.karnataka.gov.in/13/employment-wing/en\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
+  },
+  "uttar-pradesh-employment": {
+    "id": "uttar-pradesh-employment",
+    "organization": "Uttar Pradesh Employment Portal",
+    "category": "State Government",
+    "region": "Uttar Pradesh",
+    "sourceUrl": "http://sewayojan.up.nic.in/",
+    "ok": true,
+    "detected": 5,
+    "lastChecked": "2026-10-02",
+    "method": "fetch"
+  },
+  "nhpc": {
+    "id": "nhpc",
+    "organization": "NHPC",
+    "category": "PSU / Engineering",
+    "region": "Central",
+    "sourceUrl": "https://www.nhpcindia.com/welcome/job",
+    "ok": true,
+    "detected": 1,
+    "lastChecked": "2026-10-02",
+    "method": "fetch"
+  },
+  "ibps": {
+    "id": "ibps",
+    "organization": "IBPS",
+    "category": "Banking",
+    "region": "Central",
+    "sourceUrl": "https://www.ibps.in/index.php/crp-updates/",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://www.ibps.in/index.php/crp-updates/ -> TypeError: fetch failed | https://www.ibps.in/index.php/crp-updates/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.ibps.in/index.php/crp-updates/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (35) OpenSSL/3.0.13: error:0A0000F4:SSL routines::unexpected message\n | https://www.ibps.in/ -> TypeError: fetch failed | https://www.ibps.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.ibps.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+  },
+  "isro": {
+    "id": "isro",
+    "organization": "ISRO",
+    "category": "Science & Engineering",
+    "region": "Central",
+    "sourceUrl": "https://www.isro.gov.in/Careers.html",
+    "ok": true,
+    "detected": 1,
+    "lastChecked": "2026-10-02",
+    "method": "fetch"
+  },
+  "indian-army": {
+    "id": "indian-army",
+    "organization": "Indian Army",
+    "category": "Defence",
+    "region": "Central",
+    "sourceUrl": "https://joinindianarmy.nic.in/",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://joinindianarmy.nic.in/ -> TimeoutError: The operation was aborted due to timeout | https://joinindianarmy.nic.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://joinindianarmy.nic.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
+  },
+  "gujarat-psc": {
+    "id": "gujarat-psc",
+    "organization": "Gujarat Public Service Commission",
+    "category": "State Government",
+    "region": "Gujarat",
+    "sourceUrl": "https://gpsc.gujarat.gov.in/",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://gpsc.gujarat.gov.in/ -> TypeError: fetch failed | https://gpsc.gujarat.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://gpsc.gujarat.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
+  },
+  "maharashtra-psc": {
+    "id": "maharashtra-psc",
+    "organization": "Maharashtra Public Service Commission",
+    "category": "State Government",
+    "region": "Maharashtra",
+    "sourceUrl": "https://mpsc.gov.in/",
+    "ok": true,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "method": "fetch"
+  },
+  "sikkim-psc": {
+    "id": "sikkim-psc",
+    "organization": "Sikkim Public Service Commission",
+    "category": "State Government",
+    "region": "Sikkim",
+    "sourceUrl": "https://spsc.sikkim.gov.in/",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://spsc.sikkim.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://spsc.sikkim.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://spsc.sikkim.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
+  },
+  "india-gov-directory": {
+    "id": "india-gov-directory",
+    "organization": "National Portal of India",
+    "category": "Government Directory",
+    "region": "All India",
+    "sourceUrl": "https://www.india.gov.in/directory/public-utilities",
+    "ok": true,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "method": "fetch"
+  },
+  "kerala-employment": {
+    "id": "kerala-employment",
+    "organization": "Kerala Employment Portal",
+    "category": "State Government",
+    "region": "Kerala",
+    "sourceUrl": "https://www.employment.kerala.gov.in/",
+    "ok": true,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "method": "curl"
+  },
+  "west-bengal-employment": {
+    "id": "west-bengal-employment",
+    "organization": "West Bengal Employment Bank",
+    "category": "State Government",
+    "region": "West Bengal",
+    "sourceUrl": "https://employmentbankwb.gov.in/index.php",
+    "ok": false,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "error": "Error: https://employmentbankwb.gov.in/index.php -> TimeoutError: The operation was aborted due to timeout | https://employmentbankwb.gov.in/index.php -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://employmentbankwb.gov.in/index.php\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
+  },
+  "ongc": {
+    "id": "ongc",
+    "organization": "ONGC",
+    "category": "PSU / Engineering",
+    "region": "Central",
+    "sourceUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
+    "ok": true,
+    "detected": 100,
+    "lastChecked": "2026-10-02",
+    "method": "curl"
+  },
+  "nta": {
+    "id": "nta",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "region": "Central",
+    "sourceUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "ok": true,
+    "detected": 47,
+    "lastChecked": "2026-10-02",
+    "method": "fetch"
+  },
+  "drdo": {
+    "id": "drdo",
+    "organization": "DRDO",
+    "category": "Science & Engineering",
+    "region": "Central",
+    "sourceUrl": "https://www.drdo.gov.in/careers",
+    "ok": true,
+    "detected": 0,
+    "lastChecked": "2026-10-02",
+    "method": "curl"
+  },
   "employment-news": {
     "id": "employment-news",
     "organization": "Employment News",
@@ -65,7 +395,7 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "ok": false,
     "detected": 0,
     "lastChecked": "2026-10-02",
-    "error": "Error: https://www.tnpsc.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://www.tnpsc.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.tnpsc.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
+    "error": "Error: https://www.tnpsc.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://www.tnpsc.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.tnpsc.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
   },
   "jharkhand-recruitment": {
     "id": "jharkhand-recruitment",
@@ -76,7 +406,7 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "ok": false,
     "detected": 0,
     "lastChecked": "2026-10-02",
-    "error": "Error: https://recruitment.jharkhand.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://recruitment.jharkhand.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://recruitment.jharkhand.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
+    "error": "Error: https://recruitment.jharkhand.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://recruitment.jharkhand.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://recruitment.jharkhand.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
   },
   "madhya-pradesh-employment": {
     "id": "madhya-pradesh-employment",
@@ -87,7 +417,7 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "ok": false,
     "detected": 0,
     "lastChecked": "2026-10-02",
-    "error": "Error: https://mprojgar.gov.in/home -> TypeError: fetch failed | https://mprojgar.gov.in/home -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://mprojgar.gov.in/home\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
+    "error": "Error: https://mprojgar.gov.in/home -> TypeError: fetch failed | https://mprojgar.gov.in/home -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://mprojgar.gov.in/home\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
   },
   "powergrid": {
     "id": "powergrid",
@@ -111,27 +441,27 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "lastChecked": "2026-10-02",
     "method": "fetch"
   },
-  "ssc": {
-    "id": "ssc",
-    "organization": "Staff Selection Commission",
-    "category": "Central Government",
+  "ctet": {
+    "id": "ctet",
+    "organization": "CTET",
+    "category": "Teaching",
     "region": "Central",
-    "sourceUrl": "https://ssc.gov.in/",
+    "sourceUrl": "https://ctet.nic.in/",
+    "ok": true,
+    "detected": 13,
+    "lastChecked": "2026-10-02",
+    "method": "curl"
+  },
+  "aiims": {
+    "id": "aiims",
+    "organization": "AIIMS",
+    "category": "Medical",
+    "region": "Central",
+    "sourceUrl": "https://www.aiimsexams.ac.in/",
     "ok": true,
     "detected": 0,
     "lastChecked": "2026-10-02",
     "method": "fetch"
-  },
-  "epfo": {
-    "id": "epfo",
-    "organization": "EPFO",
-    "category": "Central Government",
-    "region": "Central",
-    "sourceUrl": "https://www.epfindia.gov.in/site_en/Recruitments.php",
-    "ok": true,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "method": "curl"
   },
   "andhra-pradesh-psc": {
     "id": "andhra-pradesh-psc",
@@ -142,7 +472,7 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "ok": false,
     "detected": 0,
     "lastChecked": "2026-10-02",
-    "error": "Error: https://psc.ap.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://psc.ap.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://psc.ap.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10000 milliseconds\n | https://portal-psc.ap.gov.in/ -> TypeError: fetch failed | https://portal-psc.ap.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://portal-psc.ap.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+    "error": "Error: https://psc.ap.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://psc.ap.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://psc.ap.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n | https://portal-psc.ap.gov.in/ -> TypeError: fetch failed | https://portal-psc.ap.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://portal-psc.ap.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
   },
   "himachal-psc": {
     "id": "himachal-psc",
@@ -153,7 +483,7 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "ok": false,
     "detected": 0,
     "lastChecked": "2026-10-02",
-    "error": "Error: https://hppsc.hp.gov.in/ -> TypeError: fetch failed | https://hppsc.hp.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://hppsc.hp.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (35) OpenSSL/3.0.13: error:0A000152:SSL routines::unsafe legacy renegotiation disabled\n"
+    "error": "Error: https://hppsc.hp.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://hppsc.hp.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://hppsc.hp.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Resolving timed out after 10000 milliseconds\n"
   },
   "meghalaya-psc": {
     "id": "meghalaya-psc",
@@ -210,27 +540,27 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "lastChecked": "2026-10-02",
     "method": "fetch"
   },
-  "ibps": {
-    "id": "ibps",
-    "organization": "IBPS",
-    "category": "Banking",
+  "railways": {
+    "id": "railways",
+    "organization": "Indian Railways / RRB",
+    "category": "Railway",
     "region": "Central",
-    "sourceUrl": "https://www.ibps.in/index.php/crp-updates/",
+    "sourceUrl": "https://rrb.indianrailways.gov.in/",
     "ok": false,
     "detected": 0,
     "lastChecked": "2026-10-02",
-    "error": "Error: https://www.ibps.in/index.php/crp-updates/ -> TypeError: fetch failed | https://www.ibps.in/index.php/crp-updates/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.ibps.in/index.php/crp-updates/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n | https://www.ibps.in/ -> TypeError: fetch failed | https://www.ibps.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.ibps.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\ncurl: (35) OpenSSL/3.0.13: error:0A0000F4:SSL routines::unexpected message\n"
+    "error": "Error: https://rrb.indianrailways.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://rrb.indianrailways.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://rrb.indianrailways.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n | https://www.rrbcdg.gov.in/ -> TypeError: fetch failed | https://www.rrbcdg.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.rrbcdg.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (7) Failed to connect to www.rrbcdg.gov.in port 443 after 528 ms: Couldn't connect to server\n | https://www.rrbthiruvananthapuram.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://www.rrbthiruvananthapuram.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.rrbthiruvananthapuram.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
   },
-  "isro": {
-    "id": "isro",
-    "organization": "ISRO",
-    "category": "Science & Engineering",
+  "esic": {
+    "id": "esic",
+    "organization": "ESIC",
+    "category": "Medical",
     "region": "Central",
-    "sourceUrl": "https://www.isro.gov.in/Careers.html",
-    "ok": true,
-    "detected": 1,
+    "sourceUrl": "https://www.esic.gov.in/recruitments",
+    "ok": false,
+    "detected": 0,
     "lastChecked": "2026-10-02",
-    "method": "fetch"
+    "error": "Error: https://www.esic.gov.in/recruitments -> TimeoutError: The operation was aborted due to timeout | https://www.esic.gov.in/recruitments -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.esic.gov.in/recruitments\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10000 milliseconds\n"
   },
   "arunachal-pradesh-psc": {
     "id": "arunachal-pradesh-psc",
@@ -274,7 +604,7 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "ok": false,
     "detected": 0,
     "lastChecked": "2026-10-02",
-    "error": "Error: https://tpsc.tripura.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://tpsc.tripura.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://tpsc.tripura.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10000 milliseconds\n"
+    "error": "Error: https://tpsc.tripura.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://tpsc.tripura.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://tpsc.tripura.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
   },
   "gujarat-employment": {
     "id": "gujarat-employment",
@@ -309,25 +639,25 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "lastChecked": "2026-10-02",
     "method": "fetch"
   },
-  "nta": {
-    "id": "nta",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
+  "rbi": {
+    "id": "rbi",
+    "organization": "Reserve Bank of India",
+    "category": "Banking",
     "region": "Central",
-    "sourceUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "sourceUrl": "https://opportunities.rbi.org.in/",
     "ok": true,
-    "detected": 47,
+    "detected": 0,
     "lastChecked": "2026-10-02",
     "method": "fetch"
   },
-  "drdo": {
-    "id": "drdo",
-    "organization": "DRDO",
-    "category": "Science & Engineering",
+  "indiapost": {
+    "id": "indiapost",
+    "organization": "India Post",
+    "category": "Central Government",
     "region": "Central",
-    "sourceUrl": "https://www.drdo.gov.in/careers",
+    "sourceUrl": "https://indiapost.gov.in/gdsonlineengagement",
     "ok": true,
-    "detected": 0,
+    "detected": 1,
     "lastChecked": "2026-10-02",
     "method": "curl"
   },
@@ -340,7 +670,7 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "ok": false,
     "detected": 0,
     "lastChecked": "2026-10-02",
-    "error": "Error: https://apsc.nic.in/ -> TimeoutError: The operation was aborted due to timeout | https://apsc.nic.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://apsc.nic.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
+    "error": "Error: https://apsc.nic.in/ -> TimeoutError: The operation was aborted due to timeout | https://apsc.nic.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://apsc.nic.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
   },
   "jharkhand-psc": {
     "id": "jharkhand-psc",
@@ -348,10 +678,10 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "category": "State Government",
     "region": "Jharkhand",
     "sourceUrl": "https://www.jpsc.gov.in/",
-    "ok": true,
-    "detected": 56,
+    "ok": false,
+    "detected": 0,
     "lastChecked": "2026-10-02",
-    "method": "fetch"
+    "error": "Error: https://www.jpsc.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://www.jpsc.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.jpsc.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
   },
   "nagaland-psc": {
     "id": "nagaland-psc",
@@ -362,7 +692,7 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "ok": true,
     "detected": 10,
     "lastChecked": "2026-10-02",
-    "method": "fetch"
+    "method": "curl"
   },
   "uttar-pradesh-psc": {
     "id": "uttar-pradesh-psc",
@@ -408,27 +738,27 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "lastChecked": "2026-10-02",
     "method": "curl"
   },
-  "ctet": {
-    "id": "ctet",
-    "organization": "CTET",
-    "category": "Teaching",
+  "sbi": {
+    "id": "sbi",
+    "organization": "State Bank of India",
+    "category": "Banking",
     "region": "Central",
-    "sourceUrl": "https://ctet.nic.in/",
+    "sourceUrl": "https://sbi.co.in/web/careers",
     "ok": true,
-    "detected": 13,
+    "detected": 4,
     "lastChecked": "2026-10-02",
     "method": "fetch"
   },
-  "aiims": {
-    "id": "aiims",
-    "organization": "AIIMS",
-    "category": "Medical",
+  "indian-navy": {
+    "id": "indian-navy",
+    "organization": "Indian Navy",
+    "category": "Defence",
     "region": "Central",
-    "sourceUrl": "https://www.aiimsexams.ac.in/",
-    "ok": true,
+    "sourceUrl": "https://www.joinindiannavy.gov.in/",
+    "ok": false,
     "detected": 0,
     "lastChecked": "2026-10-02",
-    "method": "fetch"
+    "error": "Error: https://www.joinindiannavy.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://www.joinindiannavy.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.joinindiannavy.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10000 milliseconds\n"
   },
   "bihar-psc": {
     "id": "bihar-psc",
@@ -439,7 +769,7 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "ok": false,
     "detected": 0,
     "lastChecked": "2026-10-02",
-    "error": "Error: https://bpsc.bihar.gov.in/ -> TypeError: fetch failed | https://bpsc.bihar.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://bpsc.bihar.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+    "error": "Error: https://bpsc.bihar.gov.in/ -> TypeError: fetch failed | https://bpsc.bihar.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://bpsc.bihar.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
   },
   "karnataka-psc": {
     "id": "karnataka-psc",
@@ -480,10 +810,10 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "category": "State Government",
     "region": "Himachal Pradesh",
     "sourceUrl": "https://eemis.hp.gov.in/",
-    "ok": true,
+    "ok": false,
     "detected": 0,
     "lastChecked": "2026-10-02",
-    "method": "fetch"
+    "error": "Error: https://eemis.hp.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://eemis.hp.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://eemis.hp.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0curl: (6) Could not resolve host: eemis.hp.gov.in\n"
   },
   "rajasthan-employment": {
     "id": "rajasthan-employment",
@@ -494,7 +824,7 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "ok": true,
     "detected": 0,
     "lastChecked": "2026-10-02",
-    "method": "fetch"
+    "method": "curl"
   },
   "ntpc": {
     "id": "ntpc",
@@ -506,302 +836,5 @@ export const sourceStatuses:Record<string,SourceStatus> = {
     "detected": 2,
     "lastChecked": "2026-10-02",
     "method": "fetch"
-  },
-  "railways": {
-    "id": "railways",
-    "organization": "Indian Railways / RRB",
-    "category": "Railway",
-    "region": "Central",
-    "sourceUrl": "https://rrb.indianrailways.gov.in/",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://rrb.indianrailways.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://rrb.indianrailways.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://rrb.indianrailways.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n | https://www.rrbcdg.gov.in/ -> TypeError: fetch failed | https://www.rrbcdg.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.rrbcdg.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (7) Failed to connect to www.rrbcdg.gov.in port 443 after 522 ms: Couldn't connect to server\n | https://www.rrbthiruvananthapuram.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://www.rrbthiruvananthapuram.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.rrbthiruvananthapuram.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
-  },
-  "esic": {
-    "id": "esic",
-    "organization": "ESIC",
-    "category": "Medical",
-    "region": "Central",
-    "sourceUrl": "https://www.esic.gov.in/recruitments",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://www.esic.gov.in/recruitments -> TimeoutError: The operation was aborted due to timeout | https://www.esic.gov.in/recruitments -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.esic.gov.in/recruitments\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10000 milliseconds\n"
-  },
-  "chhattisgarh-psc": {
-    "id": "chhattisgarh-psc",
-    "organization": "Chhattisgarh Public Service Commission",
-    "category": "State Government",
-    "region": "Chhattisgarh",
-    "sourceUrl": "https://psc.cg.gov.in/",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://psc.cg.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://psc.cg.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://psc.cg.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10000 milliseconds\n"
-  },
-  "kerala-psc": {
-    "id": "kerala-psc",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "region": "Kerala",
-    "sourceUrl": "https://www.keralapsc.gov.in/",
-    "ok": true,
-    "detected": 13,
-    "lastChecked": "2026-10-02",
-    "method": "fetch"
-  },
-  "punjab-psc": {
-    "id": "punjab-psc",
-    "organization": "Punjab Public Service Commission",
-    "category": "State Government",
-    "region": "Punjab",
-    "sourceUrl": "https://www.ppsc.gov.in/",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://www.ppsc.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://www.ppsc.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.ppsc.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
-  },
-  "west-bengal-psc": {
-    "id": "west-bengal-psc",
-    "organization": "West Bengal Public Service Commission",
-    "category": "State Government",
-    "region": "West Bengal",
-    "sourceUrl": "https://psc.wb.gov.in/",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://psc.wb.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://psc.wb.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://psc.wb.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10000 milliseconds\n"
-  },
-  "jk-employment": {
-    "id": "jk-employment",
-    "organization": "Jammu & Kashmir Employment Portal",
-    "category": "State/UT Government",
-    "region": "Jammu & Kashmir",
-    "sourceUrl": "https://jakemp.nic.in/",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://jakemp.nic.in/ -> TimeoutError: The operation was aborted due to timeout | https://jakemp.nic.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://jakemp.nic.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
-  },
-  "tamil-nadu-employment": {
-    "id": "tamil-nadu-employment",
-    "organization": "Tamil Nadu Employment Portal",
-    "category": "State Government",
-    "region": "Tamil Nadu",
-    "sourceUrl": "https://tnvelaivaaippu.gov.in/",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://tnvelaivaaippu.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://tnvelaivaaippu.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://tnvelaivaaippu.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10000 milliseconds\n"
-  },
-  "hpcl": {
-    "id": "hpcl",
-    "organization": "HPCL",
-    "category": "PSU / Engineering",
-    "region": "Central",
-    "sourceUrl": "https://www.hindustanpetroleum.com/job-openings",
-    "ok": true,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "method": "curl"
-  },
-  "rbi": {
-    "id": "rbi",
-    "organization": "Reserve Bank of India",
-    "category": "Banking",
-    "region": "Central",
-    "sourceUrl": "https://opportunities.rbi.org.in/",
-    "ok": true,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "method": "fetch"
-  },
-  "indiapost": {
-    "id": "indiapost",
-    "organization": "India Post",
-    "category": "Central Government",
-    "region": "Central",
-    "sourceUrl": "https://indiapost.gov.in/gdsonlineengagement",
-    "ok": true,
-    "detected": 1,
-    "lastChecked": "2026-10-02",
-    "method": "curl"
-  },
-  "goa-psc": {
-    "id": "goa-psc",
-    "organization": "Goa Public Service Commission",
-    "category": "State Government",
-    "region": "Goa",
-    "sourceUrl": "https://gpsc.goa.gov.in/",
-    "ok": true,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "method": "curl"
-  },
-  "madhya-pradesh-psc": {
-    "id": "madhya-pradesh-psc",
-    "organization": "Madhya Pradesh Public Service Commission",
-    "category": "State Government",
-    "region": "Madhya Pradesh",
-    "sourceUrl": "https://mppsc.mp.gov.in/",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://mppsc.mp.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://mppsc.mp.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://mppsc.mp.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
-  },
-  "rajasthan-psc": {
-    "id": "rajasthan-psc",
-    "organization": "Rajasthan Public Service Commission",
-    "category": "State Government",
-    "region": "Rajasthan",
-    "sourceUrl": "https://rpsc.rajasthan.gov.in/",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://rpsc.rajasthan.gov.in/ -> TypeError: fetch failed | https://rpsc.rajasthan.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://rpsc.rajasthan.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
-  },
-  "ncs": {
-    "id": "ncs",
-    "organization": "National Career Service",
-    "category": "Government Jobs",
-    "region": "All India",
-    "sourceUrl": "https://ncs.gov.in/devPortalList",
-    "ok": true,
-    "detected": 4,
-    "lastChecked": "2026-10-02",
-    "method": "fetch"
-  },
-  "karnataka-employment": {
-    "id": "karnataka-employment",
-    "organization": "Karnataka Employment Wing",
-    "category": "State Government",
-    "region": "Karnataka",
-    "sourceUrl": "https://itiemp.karnataka.gov.in/13/employment-wing/en",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://itiemp.karnataka.gov.in/13/employment-wing/en -> TimeoutError: The operation was aborted due to timeout | https://itiemp.karnataka.gov.in/13/employment-wing/en -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://itiemp.karnataka.gov.in/13/employment-wing/en\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10000 milliseconds\n"
-  },
-  "uttar-pradesh-employment": {
-    "id": "uttar-pradesh-employment",
-    "organization": "Uttar Pradesh Employment Portal",
-    "category": "State Government",
-    "region": "Uttar Pradesh",
-    "sourceUrl": "http://sewayojan.up.nic.in/",
-    "ok": true,
-    "detected": 5,
-    "lastChecked": "2026-10-02",
-    "method": "fetch"
-  },
-  "nhpc": {
-    "id": "nhpc",
-    "organization": "NHPC",
-    "category": "PSU / Engineering",
-    "region": "Central",
-    "sourceUrl": "https://www.nhpcindia.com/welcome/job",
-    "ok": true,
-    "detected": 1,
-    "lastChecked": "2026-10-02",
-    "method": "fetch"
-  },
-  "sbi": {
-    "id": "sbi",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "region": "Central",
-    "sourceUrl": "https://sbi.co.in/web/careers",
-    "ok": true,
-    "detected": 2,
-    "lastChecked": "2026-10-02",
-    "method": "fetch"
-  },
-  "indian-navy": {
-    "id": "indian-navy",
-    "organization": "Indian Navy",
-    "category": "Defence",
-    "region": "Central",
-    "sourceUrl": "https://www.joinindiannavy.gov.in/",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://www.joinindiannavy.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://www.joinindiannavy.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://www.joinindiannavy.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
-  },
-  "gujarat-psc": {
-    "id": "gujarat-psc",
-    "organization": "Gujarat Public Service Commission",
-    "category": "State Government",
-    "region": "Gujarat",
-    "sourceUrl": "https://gpsc.gujarat.gov.in/",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://gpsc.gujarat.gov.in/ -> TypeError: fetch failed | https://gpsc.gujarat.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://gpsc.gujarat.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
-  },
-  "maharashtra-psc": {
-    "id": "maharashtra-psc",
-    "organization": "Maharashtra Public Service Commission",
-    "category": "State Government",
-    "region": "Maharashtra",
-    "sourceUrl": "https://mpsc.gov.in/",
-    "ok": true,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "method": "fetch"
-  },
-  "sikkim-psc": {
-    "id": "sikkim-psc",
-    "organization": "Sikkim Public Service Commission",
-    "category": "State Government",
-    "region": "Sikkim",
-    "sourceUrl": "https://spsc.sikkim.gov.in/",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://spsc.sikkim.gov.in/ -> TimeoutError: The operation was aborted due to timeout | https://spsc.sikkim.gov.in/ -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://spsc.sikkim.gov.in/\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10002 milliseconds\n"
-  },
-  "india-gov-directory": {
-    "id": "india-gov-directory",
-    "organization": "National Portal of India",
-    "category": "Government Directory",
-    "region": "All India",
-    "sourceUrl": "https://www.india.gov.in/directory/public-utilities",
-    "ok": true,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "method": "fetch"
-  },
-  "kerala-employment": {
-    "id": "kerala-employment",
-    "organization": "Kerala Employment Portal",
-    "category": "State Government",
-    "region": "Kerala",
-    "sourceUrl": "https://www.employment.kerala.gov.in/",
-    "ok": true,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "method": "curl"
-  },
-  "west-bengal-employment": {
-    "id": "west-bengal-employment",
-    "organization": "West Bengal Employment Bank",
-    "category": "State Government",
-    "region": "West Bengal",
-    "sourceUrl": "https://employmentbankwb.gov.in/index.php",
-    "ok": false,
-    "detected": 0,
-    "lastChecked": "2026-10-02",
-    "error": "Error: https://employmentbankwb.gov.in/index.php -> TimeoutError: The operation was aborted due to timeout | https://employmentbankwb.gov.in/index.php -> curl Error: Command failed: curl -L --max-time 10 --retry 0 -A SarkariPrep-Official-Checker/9.0 -H Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 https://employmentbankwb.gov.in/index.php\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\ncurl: (28) Connection timed out after 10001 milliseconds\n"
-  },
-  "ongc": {
-    "id": "ongc",
-    "organization": "ONGC",
-    "category": "PSU / Engineering",
-    "region": "Central",
-    "sourceUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
-    "ok": true,
-    "detected": 100,
-    "lastChecked": "2026-10-02",
-    "method": "curl"
   }
 };
