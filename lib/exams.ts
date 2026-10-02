@@ -40,6 +40,31 @@ const familyExams:Exam[]=familySeeds.map(([slug,name,organization,category,quali
  status:"family",description:"Reference guide for "+name+". Current vacancies, dates, eligibility, fees and selection stages must be verified from the latest official notification."
 }));
 
+const autoCurrentCycles:Exam[]=Object.values(autoExamData)
+ .filter(o=>o.familySlug&&o.cycleSlug&&o.cycleYear&&o.confidence==="high"&&o.evidenceCount>=3)
+ .map(o=>{
+   const family=familyExams.find(f=>f.slug===o.familySlug);
+   if(!family) return null;
+   const dateText=[o.applicationDates,o.lastDate,o.correctionDates?("Correction: "+o.correctionDates):""].filter(Boolean).join(" · ");
+   return {
+     ...family,
+     slug:o.cycleSlug!,
+     name:o.name||family.name+" "+o.cycleYear,
+     status:"cycle" as const,
+     dataStatus:"official-verified" as const,
+     lastVerified:o.lastVerified,
+     sourceUrl:o.sourceUrl,
+     notificationUrl:o.notificationUrl,
+     vacancies:o.vacancies||"See official notification",
+     minAge:typeof o.minAge==="number"?o.minAge:family.minAge,
+     maxAge:typeof o.maxAge==="number"?o.maxAge:family.maxAge,
+     examDate:o.examDate||"See official notification",
+     lastDate:dateText||"See official notification",
+     description:"Current cycle generated automatically from a high-confidence official notice. The original authority notice remains controlling."
+   } as Exam;
+ })
+ .filter((e):e is Exam=>Boolean(e));
+
 const cycleWithIntegrity=cycleExams.filter(e=>e.slug!=="ssc-cgl-2026" && e.slug!=="cds-ii-2026" && e.slug!=="rrb-ntpc-2026").map(e=>({...e,status:"cycle" as const,dataStatus:"historical-reference" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl,vacancies:"See latest official notification",minAge:0,maxAge:100,qualifications:"Post-specific; see latest official notification",examDate:"See latest official notification",lastDate:"See latest official notification",description:e.description||"Historical 2026 cycle reference. Exact dates, vacancies and eligibility are not treated as live. Verify the latest official notification before applying."}));
 const verifiedCurrent:Exam[]=[{
  slug:"ssc-cgl-2026",name:"SSC CGL 2026",organization:"Staff Selection Commission",category:"Central Government",
@@ -92,9 +117,6 @@ const applyAutoExamData=(e:Exam):Exam=>{
   description:(e.description?e.description+" ":"")+"Automatically refreshed from an official notice on "+o.lastVerified+".",
  };
 };
-export const exams:Exam[]=[
- ...currentExamOverrides,
- ...verifiedCurrent,
- ...cycleWithIntegrity,
- ...familyExams.map(e=>({...e,dataStatus:"reference-family" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl}))
-].map(applyAutoExamData);
+const allExamRecords=[...currentExamOverrides,...verifiedCurrent,...autoCurrentCycles,...cycleWithIntegrity,...familyExams.map(e=>({...e,dataStatus:"reference-family" as const,lastVerified:"2026-10-02",sourceUrl:e.officialUrl}))];
+const dedupedExamRecords=allExamRecords.filter((exam,index,all)=>all.findIndex(x=>x.slug===exam.slug)===index);
+export const exams:Exam[]=dedupedExamRecords.map(applyAutoExamData);
