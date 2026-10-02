@@ -120,7 +120,11 @@ const config=JSON.parse(await fs.readFile("config/official-sources.json","utf8")
 const batch=Number(process.env.SOURCE_BATCH||0),count=Number(process.env.SOURCE_BATCH_COUNT||8);
 const selected=config.filter((_,i)=>i%count===batch);
 const failures=[],statuses=[],results=[],overrides={};
-const exams=(await fs.readFile("lib/exams.ts","utf8")).match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"/g)?.map(x=>{const m=x.match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"/);return{slug:m[1],name:m[2],organization:m[3]}})||[];
+const examSource=await fs.readFile("lib/exams.ts","utf8");
+const exams=[
+  ...(examSource.match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"/g)?.map(x=>{const m=x.match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"/);return{slug:m[1],name:m[2],organization:m[3]}})||[]),
+  ...[...examSource.matchAll(/\["([^"]+)","([^"]+)","([^"]+)","([^"]+)","([^"]+)","([^"]+)"\]/g)].map(m=>({slug:"family-"+m[1],name:m[2],organization:m[3]}))
+].filter((e,i,a)=>a.findIndex(x=>x.slug===e.slug)===i);
 const ORG_ALIASES={
   "Staff Selection Commission":["ssc"],
   "Indian Railways / RRB":["rrb","railway recruitment board"],
