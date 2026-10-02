@@ -1,6 +1,7 @@
 "use client";
 import {useEffect,useMemo,useState} from "react";
 import {exams} from "@/lib/exams";
+import {LiveExamDashboard} from "@/app/components/LiveExamDashboard";
 
 const official=[["UPSC","https://www.upsc.gov.in/"],["SSC","https://ssc.gov.in/"],["IBPS","https://www.ibps.in/"],["Railways","https://indianrailways.gov.in/"],["NTA","https://nta.nic.in/"],["RBI","https://www.rbi.org.in/"],["SBI Careers","https://sbi.co.in/web/careers"],["CTET","https://ctet.nic.in/"],["JPSC","https://jpsc.gov.in/"],["JSSC","https://jssc.jharkhand.gov.in/"],["Army","https://joinindianarmy.nic.in/"],["Navy","https://www.joinindiannavy.gov.in/"]];
 
@@ -17,6 +18,8 @@ export default function Home(){
  <header className="nav"><div className="wrap navInner"><a className="brand" href="/">Sarkari<span>Prep</span></a><nav className="navlinks"><a href="#explore">Explore</a><a href="#exams">Exams</a><a href="/jobs">Jobs</a><a href="#prep">Preparation</a><a href="/notifications">Notifications</a><a href="#official">Official</a></nav><a className="savedNav" href="#saved">★ {hydrated?saved.length:0} Saved</a></div></header>
 
  <section className="hero premiumHero"><div className="wrap heroInner"><div className="heroCopy"><span className="tag orange">🇮🇳 INDIA'S GOVERNMENT EXAM DISCOVERY PLATFORM</span><h1>Find the right exam.<br/><span>Build the right career.</span></h1><p>UPSC, SSC, Banking, Railway, Defence, Teaching, Medical, Engineering aur State PSC — ek clean, student-first experience mein.</p><div className="heroSearch"><span>⌕</span><input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search UPSC, SSC CGL, Railway, Police, Banking…"/><button onClick={()=>document.getElementById("exams")?.scrollIntoView({behavior:"smooth"})}>Explore</button></div><div className="trustRow"><span>✓ Official-source links</span><span>✓ 10th → PG pathways</span><span>✓ Family + cycle data</span><span>✓ No fake live vacancy claims</span></div></div><div className="heroPanel premiumPanel"><div className="panelLabel">YOUR EXAM COMMAND CENTRE</div><h3>3 things, one place.</h3><div className="route"><b>01 · Discover</b><span>Qualification, category, organisation and career route.</span></div><div className="route"><b>02 · Understand</b><span>Eligibility, syllabus, pattern, selection and documents.</span></div><div className="route"><b>03 · Verify</b><span>Final dates, vacancies and application on the official portal.</span></div><a href="#exams" className="routeBtn">Start exploring →</a></div></div></section>
+
+ <LiveExamDashboard />
 
  <section className="statStrip"><div className="wrap stats"><div><b>{exams.length}+</b><span>Exam & recruitment guides</span></div><div><b>10+</b><span>Major career categories</span></div><div><b>10th → PG</b><span>Qualification pathways</span></div><div><b>Official</b><span>Source-first approach</span></div></div></section>
 
