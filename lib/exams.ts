@@ -56,7 +56,7 @@ const autoCurrentCycles:Exam[]=Object.values(autoExamData)
      sourceUrl:o.sourceUrl,
      notificationUrl:o.notificationUrl,
      applyUrl:o.notificationUrl,
-     applicationStatus:o.lastDate ? "open" : "unknown",
+     applicationStatus:"unknown",
      vacancies:o.vacancies||"See official notification",
      minAge:typeof o.minAge==="number"?o.minAge:family.minAge,
      maxAge:typeof o.maxAge==="number"?o.maxAge:family.maxAge,
