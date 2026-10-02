@@ -1,4 +1,5 @@
 import {autoExamData} from "@/lib/auto-exam-data";
+import {currentExamOverrides} from "@/lib/current-exam-overrides";
 
 // DATA INTEGRITY HARDENING
 export type Exam={
@@ -92,6 +93,7 @@ const applyAutoExamData=(e:Exam):Exam=>{
  };
 };
 export const exams:Exam[]=[
+ ...currentExamOverrides,
  ...verifiedCurrent,
  ...cycleWithIntegrity,
  ...familyExams.map(e=>({...e,dataStatus:"reference-family" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl}))
