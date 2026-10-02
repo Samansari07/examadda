@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
-import { URL } from "node:url";
+import {execFile} from "node:child_process";
+import {promisify} from "node:util";
+import {URL} from "node:url";
+const execFileAsync=promisify(execFile);
 
 const registryPath = new URL("../config/official-sources.json", import.meta.url);
 const outputPath = new URL("../lib/discovered-official-notices.ts", import.meta.url);
@@ -10,6 +13,7 @@ const KEYWORDS = /recruit|recruitment|vacanc|career|job|jobs|notification|notice
 const IGNORE = /facebook|twitter|instagram|youtube|linkedin|mailto:|tel:/i;
 const MAX_PER_SOURCE = 12;
 const TIMEOUT_MS = 12000;
+const CURL_TIMEOUT_SECONDS = 15;
 
 function cleanText(value="") {
   return value.replace(/<[^>]*>/g, " ").replace(/&nbsp;/gi, " ").replace(/&amp;/gi, "&")
@@ -17,26 +21,28 @@ function cleanText(value="") {
 }
 
 async function fetchText(url) {
+  const headers = {
+    "user-agent": "SarkariPrep-Official-Source-Discovery/2.0 (+https://sarkariprep.online)",
+    "accept": "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8"
+  };
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
   try {
-    const response = await fetch(url, {
-      signal: controller.signal,
-      redirect: "follow",
-      headers: {
-        "user-agent": "SarkariPrep-Official-Source-Discovery/1.0 (+https://sarkariprep.online)",
-        "accept": "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8"
-      }
-    });
-    if (!response.ok) return null;
-    const type = response.headers.get("content-type") || "";
-    if (!type.includes("text/html") && !type.includes("application/xhtml+xml")) return null;
-    return await response.text();
-  } catch {
-    return null;
-  } finally {
-    clearTimeout(timer);
-  }
+    const response = await fetch(url, {signal:controller.signal,redirect:"follow",headers});
+    if (response.ok) {
+      const type=response.headers.get("content-type")||"";
+      if(type.includes("text/html")||type.includes("application/xhtml+xml")) return {html:await response.text(),method:"fetch"};
+    }
+  } catch {}
+  finally { clearTimeout(timer); }
+  try {
+    const {stdout}=await execFileAsync("curl",[
+      "-L","--max-time",String(CURL_TIMEOUT_SECONDS),"--retry","1","-A",headers["user-agent"],
+      "-H","Accept: text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8",url
+    ],{maxBuffer:20*1024*1024});
+    if(stdout && stdout.length>120) return {html:stdout,method:"curl"};
+  } catch {}
+  return null;
 }
 
 function extractLinks(html, source, pageUrl) {
@@ -82,21 +88,24 @@ const sourceResults = [];
 for (const source of sources) {
   const candidateUrls = [source.updatesUrl, ...(Array.isArray(source.fallbackUrls) ? source.fallbackUrls : [])]
     .filter((url, index, list) => url && list.indexOf(url) === index);
-  let html = null;
+  let payload = null;
   let fetchedUrl = null;
+  let method = null;
   for (const candidateUrl of candidateUrls) {
-    html = await fetchText(candidateUrl);
-    if (html) {
+    payload = await fetchText(candidateUrl);
+    if (payload) {
       fetchedUrl = candidateUrl;
+      method = payload.method;
       break;
     }
   }
-  const items = html && fetchedUrl ? extractLinks(html, source, fetchedUrl) : [];
+  const items = payload && fetchedUrl ? extractLinks(payload.html, source, fetchedUrl) : [];
   sourceResults.push({
     id: source.id,
     discovered: items.length,
-    checked: Boolean(html),
-    fetchedUrl
+    checked: Boolean(payload),
+    fetchedUrl,
+    method
   });
   discovered.push(...items);
 }
