@@ -1,10 +1,16 @@
 import type { MetadataRoute } from "next";
 import { exams } from "@/lib/exams";
+import { seoLandings } from "@/lib/seo-landings";
 
 const base = "https://sarkariprep.online";
-const lastModified = new Date("2026-09-27T00:00:00Z");
+
+function latestExamUpdate() {
+  const dates = exams.map(e => e.lastVerified).filter(Boolean).map(x => new Date(x as string).getTime()).filter(Number.isFinite);
+  return new Date(Math.max(...dates, Date.now()));
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const latest = latestExamUpdate();
   const staticPages = [
     { path: "", priority: 1, changeFrequency: "daily" as const },
     { path: "/exams", priority: 0.95, changeFrequency: "daily" as const },
@@ -17,12 +23,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return [
-    ...staticPages.map((p) => ({ url: base + p.path, lastModified, priority: p.priority, changeFrequency: p.changeFrequency })),
-    ...exams.map((exam) => ({
-      url: `${base}/exams/${exam.slug}`,
-      lastModified: exam.lastVerified ? new Date(exam.lastVerified) : lastModified,
+    ...staticPages.map(p => ({ url: base + p.path, lastModified: latest, priority: p.priority, changeFrequency: p.changeFrequency })),
+    ...seoLandings.map(p => ({ url: base + "/" + p.slug, lastModified: latest, priority: 0.85, changeFrequency: "daily" as const })),
+    ...exams.map(exam => ({
+      url: base + "/exams/" + exam.slug,
+      lastModified: exam.lastVerified ? new Date(exam.lastVerified) : latest,
       priority: exam.dataStatus === "official-verified" ? 0.9 : 0.75,
-      changeFrequency: "weekly" as const,
+      changeFrequency: exam.dataStatus === "official-verified" ? "daily" as const : "weekly" as const,
     })),
   ];
 }
