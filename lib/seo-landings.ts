@@ -13,6 +13,48 @@ export type SeoLanding = {
 const has = (exam: Exam, text: string) =>
   [exam.name, exam.organization, exam.category, exam.qualifications].join(" ").toLowerCase().includes(text.toLowerCase());
 
+const MONTHS: Record<string, number> = {
+  january: 0, february: 1, march: 2, april: 3, may: 4, june: 5,
+  july: 6, august: 7, september: 8, october: 9, november: 10, december: 11,
+};
+
+const getIndiaTodayIso = () => new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Asia/Kolkata",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+}).format(new Date());
+
+const parseExamEndDate = (value: string): string | null => {
+  const text = value.replace(/[–—]/g, "-");
+  const isoDates = [...text.matchAll(/\b(20\d{2})-(\d{2})-(\d{2})\b/g)]
+    .map(m => `${m[1]}-${m[2]}-${m[3]}`);
+  if (isoDates.length) return isoDates[isoDates.length - 1];
+
+  const matches = [...text.matchAll(/\b(\d{1,2})\s+([A-Za-z]+)(?:\s*,?\s*(20\d{2}))?\b/g)];
+  if (!matches.length) return null;
+
+  const explicitYear = [...matches].reverse().find(m => m[3])?.[3];
+  if (!explicitYear) return null;
+
+  const parsed = matches.map(m => {
+    const month = MONTHS[m[2].toLowerCase()];
+    if (month === undefined) return null;
+    const year = Number(m[3] || explicitYear);
+    const day = Number(m[1]);
+    return new Date(Date.UTC(year, month, day));
+  }).filter((d): d is Date => Boolean(d) && !Number.isNaN(d.getTime()));
+
+  if (!parsed.length) return null;
+  return parsed[parsed.length - 1].toISOString().slice(0, 10);
+};
+
+const isUpcomingExam = (exam: Exam) => {
+  if (exam.status !== "cycle") return false;
+  const examEndDate = parseExamEndDate(exam.examDate);
+  return Boolean(examEndDate && examEndDate >= getIndiaTodayIso());
+};
+
 export const seoLandings: SeoLanding[] = [
   { slug: "government-jobs", title: "Government Jobs in India 2026", description: "Explore government job and recruitment routes across India by qualification, department and exam, with official-source links.", h1: "Government Jobs in India", intro: "Explore major government recruitment routes in one place. Use each exam guide to check qualification, age, cycle status and the latest official notification.", keywords: ["government jobs", "sarkari naukri", "government recruitment"], filter: () => true },
   { slug: "upcoming-government-exams", title: "Upcoming Government Exams 2026", description: "Find upcoming government exams in India across UPSC, SSC, banking, railway, defence, teaching, medical and state recruitment.", h1: "Upcoming Government Exams 2026", intro: "Find exam and recruitment cycles that are upcoming or scheduled in the SarkariPrep catalogue. Always verify the latest date on the linked official notification.", keywords: ["upcoming government exams 2026", "government exams 2026"], filter: e => isUpcomingExam(e) },
