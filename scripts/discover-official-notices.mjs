@@ -43,7 +43,7 @@ function extractLinks(html, source) {
   const results = [];
   const seen = new Set();
   const base = new URL(source.updatesUrl);
-  const re = /<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\\s\\S]*?)<\/a>/gi;
+  const re = /<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
   let match;
   while ((match = re.exec(html)) && results.length < MAX_PER_SOURCE) {
     const href = match[1].trim();
