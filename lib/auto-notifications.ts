@@ -2400,7 +2400,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nagaland-psc-f9965db5fb91d3d4",
-    "title": "Notification No. NPSC/CESE-12/AK/2021 dt. 16.09.2026 (Corrected Answer Keys of Common Educational Services Examination 2026) New",
+    "title": "Notification No. NPSC/CESE-12/AK/2021 dt. 16.09.2026 (Corrected Answer Keys of Common Educational Services Examination 2026)",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
     "stage": "Answer Key",
@@ -2412,7 +2412,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nagaland-psc-ae02c5b23e7cb59b",
-    "title": "Notification No. NPSC/EXAM-21/2023 dt. 17.09.2026 (Incomplete Score Sheet/Documents CESE 2026) New",
+    "title": "Notification No. NPSC/EXAM-21/2023 dt. 17.09.2026 (Incomplete Score Sheet/Documents CESE 2026)",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
     "stage": "Notice",
@@ -2424,7 +2424,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nagaland-psc-46fb9e1e4ccd6c1d",
-    "title": "Notification No. NPSC/EXAM-7/2022 dt. 17.09.2026 ( CTSE 2026 Admission Certificate) New",
+    "title": "Notification No. NPSC/EXAM-7/2022 dt. 17.09.2026 ( CTSE 2026 Admission Certificate)",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
     "stage": "Notice",
