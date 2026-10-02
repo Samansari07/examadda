@@ -1,22 +1,20 @@
-import Link from "next/link";
-
 const categories = [
-  ["Civil Services", "/government-jobs"],
-  ["SSC", "/government-jobs"],
-  ["Railway", "/railway-government-jobs"],
-  ["Banking", "/banking-government-jobs"],
-  ["Defence", "/defence-government-jobs"],
-  ["Teaching", "/teaching-government-jobs"],
-  ["Medical", "/medical-government-exams"],
-  ["Engineering", "/engineering-government-jobs"],
-  ["State Government", "/government-jobs"],
-] as const;
+  { name: "Civil Services", href: "/government-jobs" },
+  { name: "SSC", href: "/government-jobs" },
+  { name: "Railway", href: "/railway-government-jobs" },
+  { name: "Banking", href: "/banking-government-jobs" },
+  { name: "Defence", href: "/defence-government-jobs" },
+  { name: "Teaching", href: "/teaching-government-jobs" },
+  { name: "Medical", href: "/medical-government-exams" },
+  { name: "Engineering", href: "/engineering-government-jobs" },
+  { name: "State Government", href: "/government-jobs" },
+];
 
 export default function JobsPage() {
   return (
     <main className="directoryPage">
       <div className="wrap">
-        <Link className="backLink" href="/">← Back to SarkariPrep</Link>
+        <a className="backLink" href="/">← Back to SarkariPrep</a>
         <div className="directoryHero">
           <span className="tag">CAREER DISCOVERY</span>
           <h1>Government Jobs</h1>
@@ -24,11 +22,11 @@ export default function JobsPage() {
         </div>
         <section className="section compact">
           <div className="categoryGrid">
-            {categories.map(([category, href]) => (
-              <Link className="categoryTile" href={href} key={category}>
-                <b>{category}</b>
+            {categories.map((category) => (
+              <a className="categoryTile" href={category.href} key={category.name}>
+                <b>{category.name}</b>
                 <span>Explore jobs →</span>
-              </Link>
+              </a>
             ))}
           </div>
         </section>
