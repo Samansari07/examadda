@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getLandingExams, getSeoLanding, seoLandings } from "@/lib/seo-landings";
+import { getLandingExams, getSeoLanding, parseExamEndDate, seoLandings } from "@/lib/seo-landings";\n\nexport const revalidate = 3600;
 
 export function generateStaticParams() {
   return seoLandings.map(({ slug }) => ({ landing: slug }));
@@ -25,7 +25,14 @@ export default async function SeoLandingPage({ params }: { params: Promise<{ lan
   const { landing: slug } = await params;
   const page = getSeoLanding(slug);
   if (!page) notFound();
-  const matches = getLandingExams(page);
+  const rawMatches = getLandingExams(page);
+  const matches = page.slug === "upcoming-government-exams"
+    ? [...rawMatches].sort((a, b) => {
+        const aDate = parseExamEndDate(a.examDate) || "9999-12-31";
+        const bDate = parseExamEndDate(b.examDate) || "9999-12-31";
+        return aDate.localeCompare(bDate);
+      })
+    : rawMatches;
   const related = seoLandings.filter(x => x.slug !== page.slug).slice(0, 6);
   const jsonLd = {
     "@context": "https://schema.org",
@@ -60,7 +67,7 @@ export default async function SeoLandingPage({ params }: { params: Promise<{ lan
             <span className="tag">{e.category}</span>
             <h3>{e.name}</h3>
             <p className="org">{e.organization}</p>
-            <div className="miniFacts"><div><small>Qualification</small><b>{e.qualifications}</b></div><div><small>Status</small><b>{e.dataStatus === "official-verified" ? "Officially verified" : e.status === "family" ? "Recruitment family" : "Reference guide"}</b></div><div><small>Vacancy</small><b>{e.vacancies}</b></div></div>
+            <div className="miniFacts"><div><small>Exam date</small><b>{e.examDate}</b></div><div><small>Qualification</small><b>{e.qualifications}</b></div><div><small>Status</small><b>{e.dataStatus === "official-verified" ? "Officially verified" : e.status === "family" ? "Recruitment family" : "Reference guide"}</b></div><div><small>Vacancy</small><b>{e.vacancies}</b></div></div>
             <div className="cardLinks"><a className="primaryLink" href={"/exams/" + e.slug}>Open complete guide →</a><a href={e.notificationUrl || e.sourceUrl || e.officialUrl} target="_blank" rel="noopener noreferrer">Official ↗</a></div>
           </article>)}
         </div>
