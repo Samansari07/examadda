@@ -25,7 +25,7 @@ const getIndiaTodayIso = () => new Intl.DateTimeFormat("en-CA", {
   day: "2-digit",
 }).format(new Date());
 
-const parseExamEndDate = (value: string): string | null => {
+export const parseExamEndDate = (value: string): string | null => {
   const text = value.replace(/[–—]/g, "-");
   const isoDates = [...text.matchAll(/\b(20\d{2})-(\d{2})-(\d{2})\b/g)]
     .map(m => `${m[1]}-${m[2]}-${m[3]}`);
