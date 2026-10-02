@@ -1,10 +1,5 @@
-"use client";
-
-import {useMemo} from "react";
 import {exams} from "@/lib/exams";
 import {autoNotifications, autoNotificationMeta} from "@/lib/auto-notifications";
-
-type LiveExam = typeof exams[number];
 
 function parseDate(value?: string){
   if(!value) return null;
@@ -17,9 +12,6 @@ function parseDate(value?: string){
   }
   return null;
 }
-function daysUntil(date:Date, now:Date){
-  return Math.ceil((date.getTime()-now.getTime())/86400000);
-}
 function dateLabel(value:string){
   const d=parseDate(value);
   if(!d) return value;
@@ -30,23 +22,17 @@ function cleanName(name:string){
 }
 
 export default function LiveExamDashboard(){
-  const now=useMemo(()=>new Date(),[]);
-  const upcoming=useMemo(()=>exams.map(e=>({e,d:parseDate(e.examDate)}))
+  const now=new Date();
+  const upcoming=exams.map(e=>({e,d:parseDate(e.examDate)}))
     .filter(x=>x.d && x.d.getTime()>=now.getTime()-86400000 && x.e.dataStatus==="official-verified")
-    .sort((a,b)=>a.d!.getTime()-b.d!.getTime()).slice(0,8),[now]);
+    .sort((a,b)=>a.d!.getTime()-b.d!.getTime()).slice(0,8);
 
-  const applications=useMemo(()=>exams.filter(e=>
-    e.dataStatus==="official-verified" &&
-    e.applicationStatus==="open" &&
-    !!parseDate(e.lastDate)
-  ).sort((a,b)=>(parseDate(a.lastDate)?.getTime()||Infinity)-(parseDate(b.lastDate)?.getTime()||Infinity)).slice(0,6),[]);
-
-  const recent=useMemo(()=>autoNotifications.slice(0,8),[]);
+  const deadlines=exams.map(e=>({e,d:parseDate(e.lastDate)}))
+    .filter(x=>x.d && x.d.getTime()>=now.getTime() && x.e.dataStatus==="official-verified")
+    .sort((a,b)=>a.d!.getTime()-b.d!.getTime()).slice(0,6);
 
   const next=upcoming[0];
   const verifiedCount=exams.filter(e=>e.dataStatus==="official-verified").length;
-  const sourceCount=autoNotificationMeta.sourceCount;
-  const successful=autoNotificationMeta.successfulSources;
 
   return <section className="liveCommand" aria-label="Live government exam updates">
     <div className="wrap">
@@ -58,8 +44,8 @@ export default function LiveExamDashboard(){
         </div>
         <div className="liveHealth">
           <span className="liveDot"/> AUTO REFRESH
-          <b>{sourceCount} official sources</b>
-          <small>{successful} sources reachable in latest refresh</small>
+          <b>{autoNotificationMeta.sourceCount} official sources</b>
+          <small>{autoNotificationMeta.successfulSources} sources reachable in latest refresh</small>
         </div>
       </div>
 
@@ -72,31 +58,31 @@ export default function LiveExamDashboard(){
         <div className="nextDate">
           <small>EXAM DATE</small>
           <strong>{dateLabel(next.e.examDate)}</strong>
-          <span>{Math.max(0,daysUntil(next.d!,now))} days to go</span>
+          <span>{Math.max(0,Math.ceil((next.d!.getTime()-now.getTime())/86400000))} days to go</span>
         </div>
         <a href={"/exams/"+next.e.slug}>View complete guide →</a>
       </div>}
 
       <div className="liveColumns">
         <div className="liveBox">
-          <div className="liveBoxHead"><div><span className="liveKicker">🟢 APPLY NOW</span><h3>Applications & deadlines</h3></div><a href="/notifications">All updates →</a></div>
-          {applications.length ? applications.map(e=><a className="liveRow" href={"/exams/"+e.slug} key={e.slug}>
-            <span className="liveIcon">✓</span><div><b>{cleanName(e.name)}</b><small>{e.organization}</small></div>
+          <div className="liveBoxHead"><div><span className="liveKicker">🟠 DEADLINES</span><h3>Dates coming up</h3></div><a href="/notifications">All updates →</a></div>
+          {deadlines.length ? deadlines.map(({e,d})=><a className="liveRow" href={"/exams/"+e.slug} key={e.slug}>
+            <span className="liveIcon">!</span><div><b>{cleanName(e.name)}</b><small>{e.organization}</small></div>
             <strong>{dateLabel(e.lastDate)}</strong>
-          </a>) : <div className="liveEmpty">No currently open application with a verified deadline is available in the live dataset.</div>}
+          </a>) : <div className="liveEmpty">No verified upcoming application deadline is available in the current dataset.</div>}
         </div>
 
         <div className="liveBox">
           <div className="liveBoxHead"><div><span className="liveKicker">⏰ UPCOMING</span><h3>Exams coming soon</h3></div><a href="/upcoming-government-exams">Calendar →</a></div>
           {upcoming.slice(0,5).map(({e,d})=><a className="liveRow" href={"/exams/"+e.slug} key={e.slug}>
             <span className="liveIcon">→</span><div><b>{cleanName(e.name)}</b><small>{e.organization}</small></div>
-            <strong>{Math.max(0,daysUntil(d!,now))}d</strong>
+            <strong>{Math.max(0,Math.ceil((d!.getTime()-now.getTime())/86400000))}d</strong>
           </a>)}
         </div>
 
         <div className="liveBox">
           <div className="liveBoxHead"><div><span className="liveKicker">🆕 OFFICIAL UPDATES</span><h3>What changed recently</h3></div><a href="/notifications">Open →</a></div>
-          {recent.slice(0,5).map(n=><a className="liveRow" href={n.notificationUrl||n.officialUrl} target="_blank" rel="noopener noreferrer" key={n.id}>
+          {autoNotifications.slice(0,5).map(n=><a className="liveRow" href={n.notificationUrl||n.officialUrl} target="_blank" rel="noopener noreferrer" key={n.id}>
             <span className="liveIcon">↗</span><div><b>{n.title}</b><small>{n.organization} · {n.stage}</small></div>
             <strong>{n.lastChecked}</strong>
           </a>)}
