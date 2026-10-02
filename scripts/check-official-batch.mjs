@@ -77,19 +77,44 @@ const MONTHS="january|february|march|april|may|june|july|august|september|octobe
 const DATE_TOKEN="(\\d{1,2}\\s+(?:"+MONTHS+")\\s+\\d{4}|\\d{1,2}[.\\/-]\\d{1,2}[.\\/-]\\d{2,4})";
 function fieldEvidence(text,re,label){const m=text.match(re);if(!m)return null;const i=m.index||0;return {value:m[1]?.trim(),label,snippet:text.slice(Math.max(0,i-100),Math.min(text.length,i+Math.max(220,m[0].length+100))).replace(/\\s+/g," ").trim()};}
 function parseStructured(t){
-  const text=t.replace(/[ \\t]+/g," ").replace(/\\n+/g," ").replace(/\\s+/g," ").trim();
-  const out={},e=[],evidenceSnippets=[];let m;
-  const last=fieldEvidence(text,new RegExp("(?:last date|closing date|last date for (?:submission of )?(?:online )?application)[^0-9]*"+DATE_TOKEN,"i"),"lastDate");
+  const text=String(t).replace(/\r/g," ").replace(/\n+/g," ").replace(/\s+/g," ").trim();
+  const out={},e=[],evidenceSnippets=[];
+  const capture=(re,label)=>{const m=text.match(re);if(!m)return null;const i=m.index||0;return {value:(m[1]||"").trim(),label,snippet:text.slice(Math.max(0,i-140),Math.min(text.length,i+Math.max(280,m[0].length+140))).trim()};};
+  const last=capture(/(?:last date|closing date|last date for (?:submission of )?(?:online )?application|applications? (?:will )?close(?:s)?)[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i,"lastDate");
   if(last?.value){out.lastDate=last.value;e.push("lastDate");evidenceSnippets.push(last.snippet);}
-  const exam=fieldEvidence(text,new RegExp("(?:date of (?:the )?examination|date of examination|exam(?:ination)? (?:will be held|scheduled|shall be held)|examination.*?scheduled)[^0-9]*"+DATE_TOKEN,"i"),"examDate");
+  const range=text.match(/(?:online )?(?:application|registration)(?:s)?[^0-9]{0,80}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})[^0-9]{0,60}(?:to|till|upto|up to|-|–)[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);
+  if(range){out.applicationDates=range[1]+" to "+range[2];e.push("applicationDates");evidenceSnippets.push(range[0].slice(0,320));}
+  const exam=capture(/(?:date of (?:the )?examination|date of examination|exam(?:ination)? (?:will be held|scheduled|shall be held)|online exam(?:ination)?)[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i,"examDate");
   if(exam?.value){out.examDate=exam.value;e.push("examDate");evidenceSnippets.push(exam.snippet);}
-  const vacancy=fieldEvidence(text,/(?:number of )?(?:vacancies|vacant posts|total posts|total vacancies)[^0-9]{0,50}([0-9][0-9,]{2,})/i,"vacancies");
+  const vacancy=capture(/(?:number of )?(?:vacancies|vacant posts|total posts|total vacancies)[^0-9]{0,70}([0-9][0-9,]{2,})/i,"vacancies");
   if(vacancy?.value){out.vacancies=vacancy.value+" notified";e.push("vacancies");evidenceSnippets.push(vacancy.snippet);}
-  m=text.match(/(?:minimum age|minimum age limit)[^0-9]{0,40}([0-9]{1,2})[^0-9]{0,100}(?:maximum age|upper age)[^0-9]{0,40}([0-9]{1,2})/i);
-  if(m){out.minAge=+m[1];out.maxAge=+m[2];e.push("age");evidenceSnippets.push(m[0].slice(0,260));}
-  m=text.match(/(?:application fee|examination fee|exam fee)[^\\n:]{0,100}(?:rs\\.?|₹)\\s*([0-9][0-9,]*)/i);
-  if(m){out.fee="₹"+m[1];e.push("fee");evidenceSnippets.push(m[0].slice(0,260));}
+  let m=text.match(/(?:minimum age|minimum age limit)[^0-9]{0,40}([0-9]{1,2})[^0-9]{0,100}(?:maximum age|upper age)[^0-9]{0,40}([0-9]{1,2})/i);
+  if(m){out.minAge=+m[1];out.maxAge=+m[2];e.push("age");evidenceSnippets.push(m[0].slice(0,320));}
+  m=text.match(/(?:application fee|examination fee|exam fee)[^:]{0,100}(?:rs\.?|₹)\s*([0-9][0-9,]*)/i);
+  if(m){out.fee="₹"+m[1];e.push("fee");evidenceSnippets.push(m[0].slice(0,320));}
+  m=text.match(/(?:correction|edit|modification)[^0-9]{0,100}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})[^0-9]{0,60}(?:to|till|upto|up to|-|–)?[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})?/i);
+  if(m){out.correctionDates=m[0].slice(0,220);e.push("correctionDates");evidenceSnippets.push(m[0].slice(0,320));}
   return{data:out,evidence:e,evidenceSnippets};
+}
+function deriveCycleYear(title,text){
+  const current=new Date().getUTCFullYear();
+  const source=String(title||"")+" "+String(text||"").slice(0,30000);
+  const explicit=[
+    /(?:recruit(?:ing|ment)?\s+year|recruitment\s+cycle|cycle\s+year|exam(?:ination)?\s+year|academic\s+year|session)\D{0,30}(20\d{2})/i,
+    /(?:intake|batch|entry)\D{0,20}(?:0?\d{1,2}\/)?(20\d{2})/i,
+    /(?:recruit(?:ing|ment)?\s+year|cycle)\D{0,20}(\d{2})\s*[-/]\s*(?:\d{2}|20\d{2})/i
+  ];
+  for(const re of explicit){
+    const m=source.match(re);
+    if(m){
+      const raw=Number(m[1]);
+      const year=raw<100?2000+raw:raw;
+      if(year>=current-1&&year<=current+2)return year;
+    }
+  }
+  const titleYears=[...String(title||"").matchAll(/\b20\d{2}\b/g)].map(m=>Number(m[0]));
+  const candidate=titleYears.find(y=>y>=current-1&&y<=current+2);
+  return candidate||null;
 }
 const config=JSON.parse(await fs.readFile("config/official-sources.json","utf8"));
 const batch=Number(process.env.SOURCE_BATCH||0),count=Number(process.env.SOURCE_BATCH_COUNT||8);
@@ -103,8 +128,10 @@ const ORG_ALIASES={
   "CTET":["ctet","central teacher eligibility test"],
   "State Bank of India":["sbi"],
   "Reserve Bank of India":["rbi"],
-  "Indian Navy":["navy"],
-  "Indian Air Force":["iaf","air force","afcat"],
+  "Indian Navy":["navy","join indian navy"],
+  "Indian Air Force":["iaf","indian air force","air force","afcat","agniveervayu"],
+  "Indian Army":["army","indian army","agniveer","join indian army","cee"],
+  "Indian Coast Guard":["coast guard","indian coast guard","icg"],
   "Jharkhand Public Service Commission":["jpsc"],
   "Bihar Public Service Commission":["bpsc"],
   "West Bengal Public Service Commission":["wbpsc"],
@@ -140,9 +167,14 @@ for(const source of selected){
       const aliases=[norm(exam.name),norm(exam.slug),...(exam.name.match(/\\b[A-Z][A-Z0-9-]{1,}\\b/g)||[]).map(norm)].filter(x=>x.length>3);
       const identityMatches=aliases.filter(k=>normalized.includes(k)).length;
       const p=parseStructured(txt);
+      const cycleYear=deriveCycleYear(item.title,txt);
+      const isFamily=exam.slug.startsWith("family-");
       if(identityMatches<1 || p.evidence.length<2 || (!p.data.examDate && !p.data.lastDate))continue;
+      if(isFamily && !cycleYear)continue;
       const confidence=identityMatches>=2 && p.evidence.length>=3 ? "high" : "medium";
-      overrides[exam.slug]={...p.data,slug:exam.slug,name:exam.name,organization:exam.organization,notificationUrl:pdf,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence,evidenceCount:p.evidence.length,evidence:p.evidence,evidenceSnippets:p.evidenceSnippets,sourceTitle:item.title};
+      const cycleSlug=isFamily ? exam.slug.replace(/^family-/,"")+"-"+cycleYear : exam.slug;
+      const cycleName=isFamily ? (cycleYear ? exam.name+" "+cycleYear : exam.name) : exam.name;
+      overrides[cycleSlug]={...p.data,slug:cycleSlug,cycleSlug,familySlug:isFamily?exam.slug:undefined,cycleYear:isFamily?cycleYear:undefined,name:cycleName,organization:exam.organization,notificationUrl:pdf,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence,evidenceCount:p.evidence.length,evidence:p.evidence,evidenceSnippets:p.evidenceSnippets,sourceTitle:item.title};
     }
     statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:f.url,ok:true,detected:det.length,lastChecked:today(),method:f.method});
   }catch(e){
