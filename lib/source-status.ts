@@ -1,4 +1,4 @@
-export type SourceStatus = {id:string; organization:string; category:string; region:string; sourceUrl:string; ok:boolean; detected:number; lastChecked:string; method?:string; error?:string};
+export type SourceStatus = {id:string; organization:string; category:string; region:string; sourceUrl:string; ok:boolean; health:"healthy"|"degraded"|"unreachable"; detected:number; lastChecked:string; method?:string; attempts?:number; error?:string};
 
 export const sourceStatuses:Record<string,SourceStatus> = {
   "upsc": {
