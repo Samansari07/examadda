@@ -20,7 +20,7 @@ const stage=t=>{t=t.toLowerCase();const years=[...t.matchAll(/\b(?:19|20)\d{2}\b
 
 async function fetchSource(source){
   const extraFallbacks=source.id==="indian-army"?["https://www.joinindianarmy.nic.in/"]:source.id==="indian-coast-guard"?["https://indiancoastguard.gov.in/recruitment"]:[];
-  const baseUrls=[source.updatesUrl,...(source.fallbackUrls||[]),source.applicationUrl,...(source.discoveryUrls||[]),...extraFallbacks].filter(Boolean);
+  const commonDiscovery=["sitemap.xml","robots.txt","notifications","notices","recruitment","recruitment-notices","career","careers","advertisement","advertisements","documents","document-category","latest-notices","news-events"];\n  const commonUrls=commonDiscovery.map(p=>{try{return new URL(p,source.updatesUrl).href}catch{return null}}).filter(Boolean);\n  const baseUrls=[source.updatesUrl,...(source.fallbackUrls||[]),source.applicationUrl,...(source.discoveryUrls||[]),...commonUrls,...extraFallbacks].filter(Boolean);
   const urls=[];
   for(const u of [...new Set(baseUrls)]){
     urls.push(u);
