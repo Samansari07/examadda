@@ -77,7 +77,7 @@ async function findPdf(url){
 const MONTHS="january|february|march|april|may|june|july|august|september|october|november|december";
 function parseDateToken(value){
   const s=String(value||"").trim();
-  let m=s.match(/^(\d{1,2})\s+(\${MONTHS})\s+(\d{4})$/i);
+  let m=s.match(/^(\d{1,2})\s+(january|february|march|april|may|june|july|august|september|october|november|december)\s+(\d{4})$/i);
   if(m){const months={january:0,february:1,march:2,april:3,may:4,june:5,july:6,august:7,september:8,october:9,november:10,december:11};return new Date(Date.UTC(+m[3],months[m[2].toLowerCase()],+m[1]));}
   m=s.match(/^(\d{1,2})[.\/-](\d{1,2})[.\/-](\d{2,4})$/);
   if(m){const y=+m[3]<100?2000+ +m[3]:+m[3];return new Date(Date.UTC(y,+m[2]-1,+m[1]));}
