@@ -87,7 +87,6 @@ jobs:
           test -s lib/auto-notifications.ts
           test -s lib/auto-exam-data.ts
           test -s lib/source-status.ts
-          node scripts/validate-notice-feed.mjs
       - name: Commit refreshed data
         run: |
           git config user.name "SarkariPrep Bot"
@@ -96,6 +95,7 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
             node scripts/aggregate-official-data.mjs
+            node scripts/validate-notice-feed.mjs
             git add lib/auto-notifications.ts lib/auto-exam-data.ts lib/source-status.ts
             if git diff --cached --quiet; then
               echo "No official-data changes detected."
