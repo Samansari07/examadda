@@ -116,7 +116,7 @@ const applyAutoExamData=(e:Exam):Exam=>{
   sourceUrl:o.sourceUrl,
   lastVerified:o.lastVerified,
   dataStatus:verified?"official-verified":(e.dataStatus==="official-verified"?"official-verified":"official-calendar"),
-  description:(e.description?e.description+" ":"")+"Automatically refreshed from an official notice on "+o.lastVerified+".",
+  description:"Current cycle data automatically refreshed from a high-confidence official notice on "+o.lastVerified+". The authority notice remains the controlling source; older cycle values are not carried forward.",
  };
 };
 const allExamRecords=[...currentExamOverrides,...verifiedCurrent,...autoCurrentCycles,...cycleWithIntegrity,...familyExams.map(e=>({...e,dataStatus:"reference-family" as const,lastVerified:"2026-10-02",sourceUrl:e.officialUrl}))];
