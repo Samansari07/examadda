@@ -18,11 +18,13 @@ export default async function ExamPage({params}:{params:Promise<{slug:string}>})
  const applicationAction=applicationStatus==="closed"?"Application closed":applicationStatus==="upcoming"?"Application not open yet":"Official application portal";
  const age=e.minAge===0?"Check latest notification":e.minAge+"–"+e.maxAge+" years";
  const sourceCheck=Object.values(sourceStatuses).find(s=>{try{return new URL(e.officialUrl).hostname===new URL(s.sourceUrl).hostname}catch{return s.organization===e.organization}});
+ const examHost=(()=>{try{return new URL(e.officialUrl).hostname.replace(/^www\\./,"").toLowerCase()}catch{return ""}})();
  const trackedUpdates=autoNotifications.filter(n=>{
-  if(n.organization===e.organization) return true;
-  const title=n.title.toLowerCase(); const name=e.name.toLowerCase();
-  const tokens=name.replace(/[^a-z0-9]+/g," ").split(" ").filter(x=>x.length>3).slice(0,5);
-  return tokens.length>0 && tokens.filter(t=>title.includes(t)).length>=Math.min(2,tokens.length);
+  // Never attach a notice merely because its title contains similar words.
+  // Notices must come from the same registered official host as this exam.
+  // This prevents cross-organization leakage such as JPSC notices appearing on OPSC.
+  const noticeHost=(()=>{try{return new URL(n.officialUrl).hostname.replace(/^www\\./,"").toLowerCase()}catch{return ""}})();
+  return !!examHost && !!noticeHost && examHost===noticeHost;
  }).slice(0,5);
  const sourceTracked=!!sourceCheck;
  const detail=getDetailProfile(e);
