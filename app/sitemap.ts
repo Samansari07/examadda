@@ -8,7 +8,7 @@ const base = "https://sarkariprep.online";
 function latestExamUpdate() {
   const dates = exams.map(e => e.lastVerified).filter(Boolean).map(x => new Date(x as string).getTime()).filter(Number.isFinite);
   const generated = new Date(autoNotificationMeta.generatedAt + "T00:00:00Z").getTime();
-  return new Date(Math.max(...dates, generated, Date.now()));
+  return new Date(Math.max(...dates, generated));
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
