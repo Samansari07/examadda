@@ -11,7 +11,7 @@ on:
       - ".github/workflows/refresh-official-data.yml"
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "17 */6 * * *"
 
 permissions:
   contents: write
