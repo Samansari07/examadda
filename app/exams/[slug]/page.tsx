@@ -14,7 +14,7 @@ export async function generateMetadata({params}:{params:Promise<{slug:string}>})
 export default async function ExamPage({params}:{params:Promise<{slug:string}>}){
  const {slug}=await params; const e=exams.find(x=>x.slug===slug); if(!e) notFound();
  const family=e.status==="family"; const liveVerified=e.dataStatus==="official-verified" || (!!autoExamData[e.slug] && !autoExamData[e.slug].stale && autoExamData[e.slug].confidence==="high");
- const autoOverride=autoExamData[e.slug]||Object.values(autoExamData).filter(x=>x.familySlug===e.slug).sort((a,b)=>(b.cycleYear||0)-(a.cycleYear||0))[0];
+ const autoOverride=autoExamData[e.slug]||Object.values(autoExamData).filter(x=>x.familySlug===e.slug && !x.stale).sort((a,b)=>(b.cycleYear||0)-(a.cycleYear||0))[0];
  const displayExamDate=autoOverride?.examDate||e.examDate;
  const displayApplicationDates=autoOverride?.applicationDates||autoOverride?.lastDate||e.lastDate;
  const displayLastDate=autoOverride?.lastDate||autoOverride?.applicationDates||e.lastDate;
