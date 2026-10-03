@@ -4,24 +4,47 @@ import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
 const KEY = "sarkariprep-language";
+type Language = "en" | "hinglish";
+
+function isLanguage(value: string | null): value is Language {
+  return value === "en" || value === "hinglish";
+}
+
+function localizedPath(pathname: string, lang: Language) {
+  const clean = pathname || "/";
+  if (lang === "hinglish") {
+    return clean.startsWith("/hinglish") ? clean : clean === "/" ? "/hinglish" : "/hinglish" + clean;
+  }
+  if (!clean.startsWith("/hinglish")) return clean;
+  const english = clean.slice("/hinglish".length);
+  return english || "/";
+}
 
 export default function LanguageGate() {
   const pathname = usePathname();
   const router = useRouter();
-  const [choice, setChoice] = useState<"en" | "hinglish" | null>(null);
+  const [choice, setChoice] = useState<Language | null>(null);
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    const saved = window.localStorage.getItem(KEY) as "en" | "hinglish" | null;
-    setChoice(saved);
+    const saved = window.localStorage.getItem(KEY);
+    const language = isLanguage(saved) ? saved : null;
+    setChoice(language);
+    document.documentElement.lang = language === "hinglish" ? "hi-Latn-IN" : "en-IN";
     setReady(true);
   }, []);
 
-  function select(lang: "en" | "hinglish") {
+  useEffect(() => {
+    if (ready) {
+      document.documentElement.lang = choice === "hinglish" ? "hi-Latn-IN" : "en-IN";
+    }
+  }, [choice, ready]);
+
+  function select(lang: Language) {
     window.localStorage.setItem(KEY, lang);
     setChoice(lang);
-    if (lang === "hinglish" && !pathname.startsWith("/hinglish")) router.push("/hinglish");
-    if (lang === "en" && pathname.startsWith("/hinglish")) router.push("/");
+    const nextPath = localizedPath(pathname || "/", lang);
+    if (nextPath !== pathname) router.push(nextPath);
   }
 
   if (!ready) return null;
