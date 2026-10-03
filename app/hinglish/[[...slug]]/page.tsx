@@ -9,17 +9,6 @@ import { hinglish } from "@/lib/hinglish";
 
 const base = "https://sarkariprep.online";
 
-export function generateStaticParams() {
-  return [
-    { slug: [] },
-    { slug: ["exams"] },
-    { slug: ["jobs"] },
-    { slug: ["notifications"] },
-    ...exams.map(e => ({ slug: ["exams", e.slug] })),
-    ...seoLandings.map(p => ({ slug: [p.slug] })),
-  ];
-}
-
 function resolve(slug: string[]) {
   if (!slug.length) return { kind: "home" as const };
   if (slug[0] === "exams" && slug[1]) {
