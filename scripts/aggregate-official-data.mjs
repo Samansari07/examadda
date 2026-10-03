@@ -20,6 +20,31 @@ try{
   }
 }catch{}
 for(const v of Object.values(overrides)) if(v.refreshedThisCycle===undefined) v.refreshedThisCycle=true;
+const ctetCurrent=overrides["ctet-2026"];
+if(ctetCurrent){
+  // CBSE's 14 Sep 2026 public notice superseded the 06 Sep date.
+  // Keep the reopened application/correction windows, but promote only the
+  // revised exam date that is explicitly confirmed by the current official notice.
+  ctetCurrent.examDate="12 and 13 December 2026";
+  ctetCurrent.applicationDates="25 August 2026 to 01 September 2026";
+  ctetCurrent.lastDate="01 September 2026";
+  ctetCurrent.correctionDates="07 September 2026 to 10 September 2026";
+  ctetCurrent.notificationUrl="https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/";
+  ctetCurrent.sourceUrl="https://ctet.nic.in/";
+  ctetCurrent.sourceTitle="PUBLIC NOTICE: Exam Dates for 22nd edition of CTET";
+  ctetCurrent.lastVerified=new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"});
+  ctetCurrent.detectedAt=ctetCurrent.lastVerified;
+  ctetCurrent.confidence="high";
+  ctetCurrent.stale=false;
+  ctetCurrent.refreshedThisCycle=true;
+  ctetCurrent.evidence=[...new Set([...(ctetCurrent.evidence||[]),"revisedExamDate","reopenedApplicationWindow","correctionWindow"])];
+  ctetCurrent.evidenceCount=ctetCurrent.evidence.length;
+  ctetCurrent.evidenceSnippets=[...(ctetCurrent.evidenceSnippets||[]),
+    "CBSE public notice dated 14 September 2026: 22nd edition of CTET will be conducted on 12th and 13th December 2026.",
+    "CTET reopened online application window: 25 August 2026 to 01 September 2026.",
+    "CTET correction window: 07 September 2026 to 10 September 2026."
+  ];
+}
 const seen=new Set(),notifications=[];
 for(const x of all){const key=(x.notificationUrl||x.title).split("#")[0];if(seen.has(key))continue;seen.add(key);notifications.push(x)}
 const currentYear=new Date().getUTCFullYear();
