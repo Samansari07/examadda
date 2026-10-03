@@ -3,6 +3,7 @@ import {autoNotifications,autoNotificationMeta} from "@/lib/auto-notifications";
 import {officialSources} from "@/lib/official-sources";
 import {sourceStatuses} from "@/lib/source-status";
 import {discoveredOfficialNotices} from "@/lib/discovered-official-notices";
+import {cleanFeedTitle,isFeedUseful} from "@/lib/notification-feed";
 
 export const metadata={title:"Latest Government Notifications | SarkariPrep",description:"Latest government exam and recruitment notifications from registered official sources.",alternates:{canonical:"https://sarkariprep.online/notifications"},openGraph:{title:"Latest Government Notifications | SarkariPrep",description:"Latest government exam and recruitment notifications from registered official sources.",url:"https://sarkariprep.online/notifications",siteName:"SarkariPrep",type:"website",locale:"en_IN",images:[{url:"https://sarkariprep.online/opengraph-image",width:1200,height:630,alt:"SarkariPrep notifications"}]},twitter:{card:"summary_large_image",title:"Latest Government Notifications | SarkariPrep",description:"Latest government exam and recruitment notifications from registered official sources.",images:["https://sarkariprep.online/opengraph-image"]}};
 
@@ -14,7 +15,8 @@ type NotificationCardItem={
 };
 
 export default function NotificationsPage(){
- const merged:NotificationCardItem[]=[...autoNotifications,...discoveredOfficialNotices,...notifications.filter(n=>!autoNotifications.some(a=>a.notificationUrl===n.notificationUrl)&&!discoveredOfficialNotices.some(d=>d.notificationUrl===n.notificationUrl))];
+ const rawMerged:NotificationCardItem[]=[...autoNotifications,...discoveredOfficialNotices,...notifications.filter(n=>!autoNotifications.some(a=>a.notificationUrl===n.notificationUrl)&&!discoveredOfficialNotices.some(d=>d.notificationUrl===n.notificationUrl))];
+ const merged=rawMerged.filter(n=>isFeedUseful(n)).sort((a,b)=>new Date(b.publishedDate||b.lastChecked).getTime()-new Date(a.publishedDate||a.lastChecked).getTime());
  const open=merged.filter(n=>n.stage==="Application Open");
  const other=merged.filter(n=>n.stage!=="Application Open");
  const healthy=officialSources.filter(s=>sourceStatuses[s.id]?.ok).length;
@@ -32,5 +34,5 @@ export default function NotificationsPage(){
  </div></main>
 }
 function NotificationCard({n}:{n:NotificationCardItem}){
- return <article className="notificationCard"><div className="examMeta"><span className="tag">{n.stage}</span><span className="verified">✓ {n.status}</span></div><h3>{n.title}</h3><p className="org">{n.organization} · {n.category}</p><div className="miniFacts">{n.applicationLastDate&&<div><small>Last date</small><b>{n.applicationLastDate}</b></div>}{n.examDate&&<div><small>Exam date</small><b>{n.examDate}</b></div>}{n.qualification&&<div><small>Qualification</small><b>{n.qualification}</b></div>}<div><small>Last checked</small><b>{n.lastChecked}</b></div></div><p>{n.description}</p><div className="cardLinks"><a className="primaryLink" href={n.notificationUrl||n.officialUrl} target="_blank" rel="noopener noreferrer">Original notice ↗</a>{n.applyUrl&&<a href={n.applyUrl} target="_blank" rel="noopener noreferrer">Apply ↗</a>}</div></article>
+ return <article className="notificationCard"><div className="examMeta"><span className="tag">{n.stage}</span><span className="verified">✓ {n.status}</span></div><h3>{cleanFeedTitle(n.title)}</h3><p className="org">{n.organization} · {n.category}</p><div className="miniFacts">{n.applicationLastDate&&<div><small>Last date</small><b>{n.applicationLastDate}</b></div>}{n.examDate&&<div><small>Exam date</small><b>{n.examDate}</b></div>}{n.qualification&&<div><small>Qualification</small><b>{n.qualification}</b></div>}<div><small>Last checked</small><b>{n.lastChecked}</b></div></div><p>{n.description}</p><div className="cardLinks"><a className="primaryLink" href={n.notificationUrl||n.officialUrl} target="_blank" rel="noopener noreferrer">Original notice ↗</a>{n.applyUrl&&<a href={n.applyUrl} target="_blank" rel="noopener noreferrer">Apply ↗</a>}</div></article>
 }
