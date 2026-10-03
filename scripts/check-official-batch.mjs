@@ -75,6 +75,21 @@ async function findPdf(url){
   }catch{return null}
 }
 const MONTHS="january|february|march|april|may|june|july|august|september|october|november|december";
+function parseDateToken(value){
+  const s=String(value||"").trim();
+  let m=s.match(/^(\d{1,2})\s+(\${MONTHS})\s+(\d{4})$/i);
+  if(m){const months={january:0,february:1,march:2,april:3,may:4,june:5,july:6,august:7,september:8,october:9,november:10,december:11};return new Date(Date.UTC(+m[3],months[m[2].toLowerCase()],+m[1]));}
+  m=s.match(/^(\d{1,2})[.\/-](\d{1,2})[.\/-](\d{2,4})$/);
+  if(m){const y=+m[3]<100?2000+ +m[3]:+m[3];return new Date(Date.UTC(y,+m[2]-1,+m[1]));}
+  return null;
+}
+function applicationWindowClosed(data,now=new Date()){
+  const raw=data?.lastDate || (data?.applicationDates||"").split(/\s+to\s+/i).pop();
+  const end=parseDateToken(raw);
+  if(!end || Number.isNaN(end.getTime())) return false;
+  const today=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()));
+  return end < today;
+}
 const DATE_TOKEN="(\\d{1,2}\\s+(?:"+MONTHS+")\\s+\\d{4}|\\d{1,2}[.\\/-]\\d{1,2}[.\\/-]\\d{2,4})";
 function fieldEvidence(text,re,label){const m=text.match(re);if(!m)return null;const i=m.index||0;return {value:m[1]?.trim(),label,snippet:text.slice(Math.max(0,i-100),Math.min(text.length,i+Math.max(220,m[0].length+100))).replace(/\\s+/g," ").trim()};}
 function parseStructured(t){
@@ -131,6 +146,7 @@ const ORG_ALIASES={
   "Indian Railways / RRB":["rrb","railway recruitment board"],
   "National Testing Agency":["nta"],
   "CTET":["ctet","central teacher eligibility test"],
+  "CBSE":["cbse","ctet","central teacher eligibility test"],
   "State Bank of India":["sbi"],
   "Reserve Bank of India":["rbi"],
   "Indian Navy":["navy","join indian navy"],
@@ -163,8 +179,8 @@ for(const source of selected){
     const candidates=det
       .filter(x=>!["Result","Admit Card","Answer Key"].includes(x.stage))
       .map(x=>({item:x,exam:matchExam(x.title,source)}))
-      .filter(x=>x.exam)
-      .slice(0,12);
+      .filter(x=>x.exam || x.item.stage==="Application Open")
+      .slice(0,24);
     for(const {item,exam} of candidates){
       const pdf=await findPdf(item.notificationUrl);if(!pdf)continue;
       const txt=await pdfText(pdf);if(!txt)continue;
@@ -172,8 +188,15 @@ for(const source of selected){
       const aliases=[norm(exam.name),norm(exam.slug),...(exam.name.match(/\\b[A-Z][A-Z0-9-]{1,}\\b/g)||[]).map(norm)].filter(x=>x.length>3);
       const identityMatches=aliases.filter(k=>normalized.includes(k)).length;
       const p=parseStructured(txt);
+      if(p.data.lastDate) item.applicationLastDate=p.data.lastDate;
+      if(p.data.applicationDates) item.applicationDates=p.data.applicationDates;
+      if(p.data.examDate) item.examDate=p.data.examDate;
+      if(item.stage==="Application Open" && applicationWindowClosed(p.data)){
+        item.stage=p.data.examDate ? "Upcoming" : "Notice";
+      }
       const cycleYear=deriveCycleYear(item.title,txt);
-      const isFamily=exam.slug.startsWith("family-");
+      const isFamily=exam?.slug?.startsWith("family-");
+      if(!exam) continue;
       if(identityMatches<1 || p.evidence.length<2 || (!p.data.examDate && !p.data.lastDate))continue;
       if(isFamily && !cycleYear)continue;
       const confidence=identityMatches>=2 && p.evidence.length>=2 ? "high" : "medium";
