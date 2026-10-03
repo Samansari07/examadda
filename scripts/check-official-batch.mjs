@@ -20,21 +20,22 @@ const stage=t=>{t=t.toLowerCase();const years=[...t.matchAll(/\b(?:19|20)\d{2}\b
 
 async function fetchSource(source){
   const extraFallbacks=source.id==="indian-army"?["https://www.joinindianarmy.nic.in/"]:source.id==="indian-coast-guard"?["https://indiancoastguard.gov.in/recruitment"]:[];
-  const urls=[source.updatesUrl,...(source.fallbackUrls||[]),...extraFallbacks].filter(Boolean).slice(0,4),attempts=[];
-  for(const url of [...new Set(urls)]){
-    try{
-      const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(12000)});
+  const urls=[source.updatesUrl,...(source.fallbackUrls||[]),source.applicationUrl,...(source.discoveryUrls||[]),...extraFallbacks].filter(Boolean),attempts=[];
+  const uniqueUrls=[...new Set(urls)];
+  for(const url of uniqueUrls){
+    for(let attempt=1;attempt<=2;attempt++) try{
+      const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(15000)});
       const ct=r.headers.get("content-type")||"";
       if(r.ok&&(ct.includes("html")||ct.includes("xml")||ct.includes("text"))){
         const html=await r.text();
         if(html.length>120)return{url,html,method:"fetch"};
       }
-      attempts.push(url+" -> HTTP "+r.status);
-    }catch(e){attempts.push(url+" -> "+String(e))}
+      attempts.push(url+" -> HTTP "+r.status+" (fetch attempt "+attempt+")");
+    }catch(e){attempts.push(url+" -> "+String(e)+" (fetch attempt "+attempt+")")}
     try{
-      const {stdout}=await execFileAsync("curl",["-L","--max-time","20","--retry","1","--retry-delay","1","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:20*1024*1024});
-      if(stdout.length>120)return{url,html:stdout,method:"curl"};
-    }catch(e){attempts.push(url+" -> curl "+String(e))}
+      const {stdout}=await execFileAsync("curl",["-L","--connect-timeout","8","--max-time","20","--retry","1","--retry-delay","1","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:20*1024*1024});
+      if(stdout.length>120)return{url,html:stdout,method:url===source.updatesUrl?"curl":"fallback-curl",usedFallback:url!==source.updatesUrl,attempts:attempts.length+1};
+    }catch(e){attempts.push(url+" -> curl "+String(e)+" (attempt "+attempt+")")}
   }
   throw new Error(attempts.join(" | "));
 }
@@ -114,6 +115,18 @@ function parseStructured(t){
   if(m){out.fee="₹"+m[1];e.push("fee");evidenceSnippets.push(m[0].slice(0,320));}
   m=text.match(/(?:correction|edit|modification)[^0-9]{0,100}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})[^0-9]{0,60}(?:to|till|upto|up to|-|–)?[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})?/i);
   if(m){out.correctionDates=m[0].slice(0,220);e.push("correctionDates");evidenceSnippets.push(m[0].slice(0,320));}
+  m=text.match(/(?:educational qualification|essential qualification|minimum educational qualification|qualification)[^:]{0,80}:?\s*([^.;]{20,260})/i);
+  if(m){out.qualification=m[1].trim();e.push("qualification");evidenceSnippets.push(m[0].slice(0,360));}
+  m=text.match(/(?:selection process|selection procedure|mode of selection)[^:]{0,80}:?\s*([^.;]{20,260})/i);
+  if(m){out.selectionProcess=m[1].trim();e.push("selectionProcess");evidenceSnippets.push(m[0].slice(0,360));}
+  m=text.match(/(?:pay level|pay scale|salary|remuneration)[^:]{0,80}:?\s*([^.;]{5,180})/i);
+  if(m){out.payScale=m[1].trim();e.push("payScale");evidenceSnippets.push(m[0].slice(0,300));}
+  m=text.match(/(?:nationality|citizenship)[^:]{0,50}:?\s*([^.;]{10,180})/i);
+  if(m){out.nationality=m[1].trim();e.push("nationality");evidenceSnippets.push(m[0].slice(0,260));}
+  m=text.match(/(?:domicile|reservation for candidates of|state domicile)[^:]{0,60}:?\s*([^.;]{10,220})/i);
+  if(m){out.domicile=m[1].trim();e.push("domicile");evidenceSnippets.push(m[0].slice(0,300));}
+  m=text.match(/(?:age relaxation|relaxation in upper age|upper age relaxation)[^:]{0,100}:?\s*([^.;]{10,260})/i);
+  if(m){out.ageRelaxation=m[1].trim();e.push("ageRelaxation");evidenceSnippets.push(m[0].slice(0,320));}
   return{data:out,evidence:e,evidenceSnippets};
 }
 function deriveCycleYear(title,text){
@@ -204,17 +217,17 @@ for(const source of selected){
       const cycleYear=deriveCycleYear(item.title,txt);
       const isFamily=exam?.slug?.startsWith("family-");
       if(!exam) continue;
-      if(identityMatches<1 || p.evidence.length<2 || (!p.data.examDate && !p.data.lastDate))continue;
+      if(identityMatches<1 || p.evidence.length<2 || !(p.data.examDate || p.data.lastDate || p.data.applicationDates || p.data.vacancies))continue;
       if(isFamily && !cycleYear)continue;
       const confidence=identityMatches>=2 && p.evidence.length>=2 ? "high" : "medium";
       const cycleSlug=isFamily ? exam.slug.replace(/^family-/,"")+"-"+cycleYear : exam.slug;
       const cycleName=isFamily ? (cycleYear ? exam.name+" "+cycleYear : exam.name) : exam.name;
       overrides[cycleSlug]={...p.data,slug:cycleSlug,cycleSlug,familySlug:isFamily?exam.slug:undefined,cycleYear:isFamily?cycleYear:undefined,name:cycleName,organization:exam.organization,notificationUrl:pdf,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence,evidenceCount:p.evidence.length,evidence:p.evidence,evidenceSnippets:p.evidenceSnippets,sourceTitle:item.title};
     }
-    statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:f.url,ok:true,detected:det.length,lastChecked:today(),method:f.method});
+    statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:f.url,ok:true,health:f.usedFallback?"degraded":"healthy",detected:det.length,lastChecked:today(),method:f.method,attempts:f.attempts});
   }catch(e){
     failures.push({source:source.organization,error:String(e)});
-    statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:source.updatesUrl,ok:false,detected:0,lastChecked:today(),error:String(e)});
+    statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:source.updatesUrl,ok:false,health:"unreachable",detected:0,lastChecked:today(),error:String(e)});
   }
 }
 const unique=[],seen=new Set();
