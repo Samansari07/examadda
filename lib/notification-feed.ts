@@ -36,6 +36,7 @@ export function feedDate(n:FeedNotification){
 }
 
 export function isFreshForFeed(n:FeedNotification, now=new Date()){
+  if (!(now instanceof Date) || Number.isNaN(now.getTime())) now = new Date();
   const d=feedDate(n);
   const title=decodeFeedText(n.title||"");
   const currentYear=now.getUTCFullYear();
@@ -48,6 +49,7 @@ export function isFreshForFeed(n:FeedNotification, now=new Date()){
 }
 
 export function isFeedUseful(n:FeedNotification, now=new Date()){
+  if (!(now instanceof Date) || Number.isNaN(now.getTime())) now = new Date();
   const title=decodeFeedText(n.title||"");
   const blob=title+" "+decodeFeedText(n.description||"")+" "+(n.officialUrl||"")+" "+(n.notificationUrl||"");
   if(NOISE.test(blob))return false;
