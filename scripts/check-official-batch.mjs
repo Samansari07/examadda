@@ -83,22 +83,54 @@ function extractLinks(html,source){
 async function pdfText(url){
   const dir=await fs.mkdtemp(path.join("/tmp/","sarkariprep-")),pdf=path.join(dir,"notice.pdf"),txt=path.join(dir,"notice.txt");
   try{
-    const r=await fetch(url,{headers:{...HEADERS,accept:"application/pdf,text/html"},redirect:"follow",signal:AbortSignal.timeout(10000)});
-    if(!r.ok)return"";
-    const b=Buffer.from(await r.arrayBuffer());if(b.length<1000)return"";
+    const variants=[url];
+    try{
+      const u=new URL(url);
+      const v=new URL(u.href);
+      if(v.hostname.startsWith("www."))v.hostname=v.hostname.slice(4);else v.hostname="www."+v.hostname;
+      if(v.href!==url)variants.push(v.href);
+    }catch{}
+    let b=null;
+    for(const target of [...new Set(variants)]){
+      for(let attempt=1;attempt<=2&&!b;attempt++){
+        try{
+          const r=await fetch(target,{headers:{...HEADERS,accept:"application/pdf,*/*"},redirect:"follow",signal:AbortSignal.timeout(12000)});
+          if(r.ok){const x=Buffer.from(await r.arrayBuffer());if(x.length>=1000)b=x;}
+        }catch{}
+      }
+      if(!b)for(const extra of [[],["--ipv4"],["--http1.1"]]){
+        try{
+          const {stdout}=await execFileAsync("curl",["-L",...extra,"--connect-timeout","8","--max-time","20","--retry","1","-A",UA,"-H","Accept: application/pdf,*/*",target],{maxBuffer:12*1024*1024});
+          const x=Buffer.from(stdout);if(x.length>=1000){b=x;break;}
+        }catch{}
+      }
+      if(b)break;
+    }
+    if(!b)return"";
     await fs.writeFile(pdf,b);
-    await execFileAsync("pdftotext",["-layout",pdf,txt],{maxBuffer:8*1024*1024,timeout:9000});
+    await execFileAsync("pdftotext",["-layout",pdf,txt],{maxBuffer:8*1024*1024,timeout:12000});
     return(await fs.readFile(txt,"utf8")).slice(0,180000);
   }catch{return""}finally{await fs.rm(dir,{recursive:true,force:true}).catch(()=>{})}
 }
 async function findPdf(url){
   if(/\.pdf(?:[?#].*)?$/i.test(url))return url;
   try{
-    const r=await fetch(url,{headers:{...HEADERS,accept:"application/pdf,text/html"},redirect:"follow",signal:AbortSignal.timeout(7000)});
+    const targets=[url];
+    const r=await fetch(url,{headers:{...HEADERS,accept:"application/pdf,text/html"},redirect:"follow",signal:AbortSignal.timeout(9000)});
     if((r.headers.get("content-type")||"").includes("pdf"))return url;
-    const html=await r.text();const m=html.match(/href=["']([^"']+\.pdf(?:[?#][^"']*)?)["']/i);
-    return m?new URL(m[1],url).href:null;
-  }catch{return null}
+    const html=await r.text();
+    const ms=[...html.matchAll(/(?:href|url|fileUrl|documentUrl)\\s*[:=]?\\s*["']([^"']+\\.pdf(?:[?#][^"']*)?)["']/gi)];
+    if(ms.length)for(const m of ms){try{targets.push(new URL(m[1],url).href)}catch{}}
+    const generic=html.match(/https?:\\/\\/[^"'\\s<>]+\\.pdf(?:[?#][^"'\\s<>]*)?/i);
+    if(generic)targets.push(generic[0]);
+    for(const t of [...new Set(targets)]){
+      try{
+        const q=await fetch(t,{headers:{...HEADERS,accept:"application/pdf,*/*"},redirect:"follow",signal:AbortSignal.timeout(7000)});
+        if(q.ok&&((q.headers.get("content-type")||"").includes("pdf")||/\\.pdf(?:[?#]|$)/i.test(t)))return t;
+      }catch{}
+    }
+  }catch{}
+  return null;
 }
 const MONTHS="january|february|march|april|may|june|july|august|september|october|november|december";
 function parseDateToken(value){
