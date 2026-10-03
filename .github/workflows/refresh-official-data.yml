@@ -1,4 +1,4 @@
-# v4 - force fresh official data scan after second-layer matching fix
+# v5 - isolate refresh concurrency so a stale queued run cannot block a fresh scan
 name: Refresh official exam data
 
 on:
@@ -16,8 +16,11 @@ on:
 permissions:
   contents: write
 
+# Use a workflow/ref-specific group. The old literal group could leave a stale
+# queued run blocking the fresh scan. GitHub documents that concurrency groups
+# can keep a run pending when another run uses the same group.
 concurrency:
-  group: official-data-refresh
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
