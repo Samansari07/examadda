@@ -4,6 +4,8 @@ import LanguageGate from "@/components/language-gate";
 
 const siteUrl = "https://sarkariprep.online";
 
+export const viewport = { themeColor: "#102019", colorScheme: "light" };
+
 export const metadata: Metadata = {
   applicationName: "SarkariPrep",
   metadataBase: new URL(siteUrl),
