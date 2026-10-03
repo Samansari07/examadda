@@ -7,9 +7,11 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Indian government exams, jobs and official recruitment updates.",
     start_url: "/",
     display: "standalone",
-    background_color: "#ffffff",
-    theme_color: "#111827",
+    background_color: "#102019",
+    theme_color: "#102019",
     lang: "en-IN",
-    icons: [],
+    icons: [
+      { src: "/icon.svg", sizes: "any", type: "image/svg+xml", purpose: "any maskable" }
+    ],
   };
 }
