@@ -25,6 +25,12 @@ for (const notice of auto.autoNotifications) {
   if (!officialHost || !sourceHosts.has(officialHost)) {
     errors.push(`Unregistered official source host for ${notice.id}: ${notice.officialUrl}`);
   }
+  if (notice.stage === "Application Open" && notice.applicationLastDate) {
+    const d = new Date(notice.applicationLastDate);
+    if (!Number.isNaN(d.getTime()) && d.getTime() < Date.now() - 24 * 60 * 60 * 1000) {
+      errors.push(\`Expired application still marked open: \${notice.id} (\${notice.applicationLastDate})\`);
+    }
+  }
   if (notice.notificationUrl) {
     const key = notice.notificationUrl.replace(/#.*$/, "");
     const prior = seen.get(key);
