@@ -20,26 +20,40 @@ const stage=t=>{t=t.toLowerCase();const years=[...t.matchAll(/\b(?:19|20)\d{2}\b
 
 async function fetchSource(source){
   const extraFallbacks=source.id==="indian-army"?["https://www.joinindianarmy.nic.in/"]:source.id==="indian-coast-guard"?["https://indiancoastguard.gov.in/recruitment"]:[];
-  const urls=[source.updatesUrl,...(source.fallbackUrls||[]),source.applicationUrl,...(source.discoveryUrls||[]),...extraFallbacks].filter(Boolean),attempts=[];
-  const uniqueUrls=[...new Set(urls)];
-  for(const url of uniqueUrls){
+  const baseUrls=[source.updatesUrl,...(source.fallbackUrls||[]),source.applicationUrl,...(source.discoveryUrls||[]),...extraFallbacks].filter(Boolean);
+  const urls=[];
+  for(const u of [...new Set(baseUrls)]){
+    urls.push(u);
+    try{
+      const x=new URL(u);
+      if(x.hostname.startsWith("www.")) x.hostname=x.hostname.slice(4);
+      else if(!x.hostname.startsWith("www.")) x.hostname="www."+x.hostname;
+      const variant=x.href;
+      if(variant!==u)urls.push(variant);
+    }catch{}
+  }
+  const attempts=[];
+  for(const url of [...new Set(urls)]){
     for(let attempt=1;attempt<=2;attempt++) try{
       const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(15000)});
       const ct=r.headers.get("content-type")||"";
       if(r.ok&&(ct.includes("html")||ct.includes("xml")||ct.includes("text"))){
         const html=await r.text();
-        if(html.length>120)return{url,html,method:"fetch"};
+        if(html.length>120)return{url,html,method:url===source.updatesUrl?"fetch":"fallback-fetch",usedFallback:url!==source.updatesUrl,attempts:attempts.length+1};
       }
       attempts.push(url+" -> HTTP "+r.status+" (fetch attempt "+attempt+")");
     }catch(e){attempts.push(url+" -> "+String(e)+" (fetch attempt "+attempt+")")}
-    try{
-      const {stdout}=await execFileAsync("curl",["-L","--connect-timeout","8","--max-time","20","--retry","1","--retry-delay","1","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:20*1024*1024});
-      if(stdout.length>120)return{url,html:stdout,method:url===source.updatesUrl?"curl":"fallback-curl",usedFallback:url!==source.updatesUrl,attempts:attempts.length+1};
-    }catch(e){attempts.push(url+" -> curl "+String(e)+" (fallback attempt)")}
+  }
+  for(const url of [...new Set(urls)]){
+    for(const extra of [[],["--ipv4"],["--http1.1"]]){
+      try{
+        const {stdout}=await execFileAsync("curl",["-L",...extra,"--connect-timeout","8","--max-time","20","--retry","1","--retry-delay","1","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:20*1024*1024});
+        if(stdout.length>120)return{url,html:stdout,method:"curl",usedFallback:url!==source.updatesUrl,attempts:attempts.length+1};
+      }catch(e){attempts.push(url+" -> curl "+(extra.join(" ")||"default")+" "+String(e)+" (fallback attempt)")}
+    }
   }
   throw new Error(attempts.join(" | "));
 }
-
 function extractLinks(html,source){
   const out=[],seen=new Set(),add=(title,href)=>{
     title=clean(title);href=String(href||"").trim();
