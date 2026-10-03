@@ -5,6 +5,7 @@ import {officialSources} from "@/lib/official-sources";
 import {autoNotifications} from "@/lib/auto-notifications";
 import {autoExamData} from "@/lib/auto-exam-data";
 import {cleanFeedTitle,isFeedUseful} from "@/lib/notification-feed";
+import {parseExamEndDate} from "@/lib/seo-landings";
 
 const official=[["UPSC","https://www.upsc.gov.in/"],["SSC","https://ssc.gov.in/"],["IBPS","https://www.ibps.in/"],["Railways","https://indianrailways.gov.in/"],["NTA","https://nta.nic.in/"],["RBI","https://www.rbi.org.in/"],["SBI Careers","https://sbi.co.in/web/careers"],["CTET","https://ctet.nic.in/"],["JPSC","https://jpsc.gov.in/"],["JSSC","https://jssc.jharkhand.gov.in/"],["Army","https://joinindianarmy.nic.in/"],["Navy","https://www.joinindiannavy.gov.in/"]];
 
@@ -19,7 +20,7 @@ export default function Home(){
  const list=useMemo(()=>exams.filter(e=>(cat==="All"||e.category===cat)&&(!q||[e.name,e.organization,e.category,e.qualifications].join(" ").toLowerCase().includes(q.toLowerCase()))),[q,cat]);
  const featured=popular.map(s=>exams.find(e=>e.slug===s)).filter(Boolean) as typeof exams;
  const liveToday=new Date();
- const parseLiveDate=(value:string)=>{const m=value.match(/(20\d{2})[-/](\d{1,2})[-/](\d{1,2})/);return m?new Date(Date.UTC(+m[1],+m[2]-1,+m[3])):null;};
+ const parseLiveDate=(value:string)=>{const iso=parseExamEndDate(value);return iso?new Date(iso+"T00:00:00Z"):null;};
  const liveUpcoming=useMemo(()=>exams.map(e=>({e,d:parseLiveDate(autoExamData[e.slug]?.examDate||e.examDate),active:e.applicationStatus==="upcoming"})).filter(x=>x.e.dataStatus==="official-verified"&&((x.d&&x.d.getTime()>=liveToday.getTime()-86400000)||x.active)).sort((a,b)=>(a.d?.getTime()??Number.MAX_SAFE_INTEGER)-(b.d?.getTime()??Number.MAX_SAFE_INTEGER)).slice(0,6),[exams]);
  const liveDeadlines=useMemo(()=>exams.map(e=>({e,d:parseLiveDate(autoExamData[e.slug]?.lastDate||e.lastDate)})).filter(x=>x.d&&x.d.getTime()>=liveToday.getTime()&&x.e.dataStatus==="official-verified").sort((a,b)=>a.d!.getTime()-b.d!.getTime()).slice(0,6),[exams]);
  const headlineFeed=useMemo(()=>autoNotifications.filter(n=>isFeedUseful(n)).sort((a,b)=>new Date(b.publishedDate||b.lastChecked).getTime()-new Date(a.publishedDate||a.lastChecked).getTime()).slice(0,30),[]);
