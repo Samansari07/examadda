@@ -35,7 +35,7 @@ async function fetchSource(source){
     try{
       const {stdout}=await execFileAsync("curl",["-L","--connect-timeout","8","--max-time","20","--retry","1","--retry-delay","1","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:20*1024*1024});
       if(stdout.length>120)return{url,html:stdout,method:url===source.updatesUrl?"curl":"fallback-curl",usedFallback:url!==source.updatesUrl,attempts:attempts.length+1};
-    }catch(e){attempts.push(url+" -> curl "+String(e)+" (attempt "+attempt+")")}
+    }catch(e){attempts.push(url+" -> curl "+String(e)+" (fallback attempt)")}
   }
   throw new Error(attempts.join(" | "));
 }
