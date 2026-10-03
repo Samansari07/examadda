@@ -12,6 +12,35 @@ for(const p of parts)for(const [slug,v] of Object.entries(p.overrides||{})){cons
 const seen=new Set(),notifications=[];
 for(const x of all){const key=(x.notificationUrl||x.title).split("#")[0];if(seen.has(key))continue;seen.add(key);notifications.push(x)}
 const currentYear=new Date().getUTCFullYear();
+const MONTHS={january:0,february:1,march:2,april:3,may:4,june:5,july:6,august:7,september:8,october:9,november:10,december:11};
+const parseDateToken=value=>{
+  const s=String(value||"").trim();
+  let m=s.match(/^(\\d{1,2})\\s+(january|february|march|april|may|june|july|august|september|october|november|december)\\s+(\\d{4})$/i);
+  if(m)return new Date(Date.UTC(+m[3],MONTHS[m[2].toLowerCase()],+m[1]));
+  m=s.match(/^(\\d{1,2})[.\\/-](\\d{1,2})[.\\/-](\\d{2,4})$/);
+  if(m){const y=+m[3]<100?2000+ +m[3]:+m[3];return new Date(Date.UTC(y,+m[2]-1,+m[1]));}
+  return null;
+};
+const applicationLastDateFromText=value=>{
+  const s=String(value||"");
+  const m=s.match(/(?:last\\s+date|closing\\s+date|last\\s+date\\s+for[^:]{0,80}|application(?:s)?\\s+(?:close|closing)[^:]{0,40})[^0-9]{0,80}(\\d{1,2}\\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\\s+\\d{4}|\\d{1,2}[.\\/-]\\d{1,2}[.\\/-]\\d{2,4})/i);
+  return m?.[1]||null;
+};
+const getApplicationEnd=value=>{
+  const direct=parseDateToken(value);
+  if(direct&&!Number.isNaN(direct.getTime()))return direct;
+  const extracted=applicationLastDateFromText(value);
+  const parsed=parseDateToken(extracted);
+  return parsed&&!Number.isNaN(parsed.getTime())?parsed:null;
+};
+const applicationWindowClosed=n=>{
+  const raw=n.applicationLastDate||n.lastDate||n.applicationDates;
+  const end=getApplicationEnd(raw)||getApplicationEnd(n.title);
+  if(!end)return false;
+  const now=new Date();
+  const today=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()));
+  return end<today;
+};
 const GENERIC_NOTIFICATION=/^(?:online recruitment application(?:\\s*\\([^)]*\\))?|online registration|one time registration(?:\\s*\\([^)]*\\))?|candidates registration|exams view and apply exams(?:\\.|\\s*open)?|certificate of registration(?:\\s*\\([^)]*\\))?)$/i;
 for(const n of notifications){
   const title=n.title.toLowerCase();
@@ -26,6 +55,6 @@ for(const n of notifications){
 }
 notifications.sort((a,b)=>a.organization.localeCompare(b.organization)||a.title.localeCompare(b.title));
 await fs.writeFile("lib/source-status.ts",'export type SourceStatus = {id:string; organization:string; category:string; region:string; sourceUrl:string; ok:boolean; detected:number; lastChecked:string; method?:string; error?:string};\n\nexport const sourceStatuses:Record<string,SourceStatus> = '+JSON.stringify(Object.fromEntries(statuses.map(x=>[x.id,x])),null,2)+';\n');
-await fs.writeFile("lib/auto-notifications.ts",['export type AutoNotification = {','  id:string; title:string; organization:string; category:string;','  stage:"Application Open"|"Upcoming"|"Admit Card"|"Answer Key"|"Result"|"Recruitment"|"Notice";','  status:"Verified official"|"Detected on official source"; publishedDate?:string; lastChecked:string;','  officialUrl:string; notificationUrl?:string; description:string;','};','','export const autoNotificationMeta = '+JSON.stringify({generatedAt:new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"}),sourceCount:config.length,successfulSources:statuses.filter(x=>x.ok).length,failedSources:statuses.filter(x=>!x.ok).map(x=>x.organization),sourcePolicy:"Parallel direct official-source checks with retries and curl fallback. Detected links are never treated as authoritative over the original notice."},null,2)+';','','export const autoNotifications:AutoNotification[] = '+JSON.stringify(notifications,null,2)+';',''].join("\n"));
+await fs.writeFile("lib/auto-notifications.ts",['export type AutoNotification = {','  id:string; title:string; organization:string; category:string;','  stage:"Application Open"|"Upcoming"|"Admit Card"|"Answer Key"|"Result"|"Recruitment"|"Notice";','  status:"Verified official"|"Detected on official source"; publishedDate?:string; lastChecked:string; applicationLastDate?:string; applicationDates?:string; examDate?:string;','  officialUrl:string; notificationUrl?:string; description:string;','};','','export const autoNotificationMeta = '+JSON.stringify({generatedAt:new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"}),sourceCount:config.length,successfulSources:statuses.filter(x=>x.ok).length,failedSources:statuses.filter(x=>!x.ok).map(x=>x.organization),sourcePolicy:"Parallel direct official-source checks with retries and curl fallback. Detected links are never treated as authoritative over the original notice."},null,2)+';','','export const autoNotifications:AutoNotification[] = '+JSON.stringify(notifications,null,2)+';',''].join("\n"));
 await fs.writeFile("lib/auto-exam-data.ts",['export type AutoExamOverride = {',' slug:string; name:string; organization:string; notificationUrl:string; sourceUrl:string; lastVerified:string; detectedAt:string; confidence:"medium"|"high"; evidenceCount:number; evidence:string[]; evidenceSnippets?:string[]; sourceTitle?:string;',' familySlug?:string; cycleSlug?:string; cycleYear?:number;',' applicationDates?:string; lastDate?:string; examDate?:string; vacancies?:string; minAge?:number; maxAge?:number; fee?:string; correctionDates?:string;','};','','export const autoExamDataMeta = '+JSON.stringify({generatedAt:new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"}),sourceCount:config.length,overrideCount:Object.keys(overrides).length,policy:"Only conservative values extracted from an official notice/bulletin are applied. Missing or ambiguous fields are never invented."},null,2)+';','','export const autoExamData:Record<string,AutoExamOverride> = '+JSON.stringify(overrides,null,2)+';',''].join("\n"));
 console.log("Aggregated",statuses.length,"sources,",statuses.filter(x=>x.ok).length,"successful,",notifications.length,"updates,",Object.keys(overrides).length,"exam overrides");
