@@ -15,15 +15,15 @@ const currentYear=new Date().getUTCFullYear();
 const MONTHS={january:0,february:1,march:2,april:3,may:4,june:5,july:6,august:7,september:8,october:9,november:10,december:11};
 const parseDateToken=value=>{
   const s=String(value||"").trim();
-  let m=s.match(/^(\\d{1,2})\\s+(january|february|march|april|may|june|july|august|september|october|november|december)\\s+(\\d{4})$/i);
+  let m=s.match(/^(\d{1,2})\s+(january|february|march|april|may|june|july|august|september|october|november|december)\s+(\d{4})$/i);
   if(m)return new Date(Date.UTC(+m[3],MONTHS[m[2].toLowerCase()],+m[1]));
-  m=s.match(/^(\\d{1,2})[.\\/-](\\d{1,2})[.\\/-](\\d{2,4})$/);
+  m=s.match(/^(\d{1,2})[.\/-](\d{1,2})[.\/-](\d{2,4})$/);
   if(m){const y=+m[3]<100?2000+ +m[3]:+m[3];return new Date(Date.UTC(y,+m[2]-1,+m[1]));}
   return null;
 };
 const applicationLastDateFromText=value=>{
   const s=String(value||"");
-  const m=s.match(/(?:last\\s+date|closing\\s+date|last\\s+date\\s+for[^:]{0,80}|application(?:s)?\\s+(?:close|closing)[^:]{0,40})[^0-9]{0,80}(\\d{1,2}\\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\\s+\\d{4}|\\d{1,2}[.\\/-]\\d{1,2}[.\\/-]\\d{2,4})/i);
+  const m=s.match(/(?:last\s+date|closing\s+date|last\s+date\s+for[^:]{0,80}|application(?:s)?\s+(?:close|closing)[^:]{0,40})[^0-9]{0,100}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);
   return m?.[1]||null;
 };
 const getApplicationEnd=value=>{
@@ -41,16 +41,17 @@ const applicationWindowClosed=n=>{
   const today=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()));
   return end<today;
 };
-const GENERIC_NOTIFICATION=/^(?:online recruitment application(?:\\s*\\([^)]*\\))?|online registration|one time registration(?:\\s*\\([^)]*\\))?|candidates registration|exams view and apply exams(?:\\.|\\s*open)?|certificate of registration(?:\\s*\\([^)]*\\))?)$/i;
+const GENERIC_NOTIFICATION=/^(?:online recruitment application(?:\s*\([^)]*\))?|online registration|one time registration(?:\s*\([^)]*\))?|candidates registration|exams view and apply exams(?:\.|\s*open)?|certificate of registration(?:\s*\([^)]*\))?)$/i;
 for(const n of notifications){
   const title=n.title.toLowerCase();
-  const years=[...title.matchAll(/\\b(?:19|20)\\d{2}\\b/g)].map(m=>Number(m[0]));
+  const years=[...title.matchAll(/\b(?:19|20)\d{2}\b/g)].map(m=>Number(m[0]));
   if(n.stage==="Application Open" && (GENERIC_NOTIFICATION.test(n.title)||/closed|last date.*(?:over|passed)|application.*closed|login to apply/.test(title)||(years.length&&!years.some(y=>y>=currentYear)))) n.stage="Notice";
 }
 for(const n of notifications){
-  if(n.applicationLastDate){
-    const m=String(n.applicationLastDate).match(/(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})/i);
-    if(m){const months={january:0,february:1,march:2,april:3,may:4,june:5,july:6,august:7,september:8,october:9,november:10,december:11};const end=new Date(Date.UTC(+m[3],months[m[2].toLowerCase()],+m[1]));const today=new Date();const now=new Date(Date.UTC(today.getUTCFullYear(),today.getUTCMonth(),today.getUTCDate()));if(end<now&&n.stage==="Application Open")n.stage=n.examDate?"Upcoming":"Notice";}
+  if(n.stage==="Application Open" && applicationWindowClosed(n)) n.stage=n.examDate?"Upcoming":"Notice";
+  if(n.stage==="Application Open" && !n.applicationLastDate && n.applicationDates){
+    const parts=String(n.applicationDates).split(/\s+to\s+/i);
+    if(parts.length>1)n.applicationLastDate=parts.at(-1).trim();
   }
 }
 notifications.sort((a,b)=>a.organization.localeCompare(b.organization)||a.title.localeCompare(b.title));
