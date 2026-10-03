@@ -176,16 +176,74 @@ const ORG_ALIASES={
   "Andhra Pradesh Public Service Commission":["appsc"],
   "Telangana Public Service Commission":["tspsc","tgpsc"]
 };
+const aliasTokens=s=>norm(s).split(" ").filter(x=>x.length>=3);
+const EXAM_ALIASES={
+  "ssc-cgl-2026":["ssc cgl","combined graduate level","cgl"],
+  "ssc-chsl-2026":["ssc chsl","combined higher secondary level","chsl"],
+  "ssc-mts-2026":["ssc mts","multi tasking","mts"],
+  "rrb-ntpc-2026":["rrb ntpc","ntpc","non technical popular categories"],
+  "rrb-group-d-2026":["rrb group d","group d","level 1"],
+  "upsc-ese-2027":["engineering services","ese","ies"],
+  "cds-ii-2026":["cds ii","combined defence services","cds"],
+  "nda-ii-2026":["nda ii","national defence academy","nda"],
+  "ctet-2026":["ctet","central teacher eligibility test"],
+  "sbi-po-2026":["sbi po","probationary officer"],
+  "family-upsc-ese":["engineering services","ese","ies"],
+  "family-upsc-ifs":["indian forest service","ifs"],
+  "family-upsc-cms":["combined medical services","cms"],
+  "family-upsc-geoscientist":["combined geo scientist","geo scientist"],
+  "family-ssc-cpo":["sub inspector","delhi police","capfs","ssc cpo"],
+  "family-ssc-je":["junior engineer","ssc je"],
+  "family-ssc-stenographer":["stenographer","grade c","grade d"],
+  "family-ssc-selection-post":["selection post"],
+  "family-ssc-gd":["ssc gd","constable gd"],
+  "family-rrb-alp":["assistant loco pilot","alp"],
+  "family-rrb-technician":["rrb technician","technician"],
+  "family-rrb-je":["rrb junior engineer","rrb je"],
+  "family-rrb-ntpc-ug":["rrb ntpc","undergraduate"],
+  "family-rrb-rpf-si":["rpf sub inspector","rpf si"],
+  "family-rrb-rpf-constable":["rpf constable"],
+  "family-ibps-rrb-office-assistant":["ibps rrb office assistant","office assistant","rrb clerk"],
+  "family-ibps-rrb-officer":["ibps rrb officer","officer scale"],
+  "family-ibps-so":["ibps specialist officer","specialist officer"],
+  "family-sbi-clerk":["sbi junior associate","sbi clerk"],
+  "family-rbi-grade-b":["rbi grade b"],
+  "family-rbi-assistant":["rbi assistant"],
+  "family-afcat":["afcat"],
+  "family-agniveer-airforce":["agniveervayu","agniveer vayu"],
+  "family-agniveer-army":["agniveer","indian army"],
+  "family-agniveer-navy":["agniveer navy","indian navy"],
+  "family-coast-guard":["coast guard","indian coast guard"],
+  "family-jpsc-forest":["jpsc forest","forest ranger","forest service"],
+  "family-jssc-cgl":["jssc cgl","combined graduate level"],
+  "family-jssc-inter":["jssc intermediate","intermediate level"],
+  "family-jssc-matric":["jssc matric","matric level"]
+};
 const matchExam=(title,source,evidence="")=>{
-  const sourceNames=[source.organization,...(ORG_ALIASES[source.organization]||[])].map(norm);
-  const t=norm(title+" "+evidence);let best=null;
+  const t=norm(title+" "+evidence), sourceNames=[source.organization,...(ORG_ALIASES[source.organization]||[])].map(norm);
+  let best=null;
   for(const e of exams){
-    const orgMatch=sourceNames.some(a=>a&&norm(e.organization)===a)||sourceNames.some(a=>a&&t.includes(a));
+    const sourceOrg=norm(e.organization);
+    const orgMatch=sourceNames.some(a=>a&&sourceOrg===a)||sourceNames.some(a=>a&&t.includes(a));
     if(!orgMatch)continue;
-    const aliases=[norm(e.slug),norm(e.name),...(e.name.match(/\\b[A-Z][A-Z0-9-]{1,}\\b/g)||[]).map(norm)];
+    const custom=(EXAM_ALIASES[e.slug]||[]).map(norm);
+    const aliases=[norm(e.slug),norm(e.name),...custom,...aliasTokens(e.name)];
     let score=0;
-    for(const a of aliases.filter(x=>x.length>2))if(t.includes(a))score+=a.length>=8?8:4;
-    const year=(e.name.match(/\\b20\\d{2}\\b/)||[])[0];if(year&&t.includes(year))score+=5;
+    for(const a of [...new Set(aliases)].filter(x=>x.length>=3)){
+      if(t.includes(a)) score+=a.length>=8?8:4;
+    }
+    const titleTokens=aliasTokens(title);
+    const customHits=custom.filter(a=>t.includes(a)).length;
+    const distinctive=titleTokens.filter(x=>x.length>=4&&t.includes(x));
+    if(customHits>=2)score+=8;
+    if(distinctive.length>=2)score+=4;
+    const year=(e.name.match(/\b20\d{2}\b/)||[])[0];
+    if(year&&t.includes(year))score+=5;
+    if(e.slug.startsWith("family-")&&custom.length){
+      const familyHits=custom.filter(a=>t.includes(a)).length;
+      if(familyHits===0)continue;
+      score+=familyHits*3;
+    }
     if(!best||score>best.score)best={e,score};
   }
   return best&&best.score>=8?best.e:null;
@@ -197,7 +255,7 @@ for(const source of selected){
       .filter(x=>!["Result","Admit Card","Answer Key"].includes(x.stage))
       .map(x=>({item:x,exam:matchExam(x.title,source)}))
       .filter(x=>x.exam || x.item.stage==="Application Open")
-      .slice(0,24);
+      .slice(0,50);
     for(const {item,exam} of candidates){
       // An application notice may not map to an exam profile. Ignore it safely;
       // never let one unmatched item mark the entire official source as failed.
@@ -205,8 +263,11 @@ for(const source of selected){
       const pdf=await findPdf(item.notificationUrl);if(!pdf)continue;
       const txt=await pdfText(pdf);if(!txt)continue;
       const normalized=norm(txt.slice(0,80000));
-      const aliases=[norm(exam.name),norm(exam.slug),...(exam.name.match(/\\b[A-Z][A-Z0-9-]{1,}\\b/g)||[]).map(norm)].filter(x=>x.length>3);
-      const identityMatches=aliases.filter(k=>normalized.includes(k)).length;
+      const customIdentity=(EXAM_ALIASES[exam.slug]||[]).map(norm);
+      const aliases=[norm(exam.name),norm(exam.slug),...customIdentity,...aliasTokens(exam.name)].filter(x=>x.length>3);
+      const identityMatches=new Set(aliases.filter(k=>normalized.includes(k))).size;
+      const titleIdentity=new Set([item.title,...customIdentity].flatMap(x=>aliasTokens(x)).filter(k=>k.length>3&&normalized.includes(k))).size;
+      const identityScore=identityMatches+Math.min(2,titleIdentity);
       const p=parseStructured(txt);
       if(p.data.lastDate) item.applicationLastDate=p.data.lastDate;
       if(p.data.applicationDates) item.applicationDates=p.data.applicationDates;
@@ -214,12 +275,15 @@ for(const source of selected){
       if(item.stage==="Application Open" && applicationWindowClosed(p.data)){
         item.stage=p.data.examDate ? "Upcoming" : "Notice";
       }
-      const cycleYear=deriveCycleYear(item.title,txt);
+      const derivedYear=deriveCycleYear(item.title,txt);
+      const dateYears=[p.data.examDate,p.data.lastDate,p.data.applicationDates].filter(Boolean).join(" ").match(/\b20\d{2}\b/g)?.map(Number)||[];
+      const cycleYear=derivedYear || dateYears.find(y=>y>=new Date().getUTCFullYear()-1&&y<=new Date().getUTCFullYear()+1) || null;
       const isFamily=exam?.slug?.startsWith("family-");
       if(!exam) continue;
-      if(identityMatches<1 || p.evidence.length<2 || !(p.data.examDate || p.data.lastDate || p.data.applicationDates || p.data.vacancies))continue;
+      if(identityScore<1 || p.evidence.length<2 || !(p.data.examDate || p.data.lastDate || p.data.applicationDates || p.data.vacancies))continue;
+      if(exam.slug.startsWith("family-") && identityScore<2)continue;
       if(isFamily && !cycleYear)continue;
-      const confidence=identityMatches>=2 && p.evidence.length>=2 ? "high" : "medium";
+      const confidence=identityScore>=2 && p.evidence.length>=2 ? "high" : "medium";
       const cycleSlug=isFamily ? exam.slug.replace(/^family-/,"")+"-"+cycleYear : exam.slug;
       const cycleName=isFamily ? (cycleYear ? exam.name+" "+cycleYear : exam.name) : exam.name;
       overrides[cycleSlug]={...p.data,slug:cycleSlug,cycleSlug,familySlug:isFamily?exam.slug:undefined,cycleYear:isFamily?cycleYear:undefined,name:cycleName,organization:exam.organization,notificationUrl:pdf,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence,evidenceCount:p.evidence.length,evidence:p.evidence,evidenceSnippets:p.evidenceSnippets,sourceTitle:item.title};
