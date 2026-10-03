@@ -1,12 +1,14 @@
 import type { MetadataRoute } from "next";
 import { exams } from "@/lib/exams";
 import { seoLandings } from "@/lib/seo-landings";
+import { autoNotificationMeta } from "@/lib/auto-notifications";
 
 const base = "https://sarkariprep.online";
 
 function latestExamUpdate() {
   const dates = exams.map(e => e.lastVerified).filter(Boolean).map(x => new Date(x as string).getTime()).filter(Number.isFinite);
-  return new Date(Math.max(...dates, new Date("2026-10-01T00:00:00Z").getTime()));
+  const generated = new Date(autoNotificationMeta.generatedAt + "T00:00:00Z").getTime();
+  return new Date(Math.max(...dates, generated, Date.now()));
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
