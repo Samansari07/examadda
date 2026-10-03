@@ -1,14 +1,14 @@
 export type AutoNotification = {
   id:string; title:string; organization:string; category:string;
   stage:"Application Open"|"Upcoming"|"Admit Card"|"Answer Key"|"Result"|"Recruitment"|"Notice";
-  status:"Verified official"|"Detected on official source"; publishedDate?:string; lastChecked:string; applicationLastDate?:string; applicationDates?:string; examDate?:string;
+  status:"Verified official"|"Detected on official source"; publishedDate?:string; lastChecked:string;
   officialUrl:string; notificationUrl?:string; description:string;
 };
 
 export const autoNotificationMeta = {
   "generatedAt": "2026-10-03",
   "sourceCount": 76,
-  "successfulSources": 43,
+  "successfulSources": 40,
   "failedSources": [
     "Indian Coast Guard",
     "Chhattisgarh Public Service Commission",
@@ -24,10 +24,12 @@ export const autoNotificationMeta = {
     "Gujarat Public Service Commission",
     "Sikkim Public Service Commission",
     "West Bengal Employment Bank",
+    "ONGC",
     "Haryana Public Service Commission",
     "Tamil Nadu Public Service Commission",
     "Jharkhand Government Recruitment Portal",
     "Madhya Pradesh Employment Portal",
+    "CTET",
     "Andhra Pradesh Public Service Commission",
     "Himachal Pradesh Public Service Commission",
     "Telangana Public Service Commission",
@@ -38,6 +40,7 @@ export const autoNotificationMeta = {
     "Tripura Public Service Commission",
     "Gujarat Employment Portal",
     "Odisha Employment Portal",
+    "GAIL India",
     "Assam Public Service Commission",
     "Haryana Employment Portal",
     "Indian Navy",
@@ -305,11 +308,9 @@ export const autoNotifications:AutoNotification[] = [
     "title": "Public Notice: re opening of Online Applications for the 22nd Edition of CTET",
     "organization": "CTET",
     "category": "Teaching",
-    "stage": "Notice",
+    "stage": "Application Open",
     "status": "Detected on official source",
     "lastChecked": "2026-10-03",
-    "applicationLastDate": "01 September 2026",
-    "applicationDates": "25 August 2026 to 01 September 2026",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/08/20260825641447501.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
