@@ -41,7 +41,7 @@ const familyExams:Exam[]=familySeeds.map(([slug,name,organization,category,quali
 }));
 
 const autoCurrentCycles:Exam[]=Object.values(autoExamData)
- .filter(o=>o.familySlug&&o.cycleSlug&&o.cycleYear&&o.confidence==="high"&&o.evidenceCount>=2)
+ .filter(o=>o.familySlug&&o.cycleSlug&&o.cycleYear&&o.confidence==="high"&&o.evidenceCount>=2&&!o.stale)
  .map(o=>{
    const family=familyExams.find(f=>f.slug===o.familySlug);
    if(!family) return null;
@@ -103,7 +103,7 @@ const verifiedCurrent:Exam[]=[{
 
 const applyAutoExamData=(e:Exam):Exam=>{
  const o=autoExamData[e.slug]; if(!o) return e;
- const verified=o.confidence==="high" && o.evidenceCount>=2;
+ const verified=o.confidence==="high" && o.evidenceCount>=2 && !o.stale && o.refreshedThisCycle!==false;
  if(!verified) return e;
  return {
   ...e,
