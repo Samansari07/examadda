@@ -1,7 +1,7 @@
 export type AutoNotification = {
   id:string; title:string; organization:string; category:string;
   stage:"Application Open"|"Upcoming"|"Admit Card"|"Answer Key"|"Result"|"Recruitment"|"Notice";
-  status:"Verified official"|"Detected on official source"; publishedDate?:string; lastChecked:string;
+  status:"Verified official"|"Detected on official source"; publishedDate?:string; lastChecked:string; applicationLastDate?:string; applicationDates?:string; examDate?:string;
   officialUrl:string; notificationUrl?:string; description:string;
 };
 
