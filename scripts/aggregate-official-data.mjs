@@ -18,6 +18,12 @@ for(const n of notifications){
   const years=[...title.matchAll(/\\b(?:19|20)\\d{2}\\b/g)].map(m=>Number(m[0]));
   if(n.stage==="Application Open" && (GENERIC_NOTIFICATION.test(n.title)||/closed|last date.*(?:over|passed)|application.*closed|login to apply/.test(title)||(years.length&&!years.some(y=>y>=currentYear)))) n.stage="Notice";
 }
+for(const n of notifications){
+  if(n.applicationLastDate){
+    const m=String(n.applicationLastDate).match(/(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})/i);
+    if(m){const months={january:0,february:1,march:2,april:3,may:4,june:5,july:6,august:7,september:8,october:9,november:10,december:11};const end=new Date(Date.UTC(+m[3],months[m[2].toLowerCase()],+m[1]));const today=new Date();const now=new Date(Date.UTC(today.getUTCFullYear(),today.getUTCMonth(),today.getUTCDate()));if(end<now&&n.stage==="Application Open")n.stage=n.examDate?"Upcoming":"Notice";}
+  }
+}
 notifications.sort((a,b)=>a.organization.localeCompare(b.organization)||a.title.localeCompare(b.title));
 await fs.writeFile("lib/source-status.ts",'export type SourceStatus = {id:string; organization:string; category:string; region:string; sourceUrl:string; ok:boolean; detected:number; lastChecked:string; method?:string; error?:string};\n\nexport const sourceStatuses:Record<string,SourceStatus> = '+JSON.stringify(Object.fromEntries(statuses.map(x=>[x.id,x])),null,2)+';\n');
 await fs.writeFile("lib/auto-notifications.ts",['export type AutoNotification = {','  id:string; title:string; organization:string; category:string;','  stage:"Application Open"|"Upcoming"|"Admit Card"|"Answer Key"|"Result"|"Recruitment"|"Notice";','  status:"Verified official"|"Detected on official source"; publishedDate?:string; lastChecked:string;','  officialUrl:string; notificationUrl?:string; description:string;','};','','export const autoNotificationMeta = '+JSON.stringify({generatedAt:new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"}),sourceCount:config.length,successfulSources:statuses.filter(x=>x.ok).length,failedSources:statuses.filter(x=>!x.ok).map(x=>x.organization),sourcePolicy:"Parallel direct official-source checks with retries and curl fallback. Detected links are never treated as authoritative over the original notice."},null,2)+';','','export const autoNotifications:AutoNotification[] = '+JSON.stringify(notifications,null,2)+';',''].join("\n"));
