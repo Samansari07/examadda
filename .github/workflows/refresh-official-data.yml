@@ -81,11 +81,13 @@ jobs:
       - name: Aggregate
         run: |
           node scripts/aggregate-official-data.mjs
+          node scripts/validate-notice-feed.mjs
           node --check scripts/check-official-batch.mjs
           node --check scripts/aggregate-official-data.mjs
           test -s lib/auto-notifications.ts
           test -s lib/auto-exam-data.ts
           test -s lib/source-status.ts
+          node scripts/validate-notice-feed.mjs
       - name: Commit refreshed data
         run: |
           git config user.name "SarkariPrep Bot"
