@@ -6,6 +6,7 @@ on:
     paths:
       - "scripts/discover-official-notices.mjs"
       - "config/official-sources.json"
+      - "lib/auto-notifications.ts"
       - ".github/workflows/discover-official-notices.yml"
   schedule:
     - cron: "17 */6 * * *"
