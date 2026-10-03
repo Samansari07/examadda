@@ -28,7 +28,7 @@ for (const notice of auto.autoNotifications) {
   if (notice.stage === "Application Open" && notice.applicationLastDate) {
     const d = new Date(notice.applicationLastDate);
     if (!Number.isNaN(d.getTime()) && d.getTime() < Date.now() - 24 * 60 * 60 * 1000) {
-      errors.push(\`Expired application still marked open: \${notice.id} (\${notice.applicationLastDate})\`);
+      errors.push(`Expired application still marked open: ${notice.id} (${notice.applicationLastDate})`);
     }
   }
   if (notice.notificationUrl) {
