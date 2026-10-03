@@ -41,7 +41,11 @@
     "category": "Teaching",
     "region": "Central",
     "updatesUrl": "https://ctet.nic.in/",
-    "scope": "CTET bulletins, application notices, admit cards, answer keys and results."
+    "scope": "CTET bulletins, application notices, admit cards, answer keys and results.",
+    "discoveryUrls": [
+      "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/",
+      "https://ctet.nic.in/document-category/public-notices/"
+    ]
   },
   {
     "id": "railways",
