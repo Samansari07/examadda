@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./globals.css";\nimport LanguageGate from "@/components/language-gate";
 
 const siteUrl = "https://sarkariprep.online";
 
@@ -37,5 +37,5 @@ const structuredData = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en-IN"><body>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} /></body></html>;
+  return <html lang="en-IN"><body><LanguageGate />{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} /></body></html>;
 }
