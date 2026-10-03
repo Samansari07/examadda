@@ -41,16 +41,27 @@ async function fetchSource(source){
 }
 
 function extractLinks(html,source){
-  const out=[],seen=new Set(),re=/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;let m;
-  while((m=re.exec(html))&&out.length<100){
-    const title=clean(m[2]),href=m[1].trim();
-    if(title.length<12||title.length>500||BAD_TITLES.test(title)||BAD_PHRASES.test(title)||GENERIC_TITLE.test(title)||BAD_TEMPLATE.test(title)||!KEYWORDS.test(title))continue;
-    if(/^(#|javascript:|mailto:|tel:)/i.test(href))continue;
-    let url;try{url=new URL(href,source.updatesUrl).href}catch{continue}
-    if(!URL_HINTS.test(url)&&!KEYWORDS.test(title))continue;
-    const key=url.split("#")[0];if(seen.has(key))continue;seen.add(key);
+  const out=[],seen=new Set(),add=(title,href)=>{
+    title=clean(title);href=String(href||"").trim();
+    if(title.length<12||title.length>500||BAD_TITLES.test(title)||BAD_PHRASES.test(title)||GENERIC_TITLE.test(title)||BAD_TEMPLATE.test(title)||!KEYWORDS.test(title))return;
+    if(/^(#|javascript:|mailto:|tel:)/i.test(href))return;
+    let url;try{url=new URL(href,source.updatesUrl).href}catch{return}
+    if(!URL_HINTS.test(url)&&!KEYWORDS.test(title))return;
+    const key=url.split("#")[0];if(seen.has(key))return;seen.add(key);
     const idHash=createHash("sha256").update(key).digest("hex").slice(0,16);
     out.push({id:"auto-"+source.id+"-"+idHash,title,organization:source.organization,category:source.category,stage:stage(title),status:"Detected on official source",lastChecked:today(),officialUrl:source.updatesUrl,notificationUrl:url,description:"Detected automatically from the registered official "+source.organization+" source. The original authority notice remains the controlling source."});
+  };
+  const re=/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;let m;
+  while((m=re.exec(html))&&out.length<120)add(m[2],m[1]);
+  const pdfRe=/(?:href|url|fileUrl|documentUrl)?\s*[:=]?\s*["'](https?:\/\/[^"']+?\.pdf(?:[?#][^"']*)?|\/[^"'\s<>]+?\.pdf(?:[?#][^"'\s<>]*)?)["']/gi;
+  while((m=pdfRe.exec(html))&&out.length<180){
+    const raw=m[1].replace(/\\\//g,"/");
+    const before=html.slice(Math.max(0,m.index-700),m.index);
+    const after=html.slice(m.index,Math.min(html.length,m.index+700));
+    const context=clean((before+" "+after).replace(/<[^>]+>/g," ").replace(/\s+/g," "));
+    const hit=context.match(/[^.]{0,220}(?:junior engineer|combined graduate|combined higher secondary|stenographer|selection post|sub.?inspector|multi.?tasking|constable|notice|notification|recruitment|vacancy|examination)[^.]{0,220}/i);
+    const title=hit?.[0]||clean(raw.split("/").pop()?.replace(/[-_]/g," ").replace(/\.pdf.*$/i,""))||"Official notification";
+    add(title,raw);
   }
   return out;
 }
@@ -103,10 +114,11 @@ function parseStructured(t){
     const titleLike=text.match(/(?:last date|closing date|last date for application)[^0-9]{0,80}(\\d{1,2}\\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\\s+\\d{4}|\\d{1,2}[.\\/-]\\d{1,2}[.\\/-]\\d{2,4})/i);
     if(titleLike){out.lastDate=titleLike[1];e.push("lastDate");evidenceSnippets.push(titleLike[0].slice(0,320));}
   }
-  const range=text.match(/(?:online )?(?:application|registration|portal|window|opportunity|submission)(?:s)?[^0-9]{0,100}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})[^0-9]{0,80}(?:to|till|upto|up to|-|–)[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);
+  const range=text.match(/(?:online )?(?:application|registration|portal|window|opportunity|submission)(?:s)?[^0-9]{0,140}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})[^0-9]{0,100}(?:to|till|upto|up to|[-–])[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);
   if(range){out.applicationDates=range[1]+" to "+range[2];e.push("applicationDates");evidenceSnippets.push(range[0].slice(0,320));}
-  const exam=capture(/(?:date of (?:the )?examination|date of examination|exam(?:ination)? (?:will be held|scheduled|shall be held)|online exam(?:ination)?)[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i,"examDate");
-  if(exam?.value){out.examDate=exam.value;e.push("examDate");evidenceSnippets.push(exam.snippet);}
+  const examRange=text.match(/(?:date of (?:the )?examination|date of examination|exam(?:ination)?(?: will be held| scheduled| shall be held)?|online exam(?:ination)?)[^0-9]{0,120}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})(?:[^0-9]{0,40}(?:to|till|upto|up to|[-–]))?[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})?/i);
+  if(examRange){out.examDate=examRange[2]?examRange[1]+" to "+examRange[2]:examRange[1];e.push("examDate");evidenceSnippets.push(examRange[0].slice(0,360));}
+
   const vacancy=capture(/(?:number of )?(?:vacancies|vacant posts|total posts|total vacancies)[^0-9]{0,70}([0-9][0-9,]{2,})/i,"vacancies");
   if(vacancy?.value){out.vacancies=vacancy.value+" notified";e.push("vacancies");evidenceSnippets.push(vacancy.snippet);}
   let m=text.match(/(?:minimum age|minimum age limit)[^0-9]{0,40}([0-9]{1,2})[^0-9]{0,100}(?:maximum age|upper age)[^0-9]{0,40}([0-9]{1,2})/i);
@@ -253,9 +265,10 @@ for(const source of selected){
     const f=await fetchSource(source),det=extractLinks(f.html,source);results.push(...det);
     const candidates=det
       .filter(x=>!["Result","Admit Card","Answer Key"].includes(x.stage))
-      .map(x=>({item:x,exam:matchExam(x.title,source)}))
+      .map(x=>({item:x,exam:matchExam(x.title,source,x.description||"")}))
       .filter(x=>x.exam || x.item.stage==="Application Open")
-      .slice(0,50);
+      .sort((a,b)=>Number(!!b.exam)-Number(!!a.exam))
+      .slice(0,80);
     for(const {item,exam} of candidates){
       // An application notice may not map to an exam profile. Ignore it safely;
       // never let one unmatched item mark the entire official source as failed.
