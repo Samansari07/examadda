@@ -22,10 +22,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/disclaimer", priority: 0.4, changeFrequency: "yearly" as const },
   ];
 
-  const hinglishStatic = ["/hinglish", "/hinglish/exams", "/hinglish/jobs", "/hinglish/notifications"];\n  const hinglishExamUrls = exams.map(exam => "/hinglish/exams/" + exam.slug);\n  const hinglishLandingUrls = seoLandings.map(p => "/hinglish/" + p.slug);\n\n  return [
+  const hinglishStatic = ["/hinglish", "/hinglish/exams", "/hinglish/jobs", "/hinglish/notifications"];
+  const hinglishExamUrls = exams.map(exam => "/hinglish/exams/" + exam.slug);
+  const hinglishLandingUrls = seoLandings.map(p => "/hinglish/" + p.slug);
+
+  return [
     ...staticPages.map(p => ({ url: base + p.path, lastModified: latest, priority: p.priority, changeFrequency: p.changeFrequency })),
     ...seoLandings.map(p => ({ url: base + "/" + p.slug, lastModified: latest, priority: 0.85, changeFrequency: "daily" as const })),
-    ...[...hinglishStatic, ...hinglishExamUrls, ...hinglishLandingUrls].map(path => ({ url: base + path, lastModified: latest, priority: 0.8, changeFrequency: "daily" as const })),\n    ...exams.map(exam => ({
+    ...[...hinglishStatic, ...hinglishExamUrls, ...hinglishLandingUrls].map(path => ({ url: base + path, lastModified: latest, priority: 0.8, changeFrequency: "daily" as const })),
+    ...exams.map(exam => ({
       url: base + "/exams/" + exam.slug,
       lastModified: exam.lastVerified ? new Date(exam.lastVerified) : latest,
       priority: exam.dataStatus === "official-verified" ? 0.9 : 0.75,
