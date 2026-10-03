@@ -18,7 +18,7 @@ export async function GET(){
   updatedAt:autoNotificationMeta.generatedAt,
   sourcePolicy:"Official-source checked; original authority links remain the controlling source.",
   sourceCount:officialSources.length,
-  healthySources:officialSources.filter(s=>sourceStatuses[s.id]?.ok).length,
+  healthySources:officialSources.filter(s=>sourceStatuses[s.id]?.health==="healthy").length,
   automaticSourceCount:autoNotificationMeta.sourceCount,
   count:items.length,
   items
