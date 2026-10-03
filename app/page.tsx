@@ -17,12 +17,12 @@ export default function Home(){
  const list=useMemo(()=>exams.filter(e=>(cat==="All"||e.category===cat)&&(!q||[e.name,e.organization,e.category,e.qualifications].join(" ").toLowerCase().includes(q.toLowerCase()))),[q,cat]);
  const featured=popular.map(s=>exams.find(e=>e.slug===s)).filter(Boolean) as typeof exams;
  const liveToday=new Date();
- const parseLiveDate=(value:string)=>{const m=value.match(/(20\\d{2})[-/](\\d{1,2})[-/](\\d{1,2})/);return m?new Date(Date.UTC(+m[1],+m[2]-1,+m[3])):null;};
+ const parseLiveDate=(value:string)=>{const m=value.match(/(20\d{2})[-/](\d{1,2})[-/](\d{1,2})/);return m?new Date(Date.UTC(+m[1],+m[2]-1,+m[3])):null;};
  const liveUpcoming=useMemo(()=>exams.map(e=>({e,d:parseLiveDate(e.examDate)})).filter(x=>x.d&&x.d.getTime()>=liveToday.getTime()-86400000&&x.e.dataStatus==="official-verified").sort((a,b)=>a.d!.getTime()-b.d!.getTime()).slice(0,6),[exams]);
  const liveDeadlines=useMemo(()=>exams.map(e=>({e,d:parseLiveDate(e.lastDate)})).filter(x=>x.d&&x.d.getTime()>=liveToday.getTime()&&x.e.dataStatus==="official-verified").sort((a,b)=>a.d!.getTime()-b.d!.getTime()).slice(0,6),[exams]);
- const headlineNoise=/tender|procurement|supplier|vendor|purchase|e-proc|financial|audited\\s+results?|quarterly\\s+results?|annual\\s+report|investor|shareholder|contract|\\bbid\\b|doctor registration|notice board/i;
- const jobSignal=/recruit|recruitment|vacan|career|appointment|engagement|\\bpost\\b|assistant|officer|engineer|constable|technician|apprentice|nurse|teacher/i;
- const examSignal=/exam|examination|cgl|chsl|cpo|ese|nda|cds|capf|\\bje\\b|ntpc|admit|answer key|result/i;
+ const headlineNoise=/tender|procurement|supplier|vendor|purchase|e-proc|financial|audited\s+results?|quarterly\s+results?|annual\s+report|investor|shareholder|contract|\bbid\b|doctor registration|notice board/i;
+ const jobSignal=/recruit|recruitment|vacan|career|appointment|engagement|\bpost\b|assistant|officer|engineer|constable|technician|apprentice|nurse|teacher/i;
+ const examSignal=/exam|examination|cgl|chsl|cpo|ese|nda|cds|capf|\bje\b|ntpc|admit|answer key|result/i;
  const headlineFeed=useMemo(()=>autoNotifications.filter(n=>!headlineNoise.test(n.title+" "+n.description+" "+n.officialUrl)&&(jobSignal.test(n.title+" "+n.description)||examSignal.test(n.title+" "+n.description)||/Application Open|Upcoming|Admit Card|Answer Key|Result/.test(n.stage))).sort((a,b)=>new Date(b.lastChecked).getTime()-new Date(a.lastChecked).getTime()).slice(0,12),[]);
  const filteredHeadlines=useMemo(()=>headlineTab==="All"?headlineFeed:headlineFeed.filter(n=>headlineTab==="Jobs"?jobSignal.test(n.title+" "+n.description):headlineTab==="Exams"?examSignal.test(n.title+" "+n.description):n.stage===headlineTab),[headlineFeed,headlineTab]);
  function save(slug:string){const next=saved.includes(slug)?saved.filter(x=>x!==slug):[...saved,slug];setSaved(next);try{localStorage.setItem("sarkariprep_saved",JSON.stringify(next));}catch{/* private browsing/storage limits: keep the session state */}}
