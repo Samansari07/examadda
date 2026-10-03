@@ -21,7 +21,7 @@ export default async function ExamPage({params}:{params:Promise<{slug:string}>})
  const displayFee=autoOverride?.fee;
  const displayNotification=autoOverride?.notificationUrl||e.notificationUrl||e.sourceUrl||e.officialUrl;
  const parseDate=(value:string)=>{
-  const m=value.match(/(?:^|\b)(\d{1,2})[\s-]+([A-Za-z]{3,9})[\s-]+(20\d{2})(?:\b|$)/);
+  const m=value.match(/(?:^|\b)(\d{1,2})[\s–—-]+([A-Za-z]{3,9})[\s–—-]+(20\d{2})(?:\b|$)/);
   if(!m) return null;
   const months:{[k:string]:number}={jan:0,january:0,feb:1,february:1,mar:2,march:2,apr:3,april:3,may:4,jun:5,june:5,jul:6,july:6,aug:7,august:7,sep:8,september:8,oct:9,october:9,nov:10,november:10,dec:11,december:11};
   const month=months[m[2].toLowerCase()];
@@ -30,7 +30,7 @@ export default async function ExamPage({params}:{params:Promise<{slug:string}>})
  const resolveApplicationStatus=()=>{
   const raw=(autoOverride?.applicationDates||"")+" "+(autoOverride?.lastDate||"")+" "+(e.lastDate||"");
   const iso=[...raw.matchAll(/20\d{2}-\d{2}-\d{2}/g)].map(x=>new Date(x[0]+"T23:59:59Z"));
-  const textDates=[...raw.matchAll(/\b\d{1,2}[\s-]+[A-Za-z]{3,9}[\s-]+20\d{2}\b/g)].map(x=>parseDate(x[0])).filter(Boolean) as Date[];
+  const textDates=[...raw.matchAll(/\b\d{1,2}[\s–—-]+[A-Za-z]{3,9}[\s–—-]+20\d{2}\b/g)].map(x=>parseDate(x[0])).filter(Boolean) as Date[];
   const dates=[...iso,...textDates].filter(d=>!Number.isNaN(d.getTime())).sort((a,b)=>a.getTime()-b.getTime());
   if(dates.length>=2){
    const start=dates[0], end=dates[dates.length-1];
