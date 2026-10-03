@@ -26,7 +26,7 @@ jobs:
     timeout-minutes: 10
     strategy:
       fail-fast: false
-      max-parallel: 8
+      max-parallel: 4
       matrix:
         batch: [0,1,2,3,4,5,6,7]
     steps:
@@ -87,6 +87,7 @@ jobs:
           test -s lib/auto-notifications.ts
           test -s lib/auto-exam-data.ts
           test -s lib/source-status.ts
+          node -e "const fs=require('fs'); const s=fs.readFileSync('lib/source-status.ts','utf8'); if(!s.includes('health')) process.exit(1);"
       - name: Commit refreshed data
         run: |
           git config user.name "SarkariPrep Bot"
