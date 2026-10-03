@@ -35,15 +35,29 @@ export function feedDate(n:FeedNotification){
   return urlDate(n.notificationUrl)||urlDate(n.title);
 }
 
+function safeNow(value:unknown){
+  try{
+    if(value instanceof Date){
+      const ms=Date.prototype.getTime.call(value);
+      if(Number.isFinite(ms)) return new Date(ms);
+    }
+    if(typeof value==="string"||typeof value==="number"){
+      const d=new Date(value);
+      if(!Number.isNaN(d.getTime())) return d;
+    }
+  }catch{}
+  return new Date();
+}
+
 export function isFreshForFeed(n:FeedNotification, now=new Date()){
-  if (!(now instanceof Date) || Number.isNaN(now.getTime())) now = new Date();
+  const current=safeNow(now);
   const d=feedDate(n);
   const title=decodeFeedText(n.title||"");
-  const currentYear=now.getUTCFullYear();
+  const currentYear=Date.prototype.getUTCFullYear.call(current);
   const explicitYears=[...title.matchAll(/\b(20\d{2})\b/g)].map(m=>Number(m[1]));
   if(explicitYears.some(y=>y<currentYear-1))return false;
   if(!d)return true;
-  const ageDays=(now.getTime()-d.getTime())/86400000;
+  const ageDays=(Date.prototype.getTime.call(current)-d.getTime())/86400000;
   const maxDays=n.stage==="Notice"?120:n.stage==="Application Open"||n.stage==="Recruitment"?240:180;
   return ageDays<=maxDays;
 }
