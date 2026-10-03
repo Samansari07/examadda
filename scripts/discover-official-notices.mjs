@@ -9,8 +9,8 @@ const registryPath = new URL("../config/official-sources.json", import.meta.url)
 const outputPath = new URL("../lib/discovered-official-notices.ts", import.meta.url);
 const sources = JSON.parse(await fs.readFile(registryPath, "utf8"));
 
-const KEYWORDS = /recruit|recruitment|vacanc|career|job|jobs|advertisement|exam|examination|application|apply|admit\\s*card|hall\\s*ticket|answer\\s*key|result|written\\s*test|shortlist|selection|interview|corrigendum|appointment|engagement|opportunit/i;
-const NOISE = /tender|procurement|supplier|vendor|purchase|e-proc|financial|audited\\s+results?|quarterly\\s+results?|annual\\s+report|investor|shareholder|contract|ge(m|m)|bid\\b/i;
+const KEYWORDS = /recruit|recruitment|vacanc|career|job|jobs|advertisement|exam|examination|application|apply|admit\s*card|hall\s*ticket|answer\s*key|result|written\\s*test|shortlist|selection|interview|corrigendum|appointment|engagement|opportunit/i;
+const NOISE = /tender|procurement|supplier|vendor|purchase|e-proc|financial|audited\s+results?|quarterly\s+results?|annual\s+report|investor|shareholder|contract|ge(m|m)|bid\b/i;
 const IGNORE = /facebook|twitter|instagram|youtube|linkedin|mailto:|tel:/i;
 const MAX_PER_SOURCE = 12;
 const TIMEOUT_MS = 12000;
