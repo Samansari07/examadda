@@ -46,6 +46,11 @@ const applicationWindowClosed=n=>{
 const GENERIC_NOTIFICATION=/^(?:online recruitment application(?:\s*\([^)]*\))?|online registration|one time registration(?:\s*\([^)]*\))?|candidates registration|exams view and apply exams(?:\.|\s*open)?|certificate of registration(?:\s*\([^)]*\))?)$/i;
 for(const n of notifications){
   const title=n.title.toLowerCase();
+  if(title.includes("re opening of online applications for the 22nd edition of ctet")){
+    n.applicationLastDate="01 September 2026";
+    n.applicationDates="25 August 2026 to 01 September 2026";
+    n.stage="Notice";
+  }
   const years=[...title.matchAll(/\b(?:19|20)\d{2}\b/g)].map(m=>Number(m[0]));
   if(n.stage==="Application Open" && (GENERIC_NOTIFICATION.test(n.title)||/closed|last date.*(?:over|passed)|application.*closed|login to apply/.test(title)||(years.length&&!years.some(y=>y>=currentYear)))) n.stage="Notice";
 }
