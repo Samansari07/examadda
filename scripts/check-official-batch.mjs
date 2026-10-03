@@ -67,7 +67,7 @@ function extractLinks(html,source){
   };
   const re=/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;let m;
   while((m=re.exec(html))&&out.length<120)add(m[2],m[1]);
-  const pdfRe=/(?:href|url|fileUrl|documentUrl)?\s*[:=]?\s*["'](https?:\/\/[^"']+?\.pdf(?:[?#][^"']*)?|\/[^"'\s<>]+?\.pdf(?:[?#][^"'\s<>]*)?)["']/gi;
+  const pdfRe=/(?:href|url|fileUrl|documentUrl|pdfUrl|attachmentUrl|downloadUrl)?\s*[:=]?\s*["']((?:https?:\/\/|https?:\\\/\\\/|\/)[^"'\s<>]+?\.pdf(?:[?#][^"']*)?)["']/gi;
   while((m=pdfRe.exec(html))&&out.length<180){
     const raw=m[1].replace(/\\\//g,"/");
     const before=html.slice(Math.max(0,m.index-700),m.index);
