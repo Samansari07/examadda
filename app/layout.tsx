@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";\nimport LanguageGate from "@/components/language-gate";
+import "./globals.css";
+import LanguageGate from "@/components/language-gate";
 
 const siteUrl = "https://sarkariprep.online";
 
