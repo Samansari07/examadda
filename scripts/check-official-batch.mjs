@@ -186,6 +186,9 @@ for(const source of selected){
       .filter(x=>x.exam || x.item.stage==="Application Open")
       .slice(0,24);
     for(const {item,exam} of candidates){
+      // An application notice may not map to an exam profile. Ignore it safely;
+      // never let one unmatched item mark the entire official source as failed.
+      if(!exam) continue;
       const pdf=await findPdf(item.notificationUrl);if(!pdf)continue;
       const txt=await pdfText(pdf);if(!txt)continue;
       const normalized=norm(txt.slice(0,80000));
