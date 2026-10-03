@@ -1,3 +1,4 @@
+# v3 - kick refresh after resilient scanner fix
 name: Refresh official exam data
 
 on:
