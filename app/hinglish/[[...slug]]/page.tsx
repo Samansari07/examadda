@@ -9,6 +9,13 @@ import { hinglish } from "@/lib/hinglish";
 
 const base = "https://sarkariprep.online";
 
+function safeFeedNotifications() {
+  if (!Array.isArray(autoNotifications)) return [];
+  return autoNotifications.filter(n => {
+    try { return typeof isFeedUseful === "function" && isFeedUseful(n); } catch { return false; }
+  });
+}
+
 function resolve(slug: string[]) {
   if (!slug.length) return { kind: "home" as const };
   if (slug[0] === "exams" && slug[1]) {
@@ -74,7 +81,7 @@ function Home() {
       <div className="headlineGrid"><div className="headlineFeature"><div className="headlineFeatureHead"><span>🔵 {hinglish.home.upcoming}</span><a href="/hinglish/exams">Saare dekho →</a></div>
         {popular.map(slug=>{const e=exams.find(x=>x.slug===slug); if(!e)return null; const d=autoExamData[e.slug]?.examDate||e.examDate; return <a className="headlineItem" href={"/hinglish/exams/"+e.slug} key={e.slug}><span className="headlineIcon">◉</span><span><b>{e.name}</b><small>{e.organization} · Official source</small></span><strong>{d}</strong></a>})}
       </div><div className="headlineList"><div className="headlineFeatureHead"><span>🟢 {hinglish.home.jobs}</span><a href="/hinglish/notifications">Centre kholo →</a></div>
-        {autoNotifications.filter(isFeedUseful).slice(0,5).map(n=><a className="headlineItem" href={n.notificationUrl||n.officialUrl} target="_blank" rel="noopener noreferrer" key={n.id}><span className="headlineBadge">{n.stage==="Application Open"?"APPLY":n.stage.toUpperCase()}</span><span><b>{cleanFeedTitle(n.title)}</b><small>{n.organization} · ✓ Verified source</small></span></a>)}
+        {safeFeedNotifications().slice(0,5).map(n=><a className="headlineItem" href={n.notificationUrl||n.officialUrl} target="_blank" rel="noopener noreferrer" key={n.id}><span className="headlineBadge">{n.stage==="Application Open"?"APPLY":n.stage.toUpperCase()}</span><span><b>{cleanFeedTitle(n.title)}</b><small>{n.organization} · ✓ Verified source</small></span></a>)}
       </div></div>
       <div className="headlineTrust"><span>✓ {hinglish.home.officialSource}</span><span>✓ {hinglish.home.autoFeed}</span><span>✓ Organization matched</span><span>✓ {hinglish.home.verifyFinal}</span></div>
     </div></section>
@@ -104,7 +111,7 @@ function ExamPage({ exam }: { exam: typeof exams[number] }) {
   const examDate = override?.examDate || exam.examDate;
   const lastDate = override?.lastDate || exam.lastDate;
   const vacancy = override?.vacancies || exam.vacancies;
-  const feed = autoNotifications.filter(n => isFeedUseful(n)).filter(n => {
+  const feed = safeFeedNotifications().filter(n => {
     try { return new URL(n.officialUrl).hostname.replace(/^www\./,"") === new URL(exam.officialUrl).hostname.replace(/^www\./,""); } catch { return false; }
   }).slice(0,5);
   return <><Header/><main className="detailPage"><div className="wrap">
@@ -130,7 +137,7 @@ function Jobs() {
 }
 
 function Notifications() {
-  const feed=autoNotifications.filter(isFeedUseful).slice(0,60);
+  const feed=safeFeedNotifications().slice(0,60);
   return <><Header/><main><section className="section light"><div className="wrap"><a className="backLink" href="/hinglish">← SarkariPrep home</a><div className="sectionHead"><div><span className="eyebrow">OFFICIAL UPDATES</span><h1>Latest Sarkari Notifications</h1></div><p>Automatic official-source feed</p></div><div className="notificationGrid">{feed.map(n=><article className="notificationCard" key={n.id}><div className="examMeta"><span className="tag">{n.stage}</span><span className="verified">✓ Official source</span></div><h3>{cleanFeedTitle(n.title)}</h3><p className="org">{n.organization}</p><p>{n.description}</p><div className="cardLinks"><a className="primaryLink" href={n.notificationUrl||n.officialUrl} target="_blank" rel="noopener noreferrer">Official notice kholo ↗</a></div></article>)}</div></div></section></main><Footer/></>;
 }
 
