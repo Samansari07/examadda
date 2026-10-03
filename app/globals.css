@@ -73,3 +73,24 @@
 .languageChoices{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0 12px}.languageChoices button{appearance:none;border:1px solid #d5e1d9;background:#f8faf9;border-radius:18px;padding:18px 14px;text-align:left;cursor:pointer;transition:.18s ease}.languageChoices button:hover{transform:translateY(-2px);border-color:#16820e;background:#f2faf3;box-shadow:0 10px 28px rgba(22,116,13,.10)}.languageChoices strong{display:block;font-size:15px;color:#102019}.languageChoices small{display:block;margin-top:5px;color:#718078;font-size:10px;line-height:1.4}.languageNote{color:#87928c;font-size:9px}
 .languageSwitcher{position:fixed;right:14px;bottom:14px;z-index:2000;border:1px solid #d3e0d8;background:#102019;color:#fff;border-radius:999px;padding:9px 12px;font-size:10px;font-weight:900;box-shadow:0 8px 24px rgba(16,32,25,.2);cursor:pointer}
 @media(max-width:560px){.languageChoices{grid-template-columns:1fr}.languageGateCard{padding:24px 18px;border-radius:22px}}
+
+
+/* Premium instant launch screen */
+.launchScreen{min-height:100svh;display:grid;place-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 20% 15%,rgba(255,177,95,.16),transparent 28%),radial-gradient(circle at 82% 80%,rgba(22,116,13,.22),transparent 32%),#08120e;color:#fff}
+.launchCard{width:min(420px,88vw);text-align:center;padding:42px 28px;border:1px solid rgba(255,255,255,.12);border-radius:30px;background:rgba(16,32,25,.78);backdrop-filter:blur(18px);box-shadow:0 30px 100px rgba(0,0,0,.35);animation:launchIn .42s ease both}
+.launchMark{width:104px;height:104px;margin:0 auto 20px;border-radius:29px;display:grid;place-items:center;position:relative;background:linear-gradient(145deg,#20d866,#16740d);box-shadow:0 18px 55px rgba(32,216,102,.2),inset 0 1px 0 rgba(255,255,255,.3)}
+.launchMark:before{content:"";position:absolute;inset:12px;border:5px solid rgba(255,255,255,.96);border-radius:50%}
+.launchMark span{position:relative;font-size:58px;font-weight:950;line-height:1;font-family:Arial,sans-serif}
+.launchMark i{position:absolute;right:8px;top:7px;color:#ffb15f;font-size:20px;font-style:normal;animation:twinkle 1.2s ease-in-out infinite}
+.launchBrand{font-size:31px;font-weight:950;letter-spacing:-.05em}.launchBrand span{color:#ffb15f}
+.launchCard p{margin:8px 0 22px;color:#b8c6bf;font-size:12px}
+.launchProgress{height:4px;width:170px;margin:0 auto 11px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden}
+.launchProgress span{display:block;height:100%;width:35%;border-radius:99px;background:linear-gradient(90deg,#20d866,#ffb15f);animation:launchLoad .65s ease-out forwards}
+.launchProgress span.done{width:100%}
+.launchCard small{color:#7f9188;font-size:9px}
+.launchGlow{position:absolute;width:280px;height:280px;border-radius:50%;filter:blur(55px);pointer-events:none}
+.launchGlowOne{background:rgba(255,153,51,.12);left:-130px;top:-100px}.launchGlowTwo{background:rgba(32,216,102,.10);right:-130px;bottom:-100px}
+@keyframes launchIn{from{opacity:0;transform:scale(.97) translateY(8px)}to{opacity:1;transform:none}}
+@keyframes launchLoad{from{transform:translateX(-70%)}to{transform:translateX(0)}}
+@keyframes twinkle{50%{transform:rotate(18deg) scale(1.15);opacity:.72}}
+@media(prefers-reduced-motion:reduce){.launchCard,.launchMark i,.launchProgress span{animation:none!important}}
