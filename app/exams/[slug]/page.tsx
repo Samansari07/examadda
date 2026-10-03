@@ -21,7 +21,7 @@ export default async function ExamPage({params}:{params:Promise<{slug:string}>})
  const displayFee=autoOverride?.fee;
  const displayNotification=autoOverride?.notificationUrl||e.notificationUrl||e.sourceUrl||e.officialUrl;
  const parseDate=(value:string)=>{
-  const m=value.match(/(?:^|\\b)(\\d{1,2})[\\s-]+([A-Za-z]{3,9})[\\s-]+(20\\d{2})(?:\\b|$)/);
+  const m=value.match(/(?:^|\b)(\d{1,2})[\s-]+([A-Za-z]{3,9})[\s-]+(20\d{2})(?:\b|$)/);
   if(!m) return null;
   const months:{[k:string]:number}={jan:0,january:0,feb:1,february:1,mar:2,march:2,apr:3,april:3,may:4,jun:5,june:5,jul:6,july:6,aug:7,august:7,sep:8,september:8,oct:9,october:9,nov:10,november:10,dec:11,december:11};
   const month=months[m[2].toLowerCase()];
@@ -29,8 +29,8 @@ export default async function ExamPage({params}:{params:Promise<{slug:string}>})
  };
  const resolveApplicationStatus=()=>{
   const raw=(autoOverride?.applicationDates||"")+" "+(autoOverride?.lastDate||"")+" "+(e.lastDate||"");
-  const iso=[...raw.matchAll(/20\\d{2}-\\d{2}-\\d{2}/g)].map(x=>new Date(x[0]+"T23:59:59Z"));
-  const textDates=[...raw.matchAll(/\\b\\d{1,2}[\\s-]+[A-Za-z]{3,9}[\\s-]+20\\d{2}\\b/g)].map(x=>parseDate(x[0])).filter(Boolean) as Date[];
+  const iso=[...raw.matchAll(/20\d{2}-\d{2}-\d{2}/g)].map(x=>new Date(x[0]+"T23:59:59Z"));
+  const textDates=[...raw.matchAll(/\b\d{1,2}[\s-]+[A-Za-z]{3,9}[\s-]+20\d{2}\b/g)].map(x=>parseDate(x[0])).filter(Boolean) as Date[];
   const dates=[...iso,...textDates].filter(d=>!Number.isNaN(d.getTime())).sort((a,b)=>a.getTime()-b.getTime());
   if(dates.length>=2){
    const start=dates[0], end=dates[dates.length-1];
@@ -50,12 +50,12 @@ export default async function ExamPage({params}:{params:Promise<{slug:string}>})
  const applicationAction=applicationStatus==="closed"?"Application closed":applicationStatus==="upcoming"?"Application not open yet":"Official application portal";
  const age=e.minAge===0?"Check latest notification":e.minAge+"–"+e.maxAge+" years";
  const sourceCheck=Object.values(sourceStatuses).find(s=>{try{return new URL(e.officialUrl).hostname===new URL(s.sourceUrl).hostname}catch{return s.organization===e.organization}});
- const examHost=(()=>{try{return new URL(e.officialUrl).hostname.replace(/^www\\./,"").toLowerCase()}catch{return ""}})();
+ const examHost=(()=>{try{return new URL(e.officialUrl).hostname.replace(/^www\./,"").toLowerCase()}catch{return ""}})();
  const trackedUpdates=autoNotifications.filter(n=>{
   // Never attach a notice merely because its title contains similar words.
   // Notices must come from the same registered official host as this exam.
   // This prevents cross-organization leakage such as JPSC notices appearing on OPSC.
-  const noticeHost=(()=>{try{return new URL(n.officialUrl).hostname.replace(/^www\\./,"").toLowerCase()}catch{return ""}})();
+  const noticeHost=(()=>{try{return new URL(n.officialUrl).hostname.replace(/^www\./,"").toLowerCase()}catch{return ""}})();
   return !!examHost && !!noticeHost && examHost===noticeHost;
  }).slice(0,5);
  const sourceTracked=!!sourceCheck;
