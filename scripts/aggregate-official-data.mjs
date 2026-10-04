@@ -100,7 +100,7 @@ for(const n of notifications){
 notifications.sort((a,b)=>a.organization.localeCompare(b.organization)||a.title.localeCompare(b.title));
 
 const DISCOVERY_NOISE=/tender|procurement|supplier|vendor|purchase|e-proc|financial|audited\s+results?|quarterly\s+results?|annual\s+report|investor|shareholder|contract|\bbid\b|vendor|procurement/i;
-const DISCOVERY_SIGNAL=/recruit|recruitment|vacanc|career|job|jobs|advertisement|exam|examination|application|apply|admit\s*card|hall\s*ticket|answer\s*key|result|written\\s*test|shortlist|selection|interview|corrigendum|appointment|engagement|schedule|calendar/i;
+const DISCOVERY_SIGNAL=/recruit|recruitment|vacanc|career|job|jobs|advertisement|exam|examination|application|apply|admit\s*card|hall\s*ticket|answer\s*key|result|written\s*test|shortlist|selection|interview|corrigendum|appointment|engagement|schedule|calendar/i;
 const discoveredFeed=notifications.filter(n=>{
   const blob=String(n.title||"")+" "+String(n.description||"")+" "+String(n.notificationUrl||"");
   return !DISCOVERY_NOISE.test(blob)&&DISCOVERY_SIGNAL.test(blob);
