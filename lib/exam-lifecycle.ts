@@ -28,7 +28,7 @@ function cycleYearFromExam(exam:{name:string;slug:string;examDate:string}){
 }
 
 export function inferExamLifecycle(
-  exam:{name:string;slug:string;examDate:string;lastDate:string;applicationStatus?:string;dataStatus?:string},
+  exam:{name:string;slug:string;examDate:string;lastDate:string;officialUrl?:string;applicationStatus?:string;dataStatus?:string;lifecycleSourceHosts?:string[];lifecycleKeywords?:string[]},
   notices:Array<{title:string;stage?:string;lastChecked?:string;officialUrl?:string;notificationUrl?:string}>=[]
 ):ExamLifecycle{
   const now=Date.now();
@@ -41,16 +41,20 @@ export function inferExamLifecycle(
   if(dates.length && now<dates[0].getTime() && year>=new Date().getUTCFullYear()) return "upcoming";
 
   const currentYear=year===new Date().getUTCFullYear();
-  const currentYear=year===new Date().getUTCFullYear();
   const freshCutoff=now-120*86400000;
   const relevant=notices.filter(n=>{
     const checked=n.lastChecked?Date.parse(n.lastChecked+"T23:59:59Z"):0;
     if(!checked || checked<freshCutoff) return false;
     const hay=(n.title+" "+(n.notificationUrl||"")+" "+(n.officialUrl||"")).toLowerCase();
-    if(currentYear && !hay.includes(String(year))) return false;
+    const noticeHost=(()=>{try{return new URL(n.officialUrl||n.notificationUrl||"").hostname.replace(/^www\\./,"").toLowerCase()}catch{return ""}})();
+    const examHost=(()=>{try{return new URL(exam.officialUrl||"").hostname.replace(/^www\\./,"").toLowerCase()}catch{return ""}})();
+    const allowedHosts=[examHost,...(exam.lifecycleSourceHosts||[])].filter(Boolean).map(x=>x.replace(/^www\\./,"").toLowerCase());
+    const hostMatched=allowedHosts.includes(noticeHost);
     const examName=exam.name.toLowerCase().replace(/[^a-z0-9]+/g," ");
-    const tokens=examName.split(" ").filter(x=>x.length>=3 && !/^20\d{2}$/.test(x));
-    return tokens.some(t=>hay.includes(t));
+    const tokens=[...examName.split(" ").filter(x=>x.length>=3 && !/^20\\d{2}$/.test(x)),...(exam.lifecycleKeywords||[]).map(x=>x.toLowerCase())];
+    const keywordMatched=tokens.some(t=>hay.includes(t));
+    if(currentYear && !hay.includes(String(year)) && !(hostMatched && (exam.lifecycleSourceHosts||[]).some(h=>h.includes(noticeHost)))) return false;
+    return hostMatched && keywordMatched;
   });
   const text=relevant.map(n=>(n.title+" "+(n.stage||"")).toLowerCase()).join(" ");
   if(/counselling|counseling|seat allotment|admission|reporting|choice filling/.test(text)) return "counselling-active";
