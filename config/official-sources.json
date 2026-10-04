@@ -14,7 +14,12 @@
     "category": "Central Government",
     "region": "Central",
     "updatesUrl": "https://ssc.gov.in/",
-    "scope": "Recruitment notices, calendars, admit cards, answer keys and results."
+    "scope": "Recruitment notices, calendars, admit cards, answer keys and results.",
+    "discoveryUrls": [
+      "https://ssc.gov.in/",
+      "https://ssc.gov.in/notice-board",
+      "https://ssc.gov.in/for-candidates"
+    ]
   },
   {
     "id": "ibps",
@@ -25,6 +30,11 @@
     "scope": "Banking recruitment notifications, corrigenda, calendars, results and vacancy updates.",
     "fallbackUrls": [
       "https://www.ibps.in/"
+    ],
+    "discoveryUrls": [
+      "https://www.ibps.in/index.php/rural-bank-xv/",
+      "https://www.ibps.in/index.php/management-trainees-xvi/",
+      "https://www.ibps.in/index.php/specialist-officers-xvi/"
     ]
   },
   {
@@ -59,6 +69,11 @@
       "https://www.rrbthiruvananthapuram.gov.in/",
       "https://rrbsecunderabad.gov.in/",
       "https://rrbbbs.gov.in/"
+    ],
+    "discoveryUrls": [
+      "https://www.rrbcdg.gov.in/employment-notices.php",
+      "https://www.rrbcdg.gov.in/",
+      "https://www.rrbcdg.gov.in/2026-01-alp.php"
     ]
   },
   {
