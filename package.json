@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node --experimental-strip-types scripts/validate-notice-feed.mjs && next build",
+    "build": "node --experimental-strip-types scripts/validate-notice-feed.mjs && tsc --noEmit && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "next": "15.5.26",
@@ -28,6 +29,6 @@
     "eslint-config-next": "15.5.26"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": "24.x"
   }
 }
