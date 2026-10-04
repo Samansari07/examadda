@@ -33,7 +33,10 @@ export default function Dashboard(){
  ]);
  const [quizIndex,setQuizIndex]=useState(0);
  const [quizScore,setQuizScore]=useState<number|null>(null);
- const [profileOpen,setProfileOpen]=useState(false);\n const [streak,setStreak]=useState(0);\n const [lastVisit,setLastVisit]=useState("");\n const [todayDone,setTodayDone]=useState(false);
+ const [profileOpen,setProfileOpen]=useState(false);
+ const [streak,setStreak]=useState(0);
+ const [lastVisit,setLastVisit]=useState("");
+ const [todayDone,setTodayDone]=useState(false);
 
  useEffect(()=>{
    try{
@@ -78,7 +81,29 @@ export default function Dashboard(){
  const open=statuses.filter(x=>x.app==="open");
  const upcoming=statuses.filter(x=>x.exam==="upcoming").sort((a,b)=>(dateFrom(a.o?.examDate||a.e.examDate)?.getTime()??Infinity)-(dateFrom(b.o?.examDate||b.e.examDate)?.getTime()??Infinity));
  const savedRecords=saved.map(s=>exams.find(e=>e.slug===s)).filter(Boolean) as typeof exams;
- const completion=Math.round(tasks.filter(t=>t.done).length/tasks.length*100);\n const age=Number(profile.age)||0;\n const education=profile.education.toLowerCase();\n const eligibility=useMemo(()=>statuses.map(x=>{\n   const reasons:string[]=[]; let score=0;\n   if(age){ if(age>=x.e.minAge&&age<=x.e.maxAge){score+=35;reasons.push("Age fits")} else reasons.push("Age check needed"); }\n   else reasons.push("Add age");\n   const catOk=x.e.categories?.length?x.e.categories.includes(profile.category):true;\n   if(catOk){score+=20;reasons.push("Category accepted")} else reasons.push("Category may differ");\n   if(education){\n     const words=education.split(/[,\\s]+/).filter(w=>w.length>2);\n     const qtext=(x.e.qualifications+" "+x.e.name+" "+x.e.category).toLowerCase();\n     const hit=words.some(w=>qtext.includes(w));\n     if(hit){score+=35;reasons.push("Education matches")} else reasons.push("Qualification needs checking");\n   }else reasons.push("Add education");\n   if(profile.state){\n     const state=profile.state.toLowerCase();\n     const stateHit=(x.e.name+" "+x.e.organization+" "+x.e.category).toLowerCase().includes(state) || (state.includes("jharkhand")&&/jssc|jpsc|jharkhand/i.test(x.e.organization+" "+x.e.name));\n     if(stateHit)score+=10;\n   }\n   return {...x,score,reasons};\n }).filter(x=>x.app!=="closed"||x.exam==="upcoming").sort((a,b)=>b.score-a.score),[statuses,age,education,profile.category,profile.state]);\n const bestMatches=eligibility.filter(x=>x.score>=55).slice(0,8);
+ const completion=Math.round(tasks.filter(t=>t.done).length/tasks.length*100);
+ const age=Number(profile.age)||0;
+ const education=profile.education.toLowerCase();
+ const eligibility=useMemo(()=>statuses.map(x=>{
+   const reasons:string[]=[]; let score=0;
+   if(age){ if(age>=x.e.minAge&&age<=x.e.maxAge){score+=35;reasons.push("Age fits")} else reasons.push("Age check needed"); }
+   else reasons.push("Add age");
+   const catOk=x.e.categories?.length?x.e.categories.includes(profile.category):true;
+   if(catOk){score+=20;reasons.push("Category accepted")} else reasons.push("Category may differ");
+   if(education){
+     const words=education.split(/[,\\s]+/).filter(w=>w.length>2);
+     const qtext=(x.e.qualifications+" "+x.e.name+" "+x.e.category).toLowerCase();
+     const hit=words.some(w=>qtext.includes(w));
+     if(hit){score+=35;reasons.push("Education matches")} else reasons.push("Qualification needs checking");
+   }else reasons.push("Add education");
+   if(profile.state){
+     const state=profile.state.toLowerCase();
+     const stateHit=(x.e.name+" "+x.e.organization+" "+x.e.category).toLowerCase().includes(state) || (state.includes("jharkhand")&&/jssc|jpsc|jharkhand/i.test(x.e.organization+" "+x.e.name));
+     if(stateHit)score+=10;
+   }
+   return {...x,score,reasons};
+ }).filter(x=>x.app!=="closed"||x.exam==="upcoming").sort((a,b)=>b.score-a.score),[statuses,age,education,profile.category,profile.state]);
+ const bestMatches=eligibility.filter(x=>x.score>=55).slice(0,8);
  const next=upcoming[0];
 
  const recommendations=useMemo(()=>{
