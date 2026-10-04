@@ -33,10 +33,15 @@ export function getDetailProfile(e:Exam):DetailProfile{
   const o=autoExamData[e.slug];
   const live=e.dataStatus==="official-verified";
   const family=e.status==="family";
+  const lifecycle=e.lifecycleStatus;
   return {
-    statusLabel:live?"Officially verified current cycle":family?"Recurring recruitment family":"Historical/reference guide",
+    statusLabel:live?"Officially verified current cycle":family?"Recurring recruitment family":lifecycle==="upcoming"?"Upcoming cycle":lifecycle==="application-open"?"Applications open":lifecycle==="application-closed"?"Applications closed":lifecycle==="exam-completed"?"Exam completed — post-exam cycle":lifecycle==="result-declared"?"Result declared":lifecycle==="counselling-active"?"Counselling / admission active":lifecycle==="cycle-closed"?"Cycle closed":"Historical/reference guide",
     statusNote:live
       ?"Current-cycle facts shown here are tied to an official authority source; the original notification remains controlling."
+      :lifecycle==="exam-completed"||lifecycle==="result-declared"||lifecycle==="counselling-active"
+      ?"This is a current-year post-exam cycle, not an archived historical reference. Live dates/results/admission notices must be checked against the latest official authority update."
+      :lifecycle==="upcoming"||lifecycle==="application-open"||lifecycle==="application-closed"
+      ?"This is a current-year cycle. Fields marked calendar/reference are not treated as live verified facts until the official notice supports them."
       :family
       ?"This profile explains the recurring recruitment route. Cycle-specific vacancies, dates, fee and eligibility are intentionally not invented."
       :"This guide is useful for orientation and preparation, but it does not claim current-cycle vacancies or dates unless separately verified.",
