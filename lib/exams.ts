@@ -128,7 +128,7 @@ const applyAutoExamData=(e:Exam):Exam=>{
 const allExamRecords=[...currentExamOverrides,...verifiedCurrent,...autoCurrentCycles,...cycleWithIntegrity,...familyExams.map(e=>({...e,dataStatus:"reference-family" as const,lastVerified:"2026-10-02",sourceUrl:e.officialUrl}))];
 const dedupedExamRecords=allExamRecords.filter((exam,index,all)=>all.findIndex(x=>x.slug===exam.slug)===index);
 const STATIC_SOURCE_BY_ORG:Record<string,string>={
- "Staff Selection Commission":"ssc","UPSC":"upsc","IBPS":"ibps","National Testing Agency":"nta",
+ "Staff Selection Commission":"ssc","SSC":"ssc","UPSC":"upsc","IBPS":"ibps","National Testing Agency":"nta","NTA":"nta",
  "CBSE":"ctet","State Bank of India":"sbi","Reserve Bank of India":"rbi",
  "Indian Railways / RRB":"railways","Railway Recruitment Boards":"railways",
  "LIC":"lic","EPFO":"epfo","ISRO":"isro","DRDO":"drdo","AIIMS":"aiims","ESIC":"esic"
