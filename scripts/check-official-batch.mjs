@@ -20,39 +20,50 @@ const stage=t=>{t=t.toLowerCase();const years=[...t.matchAll(/\b(?:19|20)\d{2}\b
 
 async function fetchSource(source){
   const extraFallbacks=source.id==="indian-army"?["https://www.joinindianarmy.nic.in/"]:source.id==="indian-coast-guard"?["https://indiancoastguard.gov.in/recruitment"]:[];
-  const commonDiscovery=["sitemap.xml","robots.txt","notifications","notices","recruitment","recruitment-notices","career","careers","advertisement","advertisements","documents","document-category","latest-notices","news-events"];\n  const commonUrls=commonDiscovery.map(p=>{try{return new URL(p,source.updatesUrl).href}catch{return null}}).filter(Boolean);\n  const baseUrls=[source.updatesUrl,...(source.fallbackUrls||[]),source.applicationUrl,...(source.discoveryUrls||[]),...commonUrls,...extraFallbacks].filter(Boolean);
+  const commonDiscovery=["sitemap.xml","robots.txt","notifications","notices","recruitment","recruitment-notices","career","careers","advertisement","advertisements","documents","document-category","latest-notices","news-events"];
+  const commonUrls=commonDiscovery.map(p=>{try{return new URL(p,source.updatesUrl).href}catch{return null}}).filter(Boolean);
+  const baseUrls=[source.updatesUrl,...(source.fallbackUrls||[]),...(source.discoveryUrls||[]),source.applicationUrl,...commonUrls,...extraFallbacks].filter(Boolean);
   const urls=[];
   for(const u of [...new Set(baseUrls)]){
     urls.push(u);
     try{
       const x=new URL(u);
-      if(x.hostname.startsWith("www.")) x.hostname=x.hostname.slice(4);
-      else if(!x.hostname.startsWith("www.")) x.hostname="www."+x.hostname;
-      const variant=x.href;
-      if(variant!==u)urls.push(variant);
+      if(x.hostname.startsWith("www."))x.hostname=x.hostname.slice(4);
+      else if(!x.hostname.startsWith("www."))x.hostname="www."+x.hostname;
+      if(x.href!==u)urls.push(x.href);
     }catch{}
   }
-  const attempts=[];
-  for(const url of [...new Set(urls)]){
-    for(let attempt=1;attempt<=2;attempt++) try{
-      const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(15000)});
+  const attempts=[],pages=[];
+  const fetchOne=async url=>{
+    try{
+      const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(12000)});
       const ct=r.headers.get("content-type")||"";
       if(r.ok&&(ct.includes("html")||ct.includes("xml")||ct.includes("text"))){
         const html=await r.text();
-        if(html.length>120)return{url,html,method:url===source.updatesUrl?"fetch":"fallback-fetch",usedFallback:url!==source.updatesUrl,attempts:attempts.length+1};
+        if(html.length>120)return{url,html,method:"fetch"};
       }
-      attempts.push(url+" -> HTTP "+r.status+" (fetch attempt "+attempt+")");
-    }catch(e){attempts.push(url+" -> "+String(e)+" (fetch attempt "+attempt+")")}
-  }
+      attempts.push(url+" -> HTTP "+r.status);
+    }catch(e){attempts.push(url+" -> "+String(e))}
+    try{
+      const {stdout}=await execFileAsync("curl",["-L","--ipv4","--http1.1","--connect-timeout","6","--max-time","14","--retry","1","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:12*1024*1024});
+      if(stdout.length>120)return{url,html:stdout,method:"curl"};
+    }catch(e){attempts.push(url+" -> curl "+String(e))}
+    return null;
+  };
   for(const url of [...new Set(urls)]){
-    for(const extra of [[],["--ipv4"],["--http1.1"]]){
-      try{
-        const {stdout}=await execFileAsync("curl",["-L",...extra,"--connect-timeout","8","--max-time","20","--retry","1","--retry-delay","1","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:20*1024*1024});
-        if(stdout.length>120)return{url,html:stdout,method:"curl",usedFallback:url!==source.updatesUrl,attempts:attempts.length+1};
-      }catch(e){attempts.push(url+" -> curl "+(extra.join(" ")||"default")+" "+String(e)+" (fallback attempt)")}
-    }
+    if(pages.length>=8)break;
+    const page=await fetchOne(url);
+    if(page)pages.push(page);
   }
-  throw new Error(attempts.join(" | "));
+  if(!pages.length)throw new Error(attempts.join(" | "));
+  return{
+    url:pages[0].url,
+    html:pages.map(p=>p.html).join("\n"),
+    method:pages.every(p=>p.method==="fetch")?"fetch":"mixed",
+    usedFallback:pages.some(p=>p.url!==source.updatesUrl),
+    attempts:attempts.length+pages.length,
+    pages:pages.map(p=>p.url)
+  };
 }
 function extractLinks(html,source){
   const out=[],seen=new Set(),add=(title,href)=>{
@@ -165,10 +176,11 @@ function parseStructured(t){
   const examRange=text.match(/(?:date of (?:the )?examination|date of examination|exam(?:ination)?(?: will be held| scheduled| shall be held)?|online exam(?:ination)?)[^0-9]{0,120}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})(?:[^0-9]{0,40}(?:to|till|upto|up to|[-–]))?[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})?/i);
   if(examRange){out.examDate=examRange[2]?examRange[1]+" to "+examRange[2]:examRange[1];e.push("examDate");evidenceSnippets.push(examRange[0].slice(0,360));}
 
-  const vacancy=capture(/(?:number of )?(?:vacancies|vacant posts|total posts|total vacancies)[^0-9]{0,70}([0-9][0-9,]{2,})/i,"vacancies");
+  const vacancy=capture(/(?:number of )?(?:vacancies|vacant posts|total posts|total vacancies|tentative vacancies|total tentative vacancies|posts?)[^0-9]{0,90}([0-9][0-9,]{2,})/i,"vacancies");
   if(vacancy?.value){out.vacancies=vacancy.value+" notified";e.push("vacancies");evidenceSnippets.push(vacancy.snippet);}
-  let m=text.match(/(?:minimum age|minimum age limit)[^0-9]{0,40}([0-9]{1,2})[^0-9]{0,100}(?:maximum age|upper age)[^0-9]{0,40}([0-9]{1,2})/i);
-  if(m){out.minAge=+m[1];out.maxAge=+m[2];e.push("age");evidenceSnippets.push(m[0].slice(0,320));}
+  let m=text.match(/(?:minimum age|minimum age limit|age limit|age between|age should be)[^0-9]{0,60}([0-9]{1,2})[^0-9]{0,100}(?:maximum age|upper age|years?)/i);
+  if(!m)m=text.match(/(?:age limit|age between|age should be)[^0-9]{0,40}([0-9]{1,2})\s*(?:to|-|–)\s*([0-9]{1,2})\s*years?/i);
+  if(m){out.minAge=+m[1];out.maxAge=+(m[2]||m[1]);e.push("age");evidenceSnippets.push(m[0].slice(0,320));}
   m=text.match(/(?:application fee|examination fee|exam fee)[^:]{0,100}(?:rs\.?|₹)\s*([0-9][0-9,]*)/i);
   if(m){out.fee="₹"+m[1];e.push("fee");evidenceSnippets.push(m[0].slice(0,320));}
   m=text.match(/(?:correction|edit|modification)[^0-9]{0,100}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})[^0-9]{0,60}(?:to|till|upto|up to|-|–)?[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})?/i);
