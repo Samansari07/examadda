@@ -41,6 +41,7 @@ export function inferExamLifecycle(
   if(dates.length && now<dates[0].getTime() && year>=new Date().getUTCFullYear()) return "upcoming";
 
   const currentYear=year===new Date().getUTCFullYear();
+  const currentYear=year===new Date().getUTCFullYear();
   const freshCutoff=now-120*86400000;
   const relevant=notices.filter(n=>{
     const checked=n.lastChecked?Date.parse(n.lastChecked+"T23:59:59Z"):0;
