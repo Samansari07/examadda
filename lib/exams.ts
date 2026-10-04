@@ -8,7 +8,7 @@ export type Exam={
  minAge:number; maxAge:number; qualifications:string; categories:string[];
  examDate:string; lastDate:string; officialUrl:string; salary:string;
  status?: "cycle"|"family"; description?:string;
- dataStatus?: "official-verified"|"official-calendar"|"historical-reference"|"reference-family"; lastVerified?: string; sourceUrl?: string; notificationUrl?: string; applyUrl?: string; applicationStatus?: "open"|"closed"|"upcoming"|"unknown";
+ dataStatus?: "official-verified"|"official-calendar"|"historical-reference"|"reference-family"; dataCertainty?: "confirmed"|"tentative"|"calendar"; lastVerified?: string; sourceUrl?: string; notificationUrl?: string; applyUrl?: string; applicationStatus?: "open"|"closed"|"upcoming"|"unknown";
 };
 
 const cycleExams:Exam[]=[
@@ -52,12 +52,13 @@ const autoCurrentCycles:Exam[]=Object.values(autoExamData)
      slug:o.cycleSlug!,
      name:o.name||family.name+" "+o.cycleYear,
      status:"cycle" as const,
-     dataStatus:"official-verified" as const,
+     dataStatus:(o.dataCertainty==="confirmed"?"official-verified":"official-calendar") as "official-verified"|"official-calendar",
+     dataCertainty:o.dataCertainty,
      lastVerified:o.lastVerified,
      sourceUrl:o.sourceUrl,
      notificationUrl:o.notificationUrl,
      applyUrl:o.notificationUrl,
-     applicationStatus:"unknown",
+     applicationStatus:o.applicationStatus||"unknown",
      vacancies:o.vacancies||"See official notification",
      minAge:typeof o.minAge==="number"?o.minAge:family.minAge,
      maxAge:typeof o.maxAge==="number"?o.maxAge:family.maxAge,
@@ -68,7 +69,7 @@ const autoCurrentCycles:Exam[]=Object.values(autoExamData)
  })
  .filter((e):e is Exam=>Boolean(e));
 
-const cycleWithIntegrity=cycleExams.filter(e=>e.slug!=="ssc-cgl-2026" && e.slug!=="cds-ii-2026" && e.slug!=="rrb-ntpc-2026").map(e=>({...e,status:"cycle" as const,dataStatus:"historical-reference" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl,vacancies:"See latest official notification",minAge:0,maxAge:100,qualifications:"Post-specific; see latest official notification",examDate:"See latest official notification",lastDate:"See latest official notification",description:e.description||"Historical 2026 cycle reference. Exact dates, vacancies and eligibility are not treated as live. Verify the latest official notification before applying."}));
+const cycleWithIntegrity=cycleExams.filter(e=>e.slug!=="ssc-cgl-2026" && e.slug!=="cds-ii-2026").map(e=>({...e,status:"cycle" as const,dataStatus:"historical-reference" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl,vacancies:"See latest official notification",minAge:0,maxAge:100,qualifications:"Post-specific; see latest official notification",examDate:"See latest official notification",lastDate:"See latest official notification",description:e.description||"Historical 2026 cycle reference. Exact dates, vacancies and eligibility are not treated as live. Verify the latest official notification before applying."}));
 const verifiedCurrent:Exam[]=[{
  slug:"ssc-cgl-2026",name:"SSC CGL 2026",organization:"Staff Selection Commission",category:"Central Government",
  vacancies:"10,731 tentative (as on 24 September 2026)",minAge:18,maxAge:32,
@@ -116,7 +117,9 @@ const applyAutoExamData=(e:Exam):Exam=>{
   notificationUrl:o.notificationUrl,
   sourceUrl:o.sourceUrl,
   lastVerified:o.lastVerified,
-  dataStatus:verified?"official-verified":(e.dataStatus==="official-verified"?"official-verified":"official-calendar"),
+  dataStatus:verified?(o.dataCertainty==="confirmed"?"official-verified":"official-calendar"):(e.dataStatus==="official-verified"?"official-verified":"official-calendar"),
+  dataCertainty:verified?o.dataCertainty:e.dataCertainty,
+  applicationStatus:verified?(o.applicationStatus||e.applicationStatus||"unknown"):e.applicationStatus,
   description:"Current cycle data automatically refreshed from a high-confidence official notice on "+o.lastVerified+". The authority notice remains the controlling source; older cycle values are not carried forward.",
  };
 };

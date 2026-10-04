@@ -92,6 +92,7 @@ jobs:
           test -s lib/auto-notifications.ts
           test -s lib/auto-exam-data.ts
           test -s lib/source-status.ts
+          test -s lib/discovered-official-notices.ts
           node -e "const fs=require('fs'); const s=fs.readFileSync('lib/source-status.ts','utf8'); if(!s.includes('health')) process.exit(1);"
       - name: Commit refreshed data
         run: |
@@ -102,7 +103,7 @@ jobs:
             git reset --hard origin/main
             node scripts/aggregate-official-data.mjs
             node scripts/validate-notice-feed.mjs
-            git add lib/auto-notifications.ts lib/auto-exam-data.ts lib/source-status.ts
+            git add lib/auto-notifications.ts lib/auto-exam-data.ts lib/source-status.ts lib/discovered-official-notices.ts
             if git diff --cached --quiet; then
               echo "No official-data changes detected."
               exit 0

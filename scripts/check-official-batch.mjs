@@ -91,6 +91,37 @@ function extractLinks(html,source){
   return out;
 }
 
+async function htmlText(url){
+  try{
+    const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(12000)});
+    const ct=r.headers.get("content-type")||"";
+    if(r.ok&&(/html|xml|text/i.test(ct))){
+      const raw=await r.text();
+      return clean(raw).slice(0,180000);
+    }
+  }catch{}
+  try{
+    const {stdout}=await execFileAsync("curl",["-L","--ipv4","--http1.1","--connect-timeout","8","--max-time","16","--retry","1","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:12*1024*1024});
+    return clean(stdout).slice(0,180000);
+  }catch{return ""}
+}
+function dataCertainty(text){
+  const s=String(text||"");
+  if(/annual\s+calendar|exam\s+calendar|indicative\s+notice/i.test(s)&&!/detailed\s+(?:employment\s+)?notification|centralised\s+employment\s+notification|notification\s+for\s+recruitment/i.test(s))return "calendar";
+  if(/tentative|indicative|proposed|expected|likely|subject\s+to\s+change|may\s+be\s+conducted/i.test(s))return "tentative";
+  return "confirmed";
+}
+function applicationWindowStatus(data,now=new Date()){
+  const raw=String(data?.applicationDates||"");
+  const parts=raw.split(/\s+to\s+/i);
+  const start=parseDateToken(parts[0]);
+  const end=parseDateToken(parts.at(-1)||data?.lastDate||"");
+  const today=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()));
+  if(end&&end<today)return "closed";
+  if(start&&start>today)return "upcoming";
+  if(start&&end&&start<=today&&today<=end)return "open";
+  return "unknown";
+}
 async function pdfText(url){
   const dir=await fs.mkdtemp(path.join("/tmp/","sarkariprep-")),pdf=path.join(dir,"notice.pdf"),txt=path.join(dir,"notice.txt");
   try{
@@ -171,8 +202,12 @@ function parseStructured(t){
     const titleLike=text.match(/(?:last date|closing date|last date for application)[^0-9]{0,80}(\\d{1,2}\\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\\s+\\d{4}|\\d{1,2}[.\\/-]\\d{1,2}[.\\/-]\\d{2,4})/i);
     if(titleLike){out.lastDate=titleLike[1];e.push("lastDate");evidenceSnippets.push(titleLike[0].slice(0,320));}
   }
-  const range=text.match(/(?:online )?(?:application|registration|portal|window|opportunity|submission)(?:s)?[^0-9]{0,140}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})[^0-9]{0,100}(?:to|till|upto|up to|[-–])[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);
+  const range=text.match(/(?:online )?(?:application|registration|portal|window|opportunity|submission|apply)(?:s)?[^0-9]{0,140}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})[^0-9]{0,100}(?:to|till|upto|up to|[-–])[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);
   if(range){out.applicationDates=range[1]+" to "+range[2];e.push("applicationDates");evidenceSnippets.push(range[0].slice(0,320));}
+  if(!out.applicationDates){
+    const applyRange=text.match(/(?:apply|applications?|online\s+application(?:s)?)\D{0,100}(?:from|between|open(?:ing)?\s+on)\s+(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})\s*(?:to|till|upto|up to|[-–])\s*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);
+    if(applyRange){out.applicationDates=applyRange[1]+" to "+applyRange[2];e.push("applicationDates");evidenceSnippets.push(applyRange[0].slice(0,320));}
+  }
   const examRange=text.match(/(?:date of (?:the )?examination|date of examination|exam(?:ination)?(?: will be held| scheduled| shall be held)?|online exam(?:ination)?)[^0-9]{0,120}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})(?:[^0-9]{0,40}(?:to|till|upto|up to|[-–]))?[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})?/i);
   if(examRange){out.examDate=examRange[2]?examRange[1]+" to "+examRange[2]:examRange[1];e.push("examDate");evidenceSnippets.push(examRange[0].slice(0,360));}
 
@@ -331,8 +366,9 @@ for(const source of selected){
       // An application notice may not map to an exam profile. Ignore it safely;
       // never let one unmatched item mark the entire official source as failed.
       if(!exam) continue;
-      const pdf=await findPdf(item.notificationUrl);if(!pdf)continue;
-      const txt=await pdfText(pdf);if(!txt)continue;
+      const pdf=await findPdf(item.notificationUrl);
+      const txt=pdf ? await pdfText(pdf) : await htmlText(item.notificationUrl);
+      if(!txt)continue;
       const normalized=norm(txt.slice(0,80000));
       const customIdentity=(EXAM_ALIASES[exam.slug]||[]).map(norm);
       const aliases=[norm(exam.name),norm(exam.slug),...customIdentity,...aliasTokens(exam.name)].filter(x=>x.length>3);
@@ -357,7 +393,9 @@ for(const source of selected){
       const confidence=identityScore>=2 && p.evidence.length>=2 ? "high" : "medium";
       const cycleSlug=isFamily ? exam.slug.replace(/^family-/,"")+"-"+cycleYear : exam.slug;
       const cycleName=isFamily ? (cycleYear ? exam.name+" "+cycleYear : exam.name) : exam.name;
-      overrides[cycleSlug]={...p.data,slug:cycleSlug,cycleSlug,familySlug:isFamily?exam.slug:undefined,cycleYear:isFamily?cycleYear:undefined,name:cycleName,organization:exam.organization,notificationUrl:pdf,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence,evidenceCount:p.evidence.length,evidence:p.evidence,evidenceSnippets:p.evidenceSnippets,sourceTitle:item.title};
+      const certainty=dataCertainty(txt);
+      const sourceNotice=pdf||item.notificationUrl;
+      overrides[cycleSlug]={...p.data,slug:cycleSlug,cycleSlug,familySlug:isFamily?exam.slug:undefined,cycleYear:isFamily?cycleYear:undefined,name:cycleName,organization:exam.organization,notificationUrl:sourceNotice,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence,evidenceCount:p.evidence.length,evidence:p.evidence,evidenceSnippets:p.evidenceSnippets,sourceTitle:item.title,dataCertainty:certainty,applicationStatus:applicationWindowStatus(p.data)};
     }
     statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:f.url,ok:true,health:f.usedFallback?"degraded":"healthy",detected:det.length,lastChecked:today(),method:f.method,attempts:f.attempts});
   }catch(e){

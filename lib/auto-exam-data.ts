@@ -1,5 +1,5 @@
 export type AutoExamOverride = {
- slug:string; name:string; organization:string; notificationUrl:string; sourceUrl:string; lastVerified:string; detectedAt:string; confidence:"medium"|"high"; evidenceCount:number; evidence:string[]; evidenceSnippets?:string[]; sourceTitle?:string;
+ slug:string; name:string; organization:string; notificationUrl:string; sourceUrl:string; lastVerified:string; detectedAt:string; confidence:"medium"|"high"; dataCertainty:"confirmed"|"tentative"|"calendar"; applicationStatus:"open"|"closed"|"upcoming"|"unknown"; evidenceCount:number; evidence:string[]; evidenceSnippets?:string[]; sourceTitle?:string;
  familySlug?:string; cycleSlug?:string; cycleYear?:number;
  applicationDates?:string; lastDate?:string; examDate?:string; vacancies?:string; minAge?:number; maxAge?:number; fee?:string; correctionDates?:string; qualification?:string; selectionProcess?:string; payScale?:string; nationality?:string; domicile?:string; ageRelaxation?:string; stale?:boolean; refreshedThisCycle?:boolean;
 };
@@ -26,6 +26,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "lastVerified": "2026-10-04",
     "detectedAt": "2026-10-04",
     "confidence": "high",
+    "dataCertainty": "confirmed",
+    "applicationStatus": "closed",
     "evidenceCount": 6,
     "evidence": [
       "lastDate",

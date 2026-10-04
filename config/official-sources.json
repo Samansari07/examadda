@@ -18,7 +18,9 @@
     "discoveryUrls": [
       "https://ssc.gov.in/",
       "https://ssc.gov.in/notice-board",
-      "https://ssc.gov.in/for-candidates"
+      "https://ssc.gov.in/for-candidates",
+      "https://ssccr.gov.in/",
+      "https://ssccr.gov.in/candidate-corner"
     ]
   },
   {
@@ -68,12 +70,16 @@
       "https://www.rrbcdg.gov.in/",
       "https://www.rrbthiruvananthapuram.gov.in/",
       "https://rrbsecunderabad.gov.in/",
-      "https://rrbbbs.gov.in/"
+      "https://rrbbbs.gov.in/",
+      "https://rrbbbs.gov.in/notifications.php",
+      "http://www.rrbcdg.gov.in/"
     ],
     "discoveryUrls": [
       "https://www.rrbcdg.gov.in/employment-notices.php",
       "https://www.rrbcdg.gov.in/",
-      "https://www.rrbcdg.gov.in/2026-01-alp.php"
+      "https://www.rrbcdg.gov.in/2026-01-alp.php",
+      "https://www.rrbbbs.gov.in/cen.php",
+      "https://www.rrbbbs.gov.in/notifications.php"
     ]
   },
   {

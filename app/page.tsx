@@ -4,6 +4,7 @@ import {exams} from "@/lib/exams";
 import {officialSources} from "@/lib/official-sources";
 import {autoNotifications} from "@/lib/auto-notifications";
 import {autoExamData} from "@/lib/auto-exam-data";
+import {discoveredOfficialNotices} from "@/lib/discovered-official-notices";
 import {cleanFeedTitle,isFeedUseful} from "@/lib/notification-feed";
 import {parseExamEndDate} from "@/lib/seo-landings";
 
@@ -21,9 +22,15 @@ export default function Home(){
  const featured=popular.map(s=>exams.find(e=>e.slug===s)).filter(Boolean) as typeof exams;
  const liveToday=new Date();
  const parseLiveDate=(value:string)=>{const iso=parseExamEndDate(value);return iso?new Date(iso+"T00:00:00Z"):null;};
- const liveUpcoming=useMemo(()=>exams.map(e=>({e,d:parseLiveDate(autoExamData[e.slug]?.examDate||e.examDate),active:e.applicationStatus==="upcoming"})).filter(x=>x.e.dataStatus==="official-verified"&&((x.d&&x.d.getTime()>=liveToday.getTime()-86400000)||x.active)).sort((a,b)=>(a.d?.getTime()??Number.MAX_SAFE_INTEGER)-(b.d?.getTime()??Number.MAX_SAFE_INTEGER)).slice(0,6),[exams]);
+ const liveUpcoming=useMemo(()=>exams.map(e=>({e,d:parseLiveDate(autoExamData[e.slug]?.examDate||e.examDate),active:e.applicationStatus==="upcoming"})).filter(x=>(x.e.dataStatus==="official-verified"||x.e.dataStatus==="official-calendar")&&((x.d&&x.d.getTime()>=liveToday.getTime()-86400000)||x.active)).sort((a,b)=>(a.d?.getTime()??Number.MAX_SAFE_INTEGER)-(b.d?.getTime()??Number.MAX_SAFE_INTEGER)).slice(0,6),[exams]);
  const liveDeadlines=useMemo(()=>exams.map(e=>({e,d:parseLiveDate(autoExamData[e.slug]?.lastDate||e.lastDate)})).filter(x=>x.d&&x.d.getTime()>=liveToday.getTime()&&x.e.dataStatus==="official-verified").sort((a,b)=>a.d!.getTime()-b.d!.getTime()).slice(0,6),[exams]);
- const headlineFeed=useMemo(()=>autoNotifications.filter(n=>isFeedUseful(n)).sort((a,b)=>new Date(b.publishedDate||b.lastChecked).getTime()-new Date(a.publishedDate||a.lastChecked).getTime()).slice(0,30),[]);
+ const headlineFeed=useMemo(()=>{
+  const key=(n:any)=>(n.notificationUrl||n.officialUrl||n.title).split("#")[0].replace(/\/$/,"").toLowerCase();
+  return Array.from(new Map([...autoNotifications,...discoveredOfficialNotices].map(n=>[key(n),n] as const)).values())
+    .filter(n=>isFeedUseful(n))
+    .sort((a,b)=>new Date(b.publishedDate||b.lastChecked).getTime()-new Date(a.publishedDate||a.lastChecked).getTime())
+    .slice(0,30);
+},[]);
  const filteredHeadlines=useMemo(()=>headlineTab==="All"?headlineFeed:headlineFeed.filter(n=>{
    const t=cleanFeedTitle(n.title+" "+n.description);
    return headlineTab==="Jobs"?/Application Open|Recruitment/.test(n.stage)&&/recruit|recruitment|vacan|career|appointment|engagement|advertisement|\bpost\b|assistant|officer|engineer|constable|technician|apprentice|nurse|teacher|selection|interview/i.test(t):
@@ -39,7 +46,7 @@ export default function Home(){
  
  <section className="headlineHub"><div className="wrap"><div className="headlineTop"><div><span className="eyebrow">🚨 GOVERNMENT JOBS & EXAMS</span><h2>What’s happening next?</h2><p>Official-source headlines, upcoming exams and recruitment updates — without fake urgency.</p></div><a href="/notifications">View all updates →</a></div>
  <div className="headlineTabs">{headlineTabs.map(t=><button key={t} className={headlineTab===t?"headlineTab active":"headlineTab"} onClick={()=>setHeadlineTab(t)}>{t}</button>)}</div>
- <div className="headlineGrid"><div className="headlineFeature"><div className="headlineFeatureHead"><span>🔵 UPCOMING EXAMS</span><a href="/upcoming-government-exams">See all →</a></div>{liveUpcoming.slice(0,4).map(({e,d,active})=><a className="headlineItem" href={"/exams/"+e.slug} key={e.slug}><span className="headlineIcon">◉</span><span><b>{e.name}</b><small>{e.organization} · Officially verified cycle{active?" · Applications upcoming":""}</small></span><strong>{d?d.toLocaleDateString("en-IN",{day:"2-digit",month:"short"}):"Date TBA"}</strong></a>)}{!liveUpcoming.length&&<div className="headlineEmpty">No upcoming official-verified exam cycle is currently available.</div>}</div>
+ <div className="headlineGrid"><div className="headlineFeature"><div className="headlineFeatureHead"><span>🔵 UPCOMING EXAMS</span><a href="/upcoming-government-exams">See all →</a></div>{liveUpcoming.slice(0,4).map(({e,d,active})=><a className="headlineItem" href={"/exams/"+e.slug} key={e.slug}><span className="headlineIcon">◉</span><span><b>{e.name}</b><small>{e.organization} · {e.dataStatus==="official-verified"?"Officially verified":e.dataCertainty==="tentative"?"Official tentative": "Official calendar"}{active?" · Applications upcoming":""}</small></span><strong>{d?d.toLocaleDateString("en-IN",{day:"2-digit",month:"short"}):"Date TBA"}</strong></a>)}{!liveUpcoming.length&&<div className="headlineEmpty">No upcoming official exam cycle or official tentative schedule is currently available.</div>}</div>
  <div className="headlineList"><div className="headlineFeatureHead"><span>🟢 GOVERNMENT JOBS & NOTICES</span><a href="/notifications">Open centre →</a></div>{filteredHeadlines.slice(0,5).map(n=><a className="headlineItem" href={n.notificationUrl||n.officialUrl} target="_blank" rel="noopener noreferrer" key={n.id}><span className="headlineBadge">{n.stage==="Application Open"?"APPLY NOW":n.stage==="Admit Card"?"ADMIT CARD":n.stage==="Answer Key"?"ANSWER KEY":n.stage==="Result"?"RESULT":n.stage==="Upcoming"?"UPCOMING":"NEW"}</span><span><b>{cleanFeedTitle(n.title)}</b><small>{n.organization} · ✓ {n.status}</small></span></a>)}{!filteredHeadlines.length&&<div className="headlineEmpty">No matching official-source updates in the current feed.</div>}</div></div>
  <div className="headlineTrust"><span>✓ Official source linked</span><span>✓ Automatic feed</span><span>✓ Organization-matched notices</span><span>✓ Verify final details in the official notification</span></div></div></section>
  <section className="statStrip"><div className="wrap stats"><div><b>{exams.length}+</b><span>Exam & recruitment guides</span></div><div><b>10+</b><span>Major career categories</span></div><div><b>10th → PG</b><span>Qualification pathways</span></div><div><b>Official</b><span>Source-first approach</span></div></div></section>
