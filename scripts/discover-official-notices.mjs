@@ -88,26 +88,23 @@ function extractLinks(html, source, pageUrl) {
 const discovered = [];
 const sourceResults = [];
 for (const source of sources) {
-  const candidateUrls = [source.updatesUrl, ...(Array.isArray(source.fallbackUrls) ? source.fallbackUrls : [])]
+  const commonDiscovery = ["sitemap.xml","robots.txt","notifications","notices","recruitment","recruitment-notices","career","careers","advertisement","advertisements","documents","document-category","latest-notices","news-events"];
+  const candidateUrls = [source.updatesUrl, ...(Array.isArray(source.fallbackUrls) ? source.fallbackUrls : []), ...(Array.isArray(source.discoveryUrls) ? source.discoveryUrls : []), ...commonDiscovery.map(p=>{try{return new URL(p,source.updatesUrl).href}catch{return null}})]
     .filter((url, index, list) => url && list.indexOf(url) === index);
-  let payload = null;
-  let fetchedUrl = null;
-  let method = null;
+  const pages = [];
   for (const candidateUrl of candidateUrls) {
-    payload = await fetchText(candidateUrl);
-    if (payload) {
-      fetchedUrl = candidateUrl;
-      method = payload.method;
-      break;
-    }
+    if (pages.length >= 8) break;
+    const payload = await fetchText(candidateUrl);
+    if (payload) pages.push({url:candidateUrl, ...payload});
   }
-  const items = payload && fetchedUrl ? extractLinks(payload.html, source, fetchedUrl) : [];
+  const items = pages.flatMap(page => extractLinks(page.html, source, page.url));
   sourceResults.push({
     id: source.id,
     discovered: items.length,
-    checked: Boolean(payload),
-    fetchedUrl,
-    method
+    checked: pages.length>0,
+    fetchedUrl: pages[0]?.url || null,
+    method: pages.length ? (pages.every(p=>p.method==="fetch")?"fetch":"mixed") : null,
+    pages: pages.map(p=>p.url)
   });
   discovered.push(...items);
 }
