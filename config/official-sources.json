@@ -45,7 +45,14 @@
     "category": "Entrance / Eligibility",
     "region": "Central",
     "updatesUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "scope": "NTA examination/public notices including NEET, JEE Main, UGC-NET and CUET."
+    "scope": "NTA examination/public notices including NEET, JEE Main, UGC-NET and CUET.",
+    "discoveryUrls": [
+      "https://neet.nta.nic.in/",
+      "https://neet.nta.nic.in/public-notices/",
+      "https://neet.nta.nic.in/admission-schedule/",
+      "https://jeemain.nta.nic.in/",
+      "https://ugcnet.nta.ac.in/"
+    ]
   },
   {
     "id": "ctet",
