@@ -37,7 +37,9 @@ export default async function ExamPage({params}:{params:Promise<{slug:string}>})
   const month=months[m[2].toLowerCase()];
   return month===undefined?null:new Date(Date.UTC(Number(m[3]),month,Number(m[1])));
  };
- const applicationStatus=getApplicationState(e,autoOverride);\n const examStatus=getExamState(e,autoOverride);\n const canApply=applicationStatus==="open" && !!e.applyUrl;
+ const applicationStatus=getApplicationState(e,autoOverride);
+ const examStatus=getExamState(e,autoOverride);
+ const canApply=applicationStatus==="open" && !!e.applyUrl;
  const applicationAction=applicationStatus==="closed"?"Application closed":applicationStatus==="upcoming"?"Application not open yet":"Official application portal";
  const age=autoAgeMin!==undefined&&autoAgeMax!==undefined?(autoAgeMin+"–"+autoAgeMax+" years"):e.minAge===0?"Check latest notification":e.minAge+"–"+e.maxAge+" years";
  const sourceCheck=Object.values(sourceStatuses).find(s=>{try{return new URL(e.officialUrl).hostname===new URL(s.sourceUrl).hostname}catch{return s.organization===e.organization}});
