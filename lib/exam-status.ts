@@ -38,12 +38,13 @@ export function getApplicationState(
  const raw=(override?.lastDate||exam.lastDate||"");
  if(/application\s*(closed|over)|form\s*(closed|over)/i.test(raw)) return "closed";
  const rawDates=datesFromText(raw);
- if(rawDates.length>=2 && /application|apply|form|submission/i.test(raw)){
+ if(rawDates.length>=2 && /application|apply|form|submission|tentatively/i.test(raw)){
   const start=rawDates[0].getTime(), end=rawDates[rawDates.length-1].getTime()+86400000-1;
   if(now<start) return "upcoming";
   if(now<=end) return "open";
   return "closed";
  }
+ if(rawDates.length===1 && rawDates[0].getTime()<now && !/see latest|notification-wise|notification/i.test(raw)) return "closed";
  if(explicit==="open"||explicit==="closed"||explicit==="upcoming") return explicit;
  return "unknown";
 }
