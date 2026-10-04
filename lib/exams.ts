@@ -1,5 +1,6 @@
 import {autoExamData} from "@/lib/auto-exam-data";
 import {currentExamOverrides} from "@/lib/current-exam-overrides";
+import {sourceStatuses} from "@/lib/source-status";
 
 // DATA INTEGRITY HARDENING
 export type Exam={
@@ -121,4 +122,29 @@ const applyAutoExamData=(e:Exam):Exam=>{
 };
 const allExamRecords=[...currentExamOverrides,...verifiedCurrent,...autoCurrentCycles,...cycleWithIntegrity,...familyExams.map(e=>({...e,dataStatus:"reference-family" as const,lastVerified:"2026-10-02",sourceUrl:e.officialUrl}))];
 const dedupedExamRecords=allExamRecords.filter((exam,index,all)=>all.findIndex(x=>x.slug===exam.slug)===index);
-export const exams:Exam[]=dedupedExamRecords.map(applyAutoExamData);
+const STATIC_SOURCE_BY_ORG:Record<string,string>={
+ "Staff Selection Commission":"ssc","UPSC":"upsc","IBPS":"ibps","National Testing Agency":"nta",
+ "CBSE":"ctet","State Bank of India":"sbi","Reserve Bank of India":"rbi",
+ "Indian Railways / RRB":"railways","Railway Recruitment Boards":"railways",
+ "LIC":"lic","EPFO":"epfo","ISRO":"isro","DRDO":"drdo","AIIMS":"aiims","ESIC":"esic"
+};
+const staticVerifiedSourceFresh=(e:Exam)=>{
+ if(e.dataStatus!=="official-verified")return true;
+ if(e.description?.startsWith("Current cycle generated automatically"))return true;
+ const sourceId=STATIC_SOURCE_BY_ORG[e.organization];
+ if(!sourceId)return false;
+ const source=sourceStatuses[sourceId];
+ if(!source||source.health!=="healthy"||!source.lastChecked)return false;
+ const checked=Date.parse(source.lastChecked+"T23:59:59Z");
+ return Number.isFinite(checked) && (Date.now()-checked)<=3*86400000;
+};
+export const exams:Exam[]=dedupedExamRecords.map(e=>{
+ const gated=staticVerifiedSourceFresh(e)?e:{
+   ...e,
+   dataStatus:e.status==="cycle"?"official-calendar":e.dataStatus,
+   description:e.status==="cycle"
+     ?"Official source is not currently healthy/fresh enough for a live verification badge. Check the authority notice before applying."
+     :e.description
+ };
+ return applyAutoExamData(gated);
+});
