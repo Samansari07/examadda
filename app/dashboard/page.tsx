@@ -4,9 +4,23 @@ import {useEffect,useMemo,useState} from "react";
 import {exams} from "@/lib/exams";
 import {autoExamData} from "@/lib/auto-exam-data";
 import {getApplicationState,getExamState} from "@/lib/exam-status";
+import {educationMatches} from "@/lib/eligibility";
 
 type Profile={age:string;education:string;category:string;state:string};
 type Task={id:string;label:string;done:boolean};
+
+const DEFAULT_TASKS:Task[]=[
+ {id:"quiz",label:"Complete today's 3-question quiz",done:false},
+ {id:"discover",label:"Check new government opportunities",done:false},
+ {id:"revise",label:"Revise one weak topic for 20 minutes",done:false},
+ {id:"save",label:"Save at least one opportunity to your shortlist",done:false},
+];
+
+function localDayKey(){
+ const d=new Date();
+ const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,"0"),day=String(d.getDate()).padStart(2,"0");
+ return y+"-"+m+"-"+day;
+}
 
 const quiz=[
  {q:"The Constitution of India came into force on:",a:["15 August 1947","26 January 1950","26 November 1949","2 October 1950"],correct:1},
@@ -25,30 +39,39 @@ function dateFrom(value?:string){
 export default function Dashboard(){
  const [profile,setProfile]=useState<Profile>({age:"",education:"",category:"General",state:""});
  const [saved,setSaved]=useState<string[]>([]);
- const [tasks,setTasks]=useState<Task[]>([
-  {id:"quiz",label:"Complete today's 3-question quiz",done:false},
-  {id:"discover",label:"Check new government opportunities",done:false},
-  {id:"revise",label:"Revise one weak topic for 20 minutes",done:false},
-  {id:"save",label:"Save at least one opportunity to your shortlist",done:false},
- ]);
+ const [tasks,setTasks]=useState<Task[]>(DEFAULT_TASKS.map(t=>({...t})));
  const [quizIndex,setQuizIndex]=useState(0);
  const [quizScore,setQuizScore]=useState<number|null>(null);
  const [profileOpen,setProfileOpen]=useState(false);
  const [streak,setStreak]=useState(0);
- const [lastVisit,setLastVisit]=useState("");
- const [todayDone,setTodayDone]=useState(false);
 
  useEffect(()=>{
    try{
      const p=localStorage.getItem("sarkariprep_profile");
      const s=localStorage.getItem("sarkariprep_saved");
      const t=localStorage.getItem("sarkariprep_tasks");
+     const taskDay=localStorage.getItem("sarkariprep_task_day");
+     const today=localDayKey();
      if(p)setProfile(JSON.parse(p));
      if(s)setSaved(JSON.parse(s));
-     if(t){
+     if(taskDay===today&&t){
        const parsed=JSON.parse(t);
        if(Array.isArray(parsed))setTasks(parsed);
+     }else{
+       const fresh=DEFAULT_TASKS.map(x=>({...x}));
+       setTasks(fresh);
+       localStorage.setItem("sarkariprep_tasks",JSON.stringify(fresh));
+       localStorage.setItem("sarkariprep_task_day",today);
      }
+     const previous=localStorage.getItem("sarkariprep_last_visit");
+     const stored=Number(localStorage.getItem("sarkariprep_streak")||"0");
+     const previousDate=previous?new Date(previous+"T00:00:00"):null;
+     const todayDate=new Date(today+"T00:00:00");
+     const diff=previousDate?Math.round((todayDate.getTime()-previousDate.getTime())/86400000):0;
+     const nextStreak=previous===today?Math.max(1,stored):diff===1?Math.max(1,stored)+1:1;
+     setStreak(nextStreak);
+     localStorage.setItem("sarkariprep_streak",String(nextStreak));
+     localStorage.setItem("sarkariprep_last_visit",today);
    }catch{}
  },[]);
 
@@ -67,11 +90,15 @@ export default function Dashboard(){
    try{localStorage.setItem("sarkariprep_saved",JSON.stringify(next));}catch{}
  }
  function answerQuiz(i:number){
-   if(i===quiz[quizIndex].correct){
-     setQuizScore(s=>(s??0)+1);
-   }
+   const correct=i===quiz[quizIndex].correct;
+   const nextScore=(quizScore??0)+(correct?1:0);
+   setQuizScore(nextScore);
    if(quizIndex<quiz.length-1)setQuizIndex(x=>x+1);
-   else setTasks(ts=>ts.map(t=>t.id==="quiz"?{...t,done:true}:t));
+   else{
+     setQuizIndex(quiz.length);
+     setTasks(ts=>ts.map(t=>t.id==="quiz"?{...t,done:true}:t));
+     try{localStorage.setItem("sarkariprep_tasks",JSON.stringify(tasks.map(t=>t.id==="quiz"?{...t,done:true}:t)));}catch{}
+   }
  }
 
  const statuses=useMemo(()=>exams.map(e=>{
@@ -91,9 +118,7 @@ export default function Dashboard(){
    const catOk=x.e.categories?.length?x.e.categories.includes(profile.category):true;
    if(catOk){score+=20;reasons.push("Category accepted")} else reasons.push("Category may differ");
    if(education){
-     const words=education.split(/[,\\s]+/).filter(w=>w.length>2);
-     const qtext=(x.e.qualifications+" "+x.e.name+" "+x.e.category).toLowerCase();
-     const hit=words.some(w=>qtext.includes(w));
+     const hit=educationMatches(education,x.e.qualifications);
      if(hit){score+=35;reasons.push("Education matches")} else reasons.push("Qualification needs checking");
    }else reasons.push("Add education");
    if(profile.state){
