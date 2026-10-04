@@ -60,13 +60,6 @@ export default async function ExamPage({params}:{params:Promise<{slug:string}>})
  const age=autoAgeMin!==undefined&&autoAgeMax!==undefined?(autoAgeMin+"–"+autoAgeMax+" years"):e.minAge===0?"Check latest notification":e.minAge+"–"+e.maxAge+" years";
  const sourceCheck=Object.values(sourceStatuses).find(s=>{try{return new URL(e.officialUrl).hostname===new URL(s.sourceUrl).hostname}catch{return s.organization===e.organization}});
  const examHost=(()=>{try{return new URL(e.officialUrl).hostname.replace(/^www\./,"").toLowerCase()}catch{return ""}})();
- const trackedUpdates=autoNotifications.filter(n=>{
-  // Never attach a notice merely because its title contains similar words.
-  // Notices must come from the same registered official host as this exam.
-  // This prevents cross-organization leakage such as JPSC notices appearing on OPSC.
-  const noticeHost=(()=>{try{return new URL(n.officialUrl).hostname.replace(/^www\./,"").toLowerCase()}catch{return ""}})();
-  return !!examHost && !!noticeHost && examHost===noticeHost;
- }).slice(0,5);
  const sourceTracked=!!sourceCheck;
  const detail=getDetailProfile(e);
  const lifecycle=e.lifecycleStatus||"historical";
