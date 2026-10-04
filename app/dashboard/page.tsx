@@ -160,6 +160,21 @@ export default function Dashboard(){
     </section>
 
     <section className="dashboardSection">
+      <div className="dashSectionHead"><div><span className="eyebrow">🧬 SMART ELIGIBILITY</span><h2>Your best matches</h2></div><span className="quizScore">🔥 {streak} day streak</span></div>
+      {!profile.age&&!profile.education?<div className="dashEmpty">Age + education add karo. Uske baad SarkariPrep tumhare profile ke hisaab se opportunities rank karega.</div>:<div className="matchGrid">{bestMatches.map(({e,score,reasons})=><a href={"/exams/"+e.slug} className="matchCard" key={e.slug}><div className="matchScore">{score}% match</div><h3>{e.name}</h3><p>{e.organization} · {e.category}</p><div className="matchReasons">{reasons.slice(0,3).map(reason=><span key={reason}>✓ {reason}</span>)}</div><b>View eligibility →</b></a>)}{bestMatches.length===0&&<div className="dashEmpty">Abhi high-confidence match nahi mila. Profile details complete karo; final eligibility hamesha official notification se verify karo.</div>}</div>}
+    </section>
+
+    <section className="dashboardSection roadmapSection">
+      <div className="dashSectionHead"><div><span className="eyebrow">🗺️ YOUR ROADMAP</span><h2>Next 4 steps</h2></div><span className="quizScore">{completion}% progress</span></div>
+      <div className="roadmapGrid">
+       <div className="roadStep"><i>01</i><b>Profile complete karo</b><span>Age, education, category & state</span></div>
+       <div className="roadStep"><i>02</i><b>Eligible exams shortlist karo</b><span>Best matches se 3–5 targets choose karo</span></div>
+       <div className="roadStep"><i>03</i><b>Official notification verify karo</b><span>Date, eligibility, fee & vacancy confirm karo</span></div>
+       <div className="roadStep"><i>04</i><b>Daily preparation loop</b><span>Quiz → revision → saved target → repeat</span></div>
+      </div>
+    </section>
+
+    <section className="dashboardSection">
       <div className="dashSectionHead"><div><span className="eyebrow">🎯 FOR YOU</span><h2>Opportunities to check</h2></div><a href="/exams">Full directory →</a></div>
       <div className="opportunityGrid">{recommendations.map(({e,app,exam})=><article className="opportunity" key={e.slug}>
         <div className="oppTop"><span>{e.category}</span><button onClick={()=>saveExam(e.slug)}>{saved.includes(e.slug)?"★ Saved":"☆ Save"}</button></div>
