@@ -46,6 +46,7 @@ export function inferExamLifecycle(
     const checked=n.lastChecked?Date.parse(n.lastChecked+"T23:59:59Z"):0;
     if(!checked || checked<freshCutoff) return false;
     const hay=(n.title+" "+(n.notificationUrl||"")+" "+(n.officialUrl||"")).toLowerCase();
+    if(currentYear && !hay.includes(String(year))) return false;
     const examName=exam.name.toLowerCase().replace(/[^a-z0-9]+/g," ");
     const tokens=examName.split(" ").filter(x=>x.length>=3 && !/^20\d{2}$/.test(x));
     return tokens.some(t=>hay.includes(t));
