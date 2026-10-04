@@ -117,7 +117,9 @@ const applyAutoExamData=(e:Exam):Exam=>{
   notificationUrl:o.notificationUrl,
   sourceUrl:o.sourceUrl,
   lastVerified:o.lastVerified,
-  dataStatus:verified?"official-verified":(e.dataStatus==="official-verified"?"official-verified":"official-calendar"),
+  dataStatus:verified?(o.dataCertainty==="confirmed"?"official-verified":"official-calendar"):(e.dataStatus==="official-verified"?"official-verified":"official-calendar"),
+  dataCertainty:verified?o.dataCertainty:e.dataCertainty,
+  applicationStatus:verified?(o.applicationStatus||e.applicationStatus||"unknown"):e.applicationStatus,
   description:"Current cycle data automatically refreshed from a high-confidence official notice on "+o.lastVerified+". The authority notice remains the controlling source; older cycle values are not carried forward.",
  };
 };
