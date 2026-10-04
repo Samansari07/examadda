@@ -43,7 +43,7 @@ export const parseExamEndDate = (value: string): string | null => {
     const year = Number(m[3] || explicitYear);
     const day = Number(m[1]);
     return new Date(Date.UTC(year, month, day));
-  }).filter((d): d is Date => Boolean(d) && !Number.isNaN(d.getTime()));
+  }).filter((d): d is Date => d !== null && !Number.isNaN(d.getTime()));
 
   if (!parsed.length) return null;
   return parsed[parsed.length - 1].toISOString().slice(0, 10);
