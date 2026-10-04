@@ -107,8 +107,8 @@ async function htmlText(url){
 }
 function dataCertainty(text){
   const s=String(text||"");
-  if(/annuals+calendar|exams+calendar|indicatives+notice/i.test(s)&&!/detaileds+(?:employments+)?notification|centraliseds+employments+notification|notifications+fors+recruitment/i.test(s))return "calendar";
-  if(/tentative|indicative|proposed|expected|likely|subjects+tos+change|mays+bes+conducted/i.test(s))return "tentative";
+  if(/annual\s+calendar|exam\s+calendar|indicative\s+notice/i.test(s)&&!/detailed\s+(?:employment\s+)?notification|centralised\s+employment\s+notification|notification\s+for\s+recruitment/i.test(s))return "calendar";
+  if(/tentative|indicative|proposed|expected|likely|subject\s+to\s+change|may\s+be\s+conducted/i.test(s))return "tentative";
   return "confirmed";
 }
 function applicationWindowStatus(data,now=new Date()){
