@@ -69,7 +69,7 @@ const autoCurrentCycles:Exam[]=Object.values(autoExamData)
  })
  .filter((e):e is Exam=>Boolean(e));
 
-const cycleWithIntegrity=cycleExams.filter(e=>e.slug!=="ssc-cgl-2026" && e.slug!=="cds-ii-2026" && e.slug!=="rrb-ntpc-2026").map(e=>({...e,status:"cycle" as const,dataStatus:"historical-reference" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl,vacancies:"See latest official notification",minAge:0,maxAge:100,qualifications:"Post-specific; see latest official notification",examDate:"See latest official notification",lastDate:"See latest official notification",description:e.description||"Historical 2026 cycle reference. Exact dates, vacancies and eligibility are not treated as live. Verify the latest official notification before applying."}));
+const cycleWithIntegrity=cycleExams.filter(e=>e.slug!=="ssc-cgl-2026" && e.slug!=="cds-ii-2026").map(e=>({...e,status:"cycle" as const,dataStatus:"historical-reference" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl,vacancies:"See latest official notification",minAge:0,maxAge:100,qualifications:"Post-specific; see latest official notification",examDate:"See latest official notification",lastDate:"See latest official notification",description:e.description||"Historical 2026 cycle reference. Exact dates, vacancies and eligibility are not treated as live. Verify the latest official notification before applying."}));
 const verifiedCurrent:Exam[]=[{
  slug:"ssc-cgl-2026",name:"SSC CGL 2026",organization:"Staff Selection Commission",category:"Central Government",
  vacancies:"10,731 tentative (as on 24 September 2026)",minAge:18,maxAge:32,
