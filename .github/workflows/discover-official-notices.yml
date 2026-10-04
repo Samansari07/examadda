@@ -1,14 +1,7 @@
 # v2 - resilient discovery run
-name: Discover official recruitment notices
+name: Discover official recruitment notices (manual fallback)
 
 on:
-  push:
-    paths:
-      - "scripts/discover-official-notices.mjs"
-      - "config/official-sources.json"
-      - ".github/workflows/discover-official-notices.yml"
-  schedule:
-    - cron: "17 */6 * * *"
   workflow_dispatch:
 
 permissions:
