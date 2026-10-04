@@ -8,6 +8,12 @@ function datesFromText(value:string):Date[]{
  for(const m of value.matchAll(/20\d{2}-\d{2}-\d{2}/g)){
   const d=new Date(m[0]+"T23:59:59Z"); if(!Number.isNaN(d.getTime())) out.push(d);
  }
+ for(const m of value.matchAll(/\b(\d{1,2})\s+([A-Za-z]{3,9})\s*[–—-]\s*(\d{1,2})\s+([A-Za-z]{3,9})\s+(20\d{2})\b/g)){
+  const monthA=MONTHS[m[2].toLowerCase()], monthB=MONTHS[m[4].toLowerCase()]; if(monthA===undefined||monthB===undefined) continue;
+  const year=Number(m[5]);
+  const a=new Date(Date.UTC(year,monthA,Number(m[1]),23,59,59)), b=new Date(Date.UTC(year,monthB,Number(m[3]),23,59,59));
+  if(!Number.isNaN(a.getTime())) out.push(a); if(!Number.isNaN(b.getTime())) out.push(b);
+ }
  for(const m of value.matchAll(/\b(\d{1,2})[\s–—-]+([A-Za-z]{3,9})[\s–—-]+(20\d{2})\b/g)){
   const month=MONTHS[m[2].toLowerCase()]; if(month===undefined) continue;
   const d=new Date(Date.UTC(Number(m[3]),month,Number(m[1]),23,59,59)); if(!Number.isNaN(d.getTime())) out.push(d);
