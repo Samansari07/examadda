@@ -28,7 +28,7 @@ function cycleYearFromExam(exam:{name:string;slug:string;examDate:string}){
 }
 
 export function inferExamLifecycle(
-  exam:{name:string;slug:string;examDate:string;lastDate:string;applicationStatus?:string;dataStatus?:string;lifecycleSourceHosts?:string[];lifecycleKeywords?:string[]},
+  exam:{name:string;slug:string;examDate:string;lastDate:string;officialUrl?:string;applicationStatus?:string;dataStatus?:string;lifecycleSourceHosts?:string[];lifecycleKeywords?:string[]},
   notices:Array<{title:string;stage?:string;lastChecked?:string;officialUrl?:string;notificationUrl?:string}>=[]
 ):ExamLifecycle{
   const now=Date.now();
@@ -47,7 +47,7 @@ export function inferExamLifecycle(
     if(!checked || checked<freshCutoff) return false;
     const hay=(n.title+" "+(n.notificationUrl||"")+" "+(n.officialUrl||"")).toLowerCase();
     const noticeHost=(()=>{try{return new URL(n.officialUrl||n.notificationUrl||"").hostname.replace(/^www\\./,"").toLowerCase()}catch{return ""}})();
-    const examHost=(()=>{try{return new URL((exam as any).officialUrl||"").hostname.replace(/^www\\./,"").toLowerCase()}catch{return ""}})();
+    const examHost=(()=>{try{return new URL(exam.officialUrl||"").hostname.replace(/^www\\./,"").toLowerCase()}catch{return ""}})();
     const allowedHosts=[examHost,...(exam.lifecycleSourceHosts||[])].filter(Boolean).map(x=>x.replace(/^www\\./,"").toLowerCase());
     const hostMatched=allowedHosts.includes(noticeHost);
     const examName=exam.name.toLowerCase().replace(/[^a-z0-9]+/g," ");
