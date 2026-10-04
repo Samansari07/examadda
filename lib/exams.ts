@@ -8,7 +8,7 @@ export type Exam={
  minAge:number; maxAge:number; qualifications:string; categories:string[];
  examDate:string; lastDate:string; officialUrl:string; salary:string;
  status?: "cycle"|"family"; description?:string;
- dataStatus?: "official-verified"|"official-calendar"|"historical-reference"|"reference-family"; lastVerified?: string; sourceUrl?: string; notificationUrl?: string; applyUrl?: string; applicationStatus?: "open"|"closed"|"upcoming"|"unknown";
+ dataStatus?: "official-verified"|"official-calendar"|"historical-reference"|"reference-family"; dataCertainty?: "confirmed"|"tentative"|"calendar"; lastVerified?: string; sourceUrl?: string; notificationUrl?: string; applyUrl?: string; applicationStatus?: "open"|"closed"|"upcoming"|"unknown";
 };
 
 const cycleExams:Exam[]=[
@@ -52,12 +52,13 @@ const autoCurrentCycles:Exam[]=Object.values(autoExamData)
      slug:o.cycleSlug!,
      name:o.name||family.name+" "+o.cycleYear,
      status:"cycle" as const,
-     dataStatus:"official-verified" as const,
+     dataStatus:(o.dataCertainty==="confirmed"?"official-verified":"official-calendar") as "official-verified"|"official-calendar",
+     dataCertainty:o.dataCertainty,
      lastVerified:o.lastVerified,
      sourceUrl:o.sourceUrl,
      notificationUrl:o.notificationUrl,
      applyUrl:o.notificationUrl,
-     applicationStatus:"unknown",
+     applicationStatus:o.applicationStatus||"unknown",
      vacancies:o.vacancies||"See official notification",
      minAge:typeof o.minAge==="number"?o.minAge:family.minAge,
      maxAge:typeof o.maxAge==="number"?o.maxAge:family.maxAge,
