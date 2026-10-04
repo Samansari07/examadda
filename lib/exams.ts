@@ -1,6 +1,8 @@
 import {autoExamData} from "@/lib/auto-exam-data";
 import {currentExamOverrides} from "@/lib/current-exam-overrides";
 import {sourceStatuses} from "@/lib/source-status";
+import {autoNotifications} from "@/lib/auto-notifications";
+import {inferExamLifecycle, type ExamLifecycle} from "@/lib/exam-lifecycle";
 
 // DATA INTEGRITY HARDENING
 export type Exam={
@@ -8,7 +10,7 @@ export type Exam={
  minAge:number; maxAge:number; qualifications:string; categories:string[];
  examDate:string; lastDate:string; officialUrl:string; salary:string;
  status?: "cycle"|"family"; description?:string;
- dataStatus?: "official-verified"|"official-calendar"|"historical-reference"|"reference-family"; dataCertainty?: "confirmed"|"tentative"|"calendar"; lastVerified?: string; sourceUrl?: string; notificationUrl?: string; applyUrl?: string; applicationStatus?: "open"|"closed"|"upcoming"|"unknown";
+ dataStatus?: "official-verified"|"official-calendar"|"historical-reference"|"reference-family"; dataCertainty?: "confirmed"|"tentative"|"calendar"; lastVerified?: string; sourceUrl?: string; notificationUrl?: string; applyUrl?: string; applicationStatus?: "open"|"closed"|"upcoming"|"unknown"; lifecycleStatus?: ExamLifecycle;
 };
 
 const cycleExams:Exam[]=[
@@ -69,7 +71,7 @@ const autoCurrentCycles:Exam[]=Object.values(autoExamData)
  })
  .filter((e):e is Exam=>Boolean(e));
 
-const cycleWithIntegrity=cycleExams.filter(e=>e.slug!=="ssc-cgl-2026" && e.slug!=="cds-ii-2026").map(e=>({...e,status:"cycle" as const,dataStatus:"historical-reference" as const,lastVerified:"2026-09-27",sourceUrl:e.officialUrl,vacancies:"See latest official notification",minAge:0,maxAge:100,qualifications:"Post-specific; see latest official notification",examDate:"See latest official notification",lastDate:"See latest official notification",description:e.description||"Historical 2026 cycle reference. Exact dates, vacancies and eligibility are not treated as live. Verify the latest official notification before applying."}));
+const cycleWithIntegrity=cycleExams.filter(e=>e.slug!=="ssc-cgl-2026" && e.slug!=="cds-ii-2026").map(e=>({...e,status:"cycle" as const,dataStatus:"official-calendar" as const,lastVerified:e.lastVerified||"2026-10-04",sourceUrl:e.sourceUrl||e.officialUrl,description:e.description||"Current-year cycle reference. The registered official source is controlling; fields not supported by a fresh official notice are shown as calendar/reference data, not as live verified facts."}));
 const verifiedCurrent:Exam[]=[{
  slug:"ssc-cgl-2026",name:"SSC CGL 2026",organization:"Staff Selection Commission",category:"Central Government",
  vacancies:"10,731 tentative (as on 24 September 2026)",minAge:18,maxAge:32,
@@ -126,7 +128,7 @@ const applyAutoExamData=(e:Exam):Exam=>{
 const allExamRecords=[...currentExamOverrides,...verifiedCurrent,...autoCurrentCycles,...cycleWithIntegrity,...familyExams.map(e=>({...e,dataStatus:"reference-family" as const,lastVerified:"2026-10-02",sourceUrl:e.officialUrl}))];
 const dedupedExamRecords=allExamRecords.filter((exam,index,all)=>all.findIndex(x=>x.slug===exam.slug)===index);
 const STATIC_SOURCE_BY_ORG:Record<string,string>={
- "Staff Selection Commission":"ssc","UPSC":"upsc","IBPS":"ibps","National Testing Agency":"nta",
+ "Staff Selection Commission":"ssc","SSC":"ssc","UPSC":"upsc","IBPS":"ibps","National Testing Agency":"nta","NTA":"nta",
  "CBSE":"ctet","State Bank of India":"sbi","Reserve Bank of India":"rbi",
  "Indian Railways / RRB":"railways","Railway Recruitment Boards":"railways",
  "LIC":"lic","EPFO":"epfo","ISRO":"isro","DRDO":"drdo","AIIMS":"aiims","ESIC":"esic"
@@ -149,5 +151,6 @@ export const exams:Exam[]=dedupedExamRecords.map(e=>{
      ?"Official source is not currently healthy/fresh enough for a live verification badge. Check the authority notice before applying."
      :e.description
  };
- return applyAutoExamData(gated);
+ const applied=applyAutoExamData(gated);
+ return {...applied,lifecycleStatus:inferExamLifecycle(applied,autoNotifications)};
 });
