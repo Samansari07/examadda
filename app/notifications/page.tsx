@@ -8,14 +8,15 @@ import {cleanFeedTitle,isFeedUseful} from "@/lib/notification-feed";
 export const metadata={title:"Latest Government Notifications | SarkariPrep",description:"Latest government exam and recruitment notifications from registered official sources.",alternates:{canonical:"https://sarkariprep.online/notifications"},openGraph:{title:"Latest Government Notifications | SarkariPrep",description:"Latest government exam and recruitment notifications from registered official sources.",url:"https://sarkariprep.online/notifications",siteName:"SarkariPrep",type:"website",locale:"en_IN",images:[{url:"https://sarkariprep.online/opengraph-image",width:1200,height:630,alt:"SarkariPrep notifications"}]},twitter:{card:"summary_large_image",title:"Latest Government Notifications | SarkariPrep",description:"Latest government exam and recruitment notifications from registered official sources.",images:["https://sarkariprep.online/opengraph-image"]}};
 
 type NotificationCardItem={
- id:string; title:string; organization:string; category:string;
+ id:string; title:string; organization:string; category:string; publishedDate?:string;
  stage:"Application Open"|"Upcoming"|"Admit Card"|"Answer Key"|"Result"|"Recruitment"|"Notice";
  status:"Verified official"|"Detected on official source"; lastChecked:string; officialUrl:string;
  notificationUrl?:string; applyUrl?:string; applicationLastDate?:string; examDate?:string; qualification?:string; description:string;
 };
 
 export default function NotificationsPage(){
- const rawMerged:NotificationCardItem[]=[...autoNotifications,...discoveredOfficialNotices,...notifications.filter(n=>!autoNotifications.some(a=>a.notificationUrl===n.notificationUrl)&&!discoveredOfficialNotices.some(d=>d.notificationUrl===n.notificationUrl))];
+ const discovered=discoveredOfficialNotices as unknown as NotificationCardItem[];
+ const rawMerged:NotificationCardItem[]=[...autoNotifications,...discovered,...notifications.filter(n=>!autoNotifications.some(a=>a.notificationUrl===n.notificationUrl)&&!discovered.some(d=>d.notificationUrl===n.notificationUrl))];
  const merged=rawMerged.filter(n=>isFeedUseful(n)).sort((a,b)=>new Date(b.publishedDate||b.lastChecked).getTime()-new Date(a.publishedDate||a.lastChecked).getTime());
  const open=merged.filter(n=>n.stage==="Application Open");
  const other=merged.filter(n=>n.stage!=="Application Open");
