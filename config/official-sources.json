@@ -31,12 +31,14 @@
     "updatesUrl": "https://www.ibps.in/index.php/crp-updates/",
     "scope": "Banking recruitment notifications, corrigenda, calendars, results and vacancy updates.",
     "fallbackUrls": [
-      "https://www.ibps.in/"
+      "https://www.ibps.in/",
+      "https://ibpsreg.ibps.in/crppoxvijun26/"
     ],
     "discoveryUrls": [
       "https://www.ibps.in/index.php/rural-bank-xv/",
       "https://www.ibps.in/index.php/management-trainees-xvi/",
-      "https://www.ibps.in/index.php/specialist-officers-xvi/"
+      "https://www.ibps.in/index.php/specialist-officers-xvi/",
+      "https://ibpsreg.ibps.in/crppoxvijun26/"
     ]
   },
   {
@@ -93,14 +95,19 @@
       "https://rrbsecunderabad.gov.in/",
       "https://rrbbbs.gov.in/",
       "https://rrbbbs.gov.in/notifications.php",
-      "http://www.rrbcdg.gov.in/"
+      "http://www.rrbcdg.gov.in/",
+      "https://www.rrbchennai.gov.in/",
+      "https://www.rrbkolkata.gov.in/"
     ],
     "discoveryUrls": [
       "https://www.rrbcdg.gov.in/employment-notices.php",
       "https://www.rrbcdg.gov.in/",
       "https://www.rrbcdg.gov.in/2026-01-alp.php",
       "https://www.rrbbbs.gov.in/cen.php",
-      "https://www.rrbbbs.gov.in/notifications.php"
+      "https://www.rrbbbs.gov.in/notifications.php",
+      "https://www.rrbcdg.gov.in/uploads/",
+      "https://www.rrbchennai.gov.in/",
+      "https://www.rrbkolkata.gov.in/"
     ]
   },
   {
