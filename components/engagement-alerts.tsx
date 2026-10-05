@@ -75,8 +75,7 @@ export default function EngagementAlerts({examSlug,examName}:Props){
     const data={
       title:examName?examName+" | SarkariPrep":"SarkariPrep",
       text:examName?("🚨 "+examName+" ka latest government exam update. Official details SarkariPrep par check karo."):"🇮🇳 Government jobs & exams miss mat karo — SarkariPrep share karo.",
-      url:window.location.href
-    };
+      // Always share the public SarkariPrep domain, even when the page is opened from a Vercel preview URL.\n      url:new URL(window.location.pathname+window.location.search,"https://sarkariprep.online").toString()\n    };
     try{
       if(navigator.share) await navigator.share(data);
       else window.open("https://wa.me/?text="+encodeURIComponent(data.text+" "+data.url),"_blank","noopener,noreferrer");
