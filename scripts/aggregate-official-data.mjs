@@ -45,8 +45,23 @@ if(ctetCurrent){
     "CTET correction window: 07 September 2026 to 10 September 2026."
   ];
 }
-const seen=new Set(),notifications=[];
-for(const x of all){const key=(x.notificationUrl||x.title).split("#")[0];if(seen.has(key))continue;seen.add(key);notifications.push(x)}
+const notificationScore=x=>{
+  const title=String(x.title||"").trim();
+  const url=String(x.notificationUrl||"");
+  return (url.includes(".pdf")?3:0)+(url.length>70?1:0)+(title.length>20?1:0)+(x.applicationLastDate||x.applicationDates||x.examDate?2:0);
+};
+const normalizeNoticeKey=value=>String(value||"").toLowerCase()
+  .replace(/&amp;/g," and ").replace(/[^a-z0-9]+/g," ").replace(/\\b(?:online|apply|application|notice|notification)\\b/g," ")
+  .replace(/\\s+/g," ").trim();
+const noticeMap=new Map();
+for(const x of all){
+  const urlKey=String(x.notificationUrl||x.title).split("#")[0];
+  const semanticKey=[String(x.organization||"").toLowerCase(),normalizeNoticeKey(x.title),String(x.stage||"").toLowerCase()].join("|");
+  const key=semanticKey.length>3?semanticKey:urlKey;
+  const previous=noticeMap.get(key);
+  if(!previous || notificationScore(x)>notificationScore(previous)) noticeMap.set(key,x);
+}
+const notifications=[...noticeMap.values()];
 const currentYear=new Date().getUTCFullYear();
 const MONTHS={january:0,february:1,march:2,april:3,may:4,june:5,july:6,august:7,september:8,october:9,november:10,december:11};
 const parseDateToken=value=>{
