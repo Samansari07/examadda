@@ -29,14 +29,16 @@ async function fetchSource(source){
     try{
       const x=new URL(u);
       if(x.hostname.startsWith("www."))x.hostname=x.hostname.slice(4);
-      else if(!x.hostname.startsWith("www."))x.hostname="www."+x.hostname;
+      else x.hostname="www."+x.hostname;
       if(x.href!==u)urls.push(x.href);
     }catch{}
   }
   const attempts=[],pages=[];
+  const deadline=Date.now()+45000;
   const fetchOne=async url=>{
+    if(Date.now()>=deadline)return null;
     try{
-      const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(12000)});
+      const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(7000)});
       const ct=r.headers.get("content-type")||"";
       if(r.ok&&(ct.includes("html")||ct.includes("xml")||ct.includes("text"))){
         const html=await r.text();
@@ -44,18 +46,20 @@ async function fetchSource(source){
       }
       attempts.push(url+" -> HTTP "+r.status);
     }catch(e){attempts.push(url+" -> "+String(e))}
+    if(Date.now()>=deadline)return null;
     try{
-      const {stdout}=await execFileAsync("curl",["-L","--ipv4","--http1.1","--connect-timeout","6","--max-time","14","--retry","1","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:12*1024*1024});
+      const {stdout}=await execFileAsync("curl",["-L","--ipv4","--http1.1","--connect-timeout","4","--max-time","8","--retry","0","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:12*1024*1024});
       if(stdout.length>120)return{url,html:stdout,method:"curl"};
     }catch(e){attempts.push(url+" -> curl "+String(e))}
     return null;
   };
-  for(const url of [...new Set(urls)]){
-    if(pages.length>=8)break;
-    const page=await fetchOne(url);
-    if(page)pages.push(page);
+  const uniqueUrls=[...new Set(urls)];
+  for(let i=0;i<uniqueUrls.length&&pages.length<8&&Date.now()<deadline;i+=4){
+    const chunk=uniqueUrls.slice(i,i+4);
+    const found=await Promise.all(chunk.map(fetchOne));
+    for(const page of found)if(page)pages.push(page);
   }
-  if(!pages.length)throw new Error(attempts.join(" | "));
+  if(!pages.length)throw new Error("No reachable official page within 45s. "+attempts.slice(-12).join(" | "));
   return{
     url:pages[0].url,
     html:pages.map(p=>p.html).join("\n"),
