@@ -42,7 +42,7 @@ export default function EngagementAlerts({examSlug,examName}:Props){
     document.addEventListener("visibilitychange",onVisible);
     const onControllerChange=()=>window.location.reload();
     navigator.serviceWorker?.addEventListener("controllerchange",onControllerChange);
-    return()=>{window.removeEventListener("beforeinstallprompt",onBefore);document.removeEventListener("visibilitychange",onVisible);navigator.serviceWorker?.removeEventListener("controllerchange",onControllerChange)};
+    return()=>{window.removeEventListener("beforeinstallprompt",onBefore);window.removeEventListener("appinstalled",onInstalled);displayMode.removeEventListener?.("change",onDisplayModeChange);document.removeEventListener("visibilitychange",onVisible);navigator.serviceWorker?.removeEventListener("controllerchange",onControllerChange)};
   },[]);
 
   async function install(){
@@ -52,7 +52,12 @@ export default function EngagementAlerts({examSlug,examName}:Props){
     }
     await installEvent.prompt();
     const result=await installEvent.userChoice;
-    if(result?.outcome==="accepted") setInstalled(true);
+    if(result?.outcome==="accepted"){
+      setInstalled(true);
+      setMessage("✓ Install request accept ho gaya. SarkariPrep app launcher/home screen mein available hoga.");
+    }else{
+      setMessage("Install cancel hua. Jab ready ho, Install App par dobara tap kar sakte ho.");
+    }
     setInstallEvent(null);
   }
 
