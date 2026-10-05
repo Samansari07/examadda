@@ -3,9 +3,8 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "devCommand": "next dev",
-  "git": {
-    "deploymentEnabled": {
-      "main": true
-    }
-  }
+  "git": {"deploymentEnabled": {"main": true}},
+  "crons": [
+    {"path": "/api/push/daily", "schedule": "0 9 * * *"}
+  ]
 }
