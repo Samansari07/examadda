@@ -23,7 +23,8 @@ export default function EngagementAlerts({examSlug,examName}:Props){
     if(typeof window==="undefined") return;
     const onBefore=(e:any)=>{e.preventDefault();setInstallEvent(e)};
     window.addEventListener("beforeinstallprompt",onBefore);
-    const syncInstalled=()=>setInstalled(window.matchMedia("(display-mode: standalone)").matches||(navigator as any).standalone===true);\n    syncInstalled();
+    const syncInstalled=()=>setInstalled(window.matchMedia("(display-mode: standalone)").matches||(navigator as any).standalone===true);
+    syncInstalled();
     setPermission("Notification" in window?Notification.permission:"unsupported");
     let registration: ServiceWorkerRegistration|undefined;
     navigator.serviceWorker?.register("/sw.js").then(reg=>{
