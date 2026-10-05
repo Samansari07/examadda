@@ -26,6 +26,8 @@ export default function EngagementAlerts({examSlug,examName}:Props){
     const syncInstalled=()=>setInstalled(window.matchMedia("(display-mode: standalone)").matches||(navigator as any).standalone===true);
     syncInstalled();
     setPermission("Notification" in window?Notification.permission:"unsupported");
+    const onInstalled=()=>{setInstalled(true);setInstallEvent(null);setMessage("✓ SarkariPrep app install ho gaya.");};
+    window.addEventListener("appinstalled",onInstalled);
     let registration: ServiceWorkerRegistration|undefined;
     navigator.serviceWorker?.register("/sw.js").then(reg=>{
       registration=reg;
