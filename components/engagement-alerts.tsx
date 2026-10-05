@@ -25,8 +25,23 @@ export default function EngagementAlerts({examSlug,examName}:Props){
     window.addEventListener("beforeinstallprompt",onBefore);
     setInstalled(window.matchMedia("(display-mode: standalone)").matches||(navigator as any).standalone===true);
     setPermission("Notification" in window?Notification.permission:"unsupported");
-    navigator.serviceWorker?.register("/sw.js").catch(()=>{});
-    return()=>window.removeEventListener("beforeinstallprompt",onBefore);
+    let registration: ServiceWorkerRegistration|undefined;
+    navigator.serviceWorker?.register("/sw.js").then(reg=>{
+      registration=reg;
+      reg.update().catch(()=>{});
+      reg.addEventListener("updatefound",()=>{
+        const worker=reg.installing;
+        if(!worker) return;
+        worker.addEventListener("statechange",()=>{
+          if(worker.state==="installed" && navigator.serviceWorker.controller) worker.postMessage({type:"SKIP_WAITING"});
+        });
+      });
+    }).catch(()=>{});
+    const onVisible=()=>{if(document.visibilityState==="visible") registration?.update().catch(()=>{})};
+    document.addEventListener("visibilitychange",onVisible);
+    const onControllerChange=()=>window.location.reload();
+    navigator.serviceWorker?.addEventListener("controllerchange",onControllerChange);
+    return()=>{window.removeEventListener("beforeinstallprompt",onBefore);document.removeEventListener("visibilitychange",onVisible);navigator.serviceWorker?.removeEventListener("controllerchange",onControllerChange)};
   },[]);
 
   async function install(){
