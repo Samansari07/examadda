@@ -46,9 +46,9 @@ export function inferExamLifecycle(
     const checked=n.lastChecked?Date.parse(n.lastChecked+"T23:59:59Z"):0;
     if(!checked || checked<freshCutoff) return false;
     const hay=(n.title+" "+(n.notificationUrl||"")+" "+(n.officialUrl||"")).toLowerCase();
-    const noticeHost=(()=>{try{return new URL(n.officialUrl||n.notificationUrl||"").hostname.replace(/^www\\./,"").toLowerCase()}catch{return ""}})();
-    const examHost=(()=>{try{return new URL(exam.officialUrl||"").hostname.replace(/^www\\./,"").toLowerCase()}catch{return ""}})();
-    const allowedHosts=[examHost,...(exam.lifecycleSourceHosts||[])].filter(Boolean).map(x=>x.replace(/^www\\./,"").toLowerCase());
+    const noticeHost=(()=>{try{return new URL(n.officialUrl||n.notificationUrl||"").hostname.replace(/^www\./,"").toLowerCase()}catch{return ""}})();
+    const examHost=(()=>{try{return new URL(exam.officialUrl||"").hostname.replace(/^www\./,"").toLowerCase()}catch{return ""}})();
+    const allowedHosts=[examHost,...(exam.lifecycleSourceHosts||[])].filter(Boolean).map(x=>x.replace(/^www\./,"").toLowerCase());
     const hostMatched=allowedHosts.includes(noticeHost);
     const examName=exam.name.toLowerCase().replace(/[^a-z0-9]+/g," ");
     const tokens=[...examName.split(" ").filter(x=>x.length>=3 && !/^20\\d{2}$/.test(x)),...(exam.lifecycleKeywords||[]).map(x=>x.toLowerCase())];
