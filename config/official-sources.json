@@ -61,6 +61,21 @@
     "organization": "Medical Counselling Committee",
     "category": "Medical Counselling",
     "region": "Central",
+    "updatesUrl": "https://mcc.nic.in/current-events-ug/",
+    "scope": "NEET UG/PG counselling schedules, registration, seat matrices, allotments and admission notices.",
+    "discoveryUrls": [
+      "https://mcc.nic.in/",
+      "https://mcc.nic.in/ug-medical-counselling/",
+      "https://mcc.nic.in/current-events-ug/",
+      "https://mcc.nic.in/eservices-schedule-ug/",
+      "https://mcc.nic.in/news-events-ug-medical/"
+    ]
+  },
+  {
+    "id": "mcc",
+    "organization": "Medical Counselling Committee",
+    "category": "Medical Counselling",
+    "region": "Central",
     "updatesUrl": "https://mcc.nic.in/ug-medical-counselling/",
     "scope": "NEET UG medical counselling schedules, seat matrices, allotment results, candidate notices and admission-stage updates.",
     "discoveryUrls": [
