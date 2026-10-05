@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import LanguageGate from "@/components/language-gate";
+import EngagementAlerts from "@/components/engagement-alerts";
 
 const siteUrl = "https://sarkariprep.online";
-
 export const viewport = { themeColor: "#102019", colorScheme: "light" };
-
 export const metadata: Metadata = {
   applicationName: "SarkariPrep",
   metadataBase: new URL(siteUrl),
@@ -17,28 +16,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", images: ["/opengraph-image"], title: "SarkariPrep — Indian Government Exams & Jobs", description: "A student-first platform for Indian government exams, jobs and official recruitment sources." },
   robots: { index: true, follow: true },
 };
-
-const structuredData = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": siteUrl + "/#organization",
-      name: "SarkariPrep",
-      url: siteUrl,
-      description: "Independent student-information platform for Indian government exams and recruitment routes.",
-    },
-    {
-      "@type": "WebSite",
-      "@id": siteUrl + "/#website",
-      name: "SarkariPrep",
-      url: siteUrl,
-      publisher: { "@id": siteUrl + "/#organization" },
-      inLanguage: "en-IN",
-    },
-  ],
-};
-
+const structuredData = {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":siteUrl+"/#organization",name:"SarkariPrep",url:siteUrl,description:"Independent student-information platform for Indian government exams and recruitment routes."},{"@type":"WebSite","@id":siteUrl+"/#website",name:"SarkariPrep",url:siteUrl,publisher:{"@id":siteUrl+"/#organization"},inLanguage:"en-IN"}]};
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en-IN"><body><LanguageGate />{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} /></body></html>;
+  return <html lang="en-IN"><body><LanguageGate /><EngagementAlerts />{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} /></body></html>;
 }
