@@ -165,14 +165,14 @@ async function findPdf(url){
     const r=await fetch(url,{headers:{...HEADERS,accept:"application/pdf,text/html"},redirect:"follow",signal:AbortSignal.timeout(9000)});
     if((r.headers.get("content-type")||"").includes("pdf"))return url;
     const html=await r.text();
-    const ms=[...html.matchAll(/(?:href|url|fileUrl|documentUrl)\\s*[:=]?\\s*["']([^"']+\\.pdf(?:[?#][^"']*)?)["']/gi)];
+    const ms=[...html.matchAll(/(?:href|url|fileUrl|documentUrl)\s*[:=]?\s*["']([^"']+\.pdf(?:[?#][^"']*)?)["']/gi)];
     if(ms.length)for(const m of ms){try{targets.push(new URL(m[1],url).href)}catch{}}
-    const generic=html.match(/https?:\\/\\/[^"'\\s<>]+\\.pdf(?:[?#][^"'\\s<>]*)?/i);
+    const generic=html.match(/https?:\/\/[^"'\s<>]+\.pdf(?:[?#][^"'\s<>]*)?/i);
     if(generic)targets.push(generic[0]);
     for(const t of [...new Set(targets)]){
       try{
         const q=await fetch(t,{headers:{...HEADERS,accept:"application/pdf,*/*"},redirect:"follow",signal:AbortSignal.timeout(7000)});
-        if(q.ok&&((q.headers.get("content-type")||"").includes("pdf")||/\\.pdf(?:[?#]|$)/i.test(t)))return t;
+        if(q.ok&&((q.headers.get("content-type")||"").includes("pdf")||/\.pdf(?:[?#]|$)/i.test(t)))return t;
       }catch{}
     }
   }catch{}
@@ -195,7 +195,7 @@ function applicationWindowClosed(data,now=new Date()){
   return end < today;
 }
 const DATE_TOKEN="(\\d{1,2}\\s+(?:"+MONTHS+")\\s+\\d{4}|\\d{1,2}[.\\/-]\\d{1,2}[.\\/-]\\d{2,4})";
-function fieldEvidence(text,re,label){const m=text.match(re);if(!m)return null;const i=m.index||0;return {value:m[1]?.trim(),label,snippet:text.slice(Math.max(0,i-100),Math.min(text.length,i+Math.max(220,m[0].length+100))).replace(/\\s+/g," ").trim()};}
+function fieldEvidence(text,re,label){const m=text.match(re);if(!m)return null;const i=m.index||0;return {value:m[1]?.trim(),label,snippet:text.slice(Math.max(0,i-100),Math.min(text.length,i+Math.max(220,m[0].length+100))).replace(/\s+/g," ").trim()};}
 function parseStructured(t){
   const text=String(t).replace(/\r/g," ").replace(/\n+/g," ").replace(/\s+/g," ").trim();
   const out={},e=[],evidenceSnippets=[];
@@ -203,7 +203,7 @@ function parseStructured(t){
   const last=capture(/(?:last date|closing date|last date for (?:submission of )?(?:online )?application|applications? (?:will )?close(?:s)?)[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i,"lastDate");
   if(last?.value){out.lastDate=last.value;e.push("lastDate");evidenceSnippets.push(last.snippet);}
   if(!out.lastDate){
-    const titleLike=text.match(/(?:last date|closing date|last date for application)[^0-9]{0,80}(\\d{1,2}\\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\\s+\\d{4}|\\d{1,2}[.\\/-]\\d{1,2}[.\\/-]\\d{2,4})/i);
+    const titleLike=text.match(/(?:last date|closing date|last date for application)[^0-9]{0,80}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);
     if(titleLike){out.lastDate=titleLike[1];e.push("lastDate");evidenceSnippets.push(titleLike[0].slice(0,320));}
   }
   const range=text.match(/(?:online )?(?:application|registration|portal|window|opportunity|submission|apply)(?:s)?[^0-9]{0,140}(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})[^0-9]{0,100}(?:to|till|upto|up to|[-–])[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i);
