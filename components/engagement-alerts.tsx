@@ -23,7 +23,7 @@ export default function EngagementAlerts({examSlug,examName}:Props){
     if(typeof window==="undefined") return;
     const onBefore=(e:any)=>{e.preventDefault();setInstallEvent(e)};
     window.addEventListener("beforeinstallprompt",onBefore);
-    setInstalled(window.matchMedia("(display-mode: standalone)").matches||(navigator as any).standalone===true);
+    const syncInstalled=()=>setInstalled(window.matchMedia("(display-mode: standalone)").matches||(navigator as any).standalone===true);\n    syncInstalled();
     setPermission("Notification" in window?Notification.permission:"unsupported");
     let registration: ServiceWorkerRegistration|undefined;
     navigator.serviceWorker?.register("/sw.js").then(reg=>{
@@ -46,7 +46,7 @@ export default function EngagementAlerts({examSlug,examName}:Props){
 
   async function install(){
     if(!installEvent){
-      setMessage("Chrome menu → Add to Home screen se SarkariPrep install kar sakte ho.");
+      setMessage("Install prompt abhi browser ne nahi diya. Chrome ke ⋮ menu se “Install app” / “Add to Home screen” choose karein.");
       return;
     }
     await installEvent.prompt();
@@ -113,7 +113,7 @@ export default function EngagementAlerts({examSlug,examName}:Props){
       {message&&<div className={"engagementMessage "+(permission==="denied"?"isWarning":"")}>{message}</div>}
     </div>
     <div className="engagementActions">
-      {!installed&&installEvent&&<button className="engagementInstall" onClick={install}>📲 Install</button>}
+      {!installed&&<button className="engagementInstall" onClick={install}>📲 Install App</button>}
       <button className="engagementPrimary" onClick={enableAlerts} disabled={busy||subscribed}>
         {busy?"Enabling…":subscribed?"✓ Alerts ON":"Turn on Free Alerts"}
       </button>
