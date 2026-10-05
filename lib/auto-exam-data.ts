@@ -7,7 +7,7 @@ export type AutoExamOverride = {
 export const autoExamDataMeta = {
   "generatedAt": "2026-10-05",
   "sourceCount": 78,
-  "overrideCount": 10,
+  "overrideCount": 11,
   "policy": "Only conservative values extracted from an official notice/bulletin are applied. Missing or ambiguous fields are never invented."
 };
 
@@ -62,6 +62,40 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "sourceTitle": "Annual Calendar 2027",
     "dataCertainty": "confirmed",
     "applicationStatus": "unknown",
+    "refreshedThisCycle": true
+  },
+  "ssc-stenographer-2026": {
+    "lastDate": "06.10.2026",
+    "applicationDates": "16.09.2026 to 06.10.2026",
+    "examDate": "16.09.2026 to 06.10.2026",
+    "qualification": "Number (URN), Common Application Form (CAF) and the fourth module i",
+    "slug": "ssc-stenographer-2026",
+    "cycleSlug": "ssc-stenographer-2026",
+    "familySlug": "family-ssc-stenographer",
+    "cycleYear": 2026,
+    "name": "SSC Stenographer Grade C & D 2026",
+    "organization": "SSC",
+    "notificationUrl": "https://www.upsc.gov.in/sites/default/files/Notif-CmbSO-LDCE-2026-Engl-160926.pdf",
+    "sourceUrl": "https://www.upsc.gov.in/whats-new",
+    "lastVerified": "2026-10-05",
+    "detectedAt": "2026-10-05",
+    "confidence": "high",
+    "evidenceCount": 4,
+    "evidence": [
+      "lastDate",
+      "applicationDates",
+      "examDate",
+      "qualification"
+    ],
+    "evidenceSnippets": [
+      "OFFICERS’ (GRADE-‘B’) LIMITED DEPARTMENTAL COMPETITIVE EXAMINATION, 2026 EXAMINATION NOTICE Date of Notification of Examination 16.09.2026 Last date for filling up of Application 06.10.2026 Date of Examination 12.12.2026 & 13.12.2026 (The Commission's website - https://upsc.gov.in) IMPORTANT INFORMATION FOR THE CANDIDATES The Online Application Portal of Union Public Service Commission for registration and filling u",
+      "SUBMISSION OF APPLICATION: The Online Application can be filled from 16.09.2026 to 06.10.2026",
+      "EXAMINATION NOTICE Date of Notification of Examination 16.09.2026 Last date for filling up of Application 06.10.2026",
+      "educational qualification, etc. as may be sought by the Commission along with the Universal Registration Number (URN), Common Application Form (CAF) and the fourth module i"
+    ],
+    "sourceTitle": "Exam Notification: Combined Section Officers (Grade-&#039;B&#039;) LDCE - 2026 and Combined Stenographers (Grade - &#039;B&#039; - Grade - &#039;I&#039;) LDCE - 2022, 2023 and 2024",
+    "dataCertainty": "confirmed",
+    "applicationStatus": "open",
     "refreshedThisCycle": true
   },
   "upsc-cse-2026": {
@@ -303,11 +337,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "refreshedThisCycle": true
   },
   "ctet-2026": {
-    "lastDate": "01 September 2026",
-    "applicationDates": "25 August 2026 to 01 September 2026",
     "examDate": "12 and 13 December 2026",
-    "correctionDates": "07 September 2026 to 10 September 2026",
-    "qualification": "It had been inter alia provided that one of the essential qualifications for a person to be eligible for appointment as a teacher in any of the schools referred to in Clause (n) of section 2 of the RTE Act is that he/she should pass the Teacher Eligibility Tes",
+    "qualification": "of the post for which the examination is being conducted",
     "slug": "ctet-2026",
     "cycleSlug": "ctet-2026",
     "name": "CTET 2026",
@@ -317,31 +348,28 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "lastVerified": "2026-10-05",
     "detectedAt": "2026-10-05",
     "confidence": "high",
-    "evidenceCount": 8,
+    "evidenceCount": 5,
     "evidence": [
-      "lastDate",
-      "applicationDates",
       "examDate",
-      "correctionDates",
       "qualification",
       "revisedExamDate",
       "reopenedApplicationWindow",
       "correctionWindow"
     ],
     "evidenceSnippets": [
-      "R INFORMATION BULLETIN CTET-SEPTEMBER, 2026 Duration of Online Application: 11.05.2026 to 10.06.2026 Last date for submission of online Application: (Before 10.06.2026 11:59PM) Last date for submission of fee: 10.06.2026 (Before11:59PM) Date of Examination: 06TH SEPTEMBER, 2026 (SUNDAY) CONDUCTED BY CENTRAL BOARD OF SECONDARY EDUCATION, DELHI CENTRAL TEACHER ELIGIBILITY TEST UNI",
-      "Online Application: 11.05.2026 to 10.06.2026",
-      "examination Date of Examination 06-09-2026 (SUNDAY) Declaration of Result By the end of OCTOBER, ",
-      "edit Card/Net Banking 10.06.2026 upto",
-      "qualifications for a person to be eligible for appointment as a teacher for class I to VIII. It had been inter alia provided that one of the essential qualifications for a person to be eligible for appointment as a teacher in any of the schools referred to in Clause (n) of section 2 of the RTE Act is that he/she should pass the Teacher Eligibility Tes",
+      "examination at the assigned examination centre for ascertaining its suitability. f. As per office memorandum F. No. 29-6/2019-DD-III dated ",
+      "qualification of the scribe would be one class lower than the minimum qualification criteria of the post for which the examination is being conducted",
       "CBSE public notice dated 14 September 2026: 22nd edition of CTET will be conducted on 12th and 13th December 2026.",
       "CTET reopened online application window: 25 August 2026 to 01 September 2026.",
       "CTET correction window: 07 September 2026 to 10 September 2026."
     ],
     "sourceTitle": "PUBLIC NOTICE: Exam Dates for 22nd edition of CTET",
-    "dataCertainty": "tentative",
-    "applicationStatus": "closed",
+    "dataCertainty": "confirmed",
+    "applicationStatus": "unknown",
     "refreshedThisCycle": true,
+    "applicationDates": "25 August 2026 to 01 September 2026",
+    "lastDate": "01 September 2026",
+    "correctionDates": "07 September 2026 to 10 September 2026",
     "stale": false
   },
   "india-post-gds-2025": {
