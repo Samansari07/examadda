@@ -34,11 +34,11 @@ async function fetchSource(source){
     }catch{}
   }
   const attempts=[],pages=[];
-  const deadline=Date.now()+45000;
+  const deadline=Date.now()+90000;
   const fetchOne=async url=>{
     if(Date.now()>=deadline)return null;
     try{
-      const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(7000)});
+      const r=await fetch(url,{headers:HEADERS,redirect:"follow",signal:AbortSignal.timeout(10000)});
       const ct=r.headers.get("content-type")||"";
       if(r.ok&&(ct.includes("html")||ct.includes("xml")||ct.includes("text"))){
         const html=await r.text();
@@ -54,12 +54,12 @@ async function fetchSource(source){
     return null;
   };
   const uniqueUrls=[...new Set(urls)];
-  for(let i=0;i<uniqueUrls.length&&pages.length<8&&Date.now()<deadline;i+=4){
-    const chunk=uniqueUrls.slice(i,i+4);
+  for(let i=0;i<uniqueUrls.length&&pages.length<10&&Date.now()<deadline;i+=3){
+    const chunk=uniqueUrls.slice(i,i+3);
     const found=await Promise.all(chunk.map(fetchOne));
     for(const page of found)if(page)pages.push(page);
   }
-  if(!pages.length)throw new Error("No reachable official page within 45s. "+attempts.slice(-12).join(" | "));
+  if(!pages.length)throw new Error("No reachable official page within 90s after fetch/curl fallback. "+attempts.slice(-16).join(" | "));
   return{
     url:pages[0].url,
     html:pages.map(p=>p.html).join("\n"),
