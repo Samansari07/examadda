@@ -51,8 +51,8 @@ const notificationScore=x=>{
   return (url.includes(".pdf")?3:0)+(url.length>70?1:0)+(title.length>20?1:0)+(x.applicationLastDate||x.applicationDates||x.examDate?2:0);
 };
 const normalizeNoticeKey=value=>String(value||"").toLowerCase()
-  .replace(/&amp;/g," and ").replace(/[^a-z0-9]+/g," ").replace(/\\b(?:online|apply|application|notice|notification)\\b/g," ")
-  .replace(/\\s+/g," ").trim();
+  .replace(/&amp;/g," and ").replace(/[^a-z0-9]+/g," ").replace(/\b(?:online|apply|application|notice|notification)\b/g," ")
+  .replace(/\s+/g," ").trim();
 const noticeMap=new Map();
 for(const x of all){
   const urlKey=String(x.notificationUrl||x.title).split("#")[0];
