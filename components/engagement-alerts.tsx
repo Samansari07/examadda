@@ -1,12 +1,108 @@
 "use client";
+
 import {useEffect,useState} from "react";
+
 type Props={examSlug?:string;examName?:string};
-function b64ToUint8(value:string){const pad="=".repeat((4-value.length%4)%4);const raw=atob((value+pad).replace(/-/g,"+").replace(/_/g,"/"));return Uint8Array.from(raw,c=>c.charCodeAt(0));}
+
+function b64ToUint8(value:string){
+  const pad="=".repeat((4-value.length%4)%4);
+  const raw=atob((value+pad).replace(/-/g,"+").replace(/_/g,"/"));
+  return Uint8Array.from(raw,c=>c.charCodeAt(0));
+}
+
 export default function EngagementAlerts({examSlug,examName}:Props){
- const [installEvent,setInstallEvent]=useState<any>(null),[installed,setInstalled]=useState(false),[permission,setPermission]=useState<NotificationPermission|"unsupported">("unsupported"),[subscribed,setSubscribed]=useState(false),[busy,setBusy]=useState(false),[message,setMessage]=useState("");
- useEffect(()=>{if(typeof window==="undefined")return;const onBefore=(e:any)=>{e.preventDefault();setInstallEvent(e)};window.addEventListener("beforeinstallprompt",onBefore);setInstalled(window.matchMedia("(display-mode: standalone)").matches||(navigator as any).standalone===true);setPermission("Notification"in window?Notification.permission:"unsupported");navigator.serviceWorker?.register("/sw.js").catch(()=>{});return()=>window.removeEventListener("beforeinstallprompt",onBefore)},[]);
- async function install(){if(!installEvent){setMessage("Browser menu se “Add to Home screen” choose kar sakte ho.");return}await installEvent.prompt();const result=await installEvent.userChoice;if(result?.outcome==="accepted")setInstalled(true);setInstallEvent(null)}
- async function enableAlerts(){setBusy(true);setMessage("");try{if(!("Notification"in window)||!("serviceWorker"in navigator)||!("PushManager"in window))throw new Error("Is browser mein web push available nahi hai.");const p=await Notification.requestPermission();setPermission(p);if(p!=="granted")throw new Error("Notifications allow nahi hui. Browser settings se notifications allow karke dobara try karein.");const reg=await navigator.serviceWorker.ready;const key=process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;if(!key)throw new Error("Push service abhi configure nahi hua hai.");let subscription=await reg.pushManager.getSubscription();if(!subscription)subscription=await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:b64ToUint8(key)});const res=await fetch("/api/push/subscribe",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({subscription,examSlug,examName})});if(!res.ok)throw new Error("Alert subscription save nahi ho paya.");setSubscribed(true);setMessage(examSlug?"Is exam ke alerts ON ho gaye.":"Government job/exam alerts ON ho gaye.")}catch(e:any){setMessage(e?.message||"Alerts enable nahi ho paye.")}finally{setBusy(false)}}
- async function share(){const data={title:examName?examName+" | SarkariPrep":"SarkariPrep",text:examName?("Government exam update: "+examName+". Official details SarkariPrep par check karo."):"Government jobs & exams miss mat karo — SarkariPrep share karo.",url:window.location.href};try{if(navigator.share)await navigator.share(data);else window.open("https://wa.me/?text="+encodeURIComponent(data.text+" "+data.url),"_blank","noopener,noreferrer")}catch{}}
- return <section className="engagementPanel"><div className="engagementCopy"><span className="eyebrow">🔔 NEVER MISS AN UPDATE</span><h2>{examName?(examName+" ka alert ON karo"):"Government Jobs & Exams ke alerts ON karo"}</h2><p>{examName?"Application open, last date, admit card, result aur important official notices ke alerts pao.":"Important government jobs, exams, admit cards, results aur deadlines ki useful notifications pao."}</p></div><div className="engagementActions">{!installed&&<button className="primaryLink" onClick={install}>📲 Install SarkariPrep</button>}<button className="primaryLink" onClick={enableAlerts} disabled={busy||subscribed}>{busy?"Enabling…":subscribed?"✓ Alerts ON":"🔔 Turn on Free Alerts"}</button><button className="shareButton" onClick={share}>📤 Share with a friend</button></div>{message&&<p className="engagementMessage">{message}</p>}{permission==="denied"&&<small>Notifications blocked hain. Browser site settings mein SarkariPrep notifications allow karein.</small>}</section>
+  const [installEvent,setInstallEvent]=useState<any>(null);
+  const [installed,setInstalled]=useState(false);
+  const [permission,setPermission]=useState<NotificationPermission|"unsupported">("unsupported");
+  const [subscribed,setSubscribed]=useState(false);
+  const [busy,setBusy]=useState(false);
+  const [message,setMessage]=useState("");
+  const [hidden,setHidden]=useState(false);
+
+  useEffect(()=>{
+    if(typeof window==="undefined") return;
+    const onBefore=(e:any)=>{e.preventDefault();setInstallEvent(e)};
+    window.addEventListener("beforeinstallprompt",onBefore);
+    setInstalled(window.matchMedia("(display-mode: standalone)").matches||(navigator as any).standalone===true);
+    setPermission("Notification" in window?Notification.permission:"unsupported");
+    navigator.serviceWorker?.register("/sw.js").catch(()=>{});
+    return()=>window.removeEventListener("beforeinstallprompt",onBefore);
+  },[]);
+
+  async function install(){
+    if(!installEvent){
+      setMessage("Chrome menu → Add to Home screen se SarkariPrep install kar sakte ho.");
+      return;
+    }
+    await installEvent.prompt();
+    const result=await installEvent.userChoice;
+    if(result?.outcome==="accepted") setInstalled(true);
+    setInstallEvent(null);
+  }
+
+  async function enableAlerts(){
+    setBusy(true);setMessage("");
+    try{
+      if(!("Notification"in window)||!("serviceWorker"in navigator)||!("PushManager"in window))
+        throw new Error("Is browser mein push alerts available nahi hain.");
+      if(Notification.permission==="denied"){
+        setPermission("denied");
+        setMessage("Notifications blocked hain. Chrome → Site settings → Notifications → Allow karke dobara try karein.");
+        return;
+      }
+      const p=await Notification.requestPermission();
+      setPermission(p);
+      if(p!=="granted"){
+        setMessage("Notifications allow nahi hui. Aap browser settings se SarkariPrep alerts ON kar sakte hain.");
+        return;
+      }
+      const reg=await navigator.serviceWorker.ready;
+      const key=process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
+      if(!key) throw new Error("Push service abhi configure nahi hua hai.");
+      let subscription=await reg.pushManager.getSubscription();
+      if(!subscription)
+        subscription=await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:b64ToUint8(key)});
+      const res=await fetch("/api/push/subscribe",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({subscription,examSlug,examName})});
+      if(!res.ok) throw new Error("Alert subscription save nahi ho paya.");
+      setSubscribed(true);
+      setMessage(examSlug?"✓ Is exam ke alerts ON ho gaye.":"✓ Government job & exam alerts ON ho gaye.");
+    }catch(e:any){
+      setMessage(e?.message||"Alerts enable nahi ho paye.");
+    }finally{setBusy(false)}
+  }
+
+  async function share(){
+    const data={
+      title:examName?examName+" | SarkariPrep":"SarkariPrep",
+      text:examName?("🚨 "+examName+" ka latest government exam update. Official details SarkariPrep par check karo."):"🇮🇳 Government jobs & exams miss mat karo — SarkariPrep share karo.",
+      url:window.location.href
+    };
+    try{
+      if(navigator.share) await navigator.share(data);
+      else window.open("https://wa.me/?text="+encodeURIComponent(data.text+" "+data.url),"_blank","noopener,noreferrer");
+    }catch{}
+  }
+
+  if(hidden) return null;
+
+  const title=examName?(examName+" ke alerts ON rakho"):"Government Jobs & Exams — Never Miss an Update";
+  const description=examName?"Form dates, admit cards, results aur official notices ka alert seedha pao.":"Important jobs, exams, admit cards, results aur deadlines ki useful updates seedha pao.";
+
+  return <section className="engagementPanel" aria-label="SarkariPrep alerts">
+    <div className="engagementIcon" aria-hidden="true">🔔</div>
+    <div className="engagementCopy">
+      <div className="engagementEyebrow">NEVER MISS AN UPDATE</div>
+      <h2>{title}</h2>
+      <p>{description}</p>
+      {message&&<div className={"engagementMessage "+(permission==="denied"?"isWarning":"")}>{message}</div>}
+    </div>
+    <div className="engagementActions">
+      {!installed&&installEvent&&<button className="engagementInstall" onClick={install}>📲 Install</button>}
+      <button className="engagementPrimary" onClick={enableAlerts} disabled={busy||subscribed}>
+        {busy?"Enabling…":subscribed?"✓ Alerts ON":"Turn on Free Alerts"}
+      </button>
+      <button className="engagementShare" onClick={share}>↗ Share</button>
+    </div>
+    <button className="engagementClose" onClick={()=>setHidden(true)} aria-label="Dismiss alerts banner">×</button>
+  </section>;
 }
