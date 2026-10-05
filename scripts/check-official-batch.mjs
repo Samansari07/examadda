@@ -48,7 +48,7 @@ async function fetchSource(source){
     }catch(e){attempts.push(url+" -> "+String(e))}
     if(Date.now()>=deadline)return null;
     try{
-      const {stdout}=await execFileAsync("curl",["-L","--ipv4","--http1.1","--connect-timeout","4","--max-time","8","--retry","0","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:12*1024*1024});
+      const {stdout}=await execFileAsync("curl",["-L","--ipv4","--http1.1","--connect-timeout","5","--max-time","12","--retry","1","-A",UA,"-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",url],{maxBuffer:12*1024*1024});
       if(stdout.length>120)return{url,html:stdout,method:"curl"};
     }catch(e){attempts.push(url+" -> curl "+String(e))}
     return null;
