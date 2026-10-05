@@ -42,7 +42,7 @@ export default function EngagementAlerts({examSlug,examName}:Props){
     document.addEventListener("visibilitychange",onVisible);
     const onControllerChange=()=>window.location.reload();
     navigator.serviceWorker?.addEventListener("controllerchange",onControllerChange);
-    return()=>{window.removeEventListener("beforeinstallprompt",onBefore);window.removeEventListener("appinstalled",onInstalled);displayMode.removeEventListener?.("change",onDisplayModeChange);document.removeEventListener("visibilitychange",onVisible);navigator.serviceWorker?.removeEventListener("controllerchange",onControllerChange)};
+    return()=>{window.removeEventListener("beforeinstallprompt",onBefore);window.removeEventListener("appinstalled",onInstalled);document.removeEventListener("visibilitychange",onVisible);navigator.serviceWorker?.removeEventListener("controllerchange",onControllerChange)};
   },[]);
 
   async function install(){
