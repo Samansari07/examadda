@@ -158,7 +158,7 @@ for(const x of all){
   const previous=noticeMap.get(key);
   if(!previous || notificationScore(x)>notificationScore(previous)) noticeMap.set(key,x);
 }
-const notifications=[...noticeMap.values()];
+const notifications=[...noticeMap.values()].map(n=>{\n  const source=config.find(s=>sameOrganization(s.organization,n.organization));\n  if(source && n.notificationUrl && !isTrustedDocumentHost(n.notificationUrl,source.updatesUrl)){\n    return {...n,notificationUrl:source.updatesUrl,description:String(n.description||"")+" Direct document link was not retained because its host did not match the registered authority; the official authority page is shown instead."};\n  }\n  return n;\n});
 const currentYear=new Date().getUTCFullYear();
 const MONTHS={january:0,february:1,march:2,april:3,may:4,june:5,july:6,august:7,september:8,october:9,november:10,december:11};
 const parseDateToken=value=>{
