@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node --experimental-strip-types scripts/validate-notice-feed.mjs && node --experimental-strip-types scripts/validate-exam-lifecycle.mjs && tsc --noEmit && next build",
+    "build": "node --experimental-strip-types scripts/validate-notice-feed.mjs && node --experimental-strip-types scripts/validate-exam-lifecycle.mjs && node scripts/validate-auto-data-integrity.mjs && tsc --noEmit && next build",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
