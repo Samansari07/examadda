@@ -1,6 +1,29 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
 const config=JSON.parse(await fs.readFile("config/official-sources.json","utf8"));
+
+const hostOf=value=>{try{return new URL(String(value)).hostname.replace(/^www\\./,"").toLowerCase()}catch{return ""}};
+const sameAuthority=(a,b)=>{const x=hostOf(a),y=hostOf(b);return !!x&&!!y&&(x===y||x.endsWith("." + y)||y.endsWith("." + x))};
+const normalizeIdentity=value=>String(value||"").toLowerCase().replace(/&amp;/g," and ").replace(/[^a-z0-9]+/g," ").replace(/\\b(?:202[0-9]|19[0-9]{2})\\b/g," ").replace(/\\s+/g," ").trim();
+const identityTokens=(value)=>normalizeIdentity(value).split(" ").filter(t=>t.length>=4&&!["examination","recruitment","notification","combined","level","online","official","application"].includes(t));
+const sourceForOrganization=organization=>config.find(s=>String(s.organization||"").toLowerCase()===String(organization||"").toLowerCase());
+const identityEvidenceMatches=(v)=>{
+  const name=identityTokens(v.name||v.slug);
+  if(!name.length)return false;
+  const evidence=[v.sourceTitle,...(v.evidence||[]),...(v.evidenceSnippets||[])].filter(Boolean).map(normalizeIdentity).join(" ");
+  const strong=name.filter(t=>t.length>=5);
+  return strong.some(t=>evidence.includes(t));
+};
+const structurallySafeOverride=(v)=>{
+  const source=sourceForOrganization(v.organization);
+  if(!source)return false;
+  if(!sameAuthority(v.sourceUrl,source.updatesUrl))return false;
+  if(v.notificationUrl && !sameAuthority(v.notificationUrl,v.sourceUrl))return false;
+  if(typeof v.minAge==="number" && (v.minAge<14 || v.minAge>70))return false;
+  if(typeof v.maxAge==="number" && (v.maxAge<14 || v.maxAge>80))return false;
+  if(typeof v.minAge==="number" && typeof v.maxAge==="number" && v.minAge>v.maxAge)return false;
+  return identityEvidenceMatches(v);
+};
 const files=(await fs.readdir("official-refresh-batches")).filter(x=>/^batch-\d+\.json$/.test(x)).sort();
 if(!files.length)throw new Error("No batch results found");
 const parts=await Promise.all(files.map(async f=>JSON.parse(await fs.readFile("official-refresh-batches/"+f,"utf8"))));
@@ -19,6 +42,11 @@ try{
     for(const [slug,v] of Object.entries(previous)) if(!overrides[slug]) overrides[slug]={...v,stale:true,refreshedThisCycle:false};
   }
 }catch{}
+for(const [slug,v] of Object.entries({...overrides})){
+  if(!structurallySafeOverride(v)){
+    delete overrides[slug];
+  }
+}
 for(const v of Object.values(overrides)) if(v.refreshedThisCycle===undefined) v.refreshedThisCycle=true;
 const ctetCurrent=overrides["ctet-2026"];
 if(ctetCurrent){
@@ -117,6 +145,8 @@ notifications.sort((a,b)=>a.organization.localeCompare(b.organization)||a.title.
 const DISCOVERY_NOISE=/tender|procurement|supplier|vendor|purchase|e-proc|financial|audited\s+results?|quarterly\s+results?|annual\s+report|investor|shareholder|contract|\bbid\b|vendor|procurement/i;
 const DISCOVERY_SIGNAL=/recruit|recruitment|vacanc|career|job|jobs|advertisement|exam|examination|application|apply|admit\s*card|hall\s*ticket|answer\s*key|result|written\s*test|shortlist|selection|interview|corrigendum|appointment|engagement|schedule|calendar/i;
 const discoveredFeed=notifications.filter(n=>{
+  const source=config.find(s=>String(s.organization||"").toLowerCase()===String(n.organization||"").toLowerCase());
+  if(!source || !sameAuthority(n.officialUrl,source.updatesUrl)) return false;
   const blob=String(n.title||"")+" "+String(n.description||"")+" "+String(n.notificationUrl||"");
   return !DISCOVERY_NOISE.test(blob)&&DISCOVERY_SIGNAL.test(blob);
 }).slice(0,1200).map(n=>({...n,publishedDate:n.publishedDate||n.lastChecked}));
