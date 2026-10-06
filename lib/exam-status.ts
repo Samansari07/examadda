@@ -23,6 +23,24 @@ function datesFromText(value:string):Date[]{
  return [...new Map(out.map(d=>[d.toISOString(),d])).values()].sort((a,b)=>a.getTime()-b.getTime());
 }
 
+function indiaDateBoundary(d:Date, end=false, raw=""){ 
+ const y=d.getUTCFullYear(), mo=d.getUTCMonth(), day=d.getUTCDate();
+ const times=[...raw.matchAll(/\b(\d{1,2})(?::([0-5]\d))?\s*(AM|PM)\b|\b([01]?\d|2[0-3]):([0-5]\d)\b/gi)];
+ let h=end?23:0, min=end?59:0;
+ if(end&&times.length){
+  const t=times[times.length-1]; h=Number(t[1]??t[4]??0); min=Number(t[2]??t[5]??0);
+  const ap=(t[3]||"").toUpperCase();
+  if(ap==="PM"&&h<12)h+=12;
+  if(ap==="AM"&&h===12)h=0;
+ } else if(!end&&times.length>1){
+  const t=times[0]; h=Number(t[1]??t[4]??0); min=Number(t[2]??t[5]??0);
+  const ap=(t[3]||"").toUpperCase();
+  if(ap==="PM"&&h<12)h+=12;
+  if(ap==="AM"&&h===12)h=0;
+ }
+ return Date.UTC(y,mo,day,h,min,end?59:0)-5.5*60*60*1000;
+}
+
 function cycleYearOf(exam:{name?:string;slug?:string;cycleYear?:number},override?:{cycleYear?:number}){
  if(typeof override?.cycleYear==="number") return override.cycleYear;
  if(typeof exam.cycleYear==="number") return exam.cycleYear;
@@ -45,7 +63,8 @@ export function getApplicationState(
  const explicit=(override?.applicationStatus||exam.applicationStatus||"").toLowerCase();
  const windowDates=datesFromText(override?.applicationDates||"");
  if(windowDates.length>=2){
-  const start=windowDates[0].getTime(), end=windowDates[windowDates.length-1].getTime()+86400000-1;
+  const start=indiaDateBoundary(windowDates[0],false,override?.applicationDates||"");
+  const end=indiaDateBoundary(windowDates[windowDates.length-1],true,override?.applicationDates||"");
   if(now<start) return "upcoming";
   if(now<=end) return "open";
   return "closed";
@@ -55,7 +74,8 @@ export function getApplicationState(
  if(/application\s*(closed|over)|form\s*(closed|over)/i.test(raw)) return "closed";
  const rawDates=datesFromText(raw);
  if(rawDates.length>=2 && /application|apply|form|submission|registration|tentatively/i.test(raw)){
-  const start=rawDates[0].getTime(), end=rawDates[rawDates.length-1].getTime()+86400000-1;
+  const start=indiaDateBoundary(rawDates[0],false,raw);
+  const end=indiaDateBoundary(rawDates[rawDates.length-1],true,raw);
   if(now<start) return "upcoming";
   if(now<=end) return "open";
   return "closed";
