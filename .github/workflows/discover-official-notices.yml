@@ -1,8 +1,10 @@
 # v2 - resilient discovery run
-name: Discover official recruitment notices (manual fallback)
+name: Discover official recruitment notices (automatic hourly feed)
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "7 * * * *"
 
 permissions:
   contents: write
@@ -37,7 +39,9 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
             node scripts/discover-official-notices.mjs
-            git add lib/discovered-official-notices.ts
+            node scripts/aggregate-official-data.mjs
+            node scripts/validate-notice-feed.mjs
+            git add lib/discovered-official-notices.ts lib/auto-notifications.ts lib/auto-exam-data.ts lib/source-status.ts
             if git diff --cached --quiet; then
               echo "No discovery changes."
               exit 0
