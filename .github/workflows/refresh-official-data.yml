@@ -63,22 +63,7 @@ jobs:
         run: |
           mkdir -p official-refresh-batches
           if [ ! -s "official-refresh-batches/batch-${SOURCE_BATCH}.json" ]; then
-            node - <<'NODE'
-            const fs=require("fs");
-            const cfg=JSON.parse(fs.readFileSync("config/official-sources.json","utf8"));
-            const batch=Number(process.env.SOURCE_BATCH);
-            const count=Number(process.env.SOURCE_BATCH_COUNT);
-            const selected=cfg.filter((_,i)=>i%count===batch);
-            const today=new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"});
-            const statuses=selected.map(s=>({
-              id:s.id,organization:s.organization,category:s.category,region:s.region,
-              sourceUrl:s.updatesUrl,ok:false,health:"unreachable",detected:0,lastChecked:today,
-              error:"Batch scan did not produce a result; preserved as unavailable for this refresh cycle."
-            }));
-            fs.writeFileSync(`official-refresh-batches/batch-${batch}.json`,
-              JSON.stringify({batch,sourceCount:selected.length,results:[],statuses,failures:statuses.map(s=>({source:s.organization,error:s.error})),overrides:{}},null,2));
-            console.log("Fallback batch artifact created:",batch,statuses.length);
-            NODE
+            node -e 'const fs=require("fs"); const cfg=JSON.parse(fs.readFileSync("config/official-sources.json","utf8")); const batch=Number(process.env.SOURCE_BATCH); const count=Number(process.env.SOURCE_BATCH_COUNT); const selected=cfg.filter((_,i)=>i%count===batch); const today=new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"}); const statuses=selected.map(s=>({id:s.id,organization:s.organization,category:s.category,region:s.region,sourceUrl:s.updatesUrl,ok:false,health:"unreachable",detected:0,lastChecked:today,error:"Batch scan did not produce a result; preserved as unavailable for this refresh cycle."})); fs.writeFileSync("official-refresh-batches/batch-"+batch+".json",JSON.stringify({batch,sourceCount:selected.length,results:[],statuses,failures:statuses.map(s=>({source:s.organization,error:s.error})),overrides:{}},null,2)); console.log("Fallback batch artifact created:",batch,statuses.length);'
           fi
       - name: Upload batch result
         uses: actions/upload-artifact@v7
