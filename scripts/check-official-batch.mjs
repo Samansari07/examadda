@@ -201,9 +201,9 @@ function parseStructured(t){
   // Those bundles can contain values such as "5.0.34 to 5.0.44" which are not
   // recruitment dates.
   const text=String(t)
-    .replace(/<script[\\s\\S]*?<\\/script>/gi," ")
-    .replace(/<style[\\s\\S]*?<\\/style>/gi," ")
-    .replace(/<noscript[\\s\\S]*?<\\/noscript>/gi," ")
+    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi," ")
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi," ")
+    .replace(/<noscript[^>]*>[\s\S]*?<\/noscript>/gi," ")
     .replace(/\r/g," ").replace(/\n+/g," ").replace(/\s+/g," ").trim();
   const out={},e=[],evidenceSnippets=[];
   const capture=(re,label)=>{const m=text.match(re);if(!m)return null;const i=m.index||0;return {value:(m[1]||"").trim(),label,snippet:text.slice(Math.max(0,i-140),Math.min(text.length,i+Math.max(280,m[0].length+140))).trim()};};
