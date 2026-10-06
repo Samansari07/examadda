@@ -110,6 +110,7 @@ const applyAutoExamData=(e:Exam):Exam=>{
  const currentYear=new Date().getUTCFullYear();
  // Historical auto snapshots must never overwrite a current/manual record.
  if(typeof o.cycleYear==="number" && o.cycleYear<currentYear) return e;
+ if(o.sourceUrl && !sameAuthority(o.sourceUrl,e.officialUrl)) return e;
  const verified=o.confidence==="high" && o.evidenceCount>=2 && !o.stale && o.refreshedThisCycle!==false;
  if(!verified) return e;
  return {
