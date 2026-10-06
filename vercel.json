@@ -5,6 +5,6 @@
   "devCommand": "next dev",
   "git": {"deploymentEnabled": {"main": true}},
   "crons": [
-    {"path": "/api/push/daily", "schedule": "0 9 * * *"}
+    {"path": "/api/push/daily", "schedule": "30 3 * * *"}
   ]
 }
