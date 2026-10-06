@@ -2,7 +2,7 @@
 import fs from "node:fs/promises";
 const config=JSON.parse(await fs.readFile("config/official-sources.json","utf8"));
 
-const hostOf=value=>{const m=String(value||"").match(/^https?:\\/\\/([^/]+)/i);return m?m[1].toLowerCase().replace(/^www\\./,""):""};
+const hostOf=value=>{const m=String(value||"").match(/^https?:\/\/([^/]+)/i);return m?m[1].toLowerCase().replace(/^www\./,""):""};
 const sameAuthority=(a,b)=>{const x=hostOf(a),y=hostOf(b);return !!x&&!!y&&(x===y||x.endsWith("." + y)||y.endsWith("." + x))};
 const isTrustedDocumentHost=(url,sourceUrl)=>{
   const x=hostOf(url), y=hostOf(sourceUrl);
@@ -13,7 +13,7 @@ const isTrustedDocumentHost=(url,sourceUrl)=>{
   return (x==="s3waas.gov.in"||x.endsWith(".s3waas.gov.in")) &&
     (y.endsWith(".gov.in")||y.endsWith(".nic.in")||y.endsWith(".gov")||y.endsWith(".nic.in"));
 };
-const normalizeIdentity=value=>String(value||"").toLowerCase().replace(/&amp;/g," and ").replace(/[^a-z0-9]+/g," ").replace(/\\b(?:202[0-9]|19[0-9]{2})\\b/g," ").replace(/\\s+/g," ").trim();
+const normalizeIdentity=value=>String(value||"").toLowerCase().replace(/&amp;/g," and ").replace(/[^a-z0-9]+/g," ").replace(/\b(?:202[0-9]|19[0-9]{2})\b/g," ").replace(/\s+/g," ").trim();
 const identityTokens=(value)=>normalizeIdentity(value).split(" ").filter(t=>t.length>=4&&!["examination","recruitment","notification","combined","level","online","official","application"].includes(t));
 const ORG_GROUPS=[
   ["ssc","staff selection commission"],
