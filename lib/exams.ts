@@ -43,8 +43,15 @@ const familyExams:Exam[]=familySeeds.map(([slug,name,organization,category,quali
  status:"family",description:"Reference guide for "+name+". Current vacancies, dates, eligibility, fees and selection stages must be verified from the latest official notification."
 }));
 
+const hostOf=(value:string)=>{try{return new URL(value).hostname.replace(/^www\./,"").toLowerCase()}catch{return ""}};
+const sameAuthority=(a:string,b:string)=>{const x=hostOf(a),y=hostOf(b);return !!x&&!!y&&(x===y||x.endsWith("."+y)||y.endsWith("."+x))};
+
 const autoCurrentCycles:Exam[]=Object.values(autoExamData)
- .filter(o=>o.familySlug&&o.cycleSlug&&o.cycleYear&&o.confidence==="high"&&o.evidenceCount>=2&&!o.stale)
+ .filter(o=>{
+   if(!(o.familySlug&&o.cycleSlug&&o.cycleYear&&o.confidence==="high"&&o.evidenceCount>=2&&!o.stale)) return false;
+   const family=familyExams.find(f=>f.slug===o.familySlug);
+   return !!family && sameAuthority(o.sourceUrl,family.officialUrl);
+ })
  .map(o=>{
    const family=familyExams.find(f=>f.slug===o.familySlug);
    if(!family) return null;
