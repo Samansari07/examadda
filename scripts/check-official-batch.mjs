@@ -378,10 +378,20 @@ const hostOf=value=>{try{return new URL(value||"").hostname.replace(/^www\\./,""
 const sameOrSubdomain=(a,b)=>!!a&&!!b&&(a===b||a.endsWith("."+b)||b.endsWith("."+a));
 const matchExam=(title,source,evidence="")=>{
   const t=norm(title+" "+evidence), sourceHost=hostOf(source.updatesUrl);
+  const sourceOrg=norm(source.organization||"");
   let best=null;
   for(const e of exams){
     const examHost=hostOf(e.officialUrl);
-    // Source host is the trust boundary. Never match LIC from NTA/UPSC/etc.
+    const examOrg=norm(e.organization||"");
+    const aliases=(ORG_ALIASES[source.organization]||[]).map(norm);
+    const orgMatch=sourceOrg===examOrg || aliases.some(a=>sourceOrg.includes(a)||examOrg.includes(a)) ||
+      (sourceOrg.includes("staff selection")&&examOrg==="ssc") ||
+      (sourceOrg.includes("railway")&&examOrg.includes("railway")) ||
+      (sourceOrg.includes("national testing")&&examOrg.includes("nta")) ||
+      (sourceOrg.includes("central board")&&examOrg==="cbse");
+    // Both organization identity and registered official host are trust boundaries.
+    // A notice from one authority must never be attributed to another authority.
+    if(!orgMatch) continue;
     if(!sameOrSubdomain(sourceHost,examHost)) continue;
     const custom=(EXAM_ALIASES[e.slug]||[]).map(norm).filter(x=>x.length>=5);
     const fullName=norm(e.name);
