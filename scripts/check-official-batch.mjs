@@ -314,9 +314,13 @@ const exams=[
 ].filter((e,i,a)=>a.findIndex(x=>x.slug===e.slug)===i);
 const ORG_ALIASES={
   "Staff Selection Commission":["ssc"],
-  "Indian Railways / RRB":["rrb","railway recruitment board"],
-  "National Testing Agency":["nta"],
+  "Indian Railways / RRB":["rrb","railway recruitment board","railway recruitment boards","indian railways"],
+  "Railway Recruitment Boards":["rrb","railway recruitment board","railway recruitment boards","indian railways"],
+
+  "National Testing Agency":["nta","national testing agency"],
+  "NTA/CSIR":["nta","csir","national testing agency"],
   "CTET":["ctet","central teacher eligibility test"],
+  "SSC":["ssc","staff selection commission"],
   "CBSE":["cbse","ctet","central teacher eligibility test"],
   "State Bank of India":["sbi"],
   "Reserve Bank of India":["rbi"],
