@@ -373,6 +373,9 @@ export const autoExamData:Record<string,AutoExamOverride> = {
       "CTET correction window: 07 September 2026 to 10 September 2026.",
       "CBSE public notice dated 14 September 2026: 22nd edition of CTET will be conducted on 12th and 13th December 2026.",
       "CTET reopened online application window: 25 August 2026 to 01 September 2026.",
+      "CTET correction window: 07 September 2026 to 10 September 2026.",
+      "CBSE public notice dated 14 September 2026: 22nd edition of CTET will be conducted on 12th and 13th December 2026.",
+      "CTET reopened online application window: 25 August 2026 to 01 September 2026.",
       "CTET correction window: 07 September 2026 to 10 September 2026."
     ],
     "sourceTitle": "PUBLIC NOTICE: Exam Dates for 22nd edition of CTET",

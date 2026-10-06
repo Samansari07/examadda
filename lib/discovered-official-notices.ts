@@ -9222,32 +9222,6 @@ export const discoveredOfficialNotices = [
     "publishedDate": "2026-10-06"
   },
   {
-    "id": "auto-sbi-d5a68a2e4cadae71",
-    "title": "INTERVIEW SCHEDULE FOR RETIRED OFFICERS UPTO GRADE SMGS-V",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-06",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_33_INT_SCH.pdf/7ea6b29e-2bac-6948-3996-82a8f15bcf38?t=1747129639492",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source.",
-    "publishedDate": "2026-10-06"
-  },
-  {
-    "id": "auto-sbi-22138fe6819eecbb",
-    "title": "INTERVIEW SCHEDULE FOR RETIRED OFFICERS UPTO GRADE TEGS-VI",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-06",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_33_INT_SCH+-+TEGSVI.pdf/74f57628-3ebe-360a-889b-d1896eb3003e?t=1747652816787",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source.",
-    "publishedDate": "2026-10-06"
-  },
-  {
     "id": "auto-sbi-caeac4eff4654159",
     "title": "LIST OF CANDIDATES QUALIFIED FOR INTERVIEW",
     "organization": "State Bank of India",
@@ -9391,6 +9365,19 @@ export const discoveredOfficialNotices = [
     "publishedDate": "2026-10-06"
   },
   {
+    "id": "auto-sbi-ec18585647171145",
+    "title": "RECRUITMENT ARCHIVE",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-06",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/en/web/careers/recruitment-results-archive",
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source.",
+    "publishedDate": "2026-10-06"
+  },
+  {
     "id": "auto-sbi-2d017bc98e1f0f41",
     "title": "Recruitment Results",
     "organization": "State Bank of India",
@@ -9482,6 +9469,19 @@ export const discoveredOfficialNotices = [
     "publishedDate": "2026-10-06"
   },
   {
+    "id": "auto-upsc-8505a8636a17c291",
+    "title": "Advertisement No.12 - 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-06",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/12%20-%202026",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source.",
+    "publishedDate": "2026-10-06"
+  },
+  {
     "id": "auto-upsc-5dbbca7b9df838a1",
     "title": "Advertisement No.52 - 2026 (Special)",
     "organization": "UPSC",
@@ -9547,19 +9547,6 @@ export const discoveredOfficialNotices = [
     "publishedDate": "2026-10-06"
   },
   {
-    "id": "auto-upsc-e29852410d5db8ab",
-    "title": "CMSE-2026 - Application submission window extended till 23.09.2026 6.00 PM. Candidates may access the form through Login - Examinations - Apply for Examinations - CMSE-2026 Update",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-06",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/content/cmse-2026-application-submission-window-extended-till-23092026-600-pm-candidates-may-access",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source.",
-    "publishedDate": "2026-10-06"
-  },
-  {
     "id": "auto-upsc-aa7dac9c0942bc5e",
     "title": "e - Admit Card: Combined Defence Services Examination (II), 2026",
     "organization": "UPSC",
@@ -9587,7 +9574,7 @@ export const discoveredOfficialNotices = [
   },
   {
     "id": "auto-upsc-954dc9013a08c8ec",
-    "title": "ew-what-new view-id-what_new view-display-id-block view-what-new view-dom-id-18a43b7c31d1ad884caef3d061927271\"> Common mistakes done while filling OMR Sheet/Scannable Attendance List Notice regarding change in recruitment process for six (06) posts advertised vide Advt",
+    "title": "ew-what-new view-id-what_new view-display-id-block view-what-new view-dom-id-89e56fa32e8a77af06708b0ac99997aa\"> Common mistakes done while filling OMR Sheet/Scannable Attendance List Notice regarding change in recruitment process for six (06) posts advertised vide Advt",
     "organization": "UPSC",
     "category": "Central Government",
     "stage": "Recruitment",
@@ -9690,19 +9677,6 @@ export const discoveredOfficialNotices = [
     "publishedDate": "2026-10-06"
   },
   {
-    "id": "auto-upsc-1d125320e18ae517",
-    "title": "Extension of updation-login window for CAPF (ACs), Examination, 2026",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-06",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/content/extension-updation-login-window-capf-acs-examination-2026",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source.",
-    "publishedDate": "2026-10-06"
-  },
-  {
     "id": "auto-upsc-2acd4c0d2cbd690a",
     "title": "Final Result: 02 Posts of Assistant Director Grade-II (IEDS) (Leather & Footwear), Ministry of MSME",
     "organization": "UPSC",
@@ -9768,6 +9742,19 @@ export const discoveredOfficialNotices = [
     "publishedDate": "2026-10-06"
   },
   {
+    "id": "auto-upsc-8bd17fa8c33ec41c",
+    "title": "Final Result: 363 Posts of Principal in Education Department, GNCTD",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-06",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/363%20Posts%20of%20Principal%20in%20Education%20Department,%20GNCTD/Final%20Result",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source.",
+    "publishedDate": "2026-10-06"
+  },
+  {
     "id": "auto-upsc-8c9a5bad5f53e8dd",
     "title": "Final Result: CISF AC(EXE) LDCE-2026",
     "organization": "UPSC",
@@ -9816,6 +9803,19 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-06",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026/Interview%20Schedule",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source.",
+    "publishedDate": "2026-10-06"
+  },
+  {
+    "id": "auto-upsc-f0f918d89a25edd4",
+    "title": "Interview Schedule: Combined Medical Services Examination, 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Upcoming",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-06",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Interview%20Schedule",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source.",
     "publishedDate": "2026-10-06"
   },
@@ -10211,7 +10211,7 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-06T04:47:10.308Z",
+  "generatedAt": "2026-10-06T05:42:06.517Z",
   "registeredSources": 78,
   "checkedSources": 46,
   "discoveredItems": 785,
@@ -10221,7 +10221,7 @@ export const discoveryMeta = {
       "organization": "UPSC",
       "checked": true,
       "health": "degraded",
-      "detected": 74,
+      "detected": 76,
       "lastChecked": "2026-10-06"
     },
     {
