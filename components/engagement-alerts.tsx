@@ -17,10 +17,14 @@ export default function EngagementAlerts({examSlug,examName}:Props){
   const [subscribed,setSubscribed]=useState(false);
   const [busy,setBusy]=useState(false);
   const [message,setMessage]=useState("");
-  const [hidden,setHidden]=useState(false);\n  const [isIOS,setIsIOS]=useState(false);\n  const [isStandalone,setIsStandalone]=useState(false);
+  const [hidden,setHidden]=useState(false);
+  const [isIOS,setIsIOS]=useState(false);
+  const [isStandalone,setIsStandalone]=useState(false);
 
   useEffect(()=>{
-    if(typeof window==="undefined") return;\n    const ios=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);\n    setIsIOS(ios);
+    if(typeof window==="undefined") return;
+    const ios=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+    setIsIOS(ios);
     const onBefore=(e:any)=>{e.preventDefault();setInstallEvent(e)};
     window.addEventListener("beforeinstallprompt",onBefore);
     const syncInstalled=()=>{const standalone=window.matchMedia("(display-mode: standalone)").matches||(navigator as any).standalone===true;setInstalled(standalone);setIsStandalone(standalone)};
@@ -49,7 +53,11 @@ export default function EngagementAlerts({examSlug,examName}:Props){
 
   async function install(){
     if(!installEvent){
-      setMessage("Install prompt abhi browser ne nahi diya. Chrome ke ⋮ menu se “Install app” / “Add to Home screen” choose karein.");
+      if(isIOS){
+        setMessage("iPhone/iPad: Share (↑) → Add to Home Screen → Open as Web App → Add. Uske baad SarkariPrep kholkar Free Alerts ON karein.");
+      }else{
+        setMessage("Install prompt abhi browser ne nahi diya. Chrome ke ⋮ menu se “Install app” / “Add to Home screen” choose karein.");
+      }
       return;
     }
     await installEvent.prompt();
@@ -66,7 +74,11 @@ export default function EngagementAlerts({examSlug,examName}:Props){
   async function enableAlerts(){
     setBusy(true);setMessage("");
     try{
-      if(isIOS&&!isStandalone){\n        setMessage("iPhone/iPad par pehle SarkariPrep ko Home Screen par “Open as Web App” ke saath install karein, phir Alerts ON karein.");\n        return;\n      }\n      if(!("Notification"in window)||!("serviceWorker"in navigator)||!("PushManager"in window))
+      if(isIOS&&!isStandalone){
+        setMessage("iPhone/iPad par pehle SarkariPrep ko Home Screen par “Open as Web App” ke saath install karein, phir Alerts ON karein.");
+        return;
+      }
+      if(!("Notification"in window)||!("serviceWorker"in navigator)||!("PushManager"in window))
         throw new Error("Is browser mein push alerts available nahi hain.");
       if(Notification.permission==="denied"){
         setPermission("denied");
