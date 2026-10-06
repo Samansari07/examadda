@@ -249,6 +249,38 @@ function parseStructured(t){
   for(const k of ["lastDate","applicationDates","examDate","correctionDates"]) if(out[k]&&!hasRealDate(out[k])){delete out[k];const i=e.indexOf(k);if(i>=0)e.splice(i,1);}
   return{data:out,evidence:e,evidenceSnippets};
 }
+function examEvidenceWindows(text,exam){
+  const raw=String(text||"")
+    .replace(/<script[^>]*>[\\s\\S]*?<\\/script>/gi," ")
+    .replace(/<style[^>]*>[\\s\\S]*?<\\/style>/gi," ")
+    .replace(/<noscript[^>]*>[\\s\\S]*?<\\/noscript>/gi," ")
+    .replace(/\\r/g," ").replace(/\\n+/g," ").replace(/\\s+/g," ").trim();
+  const aliases=[exam.name,...(EXAM_ALIASES[exam.slug]||[])].map(norm).filter(x=>x.length>=5);
+  const lower=norm(raw);
+  const windows=[];
+  for(const alias of aliases){
+    const idx=lower.indexOf(alias);
+    if(idx<0)continue;
+    // norm() collapses whitespace, so use a generous proportional window in the
+    // normalized representation. It is intentionally local: unrelated pages/
+    // dates elsewhere in a long PDF cannot satisfy identity evidence.
+    windows.push(lower.slice(Math.max(0,idx-4500),Math.min(lower.length,idx+7000)));
+  }
+  return windows.length?Array.from(new Set(windows)):[];  
+}
+function parseBestExamNotice(text,exam){
+  const windows=examEvidenceWindows(text,exam);
+  let best=null;
+  for(const window of windows){
+    const p=parseStructured(window);
+    const fields=["examDate","lastDate","applicationDates","vacancies","minAge","maxAge","fee","correctionDates","qualification","selectionProcess","payScale","nationality","domicile","ageRelaxation"];
+    const fieldCount=fields.filter(k=>p.data[k]!==undefined).length;
+    const score=p.evidence.length*3+fieldCount+(p.data.examDate?8:0)+(p.data.applicationDates||p.data.lastDate?5:0)+(p.data.vacancies?3:0);
+    if(!best||score>best.score)best={...p,score,identityWindow:true};
+  }
+  return best;
+}
+
 function deriveCycleYear(title,text){
   const current=new Date().getUTCFullYear();
   const titleYears=[...String(title||"").matchAll(/\b20\d{2}\b/g)].map(m=>Number(m[0]));
@@ -387,13 +419,15 @@ for(const source of selected){
       const pdf=await findPdf(item.notificationUrl);
       const txt=pdf ? await pdfText(pdf) : await htmlText(item.notificationUrl);
       if(!txt)continue;
-      const normalized=norm(txt.slice(0,80000));
+      // Parse only the evidence window that contains the exact exam identity.
+      // This is the key anti-mismatch rule: a date from another exam elsewhere
+      // in the same long notice/PDF can never become this exam's date.
+      const p=parseBestExamNotice(txt,exam);
+      if(!p || !p.identityWindow)continue;
+      const normalized=norm(txt.slice(0,180000));
       const customIdentity=(EXAM_ALIASES[exam.slug]||[]).map(norm);
       const aliases=[norm(exam.name),norm(exam.slug),...customIdentity,...aliasTokens(exam.name)].filter(x=>x.length>3);
-      const identityMatches=new Set(aliases.filter(k=>normalized.includes(k))).size;
-      const titleIdentity=new Set([item.title,...customIdentity].flatMap(x=>aliasTokens(x)).filter(k=>k.length>3&&normalized.includes(k))).size;
-      const identityScore=identityMatches+Math.min(2,titleIdentity);
-      const p=parseStructured(txt);
+      const identityScore=new Set(aliases.filter(k=>normalized.includes(k))).size;
       if(p.data.lastDate) item.applicationLastDate=p.data.lastDate;
       if(p.data.applicationDates) item.applicationDates=p.data.applicationDates;
       if(p.data.examDate) item.examDate=p.data.examDate;
@@ -401,9 +435,20 @@ for(const source of selected){
         item.stage=p.data.examDate ? "Upcoming" : "Notice";
       }
       const derivedYear=deriveCycleYear(item.title,txt);
-      const dateYears=[p.data.examDate,p.data.lastDate,p.data.applicationDates].filter(Boolean).join(" ").match(/\b20\d{2}\b/g)?.map(Number)||[];
+      const dateYears=[p.data.examDate,p.data.lastDate,p.data.applicationDates].filter(Boolean).join(" ").match(/\\b20\\d{2}\\b/g)?.map(Number)||[];
       const cycleYear=derivedYear || dateYears.find(y=>y>=new Date().getUTCFullYear()-1&&y<=new Date().getUTCFullYear()+1) || null;
       const isFamily=exam?.slug?.startsWith("family-");
+      if(!exam) continue;
+      if(identityScore<1 || p.evidence.length<2 || !(p.data.examDate || p.data.lastDate || p.data.applicationDates || p.data.vacancies))continue;
+      if(exam.slug.startsWith("family-") && identityScore<2)continue;
+      if(isFamily && !cycleYear)continue;
+      const confidence=identityScore>=2 && p.evidence.length>=2 ? "high" : "medium";
+      const cycleSlug=isFamily ? exam.slug.replace(/^family-/,"")+"-"+cycleYear : exam.slug;
+      const cycleName=isFamily ? (cycleYear ? exam.name+" "+cycleYear : exam.name) : exam.name;
+      const certainty=dataCertainty(txt);
+      const sourceNotice=pdf||item.notificationUrl;
+      overrides[cycleSlug]={...p.data,slug:cycleSlug,cycleSlug,familySlug:isFamily?exam.slug:undefined,cycleYear:isFamily?cycleYear:undefined,name:cycleName,organization:exam.organization,notificationUrl:sourceNotice,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence,evidenceCount:p.evidence.length,evidence:p.evidence,evidenceSnippets:p.evidenceSnippets,sourceTitle:item.title,dataCertainty:certainty,applicationStatus:applicationWindowStatus(p.data)};
+    }
       if(!exam) continue;
       if(identityScore<1 || p.evidence.length<2 || !(p.data.examDate || p.data.lastDate || p.data.applicationDates || p.data.vacancies))continue;
       if(exam.slug.startsWith("family-") && identityScore<2)continue;
