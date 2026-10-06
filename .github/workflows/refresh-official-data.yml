@@ -83,10 +83,12 @@ jobs:
           count=$(find official-refresh-batches -name 'batch-*.json' | wc -l)
           echo "Batch files: $count"
           test "$count" -eq 8
+          node -e "const fs=require('fs'); const cfg=JSON.parse(fs.readFileSync('config/official-sources.json','utf8')); const ids=new Set(); for(const file of fs.readdirSync('official-refresh-batches').filter(x=>/^batch-[0-9]+\\.json$/.test(x))){const p=JSON.parse(fs.readFileSync('official-refresh-batches/'+file,'utf8')); for(const s of (p.statuses||[])) ids.add(s.id)} const missing=cfg.map(x=>x.id).filter(x=>!ids.has(x)); if(missing.length){console.error('Missing source statuses:',missing); process.exit(1)} console.log('Source coverage OK:',ids.size+'/'+cfg.length);"
       - name: Aggregate
         run: |
           node scripts/aggregate-official-data.mjs
           node scripts/validate-notice-feed.mjs
+          node scripts/validate-auto-data-integrity.mjs
           node --experimental-strip-types scripts/validate-exam-lifecycle.mjs
           node --check scripts/check-official-batch.mjs
           node --check scripts/aggregate-official-data.mjs
@@ -104,6 +106,7 @@ jobs:
             git reset --hard origin/main
             node scripts/aggregate-official-data.mjs
             node scripts/validate-notice-feed.mjs
+            node scripts/validate-auto-data-integrity.mjs
             node --experimental-strip-types scripts/validate-exam-lifecycle.mjs
             git add lib/auto-notifications.ts lib/auto-exam-data.ts lib/source-status.ts lib/discovered-official-notices.ts
             if git diff --cached --quiet; then
