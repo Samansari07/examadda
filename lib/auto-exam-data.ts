@@ -5,7 +5,7 @@ export type AutoExamOverride = {
 };
 
 export const autoExamDataMeta = {
-  "generatedAt": "2026-10-05",
+  "generatedAt": "2026-10-06",
   "sourceCount": 78,
   "overrideCount": 11,
   "policy": "Only conservative values extracted from an official notice/bulletin are applied. Missing or ambiguous fields are never invented."
@@ -36,7 +36,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "sourceTitle": "Notice: 74 Posts of Assistant Provident Fund Commissioner, EPFO",
     "dataCertainty": "confirmed",
     "applicationStatus": "unknown",
-    "refreshedThisCycle": true
+    "refreshedThisCycle": false,
+    "stale": true
   },
   "upsc-ese-2027": {
     "lastDate": "09.01.2027",
@@ -62,7 +63,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "sourceTitle": "Annual Calendar 2027",
     "dataCertainty": "confirmed",
     "applicationStatus": "unknown",
-    "refreshedThisCycle": true
+    "refreshedThisCycle": false,
+    "stale": true
   },
   "ssc-stenographer-2026": {
     "lastDate": "06.10.2026",
@@ -96,7 +98,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "sourceTitle": "Exam Notification: Combined Section Officers (Grade-&#039;B&#039;) LDCE - 2026 and Combined Stenographers (Grade - &#039;B&#039; - Grade - &#039;I&#039;) LDCE - 2022, 2023 and 2024",
     "dataCertainty": "confirmed",
     "applicationStatus": "open",
-    "refreshedThisCycle": true
+    "refreshedThisCycle": false,
+    "stale": true
   },
   "upsc-cse-2026": {
     "lastDate": "20.07.2026",
@@ -141,7 +144,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "sourceTitle": "Advt. No. ISTRAC:02:2026 dated 27.06.2026 - The Computer Based Test (CBT) is scheduled on 25.09.2026.",
     "dataCertainty": "tentative",
     "applicationStatus": "closed",
-    "refreshedThisCycle": true
+    "refreshedThisCycle": false,
+    "stale": true
   },
   "lic-aao-2025": {
     "applicationDates": "5.0.34 to 5.0.44",
@@ -172,7 +176,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "sourceTitle": "Recruitment of AAO Generalists Specialists Assistant Engineers 2025",
     "dataCertainty": "confirmed",
     "applicationStatus": "upcoming",
-    "refreshedThisCycle": true
+    "refreshedThisCycle": false,
+    "stale": true
   },
   "ibps-clerk-2026": {
     "examDate": "13.08.2026",
@@ -201,7 +206,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "sourceTitle": "Exam Schedule",
     "dataCertainty": "confirmed",
     "applicationStatus": "unknown",
-    "refreshedThisCycle": true
+    "refreshedThisCycle": false,
+    "stale": true
   },
   "inicet-2026": {
     "lastDate": "31.10.2025",
@@ -244,7 +250,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "sourceTitle": "All India Sainik School Entrance Exam (AISSEE)",
     "dataCertainty": "tentative",
     "applicationStatus": "closed",
-    "refreshedThisCycle": true
+    "refreshedThisCycle": false,
+    "stale": true
   },
   "lic-aao-2026": {
     "lastDate": "08 March 2026",
@@ -290,7 +297,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "sourceTitle": "Public Notices",
     "dataCertainty": "tentative",
     "applicationStatus": "closed",
-    "refreshedThisCycle": true
+    "refreshedThisCycle": false,
+    "stale": true
   },
   "neet-ug-2026": {
     "lastDate": "08 March 2026",
@@ -334,7 +342,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "sourceTitle": "Final Opportunity to Confirm/Update Bank Account Details for NEET (UG) 2026 Fee Refund (Exam held on 03 May 2026)",
     "dataCertainty": "tentative",
     "applicationStatus": "closed",
-    "refreshedThisCycle": true
+    "refreshedThisCycle": false,
+    "stale": true
   },
   "ctet-2026": {
     "examDate": "12 and 13 December 2026",
@@ -345,8 +354,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "organization": "CBSE",
     "notificationUrl": "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/",
     "sourceUrl": "https://ctet.nic.in/",
-    "lastVerified": "2026-10-05",
-    "detectedAt": "2026-10-05",
+    "lastVerified": "2026-10-06",
+    "detectedAt": "2026-10-06",
     "confidence": "high",
     "evidenceCount": 5,
     "evidence": [
@@ -359,6 +368,9 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "evidenceSnippets": [
       "examination at the assigned examination centre for ascertaining its suitability. f. As per office memorandum F. No. 29-6/2019-DD-III dated ",
       "qualification of the scribe would be one class lower than the minimum qualification criteria of the post for which the examination is being conducted",
+      "CBSE public notice dated 14 September 2026: 22nd edition of CTET will be conducted on 12th and 13th December 2026.",
+      "CTET reopened online application window: 25 August 2026 to 01 September 2026.",
+      "CTET correction window: 07 September 2026 to 10 September 2026.",
       "CBSE public notice dated 14 September 2026: 22nd edition of CTET will be conducted on 12th and 13th December 2026.",
       "CTET reopened online application window: 25 August 2026 to 01 September 2026.",
       "CTET correction window: 07 September 2026 to 10 September 2026."
@@ -401,6 +413,7 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "sourceTitle": "Detailed Advertisement PDF (103 KB)",
     "dataCertainty": "tentative",
     "applicationStatus": "closed",
-    "refreshedThisCycle": true
+    "refreshedThisCycle": false,
+    "stale": true
   }
 };
