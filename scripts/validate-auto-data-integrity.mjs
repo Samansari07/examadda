@@ -5,11 +5,11 @@ const config=JSON.parse(await fs.readFile("config/official-sources.json","utf8")
 const host=v=>{const m=String(v||"").match(/^https?:\/\/([^/]+)/i);return m?m[1].toLowerCase().replace(/^www\./,""):""};
 const same=(a,b)=>{const x=host(a),y=host(b);return !!x&&!!y&&(x===y||x.endsWith("."+y)||y.endsWith("."+x))};
 const sourceIds=config.map(s=>s.id).filter(Boolean);
-if(new Set(sourceIds).size!==sourceIds.length) failures.push("official-sources.json contains duplicate source ids");
 const sourceForOrg=o=>config.find(s=>String(s.organization||"").toLowerCase()===String(o||"").toLowerCase());
 const identity=v=>String(v||"").toLowerCase().replace(/&amp;/g," and ").replace(/[^a-z0-9]+/g," ").replace(/\b(?:19|20)\d{2}\b/g," ").replace(/\s+/g," ").trim();
 const tokens=v=>identity(v).split(" ").filter(t=>t.length>=5&&!['examination','recruitment','notification','combined','official','application'].includes(t));
 const failures=[];
+if(new Set(sourceIds).size!==sourceIds.length) failures.push("official-sources.json contains duplicate source ids");
 const auto=await fs.readFile("lib/auto-exam-data.ts","utf8");
 const am=auto.match(/autoExamData:Record<string,AutoExamOverride> = (\{[\s\S]*\});\s*$/);
 if(!am) failures.push("auto-exam-data export parse failed");
@@ -22,7 +22,11 @@ else {
     const age=Date.now()-Date.parse(String(v.lastVerified||"")+"T23:59:59Z");
     if(!Number.isFinite(age)||age>14*86400000) failures.push(slug+": stale snapshot exceeds 14-day safety window");
   }
-  if(v.notificationUrl&&!same(v.notificationUrl,v.sourceUrl)) failures.push(slug+": notificationUrl crosses authority");
+  if(v.notificationUrl&&!same(v.notificationUrl,v.sourceUrl)){
+    const nh=host(v.notificationUrl);
+    const trustedCdn=(nh==="s3waas.gov.in"||nh.endsWith(".s3waas.gov.in")) && (host(v.sourceUrl).endsWith(".gov.in")||host(v.sourceUrl).endsWith(".nic.in"));
+    if(!trustedCdn) failures.push(slug+": notificationUrl crosses authority");
+  }
   if(typeof v.minAge==='number'&&(v.minAge<14||v.minAge>70)) failures.push(slug+": invalid minAge");
   if(typeof v.maxAge==='number'&&(v.maxAge<14||v.maxAge>80)) failures.push(slug+": invalid maxAge");
   if(typeof v.minAge==='number'&&typeof v.maxAge==='number'&&v.minAge>v.maxAge) failures.push(slug+": minAge > maxAge");
