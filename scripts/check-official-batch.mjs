@@ -429,6 +429,7 @@ for(const source of selected){
     for(const {item,exam} of candidates){
       // An application notice may not map to an exam profile. Ignore it safely;
       // never let one unmatched item mark the entire official source as failed.
+    }
     statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:f.url,ok:true,health:f.usedFallback?"degraded":"healthy",detected:det.length,lastChecked:today(),method:f.method,attempts:f.attempts});
   }catch(e){
     failures.push({source:source.organization,error:String(e)});
