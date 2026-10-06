@@ -17,13 +17,13 @@ export default function EngagementAlerts({examSlug,examName}:Props){
   const [subscribed,setSubscribed]=useState(false);
   const [busy,setBusy]=useState(false);
   const [message,setMessage]=useState("");
-  const [hidden,setHidden]=useState(false);
+  const [hidden,setHidden]=useState(false);\n  const [isIOS,setIsIOS]=useState(false);\n  const [isStandalone,setIsStandalone]=useState(false);
 
   useEffect(()=>{
-    if(typeof window==="undefined") return;
+    if(typeof window==="undefined") return;\n    const ios=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);\n    setIsIOS(ios);
     const onBefore=(e:any)=>{e.preventDefault();setInstallEvent(e)};
     window.addEventListener("beforeinstallprompt",onBefore);
-    const syncInstalled=()=>setInstalled(window.matchMedia("(display-mode: standalone)").matches||(navigator as any).standalone===true);
+    const syncInstalled=()=>{const standalone=window.matchMedia("(display-mode: standalone)").matches||(navigator as any).standalone===true;setInstalled(standalone);setIsStandalone(standalone)};
     syncInstalled();
     setPermission("Notification" in window?Notification.permission:"unsupported");
     const onInstalled=()=>{setInstalled(true);setInstallEvent(null);setMessage("✓ SarkariPrep app install ho gaya.");};
@@ -66,7 +66,7 @@ export default function EngagementAlerts({examSlug,examName}:Props){
   async function enableAlerts(){
     setBusy(true);setMessage("");
     try{
-      if(!("Notification"in window)||!("serviceWorker"in navigator)||!("PushManager"in window))
+      if(isIOS&&!isStandalone){\n        setMessage("iPhone/iPad par pehle SarkariPrep ko Home Screen par “Open as Web App” ke saath install karein, phir Alerts ON karein.");\n        return;\n      }\n      if(!("Notification"in window)||!("serviceWorker"in navigator)||!("PushManager"in window))
         throw new Error("Is browser mein push alerts available nahi hain.");
       if(Notification.permission==="denied"){
         setPermission("denied");
@@ -115,13 +115,13 @@ export default function EngagementAlerts({examSlug,examName}:Props){
   return <section className="engagementPanel" aria-label="SarkariPrep alerts">
     <div className="engagementIcon" aria-hidden="true">🔔</div>
     <div className="engagementCopy">
-      <div className="engagementEyebrow">NEVER MISS AN UPDATE</div>
+      <div className="engagementEyebrow">✓ VERIFIED GOVERNMENT UPDATES · NEVER MISS AN UPDATE</div>
       <h2>{title}</h2>
-      <p>{description}</p>
+      <p>{description} Application Open, exam date, admit card, result aur important notice updates ke liye free alerts ON rakho.</p>
       {message&&<div className={"engagementMessage "+(permission==="denied"?"isWarning":"")}>{message}</div>}
     </div>
     <div className="engagementActions">
-      {!installed&&<button className="engagementInstall" onClick={install}>📲 Install App</button>}
+      {!installed&&<button className="engagementInstall" onClick={install}>📲 {isIOS?"Add to Home Screen":"Install App"}</button>}
       <button className="engagementPrimary" onClick={enableAlerts} disabled={busy||subscribed}>
         {busy?"Enabling…":subscribed?"✓ Alerts ON":"Turn on Free Alerts"}
       </button>
