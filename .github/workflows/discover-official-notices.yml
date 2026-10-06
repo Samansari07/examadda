@@ -3,6 +3,11 @@ name: Discover official recruitment notices (automatic hourly feed)
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "scripts/**"
+      - "config/**"
+      - ".github/workflows/discover-official-notices.yml"
   schedule:
     - cron: "7 * * * *"
 
