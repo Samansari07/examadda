@@ -87,6 +87,7 @@ jobs:
         run: |
           node scripts/aggregate-official-data.mjs
           node scripts/validate-notice-feed.mjs
+          node --experimental-strip-types scripts/validate-exam-lifecycle.mjs
           node --check scripts/check-official-batch.mjs
           node --check scripts/aggregate-official-data.mjs
           test -s lib/auto-notifications.ts
@@ -103,6 +104,7 @@ jobs:
             git reset --hard origin/main
             node scripts/aggregate-official-data.mjs
             node scripts/validate-notice-feed.mjs
+            node --experimental-strip-types scripts/validate-exam-lifecycle.mjs
             git add lib/auto-notifications.ts lib/auto-exam-data.ts lib/source-status.ts lib/discovered-official-notices.ts
             if git diff --cached --quiet; then
               echo "No official-data changes detected."
