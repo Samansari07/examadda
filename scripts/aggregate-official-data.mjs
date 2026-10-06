@@ -4,6 +4,15 @@ const config=JSON.parse(await fs.readFile("config/official-sources.json","utf8")
 
 const hostOf=value=>{const m=String(value||"").match(/^https?:\\/\\/([^/]+)/i);return m?m[1].toLowerCase().replace(/^www\\./,""):""};
 const sameAuthority=(a,b)=>{const x=hostOf(a),y=hostOf(b);return !!x&&!!y&&(x===y||x.endsWith("." + y)||y.endsWith("." + x))};
+const isTrustedDocumentHost=(url,sourceUrl)=>{
+  const x=hostOf(url), y=hostOf(sourceUrl);
+  if(!x||!y)return false;
+  if(sameAuthority(url,sourceUrl))return true;
+  // Government notices are sometimes hosted on the official S3WAAS/CDN
+  // infrastructure while the authority page remains the source of discovery.
+  return (x==="s3waas.gov.in"||x.endsWith(".s3waas.gov.in")) &&
+    (y.endsWith(".gov.in")||y.endsWith(".nic.in")||y.endsWith(".gov")||y.endsWith(".nic.in"));
+};
 const normalizeIdentity=value=>String(value||"").toLowerCase().replace(/&amp;/g," and ").replace(/[^a-z0-9]+/g," ").replace(/\\b(?:202[0-9]|19[0-9]{2})\\b/g," ").replace(/\\s+/g," ").trim();
 const identityTokens=(value)=>normalizeIdentity(value).split(" ").filter(t=>t.length>=4&&!["examination","recruitment","notification","combined","level","online","official","application"].includes(t));
 const sourceForOrganization=organization=>config.find(s=>String(s.organization||"").toLowerCase()===String(organization||"").toLowerCase());
@@ -18,7 +27,7 @@ const structurallySafeOverride=(v)=>{
   const source=sourceForOrganization(v.organization);
   if(!source)return false;
   if(!sameAuthority(v.sourceUrl,source.updatesUrl))return false;
-  if(v.notificationUrl && !sameAuthority(v.notificationUrl,v.sourceUrl))return false;
+  if(v.notificationUrl && !isTrustedDocumentHost(v.notificationUrl,v.sourceUrl))return false;
   if(typeof v.minAge==="number" && (v.minAge<14 || v.minAge>70))return false;
   if(typeof v.maxAge==="number" && (v.maxAge<14 || v.maxAge>80))return false;
   if(typeof v.minAge==="number" && typeof v.maxAge==="number" && v.minAge>v.maxAge)return false;
@@ -27,7 +36,21 @@ const structurallySafeOverride=(v)=>{
 const files=(await fs.readdir("official-refresh-batches")).filter(x=>/^batch-\d+\.json$/.test(x)).sort();
 if(!files.length)throw new Error("No batch results found");
 const parts=await Promise.all(files.map(async f=>JSON.parse(await fs.readFile("official-refresh-batches/"+f,"utf8"))));
-const statuses=parts.flatMap(x=>x.statuses);
+const rawStatuses=parts.flatMap(x=>x.statuses);
+const statusMap=new Map(rawStatuses.map(x=>[x.id,x]));
+// Every registered source must have a status record. A missing batch result is
+// a pipeline failure, never "no data". Preserve the gap explicitly as unreachable
+// so the UI cannot silently claim nationwide coverage.
+for(const source of config){
+  if(statusMap.has(source.id))continue;
+  statusMap.set(source.id,{
+    id:source.id,organization:source.organization,category:source.category,region:source.region,
+    sourceUrl:source.updatesUrl,ok:false,health:"unreachable",detected:0,
+    lastChecked:new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"}),
+    error:"No batch result was produced for this registered source."
+  });
+}
+const statuses=[...statusMap.values()];
 const failures=parts.flatMap(x=>x.failures);
 const all=parts.flatMap(x=>x.results);
 const overrides={};
