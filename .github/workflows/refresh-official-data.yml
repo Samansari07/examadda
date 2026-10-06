@@ -24,7 +24,25 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  preflight:
+    name: Preflight aggregation scripts
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Syntax check aggregation pipeline
+        run: |
+          node --check scripts/aggregate-official-data.mjs
+          node --check scripts/check-official-batch.mjs
+          node --experimental-strip-types --check scripts/validate-exam-lifecycle.mjs
+
   scan:
+    needs: preflight
     name: Scan official sources batch ${{ matrix.batch }}
     runs-on: ubuntu-latest
     timeout-minutes: 25
@@ -100,6 +118,8 @@ jobs:
           node -e "const fs=require('fs'); const cfg=JSON.parse(fs.readFileSync('config/official-sources.json','utf8')); const ids=new Set(); for(const file of fs.readdirSync('official-refresh-batches').filter(x=>/^batch-[0-9]+\\.json$/.test(x))){const p=JSON.parse(fs.readFileSync('official-refresh-batches/'+file,'utf8')); for(const s of (p.statuses||[])) ids.add(s.id)} const missing=cfg.map(x=>x.id).filter(x=>!ids.has(x)); if(missing.length){console.error('Missing source statuses:',missing); process.exit(1)} console.log('Source coverage OK:',ids.size+'/'+cfg.length);"
       - name: Aggregate
         run: |
+          node --check scripts/aggregate-official-data.mjs
+          node --check scripts/check-official-batch.mjs
           node scripts/aggregate-official-data.mjs
           node scripts/validate-notice-feed.mjs
           node scripts/validate-auto-data-integrity.mjs
