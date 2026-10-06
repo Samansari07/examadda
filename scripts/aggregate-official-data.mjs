@@ -39,7 +39,21 @@ try{
   const m=existing.match(/autoExamData:Record<string,AutoExamOverride> = (\{[\s\S]*?\});\s*$/);
   if(m){
     const previous=JSON.parse(m[1]);
-    for(const [slug,v] of Object.entries(previous)) if(!overrides[slug]) overrides[slug]={...v,stale:true,refreshedThisCycle:false};
+    const todayUtc=new Date();
+    const maxStaleDays=14;
+    for(const [slug,v] of Object.entries(previous)){
+      if(overrides[slug])continue;
+      const verifiedAt=Date.parse(String(v.lastVerified||"")+"T23:59:59Z");
+      const ageDays=Number.isFinite(verifiedAt)?Math.floor((todayUtc.getTime()-verifiedAt)/86400000):99999;
+      const currentYear=todayUtc.getUTCFullYear();
+      const cycleYear=Number(v.cycleYear||currentYear);
+      // Preserve only a short-lived stale snapshot for resilience. Once it is
+      // too old, it is removed rather than silently becoming a permanent
+      // source of dates/vacancies.
+      if(ageDays<=maxStaleDays && cycleYear>=currentYear){
+        overrides[slug]={...v,stale:true,refreshedThisCycle:false};
+      }
+    }
   }
 }catch{}
 for(const [slug,v] of Object.entries({...overrides})){
