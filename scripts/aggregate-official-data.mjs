@@ -159,7 +159,8 @@ for(const x of all){
   if(!previous || notificationScore(x)>notificationScore(previous)) noticeMap.set(key,x);
 }
 const notifications=[...noticeMap.values()].map(n=>{
-  const source=config.find(s=>sameOrganization(s.organization,n.organization));\n  if(source && n.notificationUrl && !isTrustedDocumentHost(n.notificationUrl,source.updatesUrl)){
+  const source=config.find(s=>sameOrganization(s.organization,n.organization));
+  if(source && n.notificationUrl && !isTrustedDocumentHost(n.notificationUrl,source.updatesUrl)){
     return {...n,notificationUrl:source.updatesUrl,description:String(n.description||"")+" Direct document link was not retained because its host did not match the registered authority; the official authority page is shown instead."};
   }
   return n;
