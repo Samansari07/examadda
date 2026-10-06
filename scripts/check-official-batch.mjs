@@ -252,8 +252,8 @@ function parseStructured(t){
 function examEvidenceWindows(text,exam){
   const raw=String(text||"")
     .replace(/<script[^>]*>[\s\S]*?<\/script>/gi," ")
-    .replace(/<style[^>]*>[\s\S]*?<\\/style>/gi," ")
-    .replace(/<noscript[^>]*>[\s\S]*?<\\/noscript>/gi," ")
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi," ")
+    .replace(/<noscript[^>]*>[\s\S]*?<\/noscript>/gi," ")
     .replace(/\r/g," ").replace(/\n+/g," ").replace(/\s+/g," ").trim();
   const aliases=[exam.name,...(EXAM_ALIASES[exam.slug]||[])].map(norm).filter(x=>x.length>=5);
   const lower=norm(raw);
