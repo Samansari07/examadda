@@ -22,6 +22,10 @@ export function extractDates(value:string):Date[]{
   const month=MONTHS[m[2].toLowerCase()]; if(month===undefined) continue;
   const d=new Date(Date.UTC(+m[3],month,+m[1],23,59,59)); if(!Number.isNaN(d.getTime())) out.push(d);
  }
+ for(const m of s.matchAll(/\b(\d{1,2})\s+([A-Za-z]{3,9})\s*[-–—]\s*(\d{1,2})\s+([A-Za-z]{3,9})\s+(20\d{2})\b/gi)){
+  const m1=MONTHS[m[2].toLowerCase()], m2=MONTHS[m[4].toLowerCase()]; if(m1===undefined||m2===undefined) continue;
+  for(const [day,month] of [[+m[1],m1],[+m[3],m2]] as const){const d=new Date(Date.UTC(+m[5],month,day,23,59,59)); if(!Number.isNaN(d.getTime())) out.push(d);}
+ }
  for(const m of s.matchAll(/\b(\d{1,2})\s*[-–—]\s*(\d{1,2})\s+([A-Za-z]{3,9})\s+(20\d{2})\b/gi)){
   const month=MONTHS[m[3].toLowerCase()]; if(month===undefined) continue;
   for(const day of [+m[1],+m[2]]){const d=new Date(Date.UTC(+m[4],month,day,23,59,59)); if(!Number.isNaN(d.getTime())) out.push(d);}
