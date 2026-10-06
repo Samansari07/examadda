@@ -158,10 +158,20 @@ for(const x of all){
   const previous=noticeMap.get(key);
   if(!previous || notificationScore(x)>notificationScore(previous)) noticeMap.set(key,x);
 }
+const registeredHostOwners=new Map();
+for(const source of config){
+  for(const value of [source.updatesUrl,...(Array.isArray(source.fallbackUrls)?source.fallbackUrls:[])]){
+    const h=hostOf(value);
+    if(h)registeredHostOwners.set(h,source.organization);
+  }
+}
 const notifications=[...noticeMap.values()].map(n=>{
-  const source=config.find(s=>sameOrganization(s.organization,n.organization));
-  if(source && n.notificationUrl && !isTrustedDocumentHost(n.notificationUrl,source.updatesUrl)){
-    return {...n,notificationUrl:source.updatesUrl,description:String(n.description||"")+" Direct document link was not retained because its host did not match the registered authority; the official authority page is shown instead."};
+  const source=sourceForOrganization(n.organization);
+  const notificationHost=hostOf(n.notificationUrl);
+  const owner=notificationHost?registeredHostOwners.get(notificationHost):undefined;
+  const wrongRegisteredAuthority=!!owner && !!source && !sameOrganization(owner,source.organization);
+  if(source && n.notificationUrl && (wrongRegisteredAuthority || !isTrustedDocumentHost(n.notificationUrl,source.updatesUrl))){
+    return {...n,notificationUrl:source.updatesUrl,description:String(n.description||"")+" Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."};
   }
   return n;
 });
