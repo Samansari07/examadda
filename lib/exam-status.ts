@@ -61,7 +61,27 @@ export function getApplicationState(
   return "closed";
  }
  if(rawDates.length===1 && /application|apply|form|submission|registration|last date/i.test(raw)){
-  return rawDates[0].getTime()<now?"closed":"upcoming";
+  const d=rawDates[0];
+  const hasTime=/\b(?:0?[1-9]|1[0-2])(?::[0-5]\d)?\s*(?:AM|PM)\b|\b(?:[01]?\d|2[0-3]):[0-5]\d\b/i.test(raw);
+  const timeMatch=raw.match(/\b(\d{1,2})(?::([0-5]\d))?\s*(AM|PM)\b|\b([01]?\d|2[0-3]):([0-5]\d)\b/i);
+  let deadline=d.getTime();
+  if(hasTime&&timeMatch){
+    let h=Number(timeMatch[1]??timeMatch[4]??0), min=Number(timeMatch[2]??timeMatch[5]??0);
+    const ap=(timeMatch[3]||"").toUpperCase();
+    if(ap==="PM"&&h<12)h+=12;
+    if(ap==="AM"&&h===12)h=0;
+    // datesFromText stores the calendar date at UTC 23:59; rebuild the deadline
+    // as India Standard Time (UTC+05:30), then compare against the absolute clock.
+    const y=d.getUTCFullYear(), mo=d.getUTCMonth(), day=d.getUTCDate();
+    deadline=Date.UTC(y,mo,day,h,min,0)-5.5*60*60*1000;
+  } else {
+    // No explicit clock time: application deadlines remain open through the end
+    // of the date in IST.
+    deadline=d.getTime();
+  }
+  if(now>deadline)return "closed";
+  // A last-date-only record is actionable on the deadline day.
+  return "open";
  }
  if(explicit==="open"||explicit==="closed"||explicit==="upcoming") return explicit;
  return "unknown";
