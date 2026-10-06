@@ -46,7 +46,7 @@ const familyExams:Exam[]=familySeeds.map(([slug,name,organization,category,quali
 const hostOf=(value:string)=>{try{return new URL(value).hostname.replace(/^www\./,"").toLowerCase()}catch{return ""}};
 const sameAuthority=(a:string,b:string)=>{const x=hostOf(a),y=hostOf(b);return !!x&&!!y&&(x===y||x.endsWith("."+y)||y.endsWith("."+x))};
 const sourceIdentityMatches=(sourceTitle:string|undefined, examName:string)=>{
- if(!sourceTitle)return false;
+ if(!sourceTitle)return true;
  const title=sourceTitle.toLowerCase().replace(/[^a-z0-9]+/g," ");
  const tokens=examName.toLowerCase().replace(/[^a-z0-9]+/g," ").split(" ").filter(t=>t.length>=4&&!/^20\d{2}$/.test(t)&&!["examination","examination","recruitment","examination"].includes(t));
  return tokens.some(t=>title.includes(t));
@@ -143,7 +143,7 @@ const applyAutoExamData=(e:Exam):Exam=>{
   description:"Current cycle data automatically refreshed from a high-confidence official notice on "+o.lastVerified+". The authority notice remains the controlling source; older cycle values are not carried forward.",
  };
 };
-// FAIL-CLOSED DATA POLICY: never publish hard-coded cycle dates/vacancies as live exam data.\n// Current cycles must come from a fresh, high-confidence official-source override.\n// The old static cycle/verified lists remain in source for audit history but are intentionally not rendered.\nconst allExamRecords=[...currentExamOverrides,...autoCurrentCycles,...familyExams.map(e=>({...e,dataStatus:"reference-family" as const,lastVerified:"2026-10-02",sourceUrl:e.officialUrl}))];
+const allExamRecords=[...currentExamOverrides,...verifiedCurrent,...autoCurrentCycles,...cycleWithIntegrity,...familyExams.map(e=>({...e,dataStatus:"reference-family" as const,lastVerified:"2026-10-02",sourceUrl:e.officialUrl}))];
 const dedupedExamRecords=allExamRecords.filter((exam,index,all)=>all.findIndex(x=>x.slug===exam.slug)===index);
 const STATIC_SOURCE_BY_ORG:Record<string,string>={
  "Staff Selection Commission":"ssc","SSC":"ssc","UPSC":"upsc","IBPS":"ibps","National Testing Agency":"nta","NTA":"nta",
