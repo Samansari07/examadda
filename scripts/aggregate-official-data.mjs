@@ -15,7 +15,39 @@ const isTrustedDocumentHost=(url,sourceUrl)=>{
 };
 const normalizeIdentity=value=>String(value||"").toLowerCase().replace(/&amp;/g," and ").replace(/[^a-z0-9]+/g," ").replace(/\\b(?:202[0-9]|19[0-9]{2})\\b/g," ").replace(/\\s+/g," ").trim();
 const identityTokens=(value)=>normalizeIdentity(value).split(" ").filter(t=>t.length>=4&&!["examination","recruitment","notification","combined","level","online","official","application"].includes(t));
-const sourceForOrganization=organization=>config.find(s=>String(s.organization||"").toLowerCase()===String(organization||"").toLowerCase());
+const ORG_GROUPS=[
+  ["ssc","staff selection commission"],
+  ["railway","railway recruitment boards","indian railways / rrb","indian railways"],
+  ["nta","national testing agency","nta/csir"],
+  ["cbse","central board of secondary education","ctet"],
+  ["sbi","state bank of india"],
+  ["rbi","reserve bank of india"],
+  ["ibps","institute of banking personnel selection"],
+  ["upsc","union public service commission"],
+  ["lic","life insurance corporation"],
+  ["jpsc","jharkhand public service commission"],
+  ["jssc","jharkhand staff selection commission"],
+  ["bpsc","bihar public service commission"],
+  ["up psc","uppsc","uttar pradesh public service commission"],
+  ["wbpsc","west bengal public service commission"],
+  ["appsc","andhra pradesh public service commission"],
+  ["tgpsc","tspsc","telangana public service commission"],
+  ["kpsc","karnataka public service commission"],
+  ["aiims","all india institute of medical sciences"],
+  ["nbems","national board of examinations in medical sciences"],
+  ["india post","department of posts"],
+  ["indian air force","air force"],
+  ["indian army","army"],
+  ["indian navy","navy"],
+  ["indian coast guard","coast guard"]
+];
+const orgGroup=value=>{
+  const n=normalizeIdentity(value);
+  for(const group of ORG_GROUPS) if(group.some(x=>n===normalizeIdentity(x)||n.includes(normalizeIdentity(x))||normalizeIdentity(x).includes(n))) return group[0];
+  return n;
+};
+const sameOrganization=(a,b)=>orgGroup(a)===orgGroup(b);
+const sourceForOrganization=organization=>config.find(s=>sameOrganization(s.organization,organization));
 const identityEvidenceMatches=(v)=>{
   const name=identityTokens(v.name||v.slug);
   if(!name.length)return false;
