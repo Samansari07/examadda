@@ -197,7 +197,14 @@ function applicationWindowClosed(data,now=new Date()){
 const DATE_TOKEN="(\\d{1,2}\\s+(?:"+MONTHS+")\\s+\\d{4}|\\d{1,2}[.\\/-]\\d{1,2}[.\\/-]\\d{2,4})";
 function fieldEvidence(text,re,label){const m=text.match(re);if(!m)return null;const i=m.index||0;return {value:m[1]?.trim(),label,snippet:text.slice(Math.max(0,i-100),Math.min(text.length,i+Math.max(220,m[0].length+100))).replace(/\s+/g," ").trim()};}
 function parseStructured(t){
-  const text=String(t).replace(/\r/g," ").replace(/\n+/g," ").replace(/\s+/g," ").trim();
+  // Do not parse JavaScript/CSS/Liferay bundles embedded in an authority page.
+  // Those bundles can contain values such as "5.0.34 to 5.0.44" which are not
+  // recruitment dates.
+  const text=String(t)
+    .replace(/<script[\\s\\S]*?<\\/script>/gi," ")
+    .replace(/<style[\\s\\S]*?<\\/style>/gi," ")
+    .replace(/<noscript[\\s\\S]*?<\\/noscript>/gi," ")
+    .replace(/\r/g," ").replace(/\n+/g," ").replace(/\s+/g," ").trim();
   const out={},e=[],evidenceSnippets=[];
   const capture=(re,label)=>{const m=text.match(re);if(!m)return null;const i=m.index||0;return {value:(m[1]||"").trim(),label,snippet:text.slice(Math.max(0,i-140),Math.min(text.length,i+Math.max(280,m[0].length+140))).trim()};};
   const last=capture(/(?:last date|closing date|last date for (?:submission of )?(?:online )?application|applications? (?:will )?close(?:s)?)[^0-9]*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}|\d{1,2}[.\/-]\d{1,2}[.\/-]\d{2,4})/i,"lastDate");
@@ -236,10 +243,17 @@ function parseStructured(t){
   if(m){out.domicile=m[1].trim();e.push("domicile");evidenceSnippets.push(m[0].slice(0,300));}
   m=text.match(/(?:age relaxation|relaxation in upper age|upper age relaxation)[^:]{0,100}:?\s*([^.;]{10,260})/i);
   if(m){out.ageRelaxation=m[1].trim();e.push("ageRelaxation");evidenceSnippets.push(m[0].slice(0,320));}
+
+  // Reject malformed date captures before they can become high-confidence data.
+  const hasRealDate=v=>/\b20\d{2}\b/.test(String(v||"")) && /\b\d{1,2}(?:[.\/-]\d{1,2}[.\/-]\d{2,4}|\s+[A-Za-z]{3,9}\s+20\d{2})\b/i.test(String(v||""));
+  for(const k of ["lastDate","applicationDates","examDate","correctionDates"]) if(out[k]&&!hasRealDate(out[k])){delete out[k];const i=e.indexOf(k);if(i>=0)e.splice(i,1);}
   return{data:out,evidence:e,evidenceSnippets};
 }
 function deriveCycleYear(title,text){
   const current=new Date().getUTCFullYear();
+  const titleYears=[...String(title||"").matchAll(/\b20\d{2}\b/g)].map(m=>Number(m[0]));
+  const titleCandidate=titleYears.find(y=>y>=current-2&&y<=current+2);
+  if(titleCandidate)return titleCandidate;
   const source=String(title||"")+" "+String(text||"").slice(0,30000);
   const explicit=[
     /(?:recruit(?:ing|ment)?\s+year|recruitment\s+cycle|cycle\s+year|exam(?:ination)?\s+year|academic\s+year|session)\D{0,30}(20\d{2})/i,
@@ -254,9 +268,8 @@ function deriveCycleYear(title,text){
       if(year>=current-1&&year<=current+2)return year;
     }
   }
-  const titleYears=[...String(title||"").matchAll(/\b20\d{2}\b/g)].map(m=>Number(m[0]));
-  const candidate=titleYears.find(y=>y>=current-1&&y<=current+2);
-  return candidate||null;
+  const bodyCandidate=[...String(text||"").matchAll(/\b20\d{2}\b/g)].map(m=>Number(m[0])).find(y=>y>=current-1&&y<=current+2);
+  return bodyCandidate||null;
 }
 const config=JSON.parse(await fs.readFile("config/official-sources.json","utf8"));
 const batch=Number(process.env.SOURCE_BATCH||0),count=Number(process.env.SOURCE_BATCH_COUNT||8);
@@ -303,7 +316,7 @@ const EXAM_ALIASES={
   "family-upsc-geoscientist":["combined geo scientist","geo scientist"],
   "family-ssc-cpo":["sub inspector","delhi police","capfs","ssc cpo"],
   "family-ssc-je":["junior engineer","ssc je"],
-  "family-ssc-stenographer":["stenographer","grade c","grade d"],
+  "family-ssc-stenographer":["ssc stenographer","stenographer grade c","stenographer grade d"],
   "family-ssc-selection-post":["selection post"],
   "family-ssc-gd":["ssc gd","constable gd"],
   "family-rrb-alp":["assistant loco pilot","alp"],
@@ -326,32 +339,33 @@ const EXAM_ALIASES={
   "family-jpsc-forest":["jpsc forest","forest ranger","forest service"],
   "family-jssc-cgl":["jssc cgl","combined graduate level"],
   "family-jssc-inter":["jssc intermediate","intermediate level"],
-  "family-jssc-matric":["jssc matric","matric level"]
+  "family-jssc-matric":["jssc matric","matric level"],
+  "family-lic-aao":["lic aao","assistant administrative officer","life insurance corporation"]
 };
+const hostOf=value=>{try{return new URL(value||"").hostname.replace(/^www\\./,"").toLowerCase()}catch{return ""}};
+const sameOrSubdomain=(a,b)=>!!a&&!!b&&(a===b||a.endsWith("."+b)||b.endsWith("."+a));
 const matchExam=(title,source,evidence="")=>{
-  const t=norm(title+" "+evidence), sourceNames=[source.organization,...(ORG_ALIASES[source.organization]||[])].map(norm);
+  const t=norm(title+" "+evidence), sourceHost=hostOf(source.updatesUrl);
   let best=null;
   for(const e of exams){
-    const sourceOrg=norm(e.organization);
-    const orgMatch=sourceNames.some(a=>a&&sourceOrg===a)||sourceNames.some(a=>a&&t.includes(a));
-    if(!orgMatch)continue;
-    const custom=(EXAM_ALIASES[e.slug]||[]).map(norm);
-    const aliases=[norm(e.slug),norm(e.name),...custom,...aliasTokens(e.name)];
-    let score=0;
-    for(const a of [...new Set(aliases)].filter(x=>x.length>=3)){
-      if(t.includes(a)) score+=a.length>=8?8:4;
-    }
-    const titleTokens=aliasTokens(title);
+    const examHost=hostOf(e.officialUrl);
+    // Source host is the trust boundary. Never match LIC from NTA/UPSC/etc.
+    if(!sameOrSubdomain(sourceHost,examHost)) continue;
+    const custom=(EXAM_ALIASES[e.slug]||[]).map(norm).filter(x=>x.length>=5);
+    const fullName=norm(e.name);
+    const exactName=t.includes(fullName);
     const customHits=custom.filter(a=>t.includes(a)).length;
-    const distinctive=titleTokens.filter(x=>x.length>=4&&t.includes(x));
-    if(customHits>=2)score+=8;
-    if(distinctive.length>=2)score+=4;
+    const titleTokens=aliasTokens(title).filter(x=>x.length>=4);
+    const meaningfulTitleHits=titleTokens.filter(x=>t.includes(x)).length;
     const year=(e.name.match(/\b20\d{2}\b/)||[])[0];
-    if(year&&t.includes(year))score+=5;
-    if(e.slug.startsWith("family-")&&custom.length){
-      const familyHits=custom.filter(a=>t.includes(a)).length;
-      if(familyHits===0)continue;
-      score+=familyHits*3;
+    if(year&&!t.includes(year)) continue;
+    let score=exactName?20:0;
+    score+=customHits*8;
+    if(meaningfulTitleHits>=2)score+=6;
+    if(e.slug.startsWith("family-")){
+      if(!exactName&&customHits===0)continue;
+    }else if(!exactName&&customHits===0&&meaningfulTitleHits<2){
+      continue;
     }
     if(!best||score>best.score)best={e,score};
   }
