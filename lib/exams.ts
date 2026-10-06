@@ -107,6 +107,9 @@ const verifiedCurrent:Exam[]=[{
 
 const applyAutoExamData=(e:Exam):Exam=>{
  const o=autoExamData[e.slug]; if(!o) return e;
+ const currentYear=new Date().getUTCFullYear();
+ // Historical auto snapshots must never overwrite a current/manual record.
+ if(typeof o.cycleYear==="number" && o.cycleYear<currentYear) return e;
  const verified=o.confidence==="high" && o.evidenceCount>=2 && !o.stale && o.refreshedThisCycle!==false;
  if(!verified) return e;
  return {
