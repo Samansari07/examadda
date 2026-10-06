@@ -194,7 +194,7 @@ function applicationWindowClosed(data,now=new Date()){
   const today=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()));
   return end < today;
 }
-const DATE_TOKEN="(\\d{1,2}\\s+(?:"+MONTHS+")\\s+\\d{4}|\\d{1,2}[.\\/-]\\d{1,2}[.\\/-]\\d{2,4})";
+const DATE_TOKEN="(\\d{1,2}\s+(?:"+MONTHS+")\s+\\d{4}|\\d{1,2}[.\\/-]\\d{1,2}[.\\/-]\\d{2,4})";
 function fieldEvidence(text,re,label){const m=text.match(re);if(!m)return null;const i=m.index||0;return {value:m[1]?.trim(),label,snippet:text.slice(Math.max(0,i-100),Math.min(text.length,i+Math.max(220,m[0].length+100))).replace(/\s+/g," ").trim()};}
 function parseStructured(t){
   // Do not parse JavaScript/CSS/Liferay bundles embedded in an authority page.
@@ -251,10 +251,10 @@ function parseStructured(t){
 }
 function examEvidenceWindows(text,exam){
   const raw=String(text||"")
-    .replace(/<script[^>]*>[\\s\\S]*?<\\/script>/gi," ")
-    .replace(/<style[^>]*>[\\s\\S]*?<\\/style>/gi," ")
-    .replace(/<noscript[^>]*>[\\s\\S]*?<\\/noscript>/gi," ")
-    .replace(/\\r/g," ").replace(/\\n+/g," ").replace(/\\s+/g," ").trim();
+    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi," ")
+    .replace(/<style[^>]*>[\s\S]*?<\\/style>/gi," ")
+    .replace(/<noscript[^>]*>[\s\S]*?<\\/noscript>/gi," ")
+    .replace(/\r/g," ").replace(/\n+/g," ").replace(/\s+/g," ").trim();
   const aliases=[exam.name,...(EXAM_ALIASES[exam.slug]||[])].map(norm).filter(x=>x.length>=5);
   const lower=norm(raw);
   const windows=[];
@@ -429,51 +429,6 @@ for(const source of selected){
     for(const {item,exam} of candidates){
       // An application notice may not map to an exam profile. Ignore it safely;
       // never let one unmatched item mark the entire official source as failed.
-      if(!exam) continue;
-      const pdf=await findPdf(item.notificationUrl);
-      const txt=pdf ? await pdfText(pdf) : await htmlText(item.notificationUrl);
-      if(!txt)continue;
-      // Parse only the evidence window that contains the exact exam identity.
-      // This is the key anti-mismatch rule: a date from another exam elsewhere
-      // in the same long notice/PDF can never become this exam's date.
-      const p=parseBestExamNotice(txt,exam);
-      if(!p || !p.identityWindow)continue;
-      const normalized=norm(txt.slice(0,180000));
-      const customIdentity=(EXAM_ALIASES[exam.slug]||[]).map(norm);
-      const aliases=[norm(exam.name),norm(exam.slug),...customIdentity,...aliasTokens(exam.name)].filter(x=>x.length>3);
-      const identityScore=new Set(aliases.filter(k=>normalized.includes(k))).size;
-      if(p.data.lastDate) item.applicationLastDate=p.data.lastDate;
-      if(p.data.applicationDates) item.applicationDates=p.data.applicationDates;
-      if(p.data.examDate) item.examDate=p.data.examDate;
-      if(item.stage==="Application Open" && applicationWindowClosed(p.data)){
-        item.stage=p.data.examDate ? "Upcoming" : "Notice";
-      }
-      const derivedYear=deriveCycleYear(item.title,txt);
-      const dateYears=[p.data.examDate,p.data.lastDate,p.data.applicationDates].filter(Boolean).join(" ").match(/\\b20\\d{2}\\b/g)?.map(Number)||[];
-      const cycleYear=derivedYear || dateYears.find(y=>y>=new Date().getUTCFullYear()-1&&y<=new Date().getUTCFullYear()+1) || null;
-      const isFamily=exam?.slug?.startsWith("family-");
-      if(!exam) continue;
-      if(identityScore<1 || p.evidence.length<2 || !(p.data.examDate || p.data.lastDate || p.data.applicationDates || p.data.vacancies))continue;
-      if(exam.slug.startsWith("family-") && identityScore<2)continue;
-      if(isFamily && !cycleYear)continue;
-      const confidence=identityScore>=2 && p.evidence.length>=2 ? "high" : "medium";
-      const cycleSlug=isFamily ? exam.slug.replace(/^family-/,"")+"-"+cycleYear : exam.slug;
-      const cycleName=isFamily ? (cycleYear ? exam.name+" "+cycleYear : exam.name) : exam.name;
-      const certainty=dataCertainty(txt);
-      const sourceNotice=pdf||item.notificationUrl;
-      overrides[cycleSlug]={...p.data,slug:cycleSlug,cycleSlug,familySlug:isFamily?exam.slug:undefined,cycleYear:isFamily?cycleYear:undefined,name:cycleName,organization:exam.organization,notificationUrl:sourceNotice,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence,evidenceCount:p.evidence.length,evidence:p.evidence,evidenceSnippets:p.evidenceSnippets,sourceTitle:item.title,dataCertainty:certainty,applicationStatus:applicationWindowStatus(p.data)};
-    }
-      if(!exam) continue;
-      if(identityScore<1 || p.evidence.length<2 || !(p.data.examDate || p.data.lastDate || p.data.applicationDates || p.data.vacancies))continue;
-      if(exam.slug.startsWith("family-") && identityScore<2)continue;
-      if(isFamily && !cycleYear)continue;
-      const confidence=identityScore>=2 && p.evidence.length>=2 ? "high" : "medium";
-      const cycleSlug=isFamily ? exam.slug.replace(/^family-/,"")+"-"+cycleYear : exam.slug;
-      const cycleName=isFamily ? (cycleYear ? exam.name+" "+cycleYear : exam.name) : exam.name;
-      const certainty=dataCertainty(txt);
-      const sourceNotice=pdf||item.notificationUrl;
-      overrides[cycleSlug]={...p.data,slug:cycleSlug,cycleSlug,familySlug:isFamily?exam.slug:undefined,cycleYear:isFamily?cycleYear:undefined,name:cycleName,organization:exam.organization,notificationUrl:sourceNotice,sourceUrl:item.officialUrl,lastVerified:today(),detectedAt:today(),confidence,evidenceCount:p.evidence.length,evidence:p.evidence,evidenceSnippets:p.evidenceSnippets,sourceTitle:item.title,dataCertainty:certainty,applicationStatus:applicationWindowStatus(p.data)};
-    }
     statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:f.url,ok:true,health:f.usedFallback?"degraded":"healthy",detected:det.length,lastChecked:today(),method:f.method,attempts:f.attempts});
   }catch(e){
     failures.push({source:source.organization,error:String(e)});
