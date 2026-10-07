@@ -5,7 +5,7 @@ export type AutoExamOverride = {
 };
 
 export const autoExamDataMeta = {
-  "generatedAt": "2026-10-07",
+  "generatedAt": "2026-10-08",
   "sourceCount": 78,
   "overrideCount": 0,
   "policy": "Only conservative values extracted from an official notice/bulletin are applied. Missing or ambiguous fields are never invented."
