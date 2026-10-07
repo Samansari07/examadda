@@ -5,10 +5,10 @@ export type AutoExamOverride = {
 };
 
 export const autoExamDataMeta = {
-  "generatedAt": "2026-10-06",
+  "generatedAt": "2026-10-07",
   "sourceCount": 78,
   "overrideCount": 0,
-  "policy": "Only conservative values extracted from an official notice/bulletin are applied. Missing, ambiguous, cross-authority, or identity-mismatched fields are rejected."
+  "policy": "Only conservative values extracted from an official notice/bulletin are applied. Missing or ambiguous fields are never invented."
 };
 
 export const autoExamData:Record<string,AutoExamOverride> = {};
