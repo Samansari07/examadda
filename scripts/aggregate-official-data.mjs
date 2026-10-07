@@ -43,7 +43,7 @@ const ORG_GROUPS=[
 ];
 const orgGroup=value=>{
   const n=normalizeIdentity(value);
-  for(const group of ORG_GROUPS) if(group.some(x=>n===normalizeIdentity(x)||n.includes(normalizeIdentity(x))||normalizeIdentity(x).includes(n))) return group[0];
+  for(const group of ORG_GROUPS) if(group.some(x=>n===normalizeIdentity(x))) return group[0];
   return n;
 };
 const sameOrganization=(a,b)=>orgGroup(a)===orgGroup(b);
