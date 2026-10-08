@@ -1,131 +1,18 @@
 export type ApplicationState = "open" | "upcoming" | "closed" | "unknown";
 export type ExamState = "upcoming" | "ongoing" | "completed" | "unknown";
-
 const MONTHS:Record<string,number>={jan:0,january:0,feb:1,february:1,mar:2,march:2,apr:3,april:3,may:4,jun:5,june:5,jul:6,july:6,aug:7,august:7,sep:8,september:8,oct:9,october:9,nov:10,november:10,dec:11,december:11};
-
-function datesFromText(value:string):Date[]{
- const s=String(value||"");
- const out:Date[]=[];
- for(const m of s.matchAll(/\b(20\d{2})[-\/.](\d{1,2})[-\/.](\d{1,2})\b/g)){
-  const d=new Date(Date.UTC(+m[1],+m[2]-1,+m[3],23,59,59)); if(!Number.isNaN(d.getTime())) out.push(d);
- }
- for(const m of s.matchAll(/\b(\d{1,2})[.\/-](\d{1,2})[.\/-](\d{2,4})\b/g)){
-  const y=+m[3]<100?2000+ +m[3]:+m[3]; const d=new Date(Date.UTC(y,+m[2]-1,+m[1],23,59,59)); if(!Number.isNaN(d.getTime())) out.push(d);
- }
- for(const m of s.matchAll(/\b(\d{1,2})\s+([A-Za-z]{3,9})\s+(20\d{2})\b/g)){
-  const month=MONTHS[m[2].toLowerCase()]; if(month===undefined) continue;
-  const d=new Date(Date.UTC(+m[3],month,+m[1],23,59,59)); if(!Number.isNaN(d.getTime())) out.push(d);
- }
- for(const m of s.matchAll(/\b(\d{1,2})\s+([A-Za-z]{3,9})\s*[-–—]\s*(\d{1,2})\s+([A-Za-z]{3,9})\s+(20\d{2})\b/gi)){
-  const m1=MONTHS[m[2].toLowerCase()], m2=MONTHS[m[4].toLowerCase()]; if(m1===undefined||m2===undefined) continue;
-  for(const [day,month] of [[+m[1],m1],[+m[3],m2]] as const){const d=new Date(Date.UTC(+m[5],month,day,23,59,59)); if(!Number.isNaN(d.getTime())) out.push(d);}
- }
- for(const m of s.matchAll(/\b(\d{1,2})\s*[-–—]\s*(\d{1,2})\s+([A-Za-z]{3,9})\s+(20\d{2})\b/gi)){
-  const month=MONTHS[m[3].toLowerCase()]; if(month===undefined) continue;
-  for(const day of [+m[1],+m[2]]){const d=new Date(Date.UTC(+m[4],month,day,23,59,59)); if(!Number.isNaN(d.getTime())) out.push(d);}
- }
- return [...new Map(out.map(d=>[d.toISOString(),d])).values()].sort((a,b)=>a.getTime()-b.getTime());
+function datesFromText(value:string):Date[]{const s=String(value||"");const out:Date[]=[];for(const m of s.matchAll(/\b(20\d{2})[-\/.](\d{1,2})[-\/.](\d{1,2})\b/g)){const d=new Date(Date.UTC(+m[1],+m[2]-1,+m[3]));if(!Number.isNaN(d.getTime()))out.push(d)}for(const m of s.matchAll(/\b(\d{1,2})[.\/-](\d{1,2})[.\/-](\d{2,4})\b/g)){const y=+m[3]<100?2000+ +m[3]:+m[3];const d=new Date(Date.UTC(y,+m[2]-1,+m[1]));if(!Number.isNaN(d.getTime()))out.push(d)}for(const m of s.matchAll(/\b(\d{1,2})\s+([A-Za-z]{3,9})\s+(20\d{2})\b/g)){const month=MONTHS[m[2].toLowerCase()];if(month===undefined)continue;const d=new Date(Date.UTC(+m[3],month,+m[1]));if(!Number.isNaN(d.getTime()))out.push(d)}for(const m of s.matchAll(/\b(\d{1,2})\s+([A-Za-z]{3,9})\s*[-–—]\s*(\d{1,2})\s+([A-Za-z]{3,9})\s+(20\d{2})\b/gi)){const m1=MONTHS[m[2].toLowerCase()],m2=MONTHS[m[4].toLowerCase()];if(m1===undefined||m2===undefined)continue;for(const [day,month] of [[+m[1],m1],[+m[3],m2]] as const){const d=new Date(Date.UTC(+m[5],month,day));if(!Number.isNaN(d.getTime()))out.push(d)}}for(const m of s.matchAll(/\b(\d{1,2})\s*[-–—]\s*(\d{1,2})\s+([A-Za-z]{3,9})\s+(20\d{2})\b/gi)){const month=MONTHS[m[3].toLowerCase()];if(month===undefined)continue;for(const day of [+m[1],+m[2]]){const d=new Date(Date.UTC(+m[4],month,day));if(!Number.isNaN(d.getTime()))out.push(d)}}return [...new Map(out.map(d=>[d.toISOString().slice(0,10),d])).values()].sort((a,b)=>a.getTime()-b.getTime())}
+function indiaBoundary(d:Date,end=false,raw=""){const y=d.getUTCFullYear(),mo=d.getUTCMonth(),day=d.getUTCDate();const matches=[...String(raw).matchAll(/\b(\d{1,2})(?::([0-5]\d))?\s*(AM|PM)\b|\b([01]?\d|2[0-3]):([0-5]\d)\b/gi)];let h=end?23:0,min=end?59:0;const t=end?matches.at(-1):matches[0];if(t){h=Number(t[1]??t[4]??0);min=Number(t[2]??t[5]??0);const ap=(t[3]||"").toUpperCase();if(ap==="PM"&&h<12)h+=12;if(ap==="AM"&&h===12)h=0}return Date.UTC(y,mo,day,h,min,end?59:0)-5.5*60*60*1000}
+function cycleYearOf(exam:{name?:string;slug?:string;cycleYear?:number},override?:{cycleYear?:number}){if(typeof override?.cycleYear==="number")return override.cycleYear;if(typeof exam.cycleYear==="number")return exam.cycleYear;const m=(String(exam.name||"")+" "+String(exam.slug||"")).match(/\b20\d{2}\b/);return m?Number(m[0]):new Date().getUTCFullYear()}
+function applicationWindow(raw:string){const s=String(raw||"");const date="(\\d{1,2}\\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\\s+20\\d{2}|\\d{1,2}[.\\/-]\\d{1,2}[.\\/-]\\d{2,4})";const re=new RegExp("(?:applications?|application window|registration(?: window)?)\\D{0,120}("+date+")\\D{0,80}(?:to|till|upto|up to|[-–—])\\D{0,40}("+date+")","i");const m=s.match(re);return m?[m[1],m[2]]:null}
+export function getApplicationState(exam:{name?:string;slug?:string;cycleYear?:number;lastDate?:string;applicationStatus?:string},override?:{cycleYear?:number;applicationDates?:string;lastDate?:string;applicationStatus?:string},now=Date.now()):ApplicationState{
+ const year=cycleYearOf(exam,override),currentYear=new Date(now).getUTCFullYear();if(year<currentYear)return "closed";const explicit=(override?.applicationStatus||exam.applicationStatus||"").toLowerCase();if(explicit==="closed")return "closed";
+ const range=override?.applicationDates||"",rangeDates=datesFromText(range);if(rangeDates.length>=2){const start=indiaBoundary(rangeDates[0],false,range),end=indiaBoundary(rangeDates.at(-1)!,true,range);if(now<start)return "upcoming";if(now<=end)return "open";return "closed"}if(rangeDates.length===1)return now<=indiaBoundary(rangeDates[0],true,range)?"open":"closed";
+ const raw=override?.lastDate||exam.lastDate||"";if(/application\s*(closed|over)|form\s*(closed|over)/i.test(raw))return "closed";const appWindow=applicationWindow(raw);const rawDates=datesFromText(appWindow?appWindow.join(" to "):raw);
+ if(rawDates.length>=2&&!/correction|edit|modification/i.test(raw)){const start=indiaBoundary(rawDates[0],false,raw),end=indiaBoundary(rawDates.at(-1)!,true,raw);if(now<start)return "upcoming";if(now<=end)return "open";return "closed"}
+ if(rawDates.length===1)return now<=indiaBoundary(rawDates[0],true,raw)?"open":"closed";
+ if(explicit==="open"||explicit==="upcoming")return explicit;return "unknown";
 }
-
-function indiaDateBoundary(d:Date, end=false, raw=""){ 
- const y=d.getUTCFullYear(), mo=d.getUTCMonth(), day=d.getUTCDate();
- const times=[...raw.matchAll(/\b(\d{1,2})(?::([0-5]\d))?\s*(AM|PM)\b|\b([01]?\d|2[0-3]):([0-5]\d)\b/gi)];
- let h=end?23:0, min=end?59:0;
- if(end&&times.length){
-  const t=times[times.length-1]; h=Number(t[1]??t[4]??0); min=Number(t[2]??t[5]??0);
-  const ap=(t[3]||"").toUpperCase();
-  if(ap==="PM"&&h<12)h+=12;
-  if(ap==="AM"&&h===12)h=0;
- } else if(!end&&times.length>1){
-  const t=times[0]; h=Number(t[1]??t[4]??0); min=Number(t[2]??t[5]??0);
-  const ap=(t[3]||"").toUpperCase();
-  if(ap==="PM"&&h<12)h+=12;
-  if(ap==="AM"&&h===12)h=0;
- }
- return Date.UTC(y,mo,day,h,min,end?59:0)-5.5*60*60*1000;
-}
-
-function cycleYearOf(exam:{name?:string;slug?:string;cycleYear?:number},override?:{cycleYear?:number}){
- if(typeof override?.cycleYear==="number") return override.cycleYear;
- if(typeof exam.cycleYear==="number") return exam.cycleYear;
- const m=(String(exam.name||"")+" "+String(exam.slug||"")).match(/\b20\d{2}\b/);
- return m?Number(m[0]):new Date().getUTCFullYear();
-}
-
-export function getApplicationState(
- exam:{name?:string;slug?:string;cycleYear?:number;lastDate?:string;applicationStatus?:string},
- override?:{cycleYear?:number;applicationDates?:string;lastDate?:string;applicationStatus?:string},
- now=Date.now()
-):ApplicationState{
- const year=cycleYearOf(exam,override);
- const currentYear=new Date(now).getUTCFullYear();
-
- // Historical cycles can never be "Application Starts Soon" or open because
- // a stale parser supplied a bad date/status.
- if(year<currentYear) return "closed";
-
- const explicit=(override?.applicationStatus||exam.applicationStatus||"").toLowerCase();
- const windowDates=datesFromText(override?.applicationDates||"");
- if(windowDates.length>=2){
-  const start=indiaDateBoundary(windowDates[0],false,override?.applicationDates||"");
-  const end=indiaDateBoundary(windowDates[windowDates.length-1],true,override?.applicationDates||"");
-  if(now<start) return "upcoming";
-  if(now<=end) return "open";
-  return "closed";
- }
-
- const raw=override?.lastDate||exam.lastDate||"";
- if(/application\s*(closed|over)|form\s*(closed|over)/i.test(raw)) return "closed";
- const rawDates=datesFromText(raw);
- if(rawDates.length>=2 && /application|apply|form|submission|registration|tentatively/i.test(raw)){
-  const start=indiaDateBoundary(rawDates[0],false,raw);
-  const end=indiaDateBoundary(rawDates[rawDates.length-1],true,raw);
-  if(now<start) return "upcoming";
-  if(now<=end) return "open";
-  return "closed";
- }
- if(rawDates.length===1){
-  const d=rawDates[0];
-  const hasTime=/\b(?:0?[1-9]|1[0-2])(?::[0-5]\d)?\s*(?:AM|PM)\b|\b(?:[01]?\d|2[0-3]):[0-5]\d\b/i.test(raw);
-  const timeMatch=raw.match(/\b(\d{1,2})(?::([0-5]\d))?\s*(AM|PM)\b|\b([01]?\d|2[0-3]):([0-5]\d)\b/i);
-  let deadline=d.getTime();
-  if(hasTime&&timeMatch){
-    let h=Number(timeMatch[1]??timeMatch[4]??0), min=Number(timeMatch[2]??timeMatch[5]??0);
-    const ap=(timeMatch[3]||"").toUpperCase();
-    if(ap==="PM"&&h<12)h+=12;
-    if(ap==="AM"&&h===12)h=0;
-    // datesFromText stores the calendar date at UTC 23:59; rebuild the deadline
-    // as India Standard Time (UTC+05:30), then compare against the absolute clock.
-    const y=d.getUTCFullYear(), mo=d.getUTCMonth(), day=d.getUTCDate();
-    deadline=Date.UTC(y,mo,day,h,min,0)-5.5*60*60*1000;
-  } else {
-    // No explicit clock time: application deadlines remain open through the end
-    // of the date in IST.
-    deadline=d.getTime();
-  }
-  if(now>deadline)return "closed";
-  // A last-date-only record is actionable on the deadline day.
-  return "open";
- }
- if(explicit==="open"||explicit==="closed"||explicit==="upcoming") return explicit;
- return "unknown";
-}
-
-export function getExamState(
- exam:{name?:string;slug?:string;cycleYear?:number;examDate?:string},
- override?:{cycleYear?:number;examDate?:string},
- now=Date.now()
-):ExamState{
- const dates=datesFromText(override?.examDate||exam.examDate||"");
- if(!dates.length) return "unknown";
- if(now<dates[0].getTime()) return "upcoming";
- if(now<=dates[dates.length-1].getTime()+86400000-1) return "ongoing";
- return "completed";
-}
-
-export function applicationLabel(state:ApplicationState){
- return state==="open"?"Applications Open":state==="upcoming"?"Application Starts Soon":state==="closed"?"Application Closed":"Application Status Unconfirmed";
-}
-export function examLabel(state:ExamState){
- return state==="upcoming"?"Exam Upcoming":state==="ongoing"?"Exam In Progress":state==="completed"?"Exam Completed":"Exam Date TBA";
-}
+export function getExamState(exam:{name?:string;slug?:string;cycleYear?:number;examDate?:string},override?:{cycleYear?:number;examDate?:string},now=Date.now()):ExamState{const raw=override?.examDate||exam.examDate||"",dates=datesFromText(raw);if(!dates.length)return "unknown";const start=indiaBoundary(dates[0],false,raw),end=indiaBoundary(dates.at(-1)!,true,raw);if(now<start)return "upcoming";if(now<=end)return "ongoing";return "completed"}
+export function applicationLabel(state:ApplicationState){return state==="open"?"Applications Open":state==="upcoming"?"Application Starts Soon":state==="closed"?"Application Closed":"Application Status Unconfirmed"}
+export function examLabel(state:ExamState){return state==="upcoming"?"Exam Upcoming":state==="ongoing"?"Exam In Progress":state==="completed"?"Exam Completed":"Exam Date TBA"}
