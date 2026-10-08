@@ -19,15 +19,38 @@ export default function AlertsLanding() {
   }, []);
 
   const updates = autoNotifications.filter((n) => isFeedUseful(n)).slice(0, 5);
-  const jobs = autoNotifications
+
+  // Paid-traffic page shows actionable opportunities first and collapses
+  // duplicate language/notice variants from the same recruitment.
+  const jobCandidates = autoNotifications
     .filter((n) => isFeedUseful(n) && (/Application Open|Recruitment/i.test(n.stage || "") || /recruit|recruitment|vacan|career|appointment|engagement|constable|technician|apprentice|nurse|teacher|engineer|officer/i.test(cleanFeedTitle(n.title))))
-    .slice(0, 6);
+    .sort((a, b) => Number(/Application Open/i.test(b.stage || "")) - Number(/Application Open/i.test(a.stage || "")));
+
+  const jobKey = (n: any) => {
+    const title = cleanFeedTitle(n.title)
+      .toLowerCase()
+      .replace(/\((english|hindi)\s*(version)?\)/gi, "")
+      .replace(/\b(english|hindi)\s+version\b/gi, "")
+      .replace(/\bbrief advertisement\b/gi, "advertisement")
+      .replace(/\b(part\s*[-–—]?\s*[ivx]+)\b/gi, "")
+      .replace(/\s+/g, " ")
+      .trim();
+    return ((n.organization || "official") + "|" + title).replace(/[^a-z0-9|]+/g, " ");
+  };
+
+  const groupedJobs = Array.from(new Map(jobCandidates.map((n: any) => [jobKey(n), n])).values()).slice(0, 6);
+
   const upcomingExams = exams
     .map((exam) => {
       const data = autoExamData[exam.slug];
       return { exam, data, state: getExamState(exam, data), app: getApplicationState(exam, data) };
     })
     .filter((x) => x.state === "upcoming")
+    .sort((a, b) => {
+      const at = a.data?.examDate ? Date.parse(a.data.examDate) : Number.MAX_SAFE_INTEGER;
+      const bt = b.data?.examDate ? Date.parse(b.data.examDate) : Number.MAX_SAFE_INTEGER;
+      return at - bt;
+    })
     .slice(0, 6);
 
   return (
@@ -67,21 +90,21 @@ export default function AlertsLanding() {
         <div className="adWrap">
           <div className="adSectionHead">
             <span className="adEyebrow">🚨 LIVE DISCOVERY</span>
-            <h2>Jobs aur upcoming exams — dono ek jagah.</h2>
-            <p>Paid ad se aane wale users ko direct opportunity view milta hai. Jobs/notifications automatic official-source feed se aur exam cycles SarkariPrep ke exam data se dikhte hain.</p>
+            <h2>Jo kaam ka hai, woh pehle dekho.</h2>
+            <p>Open government jobs, upcoming exams aur important notices — official-source feed se priority ke saath. Same recruitment ke duplicate language/notice variants ko yahan group kiya gaya hai.</p>
           </div>
           <div className="adOpportunityGrid">
             <div className="adOpportunityCol">
-              <div className="adOpportunityHead"><b>🟢 Government Jobs</b><a href="/notifications">View all →</a></div>
+              <div className="adOpportunityHead"><b>🟢 Open Government Jobs</b><a href="/notifications">View all →</a></div>
               <div className="adOpportunityList">
-                {jobs.map((n, i) => (
+                {groupedJobs.map((n: any, i) => (
                   <a href={n.notificationUrl || n.officialUrl || "/notifications"} target="_blank" rel="noopener noreferrer" key={(n.notificationUrl || n.officialUrl || n.title) + i}>
                     <span className="adOppIcon">JOB</span>
-                    <div><b>{cleanFeedTitle(n.title)}</b><small>{n.organization || "Official source"} · {n.stage || "Recruitment update"}</small></div>
+                    <div><b>{cleanFeedTitle(n.title)}</b><small>{n.organization || "Official source"} · {n.stage || "Recruitment update"} · Official source linked</small></div>
                     <strong>↗</strong>
                   </a>
                 ))}
-                {!jobs.length && <div className="adEmpty">No current job feed item is confirmed in this snapshot.</div>}
+                {!groupedJobs.length && <div className="adEmpty">No current open recruitment is confirmed in this snapshot.</div>}
               </div>
             </div>
             <div className="adOpportunityCol">
@@ -107,7 +130,7 @@ export default function AlertsLanding() {
           <div className="adUpdates">
             {updates.map((n, i) => (
               <a href={n.notificationUrl || n.officialUrl || "/notifications"} target="_blank" rel="noopener noreferrer" key={(n.notificationUrl || n.officialUrl || n.title) + i}>
-                <span>NEW</span><div><b>{cleanFeedTitle(n.title)}</b><small>{n.organization || "Official source"} · {n.stage || "Update"}</small></div><strong>↗</strong>
+                <span>NEW</span><div><b>{cleanFeedTitle(n.title)}</b><small>{n.organization || "Official source"} · {n.stage || "Update"} · Official source linked</small></div><strong>↗</strong>
               </a>
             ))}
             {!updates.length && <div className="adEmpty">Latest official updates yahan appear karenge.</div>}
