@@ -244,7 +244,7 @@ export default function EngagementAlerts({examSlug,examName}:Props){
         {busy?"Enabling…":"Turn on Free Alerts"}
       </button>}
       <button className="engagementShare" onClick={share}>↗ Share</button>
-      {!subscribed&&reminder==="show"&&<button className="engagementLater" onClick={remindLater}>Baad mein</button>}
+      {!subscribed&&reminder==="show"&&<button className="engagementLater" onClick={remindLater}>Later</button>}
     </div>
     <button className="engagementClose" onClick={dismiss} aria-label="Dismiss alerts banner">×</button>
   </section>;
