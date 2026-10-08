@@ -54,8 +54,11 @@ export function inferExamLifecycle(
   const noticeHost=(()=>{try{return new URL(n.officialUrl||n.notificationUrl||"").hostname.replace(/^www\./,"").toLowerCase()}catch{return ""}})();
   const allowed=[examHost,...(exam.lifecycleSourceHosts||[])].filter(Boolean).map(x=>x.replace(/^www\./,"").toLowerCase());
   if(!allowed.some(h=>noticeHost===h||noticeHost.endsWith("."+h)||h.endsWith("."+noticeHost)))return false;
-  const hay=(n.title+" "+(n.notificationUrl||"")+" "+(n.officialUrl||"")).toLowerCase();
-  // Do not let a previous-cycle result/notice change the lifecycle of a newer cycle.\n  const noticeYears=(n.title+" "+(n.notificationUrl||"")+" "+(n.officialUrl||"")).match(/\\b20\\d{2}\\b/g)?.map(Number)||[];\n  if(noticeYears.some(y=>y!==year)) return false;\n
+  const noticeBlob=n.title+" "+(n.notificationUrl||"")+" "+(n.officialUrl||"");
+  const hay=noticeBlob.toLowerCase();
+  const noticeYears=noticeBlob.match(/\b20\d{2}\b/g)?.map(Number)||[];
+  if(noticeYears.length && !noticeYears.includes(year)) return false;
+
   const examTokens=exam.name.toLowerCase().replace(/[^a-z0-9]+/g," ").split(" ").filter(x=>x.length>=4&&!/^20\d{2}$/.test(x));
   const tokens=[...examTokens,...(exam.lifecycleKeywords||[]).map(x=>x.toLowerCase())];
   return tokens.some(t=>hay.includes(t));
@@ -63,7 +66,8 @@ export function inferExamLifecycle(
 
  const text=relevant.map(n=>(n.title+" "+(n.stage||"")).toLowerCase()).join(" ");
  if(year<currentYear && /counselling|counseling|seat allotment|admission|reporting|choice filling|medical/.test(text)) return "counselling-active";
- if(/result|score card|merit list|final result|rank card|selection list/.test(text)) return "result-declared";
+ const resultSignal=/result|score card|merit list|final result|rank card|selection list/.test(text);
+ if(resultSignal && (!examDates.length || now>=examDates[0].getTime())) return "result-declared";
 
  // Hard stop: an old cycle can never become upcoming/application-open again.
  if(year<currentYear){
