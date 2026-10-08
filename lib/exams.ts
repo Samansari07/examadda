@@ -157,7 +157,7 @@ const staticVerifiedSourceFresh=(e:Exam)=>{
  const sourceId=STATIC_SOURCE_BY_ORG[e.organization];
  if(!sourceId)return false;
  const source=sourceStatuses[sourceId];
- if(!source||source.health!=="healthy"||!source.lastChecked)return false;
+ if(!source||!source.ok||source.health==="unreachable"||!source.lastChecked)return false;
  const checked=Date.parse(source.lastChecked+"T23:59:59Z");
  return Number.isFinite(checked) && (Date.now()-checked)<=3*86400000;
 };
