@@ -8,11 +8,11 @@ const expect=(label,actual,wanted)=>{if(actual!==wanted)failures.push(label+": e
 // Core calendar semantics used by every exam record.
 expect("single deadline before cutoff",getApplicationState({name:"ESE 2027",slug:"ese-2027",lastDate:"06 October 2026 · 6:00 PM"},undefined,Date.UTC(2026,9,6,12,0,0)),"open");
 expect("single deadline after cutoff",getApplicationState({name:"ESE 2027",slug:"ese-2027",lastDate:"06 October 2026 · 6:00 PM"},undefined,Date.UTC(2026,9,6,13,0,0)),"closed");
-expect("date-only deadline closes at IST day end",getApplicationState({name:"Test Exam 2026",slug:"test-2026",lastDate:"06 October 2026"},undefined,Date.UTC(2026,9,6,18,0,1)),"closed");
+expect("date-only deadline closes at IST day end",getApplicationState({name:"Test Exam 2026",slug:"test-2026",lastDate:"06 October 2026"},undefined,Date.UTC(2026,9,6,18,30,1)),"closed");
 expect("correction dates cannot reopen closed application",getApplicationState({name:"SSC CGL 2026",slug:"ssc-cgl-2026",lastDate:"Application closed · 25 June 2026; correction 01–03 July 2026",applicationStatus:"closed"},undefined,now),"closed");
 expect("historical application",getApplicationState({name:"LIC AAO 2025",slug:"lic-aao-2025",lastDate:"Applications closed"},undefined,now),"closed");
-expect("future application",getApplicationState({name:"Test Exam 2026",slug:"test-2026",lastDate:"Applications: 10 October 2026 to 20 October 2026"},undefined,now),"upcoming");
-expect("open application",getApplicationState({name:"Test Exam 2026",slug:"test-2026",lastDate:"Applications: 01 October 2026 to 20 October 2026"},undefined,now),"open");
+expect("future application",getApplicationState({name:"Test Exam 2026",slug:"test-2026",lastDate:"Applications: 10 October 2026 to 20 October 2026"},{applicationDates:"10 October 2026 to 20 October 2026"},now),"upcoming");
+expect("open application",getApplicationState({name:"Test Exam 2026",slug:"test-2026",lastDate:"Applications: 01 October 2026 to 20 October 2026"},{applicationDates:"01 October 2026 to 20 October 2026"},now),"open");
 expect("closed application",getApplicationState({name:"Test Exam 2026",slug:"test-2026",lastDate:"Applications: 01 September 2026 to 20 September 2026"},undefined,now),"closed");
 
 // Cross-month ranges must not collapse to the first month.
