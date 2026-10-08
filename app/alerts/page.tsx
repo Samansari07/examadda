@@ -3,6 +3,9 @@
 import { useEffect, useState } from "react";
 import EngagementAlerts from "@/components/engagement-alerts";
 import { autoNotifications } from "@/lib/auto-notifications";
+import { exams } from "@/lib/exams";
+import { autoExamData } from "@/lib/auto-exam-data";
+import { getApplicationState, getExamState, applicationLabel, examLabel } from "@/lib/exam-status";
 import { cleanFeedTitle, isFeedUseful } from "@/lib/notification-feed";
 
 export default function AlertsLanding() {
@@ -16,6 +19,16 @@ export default function AlertsLanding() {
   }, []);
 
   const updates = autoNotifications.filter((n) => isFeedUseful(n)).slice(0, 5);
+  const jobs = autoNotifications
+    .filter((n) => isFeedUseful(n) && (/Application Open|Recruitment/i.test(n.stage || "") || /recruit|recruitment|vacan|career|appointment|engagement|constable|technician|apprentice|nurse|teacher|engineer|officer/i.test(cleanFeedTitle(n.title))))
+    .slice(0, 6);
+  const upcomingExams = exams
+    .map((exam) => {
+      const data = autoExamData[exam.slug];
+      return { exam, data, state: getExamState(exam, data), app: getApplicationState(exam, data) };
+    })
+    .filter((x) => x.state === "upcoming")
+    .slice(0, 6);
 
   return (
     <main className="adLanding">
@@ -48,6 +61,44 @@ export default function AlertsLanding() {
             <article><b>02</b><h3>Deadline awareness</h3><p>Application closing dates aur cycle changes ko track karna easier.</p></article>
             <article><b>03</b><h3>Exam lifecycle</h3><p>Admit card, answer key aur result jaise stages ek flow mein.</p></article>
           </div>
+        </div>
+      </section>
+      <section className="adSection adOpportunities">
+        <div className="adWrap">
+          <div className="adSectionHead">
+            <span className="adEyebrow">🚨 LIVE DISCOVERY</span>
+            <h2>Jobs aur upcoming exams — dono ek jagah.</h2>
+            <p>Paid ad se aane wale users ko direct opportunity view milta hai. Jobs/notifications automatic official-source feed se aur exam cycles SarkariPrep ke exam data se dikhte hain.</p>
+          </div>
+          <div className="adOpportunityGrid">
+            <div className="adOpportunityCol">
+              <div className="adOpportunityHead"><b>🟢 Government Jobs</b><a href="/notifications">View all →</a></div>
+              <div className="adOpportunityList">
+                {jobs.map((n, i) => (
+                  <a href={n.notificationUrl || n.officialUrl || "/notifications"} target="_blank" rel="noopener noreferrer" key={(n.notificationUrl || n.officialUrl || n.title) + i}>
+                    <span className="adOppIcon">JOB</span>
+                    <div><b>{cleanFeedTitle(n.title)}</b><small>{n.organization || "Official source"} · {n.stage || "Recruitment update"}</small></div>
+                    <strong>↗</strong>
+                  </a>
+                ))}
+                {!jobs.length && <div className="adEmpty">No current job feed item is confirmed in this snapshot.</div>}
+              </div>
+            </div>
+            <div className="adOpportunityCol">
+              <div className="adOpportunityHead"><b>🔵 Upcoming Exams</b><a href="/upcoming-government-exams">View all →</a></div>
+              <div className="adOpportunityList">
+                {upcomingExams.map(({ exam, data, app }) => (
+                  <a href={"/exams/" + exam.slug} key={exam.slug}>
+                    <span className="adOppIcon exam">EXAM</span>
+                    <div><b>{exam.name}</b><small>{exam.organization} · {examLabel("upcoming")} · {applicationLabel(app)}{data?.examDate ? " · " + data.examDate : ""}</small></div>
+                    <strong>→</strong>
+                  </a>
+                ))}
+                {!upcomingExams.length && <div className="adEmpty">No upcoming exam cycle is currently confirmed in this snapshot.</div>}
+              </div>
+            </div>
+          </div>
+          <div className="adOpportunityTrust"><span>✓ Official-source links</span><span>✓ Automatic feed</span><span>✓ Upcoming exam tracking</span><span>✓ Verify final details in notification</span></div>
         </div>
       </section>
       <section className="adSection adLight">
