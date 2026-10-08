@@ -426,11 +426,62 @@ for(const source of selected){
       .filter(x=>x.exam || x.item.stage==="Application Open")
       .sort((a,b)=>Number(!!b.exam)-Number(!!a.exam))
       .slice(0,80);
-    for(const {item,exam} of candidates){
-      // An application notice may not map to an exam profile. Ignore it safely;
-      // never let one unmatched item mark the entire official source as failed.
+    for(const {item,exam} of candidates.slice(0,12)){
+      if(!exam) continue;
+      const titleCycle=deriveCycleYear(item.title,item.title);
+      const examCycle=Number((exam.name.match(/\b20\d{2}\b/)||[])[0]||0);
+      if(examCycle&&titleCycle&&titleCycle!==examCycle) continue;
+
+      let documentText="";
+      const target=item.notificationUrl||"";
+      if(/\.pdf(?:[?#].*)?$/i.test(target)) documentText=await pdfText(target);
+      else {
+        documentText=await htmlText(target);
+        if(!documentText){
+          const pdf=await findPdf(target);
+          if(pdf) documentText=await pdfText(pdf);
+        }
+      }
+      if(!documentText) documentText=f.html;
+
+      const parsed=parseBestExamNotice(documentText,exam);
+      if(!parsed||!parsed.evidence?.length) continue;
+      const fields=parsed.data||{};
+      const cycleYear=deriveCycleYear(item.title,documentText)||examCycle||null;
+      if(examCycle&&cycleYear&&cycleYear!==examCycle) continue;
+
+      const applicationDates=fields.applicationDates, lastDate=fields.lastDate;
+      const applicationStatus=applicationWindowStatus({applicationDates,lastDate});
+      const evidenceCount=new Set(parsed.evidence).size;
+      if(evidenceCount<2&&!fields.examDate&&!fields.applicationDates&&!fields.lastDate) continue;
+
+      const override={
+        slug:exam.slug,name:exam.name,organization:exam.organization,
+        notificationUrl:item.notificationUrl||source.updatesUrl,sourceUrl:source.updatesUrl,
+        lastVerified:today(),detectedAt:today(),
+        confidence:evidenceCount>=2?"high":"medium",evidenceCount,
+        evidence:[...new Set(parsed.evidence)],
+        evidenceSnippets:[...new Set(parsed.evidenceSnippets||[])].slice(0,8),
+        sourceTitle:item.title,cycleYear:cycleYear||undefined,
+        ...(exam.slug.startsWith("family-")?{familySlug:exam.slug}:{cycleSlug:exam.slug}),
+        ...(applicationDates?{applicationDates}:{}),...(lastDate?{lastDate}:{}),
+        ...(fields.examDate?{examDate:fields.examDate}:{}),
+        ...(fields.vacancies?{vacancies:fields.vacancies}:{}),
+        ...(typeof fields.minAge==="number"?{minAge:fields.minAge}:{}),
+        ...(typeof fields.maxAge==="number"?{maxAge:fields.maxAge}:{}),
+        ...(fields.fee?{fee:fields.fee}:{}),...(fields.correctionDates?{correctionDates:fields.correctionDates}:{}),
+        ...(fields.qualification?{qualification:fields.qualification}:{}),
+        ...(fields.selectionProcess?{selectionProcess:fields.selectionProcess}:{}),
+        ...(fields.payScale?{payScale:fields.payScale}:{}),
+        ...(fields.nationality?{nationality:fields.nationality}:{}),
+        ...(fields.domicile?{domicile:fields.domicile}:{}),
+        ...(fields.ageRelaxation?{ageRelaxation:fields.ageRelaxation}:{}),
+        dataCertainty:dataCertainty(documentText),applicationStatus
+      };
+      const old=overrides[exam.slug];
+      if(!old||override.confidence==="high"||(old.confidence!=="high"&&override.evidenceCount>old.evidenceCount)) overrides[exam.slug]=override;
     }
-    statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:f.url,ok:true,health:f.usedFallback?"degraded":"healthy",detected:det.length,lastChecked:today(),method:f.method,attempts:f.attempts});
+    statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:f.url,ok:true,health:"healthy",detected:det.length,lastChecked:today(),method:f.method,attempts:f.attempts});
   }catch(e){
     failures.push({source:source.organization,error:String(e)});
     statuses.push({id:source.id,organization:source.organization,category:source.category,region:source.region,sourceUrl:source.updatesUrl,ok:false,health:"unreachable",detected:0,lastChecked:today(),error:String(e)});
