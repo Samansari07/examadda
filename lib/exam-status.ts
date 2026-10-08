@@ -84,7 +84,7 @@ export function getApplicationState(
   if(now<=end) return "open";
   return "closed";
  }
- if(rawDates.length===1 && /application|apply|form|submission|registration|last date/i.test(raw)){
+ if(rawDates.length===1){
   const d=rawDates[0];
   const hasTime=/\b(?:0?[1-9]|1[0-2])(?::[0-5]\d)?\s*(?:AM|PM)\b|\b(?:[01]?\d|2[0-3]):[0-5]\d\b/i.test(raw);
   const timeMatch=raw.match(/\b(\d{1,2})(?::([0-5]\d))?\s*(AM|PM)\b|\b([01]?\d|2[0-3]):([0-5]\d)\b/i);
