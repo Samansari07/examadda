@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import LanguageGate from "@/components/language-gate";
 import EngagementAlerts from "@/components/engagement-alerts";
+import { AnalyticsProvider } from "@/components/analytics";
 
 const siteUrl = "https://sarkariprep.online";
 export const viewport = { themeColor: "#102019", colorScheme: "light" };
@@ -18,5 +19,5 @@ export const metadata: Metadata = {
 };
 const structuredData = {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":siteUrl+"/#organization",name:"SarkariPrep",url:siteUrl,description:"Independent student-information platform for Indian government exams and recruitment routes."},{"@type":"WebSite","@id":siteUrl+"/#website",name:"SarkariPrep",url:siteUrl,publisher:{"@id":siteUrl+"/#organization"},inLanguage:"en-IN"}]};
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en-IN"><body><LanguageGate /><EngagementAlerts />{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} /></body></html>;
+  return <html lang="en-IN"><body><LanguageGate /><EngagementAlerts />{children}<AnalyticsProvider /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} /></body></html>;
 }
