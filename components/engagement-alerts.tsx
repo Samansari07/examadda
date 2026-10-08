@@ -1,6 +1,7 @@
 "use client";
 
 import {useEffect,useState} from "react";
+import {trackEvent} from "@/components/analytics";
 
 type Props={examSlug?:string;examName?:string};
 type ReminderState="show"|"remind-later"|"hidden";
@@ -105,6 +106,7 @@ export default function EngagementAlerts({examSlug,examName}:Props){
   },[]);
 
   async function install(){
+    trackEvent("install_cta_click",{location:examName?"exam_alerts":"alerts_banner"});
     if(!installEvent){
       if(isIOS){
         setMessage("iPhone/iPad: Share (↑) → Add to Home Screen → Open as Web App → Add. Phir SarkariPrep ko Home Screen se open karke Free Alerts ON karein.");
@@ -116,6 +118,7 @@ export default function EngagementAlerts({examSlug,examName}:Props){
     await installEvent.prompt();
     const result=await installEvent.userChoice;
     if(result?.outcome==="accepted"){
+      trackEvent("install_prompt_accepted",{platform:isIOS?"ios":/Android/i.test(navigator.userAgent)?"android":"web"});
       setInstalled(true);
       setMessage("✓ Install request accept ho gaya. Ab Free Alerts ON karein.");
       try{localStorage.removeItem(REMINDER_KEY)}catch{}
@@ -126,6 +129,7 @@ export default function EngagementAlerts({examSlug,examName}:Props){
   }
 
   async function enableAlerts(){
+    trackEvent("notification_prompt",{location:examName?"exam_alerts":"alerts_banner"});
     setBusy(true);
     setMessage("");
     try{
@@ -169,6 +173,7 @@ export default function EngagementAlerts({examSlug,examName}:Props){
       if(!res.ok) throw new Error("Alert subscription save nahi ho paya.");
 
       setSubscribed(true);
+      trackEvent("push_subscription_success",{platform:isIOS?"ios":/Android/i.test(navigator.userAgent)?"android":"web",exam:examSlug||"all"});
       setMessage(examSlug?"✓ Is exam ke alerts ON ho gaye.":"✓ Government job & exam alerts ON ho gaye.");
       try{localStorage.removeItem(REMINDER_KEY)}catch{}
     }catch(e:any){
@@ -179,17 +184,20 @@ export default function EngagementAlerts({examSlug,examName}:Props){
   }
 
   function remindLater(){
+    trackEvent("alert_remind_later");
     try{localStorage.setItem(REMINDER_KEY,String(Date.now()+24*60*60*1000))}catch{}
     setReminder("remind-later");
     setMessage("Theek hai — hum is device par alert setup reminder baad mein dikhayenge.");
   }
 
   function dismiss(){
+    trackEvent("alert_banner_dismiss");
     try{localStorage.setItem(HIDDEN_KEY,"1")}catch{}
     setHidden(true);
   }
 
   async function share(){
+    trackEvent("share_click",{location:examName?"exam_alerts":"alerts_banner"});
     const data={
       title:examName?examName+" | SarkariPrep":"SarkariPrep",
       text:examName?("🚨 "+examName+" ka latest government exam update. Official details SarkariPrep par check karo."):"🇮🇳 Government jobs & exams miss mat karo — SarkariPrep share karo.",
