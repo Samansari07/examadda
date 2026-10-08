@@ -44,6 +44,7 @@ export function inferExamLifecycle(
  notices:Array<{title:string;stage?:string;lastChecked?:string;officialUrl?:string;notificationUrl?:string}>=[],
 ):ExamLifecycle{
  const now=Date.now(), year=cycleYearFromExam(exam), currentYear=new Date().getUTCFullYear();
+ const examDates=extractDates(exam.examDate||"");
  const dates=extractDates((exam.examDate||"")+" "+(exam.lastDate||""));
  const applicationDates=extractDates(exam.lastDate||"");
  const examHost=(()=>{try{return new URL(exam.officialUrl||"").hostname.replace(/^www\./,"").toLowerCase()}catch{return ""}})();
