@@ -35,7 +35,9 @@ export default function AlertsLanding() {
       .replace(/\b(part\s*[-–—]?\s*[ivx]+)\b/gi, "")
       .replace(/\s+/g, " ")
       .trim();
-    return ((n.organization || "official") + "|" + title).replace(/[^a-z0-9|]+/g, " ");
+    const org = String(n.organization || "official").toLowerCase();
+    if (/gail/i.test(org) && /advertisement/.test(title)) return org + "|current recruitment";
+    return (org + "|" + title).replace(/[^a-z0-9|]+/g, " ");
   };
 
   const groupedJobs = Array.from(new Map(jobCandidates.map((n: any) => [jobKey(n), n])).values()).slice(0, 6);
