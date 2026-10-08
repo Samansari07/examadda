@@ -7,6 +7,7 @@ import { exams } from "@/lib/exams";
 import { autoExamData } from "@/lib/auto-exam-data";
 import { getApplicationState, getExamState, applicationLabel, examLabel } from "@/lib/exam-status";
 import { cleanFeedTitle, isFeedUseful } from "@/lib/notification-feed";
+import { trackEvent } from "@/components/analytics";
 
 export default function AlertsLanding() {
   const [source, setSource] = useState("");
@@ -97,10 +98,10 @@ export default function AlertsLanding() {
           </div>
           <div className="adOpportunityGrid">
             <div className="adOpportunityCol">
-              <div className="adOpportunityHead"><b>🟢 Open Government Jobs</b><a href="/notifications">View all →</a></div>
+              <div className="adOpportunityHead"><b>🟢 Open Government Jobs</b><a onClick={()=>trackEvent("jobs_view_all",{location:"alerts_landing"})} href="/notifications">View all →</a></div>
               <div className="adOpportunityList">
                 {groupedJobs.map((n: any, i) => (
-                  <a href={n.notificationUrl || n.officialUrl || "/notifications"} target="_blank" rel="noopener noreferrer" key={(n.notificationUrl || n.officialUrl || n.title) + i}>
+                  <a onClick={()=>trackEvent("job_click",{organization:String(n.organization||"official")})} href={n.notificationUrl || n.officialUrl || "/notifications"} target="_blank" rel="noopener noreferrer" key={(n.notificationUrl || n.officialUrl || n.title) + i}>
                     <span className="adOppIcon">JOB</span>
                     <div><b>{cleanFeedTitle(n.title)}</b><small>{n.organization || "Official source"} · {n.stage || "Recruitment update"} · Official source linked</small></div>
                     <strong>↗</strong>
@@ -110,10 +111,10 @@ export default function AlertsLanding() {
               </div>
             </div>
             <div className="adOpportunityCol">
-              <div className="adOpportunityHead"><b>🔵 Upcoming Exams</b><a href="/upcoming-government-exams">View all →</a></div>
+              <div className="adOpportunityHead"><b>🔵 Upcoming Exams</b><a onClick={()=>trackEvent("exams_view_all",{location:"alerts_landing"})} href="/upcoming-government-exams">View all →</a></div>
               <div className="adOpportunityList">
                 {upcomingExams.map(({ exam, data, app }) => (
-                  <a href={"/exams/" + exam.slug} key={exam.slug}>
+                  <a onClick={()=>trackEvent("exam_click",{exam:exam.slug,organization:exam.organization})} href={"/exams/" + exam.slug} key={exam.slug}>
                     <span className="adOppIcon exam">EXAM</span>
                     <div><b>{exam.name}</b><small>{exam.organization} · {examLabel("upcoming")} · {applicationLabel(app)}{data?.examDate ? " · " + data.examDate : ""}</small></div>
                     <strong>→</strong>
@@ -131,7 +132,7 @@ export default function AlertsLanding() {
           <div className="adSectionHead"><span className="adEyebrow">LATEST FEED</span><h2>Abhi SarkariPrep par kya aa raha hai?</h2><p>Automatic feed official-source links ke saath. Dates/status ko final karne se pehle official notification check karein.</p></div>
           <div className="adUpdates">
             {updates.map((n, i) => (
-              <a href={n.notificationUrl || n.officialUrl || "/notifications"} target="_blank" rel="noopener noreferrer" key={(n.notificationUrl || n.officialUrl || n.title) + i}>
+              <a onClick={()=>trackEvent("notice_click",{organization:String(n.organization||"official")})} href={n.notificationUrl || n.officialUrl || "/notifications"} target="_blank" rel="noopener noreferrer" key={(n.notificationUrl || n.officialUrl || n.title) + i}>
                 <span>NEW</span><div><b>{cleanFeedTitle(n.title)}</b><small>{n.organization || "Official source"} · {n.stage || "Update"} · Official source linked</small></div><strong>↗</strong>
               </a>
             ))}
