@@ -55,6 +55,7 @@ export function inferExamLifecycle(
   const allowed=[examHost,...(exam.lifecycleSourceHosts||[])].filter(Boolean).map(x=>x.replace(/^www\./,"").toLowerCase());
   if(!allowed.some(h=>noticeHost===h||noticeHost.endsWith("."+h)||h.endsWith("."+noticeHost)))return false;
   const hay=(n.title+" "+(n.notificationUrl||"")+" "+(n.officialUrl||"")).toLowerCase();
+  // Do not let a previous-cycle result/notice change the lifecycle of a newer cycle.\n  const noticeYears=(n.title+" "+(n.notificationUrl||"")+" "+(n.officialUrl||"")).match(/\\b20\\d{2}\\b/g)?.map(Number)||[];\n  if(noticeYears.some(y=>y!==year)) return false;\n
   const examTokens=exam.name.toLowerCase().replace(/[^a-z0-9]+/g," ").split(" ").filter(x=>x.length>=4&&!/^20\d{2}$/.test(x));
   const tokens=[...examTokens,...(exam.lifecycleKeywords||[]).map(x=>x.toLowerCase())];
   return tokens.some(t=>hay.includes(t));
