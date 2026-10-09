@@ -38,7 +38,7 @@ async function fetchText(url, deadline) {
     }
   } catch {}
   finally { clearTimeout(timer); }
-  const seconds = Math.floor(Math.min(CURL_TIMEOUT_SECONDS, remaining()) / 1000);
+  const seconds = Math.floor(Math.min(CURL_TIMEOUT_SECONDS * 1000, remaining()) / 1000);
   if (seconds < 1) return null;
   try {
     const {stdout}=await execFileAsync("curl",[
