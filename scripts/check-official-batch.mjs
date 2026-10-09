@@ -268,7 +268,7 @@ function examEvidenceWindows(text,exam){
   }
   return windows.length?Array.from(new Set(windows)):[];  
 }
-function parseBestExamNotice(text,exam){
+function parseBestExamNotice(text,exam,identityVerifiedByOfficialLink=false){
   const windows=examEvidenceWindows(text,exam);
   let best=null;
   for(const window of windows){
@@ -277,6 +277,20 @@ function parseBestExamNotice(text,exam){
     const fieldCount=fields.filter(k=>p.data[k]!==undefined).length;
     const score=p.evidence.length*3+fieldCount+(p.data.examDate?8:0)+(p.data.applicationDates||p.data.lastDate?5:0)+(p.data.vacancies?3:0);
     if(!best||score>best.score)best={...p,score,identityWindow:true};
+  }
+  // Some official PDFs omit the exam name in their body even though the official
+  // listing title matched this exact exam. In that case, parse the linked notice
+  // itself (never the whole source listing page) instead of silently discarding it.
+  // Identity is only accepted here after matchExam() verified the official source,
+  // organization and notice title. The normal evidence/date validators still run.
+  if(!best && identityVerifiedByOfficialLink && String(text||"").length>80){
+    const p=parseStructured(text);
+    const fields=["examDate","lastDate","applicationDates","vacancies","minAge","maxAge","fee","correctionDates","qualification","selectionProcess","payScale","nationality","domicile","ageRelaxation"];
+    const fieldCount=fields.filter(k=>p.data[k]!==undefined).length;
+    if(p.evidence.length && fieldCount){
+      const score=p.evidence.length*3+fieldCount+(p.data.examDate?8:0)+(p.data.applicationDates||p.data.lastDate?5:0)+(p.data.vacancies?3:0);
+      best={...p,score,identityWindow:false};
+    }
   }
   return best;
 }
@@ -444,7 +458,7 @@ for(const source of selected){
       }
       if(!documentText) documentText=f.html;
 
-      const parsed=parseBestExamNotice(documentText,exam);
+      const parsed=parseBestExamNotice(documentText,exam,true);
       if(!parsed||!parsed.evidence?.length) continue;
       const fields=parsed.data||{};
       const cycleYear=deriveCycleYear(item.title,documentText)||examCycle||null;
