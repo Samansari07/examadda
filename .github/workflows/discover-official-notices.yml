@@ -44,9 +44,9 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
             node scripts/discover-official-notices.mjs
-            node scripts/aggregate-official-data.mjs
             node scripts/validate-notice-feed.mjs
-            git add lib/discovered-official-notices.ts lib/auto-notifications.ts lib/auto-exam-data.ts lib/source-status.ts
+            node scripts/validate-auto-data-integrity.mjs
+            git add lib/discovered-official-notices.ts
             if git diff --cached --quiet; then
               echo "No discovery changes."
               exit 0
