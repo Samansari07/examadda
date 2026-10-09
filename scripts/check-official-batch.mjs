@@ -309,8 +309,8 @@ const selected=config.filter((_,i)=>i%count===batch);
 const failures=[],statuses=[],results=[],overrides={};
 const examSource=await fs.readFile("lib/exams.ts","utf8");
 const exams=[
-  ...(examSource.match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"/g)?.map(x=>{const m=x.match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"/);return{slug:m[1],name:m[2],organization:m[3]}})||[]),
-  ...[...examSource.matchAll(/\["([^"]+)","([^"]+)","([^"]+)","([^"]+)","([^"]+)","([^"]+)"\]/g)].map(m=>({slug:"family-"+m[1],name:m[2],organization:m[3]}))
+  ...(examSource.match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"[^\n]*officialUrl:"([^"]+)"/g)?.map(x=>{const m=x.match(/slug:"([^"]+)"[^\n]*name:"([^"]+)"[^\n]*organization:"([^"]+)"[^\n]*officialUrl:"([^"]+)"/);return{slug:m[1],name:m[2],organization:m[3],officialUrl:m[4]}})||[]),
+  ...[...examSource.matchAll(/\["([^"]+)","([^"]+)","([^"]+)","([^"]+)","([^"]+)","([^"]+)"\]/g)].map(m=>({slug:"family-"+m[1],name:m[2],organization:m[3],officialUrl:"https://"+m[6]}))
 ].filter((e,i,a)=>a.findIndex(x=>x.slug===e.slug)===i);
 const ORG_ALIASES={
   "Staff Selection Commission":["ssc"],
