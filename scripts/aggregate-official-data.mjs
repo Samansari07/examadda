@@ -50,10 +50,14 @@ const sameOrganization=(a,b)=>orgGroup(a)===orgGroup(b);
 const sourceForOrganization=organization=>config.find(s=>sameOrganization(s.organization,organization));
 const identityEvidenceMatches=(v)=>{
   const name=identityTokens(v.name||v.slug);
-  if(!name.length)return false;
   const evidence=[v.sourceTitle,...(v.evidence||[]),...(v.evidenceSnippets||[])].filter(Boolean).map(normalizeIdentity).join(" ");
   const strong=name.filter(t=>t.length>=5);
-  return strong.some(t=>evidence.includes(t));
+  if(strong.length) return strong.some(t=>evidence.includes(t));
+  // Short exam acronyms such as SSC CGL, RRB NTPC and CTET do not have
+  // five-character name tokens. The batch checker has already matched these
+  // against the registered authority, official host and exam-specific aliases.
+  const fallback=normalizeIdentity(v.slug).split(" ").filter(t=>t.length>=3&&t!=="family");
+  return fallback.length>0 && fallback.some(t=>evidence.includes(t));
 };
 const structurallySafeOverride=(v)=>{
   const source=sourceForOrganization(v.organization);
