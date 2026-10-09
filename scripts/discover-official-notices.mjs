@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import {execFile} from "node:child_process";
 import {promisify} from "node:util";
 import {URL} from "node:url";
+import {createHash} from "node:crypto";
 const execFileAsync=promisify(execFile);
 
 const registryPath = new URL("../config/official-sources.json", import.meta.url);
@@ -74,7 +75,7 @@ function extractLinks(html, source, pageUrl) {
       : /apply|application|recruit|vacanc|career|job|engagement/i.test(lower) ? "Recruitment"
       : "Notice";
     results.push({
-      id: "discover-" + source.id + "-" + Buffer.from(normalized).toString("base64url").slice(0, 18),
+      id: "discover-" + source.id + "-" + createHash("sha256").update(normalized).digest("hex").slice(0, 20),
       title,
       organization: source.organization,
       category: source.category,
