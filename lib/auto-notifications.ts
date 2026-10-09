@@ -64,10 +64,10 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-arunachal-pradesh-psc-c426957caccccd62",
-    "title": "Corrigendum to Advertisement for Common Recruitment Examination for Gr-A & Gr-B Gazetted (Technical) Post-2026 (Part - II)",
+    "title": "FINAL RESULT NOTIFICATION OF TRAINED GRADUATE TEACHER EXAMINATION - 2026 (SECONDARY LEVEL) - II",
     "organization": "Arunachal Pradesh Public Service Commission",
     "category": "State Government",
-    "stage": "Recruitment",
+    "stage": "Result",
     "status": "Detected on official source",
     "lastChecked": "2026-10-09",
     "officialUrl": "https://appsc.gov.in/",
@@ -12223,18 +12223,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-8505a8636a17c291",
-    "title": "Advertisement No.12 - 2026",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-09",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/12%20-%202026",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-5dbbca7b9df838a1",
     "title": "Advertisement No.52 - 2026 (Special)",
     "organization": "UPSC",
@@ -12295,6 +12283,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-upsc-e29852410d5db8ab",
+    "title": "CMSE-2026 - Application submission window extended till 23.09.2026 6.00 PM. Candidates may access the form through Login - Examinations - Apply for Examinations - CMSE-2026 Update",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-09",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/content/cmse-2026-application-submission-window-extended-till-23092026-600-pm-candidates-may-access",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-upsc-aa7dac9c0942bc5e",
     "title": "e - Admit Card: Combined Defence Services Examination (II), 2026",
     "organization": "UPSC",
@@ -12320,7 +12320,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-upsc-954dc9013a08c8ec",
-    "title": "ew-what-new view-id-what_new view-display-id-block view-what-new view-dom-id-067bb35fcba5f294d93c8816f4176589\"> Common mistakes done while filling OMR Sheet/Scannable Attendance List Notice regarding change in recruitment process for six (06) posts advertised vide Advt",
+    "title": "ew-what-new view-id-what_new view-display-id-block view-what-new view-dom-id-18a43b7c31d1ad884caef3d061927271\"> Common mistakes done while filling OMR Sheet/Scannable Attendance List Notice regarding change in recruitment process for six (06) posts advertised vide Advt",
     "organization": "UPSC",
     "category": "Central Government",
     "stage": "Recruitment",
@@ -12415,6 +12415,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-upsc-1d125320e18ae517",
+    "title": "Extension of updation-login window for CAPF (ACs), Examination, 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-09",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/content/extension-updation-login-window-capf-acs-examination-2026",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-upsc-2acd4c0d2cbd690a",
     "title": "Final Result: 02 Posts of Assistant Director Grade-II (IEDS) (Leather & Footwear), Ministry of MSME",
     "organization": "UPSC",
@@ -12475,18 +12487,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-8bd17fa8c33ec41c",
-    "title": "Final Result: 363 Posts of Principal in Education Department, GNCTD",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-09",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/363%20Posts%20of%20Principal%20in%20Education%20Department,%20GNCTD/Final%20Result",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-8c9a5bad5f53e8dd",
     "title": "Final Result: CISF AC(EXE) LDCE-2026",
     "organization": "UPSC",
@@ -12523,18 +12523,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-2261e491879de143",
-    "title": "Important Notice regarding acceptance of e-Affidavit-e-notarized affidavit by the Commission",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-09",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/content/important-notice-regarding-acceptance-e-affidavit-e-notarized-affidavit-commission",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-302b0e06d5394dc1",
     "title": "Interview Schedule: Combined Geo-Scientist (Main) Examination, 2026",
     "organization": "UPSC",
@@ -12544,18 +12532,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-09",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026/Interview%20Schedule",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-f0f918d89a25edd4",
-    "title": "Interview Schedule: Combined Medical Services Examination, 2026",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-09",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Interview%20Schedule",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
