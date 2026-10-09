@@ -45,6 +45,12 @@ for(const file of ['lib/auto-notifications.ts','lib/discovered-official-notices.
   if(!x.notificationUrl||same(x.notificationUrl,x.officialUrl)) continue;
   const h=host(x.notificationUrl);
   if(h.endsWith('.s3waas.gov.in')||h==='s3waas.gov.in') continue;
+  // Some authorities publish across multiple official portals (for example,
+  // SSC regional portals or bank.sbi). Accept a link only when its host is
+  // registered for that exact organization in the official-source registry.
+  const source=sourceForOrg(x.organization);
+  const registeredForOrganization=!!source && [source.updatesUrl,...(source.fallbackUrls||[]),...(source.discoveryUrls||[])].some(url=>same(x.notificationUrl,url));
+  if(registeredForOrganization) continue;
   failures.push(file+': cross-authority link: '+x.organization+' -> '+x.notificationUrl);
   if(failures.length>25) break;
  }
