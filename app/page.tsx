@@ -43,7 +43,7 @@ export default function Home(){
   const key=(n:any)=>(n.notificationUrl||n.officialUrl||n.title).split("#")[0].replace(/\/$/,"").toLowerCase();
   return Array.from(new Map([...autoNotifications,...discoveredOfficialNotices].map(n=>[key(n),n] as const)).values())
     .filter(n=>isFeedUseful(n))
-    .sort((a,b)=>new Date(("publishedDate" in b ? b.publishedDate : undefined)||b.lastChecked).getTime()-new Date(("publishedDate" in a ? a.publishedDate : undefined)||a.lastChecked).getTime())
+    .sort((a,b)=>new Date((b as {publishedDate?:string}).publishedDate||b.lastChecked).getTime()-new Date((a as {publishedDate?:string}).publishedDate||a.lastChecked).getTime())
     .slice(0,30);
 },[]);
  const filteredHeadlines=useMemo(()=>headlineTab==="All"?headlineFeed:headlineFeed.filter(n=>{
