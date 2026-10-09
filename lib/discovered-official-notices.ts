@@ -1010,10 +1010,10 @@ export const discoveredOfficialNotices = [
   },
   {
     "id": "discover-arunachal-pradesh-psc-c426957caccccd62d2f7",
-    "title": "Corrigendum to Advertisement for Common Recruitment Examination for Gr-A & Gr-B Gazetted (Technical) Post-2026 (Part - II)",
+    "title": "FINAL RESULT NOTIFICATION OF TRAINED GRADUATE TEACHER EXAMINATION - 2026 (SECONDARY LEVEL) - II",
     "organization": "Arunachal Pradesh Public Service Commission",
     "category": "State Government",
-    "stage": "Recruitment",
+    "stage": "Result",
     "status": "Detected on official source",
     "lastChecked": "2026-10-09",
     "officialUrl": "https://appsc.gov.in/",
@@ -3314,7 +3314,7 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-09T13:15:13.594Z",
+  "generatedAt": "2026-10-09T13:29:51.389Z",
   "registeredSources": 78,
   "checkedSources": 46,
   "discoveredItems": 276,
@@ -3424,10 +3424,7 @@ export const discoveryMeta = {
         "https://ctet.nic.in/",
         "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/",
         "https://ctet.nic.in/document-category/public-notices/",
-        "https://ctet.nic.in/sitemap.xml",
-        "https://ctet.nic.in/notifications",
-        "https://ctet.nic.in/notices",
-        "https://ctet.nic.in/recruitment"
+        "https://ctet.nic.in/notifications"
       ]
     },
     {
@@ -3757,12 +3754,12 @@ export const discoveryMeta = {
       "pages": [
         "https://kpsc.kar.nic.in/",
         "https://kpsc.kar.nic.in/sitemap.xml",
-        "https://kpsc.kar.nic.in/robots.txt",
         "https://kpsc.kar.nic.in/notifications",
         "https://kpsc.kar.nic.in/notices",
         "https://kpsc.kar.nic.in/recruitment",
         "https://kpsc.kar.nic.in/recruitment-notices",
-        "https://kpsc.kar.nic.in/career"
+        "https://kpsc.kar.nic.in/career",
+        "https://kpsc.kar.nic.in/careers"
       ]
     },
     {
@@ -3866,8 +3863,13 @@ export const discoveryMeta = {
       "method": "mixed",
       "pages": [
         "https://npsc.nagaland.gov.in/",
+        "https://npsc.nagaland.gov.in/sitemap.xml",
         "https://npsc.nagaland.gov.in/robots.txt",
-        "https://npsc.nagaland.gov.in/notifications"
+        "https://npsc.nagaland.gov.in/notifications",
+        "https://npsc.nagaland.gov.in/notices",
+        "https://npsc.nagaland.gov.in/recruitment",
+        "https://npsc.nagaland.gov.in/recruitment-notices",
+        "https://npsc.nagaland.gov.in/career"
       ]
     },
     {
@@ -4125,7 +4127,7 @@ export const discoveryMeta = {
       "discovered": 0,
       "checked": true,
       "fetchedUrl": "https://rajemployment.rajasthan.gov.in/",
-      "method": "mixed",
+      "method": "fetch",
       "pages": [
         "https://rajemployment.rajasthan.gov.in/",
         "https://rajemployment.rajasthan.gov.in/sitemap.xml",
