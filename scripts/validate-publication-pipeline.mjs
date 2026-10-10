@@ -49,7 +49,7 @@ for (const [label, items] of [["automatic feed", autoNotifications], ["discovere
     if (item.stage === "Application Open") {
       const dateText = [item.applicationLastDate, item.applicationDates, item.lastDate, item.title].filter(Boolean).join(" ");
       const hasDate = /\b(?:last date|closing date|application(?:s)? (?:close|closing|last date))\b/i.test(dateText) &&
-        /\b(?:\d{1,2}\s+(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?\s+20\d{2}|\d{1,2}[./-]\d{1,2}[./-]20\d{2})\b/i.test(dateText);
+        /\b(?:\d{1,2}\s+[A-Za-z]+\s+20\d{2}|\d{1,2}[./-]\d{1,2}[./-]20\d{2})\b/i.test(dateText);
       if (!hasDate) failures.push(label + ": Application Open without a parseable closing-date claim: " + item.title);
     }
     if (item.status === "Verified official" && !item.officialUrl) failures.push(label + ": verified item has no official authority URL: " + item.title);
