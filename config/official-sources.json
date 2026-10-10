@@ -197,7 +197,10 @@
     "category": "Medical",
     "region": "Central",
     "updatesUrl": "https://www.esic.gov.in/recruitments",
-    "scope": "ESIC recruitment notices."
+    "scope": "ESIC recruitment notices.",
+    "fallbackUrls": [
+      "https://www.esic.gov.in/recruitments"
+    ]
   },
   {
     "id": "indiapost",
@@ -213,7 +216,10 @@
     "category": "Defence",
     "region": "Central",
     "updatesUrl": "https://www.joinindiannavy.gov.in/",
-    "scope": "Indian Navy officer and sailor recruitment notices, application-window updates, admit cards, results and official recruitment instructions."
+    "scope": "Indian Navy officer and sailor recruitment notices, application-window updates, admit cards, results and official recruitment instructions.",
+    "fallbackUrls": [
+      "https://www.joinindiannavy.gov.in/"
+    ]
   },
   {
     "id": "indian-coast-guard",
@@ -224,7 +230,8 @@
     "scope": "Indian Coast Guard recruitment notifications, civilian and uniformed recruitment notices, application updates and selection notices.",
     "fallbackUrls": [
       "https://www.indiancoastguard.gov.in/archive-recruitment",
-      "https://joinindiancoastguard.cdac.in/"
+      "https://joinindiancoastguard.cdac.in/",
+      "https://www.indiancoastguard.gov.in/recruitment"
     ]
   },
   {
@@ -245,7 +252,10 @@
     "category": "Defence",
     "region": "Central",
     "updatesUrl": "https://joinindianarmy.nic.in/",
-    "scope": "Indian Army recruitment, Agniveer/regular cadre CEE notices, application windows, admit cards, results and recruitment instructions."
+    "scope": "Indian Army recruitment, Agniveer/regular cadre CEE notices, application windows, admit cards, results and recruitment instructions.",
+    "fallbackUrls": [
+      "https://joinindianarmy.nic.in/"
+    ]
   },
   {
     "id": "employment-news",
@@ -280,7 +290,13 @@
     "category": "State Government",
     "region": "Assam",
     "updatesUrl": "https://apsc.nic.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://apsc.assam.gov.in/"
+    ],
+    "discoveryUrls": [
+      "https://apsc.assam.gov.in/"
+    ]
   },
   {
     "id": "bihar-psc",
@@ -288,7 +304,10 @@
     "category": "State Government",
     "region": "Bihar",
     "updatesUrl": "https://bpsc.bihar.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://bpsc.bihar.gov.in/"
+    ]
   },
   {
     "id": "chhattisgarh-psc",
@@ -296,7 +315,10 @@
     "category": "State Government",
     "region": "Chhattisgarh",
     "updatesUrl": "https://psc.cg.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://psc.cg.gov.in/"
+    ]
   },
   {
     "id": "goa-psc",
@@ -312,7 +334,10 @@
     "category": "State Government",
     "region": "Gujarat",
     "updatesUrl": "https://gpsc.gujarat.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://gpsc.gujarat.gov.in/"
+    ]
   },
   {
     "id": "haryana-psc",
@@ -320,7 +345,10 @@
     "category": "State Government",
     "region": "Haryana",
     "updatesUrl": "https://hpsc.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://hpsc.gov.in/"
+    ]
   },
   {
     "id": "himachal-psc",
@@ -328,7 +356,10 @@
     "category": "State Government",
     "region": "Himachal Pradesh",
     "updatesUrl": "https://hppsc.hp.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://hppsc.hp.gov.in/"
+    ]
   },
   {
     "id": "jk-psc",
@@ -336,7 +367,10 @@
     "category": "State/UT Government",
     "region": "Jammu & Kashmir",
     "updatesUrl": "https://jkpsc.nic.in/",
-    "scope": "PSC recruitment, examinations, notices and results."
+    "scope": "PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://jkpsc.nic.in/"
+    ]
   },
   {
     "id": "jharkhand-psc",
@@ -368,7 +402,10 @@
     "category": "State Government",
     "region": "Madhya Pradesh",
     "updatesUrl": "https://mppsc.mp.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://mppsc.mp.gov.in/"
+    ]
   },
   {
     "id": "maharashtra-psc",
@@ -424,7 +461,10 @@
     "category": "State Government",
     "region": "Punjab",
     "updatesUrl": "https://www.ppsc.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://ppsc.gov.in/"
+    ]
   },
   {
     "id": "rajasthan-psc",
@@ -432,7 +472,10 @@
     "category": "State Government",
     "region": "Rajasthan",
     "updatesUrl": "https://rpsc.rajasthan.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://rpsc.rajasthan.gov.in/"
+    ]
   },
   {
     "id": "sikkim-psc",
@@ -440,7 +483,10 @@
     "category": "State Government",
     "region": "Sikkim",
     "updatesUrl": "https://spsc.sikkim.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://spsc.sikkim.gov.in/"
+    ]
   },
   {
     "id": "tamil-nadu-psc",
@@ -448,7 +494,10 @@
     "category": "State Government",
     "region": "Tamil Nadu",
     "updatesUrl": "https://www.tnpsc.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://www.tnpsc.gov.in/"
+    ]
   },
   {
     "id": "telangana-psc",
@@ -456,7 +505,10 @@
     "category": "State Government",
     "region": "Telangana",
     "updatesUrl": "https://www.tspsc.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://www.tgpsc.gov.in/"
+    ]
   },
   {
     "id": "tripura-psc",
@@ -464,7 +516,10 @@
     "category": "State Government",
     "region": "Tripura",
     "updatesUrl": "https://tpsc.tripura.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://tpsc.tripura.gov.in/"
+    ]
   },
   {
     "id": "uttar-pradesh-psc",
@@ -480,7 +535,10 @@
     "category": "State Government",
     "region": "Uttarakhand",
     "updatesUrl": "https://psc.uk.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://psc.uk.gov.in/"
+    ]
   },
   {
     "id": "west-bengal-psc",
@@ -488,7 +546,10 @@
     "category": "State Government",
     "region": "West Bengal",
     "updatesUrl": "https://psc.wb.gov.in/",
-    "scope": "State PSC recruitment, examinations, notices and results."
+    "scope": "State PSC recruitment, examinations, notices and results.",
+    "fallbackUrls": [
+      "https://psc.wb.gov.in/"
+    ]
   },
   {
     "id": "ncs",
@@ -512,7 +573,10 @@
     "category": "State Government",
     "region": "Jharkhand",
     "updatesUrl": "https://recruitment.jharkhand.gov.in/",
-    "scope": "Jharkhand government recruitment source."
+    "scope": "Jharkhand government recruitment source.",
+    "fallbackUrls": [
+      "https://jssc.nic.in/"
+    ]
   },
   {
     "id": "delhi-employment",
@@ -528,7 +592,10 @@
     "category": "State Government",
     "region": "Gujarat",
     "updatesUrl": "https://anubandham.gujarat.gov.in/",
-    "scope": "Gujarat employment/recruitment source."
+    "scope": "Gujarat employment/recruitment source.",
+    "fallbackUrls": [
+      "https://anubandham.gujarat.gov.in/"
+    ]
   },
   {
     "id": "haryana-employment",
@@ -536,7 +603,10 @@
     "category": "State Government",
     "region": "Haryana",
     "updatesUrl": "https://www.hrex.gov.in/",
-    "scope": "Haryana employment/recruitment source."
+    "scope": "Haryana employment/recruitment source.",
+    "fallbackUrls": [
+      "https://hrex.gov.in/"
+    ]
   },
   {
     "id": "himachal-employment",
@@ -544,7 +614,10 @@
     "category": "State Government",
     "region": "Himachal Pradesh",
     "updatesUrl": "https://eemis.hp.gov.in/",
-    "scope": "Himachal Pradesh employment/recruitment source."
+    "scope": "Himachal Pradesh employment/recruitment source.",
+    "fallbackUrls": [
+      "https://eemis.hp.gov.in/"
+    ]
   },
   {
     "id": "jk-employment",
@@ -552,7 +625,10 @@
     "category": "State/UT Government",
     "region": "Jammu & Kashmir",
     "updatesUrl": "https://jakemp.nic.in/",
-    "scope": "Jammu & Kashmir employment/recruitment source."
+    "scope": "Jammu & Kashmir employment/recruitment source.",
+    "fallbackUrls": [
+      "https://jakemp.nic.in/"
+    ]
   },
   {
     "id": "karnataka-employment",
@@ -560,7 +636,10 @@
     "category": "State Government",
     "region": "Karnataka",
     "updatesUrl": "https://itiemp.karnataka.gov.in/13/employment-wing/en",
-    "scope": "Karnataka employment/recruitment source."
+    "scope": "Karnataka employment/recruitment source.",
+    "fallbackUrls": [
+      "https://itiemp.karnataka.gov.in/13/employment-wing/en"
+    ]
   },
   {
     "id": "kerala-employment",
@@ -576,7 +655,10 @@
     "category": "State Government",
     "region": "Madhya Pradesh",
     "updatesUrl": "https://mprojgar.gov.in/home",
-    "scope": "Madhya Pradesh employment/recruitment source."
+    "scope": "Madhya Pradesh employment/recruitment source.",
+    "fallbackUrls": [
+      "https://mprojgar.gov.in/home"
+    ]
   },
   {
     "id": "maharashtra-employment",
@@ -584,7 +666,10 @@
     "category": "State Government",
     "region": "Maharashtra",
     "updatesUrl": "https://rojgar.mahaswayam.gov.in/#/home/index",
-    "scope": "Maharashtra employment/recruitment source."
+    "scope": "Maharashtra employment/recruitment source.",
+    "fallbackUrls": [
+      "https://rojgar.mahaswayam.gov.in/#/home/index"
+    ]
   },
   {
     "id": "odisha-employment",
@@ -592,7 +677,10 @@
     "category": "State Government",
     "region": "Odisha",
     "updatesUrl": "https://empmission.odisha.gov.in/Exchange/Entry.jsp",
-    "scope": "Odisha employment/recruitment source."
+    "scope": "Odisha employment/recruitment source.",
+    "fallbackUrls": [
+      "https://empmission.odisha.gov.in/Exchange/Entry.jsp"
+    ]
   },
   {
     "id": "punjab-employment",
@@ -616,7 +704,10 @@
     "category": "State Government",
     "region": "Tamil Nadu",
     "updatesUrl": "https://tnvelaivaaippu.gov.in/",
-    "scope": "Tamil Nadu employment/recruitment source."
+    "scope": "Tamil Nadu employment/recruitment source.",
+    "fallbackUrls": [
+      "https://tnvelaivaaippu.gov.in/"
+    ]
   },
   {
     "id": "uttar-pradesh-employment",
@@ -632,7 +723,10 @@
     "category": "State Government",
     "region": "West Bengal",
     "updatesUrl": "https://employmentbankwb.gov.in/index.php",
-    "scope": "West Bengal employment/recruitment source."
+    "scope": "West Bengal employment/recruitment source.",
+    "fallbackUrls": [
+      "https://employmentbankwb.gov.in/index.php"
+    ]
   },
   {
     "id": "powergrid",
