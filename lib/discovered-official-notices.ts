@@ -409,30 +409,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-ctet-65b953b91c3e8ca22786",
-    "title": "FINAL ANSWER KEY",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://ctet.nic.in/previous-year-final-answer-key/",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-ctet-da58ec7c67e2874d14a6",
-    "title": "Duplicate Certificate and Marksheet of CTET Examination upto 2016",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://ctet.nic.in/duplicate-marks-sheet-and-certificate/",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-sbi-a34d2f5e312e41f455de",
     "title": "Contact Us",
     "organization": "State Bank of India",
@@ -2329,102 +2305,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-himachal-employment-8ee8c1173a990d5590cd",
-    "title": "Please Login To Renew Your Application",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/Home/UserLogin",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-df1d0369a0c9ff2e74fe",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/sitemap.xml",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-ce1774e1857bf6f0b862",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/robots.txt",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-dc69968f0eb8b42ba119",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/notifications",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-60a38273582700b91efe",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/notices",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-08f0ebd8762e20138545",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/recruitment",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-a7b082156ae6d1b994ce",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/recruitment-notices",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-9f00b8ab3ec7315e7759",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/career",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-uttar-pradesh-employment-013978910ef08f5ae66d",
     "title": "Are You A Job Seeker ?",
     "organization": "Uttar Pradesh Employment Portal",
@@ -3458,10 +3338,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-10T14:24:52.676Z",
+  "generatedAt": "2026-10-10T14:32:57.657Z",
   "registeredSources": 78,
-  "checkedSources": 46,
-  "discoveredItems": 288,
+  "checkedSources": 44,
+  "discoveredItems": 278,
   "sourceResults": [
     {
       "id": "upsc",
@@ -3560,14 +3440,11 @@ export const discoveryMeta = {
     },
     {
       "id": "ctet",
-      "discovered": 2,
-      "checked": true,
-      "fetchedUrl": "https://ctet.nic.in/",
-      "method": "mixed",
-      "pages": [
-        "https://ctet.nic.in/",
-        "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "railways",
@@ -3706,14 +3583,19 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 6,
+      "discovered": 21,
       "checked": true,
       "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
       "method": "mixed",
       "pages": [
         "https://indiapost.gov.in/gdsonlineengagement",
         "https://indiapost.gov.in/sitemap.xml",
-        "https://indiapost.gov.in/robots.txt"
+        "https://indiapost.gov.in/robots.txt",
+        "https://indiapost.gov.in/notifications",
+        "https://indiapost.gov.in/notices",
+        "https://indiapost.gov.in/recruitment",
+        "https://indiapost.gov.in/recruitment-notices",
+        "https://indiapost.gov.in/career"
       ]
     },
     {
@@ -4170,20 +4052,11 @@ export const discoveryMeta = {
     },
     {
       "id": "himachal-employment",
-      "discovered": 8,
-      "checked": true,
-      "fetchedUrl": "https://eemis.hp.gov.in/",
-      "method": "fetch",
-      "pages": [
-        "https://eemis.hp.gov.in/",
-        "https://eemis.hp.gov.in/sitemap.xml",
-        "https://eemis.hp.gov.in/robots.txt",
-        "https://eemis.hp.gov.in/notifications",
-        "https://eemis.hp.gov.in/notices",
-        "https://eemis.hp.gov.in/recruitment",
-        "https://eemis.hp.gov.in/recruitment-notices",
-        "https://eemis.hp.gov.in/career"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "jk-employment",
@@ -4436,13 +4309,13 @@ export const discoveryMeta = {
       "method": "mixed",
       "pages": [
         "https://www.ongcindia.com/web/eng/career/recruitment-notice",
+        "https://www.ongcindia.com/web/eng/career/sitemap.xml",
         "https://www.ongcindia.com/web/eng/career/robots.txt",
         "https://www.ongcindia.com/web/eng/career/notifications",
         "https://www.ongcindia.com/web/eng/career/notices",
         "https://www.ongcindia.com/web/eng/career/recruitment",
         "https://www.ongcindia.com/web/eng/career/recruitment-notices",
-        "https://www.ongcindia.com/web/eng/career/career",
-        "https://www.ongcindia.com/web/eng/career/careers"
+        "https://www.ongcindia.com/web/eng/career/career"
       ]
     },
     {
