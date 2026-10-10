@@ -184,66 +184,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-ctet-da58ec7c67e2874d",
-    "title": "Duplicate Certificate and Marksheet of CTET Examination upto 2016",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://ctet.nic.in/duplicate-marks-sheet-and-certificate/",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-35e3f85dfe93437c",
-    "title": "ENTRAL BOARD OF SECONDARY EDUCATION (CBSE)\" target=\"_blank\" style=\"\"> CENTRAL BOARD OF SECONDARY EDUCATION (CBSE) Duplicate Certificate and Marksheet of CTET Examination upto 2016 Circular: Revised Fee for Duplicate MS/Certificate/Verification <",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032562.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-65b953b91c3e8ca2",
-    "title": "FINAL ANSWER KEY",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Answer Key",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://ctet.nic.in/previous-year-final-answer-key/",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-62baff57b3854bd2",
-    "title": "Office Memorandum, dated 19 Aug 2018 : Guidelines for conducting written examination for Persons with Benchmark Disabilities",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032515.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-c31534fbbda464a8",
-    "title": "PUBLIC NOTICE : Validity Period of TET qualifying certificate",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/04/2022042551.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-ctet-3263ad107f9d8029",
     "title": "PUBLIC NOTICE &#8211; CTET Feb 2026 &#8211; RESULT",
     "organization": "CTET",
@@ -349,20 +289,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-11",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/08/20260825641447501.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source.",
-    "applicationLastDate": "01 September 2026",
-    "applicationDates": "25 August 2026 to 01 September 2026"
-  },
-  {
-    "id": "auto-ctet-79e904896104e47b",
-    "title": "Public Notice: re opening of Online Applications for the 22nd Edition of CTET PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW CTET SEPT 2026 INFORMATION BULLETIN CTET PUBLIC NOTICE SEPT 2026 Public Notice: Calcu",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/202605111250310617.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source.",
     "applicationLastDate": "01 September 2026",
     "applicationDates": "25 August 2026 to 01 September 2026"
