@@ -121,3 +121,45 @@
 @media(max-width:760px){.adOpportunityGrid{grid-template-columns:1fr}.adOpportunityCol{padding:12px}.adOpportunityList b{font-size:10px}.adOpportunityList small{font-size:8px}}
 
 .dataTrustNotice{margin:18px auto;padding:16px 18px;border:1px solid #e8c77b;border-left:5px solid #c87918;border-radius:12px;background:#fff9e9;color:#342a18;max-width:1200px}.dataTrustNotice strong{display:block;font-size:1rem;margin-bottom:5px}.dataTrustNotice p{margin:0 0 10px;line-height:1.5}.dataTrustLinks{display:flex;flex-wrap:wrap;gap:12px}.dataTrustLinks a{font-weight:650;text-decoration:underline;color:#174a35}
+
+
+/* Mobile viewport containment and responsive-width safety fix */
+html{width:100%;max-width:100%;min-width:0;overflow-x:clip;-webkit-text-size-adjust:100%}
+body{width:100%;max-width:100%;min-width:0;overflow-x:clip}
+body>div{width:100%;max-width:100%;min-width:0}
+main,header,footer,section,nav,article,aside{min-width:0}
+img,video,iframe,canvas,svg{max-width:100%}
+input,button,select,textarea{max-width:100%}
+.wrap,.adWrap{width:min(1180px,92%);max-width:100%;min-width:0}
+.heroInner,.headlineHub,.section,.directoryPage,.detailPage,.notificationGrid,.headlineGrid,.headlineFeature,.headlineList{min-width:0;max-width:100%}
+.headlineItem>span,.headlineItem>strong,.headlineFeatureHead>*{min-width:0}
+.headlineItem small,.headlineItem b{overflow-wrap:anywhere}
+@media(max-width:760px){
+ html,body{width:100%;min-width:0;overflow-x:clip}
+ .wrap,.adWrap{width:calc(100% - 24px);max-width:100%;margin-left:auto;margin-right:auto}
+ .navInner{width:calc(100% - 16px);gap:6px}
+ .brand{flex:0 0 auto;font-size:clamp(18px,5vw,22px)}
+ .savedNav{font-size:clamp(9px,2.7vw,11px);padding:7px 8px;white-space:nowrap}
+ .heroInner{width:100%;grid-template-columns:minmax(0,1fr);gap:22px;padding:34px 12px}
+ .heroCopy,.heroPanel{width:100%;max-width:100%;min-width:0}
+ .hero h1{font-size:clamp(34px,9vw,46px);overflow-wrap:anywhere}
+ .heroSearch{width:100%;max-width:100%;min-width:0}
+ .heroSearch input{width:100%;min-width:0;font-size:13px}
+ .heroPanel{padding:20px;border-radius:18px}
+ .headlineHub{width:100%;padding-left:0;padding-right:0}
+ .headlineHub>.wrap{width:calc(100% - 20px)}
+ .headlineGrid{grid-template-columns:minmax(0,1fr);gap:12px}
+ .headlineFeature,.headlineList{width:100%;min-width:0}
+ .headlineItem{display:flex;gap:8px;width:100%;min-width:0}
+ .headlineItem>span:nth-child(2){flex:1;min-width:0}
+ .headlineItem>strong{max-width:36%;text-align:right;overflow-wrap:anywhere;font-size:10px}
+ .headlineTabs{max-width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:5px}
+ .headlineTab{flex:0 0 auto}
+ .notificationGrid,.adOpportunityGrid{grid-template-columns:minmax(0,1fr)}
+ .detailGrid,.eligLayout{grid-template-columns:minmax(0,1fr)}
+ .examGrid,.steps,.resourceGrid,.jobGrid,.officialGrid,.savedGrid,.faqGrid,.careerGrid,.categoryGrid{grid-template-columns:minmax(0,1fr)}
+ .sectionHead{min-width:0;flex-wrap:wrap}
+ .dataTrustNotice{width:calc(100% - 20px);max-width:100%;margin:12px auto;padding:12px}
+ .contactPanel,.sourceBanner,.alertPanel{max-width:100%;min-width:0}
+}
+@media(min-width:761px){.heroInner{width:min(1180px,92%);margin-left:auto;margin-right:auto}}
