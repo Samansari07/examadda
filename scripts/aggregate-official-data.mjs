@@ -51,15 +51,49 @@ const orgGroup=value=>{
 };
 const sameOrganization=(a,b)=>orgGroup(a)===orgGroup(b);
 const sourceForOrganization=organization=>config.find(s=>sameOrganization(s.organization,organization));
+const EXAM_IDENTITY_ALIASES={
+  "ssc cgl 2026":["ssc cgl","combined graduate level","cgl examination"],
+  "ssc chsl 2026":["ssc chsl","combined higher secondary level","chsl examination"],
+  "ssc mts 2026":["ssc mts","multi tasking staff","mts examination"],
+  "rrb ntpc 2026":["rrb ntpc","non technical popular categories","ntpc"],
+  "rrb group d 2026":["rrb group d","level 1 posts","group d"],
+  "ctet 2026":["ctet","central teacher eligibility test"],
+  "cds ii 2026":["combined defence services","cds ii"],
+  "nda ii 2026":["national defence academy","nda ii"],
+  "sbi po 2026":["sbi po","probationary officer"],
+  "family upsc ese":["engineering services examination","upsc ese"],
+  "family upsc ifs":["indian forest service","upsc ifs"],
+  "family ssc je":["junior engineer","ssc je"],
+  "family ssc cpo":["sub inspector","ssc cpo","central police organisation"],
+  "family ssc gd":["constable gd","ssc gd"],
+  "family rrb alp":["assistant loco pilot","rrb alp"],
+  "family rrb technician":["railway technician","rrb technician"],
+  "family rrb je":["railway junior engineer","rrb je"],
+  "family rrb ntpc ug":["ntpc undergraduate","non technical popular categories"],
+  "family ibps rrb office assistant":["ibps rrb office assistant","office assistant"],
+  "family ibps rrb officer":["ibps rrb officer","officer scale"],
+  "family sbi clerk":["sbi junior associate","sbi clerk"],
+  "family rbi grade b":["rbi grade b","officers grade b"],
+  "family agniveer airforce":["agniveervayu","agniveer vayu"],
+  "family agniveer army":["agniveer","indian army"],
+  "family agniveer navy":["agniveer navy","indian navy"],
+  "family coast guard":["indian coast guard","coast guard recruitment"],
+  "family jpsc forest":["jpsc forest","forest ranger"],
+  "family jssc cgl":["jssc cgl","combined graduate level"],
+  "family lic aao":["lic aao","assistant administrative officer"]
+};
 const identityEvidenceMatches=(v)=>{
   const name=identityTokens(v.name||v.slug);
   const evidence=[v.sourceTitle,...(v.evidence||[]),...(v.evidenceSnippets||[])].filter(Boolean).map(normalizeIdentity).join(" ");
+  const slug=normalizeIdentity(v.slug);
+  const aliases=EXAM_IDENTITY_ALIASES[slug]||[];
+  // Alias matches are exact exam-specific phrases, not generic words such as
+  // "exam", "notice", or "recruitment". The source authority and trusted host
+  // checks still run independently before any override is applied.
+  if(aliases.some(alias=>evidence.includes(normalizeIdentity(alias)))) return true;
   const strong=name.filter(t=>t.length>=5);
   if(strong.length) return strong.some(t=>evidence.includes(t));
-  // Short exam acronyms such as SSC CGL, RRB NTPC and CTET do not have
-  // five-character name tokens. The batch checker has already matched these
-  // against the registered authority, official host and exam-specific aliases.
-  const fallback=normalizeIdentity(v.slug).split(" ").filter(t=>t.length>=3&&t!=="family");
+  const fallback=slug.split(" ").filter(t=>t.length>=3&&t!=="family");
   return fallback.length>0 && fallback.some(t=>evidence.includes(t));
 };
 const structurallySafeOverride=(v)=>{
