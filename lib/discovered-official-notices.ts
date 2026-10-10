@@ -433,6 +433,150 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-sbi-a34d2f5e312e41f455de",
+    "title": "Contact Us",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/post-your-query",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-e04c18f383cec86b774b",
+    "title": "Current Openings",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/current-openings",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-2d017bc98e1f0f414f10",
+    "title": "Recruitment Results",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/recruitment-results",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-b15b11ca79df3384be98",
+    "title": "Recruitment Results & Archive",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/recruitment-results-archive",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-19cf2c0156a7679144eb",
+    "title": "What are we looking for",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/what-are-we-looking-for",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-10e7fbee5bc66d02d8dc",
+    "title": "World of opportunities",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/world-of-opportunities",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-6bf6f5d206ebb8139cb2",
+    "title": "Growth oriented culture",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/growth-oriented-culture",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-bd9b0b2e4222e78e01b0",
+    "title": "Best in class benefits",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/best-in-class-benefits",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-215ded87e28947a4018e",
+    "title": "Brand SBI",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/brand-sbi",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-2e2303098ca8351c8d08",
+    "title": "Employee Onboarding",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/employee-onboarding",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-a79e3b6e530f278e4d2a",
+    "title": "Learning & Development",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/learning-development",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-54fd401eeb7dcc986fdc",
+    "title": "Our Legacy",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/our-legacy",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-sbi-28cd070f53ead323c780",
     "title": "Contact Us",
     "organization": "State Bank of India",
@@ -589,7 +733,7 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-lic-b4b649cbb0c58886cdda",
+    "id": "discover-lic-25d5bdbf1804df2606d0",
     "title": "*CLICK HERE TO APPLY FOR LIC GOLDEN JUBILEE SCHOLARSHIPS 2026 \"Last date extended up to 15th October 2026\" *",
     "organization": "LIC",
     "category": "Insurance",
@@ -597,7 +741,7 @@ export const discoveredOfficialNotices = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://licindia.in/careers",
-    "notificationUrl": "https://licindia.in/web/guest/golden-jubilee-foundation",
+    "notificationUrl": "https://licindia.in/golden-jubilee-foundation",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -3314,10 +3458,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-10T17:53:01.944Z",
+  "generatedAt": "2026-10-10T18:47:43.081Z",
   "registeredSources": 78,
   "checkedSources": 45,
-  "discoveredItems": 276,
+  "discoveredItems": 288,
   "sourceResults": [
     {
       "id": "upsc",
@@ -3419,13 +3563,11 @@ export const discoveryMeta = {
       "discovered": 2,
       "checked": true,
       "fetchedUrl": "https://ctet.nic.in/",
-      "method": "mixed",
+      "method": "fetch",
       "pages": [
         "https://ctet.nic.in/",
         "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/",
-        "https://ctet.nic.in/document-category/public-notices/",
-        "https://ctet.nic.in/sitemap.xml",
-        "https://ctet.nic.in/notifications"
+        "https://ctet.nic.in/document-category/public-notices/"
       ]
     },
     {
@@ -3455,7 +3597,7 @@ export const discoveryMeta = {
     },
     {
       "id": "sbi",
-      "discovered": 12,
+      "discovered": 36,
       "checked": true,
       "fetchedUrl": "https://sbi.co.in/web/careers",
       "method": "mixed",
@@ -3565,7 +3707,7 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 15,
+      "discovered": 21,
       "checked": true,
       "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
       "method": "mixed",
@@ -3575,7 +3717,9 @@ export const discoveryMeta = {
         "https://indiapost.gov.in/robots.txt",
         "https://indiapost.gov.in/notifications",
         "https://indiapost.gov.in/notices",
-        "https://indiapost.gov.in/recruitment"
+        "https://indiapost.gov.in/recruitment",
+        "https://indiapost.gov.in/recruitment-notices",
+        "https://indiapost.gov.in/career"
       ]
     },
     {
