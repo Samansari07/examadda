@@ -8,16 +8,20 @@ const discoveredText = await read("lib/discovered-official-notices.ts");
 const examText = await read("lib/auto-exam-data.ts");
 const statusText = await read("lib/source-status.ts");
 
-function parseExport(text, marker, suffix = ";") {
+function parseExport(text, marker) {
   const start = text.indexOf(marker);
   if (start < 0) throw new Error("Missing export: " + marker);
-  const body = text.slice(start + marker.length).trim();
-  const end = suffix === " as const;" ? body.lastIndexOf(suffix) : body.lastIndexOf(suffix);
-  if (end < 0) throw new Error("Malformed export: " + marker);
-  return JSON.parse(body.slice(0, end).trim());
+  let body = text.slice(start + marker.length).trim();
+  // Strip TypeScript declaration suffixes before parsing the JSON-compatible literal.
+  body = body.replace(/\s+as const;\s*$/, "").replace(/;\s*$/, "").trim();
+  try {
+    return JSON.parse(body);
+  } catch (error) {
+    throw new Error("Could not parse JSON-compatible export " + marker + ": " + error.message);
+  }
 }
 const autoNotifications = parseExport(notificationsText, "export const autoNotifications:AutoNotification[] = ");
-const discovered = parseExport(discoveredText, "export const discoveredOfficialNotices = ", " as const;");
+const discovered = parseExport(discoveredText, "export const discoveredOfficialNotices = ");
 const autoMatch = examText.match(/autoExamData:Record<string,AutoExamOverride> = (\{[\s\S]*\});\s*$/);
 if (!autoMatch) throw new Error("Could not parse structured exam overrides");
 const autoExamData = JSON.parse(autoMatch[1]);
