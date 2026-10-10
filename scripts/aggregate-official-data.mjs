@@ -265,6 +265,14 @@ for(const n of notifications){
     const parts=String(n.applicationDates).split(/\s+to\s+/i);
     if(parts.length>1)n.applicationLastDate=parts.at(-1).trim();
   }
+  // Fail closed: a keyword such as "apply online" is not enough to claim a
+  // live application. Keep it in the official notice feed unless a parseable
+  // closing date/window exists and has not expired. This is the safe fallback
+  // when structured exam overrides cannot be extracted from a source.
+  if(n.stage==="Application Open" && !getApplicationEnd(n.applicationLastDate||n.lastDate||n.applicationDates)){
+    n.stage="Notice";
+    n.description=String(n.description||"")+" Application status not confirmed automatically because no reliable closing date was extracted; check the official notice.";
+  }
 }
 notifications.sort((a,b)=>a.organization.localeCompare(b.organization)||a.title.localeCompare(b.title));
 
