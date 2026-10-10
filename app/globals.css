@@ -163,3 +163,23 @@ input,button,select,textarea{max-width:100%}
  .contactPanel,.sourceBanner,.alertPanel{max-width:100%;min-width:0}
 }
 @media(min-width:761px){.heroInner{width:min(1180px,92%);margin-left:auto;margin-right:auto}}
+
+
+/* Mobile headline rows: keep dates and actions inside the card */
+@media(max-width:760px){
+ .headlineGrid,.headlineFeature,.headlineList{min-width:0;width:100%;max-width:100%}
+ .headlineItem{display:grid;grid-template-columns:32px minmax(0,1fr);gap:8px;align-items:start;width:100%;min-width:0;box-sizing:border-box;padding:12px 0}
+ .headlineItem>span:first-child{grid-column:1;grid-row:1 / span 2;min-width:0}
+ .headlineItem>span:nth-child(2){grid-column:2;grid-row:1;display:block;width:100%;min-width:0;max-width:100%;overflow-wrap:anywhere}
+ .headlineItem b,.headlineItem small{max-width:100%;white-space:normal;overflow-wrap:anywhere;word-break:normal}
+ .headlineItem>strong{grid-column:2;grid-row:2;display:block;width:100%;max-width:100%;min-width:0;margin-top:5px;text-align:left;white-space:normal;overflow-wrap:anywhere;word-break:normal;font-size:11px;line-height:1.45}
+ .headlineFeatureHead{min-width:0;gap:8px;flex-wrap:wrap}
+ .headlineFeatureHead>span{min-width:0;overflow-wrap:anywhere}
+ .headlineFeatureHead>a{flex:0 0 auto}
+ .headlineTabs{width:100%;min-width:0;box-sizing:border-box}
+}
+@media(max-width:380px){
+ .headlineItem{grid-template-columns:28px minmax(0,1fr);gap:7px}
+ .headlineIcon{width:28px;height:28px}
+ .headlineItem>strong{font-size:10px}
+}
