@@ -183,6 +183,66 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-ctet-da58ec7c67e2874d",
+    "title": "Duplicate Certificate and Marksheet of CTET Examination upto 2016",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://ctet.nic.in/duplicate-marks-sheet-and-certificate/",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-35e3f85dfe93437c",
+    "title": "ENTRAL BOARD OF SECONDARY EDUCATION (CBSE)\" target=\"_blank\" style=\"\"> CENTRAL BOARD OF SECONDARY EDUCATION (CBSE) Duplicate Certificate and Marksheet of CTET Examination upto 2016 Circular: Revised Fee for Duplicate MS/Certificate/Verification <",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032562.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-65b953b91c3e8ca2",
+    "title": "FINAL ANSWER KEY",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Answer Key",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://ctet.nic.in/previous-year-final-answer-key/",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-62baff57b3854bd2",
+    "title": "Office Memorandum, dated 19 Aug 2018 : Guidelines for conducting written examination for Persons with Benchmark Disabilities",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032515.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-c31534fbbda464a8",
+    "title": "PUBLIC NOTICE : Validity Period of TET qualifying certificate",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/04/2022042551.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-ctet-3263ad107f9d8029",
     "title": "PUBLIC NOTICE &#8211; CTET Feb 2026 &#8211; RESULT",
     "organization": "CTET",
@@ -288,6 +348,20 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-10",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/08/20260825641447501.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source.",
+    "applicationLastDate": "01 September 2026",
+    "applicationDates": "25 August 2026 to 01 September 2026"
+  },
+  {
+    "id": "auto-ctet-79e904896104e47b",
+    "title": "Public Notice: re opening of Online Applications for the 22nd Edition of CTET PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW CTET SEPT 2026 INFORMATION BULLETIN CTET PUBLIC NOTICE SEPT 2026 Public Notice: Calcu",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/202605111250310617.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source.",
     "applicationLastDate": "01 September 2026",
     "applicationDates": "25 August 2026 to 01 September 2026"
@@ -1197,12 +1271,12 @@ export const autoNotifications:AutoNotification[] = [
     "title": "Important Instructions Before You Apply Online",
     "organization": "GAIL India",
     "category": "PSU / Engineering",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/IMPORTANT%20INSTRUCTIONS%20BEFORE%20YOU%20APPLY%20ONLINE_SRD.pdf",
-    "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
+    "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-gail-81d5edbc247e1c26",
@@ -2441,6 +2515,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-mcc-cbc99ef2cfdc19c5",
+    "title": "ass=\"wpb_column vc_column_container vc_col-sm-3 vc_col-has-fill\"> News & Events Notice for weeding out of candidates 2026 NRI LIST OF ELIGIBLE CANDIDATES FOR UG ROUND -3 (2026-27) Notice for verification of documents for Round 2 <a download href=\"https://cdnbbsr",
+    "organization": "Medical Counselling Committee",
+    "category": "Medical Counselling",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://mcc.nic.in/current-events-ug/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260927261931081.pdf",
+    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-mcc-99a6e7dde4e5f674",
     "title": "CLEAR VACANCY ROUND 2 (MBBS BDS B.SC NURSING) – UG COUNSELLING 2026",
     "organization": "Medical Counselling Committee",
@@ -2510,18 +2596,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-10",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260912351980769.pdf",
-    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-mcc-cbc99ef2cfdc19c5",
-    "title": "length News & Events NRI LIST OF ELIGIBLE CANDIDATES FOR UG ROUND -3 (2026-27) Notice for verification of documents for Round 2 <a download href=\"https://cdnbbsr",
-    "organization": "Medical Counselling Committee",
-    "category": "Medical Counselling",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://mcc.nic.in/current-events-ug/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260927261931081.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
@@ -2762,6 +2836,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-10",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260918726374935.pdf",
+    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-mcc-4730eca53b52fd95",
+    "title": "Notice for weeding out of candidates 2026",
+    "organization": "Medical Counselling Committee",
+    "category": "Medical Counselling",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://mcc.nic.in/current-events-ug/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/20261010582288454.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
@@ -3369,36 +3455,36 @@ export const autoNotifications:AutoNotification[] = [
     "title": "On behalf of the Government of Meghalaya, Applications are invited on (Online-mode) from citizens of India as per the terms and conditions of this Advertisement for recruitment to the post(s) mentioned below :- Fishery Officer underThe Directorate of Fisheries Junior Football Coach under The Directorate of Sports and Youth Affairs Department, Meghalaya, Shillong.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/advt/Advt25May2026.pdf",
-    "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
+    "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-meghalaya-psc-3144040186ec6307",
     "title": "On behalf of the Government of Meghalaya, Applications are invited on (Online-mode) from citizens of India as per the terms and conditions of this Advertisement for recruitment to the post(s) mentioned below :- Tourist Officer under Tourism Department. Draftsman Grade-I in the Directorate of Housing.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/advt/Advt08April2026.pdf",
-    "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
+    "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-meghalaya-psc-b9f3b68477d4cfbe",
     "title": "On behalf of the Government of Meghalaya, Applications are invited on (Online-mode) from citizens of India as per the terms and conditions of this Advertisement for recruitment to the post(s) mentioned below :- Wireman Instructor under The Directorate of Employment & Craftsmen Training, Department of Labour Employment & Skill Development,Meghalaya. Publicity Assistant-cum- Khasi Translator under Directorate of Sericulture & Department of Textile Investigator in the Directorate of Housing.",
     "organization": "Meghalaya Public Service Commission",
     "category": "State Government",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/advt/Advt17Mar2026.pdf",
-    "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
+    "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-meghalaya-psc-5aea3e8cd243a5e0",
@@ -5433,24 +5519,24 @@ export const autoNotifications:AutoNotification[] = [
     "title": "Apply for Subject Matter Experts",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-nta-7639ad9d29f85748",
     "title": "Apply for Translation Reviewers",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-nta-d3ed90a39c3dcbab",
@@ -5733,12 +5819,12 @@ export const autoNotifications:AutoNotification[] = [
     "title": "Extension of last date for filling of Online Application Form for NEET (UG) &#8211; 2026",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-nta-e14fd259146eca8d",
@@ -6909,12 +6995,12 @@ export const autoNotifications:AutoNotification[] = [
     "title": "Re-opening of Online Application Portal-Joint Entrance Examination (Main) 2026 Session-2- reg.",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-nta-0458608d66e66c41",
@@ -8865,12 +8951,12 @@ export const autoNotifications:AutoNotification[] = [
     "title": "Extension of Last date of receipt of applications to engage 56 retired ONGC Executives as JC/AC",
     "organization": "ONGC",
     "category": "PSU / Engineering",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=8064080&assetClassPK=8064075",
-    "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
+    "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-ongc-d56ece8fc3161d18",
@@ -10797,24 +10883,24 @@ export const autoNotifications:AutoNotification[] = [
     "title": "APPLY ONLINE (04.09.2026 to 24.09.2026)",
     "organization": "State Bank of India",
     "category": "Banking",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-sbi-5ab0b04b4266c77f",
     "title": "APPLY ONLINE (07.08.2026 to 27.08.2026)",
     "organization": "State Bank of India",
     "category": "Banking",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-sbi-90cb90998ac46478",
@@ -10833,72 +10919,72 @@ export const autoNotifications:AutoNotification[] = [
     "title": "APPLY ONLINE (16.09.2026 to 06.10.2026)",
     "organization": "State Bank of India",
     "category": "Banking",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-sbi-a671c7d0b10aa32c",
     "title": "APPLY ONLINE (16.10.2026 to 16.10.2026)",
     "organization": "State Bank of India",
     "category": "Banking",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-sbi-8a321fb7a2c4b710",
     "title": "APPLY ONLINE (26.02.2026 to 18.03.2026)",
     "organization": "State Bank of India",
     "category": "Banking",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-sbi-33d6b81af23e8202",
     "title": "APPLY ONLINE (30.09.2026 to 21.10.2026)",
     "organization": "State Bank of India",
     "category": "Banking",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-sbi-d0831531e36202c0",
     "title": "APPLY ONLINE (Online Registration Extended till 05.10.2026)",
     "organization": "State Bank of India",
     "category": "Banking",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-sbi-1a8fa8b40cc21bb0",
     "title": "APPLY ONLINE (Online Registration extended till 28.09.2026)",
     "organization": "State Bank of India",
     "category": "Banking",
-    "stage": "Application Open",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-sbi-2dbd8f8caa09572d",
