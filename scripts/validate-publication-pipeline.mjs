@@ -9,11 +9,39 @@ const examText = await read("lib/auto-exam-data.ts");
 const statusText = await read("lib/source-status.ts");
 
 function parseExport(text, marker) {
-  const start = text.indexOf(marker);
-  if (start < 0) throw new Error("Missing export: " + marker);
-  let body = text.slice(start + marker.length).trim();
-  // Strip TypeScript declaration suffixes before parsing the JSON-compatible literal.
-  body = body.replace(/\s+as const;\s*$/, "").replace(/;\s*$/, "").trim();
+  const markerIndex = text.indexOf(marker);
+  if (markerIndex < 0) throw new Error("Missing export: " + marker);
+  const tail = text.slice(markerIndex + marker.length);
+  const valueStart = tail.search(/\S/);
+  if (valueStart < 0 || !"[{".includes(tail[valueStart])) {
+    throw new Error("Export does not start with a JSON-compatible array/object: " + marker);
+  }
+
+  // Read only the balanced literal. Generated TypeScript files may contain later
+  // exports (for example discovery-source reports) after the array's "as const".
+  const opening = tail[valueStart];
+  const stack = [];
+  let inString = false;
+  let escaped = false;
+  let end = -1;
+  for (let i = valueStart; i < tail.length; i++) {
+    const ch = tail[i];
+    if (inString) {
+      if (escaped) escaped = false;
+      else if (ch === "\\\\") escaped = true;
+      else if (ch === '"') inString = false;
+      continue;
+    }
+    if (ch === '"') { inString = true; continue; }
+    if (ch === "[" || ch === "{") stack.push(ch);
+    else if (ch === "]" || ch === "}") {
+      const expected = ch === "]" ? "[" : "{";
+      if (stack.pop() !== expected) throw new Error("Unbalanced export literal: " + marker);
+      if (stack.length === 0) { end = i + 1; break; }
+    }
+  }
+  if (end < 0 || stack.length) throw new Error("Unterminated export literal: " + marker);
+  const body = tail.slice(valueStart, end);
   try {
     return JSON.parse(body);
   } catch (error) {
