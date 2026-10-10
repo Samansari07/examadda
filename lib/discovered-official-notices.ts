@@ -433,150 +433,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-sbi-a34d2f5e312e41f455de",
-    "title": "Contact Us",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/post-your-query",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-e04c18f383cec86b774b",
-    "title": "Current Openings",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/current-openings",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-2d017bc98e1f0f414f10",
-    "title": "Recruitment Results",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/recruitment-results",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-b15b11ca79df3384be98",
-    "title": "Recruitment Results & Archive",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/recruitment-results-archive",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-19cf2c0156a7679144eb",
-    "title": "What are we looking for",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/what-are-we-looking-for",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-10e7fbee5bc66d02d8dc",
-    "title": "World of opportunities",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/world-of-opportunities",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-6bf6f5d206ebb8139cb2",
-    "title": "Growth oriented culture",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/growth-oriented-culture",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-bd9b0b2e4222e78e01b0",
-    "title": "Best in class benefits",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/best-in-class-benefits",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-215ded87e28947a4018e",
-    "title": "Brand SBI",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/brand-sbi",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-2e2303098ca8351c8d08",
-    "title": "Employee Onboarding",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/employee-onboarding",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-a79e3b6e530f278e4d2a",
-    "title": "Learning & Development",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/learning-development",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-54fd401eeb7dcc986fdc",
-    "title": "Our Legacy",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/our-legacy",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-sbi-28cd070f53ead323c780",
     "title": "Contact Us",
     "organization": "State Bank of India",
@@ -1789,126 +1645,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-nagaland-psc-c0f19a4f1a9d3518bf0d",
-    "title": "Advertisments",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-8883392d71997d226b77",
-    "title": "Results",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/results",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-76cf7315d9eb6c4a2a06",
-    "title": "Limited Dept. Exam 2022 Marksheet",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/services/marksheet/ltd-exam",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-1834ce196b1d1743b889",
-    "title": "Notification NO.NPSC.ADVT-1/04(VOL-1) dt. 25.09.2026 (CTSE 2026 Microbiology Exam cancelled ) New",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/notification/179032099496984",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-ae02c5b23e7cb59bc1a2",
-    "title": "Notification No. NPSC/EXAM-21/2023 dt. 17.09.2026 (Incomplete Score Sheet/Documents CESE 2026)",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/notification/178963446190746",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-46fb9e1e4ccd6c1dc0d3",
-    "title": "Notification No. NPSC/EXAM-7/2022 dt. 17.09.2026 ( CTSE 2026 Admission Certificate)",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/notification/178963338157961",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-f9965db5fb91d3d478cd",
-    "title": "Notification No. NPSC/CESE-12/AK/2021 dt. 16.09.2026 (Corrected Answer Keys of Common Educational Services Examination 2026)",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/notification/178963265512456",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-f4671f71158ee8699edf",
-    "title": "Exams View and Apply Exams. Open",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/applicant/exams",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-b792be0ded91ff7fc461",
-    "title": "OTR OTR service is currently closed. Please apply during the notified period. Open",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/applicant/otr",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-d71598122ff3fbde796d",
-    "title": "E-Admit Card",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Admit Card",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-10",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/services/ltd-dept/admit-card",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-odisha-psc-2b3a312bfdd78fc13677",
     "title": "Advertisements",
     "organization": "Odisha Public Service Commission",
@@ -2326,6 +2062,102 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-10",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/career",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-himachal-employment-8ee8c1173a990d5590cd",
+    "title": "Please Login To Renew Your Application",
+    "organization": "Himachal Pradesh Employment Portal",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://eemis.hp.gov.in/",
+    "notificationUrl": "https://eemis.hp.gov.in/Home/UserLogin",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-himachal-employment-df1d0369a0c9ff2e74fe",
+    "title": "Vacancies",
+    "organization": "Himachal Pradesh Employment Portal",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://eemis.hp.gov.in/",
+    "notificationUrl": "https://eemis.hp.gov.in/sitemap.xml",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-himachal-employment-ce1774e1857bf6f0b862",
+    "title": "Vacancies",
+    "organization": "Himachal Pradesh Employment Portal",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://eemis.hp.gov.in/",
+    "notificationUrl": "https://eemis.hp.gov.in/robots.txt",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-himachal-employment-dc69968f0eb8b42ba119",
+    "title": "Vacancies",
+    "organization": "Himachal Pradesh Employment Portal",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://eemis.hp.gov.in/",
+    "notificationUrl": "https://eemis.hp.gov.in/notifications",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-himachal-employment-60a38273582700b91efe",
+    "title": "Vacancies",
+    "organization": "Himachal Pradesh Employment Portal",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://eemis.hp.gov.in/",
+    "notificationUrl": "https://eemis.hp.gov.in/notices",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-himachal-employment-08f0ebd8762e20138545",
+    "title": "Vacancies",
+    "organization": "Himachal Pradesh Employment Portal",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://eemis.hp.gov.in/",
+    "notificationUrl": "https://eemis.hp.gov.in/recruitment",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-himachal-employment-a7b082156ae6d1b994ce",
+    "title": "Vacancies",
+    "organization": "Himachal Pradesh Employment Portal",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://eemis.hp.gov.in/",
+    "notificationUrl": "https://eemis.hp.gov.in/recruitment-notices",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-himachal-employment-9f00b8ab3ec7315e7759",
+    "title": "Vacancies",
+    "organization": "Himachal Pradesh Employment Portal",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://eemis.hp.gov.in/",
+    "notificationUrl": "https://eemis.hp.gov.in/career",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -3362,10 +3194,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-10T00:04:12.683Z",
+  "generatedAt": "2026-10-10T04:43:35.003Z",
   "registeredSources": 78,
-  "checkedSources": 45,
-  "discoveredItems": 280,
+  "checkedSources": 46,
+  "discoveredItems": 266,
   "sourceResults": [
     {
       "id": "upsc",
@@ -3467,11 +3299,9 @@ export const discoveryMeta = {
       "discovered": 2,
       "checked": true,
       "fetchedUrl": "https://ctet.nic.in/",
-      "method": "fetch",
+      "method": "mixed",
       "pages": [
-        "https://ctet.nic.in/",
-        "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/",
-        "https://ctet.nic.in/document-category/public-notices/"
+        "https://ctet.nic.in/"
       ]
     },
     {
@@ -3501,7 +3331,7 @@ export const discoveryMeta = {
     },
     {
       "id": "sbi",
-      "discovered": 36,
+      "discovered": 12,
       "checked": true,
       "fetchedUrl": "https://sbi.co.in/web/careers",
       "method": "mixed",
@@ -3518,7 +3348,7 @@ export const discoveryMeta = {
     },
     {
       "id": "lic",
-      "discovered": 11,
+      "discovered": 8,
       "checked": true,
       "fetchedUrl": "https://licindia.in/careers",
       "method": "mixed",
@@ -3527,10 +3357,7 @@ export const discoveryMeta = {
         "https://licindia.in/sitemap.xml",
         "https://licindia.in/notifications",
         "https://licindia.in/notices",
-        "https://licindia.in/recruitment",
-        "https://licindia.in/recruitment-notices",
-        "https://licindia.in/career",
-        "https://licindia.in/advertisement"
+        "https://licindia.in/recruitment"
       ]
     },
     {
@@ -3611,14 +3438,15 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 6,
+      "discovered": 9,
       "checked": true,
       "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
       "method": "mixed",
       "pages": [
         "https://indiapost.gov.in/gdsonlineengagement",
         "https://indiapost.gov.in/sitemap.xml",
-        "https://indiapost.gov.in/robots.txt"
+        "https://indiapost.gov.in/robots.txt",
+        "https://indiapost.gov.in/notifications"
       ]
     },
     {
@@ -3899,19 +3727,12 @@ export const discoveryMeta = {
     },
     {
       "id": "nagaland-psc",
-      "discovered": 10,
+      "discovered": 0,
       "checked": true,
-      "fetchedUrl": "https://npsc.nagaland.gov.in/",
+      "fetchedUrl": "https://npsc.nagaland.gov.in/sitemap.xml",
       "method": "mixed",
       "pages": [
-        "https://npsc.nagaland.gov.in/",
-        "https://npsc.nagaland.gov.in/sitemap.xml",
-        "https://npsc.nagaland.gov.in/robots.txt",
-        "https://npsc.nagaland.gov.in/notifications",
-        "https://npsc.nagaland.gov.in/notices",
-        "https://npsc.nagaland.gov.in/recruitment",
-        "https://npsc.nagaland.gov.in/recruitment-notices",
-        "https://npsc.nagaland.gov.in/career"
+        "https://npsc.nagaland.gov.in/sitemap.xml"
       ]
     },
     {
@@ -4075,11 +3896,20 @@ export const discoveryMeta = {
     },
     {
       "id": "himachal-employment",
-      "discovered": 0,
-      "checked": false,
-      "fetchedUrl": null,
-      "method": null,
-      "pages": []
+      "discovered": 8,
+      "checked": true,
+      "fetchedUrl": "https://eemis.hp.gov.in/",
+      "method": "fetch",
+      "pages": [
+        "https://eemis.hp.gov.in/",
+        "https://eemis.hp.gov.in/sitemap.xml",
+        "https://eemis.hp.gov.in/robots.txt",
+        "https://eemis.hp.gov.in/notifications",
+        "https://eemis.hp.gov.in/notices",
+        "https://eemis.hp.gov.in/recruitment",
+        "https://eemis.hp.gov.in/recruitment-notices",
+        "https://eemis.hp.gov.in/career"
+      ]
     },
     {
       "id": "jk-employment",
@@ -4102,7 +3932,7 @@ export const discoveryMeta = {
       "discovered": 0,
       "checked": true,
       "fetchedUrl": "https://www.employment.kerala.gov.in/",
-      "method": "mixed",
+      "method": "fetch",
       "pages": [
         "https://www.employment.kerala.gov.in/",
         "https://www.employment.kerala.gov.in/sitemap.xml",
