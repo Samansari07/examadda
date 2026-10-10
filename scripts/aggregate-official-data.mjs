@@ -4,12 +4,15 @@ const config=JSON.parse(await fs.readFile("config/official-sources.json","utf8")
 
 const hostOf=value=>{const m=String(value||"").match(/^https?:\/\/([^/]+)/i);return m?m[1].toLowerCase().replace(/^www\./,""):""};
 const sameAuthority=(a,b)=>{const x=hostOf(a),y=hostOf(b);return !!x&&!!y&&(x===y||x.endsWith("." + y)||y.endsWith("." + x))};
-const isTrustedDocumentHost=(url,sourceUrl)=>{
+const isTrustedDocumentHost=(url,sourceUrl,sourceConfig)=>{
   const x=hostOf(url), y=hostOf(sourceUrl);
   if(!x||!y)return false;
   if(sameAuthority(url,sourceUrl))return true;
-  // Government notices are sometimes hosted on the official S3WAAS/CDN
-  // infrastructure while the authority page remains the source of discovery.
+  // Accept a notice hosted on another endpoint explicitly registered for the
+  // same authority. Never trust arbitrary third-party mirrors.
+  const registered=[sourceConfig?.updatesUrl,...(sourceConfig?.fallbackUrls||[]),...(sourceConfig?.discoveryUrls||[])].filter(Boolean);
+  if(registered.some(candidate=>sameAuthority(url,candidate)))return true;
+  // Government notices are sometimes hosted on official S3WAAS/CDN infrastructure.
   return (x==="s3waas.gov.in"||x.endsWith(".s3waas.gov.in")) &&
     (y.endsWith(".gov.in")||y.endsWith(".nic.in")||y.endsWith(".gov")||y.endsWith(".nic.in"));
 };
@@ -63,7 +66,7 @@ const structurallySafeOverride=(v)=>{
   const source=sourceForOrganization(v.organization);
   if(!source)return false;
   if(!sameAuthority(v.sourceUrl,source.updatesUrl))return false;
-  if(v.notificationUrl && !isTrustedDocumentHost(v.notificationUrl,v.sourceUrl))return false;
+  if(v.notificationUrl && !isTrustedDocumentHost(v.notificationUrl,v.sourceUrl,source))return false;
   if(typeof v.minAge==="number" && (v.minAge<14 || v.minAge>70))return false;
   if(typeof v.maxAge==="number" && (v.maxAge<14 || v.maxAge>80))return false;
   if(typeof v.minAge==="number" && typeof v.maxAge==="number" && v.minAge>v.maxAge)return false;
@@ -174,7 +177,7 @@ const notifications=[...noticeMap.values()].map(n=>{
   const notificationHost=hostOf(n.notificationUrl);
   const owner=notificationHost?registeredHostOwners.get(notificationHost):undefined;
   const wrongRegisteredAuthority=!!owner && !!source && !sameOrganization(owner,source.organization);
-  if(source && n.notificationUrl && (wrongRegisteredAuthority || !isTrustedDocumentHost(n.notificationUrl,source.updatesUrl))){
+  if(source && n.notificationUrl && (wrongRegisteredAuthority || !isTrustedDocumentHost(n.notificationUrl,source.updatesUrl,source))){
     return {...n,notificationUrl:source.updatesUrl,description:String(n.description||"")+" Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."};
   }
   return n;
