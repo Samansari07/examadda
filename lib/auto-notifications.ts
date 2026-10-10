@@ -8,17 +8,16 @@ export type AutoNotification = {
 export const autoNotificationMeta = {
   "generatedAt": "2026-10-10",
   "sourceCount": 78,
-  "successfulSources": 45,
-  "healthySources": 45,
+  "successfulSources": 46,
+  "healthySources": 46,
   "degradedSources": 0,
-  "unreachableSources": 33,
+  "unreachableSources": 32,
   "failedSources": [
     "Assam Public Service Commission",
     "Haryana Employment Portal",
     "Indian Navy",
     "Bihar Public Service Commission",
     "Uttarakhand Public Service Commission",
-    "Himachal Pradesh Employment Portal",
     "Indian Coast Guard",
     "Chhattisgarh Public Service Commission",
     "Punjab Public Service Commission",
@@ -172,6 +171,150 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official BHEL source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-ctet-c3530337d2101d93",
+    "title": "CTET PUBLIC NOTICE SEPT 2026",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/2026051163782266.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-da58ec7c67e2874d",
+    "title": "Duplicate Certificate and Marksheet of CTET Examination upto 2016",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://ctet.nic.in/duplicate-marks-sheet-and-certificate/",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-35e3f85dfe93437c",
+    "title": "ENTRAL BOARD OF SECONDARY EDUCATION (CBSE)\" target=\"_blank\" style=\"\"> CENTRAL BOARD OF SECONDARY EDUCATION (CBSE) Duplicate Certificate and Marksheet of CTET Examination upto 2016 Circular: Revised Fee for Duplicate MS/Certificate/Verification <",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032562.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-65b953b91c3e8ca2",
+    "title": "FINAL ANSWER KEY",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Answer Key",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://ctet.nic.in/previous-year-final-answer-key/",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-62baff57b3854bd2",
+    "title": "Office Memorandum, dated 19 Aug 2018 : Guidelines for conducting written examination for Persons with Benchmark Disabilities",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032515.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-c31534fbbda464a8",
+    "title": "PUBLIC NOTICE : Validity Period of TET qualifying certificate",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/04/2022042551.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-3263ad107f9d8029",
+    "title": "PUBLIC NOTICE &#8211; CTET Feb 2026 &#8211; RESULT",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/03/202603311458590440.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-edf81a7aa7484554",
+    "title": "Public Notice: Calculation Sheet / Copy of OMR",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/04/202604011187448306.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-af485ea913268099",
+    "title": "PUBLIC NOTICE: CTET examination on 07th & 08th Feb2026",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/02/202602021259534220.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-988ed4272bbf3f80",
+    "title": "Public Notice: CTET Feb-2026 Key Challenge / Scanned Images of OMR (last Date 15/03/2026,up-to 11:59 PM)",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/03/202603121086699841.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-96e4ef1fd56a6b3d",
+    "title": "PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/06/202606151389616278.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-e3d502ed3ef8ab05",
+    "title": "PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW (last date 10.09.2026)",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260907461266783.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-ctet-5a670a71eaa755a5",
     "title": "PUBLIC NOTICE: Exam Dates for 22nd edition of CTET",
     "organization": "CTET",
@@ -181,6 +324,58 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-10",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260914325514446.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-51bfdd12f6af4643",
+    "title": "PUBLIC NOTICE: PwD, Scribe etc. Dated 04.02.2026",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/02/202602052026341619.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-339bbee92773cd8f",
+    "title": "Public Notice: re opening of Online Applications for the 22nd Edition of CTET",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/08/20260825641447501.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source.",
+    "applicationLastDate": "01 September 2026",
+    "applicationDates": "25 August 2026 to 01 September 2026"
+  },
+  {
+    "id": "auto-ctet-79e904896104e47b",
+    "title": "Public Notice: re opening of Online Applications for the 22nd Edition of CTET PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW CTET SEPT 2026 INFORMATION BULLETIN CTET PUBLIC NOTICE SEPT 2026 Public Notice: Calcu",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/202605111250310617.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source.",
+    "applicationLastDate": "01 September 2026",
+    "applicationDates": "25 August 2026 to 01 September 2026"
+  },
+  {
+    "id": "auto-ctet-6d9936db032fe15f",
+    "title": "re-exam PUBLIC NOTICE: Dated 24/02/2026",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-10",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/02/202602251588838774.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
   },
   {
@@ -5844,8 +6039,8 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "notificationUrl": "https://jeemain.nta.nic.in/",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-nta-1fcb0bc8214bc3c8",
@@ -6540,8 +6735,8 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "notificationUrl": "http://neet.nta.nic.in/Webinfo",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-nta-d5afceb912e2b8f4",
@@ -6648,8 +6843,8 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "notificationUrl": "http://jeemain.nta.nic.in/",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-nta-bf71547acb6c3ba0",
@@ -6756,8 +6951,8 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "notificationUrl": "https://neet.nta.nic.in/document-category/neetug-2025-public-notices/",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-nta-268e1b417b77a02e",
@@ -10032,8 +10227,8 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://ssc.gov.in/",
-    "notificationUrl": "https://ssc.gov.in/",
-    "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "notificationUrl": "https://ssccr.gov.in/admit-card/687df3c3d4fa50a5888db48f",
+    "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-ssc-27add53f3a971dd9",
@@ -10440,8 +10635,8 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://ssc.gov.in/",
-    "notificationUrl": "https://ssc.gov.in/",
-    "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "notificationUrl": "https://ssccr.gov.in/api/media/file/Important%20Notice-%20CGLE%202026.pdf",
+    "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-ssc-737d75668c622a1a",
@@ -10476,8 +10671,8 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-10",
     "officialUrl": "https://ssc.gov.in/",
-    "notificationUrl": "https://ssc.gov.in/",
-    "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+    "notificationUrl": "https://ssccr.gov.in/api/media/file/notice_pst_cht_crpf2025_05082026.pdf",
+    "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-ssc-cfba612304450662",
