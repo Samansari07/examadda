@@ -19,7 +19,6 @@ function parseExport(text, marker) {
 
   // Read only the balanced literal. Generated TypeScript files may contain later
   // exports (for example discovery-source reports) after the array's "as const".
-  const opening = tail[valueStart];
   const stack = [];
   let inString = false;
   let escaped = false;
@@ -28,7 +27,7 @@ function parseExport(text, marker) {
     const ch = tail[i];
     if (inString) {
       if (escaped) escaped = false;
-      else if (ch === "\\\\") escaped = true;
+      else if (ch === "\\") escaped = true;
       else if (ch === '"') inString = false;
       continue;
     }
