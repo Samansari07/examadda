@@ -733,7 +733,7 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-lic-b4b649cbb0c58886cdda",
+    "id": "discover-lic-25d5bdbf1804df2606d0",
     "title": "*CLICK HERE TO APPLY FOR LIC GOLDEN JUBILEE SCHOLARSHIPS 2026 \"Last date extended up to 15th October 2026\" *",
     "organization": "LIC",
     "category": "Insurance",
@@ -741,7 +741,7 @@ export const discoveredOfficialNotices = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-11",
     "officialUrl": "https://licindia.in/careers",
-    "notificationUrl": "https://licindia.in/web/guest/golden-jubilee-foundation",
+    "notificationUrl": "https://licindia.in/golden-jubilee-foundation",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -1522,102 +1522,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-11",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/selection-pending-want",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-b0408e9076d75cad8d56",
-    "title": "Answer Key-OMR Exams",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_omrexams",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-bfc1c395481cde091215",
-    "title": "Answer key-Online Exam",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_onlineexams",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-c4f57dea207a1fb4a647",
-    "title": "Question paper for Descriptive Examinations",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/question-paper-descriptive-exam",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-bf299afc332070c2ba58",
-    "title": "Exam Schedule",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/examinations",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-05de1912b0b5a28fbdb0",
-    "title": "Interview Schedule",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/interviews",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-a30829aed18ab64fac46",
-    "title": "Short Lists",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/shortlists",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-0f5b932826256159e36b",
-    "title": "PSC Examination updates",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/psc-examination-updates",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-c019d0c423cf10b55b16",
-    "title": "Procedure for Interview Date Change Requests",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -2422,102 +2326,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-11",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/career",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-8ee8c1173a990d5590cd",
-    "title": "Please Login To Renew Your Application",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/Home/UserLogin",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-df1d0369a0c9ff2e74fe",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/sitemap.xml",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-ce1774e1857bf6f0b862",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/robots.txt",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-dc69968f0eb8b42ba119",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/notifications",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-60a38273582700b91efe",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/notices",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-08f0ebd8762e20138545",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/recruitment",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-a7b082156ae6d1b994ce",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/recruitment-notices",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-9f00b8ab3ec7315e7759",
-    "title": "Vacancies",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-11",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/career",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -3554,10 +3362,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-11T14:03:38.348Z",
+  "generatedAt": "2026-10-11T18:53:30.894Z",
   "registeredSources": 78,
-  "checkedSources": 46,
-  "discoveredItems": 296,
+  "checkedSources": 44,
+  "discoveredItems": 280,
   "sourceResults": [
     {
       "id": "upsc",
@@ -3659,12 +3467,11 @@ export const discoveryMeta = {
       "discovered": 2,
       "checked": true,
       "fetchedUrl": "https://ctet.nic.in/",
-      "method": "mixed",
+      "method": "fetch",
       "pages": [
         "https://ctet.nic.in/",
         "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/",
-        "https://ctet.nic.in/document-category/public-notices/",
-        "https://ctet.nic.in/notifications"
+        "https://ctet.nic.in/document-category/public-notices/"
       ]
     },
     {
@@ -4100,9 +3907,16 @@ export const discoveryMeta = {
       "discovered": 10,
       "checked": true,
       "fetchedUrl": "https://npsc.nagaland.gov.in/",
-      "method": "fetch",
+      "method": "mixed",
       "pages": [
-        "https://npsc.nagaland.gov.in/"
+        "https://npsc.nagaland.gov.in/",
+        "https://npsc.nagaland.gov.in/sitemap.xml",
+        "https://npsc.nagaland.gov.in/robots.txt",
+        "https://npsc.nagaland.gov.in/notifications",
+        "https://npsc.nagaland.gov.in/notices",
+        "https://npsc.nagaland.gov.in/recruitment",
+        "https://npsc.nagaland.gov.in/recruitment-notices",
+        "https://npsc.nagaland.gov.in/career"
       ]
     },
     {
@@ -4266,20 +4080,11 @@ export const discoveryMeta = {
     },
     {
       "id": "himachal-employment",
-      "discovered": 8,
-      "checked": true,
-      "fetchedUrl": "https://eemis.hp.gov.in/",
-      "method": "fetch",
-      "pages": [
-        "https://eemis.hp.gov.in/",
-        "https://eemis.hp.gov.in/sitemap.xml",
-        "https://eemis.hp.gov.in/robots.txt",
-        "https://eemis.hp.gov.in/notifications",
-        "https://eemis.hp.gov.in/notices",
-        "https://eemis.hp.gov.in/recruitment",
-        "https://eemis.hp.gov.in/recruitment-notices",
-        "https://eemis.hp.gov.in/career"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "jk-employment",
@@ -4300,19 +4105,10 @@ export const discoveryMeta = {
     {
       "id": "kerala-employment",
       "discovered": 0,
-      "checked": true,
-      "fetchedUrl": "https://www.employment.kerala.gov.in/",
-      "method": "fetch",
-      "pages": [
-        "https://www.employment.kerala.gov.in/",
-        "https://www.employment.kerala.gov.in/sitemap.xml",
-        "https://www.employment.kerala.gov.in/robots.txt",
-        "https://www.employment.kerala.gov.in/notifications",
-        "https://www.employment.kerala.gov.in/notices",
-        "https://www.employment.kerala.gov.in/recruitment",
-        "https://www.employment.kerala.gov.in/recruitment-notices",
-        "https://www.employment.kerala.gov.in/career"
-      ]
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "madhya-pradesh-employment",
@@ -4360,7 +4156,7 @@ export const discoveryMeta = {
       "discovered": 0,
       "checked": true,
       "fetchedUrl": "https://rajemployment.rajasthan.gov.in/",
-      "method": "mixed",
+      "method": "fetch",
       "pages": [
         "https://rajemployment.rajasthan.gov.in/",
         "https://rajemployment.rajasthan.gov.in/sitemap.xml",
