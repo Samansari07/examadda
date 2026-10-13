@@ -3386,7 +3386,7 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-13T18:15:42.766Z",
+  "generatedAt": "2026-10-13T23:20:40.126Z",
   "registeredSources": 78,
   "checkedSources": 45,
   "discoveredItems": 282,
@@ -3494,12 +3494,7 @@ export const discoveryMeta = {
       "method": "mixed",
       "pages": [
         "https://ctet.nic.in/",
-        "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/",
-        "https://ctet.nic.in/document-category/public-notices/",
-        "https://ctet.nic.in/sitemap.xml",
-        "https://ctet.nic.in/notifications",
-        "https://ctet.nic.in/notices",
-        "https://ctet.nic.in/recruitment"
+        "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/"
       ]
     },
     {
@@ -3529,7 +3524,7 @@ export const discoveryMeta = {
     },
     {
       "id": "sbi",
-      "discovered": 36,
+      "discovered": 24,
       "checked": true,
       "fetchedUrl": "https://sbi.co.in/web/careers",
       "method": "mixed",
