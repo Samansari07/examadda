@@ -17,6 +17,7 @@ export const autoNotificationMeta = {
     "Haryana Employment Portal",
     "Indian Navy",
     "Bihar Public Service Commission",
+    "Karnataka Public Service Commission",
     "Uttarakhand Public Service Commission",
     "Indian Coast Guard",
     "Chhattisgarh Public Service Commission",
@@ -32,7 +33,6 @@ export const autoNotificationMeta = {
     "Sikkim Public Service Commission",
     "West Bengal Employment Bank",
     "Haryana Public Service Commission",
-    "Tamil Nadu Public Service Commission",
     "Jharkhand Government Recruitment Portal",
     "Madhya Pradesh Employment Portal",
     "Andhra Pradesh Public Service Commission",
@@ -183,66 +183,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-ctet-da58ec7c67e2874d",
-    "title": "Duplicate Certificate and Marksheet of CTET Examination upto 2016",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-14",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://ctet.nic.in/duplicate-marks-sheet-and-certificate/",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-35e3f85dfe93437c",
-    "title": "ENTRAL BOARD OF SECONDARY EDUCATION (CBSE)\" target=\"_blank\" style=\"\"> CENTRAL BOARD OF SECONDARY EDUCATION (CBSE) Duplicate Certificate and Marksheet of CTET Examination upto 2016 Circular: Revised Fee for Duplicate MS/Certificate/Verification <",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-14",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032562.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-65b953b91c3e8ca2",
-    "title": "FINAL ANSWER KEY",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Answer Key",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-14",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://ctet.nic.in/previous-year-final-answer-key/",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-62baff57b3854bd2",
-    "title": "Office Memorandum, dated 19 Aug 2018 : Guidelines for conducting written examination for Persons with Benchmark Disabilities",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-14",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032515.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-ctet-c31534fbbda464a8",
-    "title": "PUBLIC NOTICE : Validity Period of TET qualifying certificate",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-14",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/04/2022042551.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-ctet-3263ad107f9d8029",
     "title": "PUBLIC NOTICE &#8211; CTET Feb 2026 &#8211; RESULT",
     "organization": "CTET",
@@ -353,20 +293,6 @@ export const autoNotifications:AutoNotification[] = [
     "applicationDates": "25 August 2026 to 01 September 2026"
   },
   {
-    "id": "auto-ctet-79e904896104e47b",
-    "title": "Public Notice: re opening of Online Applications for the 22nd Edition of CTET PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW CTET SEPT 2026 INFORMATION BULLETIN CTET PUBLIC NOTICE SEPT 2026 Public Notice: Calcu",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-14",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/202605111250310617.pdf",
-    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source.",
-    "applicationLastDate": "01 September 2026",
-    "applicationDates": "25 August 2026 to 01 September 2026"
-  },
-  {
     "id": "auto-ctet-6d9936db032fe15f",
     "title": "re-exam PUBLIC NOTICE: Dated 24/02/2026",
     "organization": "CTET",
@@ -451,7 +377,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
-    "id": "auto-gail-902f8c1993f9bdad",
+    "id": "auto-gail-16778e12b311346f",
     "title": "Application Form",
     "organization": "GAIL India",
     "category": "PSU / Engineering",
@@ -459,7 +385,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-14",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
-    "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Application_Form_09-09-2026.pdf",
+    "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Application-Form-14-10-2026.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
   },
   {
@@ -607,18 +533,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-gail-27c8d5c54e33c13f",
-    "title": "Brief Advertisement PDF (174 KB)",
-    "organization": "GAIL India",
-    "category": "PSU / Engineering",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-14",
-    "officialUrl": "https://www.gailonline.com/Vacancies.html",
-    "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/MainAdvertisementCMDGAIL.pdf",
-    "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-gail-7f7a0bf2547cf3c6",
     "title": "Brief Advertisement PDF (178 KB)",
     "organization": "GAIL India",
@@ -727,7 +641,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-gail-e36bd22db3ed9ee1",
+    "id": "auto-gail-1e351e50f9421e3c",
     "title": "Detailed Advertisement in English",
     "organization": "GAIL India",
     "category": "PSU / Engineering",
@@ -735,11 +649,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-14",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
-    "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed-Adv-09-09-2026.pdf",
+    "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Advertisement-English-14-10-2026.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-gail-e304823207136d44",
+    "id": "auto-gail-a135bec98577e4dd",
     "title": "Detailed Advertisement in Hindi",
     "organization": "GAIL India",
     "category": "PSU / Engineering",
@@ -747,7 +661,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-14",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
-    "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed-Adv-hindi-09-09-26.pdf",
+    "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Advertisement-Hindi-14-10-2026.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
   },
   {
@@ -1036,18 +950,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-14",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILED_ADVT_GATE_2023_English-%20final.pdf",
-    "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-gail-68a614d4c099fd61",
-    "title": "Detailed Advertisement PDF (299 KB)",
-    "organization": "GAIL India",
-    "category": "PSU / Engineering",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-14",
-    "officialUrl": "https://www.gailonline.com/Vacancies.html",
-    "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILED_ADVT_GATE_2022_English_14.2.22.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
   },
   {
@@ -2215,7 +2117,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-b0408e9076d75cad",
+    "id": "auto-kerala-psc-37c45556314fa75d",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2223,11 +2125,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-14",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_omrexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_omrexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-bfc1c395481cde09",
+    "id": "auto-kerala-psc-274a1d8e868c2d27",
     "title": "Answer key-Online Exam",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2235,11 +2137,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-14",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_onlineexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_onlineexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-bf299afc332070c2",
+    "id": "auto-kerala-psc-d9b4642e91559d29",
     "title": "Exam Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2247,7 +2149,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-14",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/examinations",
+    "notificationUrl": "https://www.keralapsc.gov.in/examinations",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2263,7 +2165,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-05de1912b0b5a28f",
+    "id": "auto-kerala-psc-39e61c0337589778",
     "title": "Interview Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2271,7 +2173,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-14",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/interviews",
+    "notificationUrl": "https://www.keralapsc.gov.in/interviews",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2299,7 +2201,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
-    "id": "auto-kerala-psc-0011c91375f8ca04",
+    "id": "auto-kerala-psc-1a0587f41dadec15",
     "title": "OTV Schedule and Driving Test",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2307,7 +2209,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-14",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/otv-schedule-and-driving-test",
+    "notificationUrl": "https://www.keralapsc.gov.in/otv-schedule-and-driving-test",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2323,7 +2225,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-0f5b932826256159",
+    "id": "auto-kerala-psc-8c1bb50db9d6dc08",
     "title": "PSC Examination updates",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2331,11 +2233,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-14",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/psc-examination-updates",
+    "notificationUrl": "https://www.keralapsc.gov.in/psc-examination-updates",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-c4f57dea207a1fb4",
+    "id": "auto-kerala-psc-e89d8cfee71410b4",
     "title": "Question paper for Descriptive Examinations",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2343,7 +2245,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-14",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/question-paper-descriptive-exam",
+    "notificationUrl": "https://www.keralapsc.gov.in/question-paper-descriptive-exam",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2393,6 +2295,18 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://licindia.in/careers",
     "notificationUrl": "https://licindia.in/recruitment-of-aao-generalists/-specialists/-assistant-engineers-2025",
     "description": "Detected automatically from the registered official LIC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-manipur-psc-470b27a66965a04d",
+    "title": "Assistant Engineer/Manager Recruitment 2026 – Eligible & Rejected Candidates List, Exam Centre Selection and Admit Card Update. New Updated: 14/10/2026",
+    "organization": "Manipur Public Service Commission",
+    "category": "State Government",
+    "stage": "Admit Card",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-14",
+    "officialUrl": "https://mpscmanipur.gov.in/",
+    "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26101415240.pdf",
+    "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-manipur-psc-2f5753024f419746",
@@ -2515,6 +2429,30 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-mcc-f6b46671a2fbdb52",
+    "title": "AIQ and State Schedule Round 2 ,3 & Stray Vacancy 14",
+    "organization": "Medical Counselling Committee",
+    "category": "Medical Counselling",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-14",
+    "officialUrl": "https://mcc.nic.in/current-events-ug/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/20260820667831297.pdf",
+    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-mcc-7f77a92aa3dd3dba",
+    "title": "AIQ and State Schedule Round 2 ,3 & Stray Vacancy 14.09.2026",
+    "organization": "Medical Counselling Committee",
+    "category": "Medical Counselling",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-14",
+    "officialUrl": "https://mcc.nic.in/current-events-ug/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260915112025817.pdf",
+    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-mcc-b4bf4f25ba7c5528",
     "title": "AIQ and State Schedule Round 2 UG 2026 dated 02.09.2026",
     "organization": "Medical Counselling Committee",
@@ -2524,18 +2462,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-14",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/202609021737158592.pdf",
-    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-mcc-7f77a92aa3dd3dba",
-    "title": "AIQ and State Schedule Round 2_3_4_14.09.2026",
-    "organization": "Medical Counselling Committee",
-    "category": "Medical Counselling",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-14",
-    "officialUrl": "https://mcc.nic.in/current-events-ug/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260915112025817.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
@@ -2564,14 +2490,26 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-mcc-f9ca85261928e2bc",
-    "title": "Current Events NOTICE FOR NOT REPORTED CANDIATES ROUND 3 UG 2026 ADMITTED/JOINED CANDIATES UPTO ROUND 3 UG COUNSELING 2026 Final Allotment result for UG Round 3 Counselling",
+    "title": "CLEAR VACANCY STRAY VACANCY ROUND (MBBS BDS B",
     "organization": "Medical Counselling Committee",
     "category": "Medical Counselling",
-    "stage": "Result",
+    "stage": "Recruitment",
     "status": "Detected on official source",
     "lastChecked": "2026-10-14",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/20261011609899435.pdf",
+    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-mcc-b0ceecd53d61158f",
+    "title": "CLEAR VACANCY STRAY VACANCY ROUND (MBBS BDS B.SC NURSING) – UG COUNSELLING 2026",
+    "organization": "Medical Counselling Committee",
+    "category": "Medical Counselling",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-14",
+    "officialUrl": "https://mcc.nic.in/current-events-ug/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/202610141415545341.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
@@ -2645,18 +2583,6 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://mcc.nic.in/current-events-ug/",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
-  },
-  {
-    "id": "auto-mcc-142ebb535a6cf864",
-    "title": "NEWLY ADDED SEATS ROUND 3 (MBBS BDS) – UG COUNSELLING 2026 VIRTUAL VACANCY ROUND 3 (MBBS BDS B",
-    "organization": "Medical Counselling Committee",
-    "category": "Medical Counselling",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-14",
-    "officialUrl": "https://mcc.nic.in/current-events-ug/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/202609241056073871.pdf",
-    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-mcc-d94661d90fb0cc53",
@@ -2851,6 +2777,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-mcc-fc0b56428e293967",
+    "title": "Notice for Schedule of Stray Round",
+    "organization": "Medical Counselling Committee",
+    "category": "Medical Counselling",
+    "stage": "Upcoming",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-14",
+    "officialUrl": "https://mcc.nic.in/current-events-ug/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/20261014265020089.pdf",
+    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-mcc-a260b74560e64634",
     "title": "Notice for start of Choice Filling Round 1 dated 07.08.2026",
     "organization": "Medical Counselling Committee",
@@ -2948,10 +2886,10 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-mcc-5fc7394825b3041f",
-    "title": "UG AIQ Counselling Schedule 2026 Round 2, 3 and 4 14.09.2026",
+    "title": "UG AIQ Counselling Schedule 2026 Round 2, 3 and Stray Vacancy 14.09.2026",
     "organization": "Medical Counselling Committee",
     "category": "Medical Counselling",
-    "stage": "Upcoming",
+    "stage": "Recruitment",
     "status": "Detected on official source",
     "lastChecked": "2026-10-14",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
@@ -12065,6 +12003,42 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_15_SELECT_LIST_ZONAL+HEAD.pdf/cce7a053-fee6-7f09-652c-15a799435f47?t=1769606133274",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-3d0b2e9aec82682f",
+    "title": "3AB7; font-weight:600; text-decoration:none;\"> முதன்மை பக்கம் செல்க / Go to Home Page அறிவிப்புகள் / Announcements ஒருங்கிணைந்த குடிமைப் பணிகள் தேர்வு IV (தொகுதி IV பணிகள்)(அறிவிக்கை எண் 11/2026) Combined Civil Services Examination-IV (Group IV Services) (Notification No",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-14",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://tnpsc.gov.in/document/tamil/group4_tamil.pdf",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-8c426fdf8df4d0ef",
+    "title": "class=\"container mt-2\" style=\"margin-bottom:60px;\"> அறிவிப்புகள் / Announcements ஒருங்கிணைந்த குடிமைப் பணிகள் தேர்வு IV (தொகுதி IV பணிகள்)(அறிவிக்கை எண் 11/2026) Combined Civil Services Examination-IV (Group IV Services) (Notification No",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-14",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://tnpsc.gov.in/document/english/group_english.pdf",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-7dc9076582ba8112",
+    "title": "இணையவழியில் விண்ணப்பிக்க Apply online",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-14",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-upsc-1e704a4ee163e39b",
