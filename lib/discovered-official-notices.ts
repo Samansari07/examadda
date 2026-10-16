@@ -397,6 +397,30 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-ctet-65b953b91c3e8ca22786",
+    "title": "FINAL ANSWER KEY",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://ctet.nic.in/previous-year-final-answer-key/",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-ctet-da58ec7c67e2874d14a6",
+    "title": "Duplicate Certificate and Marksheet of CTET Examination upto 2016",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://ctet.nic.in/duplicate-marks-sheet-and-certificate/",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-sbi-28cd070f53ead323c780",
     "title": "Contact Us",
     "organization": "State Bank of India",
@@ -550,18 +574,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-16",
     "officialUrl": "https://licindia.in/careers",
     "notificationUrl": "https://agencycareer.licindia.in/agt_req/index1.php?_ga=2.132252684.382589343.1685778008-998430420.1685778008&amp;_gac=1.91017576.1685872184.Cj0KCQjw7PCjBhDwARIsANo7Cgnay0YVbEoO5MslMzNkmXXG6Ra5XrDaHLDJKjFV-6L6dFlvzbQ0PDAaAi9pEALw_wcB",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-lic-25d5bdbf1804df2606d0",
-    "title": "*CLICK HERE TO APPLY FOR LIC GOLDEN JUBILEE SCHOLARSHIPS 2026 \"Last date extended up to 15th October 2026\" *",
-    "organization": "LIC",
-    "category": "Insurance",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-16",
-    "officialUrl": "https://licindia.in/careers",
-    "notificationUrl": "https://licindia.in/golden-jubilee-foundation",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -994,6 +1006,150 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-16",
     "officialUrl": "https://appsc.gov.in/",
     "notificationUrl": "https://appsc.gov.in/Index/upcoming_exam_details",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-bb54486f7c0018698892",
+    "title": "Previous Exam Question Paper(s)",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/sam_question_paper.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-b4f4537167224a8aa4e4",
+    "title": "FAQ �",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Online%20Application%20System.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-83f1f31fa505c8024508",
+    "title": "Online Application Form (OAS)",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/FAQ.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-8e7d055bcc8609ce4e99",
+    "title": "Recent Recommendations �",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Recruitment.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-a93e5a3215b28be27898",
+    "title": "Exam Information �",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Exam-Information.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-4cda18614985865e971c",
+    "title": "Recent Examinations/Interview",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Examination-Links.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-b790b32d8cb80bcc3334",
+    "title": "Online Application",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/?click=yes",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-0b26468152a5a3ac946a",
+    "title": "Advertisements",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/advertisement.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-d632f1bed14936bf35c4",
+    "title": "Examination Calendar-2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Exam_Calendar_2026_dtd_09_07_2026.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-0a027ba8038bc5d5ce30",
+    "title": "Results/ Answer Keys",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Results.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-c81eb535f46f2eea4a06",
+    "title": "Press Release regarding Combined Civil Services Main Examination Uploaded date:-09-07-2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_01_26_dated_09_07_2026.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-637e934b073804ed04d4",
+    "title": "Press release regarding Combined Civil Services Main Examination Advt.No.01/2026 uploaded date :14-07-2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_01_26_dated_14_07_2026.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -1594,6 +1750,150 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-16",
     "officialUrl": "https://www.opsc.gov.in/",
     "notificationUrl": "https://www.opsc.gov.in/Pages/View_Content.aspx?id=5b9HSNplj2JDUafP+k7rrg==",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-uttar-pradesh-psc-23542436dab53d3af323",
+    "title": "{{'ActiveExam_HM' | translate }}",
+    "organization": "Uttar Pradesh Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://uppsc.up.nic.in/",
+    "notificationUrl": "https://uppsc.up.nic.in/FooterPages/Upcoming-Exams",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-uttar-pradesh-psc-c6b617289860a9921884",
+    "title": "{{'ExamCal_HM' | translate }}",
+    "organization": "Uttar Pradesh Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://uppsc.up.nic.in/",
+    "notificationUrl": "https://uppsc.up.nic.in/PublicPages/Examinations_Details.aspx?ID=EC",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-uttar-pradesh-psc-2ca41b3dc963c6200563",
+    "title": "{{'ApplyOnline_HM' | translate }}",
+    "organization": "Uttar Pradesh Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://uppsc.up.nic.in/",
+    "notificationUrl": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-uttar-pradesh-psc-519936d07334ada10f4c",
+    "title": "{{'InterviewOnly_HM' | translate }}",
+    "organization": "Uttar Pradesh Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://uppsc.up.nic.in/",
+    "notificationUrl": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=IO",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-uttar-pradesh-psc-1b370092b3faa91ca7b5",
+    "title": "{{'ScreeningTestInt_HM' | translate }}",
+    "organization": "Uttar Pradesh Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://uppsc.up.nic.in/",
+    "notificationUrl": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=SI",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-uttar-pradesh-psc-2804b706c240ad916618",
+    "title": "{{'ExaminationOnly_HM' | translate }}",
+    "organization": "Uttar Pradesh Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://uppsc.up.nic.in/",
+    "notificationUrl": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EO",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-uttar-pradesh-psc-0cf2394e8bd82b4a5292",
+    "title": "{{'ExaminationAndInterviewOnly_HM' | translate }}",
+    "organization": "Uttar Pradesh Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://uppsc.up.nic.in/",
+    "notificationUrl": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EI",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-uttar-pradesh-psc-ef37c34b90d3551dd435",
+    "title": "{{'PreExamMainExamInt_HM' | translate }}",
+    "organization": "Uttar Pradesh Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://uppsc.up.nic.in/",
+    "notificationUrl": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EIM",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-uttar-pradesh-psc-1f79f8698e4f7badab01",
+    "title": "{{'DwldInterviewLetterDirect_HM' | translate }}",
+    "organization": "Uttar Pradesh Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://uppsc.up.nic.in/",
+    "notificationUrl": "https://uppsc.up.nic.in/CandidatePages/IntLtr/Interview_DetailsShowByAdvertisement_New.aspx",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-uttar-pradesh-psc-e93212c3d7119b8dd3e2",
+    "title": "{{'DownloadExamDistSlip_HM' | translate }}",
+    "organization": "Uttar Pradesh Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://uppsc.up.nic.in/",
+    "notificationUrl": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=dc",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-uttar-pradesh-psc-a9f87c5eb39a8f07fb2b",
+    "title": "{{'DownloadAdmitCard_HM' | translate }}",
+    "organization": "Uttar Pradesh Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://uppsc.up.nic.in/",
+    "notificationUrl": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-uttar-pradesh-psc-4f35e5b76d43cc3c6ffa",
+    "title": "{{'ViewAnswerKey_HM' | translate }}",
+    "organization": "Uttar Pradesh Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://uppsc.up.nic.in/",
+    "notificationUrl": "https://uppsc.up.nic.in/CandidatePages/Status/ViewAnswerKey.aspx?ID=5",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -2687,13 +2987,157 @@ export const discoveredOfficialNotices = [
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=54420549&assetClassPK=54420544",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-npcil-7c0f591b40a0df3e4670",
+    "title": "Career Growth / Promotion and Development Avenues",
+    "organization": "NPCIL",
+    "category": "PSU / Science & Engineering",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+    "notificationUrl": "https://www.npcil.nic.in/content/270_1_CareerGrowthPromotionandDevelopmentAvenues.aspx",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-npcil-a62842112a189c68595f",
+    "title": "Pay Structure",
+    "organization": "NPCIL",
+    "category": "PSU / Science & Engineering",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+    "notificationUrl": "https://www.npcil.nic.in/content/286_1_careerpaystructure.aspx",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-npcil-e61229d05874ab45d8e5",
+    "title": "Results",
+    "organization": "NPCIL",
+    "category": "PSU / Science & Engineering",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+    "notificationUrl": "https://www.npcil.nic.in/content/290_1_Results.aspx",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-npcil-9d3265801c1bb12e2315",
+    "title": "Equal Opportunity Policy for Persons with Disabilities (PwD) in NPCIL",
+    "organization": "NPCIL",
+    "category": "PSU / Science & Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+    "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/PwD_Policy_23022026_01.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-npcil-79b9c1704f1ad8f18c3f",
+    "title": "Download Advertisement",
+    "organization": "NPCIL",
+    "category": "PSU / Science & Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+    "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/Advt_ET_08102026_01.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-npcil-655b21c136195addd645",
+    "title": "Download Advertisement",
+    "organization": "NPCIL",
+    "category": "PSU / Science & Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+    "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/Advt_20082026_01.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-npcil-54d8259caa33b9b05a4d",
+    "title": "Download Advertisement",
+    "organization": "NPCIL",
+    "category": "PSU / Science & Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+    "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/Advt_14082026_01.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-npcil-7a4f3302ece2ab35d027",
+    "title": "Download Advertisement",
+    "organization": "NPCIL",
+    "category": "PSU / Science & Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+    "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/Advertisement_25052026_01.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-npcil-7c8ad6e5df66d9032fcc",
+    "title": "Download Advertisement",
+    "organization": "NPCIL",
+    "category": "PSU / Science & Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+    "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/Advt_17032026_01.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-npcil-13e50b1e6f911eb9b1ac",
+    "title": "Corrigendum",
+    "organization": "NPCIL",
+    "category": "PSU / Science & Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+    "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/Corrigendum_22052026_01.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-npcil-815d2cef7bf5dfbcde46",
+    "title": "\"List of Shortlisted Candidates for Personal Interview for the post of Stipendiary Trainee/Scientific Assistant-B in various discipline.\"",
+    "organization": "NPCIL",
+    "category": "PSU / Science & Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+    "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/ST_SA_Shortlist_20042026.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-npcil-ef82b8a5a622d1344072",
+    "title": "\"List of Shortlisted Candidates for Document Verification/Skill Test for the post of Stipendiary Trainee/Technician-B in various discipline.\"",
+    "organization": "NPCIL",
+    "category": "PSU / Science & Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-16",
+    "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+    "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/Shortlisted_Candidates_ST_TN_14052026_01.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-16T17:29:47.701Z",
+  "generatedAt": "2026-10-16T21:04:27.126Z",
   "registeredSources": 78,
-  "checkedSources": 41,
-  "discoveredItems": 224,
+  "checkedSources": 43,
+  "discoveredItems": 261,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2790,14 +3234,14 @@ export const discoveryMeta = {
     },
     {
       "id": "ctet",
-      "discovered": 0,
+      "discovered": 2,
       "checked": true,
-      "fetchedUrl": "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/",
-      "method": "mixed",
+      "fetchedUrl": "https://ctet.nic.in/",
+      "method": "fetch",
       "pages": [
+        "https://ctet.nic.in/",
         "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/",
-        "https://ctet.nic.in/document-category/public-notices/",
-        "https://ctet.nic.in/sitemap.xml"
+        "https://ctet.nic.in/document-category/public-notices/"
       ]
     },
     {
@@ -2844,7 +3288,7 @@ export const discoveryMeta = {
     },
     {
       "id": "lic",
-      "discovered": 11,
+      "discovered": 7,
       "checked": true,
       "fetchedUrl": "https://licindia.in/careers",
       "method": "mixed",
@@ -2852,11 +3296,7 @@ export const discoveryMeta = {
         "https://licindia.in/careers",
         "https://licindia.in/sitemap.xml",
         "https://licindia.in/notifications",
-        "https://licindia.in/notices",
-        "https://licindia.in/recruitment",
-        "https://licindia.in/recruitment-notices",
-        "https://licindia.in/career",
-        "https://licindia.in/advertisement"
+        "https://licindia.in/notices"
       ]
     },
     {
@@ -2937,19 +3377,14 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 21,
+      "discovered": 6,
       "checked": true,
       "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
       "method": "mixed",
       "pages": [
         "https://indiapost.gov.in/gdsonlineengagement",
         "https://indiapost.gov.in/sitemap.xml",
-        "https://indiapost.gov.in/robots.txt",
-        "https://indiapost.gov.in/notifications",
-        "https://indiapost.gov.in/notices",
-        "https://indiapost.gov.in/recruitment",
-        "https://indiapost.gov.in/recruitment-notices",
-        "https://indiapost.gov.in/career"
+        "https://indiapost.gov.in/robots.txt"
       ]
     },
     {
@@ -3103,11 +3538,20 @@ export const discoveryMeta = {
     },
     {
       "id": "jharkhand-psc",
-      "discovered": 0,
-      "checked": false,
-      "fetchedUrl": null,
-      "method": null,
-      "pages": []
+      "discovered": 12,
+      "checked": true,
+      "fetchedUrl": "https://www.jpsc.gov.in/",
+      "method": "mixed",
+      "pages": [
+        "https://www.jpsc.gov.in/",
+        "https://www.jpsc.gov.in/sitemap.xml",
+        "https://www.jpsc.gov.in/robots.txt",
+        "https://www.jpsc.gov.in/notifications",
+        "https://www.jpsc.gov.in/notices",
+        "https://www.jpsc.gov.in/recruitment",
+        "https://www.jpsc.gov.in/recruitment-notices",
+        "https://www.jpsc.gov.in/career"
+      ]
     },
     {
       "id": "karnataka-psc",
@@ -3218,13 +3662,8 @@ export const discoveryMeta = {
       "method": "mixed",
       "pages": [
         "https://npsc.nagaland.gov.in/",
-        "https://npsc.nagaland.gov.in/sitemap.xml",
         "https://npsc.nagaland.gov.in/robots.txt",
-        "https://npsc.nagaland.gov.in/notifications",
-        "https://npsc.nagaland.gov.in/notices",
-        "https://npsc.nagaland.gov.in/recruitment",
-        "https://npsc.nagaland.gov.in/recruitment-notices",
-        "https://npsc.nagaland.gov.in/career"
+        "https://npsc.nagaland.gov.in/notifications"
       ]
     },
     {
@@ -3287,11 +3726,13 @@ export const discoveryMeta = {
     },
     {
       "id": "uttar-pradesh-psc",
-      "discovered": 0,
-      "checked": false,
-      "fetchedUrl": null,
-      "method": null,
-      "pages": []
+      "discovered": 12,
+      "checked": true,
+      "fetchedUrl": "https://uppsc.up.nic.in/",
+      "method": "fetch",
+      "pages": [
+        "https://uppsc.up.nic.in/"
+      ]
     },
     {
       "id": "uttarakhand-psc",
@@ -3356,9 +3797,16 @@ export const discoveryMeta = {
       "discovered": 0,
       "checked": true,
       "fetchedUrl": "https://onlineemploymentportal.delhi.gov.in/",
-      "method": "fetch",
+      "method": "mixed",
       "pages": [
-        "https://onlineemploymentportal.delhi.gov.in/"
+        "https://onlineemploymentportal.delhi.gov.in/",
+        "https://onlineemploymentportal.delhi.gov.in/sitemap.xml",
+        "https://onlineemploymentportal.delhi.gov.in/robots.txt",
+        "https://onlineemploymentportal.delhi.gov.in/notifications",
+        "https://onlineemploymentportal.delhi.gov.in/notices",
+        "https://onlineemploymentportal.delhi.gov.in/recruitment",
+        "https://onlineemploymentportal.delhi.gov.in/recruitment-notices",
+        "https://onlineemploymentportal.delhi.gov.in/career"
       ]
     },
     {
@@ -3596,7 +4044,7 @@ export const discoveryMeta = {
     },
     {
       "id": "hpcl",
-      "discovered": 20,
+      "discovered": 25,
       "checked": true,
       "fetchedUrl": "https://www.hindustanpetroleum.com/job-openings",
       "method": "mixed",
@@ -3647,12 +4095,19 @@ export const discoveryMeta = {
     },
     {
       "id": "npcil",
-      "discovered": 0,
+      "discovered": 12,
       "checked": true,
-      "fetchedUrl": "https://www.npcil.nic.in/content/sitemap.xml",
+      "fetchedUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
       "method": "mixed",
       "pages": [
-        "https://www.npcil.nic.in/content/sitemap.xml"
+        "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
+        "https://www.npcil.nic.in/content/sitemap.xml",
+        "https://www.npcil.nic.in/content/robots.txt",
+        "https://www.npcil.nic.in/content/notifications",
+        "https://www.npcil.nic.in/content/notices",
+        "https://www.npcil.nic.in/content/recruitment",
+        "https://www.npcil.nic.in/content/recruitment-notices",
+        "https://www.npcil.nic.in/content/career"
       ]
     }
   ]
