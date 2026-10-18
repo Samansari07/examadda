@@ -8,10 +8,10 @@ export type AutoNotification = {
 export const autoNotificationMeta = {
   "generatedAt": "2026-10-18",
   "sourceCount": 78,
-  "successfulSources": 43,
-  "healthySources": 43,
+  "successfulSources": 44,
+  "healthySources": 44,
   "degradedSources": 0,
-  "unreachableSources": 35,
+  "unreachableSources": 34,
   "failedSources": [
     "Assam Public Service Commission",
     "Haryana Employment Portal",
@@ -19,7 +19,6 @@ export const autoNotificationMeta = {
     "Bihar Public Service Commission",
     "Karnataka Public Service Commission",
     "Uttarakhand Public Service Commission",
-    "Himachal Pradesh Employment Portal",
     "IBPS",
     "Indian Coast Guard",
     "Chhattisgarh Public Service Commission",
@@ -2182,7 +2181,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-37c45556314fa75d",
+    "id": "auto-kerala-psc-b0408e9076d75cad",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2190,11 +2189,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_omrexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_omrexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-274a1d8e868c2d27",
+    "id": "auto-kerala-psc-bfc1c395481cde09",
     "title": "Answer key-Online Exam",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2202,11 +2201,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_onlineexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_onlineexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-d9b4642e91559d29",
+    "id": "auto-kerala-psc-bf299afc332070c2",
     "title": "Exam Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2214,7 +2213,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/examinations",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/examinations",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2230,7 +2229,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-39e61c0337589778",
+    "id": "auto-kerala-psc-05de1912b0b5a28f",
     "title": "Interview Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2238,7 +2237,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/interviews",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/interviews",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2266,7 +2265,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
-    "id": "auto-kerala-psc-1a0587f41dadec15",
+    "id": "auto-kerala-psc-0011c91375f8ca04",
     "title": "OTV Schedule and Driving Test",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2274,11 +2273,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/otv-schedule-and-driving-test",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/otv-schedule-and-driving-test",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-1709d751f92d2140",
+    "id": "auto-kerala-psc-c019d0c423cf10b5",
     "title": "Procedure for Interview Date Change Requests",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2286,11 +2285,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-8c1bb50db9d6dc08",
+    "id": "auto-kerala-psc-0f5b932826256159",
     "title": "PSC Examination updates",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2298,11 +2297,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/psc-examination-updates",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/psc-examination-updates",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-e89d8cfee71410b4",
+    "id": "auto-kerala-psc-c4f57dea207a1fb4",
     "title": "Question paper for Descriptive Examinations",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2310,7 +2309,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/question-paper-descriptive-exam",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/question-paper-descriptive-exam",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -4436,6 +4435,582 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice14Nov2025c.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-b9d1f71887c346e2",
+    "title": "Addendum No. NPSC/EXAM-3/2023 dt. 10.05.2023 (CTSE (Agri., Allied & Others) 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/168371302965014",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-fe6ea8e6503bfa02",
+    "title": "Addendum No. NPSC/EXAM-3/2023 dt. 24.05.2023 (CTSE (Agri., Allied & Others) 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/168491874522623",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-b2c1ca0a14219902",
+    "title": "Addendum NO.NPSC/ADVT-1/04 (VOL-1) dt.15.04.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171317888830995",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-08c2b31a60bab19a",
+    "title": "Addendum/Corrigendum No. NPSC/EXAM-19/2023 dt. 13.12.2023(NCS, NPS & Allied Services Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/170245427865623",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-4cdcaed008fd0513",
+    "title": "Addendum/Corrigendum No. NPSC/EXAM-21/2023 dt.12.05.2026 (CESE 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/177850200769543",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-716f8e5dc90dce0b",
+    "title": "Addendum/Corrigendum No. NPSC/EXAM-21/2023 dt.18.05.2026 (CESE 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/177909945289247",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-d6fafd5a0952048d",
+    "title": "Addendum/Corrigendum No. NPSC/EXAM-3/2023 dt. 02.05.2023 (CTSE (Agri., Allied & Others) 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/168302531322268",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-79a8e4c5835596f5",
+    "title": "Addendum/Corrigendum NO.NPSC.ADVT-1/04(VOL-1) dt. 28.04.2025 (CTSE 2025)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/174584003729942",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-5156b9eb56a62d64",
+    "title": "Addendum/Corrigendum NO.NPSC/ADVT-1/04 (VOL-1) dt. 14.05.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171568057095717",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-866600ba76681ab7",
+    "title": "Addendum/Corrigendum NO.NPSC/ADVT-1/04 (VOL-1) dt. 24.04.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171395215545572",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-677c971c266d7589",
+    "title": "Addendum/Corrigendum No.NPSC/ADVT-1/04(VOL-1) dt. 10.07.2026 (Combined Technical Services Examination 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/178368103842856",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-85562caa0dacc5b6",
+    "title": "Addendum/Corrigendum No.NPSC/ADVT-1/04(VOL-1) dt. 15.07.2026 (Combined Technical Services Examination 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/178411279766959",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-6ed3b32cc6a23c99",
+    "title": "Addendum/Notification NO.NPSC/ADVT-1/04 (VOL-1) dt. 30.04.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171446854113705",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-0eaf7ae86cfd4830",
+    "title": "Advertisement No. NPSC-1/04 (VOL-I) dt. 07.04.2025 (Combined Technical Services Examination 2025)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/174401590798216",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-6e59e05ae59e2bbf",
+    "title": "Advertisement No. NPSC-1/04 (VOL-I) dt. 28.03.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171162070074720",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-2d5539295b232c55",
+    "title": "Advertisement No. NPSC-2/CESE-2024 dt. 15.06.2024 (Common Educational Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171843559598873",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-9648ee425a3a970c",
+    "title": "Advertisement No. NPSC-4/NCS-2024 dt. 25.09.2024 (NCS, NPS & Allied Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172725907881402",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-08dcc84701aa89a5",
+    "title": "Advertisement No. NPSC/ESTT-4/2024 dt. 10.06.2025",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/174955509092847",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-8b36ce2711125310",
+    "title": "Advertisement NO. NPSC/EXAM-18/2023 dt. 17.09.2024 (Stenographer Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172656164695523",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-67b703ca00c41b2e",
+    "title": "Advertisement NO. NPSC/EXAM-18/2023 dt. 19.08.2026 (Stenographer Recruitment Examination 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/178713486224731",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-b9cb44823dc1b3a3",
+    "title": "Advertisement NO. NPSC/EXAM-18/2023 dt. 25.08.2023 (Stenographer Recruitment Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/169295649178276",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-424fee6b5806230d",
+    "title": "Advertisement No. NPSC/EXAM-19/2023 dt. 27.09.2023(NCS, NPS & Allied Services Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/169580509742005",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-277e9ef040b6b737",
+    "title": "Advertisement NO.NPSC-4/CESE-2023 dt. 15.09.2023 (Common Educational Services Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/169477634427400",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-8837123efbb6cdd8",
+    "title": "Advertisement No.NPSC/ADVT-1/04(VOL-1) dt. 25.06.2026 (Combined Technical Services Examination 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/178237788571003",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-a867926e3d0da2a8",
+    "title": "Advertisement NO.NPSC/EXAM-21/2023 dt. 29.04.2026 (Common Educational Services Examination 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/177745594534313",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-8c6bbadc43a381c8",
+    "title": "Advertisement NO.NPSC/EXAM-5/2025 dt. 28.10.2025 (NCS, NPS & Allied Services Examination 2025)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/176163778915978",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-38fa680fbcce1f71",
+    "title": "Corrigendum NO. NPSC. ADVT-1/04 ( VOL-1) dt. 20.09.2023 CTSE (Engg. Services ) 2023",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/169520802383606",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-3854f28ffff7ea9c",
+    "title": "Corrigendum NO. NPSC/EXAM-18/2023 dt. 15.10.2024 (Stenographer Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172898115057268",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-a760f1796a3f9971",
+    "title": "Corrigendum No. NPSC/EXAM-19/2023 dt. 06.08.2024 (NCS, NPS & Allied Services Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172293613246394",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-ea4f244b7b36ef40",
+    "title": "Corrigendum No. NPSC/EXAM-19/2023 dt. 09.07.2024 (NCS, NPS & Allied Services Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172059547464598",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-0f3e8b7298a07007",
+    "title": "Corrigendum No. NPSC/EXAM-21/2023 dt. 14.10.2023 (Common Educational Services Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/169726681741655",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-d48ec7cb237da7e5",
+    "title": "Corrigendum No. NPSC/EXAM-21/2023 dt.23.06.2026 (CESE 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/178220678670542",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-63f6bf2502a2e67d",
+    "title": "Corrigendum No. NPSC/EXAM-21/2023 dt.27.05.2026 (CESE 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/177987018856670",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-e5709149a15918af",
+    "title": "Corrigendum No. NPSC/EXAM-9/2024 dt. 05.11.2024 (NCS, NPS & Allied Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/173079457275074",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-d241d32660f0d4cb",
+    "title": "Corrigendum No. NPSC/EXAM-9/2024 dt. 07.10.2024 (NCS, NPS & Allied Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172828840484106",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-c7bded9b98e859b3",
+    "title": "Corrigendum NO.NPSC/ADVT-1/04 (VOL-1) dt. 01.04.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171212046567142",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-f0465719a98c2034",
+    "title": "Corrigendum NO.NPSC/ADVT-1/04 (VOL-1) dt. 02.07.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171999051054039",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-d8cf8ec7e983841b",
+    "title": "Corrigendum NO.NPSC/ADVT-1/04 (VOL-1) dt. 17.04.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171334595659625",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-4163dedb9f738f43",
+    "title": "Corrigendum NO.NPSC/ADVT-1/04 (VOL-1) dt. 29.03.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171168490842193",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-6b8e8906a0bea0b1",
+    "title": "Corrigendum No.NPSC/ADVT-1/04(VOL-1) dt. 17.07.2026 (Combined Technical Services Examination 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/178438090285416",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-0cb4bfea0b32458a",
+    "title": "Corrigendum NO.NPSC/EXAM-2/2024 dt. 18.07.2024 (Common Educational Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172129674447791",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-d468e95415ce0bbe",
+    "title": "Corrigendum NO.NPSC/EXAM-21/2023 dt. 08.06.2024 (Common Educational Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172042947642869",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-6a8bb6de43aba888",
+    "title": "Corrigendum NO.NPSC/EXAM-21/2023 dt. 12.07.2024 (Common Educational Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172077099798178",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-47647b0ee86e12cf",
+    "title": "Corrigendum NO.NPSC/EXAM-21/2023 dt. 21.06.2024 (Common Educational Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171894916582988",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-22a494f7c9865f67",
+    "title": "Corrigendum NO.NPSC/EXAM-21/2023 dt.13.05.2025 (CESE 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/174712241226320",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-52ed0fcc3cf70c3f",
+    "title": "Corrigendum NO.NPSC/EXAM-5/2022 dt. 02.08.2023 (Backlog post for re- advertisement under CESE 2022)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/169104479447275",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-92f3beac86c1a2ca",
+    "title": "Corrigendum NO.NPSC/EXAM-5/2025 dt. 04.02.2026 (NCS, NPS & Allied Services Examination 2025)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/177019516662914",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-a15b927f73e6f9d7",
+    "title": "Corrigendum NPSC/ADVT-1/04 (VOL-1) dt. 01.05.2025 (CTSE 2025)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/174609049363286",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-nagaland-psc-d71598122ff3fbde",
@@ -11650,6 +12225,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-upsc-3faac164903c0546",
+    "title": "Addendum Notice: 08 Posts of Administrative Officer Grade - I, Ministry of Defence",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/08%20Posts%20of%20Administrative%20Officer%20Grade%20-%20I,%20Ministry%20of%20Defence/Addendum%20Notice",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-upsc-93bfb6a177d94443",
     "title": "Addendum Notice: 09 posts of Scientist-B (Instrumentation) in Ministry of Earth Sciences",
     "organization": "UPSC",
@@ -11659,6 +12246,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/09%20posts%20of%20Scientist-B%20(Instrumentation)%20in%20Ministry%20of%20Earth%20Sciences/Addendum%20Notice",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-f43999f5fd8ffc6f",
+    "title": "Addendum Notice: 19 Posts of Manager Grade - I - Section Officer, Ministry of Defence",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/19%20Posts%20of%20Manager%20Grade%20-%20I%20-%20Section%20Officer,%20Ministry%20of%20Defence/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -11674,15 +12273,15 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-eed7c5cbd8fc0359",
-    "title": "Advertisement No.11 - 2026",
+    "id": "auto-upsc-71dc2a46c960b6a9",
+    "title": "Addendum Notice: 32 Posts of Accounts Officer, Administration of Union Territory of Ladakh",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Recruitment",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/11%20-%202026",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/32%20Posts%20of%20Accounts%20Officer,%20Administration%20of%20Union%20Territory%20of%20Ladakh/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -11695,6 +12294,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/12%20-%202026",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-5dbbca7b9df838a1",
+    "title": "Advertisement No.52 - 2026 (Special)",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/52%20-%202026%20(Special)",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -11746,32 +12357,32 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-e29852410d5db8ab",
-    "title": "CMSE-2026 - Application submission window extended till 23.09.2026 6.00 PM. Candidates may access the form through Login - Examinations - Apply for Examinations - CMSE-2026 Update",
+    "id": "auto-upsc-aa7dac9c0942bc5e",
+    "title": "e - Admit Card: Combined Defence Services Examination (II), 2026",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Notice",
+    "stage": "Admit Card",
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/content/cmse-2026-application-submission-window-extended-till-23092026-600-pm-candidates-may-access",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026/e%20-%20Admit%20Card",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-0d07e0e35566627e",
-    "title": "Common mistakes done while filling OMR Sheet/Scannable Attendance List Notice regarding change in recruitment process for six (06) posts advertised vide Advt",
+    "id": "auto-upsc-22cb1c999439a93e",
+    "title": "e - Admit Card: National Defence Academy and Naval Academy Examination (II), 2026",
     "organization": "UPSC",
     "category": "Central Government",
-    "stage": "Recruitment",
+    "stage": "Admit Card",
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/sites/default/files/Common_Mistake_OMR_SAL.pdf",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026/e%20-%20Admit%20Card",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-upsc-954dc9013a08c8ec",
-    "title": "ew-page view-id-whats_new_page view-display-id-page_1 view-what-new view-dom-id-8faa1ce47a7d2bb4f2d16ce06f476c05\"> Common mistakes done while filling OMR Sheet/Scannable Attendance List Notice regarding change in recruitment process for six (06) posts advertised vide Advt",
+    "title": "ew-what-new view-id-what_new view-display-id-block view-what-new view-dom-id-b0c4881af83a63c05d9ec76984a58d18\"> Common mistakes done while filling OMR Sheet/Scannable Attendance List Notice regarding change in recruitment process for six (06) posts advertised vide Advt",
     "organization": "UPSC",
     "category": "Central Government",
     "stage": "Recruitment",
@@ -11782,27 +12393,15 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-4244b72a44cf2225",
-    "title": "Exam Notification: Combined Section Officers (Grade-&#039;B&#039;) LDCE - 2026 and Combined Stenographers (Grade - &#039;B&#039; - Grade - &#039;I&#039;) LDCE - 2022, 2023 and 2024",
+    "id": "auto-upsc-ac9ae6278f96d876",
+    "title": "Exam Notification: Combined Geo-Scientist (Preliminary) Examination, 2027",
     "organization": "UPSC",
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%20%28Grade-%27B%27%29%20LDCE%20-%202026%20and%20Combined%20Stenographers%20%28Grade%20-%20%27B%27%20-%20Grade%20-%20%27I%27%29%20LDCE%20-%20%202022%2C%202023%20and%202024/Exam%20Notification",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-993c947b305827ab",
-    "title": "Exam Notification: Engineering Services (Preliminary) Examination, 2027",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-18",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202027/Exam%20Notification",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Preliminary%29%20Examination%2C%202027/Exam%20Notification",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -11818,6 +12417,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-upsc-bd78bdc4db1a2084",
+    "title": "Examination Time Table: Combined Defence Services Examination (II), 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026/Examination%20Time%20Table",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-upsc-d6d5e80c00edf5c7",
     "title": "Examination Time Table: Indian Forest Service (Main) Examination, 2026",
     "organization": "UPSC",
@@ -11830,27 +12441,27 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-1d125320e18ae517",
-    "title": "Extension of updation-login window for CAPF (ACs), Examination, 2026",
+    "id": "auto-upsc-614830a79ee1dbda",
+    "title": "Examination Time Table: National Defence Academy and Naval Academy Examination (II), 2026",
     "organization": "UPSC",
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/content/extension-updation-login-window-capf-acs-examination-2026",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026/Examination%20Time%20Table",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-2acd4c0d2cbd690a",
-    "title": "Final Result: 02 Posts of Assistant Director Grade-II (IEDS) (Leather & Footwear), Ministry of MSME",
+    "id": "auto-upsc-fe85a7814b80b34b",
+    "title": "Final Result: 03 Posts of Assistant Director (Corporate Law), Ministry of Corporate Affairs",
     "organization": "UPSC",
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/02%20Posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Leather%20&amp;%20Footwear),%20Ministry%20of%20MSME/Final%20Result",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/03%20Posts%20of%20Assistant%20Director%20(Corporate%20Law),%20Ministry%20of%20Corporate%20Affairs/Final%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -11863,6 +12474,30 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/03%20Posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Chemical),%20Ministry%20of%20MSME/Final%20Result",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-9291ceb581726939",
+    "title": "Final Result: 20 Posts of Drugs Inspector (Medical Devices), Ministry of Health and Family Welfare",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/20%20Posts%20of%20Drugs%20Inspector%20(Medical%20Devices),%20Ministry%20of%20Health%20and%20Family%20Welfare/Final%20Result",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-4de0eb242ced21f6",
+    "title": "Final Result: 25 Posts of Public Prosecutor in CBI",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/25%20Posts%20of%20Public%20Prosecutor%20in%20CBI/Final%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -11887,6 +12522,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/CISF%20AC%28EXE%29%20LDCE-2026/Final%20Result",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-69c47ef1089e3e5c",
+    "title": "Final Result: Combined Geo-Scientist (Main) Examination, 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026/Final%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -11923,6 +12570,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/25%20Posts%20Company%20Prosecutor,%20Ministry%20of%20Corporate%20Affairs/Interview%20Details",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-302b0e06d5394dc1",
+    "title": "Interview Schedule: Combined Geo-Scientist (Main) Examination, 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Upcoming",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026/Interview%20Schedule",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -11986,6 +12645,42 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-upsc-50a46f6e30575ca1",
+    "title": "Marks of Recommended Candidates: Central Armed Police Forces (ACs) Examination, 2025",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202025/Marks%20of%20Recommended%20Candidates",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-347e38c1028c38a8",
+    "title": "Marks of Recommended Candidates: Combined Defence Services Examination (II), 2025",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202025/Marks%20of%20Recommended%20Candidates",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-0d07e0e35566627e",
+    "title": "md-3 sidebar-container fontSize\"> What's New Common mistakes done while filling OMR Sheet/Scannable Attendance List Notice regarding change in recruitment process for six (06) posts advertised vide Advt",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/sites/default/files/Common_Mistake_OMR_SAL.pdf",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-upsc-3523af1c3a887b4d",
     "title": "National Defence Academy and Naval Academy Examination (I), 2027",
     "organization": "UPSC",
@@ -12034,6 +12729,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-upsc-615820525f0d3ac9",
+    "title": "Notice: 124 Posts of Principal in Education Department, GNCTD",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/124%20Posts%20of%20Principal%20in%20Education%20Department,%20GNCTD/Notice",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-upsc-b9520389e41346c1",
     "title": "Notice: 16 Posts of Senior Veterinary Officer, Andaman and Nicobar Administration",
     "organization": "UPSC",
@@ -12058,6 +12765,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-upsc-a78bc50fb035d80c",
+    "title": "Notice: 704 Posts of Vice-Principal in Education department, GNCTD",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/704%20Posts%20of%20Vice-Principal%20in%20Education%20department,%20GNCTD/Notice",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-upsc-6a20b4a62573e75f",
     "title": "Notice: 74 Posts of Assistant Provident Fund Commissioner, EPFO",
     "organization": "UPSC",
@@ -12067,6 +12786,54 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/74%20Posts%20of%20Assistant%20Provident%20Fund%20Commissioner,%20EPFO/Notice",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-468fed28f477a7b3",
+    "title": "Notice: Central Armed Police Forces (ACs) Examination, 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/Notice",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-5e7d585af0e9915f",
+    "title": "Notice: Combined Medical Services Examination, 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Notice",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-779cf323a8036c45",
+    "title": "Press Note: Combined Defence Services Examination (II), 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026/Press%20Note",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-bf32886e20052faf",
+    "title": "Press Note: National Defence Academy and Naval Academy Examination (II), 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-18",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026/Press%20Note",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12334,18 +13101,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-0e30f281af481f6f",
-    "title": "Written Result (with name): Combined Section Officers&#039; (Grade &#039;B&#039;) LDCE-2025 and Combined Stenographers&#039; (Grade &#039;B&#039;-Grade-&#039;I&#039;) LDCE-2019, 2020 & 2021",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-18",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Written%20Result%20%28with%20name%29",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-dcdc99f1c8c52e88",
     "title": "Written Result (with name): National Defence Academy and Naval Academy Examination (II), 2026",
     "organization": "UPSC",
@@ -12379,18 +13134,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-18",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Written%20Result",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-8cb5f5cc5cd49542",
-    "title": "Written Result: Combined Section Officers&#039; (Grade &#039;B&#039;) LDCE-2025 and Combined Stenographers&#039; (Grade &#039;B&#039;-Grade-&#039;I&#039;) LDCE-2019, 2020 & 2021",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-18",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Written%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
