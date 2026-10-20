@@ -8,10 +8,10 @@ export type AutoNotification = {
 export const autoNotificationMeta = {
   "generatedAt": "2026-10-20",
   "sourceCount": 78,
-  "successfulSources": 43,
-  "healthySources": 43,
+  "successfulSources": 44,
+  "healthySources": 44,
   "degradedSources": 0,
-  "unreachableSources": 35,
+  "unreachableSources": 34,
   "failedSources": [
     "Assam Public Service Commission",
     "Haryana Employment Portal",
@@ -19,7 +19,6 @@ export const autoNotificationMeta = {
     "Bihar Public Service Commission",
     "Karnataka Public Service Commission",
     "Uttarakhand Public Service Commission",
-    "Himachal Pradesh Employment Portal",
     "IBPS",
     "Indian Coast Guard",
     "Chhattisgarh Public Service Commission",
@@ -2266,7 +2265,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-c019d0c423cf10b5",
+    "id": "auto-kerala-psc-1709d751f92d2140",
     "title": "Procedure for Interview Date Change Requests",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2274,7 +2273,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-20",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
+    "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
