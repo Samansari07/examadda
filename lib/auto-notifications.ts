@@ -6,15 +6,14 @@ export type AutoNotification = {
 };
 
 export const autoNotificationMeta = {
-  "generatedAt": "2026-10-22",
+  "generatedAt": "2026-10-23",
   "sourceCount": 78,
-  "successfulSources": 41,
-  "healthySources": 41,
+  "successfulSources": 42,
+  "healthySources": 42,
   "degradedSources": 0,
-  "unreachableSources": 37,
+  "unreachableSources": 36,
   "failedSources": [
     "Assam Public Service Commission",
-    "Jharkhand Public Service Commission",
     "Haryana Employment Portal",
     "Indian Navy",
     "Bihar Public Service Commission",
@@ -62,7 +61,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://appsc.gov.in/",
     "notificationUrl": "https://appsc.gov.in/Index/answer_key",
     "description": "Detected automatically from the registered official Arunachal Pradesh Public Service Commission source. The original authority notice remains the controlling source."
@@ -74,7 +73,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://appsc.gov.in/",
     "notificationUrl": "https://appsc.gov.in/Index/sub_page/doc12233/Notifications",
     "description": "Detected automatically from the registered official Arunachal Pradesh Public Service Commission source. The original authority notice remains the controlling source."
@@ -86,7 +85,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.bhel.com/recruitment",
     "notificationUrl": "https://www.bhel.com/audited-results",
     "description": "Detected automatically from the registered official BHEL source. The original authority notice remains the controlling source."
@@ -98,7 +97,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.bhel.com/recruitment",
     "notificationUrl": "https://tenders.bhel.com/corrigendum-",
     "description": "Detected automatically from the registered official BHEL source. The original authority notice remains the controlling source."
@@ -110,7 +109,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.bhel.com/recruitment",
     "notificationUrl": "https://www.bhel.com/recruitment",
     "description": "Detected automatically from the registered official BHEL source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -122,7 +121,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.bhel.com/recruitment",
     "notificationUrl": "https://www.bhel.com/notice-announcement",
     "description": "Detected automatically from the registered official BHEL source. The original authority notice remains the controlling source."
@@ -134,7 +133,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.bhel.com/recruitment",
     "notificationUrl": "https://www.bhel.com/notice-board",
     "description": "Detected automatically from the registered official BHEL source. The original authority notice remains the controlling source."
@@ -146,7 +145,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.bhel.com/recruitment",
     "notificationUrl": "https://www.bhel.com/supplier-registration",
     "description": "Detected automatically from the registered official BHEL source. The original authority notice remains the controlling source."
@@ -158,7 +157,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.bhel.com/recruitment",
     "notificationUrl": "https://tenders.bhel.com/tenders",
     "description": "Detected automatically from the registered official BHEL source. The original authority notice remains the controlling source."
@@ -170,7 +169,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.bhel.com/recruitment",
     "notificationUrl": "https://www.bhel.com/un-audited-quarterly-results",
     "description": "Detected automatically from the registered official BHEL source. The original authority notice remains the controlling source."
@@ -182,7 +181,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/2026051163782266.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -194,7 +193,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://ctet.nic.in/duplicate-marks-sheet-and-certificate/",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -206,7 +205,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032562.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -218,7 +217,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://ctet.nic.in/previous-year-final-answer-key/",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -230,7 +229,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032515.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -242,7 +241,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/04/2022042551.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -254,7 +253,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/03/202603311458590440.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -266,7 +265,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/04/202604011187448306.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -278,7 +277,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/02/202602021259534220.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -290,7 +289,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/03/202603121086699841.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -302,7 +301,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/06/202606151389616278.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -314,7 +313,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260907461266783.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -326,7 +325,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260914325514446.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -338,7 +337,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/02/202602052026341619.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -350,7 +349,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/08/20260825641447501.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source.",
@@ -364,7 +363,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/202605111250310617.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source.",
@@ -378,7 +377,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/02/202602251588838774.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
@@ -390,7 +389,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/Vacancies.html",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -402,7 +401,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/Vacancies.html",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -414,7 +413,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/Vacancies.html",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -426,7 +425,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/Vacancies.html",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -438,7 +437,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/Vacancies.html",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -450,7 +449,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Application-Form-14-10-2026.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -462,7 +461,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/ApplicationForm24052022.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -474,7 +473,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/Vacancies.html",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -486,7 +485,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/Vacancies.html",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -498,7 +497,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/Vacancies.html",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -510,7 +509,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Brief_Advertisement_20-08-2026.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -522,7 +521,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/post_of_CMD_150725/BRIEF_ADVERTISEMENT_CMD_GAIL_ENGLISH_VERSION.jpg",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -534,7 +533,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/post_of_CMD_150725/BRIEF_ADVERTISEMENT_CMD_GAIL_HINDI_VERSION.jpg",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -546,7 +545,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/SMALL-ADVERTISEMENT-English-AUG-18-26.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -558,7 +557,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/SMALL-ADVERTISEMENT-Hindi-AUG-18-26.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -570,7 +569,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DetailedAdvtMOContractbasis_Usar_27_05_2024.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -582,7 +581,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/GailDesigns25012023.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -594,7 +593,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/BriefAdvertisementDirectorMarketing19102022.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -606,7 +605,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Brief%20Advertisement%20Director%20Business%20Development.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -618,7 +617,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/BriefAdvtGAILAdsHINDIENGLISHfinal.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -630,7 +629,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/briefDetailed31052023.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -642,7 +641,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/BriefAdvtGATE2023English.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -654,7 +653,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/INTERVIEWFORMEDICAL25052023.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -666,7 +665,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/GATE-2027-1st-Advertisement-01092026.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -678,7 +677,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed_Advertisement_FMO_14022025.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -690,7 +689,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/GAIL_Website_Advertisement_English_Bengaluru_10_03_2025.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -702,7 +701,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/GAIL_Website_Advertisement_Hindi_Bengaluru_10_03_2025.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -714,7 +713,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Advertisement-English-14-10-2026.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -726,7 +725,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed-Advertisement-in-Hindi-15-10-2026.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -738,7 +737,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILED_ADD_SDMO_060426.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -750,7 +749,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILEDADVTCMHR2023.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -762,7 +761,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed_Instruction_for_Engagement_of_Medical_Consultant_09052025.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -774,7 +773,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/GATE2026Advertisement20022026.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -786,7 +785,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DetailsofrecruitmentforGAILwebsiteEnglish08032022.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -798,7 +797,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Homeo%20Ayurveda%20Detailed%20Ad%20English_02062025.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -810,7 +809,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed_Advertisement(GDMO)_13112024.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -822,7 +821,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/post_of_CMD_150725/DETAILED_ADVERTISEMENT_CMD_GAIL.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -834,7 +833,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILED_ADVERTISEMENT_281025.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -846,7 +845,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DetailedAdvertisement10062022.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -858,7 +857,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/GAIL_Jhabua_GDMO_Recruitment_Advertisement_23102024.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -870,7 +869,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed_advertisement_SDMO_3_24022025_updated.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -882,7 +881,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed_advertisement_02102024.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -894,7 +893,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed_advertisement_SDMO_PATHO_01072025.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -906,7 +905,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/AdvertisementforGAILSiteEng15112023.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -918,7 +917,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILED%20ADVERTISEMENT_030326.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -930,7 +929,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/2025%20Detailed%20Advt%20%20MO%20Contract%20basis_Usar.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -942,7 +941,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/RecruitmentofMedicalConsultantsonTemporaryTenureBasisDetailedAdvt02052022.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -954,7 +953,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILEDADVERTISEMENTMEDICALCONTRACTBASIS18052022.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -966,7 +965,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/English_Detailed_Final_Factory_medical_Officer_130326.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -978,7 +977,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/English_Detailed_advertisement_SDMO.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -990,7 +989,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed_Advertisement_GDMO_22102024.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1002,7 +1001,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/English_Detailed_Final_Factory_medical_Officer_290925.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1014,7 +1013,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILED_ADVT_GATE_2023_English-%20final.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1026,7 +1025,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Advertisement-Ranchi%20English_160326.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1038,7 +1037,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILED_ADVT_GATE_2026_Eng_300925.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1050,7 +1049,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILEDADVERTISEMENT31072024.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1062,7 +1061,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/SRD_Advt_14082024.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1074,7 +1073,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILEDADVTOPENENG29.12.22.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1086,7 +1085,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed_Advertisment_for_Website_24012025.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1098,7 +1097,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed%20Advertisement%20(GDMO%20for%20GAIL%20Jhabua).pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1110,7 +1109,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DetailedAdvertisment24052022.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1122,7 +1121,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/GAILOPENSRD32021DETAILEDADVT16092022NEW.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1134,7 +1133,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/NonExecutiveFinalAdv07082024.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1146,7 +1145,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DetailedAdvertisementENGLISH16082022.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1158,7 +1157,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/GAIL%20Website%20Advertisement%20-English%20for%20engagement%20of%20Part%20time%20Medical%20Consultant%20in%20GAIL%20Bhubaneswar.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1170,7 +1169,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed%20Advertisement_27052025.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1182,7 +1181,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILEDADVTGATE2023English.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1194,7 +1193,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Final%20GAIL%20Website%20Advertisement%20-English.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1206,7 +1205,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/GATE_2025_17_02_2025_Detailed_Advt.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1218,7 +1217,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed_Advt_CGM_Law_180925.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1230,7 +1229,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/GATE%202025%20Advt_03092024.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1242,7 +1241,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/IMPORTANT%20INSTRUCTIONS%20BEFORE%20YOU%20APPLY%20ONLINE_SRD.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -1254,7 +1253,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/Vacancies.html",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -1266,7 +1265,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/News%20Paper%20Advertisement.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1278,7 +1277,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Short_Advertisement_Hazira_14022025.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1290,7 +1289,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/GDMO_Short_Advt_23102024.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1302,7 +1301,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/SmallAdvertisement24052022.pdf",
     "description": "Detected automatically from the registered official GAIL India source. The original authority notice remains the controlling source."
@@ -1314,7 +1313,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Certificate%20regarding%20physical%20limitation%20in%20an%20examinee%20to%20write.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1326,7 +1325,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/vigilance",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1338,7 +1337,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/140X160%20MM%20AD.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1350,7 +1349,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Recruitment%20of%20Officers-%20July-26_Final_1.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1362,7 +1361,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Recruitment%20of%20Officers-%20July-26_2_Hindi.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1374,7 +1373,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Position%20Wise%20Application%20Count.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1386,7 +1385,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/job-openings",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -1398,7 +1397,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/job-openings",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -1410,7 +1409,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Annexure%20II,%20III%20and%20IV.docx",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1422,7 +1421,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/English%20Advertisement%20-%20VR%20TA%20Consultant%202026%20v1.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1434,7 +1433,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Hindi%20Advertisement%20-%20VR%20TA%20Consultant%202026%20v1.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1446,7 +1445,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Mock%20Test%20for%20Recruitment%20of%20Officers.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1458,7 +1457,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Bewareoffraudsters_Ad_in_newspapers.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1470,7 +1469,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://hpcladmin.hindustanpetroleum.com/img/UploadedFiles/News/Images/e9779bd56e30402bb9c5c0988dfcd08d.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1482,7 +1481,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/20190104_103405_new.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1494,7 +1493,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://hpcladmin.hindustanpetroleum.com/img/UploadedFiles/News/Images/dcd935efd2c94ffba9a14b34afffd4d4.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1506,7 +1505,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://hpcladmin.hindustanpetroleum.com/img/UploadedFiles/News/Images/d9878da2c50340329f590f8c9b5fdead.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1518,7 +1517,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/images/Pre-Employment-Medical-Examination.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1530,7 +1529,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Public%20Notice%20-%20Recruitment%20Fraud%20Alert.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1542,7 +1541,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/roles-appointment-&amp;-functions",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1554,7 +1553,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Selection%20Methodology%20for%20Recruitment%20of%20Officers.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1566,7 +1565,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Selection%20Methodology%20for%20Recruitment%20of%20Officers_As%20on%2018th%20March%202026.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1578,7 +1577,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/terms-and-conditions-of-appointment-of-independent-directors",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1590,7 +1589,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/job-openings",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -1602,7 +1601,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Advertisement%20-Dir%20Marketing.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1614,7 +1613,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Advertisement%20of%20%20HPCL%20GAT%20-%20Refineries%20Division%20FY26-27%20Hindi.pdf",
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
@@ -1626,7 +1625,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
     "notificationUrl": "https://indiapost.gov.in/documents/gazzettenotifications",
     "description": "Detected automatically from the registered official India Post source. The original authority notice remains the controlling source."
@@ -1638,7 +1637,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
     "notificationUrl": "https://indiapost.gov.in/gdsonlineengagement",
     "description": "Detected automatically from the registered official India Post source. The original authority notice remains the controlling source."
@@ -1650,7 +1649,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
     "notificationUrl": "https://indiapost.gov.in/documents/ordersandnotices",
     "description": "Detected automatically from the registered official India Post source. The original authority notice remains the controlling source."
@@ -1662,7 +1661,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
     "notificationUrl": "https://indiapost.gov.in/documents/recruitmentrules",
     "description": "Detected automatically from the registered official India Post source. The original authority notice remains the controlling source."
@@ -1674,7 +1673,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
     "notificationUrl": "https://indiapost.gov.in/vacancies",
     "description": "Detected automatically from the registered official India Post source. The original authority notice remains the controlling source."
@@ -1686,10 +1685,682 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Science & Engineering",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/ISTRACRecruitment4.html",
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-0b26468152a5a3ac",
+    "title": "Advertisements",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/advertisement.php",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-a93e5a3215b28be2",
+    "title": "Exam Information �",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Exam-Information.php",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-d632f1bed14936bf",
+    "title": "Examination Calendar-2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Upcoming",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Exam_Calendar_2026_dtd_09_07_2026.pdf",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-592058e1dd83cce0",
+    "title": "Important Jharkhand Govt. Circular and Notices",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/jhargov_circular.php",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-9b84092d95fc89f7",
+    "title": "JPSC Circular & Notices",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/circular_notices.php",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-afdc41612096573c",
+    "title": "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Notice.pdf",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-2b103e0cd8a96e4c",
+    "title": "Notice/ Press Release",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/uni_notice.php",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-637e934b073804ed",
+    "title": "Press release regarding Combined Civil Services Main Examination Advt.No.01/2026 uploaded date :14-07-2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_01_26_dated_14_07_2026.pdf",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-c81eb535f46f2eea",
+    "title": "Press Release regarding Combined Civil Services Main Examination Uploaded date:-09-07-2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_01_26_dated_09_07_2026.pdf",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-4996e1c2484128ee",
+    "title": "Press Release regarding Email ID for general queries recruitment & legal matters uploaded Date 18-12-2025",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_dated_18_12_2025.pdf",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-ed88a7150ef54438",
+    "title": "Press release regarding recruitment of Civil Judge (Junior Division) Main Examination Advt.No.-22/2023 (17-07-2026)",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_22_23_dated_17_07_2026.pdf",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-0643b4ca5330d789",
+    "title": "Press release regarding Recruitment of Forest Range Officer and Assistant Conservator of Forest (Advt.No.-04/2024 and 03/2024) Dtd.10-08-2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_03_24_dated_10_08_2026.pdf",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-bb54486f7c001869",
+    "title": "Previous Exam Question Paper(s)",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/sam_question_paper.php",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-56190778469045e4",
+    "title": "Public Notice",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/RTI%20Related%20Information-60%20Days.pdf",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-4cda18614985865e",
+    "title": "Recent Examinations/Interview",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Examination-Links.php",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-7bf609cd6d514aa3",
+    "title": "Recruitment for Non-Teaching Posts in Universities of Jharkhand, Advt. No.23/2023",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13021",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-6f0ab184d884a8b8",
+    "title": "Recruitment of 6th limited Deputy Collector, Advt. No.11/2018",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=82",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-3fe0e34d92974a9c",
+    "title": "Recruitment of Assistant Conservator of Forest,Advt.No.-03/2024",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13024",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-fd3cd47ff46bf182",
+    "title": "Recruitment of Assistant Director/Senior Scientific Officer (Backlog), Advt. No. 10/2025",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13036",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-90a2b7305d584c3d",
+    "title": "Recruitment of Assistant Director/Senior Scientific Officer (Regular), Advt. No. 11/2025",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13037",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-3421fc0a39716932",
+    "title": "Recruitment of Assistant Professor in Government Engineering colleges (Backlog),Advt.No.-02/2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13040",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-091c9c132b90612d",
+    "title": "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13045",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-9cc2b01cb2a582c2",
+    "title": "Recruitment of Assistant Professor-cum-Junior Scientist (Regular),Advt.No.-12/2023",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=135",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-c4e54d02add8b089",
+    "title": "Recruitment of Assistant Professors (Backlog) in Universities of Jharkhand Advt.No. 05/2018",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=76",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-6a67562d9a9def3d",
+    "title": "Recruitment of Assistant Professors (Regular) in Universities of Jharkhand Advt.No. 04/2018",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=75",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-80fa072643400197",
+    "title": "Recruitment of Assistant Public Prosecutor (Backlog),Advt.No.-05/2025",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13029",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-3b568029db13200b",
+    "title": "Recruitment of Assistant Public Prosecutor (Regular),Advt.No.-06/2025",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13030",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-1f3f1e10087efadf",
+    "title": "Recruitment of Associate Professor cum Senior Scientist in Ranchi Agriculture College Under Birsa Agricultural University, Advt. No. 19/2017",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=62",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-b84af4f05f250857",
+    "title": "Recruitment of Associate Professor-cum-Senior Scientist (Regular),Advt.No.-11/2023",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=134",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-9d6292f0313dcb28",
+    "title": "Recruitment of Associate Professor-cum-Senior Scientist (Regular),Advt.No.-17/2023",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=140",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-86df5a2a1f62c614",
+    "title": "Recruitment of Associate Professor-Cum-Senior Scientist in Ranchi Veterinary College Under Birsa Agricultural University, Advt. No.23/2017",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=66",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-b41482f9ef839c9c",
+    "title": "Recruitment of Associate Professors in all universities of Jharkhand, Advt No.-41/2016",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=40",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-d0b1ed4aff657512",
+    "title": "Recruitment of Ayurvedic Medical Officer (Regular),Advt.No.-09/2022",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=118",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-c62c4d24d9962c54",
+    "title": "Recruitment of Boiler Inspector Advt.No.-02/2025",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13032",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-55b841b1fd23445e",
+    "title": "Recruitment of Civil Judge (Junior Division),Advt.No.-22/2023",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13020",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-5f673d0b1077b568",
+    "title": "Recruitment of Dean in Ranchi Agriculture College Under Birsa Agricultural University, Advt. No. 18/2017.",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=61",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-dfed8a0ee00cfa42",
+    "title": "Recruitment of Director Advt.No.-07/2025",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13033",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-09075adccaf4ecfe",
+    "title": "Recruitment of Drug Inspector Advt.No.-12/2025",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13038",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-b3a0fc3be5d9731c",
+    "title": "Recruitment of Food Analyst,Advt. No.-05/2024",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13026",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-f8fb5e3b86dc82ec",
+    "title": "Recruitment of Forest Range Officer,Advt.No.-04/2024",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13025",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-9c45b7da95443d75",
+    "title": "Recruitment of Homeopathic Medical Officer (Regular),Advt.No.-10/2022",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=119",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-f621862df5026193",
+    "title": "Recruitment of Inspector of Factories Advt.No.-01/2025",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13031",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-3a54ed8b71cb7c1e",
+    "title": "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2023 Advt.No.-06/2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13044",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-11b40353bd3574c0",
+    "title": "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13043",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-3f43f7cbf735c73f",
+    "title": "Recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13039",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-fbd90d5328a96473",
+    "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women&#039;s Polytechnic(Backlog),Advt.No.-03/2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13041",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-0c63a95a104cd26a",
+    "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women&#039;s Polytechnic(Regular), Advt.No.-04/2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13042",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-0a13afc7e7158b4e",
+    "title": "Recruitment of Non-Teaching Posts in Universities of Jharkhand. Advt. No. 09/2025",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13035",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-c7a1dd0756dd8478",
+    "title": "Recruitment of Professor, Associate Professor, Assistant Professor and Assistant Librarian in Jharkhand Raksha Shakti University, Ranchi, Advt. No. 02/2021",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=99",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-23f07bc2b7a5bda3",
+    "title": "Recruitment of Professors in all universities of Jharkhand, Advt No.-40/2016",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=39",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-fb1f5c612ff244b2",
+    "title": "Recruitment of Project Manager and equivalent,advt.No.-04/2025",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=13028",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-6df3e3c14b82070a",
+    "title": "Recruitment of Unani Medical Officer (Regular),Advt.No.-11/2022",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=120",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-e1d2563e9dbd5b27",
+    "title": "Recruitment of university Professor-cum-chief Scientist (Regular),Advt.No.-10/2023",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=133",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-d506da366d19762d",
+    "title": "Recruitment of University Professor-Cum-Chief Scientist in Ranchi Veterinary College Under Birsa Agricultural University, Advt. No. 08/2017",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/exam_files.php?id=51",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-0a027ba8038bc5d5",
+    "title": "Results/ Answer Keys",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Answer Key",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Results.php",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-jharkhand-psc-962fc114b86e9b8c",
+    "title": "The Jharkhand Examination (Measures Control and Prevention of Unfair Means in Recruitment) Act, 2023 (Jharkhand Act, 15,2023) uploaded date :29-11-2023",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/jharkhand%20gazette_29_11_2023.pdf",
+    "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-kerala-psc-37c45556314fa75d",
@@ -1698,7 +2369,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/answerkey_omrexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
@@ -1710,7 +2381,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/answerkey_onlineexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
@@ -1722,7 +2393,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/examinations",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
@@ -1734,7 +2405,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/inter-812-895-25.pdf",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
@@ -1746,7 +2417,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/interviews",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
@@ -1758,7 +2429,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/scrolling-date%20change.pdf",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
@@ -1770,7 +2441,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -1782,7 +2453,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/otv-schedule-and-driving-test",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
@@ -1794,7 +2465,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
@@ -1806,7 +2477,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/psc-examination-updates",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
@@ -1818,7 +2489,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/question-paper-descriptive-exam",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
@@ -1830,7 +2501,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/proforma-reporting-vacancies",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
@@ -1842,7 +2513,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/selection-pending-want",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
@@ -1854,7 +2525,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Insurance",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://licindia.in/careers",
     "notificationUrl": "https://licindia.in/engagement-of-chief-financial-officer-on-contract-basis",
     "description": "Detected automatically from the registered official LIC source. The original authority notice remains the controlling source."
@@ -1866,7 +2537,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Insurance",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://licindia.in/careers",
     "notificationUrl": "https://licindia.in/recruitment-of-aao-generalists/-specialists/-assistant-engineers-2025",
     "description": "Detected automatically from the registered official LIC source. The original authority notice remains the controlling source."
@@ -1878,7 +2549,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26101415240.pdf",
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
@@ -1890,7 +2561,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26101218290.pdf",
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
@@ -1902,7 +2573,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/final-results.html",
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
@@ -1914,7 +2585,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/AE_Exam%20Schedule.pdf",
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
@@ -1926,7 +2597,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/Reschedule_notification_US_L_2026.pdf",
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
@@ -1938,7 +2609,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26101719080_A_I.pdf",
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
@@ -1950,7 +2621,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26101719080_A_II.pdf",
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
@@ -1962,7 +2633,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26101719080_A_III.pdf",
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
@@ -1974,7 +2645,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/Recruitment_Advertisement.html",
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
@@ -1986,7 +2657,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26101218280.pdf",
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
@@ -1998,7 +2669,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26091515250.pdf",
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
@@ -2010,7 +2681,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/ans-key.html",
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
@@ -2022,7 +2693,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/written-results.html",
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
@@ -2034,7 +2705,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/20261013881045664.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2046,7 +2717,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/202609021737158592.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2058,7 +2729,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/20260820667831297.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2070,7 +2741,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260915112025817.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2082,7 +2753,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260903254511963.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2094,7 +2765,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/202609251768661500.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2106,7 +2777,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/20261011609899435.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2118,7 +2789,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/202610151192074765.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2130,7 +2801,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/07/20260724123467025.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2142,7 +2813,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/202610201457709919.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2154,7 +2825,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/202610011801857474.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2166,7 +2837,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260912351980769.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2178,7 +2849,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260927261931081.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2190,7 +2861,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://mcc.nic.in/current-events-ug/",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -2202,7 +2873,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/202609051813548838.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2214,7 +2885,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/202608061675142912.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2226,7 +2897,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/202608141592696463.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2238,7 +2909,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/202610111791771012.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2250,7 +2921,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/202608051942691679.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2262,7 +2933,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/07/202608012029012861.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2274,7 +2945,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/202609021464466406.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2286,7 +2957,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/20260810312474969.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2298,7 +2969,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/202608074338168.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2310,7 +2981,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/202608311616607269.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2322,7 +2993,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260917396520905.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2334,7 +3005,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/2026091226099004.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2346,7 +3017,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/20260831122067952.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2358,7 +3029,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/20260824240501293.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2370,7 +3041,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/202609131686896352.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2382,7 +3053,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/202608172008623120.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2394,7 +3065,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/20261015721838974.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2406,7 +3077,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/202608071497344176.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2418,7 +3089,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/20260803759184231.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2430,7 +3101,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260918726374935.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2442,7 +3113,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/202610101929874945.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2454,7 +3125,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/202608071081521931.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2466,7 +3137,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/20260831573023631.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2478,7 +3149,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/20260823414136482.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2490,7 +3161,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/202608191035699529.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2502,7 +3173,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/202609151605377053.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2514,7 +3185,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/202609031954399379.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2526,7 +3197,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Medical Counselling",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260925310985535.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
@@ -2538,7 +3209,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/advertisements.html",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2550,7 +3221,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notify/Notice02May2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2562,7 +3233,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notify/Notice03June2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2574,7 +3245,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notify/Notice30Sep2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2586,7 +3257,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notify/Notice29April2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2598,7 +3269,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice11Nov2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2610,7 +3281,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notify/Notice26June2025b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2622,7 +3293,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/coradd.html",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2634,7 +3305,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -2646,7 +3317,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -2658,7 +3329,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice12Nov2025b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2670,7 +3341,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/advt/Notice15Sep2026b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2682,7 +3353,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice28July2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2694,7 +3365,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice09Oct2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2706,7 +3377,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice24July2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2718,7 +3389,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice01Dec2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2730,7 +3401,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice26May2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2742,7 +3413,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice02Sep2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2754,7 +3425,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice30Sep2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2766,7 +3437,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notify/Notice04June2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2778,7 +3449,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notify/Notice17June2025b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2790,7 +3461,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice30May2025b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2802,7 +3473,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice09Feb2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2814,7 +3485,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notify/Notice02June2025b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2826,7 +3497,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice17Feb2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2838,7 +3509,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice20June2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2850,7 +3521,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice21Oct2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2862,7 +3533,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice16May2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2874,7 +3545,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice14Mar2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2886,7 +3557,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice24April2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2898,7 +3569,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice06April2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2910,7 +3581,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice12June2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2922,7 +3593,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice16Sept2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2934,7 +3605,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notify/Notice02June2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2946,7 +3617,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice25Nov2025b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2958,7 +3629,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notify/Notice22April2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2970,7 +3641,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice03Dec2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2982,7 +3653,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notify/Notice26June2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -2994,7 +3665,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notifications-ak.html",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3006,7 +3677,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notifications-pi.html",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3018,7 +3689,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notifications-st.html",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3030,7 +3701,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notifications-viewmarks.html",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3042,7 +3713,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/advt/Advt25May2026.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -3054,7 +3725,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/advt/Advt08April2026.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -3066,7 +3737,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/advt/Advt17Mar2026.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -3078,7 +3749,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice25Aug2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3090,7 +3761,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice11Sep2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3102,7 +3773,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice25Sep2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3114,7 +3785,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice14Aug2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3126,7 +3797,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice07Sep2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3138,7 +3809,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice05Nov2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3150,7 +3821,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice09Jan2025b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3162,7 +3833,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice28April2026b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3174,7 +3845,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice10Sep2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3186,7 +3857,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice02Dec2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3198,7 +3869,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice28April2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3210,7 +3881,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice16Oct2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3222,7 +3893,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice26Mar2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3234,7 +3905,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice12Mar2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3246,7 +3917,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice11April2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3258,7 +3929,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice05August2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3270,7 +3941,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice09Jan2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3282,7 +3953,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice17Dec2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3294,7 +3965,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice24June2026b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3306,7 +3977,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice24June2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3318,7 +3989,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice20Jun2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3330,7 +4001,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice13May2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3342,7 +4013,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice29May2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3354,7 +4025,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice07Feb2025b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3366,7 +4037,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice07Feb2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3378,7 +4049,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice18Feb2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3390,7 +4061,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice28Jan2025b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3402,7 +4073,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice05Mar2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3414,7 +4085,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice02May2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3426,7 +4097,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice24Oct2024b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3438,7 +4109,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice16Oct2025b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3450,7 +4121,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice05Sep2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3462,7 +4133,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice09Sep2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3474,7 +4145,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice11Aug2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3486,7 +4157,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice11Aug2025b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3498,7 +4169,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice13Aug2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3510,7 +4181,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice25Aug2025b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3522,7 +4193,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice06August2024.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3534,7 +4205,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice24Oct2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3546,7 +4217,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice19Nov2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3558,7 +4229,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice30Aug2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3570,7 +4241,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice28Jan2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3582,7 +4253,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice21Feb2024b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3594,7 +4265,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice18Jan2024c.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3606,7 +4277,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice15Jan2024b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3618,7 +4289,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice04Jun2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3630,7 +4301,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice18Aug2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3642,7 +4313,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice23July2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3654,7 +4325,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice17Aug2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3666,7 +4337,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice24June2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3678,7 +4349,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice14Jun2024b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3690,7 +4361,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice03Jun2024c.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3702,7 +4373,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice22Feb2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3714,7 +4385,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice27Feb2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3726,7 +4397,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice26Jun2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3738,7 +4409,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice19Aug2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3750,7 +4421,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice18Mar2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3762,7 +4433,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice17Dec2024b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3774,7 +4445,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice05Feb2024b.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3786,7 +4457,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice09April2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3798,7 +4469,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programmes-actual.html",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3810,7 +4481,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notify/Notice26May2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3822,7 +4493,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/result_interview.html",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3834,7 +4505,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/result_screening.html",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3846,7 +4517,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/stages_of_recruitment.html",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3858,7 +4529,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice13Aug2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3870,7 +4541,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice17Sep2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3882,7 +4553,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice31Aug2026a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3894,7 +4565,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice20Aug2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3906,7 +4577,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice21Jan2025a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3918,7 +4589,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice18Jan2024a.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3930,7 +4601,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programmes-tentative.html",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
@@ -3942,10 +4613,586 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice14Nov2025c.pdf",
     "description": "Detected automatically from the registered official Meghalaya Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-b9d1f71887c346e2",
+    "title": "Addendum No. NPSC/EXAM-3/2023 dt. 10.05.2023 (CTSE (Agri., Allied & Others) 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/168371302965014",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-fe6ea8e6503bfa02",
+    "title": "Addendum No. NPSC/EXAM-3/2023 dt. 24.05.2023 (CTSE (Agri., Allied & Others) 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/168491874522623",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-b2c1ca0a14219902",
+    "title": "Addendum NO.NPSC/ADVT-1/04 (VOL-1) dt.15.04.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171317888830995",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-08c2b31a60bab19a",
+    "title": "Addendum/Corrigendum No. NPSC/EXAM-19/2023 dt. 13.12.2023(NCS, NPS & Allied Services Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/170245427865623",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-4cdcaed008fd0513",
+    "title": "Addendum/Corrigendum No. NPSC/EXAM-21/2023 dt.12.05.2026 (CESE 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/177850200769543",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-716f8e5dc90dce0b",
+    "title": "Addendum/Corrigendum No. NPSC/EXAM-21/2023 dt.18.05.2026 (CESE 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/177909945289247",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-d6fafd5a0952048d",
+    "title": "Addendum/Corrigendum No. NPSC/EXAM-3/2023 dt. 02.05.2023 (CTSE (Agri., Allied & Others) 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/168302531322268",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-79a8e4c5835596f5",
+    "title": "Addendum/Corrigendum NO.NPSC.ADVT-1/04(VOL-1) dt. 28.04.2025 (CTSE 2025)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/174584003729942",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-5156b9eb56a62d64",
+    "title": "Addendum/Corrigendum NO.NPSC/ADVT-1/04 (VOL-1) dt. 14.05.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171568057095717",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-866600ba76681ab7",
+    "title": "Addendum/Corrigendum NO.NPSC/ADVT-1/04 (VOL-1) dt. 24.04.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171395215545572",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-677c971c266d7589",
+    "title": "Addendum/Corrigendum No.NPSC/ADVT-1/04(VOL-1) dt. 10.07.2026 (Combined Technical Services Examination 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/178368103842856",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-85562caa0dacc5b6",
+    "title": "Addendum/Corrigendum No.NPSC/ADVT-1/04(VOL-1) dt. 15.07.2026 (Combined Technical Services Examination 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/178411279766959",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-6ed3b32cc6a23c99",
+    "title": "Addendum/Notification NO.NPSC/ADVT-1/04 (VOL-1) dt. 30.04.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171446854113705",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-0eaf7ae86cfd4830",
+    "title": "Advertisement No. NPSC-1/04 (VOL-I) dt. 07.04.2025 (Combined Technical Services Examination 2025)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/174401590798216",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-6e59e05ae59e2bbf",
+    "title": "Advertisement No. NPSC-1/04 (VOL-I) dt. 28.03.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171162070074720",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-2d5539295b232c55",
+    "title": "Advertisement No. NPSC-2/CESE-2024 dt. 15.06.2024 (Common Educational Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171843559598873",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-9648ee425a3a970c",
+    "title": "Advertisement No. NPSC-4/NCS-2024 dt. 25.09.2024 (NCS, NPS & Allied Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172725907881402",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-08dcc84701aa89a5",
+    "title": "Advertisement No. NPSC/ESTT-4/2024 dt. 10.06.2025",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/174955509092847",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-8b36ce2711125310",
+    "title": "Advertisement NO. NPSC/EXAM-18/2023 dt. 17.09.2024 (Stenographer Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172656164695523",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-67b703ca00c41b2e",
+    "title": "Advertisement NO. NPSC/EXAM-18/2023 dt. 19.08.2026 (Stenographer Recruitment Examination 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/178713486224731",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-b9cb44823dc1b3a3",
+    "title": "Advertisement NO. NPSC/EXAM-18/2023 dt. 25.08.2023 (Stenographer Recruitment Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/169295649178276",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-424fee6b5806230d",
+    "title": "Advertisement No. NPSC/EXAM-19/2023 dt. 27.09.2023(NCS, NPS & Allied Services Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/169580509742005",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-277e9ef040b6b737",
+    "title": "Advertisement NO.NPSC-4/CESE-2023 dt. 15.09.2023 (Common Educational Services Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/169477634427400",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-8837123efbb6cdd8",
+    "title": "Advertisement No.NPSC/ADVT-1/04(VOL-1) dt. 25.06.2026 (Combined Technical Services Examination 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/178237788571003",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-a867926e3d0da2a8",
+    "title": "Advertisement NO.NPSC/EXAM-21/2023 dt. 29.04.2026 (Common Educational Services Examination 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/177745594534313",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-8c6bbadc43a381c8",
+    "title": "Advertisement NO.NPSC/EXAM-5/2025 dt. 28.10.2025 (NCS, NPS & Allied Services Examination 2025)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/176163778915978",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-38fa680fbcce1f71",
+    "title": "Corrigendum NO. NPSC. ADVT-1/04 ( VOL-1) dt. 20.09.2023 CTSE (Engg. Services ) 2023",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/169520802383606",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-3854f28ffff7ea9c",
+    "title": "Corrigendum NO. NPSC/EXAM-18/2023 dt. 15.10.2024 (Stenographer Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172898115057268",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-a760f1796a3f9971",
+    "title": "Corrigendum No. NPSC/EXAM-19/2023 dt. 06.08.2024 (NCS, NPS & Allied Services Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172293613246394",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-ea4f244b7b36ef40",
+    "title": "Corrigendum No. NPSC/EXAM-19/2023 dt. 09.07.2024 (NCS, NPS & Allied Services Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172059547464598",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-0f3e8b7298a07007",
+    "title": "Corrigendum No. NPSC/EXAM-21/2023 dt. 14.10.2023 (Common Educational Services Examination 2023)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/169726681741655",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-d48ec7cb237da7e5",
+    "title": "Corrigendum No. NPSC/EXAM-21/2023 dt.23.06.2026 (CESE 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/178220678670542",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-63f6bf2502a2e67d",
+    "title": "Corrigendum No. NPSC/EXAM-21/2023 dt.27.05.2026 (CESE 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/177987018856670",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-e5709149a15918af",
+    "title": "Corrigendum No. NPSC/EXAM-9/2024 dt. 05.11.2024 (NCS, NPS & Allied Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/173079457275074",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-d241d32660f0d4cb",
+    "title": "Corrigendum No. NPSC/EXAM-9/2024 dt. 07.10.2024 (NCS, NPS & Allied Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172828840484106",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-c7bded9b98e859b3",
+    "title": "Corrigendum NO.NPSC/ADVT-1/04 (VOL-1) dt. 01.04.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171212046567142",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-f0465719a98c2034",
+    "title": "Corrigendum NO.NPSC/ADVT-1/04 (VOL-1) dt. 02.07.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171999051054039",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-d8cf8ec7e983841b",
+    "title": "Corrigendum NO.NPSC/ADVT-1/04 (VOL-1) dt. 17.04.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171334595659625",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-4163dedb9f738f43",
+    "title": "Corrigendum NO.NPSC/ADVT-1/04 (VOL-1) dt. 29.03.2024 (Combined Technical Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171168490842193",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-6b8e8906a0bea0b1",
+    "title": "Corrigendum No.NPSC/ADVT-1/04(VOL-1) dt. 17.07.2026 (Combined Technical Services Examination 2026)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/178438090285416",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-0cb4bfea0b32458a",
+    "title": "Corrigendum NO.NPSC/EXAM-2/2024 dt. 18.07.2024 (Common Educational Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172129674447791",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-d468e95415ce0bbe",
+    "title": "Corrigendum NO.NPSC/EXAM-21/2023 dt. 08.06.2024 (Common Educational Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172042947642869",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-6a8bb6de43aba888",
+    "title": "Corrigendum NO.NPSC/EXAM-21/2023 dt. 12.07.2024 (Common Educational Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/172077099798178",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-47647b0ee86e12cf",
+    "title": "Corrigendum NO.NPSC/EXAM-21/2023 dt. 21.06.2024 (Common Educational Services Examination 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/171894916582988",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-22a494f7c9865f67",
+    "title": "Corrigendum NO.NPSC/EXAM-21/2023 dt.13.05.2025 (CESE 2024)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/174712241226320",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-52ed0fcc3cf70c3f",
+    "title": "Corrigendum NO.NPSC/EXAM-5/2022 dt. 02.08.2023 (Backlog post for re- advertisement under CESE 2022)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/169104479447275",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-92f3beac86c1a2ca",
+    "title": "Corrigendum NO.NPSC/EXAM-5/2025 dt. 04.02.2026 (NCS, NPS & Allied Services Examination 2025)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/177019516662914",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nagaland-psc-a15b927f73e6f9d7",
+    "title": "Corrigendum NPSC/ADVT-1/04 (VOL-1) dt. 01.05.2025 (CTSE 2025)",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-23",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/advertisement/174609049363286",
+    "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-nagaland-psc-d71598122ff3fbde",
@@ -3954,7 +5201,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/services/ltd-dept/admit-card",
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
@@ -3966,7 +5213,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/services/marksheet/ltd-exam",
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
@@ -3978,7 +5225,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/notification/178963265512456",
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
@@ -3990,7 +5237,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/notification/178963446190746",
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
@@ -4002,7 +5249,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/notification/178963338157961",
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
@@ -4014,7 +5261,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/notification/178998148735660",
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
@@ -4026,7 +5273,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/notification/179032099496984",
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
@@ -4038,7 +5285,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/notification",
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
@@ -4050,7 +5297,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/applicant/otr",
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
@@ -4062,7 +5309,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/results",
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
@@ -4074,7 +5321,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Government Jobs",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/assets/pdf/Employer%20registration%20flowchart%201.pdf",
     "description": "Detected automatically from the registered official National Career Service source. The original authority notice remains the controlling source."
@@ -4086,7 +5333,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Government Jobs",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/assets/pdf/Indian%20Staffing%20Federation%20(ISF%20Registration%20Flow).pdf",
     "description": "Detected automatically from the registered official National Career Service source. The original authority notice remains the controlling source."
@@ -4098,7 +5345,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/devPortalList",
     "description": "Detected automatically from the registered official National Career Service source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4110,7 +5357,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Government Jobs",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/assets/pdf/Jobseeker%20registration%20flowchart%201.pdf",
     "description": "Detected automatically from the registered official National Career Service source. The original authority notice remains the controlling source."
@@ -4122,7 +5369,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/devPortalList",
     "description": "Detected automatically from the registered official National Career Service source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4134,7 +5381,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261005203634.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4146,7 +5393,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260925215817.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4158,7 +5405,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260723191910.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4170,7 +5417,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260924172919.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4182,7 +5429,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260917131651.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4194,7 +5441,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260916195948.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4206,7 +5453,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260911000627.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4218,7 +5465,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260908120656.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4230,7 +5477,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260904214736.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4242,7 +5489,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260902173831.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4254,7 +5501,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260901232135.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4266,7 +5513,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260901173447.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4278,7 +5525,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260829141952.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4290,7 +5537,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260822145116.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4302,7 +5549,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260816203522.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4314,7 +5561,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260816120713.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4326,7 +5573,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260810134615.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4338,7 +5585,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260730211250.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4350,7 +5597,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261007204855.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4362,7 +5609,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261007203421.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4374,7 +5621,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4386,7 +5633,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4398,7 +5645,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4410,7 +5657,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4422,7 +5669,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4434,7 +5681,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4446,7 +5693,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4458,7 +5705,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4470,7 +5717,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4482,7 +5729,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4494,7 +5741,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4506,7 +5753,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4518,7 +5765,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4530,7 +5777,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4542,7 +5789,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4554,7 +5801,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -4566,7 +5813,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -4578,7 +5825,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "http://www.nta.ac.in/ContactUs",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4590,7 +5837,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "http://www.nta.ac.in/PC",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4602,7 +5849,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4614,7 +5861,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4626,7 +5873,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4638,7 +5885,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4650,7 +5897,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4662,7 +5909,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4674,7 +5921,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4686,7 +5933,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4698,7 +5945,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4710,7 +5957,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4722,7 +5969,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4734,7 +5981,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4746,7 +5993,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4758,7 +6005,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4770,7 +6017,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4782,7 +6029,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4794,7 +6041,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4806,7 +6053,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4818,7 +6065,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -4830,7 +6077,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4842,7 +6089,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4854,7 +6101,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4866,7 +6113,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4878,7 +6125,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260829222626.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -4890,7 +6137,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4902,7 +6149,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4914,7 +6161,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4926,7 +6173,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4938,7 +6185,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4950,7 +6197,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4962,7 +6209,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4974,7 +6221,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4986,7 +6233,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -4998,7 +6245,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5010,7 +6257,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5022,7 +6269,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261016183525.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5034,7 +6281,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5046,7 +6293,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5058,7 +6305,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://jeemain.nta.nic.in/",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5070,7 +6317,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260813181124.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5082,7 +6329,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "http://www.nta.ac.in/ExamResult",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5094,7 +6341,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "http://www.nta.ac.in/examresult",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5106,7 +6353,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5118,7 +6365,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5130,7 +6377,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5142,7 +6389,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260722163036.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5154,7 +6401,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260722163054.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5166,7 +6413,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260725210507.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5178,7 +6425,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260725210603.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5190,7 +6437,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260725210637.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5202,7 +6449,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260725210713.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5214,7 +6461,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260801105217.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5226,7 +6473,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260801151430.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5238,7 +6485,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260813154925.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5250,7 +6497,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260816101710.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5262,7 +6509,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260816162703.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5274,7 +6521,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260818202733.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5286,7 +6533,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260819144329.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5298,7 +6545,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260828195109.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5310,7 +6557,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260828231601.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5322,7 +6569,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260828231726.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5334,7 +6581,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260829145958.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5346,7 +6593,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260829230847.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5358,7 +6605,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260903212505.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5370,7 +6617,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260909172041.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5382,7 +6629,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260910210851.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5394,7 +6641,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260915113220.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5406,7 +6653,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260915212856.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5418,7 +6665,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260915213027.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5430,7 +6677,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260917165604.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5442,7 +6689,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260917191931.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5454,7 +6701,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260917231934.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5466,7 +6713,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260917235839.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5478,7 +6725,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260918000302.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5490,7 +6737,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260918174205.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5502,7 +6749,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260918193820.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5514,7 +6761,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260921194816.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5526,7 +6773,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260924163325.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5538,7 +6785,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261008083141.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5550,7 +6797,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261009123259.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5562,7 +6809,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5574,7 +6821,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "http://jobs.nta.ac.in/",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5586,7 +6833,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5598,7 +6845,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5610,7 +6857,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5622,7 +6869,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/NTARegistrationandMOA.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5634,7 +6881,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5646,7 +6893,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5658,7 +6905,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5670,7 +6917,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5682,7 +6929,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5694,7 +6941,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5706,7 +6953,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5718,7 +6965,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5730,7 +6977,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "http://neet.nta.nic.in/Webinfo",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5742,7 +6989,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5754,7 +7001,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5766,7 +7013,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5778,7 +7025,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5790,7 +7037,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5802,7 +7049,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5814,7 +7061,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5826,7 +7073,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5838,7 +7085,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5850,7 +7097,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "http://jeemain.nta.nic.in/",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5862,7 +7109,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5874,7 +7121,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5886,7 +7133,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5898,7 +7145,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "http://ao.nta.ac.in/",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5910,7 +7157,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5922,7 +7169,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5934,7 +7181,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5946,7 +7193,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5958,7 +7205,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://neet.nta.nic.in/document-category/neetug-2025-public-notices/",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5970,7 +7217,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260829181317.PDF",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -5982,7 +7229,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -5994,7 +7241,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -6006,7 +7253,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6018,7 +7265,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://cbtc.nta.ac.in/ypro",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -6030,7 +7277,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6042,7 +7289,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://tpcsr.nta.ac.in/",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -6054,7 +7301,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "http://cbtc.nta.ac.in/observer",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -6066,7 +7313,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "http://www.nta.ac.in/cuetexam",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -6078,7 +7325,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6090,7 +7337,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6102,7 +7349,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "http://www.nta.ac.in/AdmitCard",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -6114,7 +7361,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6126,7 +7373,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6138,7 +7385,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6150,7 +7397,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6162,7 +7409,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6174,7 +7421,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6186,7 +7433,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6198,7 +7445,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6210,7 +7457,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6222,7 +7469,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261008212430.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
@@ -6234,7 +7481,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -6246,7 +7493,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nhpcindia.com/welcome/job",
     "notificationUrl": "https://www.nhpcindia.com/assests/pzi_public/job/DV_Notification_12082026.pdf",
     "description": "Detected automatically from the registered official NHPC source. The original authority notice remains the controlling source."
@@ -6258,7 +7505,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nhpcindia.com/welcome/job",
     "notificationUrl": "https://www.nhpcindia.com/assests/pzi_public/job/Result2_merged_3rdPhase.pdf",
     "description": "Detected automatically from the registered official NHPC source. The original authority notice remains the controlling source."
@@ -6270,7 +7517,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nhpcindia.com/welcome/job",
     "notificationUrl": "https://www.nhpcindia.com/assests/pzi_public/job/Resultsmerged5.pdf",
     "description": "Detected automatically from the registered official NHPC source. The original authority notice remains the controlling source."
@@ -6282,7 +7529,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.nhpcindia.com/welcome/job",
     "notificationUrl": "https://www.nhpcindia.com/assests/pzi_public/pdf_link/65d861a2a730d.pdf",
     "description": "Detected automatically from the registered official NHPC source. The original authority notice remains the controlling source."
@@ -6294,7 +7541,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Science & Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
     "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/Shortlisted_Candidates_ST_TN_14052026_01.pdf",
     "description": "Detected automatically from the registered official NPCIL source. The original authority notice remains the controlling source."
@@ -6306,7 +7553,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Science & Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
     "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/ST_SA_Shortlist_20042026.pdf",
     "description": "Detected automatically from the registered official NPCIL source. The original authority notice remains the controlling source."
@@ -6318,7 +7565,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Science & Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
     "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/Cut_Off_ST_TN_08062026_01.pdf",
     "description": "Detected automatically from the registered official NPCIL source. The original authority notice remains the controlling source."
@@ -6330,7 +7577,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Science & Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
     "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/Selected_Candidates_ST_TN_08062026_01.pdf",
     "description": "Detected automatically from the registered official NPCIL source. The original authority notice remains the controlling source."
@@ -6342,7 +7589,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Science & Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
     "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/Corrigendum_22052026_01.pdf",
     "description": "Detected automatically from the registered official NPCIL source. The original authority notice remains the controlling source."
@@ -6354,7 +7601,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Science & Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
     "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/Advt_ET_08102026_01.pdf",
     "description": "Detected automatically from the registered official NPCIL source. The original authority notice remains the controlling source."
@@ -6366,7 +7613,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-CESC.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6378,7 +7625,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-HESCOM.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6390,7 +7637,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-dtd-04-02-2021-to-UPPCL.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6402,7 +7649,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-notice-HESCOM.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6414,7 +7661,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-notice-CESC-orp.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6426,7 +7673,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Sikkim.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6438,7 +7685,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-to-JandK-dtd-22-02-2020.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6450,7 +7697,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Darlipalli-Tariff-Petition-based-on-anticipated-Cod-of-Unit-I.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6462,7 +7709,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/GRIDCO.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6474,7 +7721,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Puducherry-Deferment-letter-to-Regulation-Notice.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6486,7 +7733,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-to-UP-dtd-22-02-2020.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6498,7 +7745,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Tanda_English%20Hindi%20_8x13.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6510,7 +7757,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Tanda%20Notice%20Hindi.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6522,7 +7769,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-Andhra-Pradesh.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6534,7 +7781,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://www.ntpc.co.in/sites/default/files/downloads/CMD-rectt-color-16x13-eng.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6546,7 +7793,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Telangana-Deferment-letter-to-Regulation-Notice.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6558,7 +7805,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Director%20HR%20PESB_0.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6570,7 +7817,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/NTPC_2.Form-14%20Singrauli_Eng_Dec_18_2024.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6582,7 +7829,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-notice-Puducherry.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6594,7 +7841,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/CESC-Deferment-letter-to-Regulation-Notice.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6606,7 +7853,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Appointment%20to%20the%20Post%20of%20CMD.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6618,7 +7865,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-notice-Jharkhand-JBVNL-08-01-2021.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6630,7 +7877,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-to-Sikkim.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6642,7 +7889,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Jharkhand-Regulation-Notice-22-02-2019.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6654,7 +7901,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/NTPC_Dadri-I_Hindi_8x14_Dec_24_2024.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6666,7 +7913,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Regulation-Notice-to-J%26K-07-01-2021.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6678,7 +7925,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/NTPC_1.Form-14%20Unchahar-IV_Eng%20%26%20Hindi_Dec_18_2024.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6690,7 +7937,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Scanned-image_18-02-2019-141315.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6702,7 +7949,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/NTPC_3.Form-14%20Faridabad_Eng%20%26%20Hindi_Dec_18_2024.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6714,7 +7961,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/NTPC_Dadri-I_Eng_8x14_Dec_24_2024.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6726,7 +7973,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/NTPC_Anta%20GPS_Hindi_8x17_Dec_24_2024.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6738,7 +7985,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Mizoram-Regulation-Notice.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6750,7 +7997,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-to-CESCOrp-07-01-2021.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6762,7 +8009,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-Karnataka.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6774,7 +8021,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Assam-Regulation-Notice.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6786,7 +8033,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-to-Puducherry-07-01-2021.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6798,7 +8045,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-to-HESCOM-07-01-2021.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6810,7 +8057,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Manipur-Regulation-Notice.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6822,7 +8069,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/NTPC_Unchahar-III_Hindi_8x19_Dec_24_2024.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6834,7 +8081,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Regulation-Notice-dtd-04-02-2021-to-J-K.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6846,7 +8093,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Manipur.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6858,7 +8105,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Unchahar%20Notice%20Eng.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6870,7 +8117,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-notice-TANGEDCO.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6882,7 +8129,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-to-Uttarakhand-dtd-22-02-2020.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6894,7 +8141,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-puducherry-250220.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6906,7 +8153,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-deferment-UPPCL-07032020.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6918,7 +8165,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/BYPL-Regulation-Notice-25-02-0220.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6930,7 +8177,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/kudgi2019-24-petition-final.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6942,7 +8189,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/NTPC_Unchahar-III_Eng_8x19_Dec_24_2024_0.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6954,7 +8201,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Koldam-2019-24-Tariff-Petition.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6966,7 +8213,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Sikkim-Regulation-Notice-dt-11-02-2021.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6978,7 +8225,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-deferment-UPCL-07-03-2020.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -6990,7 +8237,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-notice-TELANGANA.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7002,7 +8249,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Final%20petition%20Telangana_compressed%281%29-compressed.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7014,7 +8261,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/FinalTTPS2019-24CERCfiled.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7026,7 +8273,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/FSTPS%20I%20%26%20II%20Final%202024-%202029_SIGNED.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7038,7 +8285,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/GESCOM-Deferment-letter-to-Regulation-Notice.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7050,7 +8297,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/HESCOM-Deferment-letter-to-Regulation-Notice.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7062,7 +8309,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/KSEBL-Deferment-letter-to-Regulation-Notice.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7074,7 +8321,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Sikkim-regulation-Notice.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7086,7 +8333,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Tanda%20Notice%20Eng.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7098,7 +8345,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7110,7 +8357,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/index.php/media/advertisements",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7122,7 +8369,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/index.php/recruitment-system-ntpc",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7134,7 +8381,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-deferment-JKPDD-07032020.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7146,7 +8393,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-Kerela.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7158,7 +8405,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-Telangana-DISCOMs.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7170,7 +8417,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Signed%20Revised%20Final%20Tanda-II%20BESS%20petition.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7182,7 +8429,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/GRIDCO-Regulation-Notice.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7194,7 +8441,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/South-Bihar-Regulation-Notice.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7206,7 +8453,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-to-MP-4Feb-2021.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7218,7 +8465,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-deferment-BYPL-07032020.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7230,7 +8477,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-Notice-UPPCL-22-10-2021.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7242,7 +8489,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Regulation-notice-GESCOM.pdf",
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
@@ -7254,7 +8501,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.opsc.gov.in/",
     "notificationUrl": "https://www.opsc.gov.in/Pages/View_Content.aspx?id=MeNGKau42B9VX4Nn6oZfXA==",
     "description": "Detected automatically from the registered official Odisha Public Service Commission source. The original authority notice remains the controlling source."
@@ -7266,7 +8513,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.opsc.gov.in/",
     "notificationUrl": "https://www.opsc.gov.in/Pages/View_Content.aspx?id=5b9HSNplj2JDUafP+k7rrg==",
     "description": "Detected automatically from the registered official Odisha Public Service Commission source. The original authority notice remains the controlling source."
@@ -7278,7 +8525,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.opsc.gov.in/",
     "notificationUrl": "https://www.opsc.gov.in/Pages/View_Content.aspx?id=N5n/48rKoj1sNGZtqat51w==",
     "description": "Detected automatically from the registered official Odisha Public Service Commission source. The original authority notice remains the controlling source."
@@ -7290,7 +8537,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.opsc.gov.in/",
     "notificationUrl": "https://www.opsc.gov.in/Pages/View_Content.aspx?id=8zxSBRLoU4YlFzqaEDuEzw==",
     "description": "Detected automatically from the registered official Odisha Public Service Commission source. The original authority notice remains the controlling source."
@@ -7302,7 +8549,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2039480&assetClassPK=2039476",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7314,7 +8561,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=70786478&assetClassPK=70786472",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7326,7 +8573,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=4796233&assetClassPK=4796228",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7338,7 +8585,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2598805&assetClassPK=2598800",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7350,7 +8597,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=3243244&assetClassPK=3243239",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7362,7 +8609,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=6551655&assetClassPK=6551650",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7374,7 +8621,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -7386,7 +8633,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2060500&assetClassPK=2060496",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7398,7 +8645,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2590799&assetClassPK=2590794",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7410,7 +8657,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=3241712&assetClassPK=3241707",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7422,7 +8669,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=6935504&assetClassPK=6935399",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7434,7 +8681,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=71564087&assetClassPK=71564082",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7446,7 +8693,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=22742565&assetClassPK=22742558",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7458,7 +8705,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=68666079&assetClassPK=68666074",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7470,7 +8717,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=62498009&assetClassPK=62498004",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7482,7 +8729,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=3239392&assetClassPK=3239387",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7494,7 +8741,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=63937001&assetClassPK=63936996",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7506,7 +8753,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=54420549&assetClassPK=54420544",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7518,7 +8765,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=68621943&assetClassPK=68621938",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7530,7 +8777,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -7542,7 +8789,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=85961408&assetClassPK=85961403",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7554,7 +8801,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -7566,7 +8813,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2063876&assetClassPK=2063872",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7578,7 +8825,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2065098&assetClassPK=2065094",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7590,7 +8837,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2063275&assetClassPK=2063271",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7602,7 +8849,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://ongcindia.com/web/eng/career/why-work-with-ongc/employee-engagement",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7614,7 +8861,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=78998340&assetClassPK=78998335",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7626,7 +8873,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2055806&assetClassPK=2055802",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7638,7 +8885,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=3241278&assetClassPK=3241273",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7650,7 +8897,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2044143&assetClassPK=2044139",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7662,7 +8909,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2044722&assetClassPK=2044718",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7674,7 +8921,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=59504905&assetClassPK=59504800",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7686,7 +8933,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2053357&assetClassPK=2053353",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7698,7 +8945,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2044011&assetClassPK=2044007",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7710,7 +8957,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2052708&assetClassPK=2052704",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7722,7 +8969,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=54106530&assetClassPK=54106525",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7734,7 +8981,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=74305788&assetClassPK=74305782",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7746,7 +8993,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2053980&assetClassPK=2053976",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7758,7 +9005,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2043950&assetClassPK=2043946",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7770,7 +9017,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2055977&assetClassPK=2055973",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7782,7 +9029,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=8219394&assetClassPK=8219389",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7794,7 +9041,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2659189&assetClassPK=2659183",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7806,7 +9053,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2743408&assetClassPK=2743403",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7818,7 +9065,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2047727&assetClassPK=2047723",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7830,7 +9077,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2044179&assetClassPK=2044175",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7842,7 +9089,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=57717529&assetClassPK=57717524",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7854,7 +9101,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2043987&assetClassPK=2043983",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7866,7 +9113,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=64092599&assetClassPK=64092594",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7878,7 +9125,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=66854920&assetClassPK=66854915",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7890,7 +9137,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2034398&assetClassPK=2034394",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7902,7 +9149,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=85545687&assetClassPK=85545682",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7914,7 +9161,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2045306&assetClassPK=2045302",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7926,7 +9173,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=68113551&assetClassPK=68113546",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7938,7 +9185,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=64595569&assetClassPK=64595564",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7950,7 +9197,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=75919781&assetClassPK=75919776",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7962,7 +9209,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=8064080&assetClassPK=8064075",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -7974,7 +9221,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -7986,7 +9233,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=4732734&assetClassPK=4732729",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -7998,7 +9245,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=4760509&assetClassPK=4760504",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8010,7 +9257,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=77815681&assetClassPK=77815676",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8022,7 +9269,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=69135323&assetClassPK=69135318",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8034,7 +9281,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=86767062&assetClassPK=86767057",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8046,7 +9293,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=72054824&assetClassPK=72054819",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8058,7 +9305,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2056657&assetClassPK=2056653",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8070,7 +9317,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=77985988&assetClassPK=77985983",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8082,7 +9329,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -8094,7 +9341,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -8106,7 +9353,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -8118,7 +9365,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -8130,7 +9377,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -8142,7 +9389,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=4037598&assetClassPK=4037593",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8154,7 +9401,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=13146662&assetClassPK=13146657",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8166,7 +9413,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=5162429&assetClassPK=5162424",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8178,7 +9425,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=4430324&assetClassPK=4430319",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8190,7 +9437,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://ongcindia.com/web/eng/csr/csr-check-list",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8202,7 +9449,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2064261&assetClassPK=2064257",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8214,7 +9461,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2060721&assetClassPK=2060717",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8226,7 +9473,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2062374&assetClassPK=2062370",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8238,7 +9485,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2062226&assetClassPK=2062222",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8250,7 +9497,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=5303543&assetClassPK=5303538",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8262,7 +9509,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=5560759&assetClassPK=5560754",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8274,7 +9521,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://ongcindia.com/web/eng/csr/indicative-list",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8286,7 +9533,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=69695130&assetClassPK=69695125",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8298,7 +9545,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://ongcindia.com/web/eng/career/recruitment-policy/recruitment-methodology",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8310,7 +9557,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2057145&assetClassPK=2057141",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8322,7 +9569,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=3240919&assetClassPK=3240914",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8334,7 +9581,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2063263&assetClassPK=2063259",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8346,7 +9593,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2052085&assetClassPK=2052081",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8358,7 +9605,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2044095&assetClassPK=2044091",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8370,7 +9617,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2056161&assetClassPK=2056157",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8382,7 +9629,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=3908792&assetClassPK=3908787",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8394,7 +9641,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=5666620&assetClassPK=5666615",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8406,7 +9653,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2053820&assetClassPK=2053816",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8418,7 +9665,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=84777603&assetClassPK=84777498",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8430,7 +9677,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2039998&assetClassPK=2039994",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8442,7 +9689,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2039285&assetClassPK=2039281",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8454,7 +9701,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=60924697&assetClassPK=60924692",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8466,7 +9713,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2036898&assetClassPK=2036894",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8478,7 +9725,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2036703&assetClassPK=2036699",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8490,7 +9737,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2064928&assetClassPK=2064924",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8502,7 +9749,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=5880289&assetClassPK=5880283",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8514,7 +9761,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2059184&assetClassPK=2059180",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8526,7 +9773,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2037199&assetClassPK=2037195",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8538,7 +9785,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=3239803&assetClassPK=3239798",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8550,7 +9797,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2073941&assetClassPK=2073937",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8562,7 +9809,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=5855069&assetClassPK=5855064",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8574,7 +9821,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://ongcindia.com/web/eng/career/recruitment-policy",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8586,7 +9833,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2035141&assetClassPK=2035137",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8598,7 +9845,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2038704&assetClassPK=2038700",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8610,7 +9857,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2034516&assetClassPK=2034512",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8622,7 +9869,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2593714&assetClassPK=2593709",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8634,7 +9881,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2063311&assetClassPK=2063307",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8646,7 +9893,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2034047&assetClassPK=2034043",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8658,7 +9905,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=3910416&assetClassPK=3910411",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8670,7 +9917,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=2046589&assetClassPK=2046585",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8682,7 +9929,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=67420418&assetClassPK=67420412",
     "description": "Detected automatically from the registered official ONGC source. The original authority notice remains the controlling source."
@@ -8694,7 +9941,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -8706,7 +9953,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/admit-card/687df3c3d4fa50a5888db48f",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8718,7 +9965,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -8730,7 +9977,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Cancellation%20Notice.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8742,7 +9989,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/cancellation%20notices.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8754,7 +10001,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/cancellations%20notice.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8766,7 +10013,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/CEDP%20Exam%202025%20-%20Exam%20Cancellation%20Notice-%20Aang%20Institute-Bhagalpur.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8778,7 +10025,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/CR11825-STOREKEEPER%20GRADE-II%20Provisionally%20Accepted-Rejected%20(1).pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8790,7 +10037,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/CR13124-REVISED%20FINAL%20%20LIST.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8802,7 +10049,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/CR15524-Notice%20for%20DV.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8814,7 +10061,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/admit-card",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8826,7 +10073,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/DPHCM%20Exam%202025%20-%20Exam%20Cancellation%20Notice-%20Sultan%20Foundation-Lucknow%20(1).pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8838,7 +10085,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Cancellation%20Notice%2016-02-2026%20Shift-5.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8850,7 +10097,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Cancellation%20Notice-%2013%20venues%20-11-02-2026%20shift%202%20and%203.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8862,7 +10109,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Cancellation%20Notice-%20LM%20Public%20School%20Online%20Exam%20Centre-%2009.02.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8874,7 +10121,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Cancellation%20Notice-%20Shifa%20Online%20Center-%2005.02.2026%20Shift-1.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8886,7 +10133,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Cancellation%20Notice-11-02-2026%20shift1.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8898,7 +10145,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Reschedule%20Notice-%203%20Venues.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8910,7 +10157,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Cancellation%20Notice-%20Maharishi%20IT%20Institute%20Online%20Examination%20Center%2C%20Gorakhpur%2025-05-2026%20(Shift-2).pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8922,7 +10169,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Notice_on_website_4.8.2026.PDF",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8934,7 +10181,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Important%20Notice%20for%20candidates%20of%20CGLE%202025-Identity%20Verification.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8946,7 +10193,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Reschedule%20Notice-%20Sri%20Sai%2C%20Kanpur.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8958,7 +10205,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Cancellation%20Notice-%20Smt%20Ramkali%2C%20Kanpur-18-05-2026.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8970,7 +10217,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/67997_important%20notice%20pemt-2025.PDF",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8982,7 +10229,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Important%20Notice%20regarding%20Constable%20(GD)%20Exam%202026.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -8994,7 +10241,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Cancellation%20Notice-%20City%20Modern%20Academy%2C%20Lucknow%2025-05-2026%20(Shift-2%2C3).pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9006,7 +10253,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Cancellation%20Notice-%20i-Tech%20Zone%2C%20Prayagraj-25-05-2026%20(Shift-2%2C3).pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9018,7 +10265,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Cancellation%20Notice-%20Aadarsh%20Pariksha%20Kendra%2C%20Muzaffarpur%2025-05-2026.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9030,7 +10277,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Revised%20Exam%20Cancellation%20Notice-%20i-Tech%20Zone%2C%20Prayagraj-26%20%26%2027%20May%202026%20(All%20shifts).pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9042,7 +10289,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Important%20Notice%20regarding%20Constable%20GD%20Exam%202026.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9054,7 +10301,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Cancellation%20Notice-%20i-Tech%20Zone%2C%20Prayagraj-29%20%26%2030%20May%202026%20(All%20shifts).pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9066,7 +10313,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Important%20Notice%20regarding%20re-exam%20of%20Constable%20GD%20Exam%202026.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9078,7 +10325,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Exam%20Cancellation%20Notice-%20Sri%20Sai%2C%20Kanpur-30-04-2027.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9090,7 +10337,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Important%20Notice%20(1).pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9102,7 +10349,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Important%20Notice-%20CGLE%202026-1.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9114,7 +10361,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/api/media/file/Important%20Notice-%20CGLE%202026.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9126,7 +10373,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Important%20Notice-2.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9138,7 +10385,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Important%20Notice-Re-schedule%20of%20Examination_10042026.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9150,7 +10397,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/api/media/file/notice_pst_cht_crpf2025_05082026.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9162,7 +10409,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Notice%20for%20the%20PwD%20candidates%20seeking%20exemption%20from%20appearing%20in%20typing%20test%20in%20the%20CHSLE_2025.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9174,7 +10421,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/notice_ctgd_22052026.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9186,7 +10433,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Notice_of_Annual_typing_Test.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9198,7 +10445,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/notice_pst_cht_crpf2025_05082026.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9210,7 +10457,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/selection-posts",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9222,7 +10469,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/SHORT%20NOTICE%20FOR%20DV%20OF%20CR13325.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9234,7 +10481,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/SHORT%20NOTICE%20FOR%20DV%20OF%20CR13425.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9246,7 +10493,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/shortnotice.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9258,7 +10505,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9270,7 +10517,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/for-candidates/examination-calendar",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9282,7 +10529,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Young%20Professional%20(Information%20Technology)%20Notice.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9294,7 +10541,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssc.gov.in/api/media/file/Young%20Professional%20(IT)%20Notice.pdf",
     "description": "Detected automatically from the registered official Staff Selection Commission source. The original authority notice remains the controlling source."
@@ -9306,7 +10553,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -9318,7 +10565,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -9330,7 +10577,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -9342,7 +10589,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -9354,7 +10601,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -9366,7 +10613,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -9378,7 +10625,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -9390,7 +10637,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -9402,7 +10649,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -9414,7 +10661,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -9426,7 +10673,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
@@ -9438,7 +10685,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SCO_02_AM_RESULT_10_FORMAT.pdf",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9450,7 +10697,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_05_INT_SCH_AVP.pdf/2101c027-92c2-f0b8-1dd4-c9a7663f54e0?t=1760593557860",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9462,7 +10709,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/20112025_SCO_05_SELECT_LIST_AVP%28IS+Audit%29.pdf/fc5d0176-9a7c-ad54-d1da-c3b997ec3dab?t=1763617028475",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9474,7 +10721,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_27_SELECT_LIST_AVP%28IS+AUDIT%29.pdf/c8925d1f-d8e3-a1a7-b703-7c6a2446215e?t=1779799823836",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9486,7 +10733,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/02052026_sco_22_select+list_AVP%28UX%29.pdf/540fcf6a-bb01-7767-53a6-c86b4e4c416a?t=1777708381885",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9498,7 +10745,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_17_INT_SCH_AVP.pdf/68fa3771-d11a-ea1b-c0fb-665c80052fb2?t=1770210852670",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9510,7 +10757,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/25032026_SCO_17_SELECT_LIST_AVP+WEALTH.pdf/77252bca-9f2e-9bd3-b42b-0e95144a0b56?t=1774443694067",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9522,7 +10769,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/87413/Junior+Associates-WL-1-2025.pdf/71a2a073-3f17-cb6e-1bab-2f6776cd5f04?t=1781863783326",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9534,7 +10781,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_15_SELECT_LIST_CRT%28Support%29.pdf/f7e78b87-b151-e724-f3d5-4fa7f0b7df78?t=1769606209526",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9546,7 +10793,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -9558,7 +10805,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/corrigendum.pdf/da5f16dd-2234-2eb3-5401-ff40b28aa0e6?t=1767267842772",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9570,7 +10817,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/57941334/23042026_SCO-2026-27-04_CORRI.pdf/60a0b4cd-0622-6990-14b5-3544f381f54f?t=1776922725218",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9582,7 +10829,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/16022026_CORRIGENDUM_AD_RS_2025_26_23.pdf/c9f8562a-395f-001d-ed53-94487415fc65?t=1771234705111",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9594,7 +10841,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/14052026_SCO_17_SELECT_LIST_CRE.pdf/2cef3950-8674-6e76-d177-450a800aef05?t=1778741358684",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9606,7 +10853,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/29042026_SCO_27_SELECT_LIST_DM+%281%29.pdf/24412781-d789-4b6b-a7e1-5dfc7b9900bf?t=1777459741766",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9618,7 +10865,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/57941334/SCO_27_SELECT_LIST_DM+%28CA%29.pdf/34dae537-c283-2423-ceff-d22b588f7019?t=1781865544631",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9630,7 +10877,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/24122025_SCO_12_SELECT_LIST.pdf/9d27c05c-3662-f0e4-5288-23c77cb21c57?t=1766581128281",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9642,7 +10889,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_05_SELECT_LIST_DyManager.pdf/b2ca41be-aae2-3d37-8f14-7c93c93fe9bc?t=1757137214031",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9654,7 +10901,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SCO_02_DM_RESULT_10_FORMAT.pdf",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9666,7 +10913,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_10_DM_SELECT_LIST.pdf/53e8240a-0a3a-0445-5248-5205ef6f7c60?t=1767618740345",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9678,7 +10925,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/87413/13022026_SCO_16_SELECT_LIST_DM.pdf/6c89e691-3b66-0c7f-cfe9-497e69084e23?t=1770977295565",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9690,7 +10937,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/02052026_sco_22_select+list_Deputy+Manager.pdf/609635d0-d204-44a8-305c-f57c0490768e?t=1777708482164",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9702,7 +10949,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/sco_09_SELECT_list_DM.pdf/f54186aa-0402-2273-8426-5bce04844ec6?t=1760685629170",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9714,7 +10961,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/02052026_sco_22_select+list_DVP%28UX%29.pdf/9ea7f2db-296f-d55a-54a5-f0839f68c4a6?t=1777708352197",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9726,7 +10973,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -9738,7 +10985,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -9750,7 +10997,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -9762,7 +11009,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -9774,7 +11021,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -9786,7 +11033,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -9798,7 +11045,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -9810,7 +11057,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -9822,7 +11069,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/sco_14_Select_list.pdf/0f312bbc-c1d4-c6c9-eba9-76fc19e63c71?t=1764679780336",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9834,7 +11081,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_05_INT_SCH_GM%28IS+AUDIT%29.pdf/48e926a3-5a35-1f17-3962-91acb2ca49c7?t=1760790294429",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9846,7 +11093,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_05_SELECT_LIST_GM%28IS+Audit%29.pdf/4b7dcc58-b253-ee02-ff09-9f175f5ca8a0?t=1764746072766",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9858,7 +11105,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_15_SELECT_LIST_head+PIR.pdf/f6fdc061-eaa7-c917-6fe5-79861f04c5bf?t=1769606103837",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9870,7 +11117,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/57941334/15102026_SCO_21_INT_SCH.pdf/ec3232ca-ef7f-cdce-e03e-dde70f3f9ebb?t=1792052767678",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9882,7 +11129,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/57941334/13052026_SCO_01_INT_SCH.pdf/1f5c7634-a558-0f1e-57c8-1d6425e42753?t=1778678836017",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9894,7 +11141,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/13042026_SCO_24_INT_SCH.pdf/2bc546a9-98cb-e1ce-8e98-e74bf24991fa?t=1776059673979",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9906,7 +11153,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/08052026_SCO_25_INT_SCH.pdf/57f106db-856d-3337-0587-ad5427fbae0f?t=1778224795950",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9918,7 +11165,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_15_SELECT_LIST_IO_Final.pdf/43c4fd2d-92c2-1753-3d8f-5b79801b3864?t=1772457479999",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9930,7 +11177,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_15_SELECT_LIST_investment_Specialist.pdf/2d28c6a0-4e60-521a-26f6-b944f3ad67cb?t=1772457452567",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9942,7 +11189,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -9954,7 +11201,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SCO_12_Select_list.pdf",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9966,7 +11213,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/10062026_sco_23_FLC_COUNSELLOR_Select+list.pdf/9eee13fb-e881-d9e5-ac13-b830aef47347?t=1781069893619",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9978,7 +11225,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/10062026_sco_23_FLC_DIRECTOR_Select+list.pdf/a805756c-2a74-140c-b34f-7b8c32aeb8e2?t=1781069920781",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -9990,7 +11237,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/57941334/08072026_SCO_04_SELECT_LIST.pdf/191cc631-27eb-ad66-62e0-d45f3309bdbe?t=1783514696743",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10002,7 +11249,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/05062026_SCO_25_SELECT_LIST.pdf/cd3c7b25-a252-01f0-e39c-0fa54689d4be?t=1780653385745",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10014,7 +11261,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/57941334/31072026_SCO_06_Select+list.pdf/4f0504da-cb83-621e-922c-88920b8458ba?t=1785495502811",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10026,7 +11273,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/29052026_SCO_01_Select+List.pdf/cd3270da-4b35-7226-98d9-951ac9824367?t=1780031551939",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10038,7 +11285,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/57941334/12082026_SCO_05_TRADEFINANCE_select+list.pdf/3709c248-70b7-dd76-385b-188b3a5fcee8?t=1786529916666",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10050,7 +11297,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/sco_01_select+list.pdf/a70c9ada-d778-492a-c96d-3573733991cd?t=1749737013733",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10062,7 +11309,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_19_SELECT_LIST.pdf/8a1efabb-d275-7a10-be0c-7065403ce506?t=1772869522456",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10074,7 +11321,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SCO_03_BMO_RESULT_10_FORMAT.pdf",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10086,7 +11333,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_02_SELECT_LIST_DEAN.pdf/0bf55870-fae3-f64c-b6c0-9f2c8c8d4dfc?t=1760014562004",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10098,7 +11345,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_02_SELECT_LIST_2Post.pdf/5f3300fe-9392-1dba-1c20-ebea08300161?t=1754374845734",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10110,7 +11357,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/sco_08_select+list_multiple+post.pdf/e023fa4b-c761-46bd-4437-91803ddfece5?t=1761293593740",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10122,7 +11369,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/sco_08_select_list_DVPs.pdf/e6356f4a-4b77-13f0-ca4d-2bc397e48914?t=1762423045864",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10134,7 +11381,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/cbo-2025-wtqual_SCREENED-15+FORMAT.pdf/c5e6a3f7-93d3-7a93-7b96-6650852a87d9?t=1760337774213",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10146,7 +11393,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -10158,7 +11405,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/27022026_Junior+Associates-mains-2025-RESULT-15+FORMAT.pdf/e4e8f7b3-d429-a855-3000-142dfdb5295b?t=1772180230964",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10170,7 +11417,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SBIPO2026-Main-WTRESULT-15_columns.pdf",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10182,7 +11429,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/17012026_SCO_11_SELECT_LIST.pdf/192c9393-9d77-8ae5-838c-45e85e29043c?t=1768650766575",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10194,7 +11441,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_10_MGR_SELECT_LIST.pdf/aa10bbac-4cf8-087d-8c7e-76a14f41b569?t=1767618684888",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10206,7 +11453,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/87413/13022026_SCO_16_SELECT_LIST_MGR.pdf/d59b4672-7d54-eaa5-6acd-3fc640730c7f?t=1770977263965",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10218,7 +11465,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/sco_09_SELECT+list_Mgr.pdf/1219d8d0-8a39-07c1-fd5a-c31abd2af9a5?t=1760685612306",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10230,7 +11477,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/popre-results-2026",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10242,7 +11489,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/Notice.pdf",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10254,7 +11501,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -10266,7 +11513,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/59067274/02092026SBIPOMainsEnglish.pdf",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10278,7 +11525,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -10290,7 +11537,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -10302,7 +11549,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -10314,7 +11561,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
@@ -10326,7 +11573,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_15_SELECT_LIST_PDM+BUSSINESS.pdf/b3bdb17f-ee70-ede1-2f75-100870d55bce?t=1769606164644",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10338,7 +11585,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/59067274/02092026SBIPOMainsHindi.pdf",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10350,7 +11597,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/08/JA_2026_Backlog_Detailed_Advt_Eng.pdf",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10362,7 +11609,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/recruitment-results",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10374,7 +11621,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/recruitment-results-archive",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10386,7 +11633,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_15_SELECT_LIST_Regional+Head..pdf/e585a90f-0956-4dcf-9b80-439ecab4d896?t=1769606190214",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10398,7 +11645,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_15_SELECT_LIST_RMTL.pdf/2254abdb-5d7c-2ce6-144b-2cb66c32442f?t=1772457496053",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10410,7 +11657,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/87413/12022026_SCO_17_INT_SCH+-REVISED_1.pdf/5dd2f70f-4580-5b2f-3c2d-56e5c41f74dc?t=1770901071954",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10422,7 +11669,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/02052026_sco_22_select+list_Senior+Special+Executive.pdf/333926a9-8bf8-d000-ea5a-2322bec10a58?t=1777708411690",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10434,7 +11681,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/02052026_sco_22_select+list_VP%28UX%29.pdf/403a7398-1e54-c220-1f65-2b6fb7668e3b?t=1777708314773",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10446,7 +11693,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/25032026_SCO_17_SELECT_LIST_VP+WEALTH.pdf/217ff316-cd5d-99b0-2de3-eeb816118e7a?t=1774443674507",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10458,7 +11705,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_17_INT_SCH+-+VP.pdf/a43b21f2-1ddf-da8f-cc5e-73f82135e1d6?t=1770210833809",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10470,7 +11717,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_15_SELECT_LIST_ZONAL+HEAD.pdf/cce7a053-fee6-7f09-652c-15a799435f47?t=1769606133274",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
@@ -10482,7 +11729,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/examinations/active-exams",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10494,7 +11741,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/01%20post%20of%20Assistant%20Director%20Grade-I%20(IEDS)%20(Metal%20Finishing)%20in%20Ministry%20of%20MSME/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10506,7 +11753,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/02%20posts%20of%20Assistant%20Director%20Grade-I%20(IEDS)%20(Chemical)%20in%20Ministry%20of%20MSME/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10518,7 +11765,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/02%20posts%20of%20Assistant%20Director%20Grade-I%20(IEDS)%20(Hosiery)%20in%20Ministry%20of%20MSME/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10530,7 +11777,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/03%20posts%20of%20Assistant%20Director%20Grade-I%20(IEDS)%20(Food)%20in%20Ministry%20of%20MSME/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10542,7 +11789,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/03%20posts%20of%20Assistant%20Director%20Grade-I%20(IEDS)%20(Leather%20&amp;%20Footwear)%20in%20Ministry%20of%20MSME/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10554,7 +11801,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/03%20posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Chemical)%20in%20Ministry%20of%20MSME/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10566,7 +11813,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/04%20posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Food)%20in%20Ministry%20of%20MSME/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10578,7 +11825,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/04%20posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Hosiery)%20in%20Ministry%20of%20MSME/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10590,7 +11837,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/04%20posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Leather%20&amp;%20Footwear)%20in%20Ministry%20of%20MSME/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10602,7 +11849,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/06%20Posts%20Deputy%20Central%20Intelligence%20Officer%20(DCIO)%20(Technical),%20Ministry%20of%20Home%20Affairs/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10614,7 +11861,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/07%20posts%20of%20Scientist-B%20(Atmospheric%20Sciences)%20in%20Ministry%20of%20Earth%20Sciences/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10626,7 +11873,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/08%20Posts%20of%20Administrative%20Officer%20Grade%20-%20I,%20Ministry%20of%20Defence/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10638,7 +11885,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/09%20posts%20of%20Scientist-B%20(Instrumentation)%20in%20Ministry%20of%20Earth%20Sciences/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10650,7 +11897,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/19%20Posts%20of%20Manager%20Grade%20-%20I%20-%20Section%20Officer,%20Ministry%20of%20Defence/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10662,7 +11909,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/30%20posts%20of%20Scientist-B%20(General%20Meteorology)%20in%20Ministry%20of%20Earth%20Sciences/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10674,7 +11921,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/32%20Posts%20of%20Accounts%20Officer,%20Administration%20of%20Union%20Territory%20of%20Ladakh/Addendum%20Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10686,7 +11933,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/11%20-%202026",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10698,7 +11945,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/52%20-%202026%20(Special)",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10710,7 +11957,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/recruitment/recruitment-advertisement",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10722,7 +11969,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/content/all-candidates-appearing-upsc-examination-will-undergo-face-authentication-venue",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10734,7 +11981,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/content/annual-calendar-2026",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10746,7 +11993,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/content/annual-calendar-2027-0",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10758,7 +12005,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/content/cmse-2026-application-submission-window-extended-till-23092026-600-pm-candidates-may-access",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10770,7 +12017,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026/e%20-%20Admit%20Card",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10782,7 +12029,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026/e%20-%20Admit%20Card",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10794,7 +12041,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/sites/default/files/AssttPublProseGNCTD-Notice-Engl-170926Rev.pdf",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10806,7 +12053,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Preliminary%29%20Examination%2C%202027/Exam%20Notification",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10818,7 +12065,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%20%28Grade-%27B%27%29%20LDCE%20-%202026%20and%20Combined%20Stenographers%20%28Grade%20-%20%27B%27%20-%20Grade%20-%20%27I%27%29%20LDCE%20-%20%202022%2C%202023%20and%202024/Exam%20Notification",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10830,7 +12077,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202027/Exam%20Notification",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10842,7 +12089,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/exams-related-info/exam-notification",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10854,7 +12101,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026/Examination%20Time%20Table",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10866,7 +12113,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Indian%20Forest%20Service%20%28Main%29%20Examination%2C%202026/Examination%20Time%20Table",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10878,7 +12125,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026/Examination%20Time%20Table",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10890,7 +12137,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/content/extension-updation-login-window-capf-acs-examination-2026",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10902,7 +12149,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/02%20Posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Leather%20&amp;%20Footwear),%20Ministry%20of%20MSME/Final%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10914,7 +12161,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/03%20Posts%20of%20Assistant%20Director%20(Corporate%20Law),%20Ministry%20of%20Corporate%20Affairs/Final%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10926,7 +12173,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/03%20Posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Chemical),%20Ministry%20of%20MSME/Final%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10938,7 +12185,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/20%20Posts%20of%20Drugs%20Inspector%20(Medical%20Devices),%20Ministry%20of%20Health%20and%20Family%20Welfare/Final%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10950,7 +12197,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/25%20Posts%20of%20Public%20Prosecutor%20in%20CBI/Final%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10962,7 +12209,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/CISF%20AC%28EXE%29%20LDCE-2026/Final%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10974,7 +12221,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/final-results",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10986,7 +12233,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/examinations/forthcoming-exams",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -10998,7 +12245,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026/Interview%20Schedule",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11010,7 +12257,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Upcoming",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Engineering%20Services%20%28Main%29%20Examination%2C%202026/Interview%20Schedule",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11022,7 +12269,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202024/Marks%20of%20Recommended%20Candidates%20%28Reserve%20List%29",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11034,7 +12281,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202025/Marks%20of%20Recommended%20Candidates",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11046,7 +12293,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202025/Marks%20of%20Recommended%20Candidates",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11058,7 +12305,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/sites/default/files/Common_Mistake_OMR_SAL.pdf",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11070,7 +12317,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28I%29%2C%202027",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11082,7 +12329,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/sites/default/files/NoticeCancellation-06-Posts-Advt-13-25-Engl-200826.pdf",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11094,7 +12341,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/01%20Post%20of%20Data%20Processing%20Assistant,%20Ministry%20of%20Defence/Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11106,7 +12353,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/02%20Posts%20of%20Senior%20Scientific%20Assistant%20(Electrical),%20Ministry%20of%20Defence/Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11118,7 +12365,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/16%20Posts%20of%20Senior%20Veterinary%20Officer,%20Andaman%20and%20Nicobar%20Administration/Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11130,7 +12377,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/18%20Posts%20of%20Veterinary%20Assistant%20Surgeon,%20Government%20of%20Puducherry/Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11142,7 +12389,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/74%20Posts%20of%20Assistant%20Provident%20Fund%20Commissioner,%20EPFO/Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11154,7 +12401,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11166,7 +12413,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11178,7 +12425,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026/Press%20Note",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11190,7 +12437,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026/Press%20Note",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11202,7 +12449,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/recruitment/recruitment-cases-kept-hold-account-pending-litigations",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11214,7 +12461,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/recruitment/recruitment-requisition",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11226,7 +12473,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/recruitment/recruitment-test",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11238,7 +12485,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/single-window-system",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11250,7 +12497,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/recruitment/lateral-recruitments",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11262,7 +12509,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/recruitment/status-recruitment-cases-advertisementwise",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11274,7 +12521,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/vacancy-circulars",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11286,7 +12533,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/Written%20Result%20%28with%20name%29",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11298,7 +12545,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Written%20Result%20%28with%20name%29",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11310,7 +12557,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Written%20Result%20%28with%20name%29",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11322,7 +12569,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/Written%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11334,7 +12581,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Written%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11346,7 +12593,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Written%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
@@ -11358,7 +12605,7 @@ export const autoNotifications:AutoNotification[] = [
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-23",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/written-results-",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
