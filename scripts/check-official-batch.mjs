@@ -350,6 +350,12 @@ const ORG_ALIASES={
 };
 const aliasTokens=s=>norm(s).split(" ").filter(x=>x.length>=3);
 const EXAM_ALIASES={
+  "upsc-cse-2026":["upsc civil services","civil services examination","civil services preliminary"],
+  "upsc-capf-2026":["capf assistant commandants","central armed police forces","assistant commandants examination"],
+  "neet-ug-2026":["neet ug","national eligibility cum entrance test","neet undergraduate"],
+  "ugc-net-2026":["ugc net","university grants commission national eligibility test"],
+  "ibps-po-2026":["ibps po","probationary officers","po mt xvi"],
+  "ibps-clerk-2026":["ibps clerk","customer service associate","clerical cadre"],
   "ssc-cgl-2026":["ssc cgl","combined graduate level","cgl"],
   "ssc-chsl-2026":["ssc chsl","combined higher secondary level","chsl"],
   "ssc-mts-2026":["ssc mts","multi tasking","mts"],
@@ -440,7 +446,7 @@ for(const source of selected){
       .filter(x=>x.exam || x.item.stage==="Application Open")
       .sort((a,b)=>Number(!!b.exam)-Number(!!a.exam))
       .slice(0,80);
-    for(const {item,exam} of candidates.slice(0,12)){
+    for(const {item,exam} of candidates.slice(0,24)){
       if(!exam) continue;
       const titleCycle=deriveCycleYear(item.title,item.title);
       const examCycle=Number((exam.name.match(/\b20\d{2}\b/)||[])[0]||0);
