@@ -781,18 +781,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-indiapost-8a788b092c421eb4884d",
-    "title": "Recruitment Rules Recruitment Rules",
-    "organization": "India Post",
-    "category": "Central Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-23",
-    "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
-    "notificationUrl": "https://indiapost.gov.in/documents/recruitmentrules",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-jharkhand-psc-bb54486f7c0018698892",
     "title": "Previous Exam Question Paper(s)",
     "organization": "Jharkhand Public Service Commission",
@@ -2402,10 +2390,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-23T05:42:20.091Z",
+  "generatedAt": "2026-10-23T06:02:15.878Z",
   "registeredSources": 78,
-  "checkedSources": 42,
-  "discoveredItems": 200,
+  "checkedSources": 41,
+  "discoveredItems": 199,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2507,7 +2495,8 @@ export const discoveryMeta = {
         "https://ctet.nic.in/",
         "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/",
         "https://ctet.nic.in/document-category/public-notices/",
-        "https://ctet.nic.in/notices"
+        "https://ctet.nic.in/sitemap.xml",
+        "https://ctet.nic.in/notifications"
       ]
     },
     {
@@ -2554,19 +2543,12 @@ export const discoveryMeta = {
     },
     {
       "id": "lic",
-      "discovered": 7,
+      "discovered": 3,
       "checked": true,
       "fetchedUrl": "https://licindia.in/careers",
-      "method": "mixed",
+      "method": "fetch",
       "pages": [
-        "https://licindia.in/careers",
-        "https://licindia.in/sitemap.xml",
-        "https://licindia.in/notifications",
-        "https://licindia.in/notices",
-        "https://licindia.in/recruitment",
-        "https://licindia.in/recruitment-notices",
-        "https://licindia.in/career",
-        "https://licindia.in/advertisement"
+        "https://licindia.in/careers"
       ]
     },
     {
@@ -2638,20 +2620,11 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 7,
-      "checked": true,
-      "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
-      "method": "mixed",
-      "pages": [
-        "https://indiapost.gov.in/gdsonlineengagement",
-        "https://indiapost.gov.in/sitemap.xml",
-        "https://indiapost.gov.in/robots.txt",
-        "https://indiapost.gov.in/notifications",
-        "https://indiapost.gov.in/notices",
-        "https://indiapost.gov.in/recruitment",
-        "https://indiapost.gov.in/recruitment-notices",
-        "https://indiapost.gov.in/career"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "indian-navy",
@@ -2920,12 +2893,7 @@ export const discoveryMeta = {
       "pages": [
         "https://npsc.nagaland.gov.in/",
         "https://npsc.nagaland.gov.in/sitemap.xml",
-        "https://npsc.nagaland.gov.in/robots.txt",
-        "https://npsc.nagaland.gov.in/notifications",
-        "https://npsc.nagaland.gov.in/notices",
-        "https://npsc.nagaland.gov.in/recruitment",
-        "https://npsc.nagaland.gov.in/recruitment-notices",
-        "https://npsc.nagaland.gov.in/career"
+        "https://npsc.nagaland.gov.in/robots.txt"
       ]
     },
     {
@@ -3360,7 +3328,8 @@ export const discoveryMeta = {
         "https://www.ongcindia.com/web/eng/career/notifications",
         "https://www.ongcindia.com/web/eng/career/notices",
         "https://www.ongcindia.com/web/eng/career/recruitment",
-        "https://www.ongcindia.com/web/eng/career/recruitment-notices"
+        "https://www.ongcindia.com/web/eng/career/recruitment-notices",
+        "https://www.ongcindia.com/web/eng/career/career"
       ]
     },
     {
