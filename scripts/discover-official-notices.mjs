@@ -18,22 +18,22 @@ const TIMEOUT_MS = 12000;
 const CURL_TIMEOUT_SECONDS = 15;
 
 function cleanText(value="") {
-  return value.replace(/<(script|style|svg|noscript)\\b[^>]*>[\\s\\S]*?<\\/\\1>/gi, " ")
+  return value.replace(/<(script|style|svg|noscript)\b[^>]*>[\s\S]*?<\/\1>/gi, " ")
     .replace(/<[^>]*>/g, " ").replace(/&nbsp;|&#160;/gi, " ").replace(/&amp;/gi, "&")
     .replace(/&lt;/gi, "<").replace(/&gt;/gi, ">").replace(/&#39;|&apos;/gi, "'")
-    .replace(/&quot;/gi, '"').replace(/&#(\\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&quot;/gi, '"').replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
     .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
-    .replace(/[\\u200B-\\u200D\\uFEFF]/g, "").replace(/\\s+/g, " ").trim();
+    .replace(/[\u200B-\u200D\uFEFF]/g, "").replace(/\s+/g, " ").trim();
 }
 
-const BAD_TITLE = /^(?:home|about|contact|login|register|menu|search|read more|view more|click here|notice|notices|notification|notifications|announcement|announcements|recruitment|recruitments|careers?|current openings?|selection post|download admit card|admit card|important notice|general notice|notice board|answer key challenge|tender notification|supplier registration|audited results?|quarterly results?)\\s*[.:-]*$/i;
-const BAD_TITLE_PHRASE = /(?:^|\\b)(?:facebook|instagram|youtube|linkedin|privacy policy|terms and conditions|cookie policy|supplier registration|tender notification|audited results|quarterly results|investor relations)(?:\\b|$)/i;
+const BAD_TITLE = /^(?:home|about|contact|login|register|menu|search|read more|view more|click here|notice|notices|notification|notifications|announcement|announcements|recruitment|recruitments|careers?|current openings?|selection post|download admit card|admit card|important notice|general notice|notice board|answer key challenge|tender notification|supplier registration|audited results?|quarterly results?)\s*[.:-]*$/i;
+const BAD_TITLE_PHRASE = /(?:^|\b)(?:facebook|instagram|youtube|linkedin|privacy policy|terms and conditions|cookie policy|supplier registration|tender notification|audited results|quarterly results|investor relations)(?:\b|$)/i;
 function usableTitle(value) {
-  const title = cleanText(String(value || "")).replace(/\\s+/g, " ").trim();
+  const title = cleanText(String(value || "")).replace(/\s+/g, " ").trim();
   if (title.length < 14 || title.length > 260 || BAD_TITLE.test(title) || BAD_TITLE_PHRASE.test(title)) return false;
   if (/<[^>]+>|(?:target=|style=|class=|href=)/i.test(title)) return false;
-  if ((title.match(/<|>|=|\\{|\\}/g) || []).length >= 2) return false;
-  const words = title.split(/\\s+/).filter(Boolean);
+  if ((title.match(/<|>|=|\{|\}/g) || []).length >= 2) return false;
+  const words = title.split(/\s+/).filter(Boolean);
   if (words.length < 3 || words.length > 38) return false;
   return true;
 }
