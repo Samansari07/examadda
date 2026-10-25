@@ -577,6 +577,42 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-sbi-2a10c3f593df59891c3e",
+    "title": "WORLD OF OPPORTUNITIES",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-25",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://bank.sbi/en/web/careers/world-of-opportunities",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-143463b265eb27f982ad",
+    "title": "BEST IN CLASS BENEFITS",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-25",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://bank.sbi/en/web/careers/best-in-class-benefits",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-9669f56f54c8540ed5f6",
+    "title": "GROWTH ORIENTED CULTURE",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-25",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://bank.sbi/en/web/careers/growth-oriented-culture",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-sbi-f42c32c482979b3bfdb2",
     "title": "The Everyday Stories",
     "organization": "State Bank of India",
@@ -598,42 +634,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-25",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://bank.sbi/web/careers/post-your-query",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-lic-36501dff089b6310e1fe",
-    "title": "Want to be an LIC Agent",
-    "organization": "LIC",
-    "category": "Insurance",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-25",
-    "officialUrl": "https://licindia.in/careers",
-    "notificationUrl": "https://agencycareer.licindia.in/agt_req/index1.php?_ga=2.132252684.382589343.1685778008-998430420.1685778008&amp;_gac=1.91017576.1685872184.Cj0KCQjw7PCjBhDwARIsANo7Cgnay0YVbEoO5MslMzNkmXXG6Ra5XrDaHLDJKjFV-6L6dFlvzbQ0PDAaAi9pEALw_wcB",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-lic-d34b124cde70b7df9ccf",
-    "title": "Recruitment of AAO Generalists Specialists Assistant Engineers 2025",
-    "organization": "LIC",
-    "category": "Insurance",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-25",
-    "officialUrl": "https://licindia.in/careers",
-    "notificationUrl": "https://licindia.in/recruitment-of-aao-generalists/-specialists/-assistant-engineers-2025",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-lic-420580cc774907ae55d4",
-    "title": "Equal Opportunity Policy",
-    "organization": "LIC",
-    "category": "Insurance",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-25",
-    "officialUrl": "https://licindia.in/careers",
-    "notificationUrl": "https://licindia.in/web/guest/equal-opportunity-policy",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -2534,9 +2534,9 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-25T06:05:25.895Z",
+  "generatedAt": "2026-10-25T11:20:58.020Z",
   "registeredSources": 78,
-  "checkedSources": 41,
+  "checkedSources": 40,
   "discoveredItems": 211,
   "sourceResults": [
     {
@@ -2673,7 +2673,7 @@ export const discoveryMeta = {
     },
     {
       "id": "sbi",
-      "discovered": 29,
+      "discovered": 32,
       "checked": true,
       "fetchedUrl": "https://sbi.co.in/web/careers",
       "method": "mixed",
@@ -2690,12 +2690,12 @@ export const discoveryMeta = {
     },
     {
       "id": "lic",
-      "discovered": 3,
+      "discovered": 0,
       "checked": true,
-      "fetchedUrl": "https://licindia.in/careers",
-      "method": "fetch",
+      "fetchedUrl": "https://licindia.in/sitemap.xml",
+      "method": "mixed",
       "pages": [
-        "https://licindia.in/careers"
+        "https://licindia.in/sitemap.xml"
       ]
     },
     {
@@ -2768,12 +2768,10 @@ export const discoveryMeta = {
     {
       "id": "indiapost",
       "discovered": 0,
-      "checked": true,
-      "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
-      "method": "fetch",
-      "pages": [
-        "https://indiapost.gov.in/gdsonlineengagement"
-      ]
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "indian-navy",
@@ -3296,7 +3294,7 @@ export const discoveryMeta = {
       "discovered": 0,
       "checked": true,
       "fetchedUrl": "https://rajemployment.rajasthan.gov.in/",
-      "method": "fetch",
+      "method": "mixed",
       "pages": [
         "https://rajemployment.rajasthan.gov.in/",
         "https://rajemployment.rajasthan.gov.in/sitemap.xml",
