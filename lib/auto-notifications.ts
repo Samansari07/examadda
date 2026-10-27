@@ -32,9 +32,9 @@ export const autoNotificationMeta = {
     "Indian Army",
     "Gujarat Public Service Commission",
     "Sikkim Public Service Commission",
+    "Kerala Employment Portal",
     "West Bengal Employment Bank",
     "DRDO",
-    "Employment News",
     "Haryana Public Service Commission",
     "Tamil Nadu Public Service Commission",
     "Jharkhand Government Recruitment Portal",
@@ -5893,7 +5893,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-cb6a235d3b14c66c",
-    "title": ">61 Examination Date and Schedule for National Initiative for Technical Teachers Training (NITTT) Examination for April-May 2026 Semester Candidates-reg",
+    "title": ">62 Examination Date and Schedule for National Initiative for Technical Teachers Training (NITTT) Examination for April-May 2026 Semester Candidates-reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Upcoming",
@@ -5904,20 +5904,20 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-c5cece8921addc4f",
-    "title": "1 Revised Examination Calender-Reg Read More 2",
+    "id": "auto-nta-d3ff4f5f106a48ae",
+    "title": "10 Correction in Particulars of the Online Application Form of Rashtriya Indian Military College Entrance Examination (RIMCEE) Read More 11",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261026114247.pdf",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261007203421.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-nta-1a839306ae8f9c4e",
-    "title": "11 Issuance of Certificates for Joint CSIR-UGC NET June 2026, Examination",
+    "title": "12 Issuance of Certificates for Joint CSIR-UGC NET June 2026, Examination",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5929,7 +5929,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-a3dbb11471cbda4f",
-    "title": "12 Public Notice regarding Issuance of e-Certificates for UGC-NET June 2026 Examination Read More 13",
+    "title": "13 Public Notice regarding Issuance of e-Certificates for UGC-NET June 2026 Examination Read More 14",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5940,8 +5940,20 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-nta-c5cece8921addc4f",
+    "title": "2 Revised Examination Calender-Reg Read More 3",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-27",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261026114247.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-nta-2b43d027984ba27a",
-    "title": "22 NOTICE INVITING QUOTATION (NIQ) FOR EMPANELMENT OF HOTELS IN THE VICINITY OF MINTO ROAD, NEW DELHI Read More 23",
+    "title": "23 NOTICE INVITING QUOTATION (NIQ) FOR EMPANELMENT OF HOTELS IN THE VICINITY OF MINTO ROAD, NEW DELHI Read More 24",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5953,7 +5965,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-0e2ec135aac97187",
-    "title": "23 Publication of the Examination Calendar of the National Testing Agency (NTA) up to March 2027 - reg",
+    "title": "24 Publication of the Examination Calendar of the National Testing Agency (NTA) up to March 2027 - reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Upcoming",
@@ -5965,7 +5977,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-f4a2376150e65c75",
-    "title": "27 Declaration of Result and Rank of the Joint CSIR-UGC NET June 2026 Examination Read More 28",
+    "title": "28 Declaration of Result and Rank of the Joint CSIR-UGC NET June 2026 Examination Read More 29",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Result",
@@ -5977,7 +5989,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-ad29ab9f2d8749b8",
-    "title": "30 Public Notice regarding Advisory to candidates appearing for UGC-NET Re-Examination at Centre in Delhi Read More 31",
+    "title": "31 Public Notice regarding Advisory to candidates appearing for UGC-NET Re-Examination at Centre in Delhi Read More 32",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5989,7 +6001,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-1c190153992ac8fa",
-    "title": "31 Release of Admit Card for the UGC-NET June 2026 re-examination on 9th and 10th September 2026 -reg Read More 32",
+    "title": "32 Release of Admit Card for the UGC-NET June 2026 re-examination on 9th and 10th September 2026 -reg Read More 33",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
@@ -6001,7 +6013,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-6bde38849098ca41",
-    "title": "33 Vacancy notification for Bilingual typist and operation assistant Read More 34",
+    "title": "34 Vacancy notification for Bilingual typist and operation assistant Read More 35",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Recruitment",
@@ -6013,7 +6025,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-494af61254739911",
-    "title": "34 Inviting Online Application Form for Rashtriya Indian Military College Entrance Examination (RIMCEE) - 2026 Read More 35",
+    "title": "35 Inviting Online Application Form for Rashtriya Indian Military College Entrance Examination (RIMCEE) - 2026 Read More 36",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -6025,7 +6037,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-a93f42a3986a74a2",
-    "title": "35 Advance Intimation for Allotment of Re-Examination City to the Applicants of UGC-NET June 2026-reg Read More 36",
+    "title": "36 Advance Intimation for Allotment of Re-Examination City to the Applicants of UGC-NET June 2026-reg Read More 37",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -6037,7 +6049,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-e3379aa7f7fb505b",
-    "title": "40 Release of Admit Cards for Re-Examination of 49 affected candidates of AIAPGET-2026 at Jaipur - reg",
+    "title": "41 Release of Admit Cards for Re-Examination of 49 affected candidates of AIAPGET-2026 at Jaipur - reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
@@ -6049,7 +6061,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-15e86bb687020fc9",
-    "title": "44 Conduct of Re-Examination For Affected Candidates At Shri Satya Sai PG College, Jaipur Read More 45",
+    "title": "45 Conduct of Re-Examination For Affected Candidates At Shri Satya Sai PG College, Jaipur Read More 46",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -6061,7 +6073,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-8012da3cc732b9f0",
-    "title": "47 Public Notice regarding Re-conduct of the English, Commerce and Sociology papers Read More 48",
+    "title": "48 Public Notice regarding Re-conduct of the English, Commerce and Sociology papers Read More 49",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -6073,7 +6085,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-4cfa52ea6bbe2aa6",
-    "title": "50 Public Notice regarding Challenge of Provisional Answer Keys for UGC-NET June 2026 Read More 51",
+    "title": "51 Public Notice regarding Challenge of Provisional Answer Keys for UGC-NET June 2026 Read More 52",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
@@ -6085,7 +6097,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-251cc0b46cc4b66a",
-    "title": "52 Provisional AnswerKey Public Notice CSIR NET, UGC NET, ICAR AIEEA (PG) &,AICE (PhD) Read More 53",
+    "title": "53 Provisional AnswerKey Public Notice CSIR NET, UGC NET, ICAR AIEEA (PG) &,AICE (PhD) Read More 54",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -6097,7 +6109,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-c3f0ab9b36fcafa9",
-    "title": "55 NTA to Conduct NITTT Examination for April-May 2026 Semester in Remote Proctored Mode-reg",
+    "title": "56 NTA to Conduct NITTT Examination for April-May 2026 Semester in Remote Proctored Mode-reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -6109,7 +6121,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-0516d50a5cf0b528",
-    "title": "65 Notice on Fake, Altered, or AI-Generated NEET (UG) 2026 Documents Read More 66",
+    "title": "66 Notice on Fake, Altered, or AI-Generated NEET (UG) 2026 Documents Read More 67",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -6121,7 +6133,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-dbdda3c8ddb45f35",
-    "title": "66 NTA Successfully Conducts Joint CSIR-UGC NET June 2026 Examination Across the Nation Read More 67",
+    "title": "67 NTA Successfully Conducts Joint CSIR-UGC NET June 2026 Examination Across the Nation Read More 68",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -6133,7 +6145,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-dfd5594a0a65b169",
-    "title": "70 Release of Admit Card for Joint CSIR UGC NET June 2026 Examination",
+    "title": "71 Release of Admit Card for Joint CSIR UGC NET June 2026 Examination",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
@@ -6145,7 +6157,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-d4c35eb8d5a31b48",
-    "title": "8 Vacancy Notification for Librarian - Administration Read More 9",
+    "title": "9 Vacancy Notification for Librarian - Administration Read More 10",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Recruitment",
@@ -6153,18 +6165,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261007204855.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-nta-d3ff4f5f106a48ae",
-    "title": "9 Correction in Particulars of the Online Application Form of Rashtriya Indian Military College Entrance Examination (RIMCEE) Read More 10",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-27",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261007203421.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
@@ -6253,7 +6253,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-83a1f04092a2f70d",
-    "title": "align_centre\">10 Declaration of the results of the National Initiative for Technical Teachers Training (NITTT) Examination held in July - August 2026-reg Read More 11",
+    "title": "align_centre\">11 Declaration of the results of the National Initiative for Technical Teachers Training (NITTT) Examination held in July - August 2026-reg Read More 12",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Result",
@@ -6673,7 +6673,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-1fcb0bc8214bc3c8",
-    "title": "n_centre\">51 Advance Intimation of Examination City allotted to the applicants of the All India Ayush Post Graduate Entrance Test (AIAPGET) – 2026 - Reg",
+    "title": "n_centre\">52 Advance Intimation of Examination City allotted to the applicants of the All India Ayush Post Graduate Entrance Test (AIAPGET) – 2026 - Reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -6742,18 +6742,6 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
-  },
-  {
-    "id": "auto-nta-8647fb1c55381eb5",
-    "title": "Notice 20260710141047",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-27",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260710141047.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-nta-dd1a46e613e275ce",
@@ -7224,6 +7212,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-nta-6ea1593119b1b0e6",
+    "title": "Notice 20261027133408",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-27",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261027133408.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-nta-a06a46f1b3333cd1",
     "title": "Notice on Fake, Altered, or AI-Generated NEET (UG) 2026 Documents",
     "organization": "National Testing Agency",
@@ -7657,7 +7657,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-268e1b417b77a02e",
-    "title": "r> 38 Declaration of Scores of the Joint CSIR-UGC NET June 2026 Examination Read More 39",
+    "title": "r> 39 Declaration of Scores of the Joint CSIR-UGC NET June 2026 Examination Read More 40",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -7861,7 +7861,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-c020937178ce032b",
-    "title": "td class=\"align_centre\">6 Opening of the online registration portal for submission of Online Application Form for UGC-NET December 2026 examination – reg Read More 7",
+    "title": "td class=\"align_centre\">7 Opening of the online registration portal for submission of Online Application Form for UGC-NET December 2026 examination – reg Read More 8",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -7941,18 +7941,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nhpcindia.com/welcome/job",
     "notificationUrl": "https://www.nhpcindia.com/assests/pzi_public/job/Result2_merged_3rdPhase.pdf",
-    "description": "Detected automatically from the registered official NHPC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-nhpc-970b090c18991766",
-    "title": "Resultsmerged5",
-    "organization": "NHPC",
-    "category": "PSU / Engineering",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-27",
-    "officialUrl": "https://www.nhpcindia.com/welcome/job",
-    "notificationUrl": "https://www.nhpcindia.com/assests/pzi_public/job/Resultsmerged5.pdf",
     "description": "Detected automatically from the registered official NHPC source. The original authority notice remains the controlling source."
   },
   {
@@ -11580,6 +11568,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
+    "id": "auto-sbi-e328dd0fe72f6b44",
+    "title": "ASSISTANT MANAGER (LAW)-JMGS-I - INTERVIEW SCHEDULE",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Upcoming",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-27",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/documents/77530/57941334/26102026_SCO_02_INT_SCH_AM.pdf/9212c674-a64a-ed85-f6a9-43b8ab4c7355?t=1793019403534",
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-sbi-959dc0475febea7b",
     "title": "ASSISTANT MANAGER (LAW)-JMGS-I : LIST OF CANDIDATES PROVISIONALLY SELECTED FOR INTERVIEW",
     "organization": "State Bank of India",
@@ -12384,6 +12384,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-sbi-584bb6f95f15e86a",
+    "title": "NOTICE: ONLINE PSYCHOMETRIC TEST IN REMOTE PROCTORED (RPA) MODE",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-27",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/Important_Notice_for_Psychometric_Test.pdf",
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-sbi-baf4cec698dec0fd",
     "title": "pdf\" rel=\"noopener noreferrer\" target=\"_blank\">ACQUAINT YOURSELF BOOKLET(HINDI/ ENGLISH) (NEW) LINK FOR UPDATION OF SCRIBE DETAILS (NEW) SCRIBE GUIDELINES (NEW) NOTICE: THE ONLINE PRELIMINARY EXAMINATION IS TENTATIVELY SCHEDULED FOR 26",
     "organization": "State Bank of India",
@@ -12489,18 +12501,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/08/JA_2026_Backlog_Detailed_Advt_Eng.pdf",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-sbi-ec18585647171145",
-    "title": "RECRUITMENT ARCHIVE",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-27",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/en/web/careers/recruitment-results-archive",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
   },
   {
