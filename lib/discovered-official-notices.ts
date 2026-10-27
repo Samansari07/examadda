@@ -7,7 +7,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/api/media/file/Important%20Notice-%20CGLE%202026.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -19,7 +19,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/admit-card/687df3c3d4fa50a5888db48f",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -31,7 +31,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/api/media/file/notice_pst_cht_crpf2025_05082026.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -43,7 +43,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/api/media/file/Exam%20Cancellation%20Notice%2016-02-2026%20Shift-5.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -55,7 +55,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/api/media/file/Exam%20Reschedule%20Notice-%203%20Venues.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -67,7 +67,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/api/media/file/Exam%20Cancellation%20Notice-%2013%20venues%20-11-02-2026%20shift%202%20and%203.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -79,7 +79,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/api/media/file/Exam%20Cancellation%20Notice-11-02-2026%20shift1.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -91,7 +91,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/api/media/file/Exam%20Cancellation%20Notice-%20LM%20Public%20School%20Online%20Exam%20Centre-%2009.02.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -103,7 +103,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/api/media/file/Exam%20Cancellation%20Notice-%20Shifa%20Online%20Center-%2005.02.2026%20Shift-1.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -115,7 +115,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/api/media/file/DPHCM%20Exam%202025%20-%20Exam%20Cancellation%20Notice-%20Sultan%20Foundation-Lucknow%20(1).pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -127,7 +127,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/api/media/file/CEDP%20Exam%202025%20-%20Exam%20Cancellation%20Notice-%20Aang%20Institute-Bhagalpur.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -139,7 +139,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -151,7 +151,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ssc.gov.in/",
     "notificationUrl": "https://ssccr.gov.in/admit-card",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -163,7 +163,7 @@ export const discoveredOfficialNotices = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://ugcnet.nta.ac.in/",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -175,7 +175,7 @@ export const discoveredOfficialNotices = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://ugcnet.nta.ac.in/AnswerKey_june2025.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -187,7 +187,7 @@ export const discoveredOfficialNotices = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://ugcnet.nta.ac.in/AnswerKey.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -199,7 +199,7 @@ export const discoveredOfficialNotices = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://ugcnet.nta.ac.in/images/press_release_ugc_net_june_2025.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -211,7 +211,7 @@ export const discoveredOfficialNotices = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://ugcnet.nta.ac.in/images/ugc_net_exam_june_2025_subjectcategory_wise_cutoff_marks.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -223,7 +223,7 @@ export const discoveredOfficialNotices = [
     "category": "Entrance / Eligibility",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://ugcnet.nta.ac.in/images/public_noticeanswer_key_challengeugc_net_june_2025.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -235,7 +235,7 @@ export const discoveredOfficialNotices = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://ugcnet.nta.ac.in/images/public-notice-for-admit-card-of-ugc-net-june-202527-june-2025.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -247,7 +247,7 @@ export const discoveredOfficialNotices = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://ugcnet.nta.ac.in/images/public-notice-for-advance-city-intimation-of-ugc-net-june-202529-june-2025.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -259,7 +259,7 @@ export const discoveredOfficialNotices = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://ugcnet.nta.ac.in/images/public-notice-for-admit-card-of-ugc-net-june-202526-june-2025.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -271,7 +271,7 @@ export const discoveredOfficialNotices = [
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://ugcnet.nta.ac.in/images/public-notice-for-admit-card-of-ugc-net-june-2025.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -283,7 +283,7 @@ export const discoveredOfficialNotices = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://ugcnet.nta.ac.in/images/public-notice-for-advance-city-intimation-of-ugc-net-june-202528-june-2025.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -295,7 +295,7 @@ export const discoveredOfficialNotices = [
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://ugcnet.nta.ac.in/images/public-notice-for-advance-city-intimation-of-ugc-net-june-202526and27-june-2025.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -307,7 +307,7 @@ export const discoveredOfficialNotices = [
     "category": "Teaching",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://ctet.nic.in/previous-year-final-answer-key/",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -319,7 +319,7 @@ export const discoveredOfficialNotices = [
     "category": "Teaching",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://ctet.nic.in/duplicate-marks-sheet-and-certificate/",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -331,7 +331,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/recruitment-results-archive",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -343,7 +343,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/what-are-we-looking-for",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -355,7 +355,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/world-of-opportunities",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -367,7 +367,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/growth-oriented-culture",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -379,7 +379,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/best-in-class-benefits",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -391,9 +391,45 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/learning-development",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-9d1d21f12cae1199e5d8",
+    "title": "WORLD OF OPPORTUNITIES",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-27",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/en/web/careers/world-of-opportunities",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-7459c359ea5ef82fc9a5",
+    "title": "BEST IN CLASS BENEFITS",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-27",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/en/web/careers/best-in-class-benefits",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-774d08f9a0e3050eadf2",
+    "title": "GROWTH ORIENTED CULTURE",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-27",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/en/web/careers/growth-oriented-culture",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -403,7 +439,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/the-everyday-stories",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -415,7 +451,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/post-your-query",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -427,7 +463,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SCO_02_AM_RESULT_10_FORMAT.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -439,7 +475,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SCO_02_DM_RESULT_10_FORMAT.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -451,7 +487,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/57941334/26102026_SCO_02_INT_SCH_DM.pdf/c561966e-48f9-19c2-c81c-b44753c0eaae?t=1793019436923",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -463,7 +499,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SCO_03_BMO_RESULT_10_FORMAT.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -475,7 +511,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/popre-results-2026",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -487,7 +523,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SBIPO2026-Main-WTRESULT-15_columns.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -499,7 +535,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://bank.sbi/web/careers/recruitment-results-archive",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -511,7 +547,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://bank.sbi/web/careers/what-are-we-looking-for",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -523,7 +559,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://bank.sbi/web/careers/world-of-opportunities",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -535,7 +571,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://bank.sbi/web/careers/growth-oriented-culture",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -547,7 +583,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://bank.sbi/web/careers/best-in-class-benefits",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -559,7 +595,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://bank.sbi/web/careers",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -571,7 +607,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://bank.sbi/web/careers/learning-development",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -583,7 +619,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://bank.sbi/web/careers/the-everyday-stories",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -595,7 +631,7 @@ export const discoveredOfficialNotices = [
     "category": "Banking",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://bank.sbi/web/careers/post-your-query",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -607,7 +643,7 @@ export const discoveredOfficialNotices = [
     "category": "Insurance",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://licindia.in/careers",
     "notificationUrl": "https://agencycareer.licindia.in/agt_req/index1.php?_ga=2.132252684.382589343.1685778008-998430420.1685778008&amp;_gac=1.91017576.1685872184.Cj0KCQjw7PCjBhDwARIsANo7Cgnay0YVbEoO5MslMzNkmXXG6Ra5XrDaHLDJKjFV-6L6dFlvzbQ0PDAaAi9pEALw_wcB",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -619,7 +655,7 @@ export const discoveredOfficialNotices = [
     "category": "Insurance",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://licindia.in/careers",
     "notificationUrl": "https://licindia.in/recruitment-of-aao-generalists/-specialists/-assistant-engineers-2025",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -631,7 +667,7 @@ export const discoveredOfficialNotices = [
     "category": "Insurance",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://licindia.in/careers",
     "notificationUrl": "https://licindia.in/web/guest/equal-opportunity-policy",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -643,7 +679,7 @@ export const discoveredOfficialNotices = [
     "category": "Science & Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/ICRB_Recruitment11.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -655,7 +691,7 @@ export const discoveredOfficialNotices = [
     "category": "Science & Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/DOSRecruitment11.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -667,7 +703,7 @@ export const discoveredOfficialNotices = [
     "category": "Science & Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/URSCRecruitment13.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -679,7 +715,7 @@ export const discoveredOfficialNotices = [
     "category": "Science & Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/ICRB_Recruitment9.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -691,7 +727,7 @@ export const discoveredOfficialNotices = [
     "category": "Science & Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/ICRB_Recruitment13.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -703,7 +739,7 @@ export const discoveredOfficialNotices = [
     "category": "Science & Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/SDSCRecruitment26.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -715,7 +751,7 @@ export const discoveredOfficialNotices = [
     "category": "Science & Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/DOSRecruitment10.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -727,7 +763,7 @@ export const discoveredOfficialNotices = [
     "category": "Science & Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/HSFCRecruitment2026_2.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -739,7 +775,7 @@ export const discoveredOfficialNotices = [
     "category": "Science & Engineering",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/ISTRACRecruitment4.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -751,7 +787,7 @@ export const discoveredOfficialNotices = [
     "category": "Science & Engineering",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/URSCRecruitment2026_1.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -763,7 +799,7 @@ export const discoveredOfficialNotices = [
     "category": "Science & Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/NESACRecruitment24.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -775,7 +811,7 @@ export const discoveredOfficialNotices = [
     "category": "Science & Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/ICRB_Recruitment12.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -787,7 +823,7 @@ export const discoveredOfficialNotices = [
     "category": "Central Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
     "notificationUrl": "https://indiapost.gov.in/documents/recruitmentrules",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -799,7 +835,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.jpsc.gov.in/",
     "notificationUrl": "https://www.jpsc.gov.in/sam_question_paper.php",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -811,7 +847,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.jpsc.gov.in/",
     "notificationUrl": "https://www.jpsc.gov.in/data/FAQ.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -823,7 +859,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.jpsc.gov.in/",
     "notificationUrl": "https://www.jpsc.gov.in/Recruitment.php",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -835,7 +871,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.jpsc.gov.in/",
     "notificationUrl": "https://www.jpsc.gov.in/Exam-Information.php",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -847,7 +883,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.jpsc.gov.in/",
     "notificationUrl": "https://www.jpsc.gov.in/Results.php",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -859,7 +895,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.jpsc.gov.in/",
     "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_01_26_dated_09_07_2026.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -871,7 +907,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.jpsc.gov.in/",
     "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_01_26_dated_14_07_2026.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -883,7 +919,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.jpsc.gov.in/",
     "notificationUrl": "https://www.jpsc.gov.in/data/jharkhand%20gazette_29_11_2023.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -895,7 +931,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.jpsc.gov.in/",
     "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_dated_18_12_2025.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -907,7 +943,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.jpsc.gov.in/",
     "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_03_24_dated_10_08_2026.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -919,7 +955,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.jpsc.gov.in/",
     "notificationUrl": "https://www.jpsc.gov.in/data/Notice.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -931,69 +967,69 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.jpsc.gov.in/",
     "notificationUrl": "https://www.jpsc.gov.in/Civil_judge_junior_division_22_2023/login.php",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-kerala-psc-37c45556314fa75d79c3",
+    "id": "discover-kerala-psc-b0408e9076d75cad8d56",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_omrexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_omrexams",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-kerala-psc-274a1d8e868c2d27947e",
+    "id": "discover-kerala-psc-bfc1c395481cde091215",
     "title": "Answer key-Online Exam",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_onlineexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_onlineexams",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-kerala-psc-e89d8cfee71410b4ad7e",
+    "id": "discover-kerala-psc-c4f57dea207a1fb4a647",
     "title": "Question paper for Descriptive Examinations",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/question-paper-descriptive-exam",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/question-paper-descriptive-exam",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-kerala-psc-8c1bb50db9d6dc082834",
+    "id": "discover-kerala-psc-0f5b932826256159e36b",
     "title": "PSC Examination updates",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/psc-examination-updates",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/psc-examination-updates",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-kerala-psc-1709d751f92d214053d1",
+    "id": "discover-kerala-psc-c019d0c423cf10b55b16",
     "title": "Procedure for Interview Date Change Requests",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -1003,7 +1039,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/inter-812-895-25.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1015,7 +1051,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/scrolling-date%20change.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1027,7 +1063,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/selection-pending-want",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1039,7 +1075,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26101719080_A_I.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1051,7 +1087,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26101719080_A_II.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1063,7 +1099,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26101719080_A_III.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1075,7 +1111,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26101415240.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1087,7 +1123,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26101218280.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1099,7 +1135,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26101218290.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1111,7 +1147,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/AE_Exam%20Schedule.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1123,7 +1159,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/Reschedule_notification_US_L_2026.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1135,7 +1171,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/files/MPSC_26091515250.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1147,7 +1183,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpscmanipur.gov.in/",
     "notificationUrl": "https://mpscmanipur.gov.in/ans-key.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1159,7 +1195,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/stages_of_recruitment.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1171,7 +1207,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/result_screening.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1183,7 +1219,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/result_interview.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1195,7 +1231,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notifications-st.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1207,7 +1243,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notifications-pi.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1219,7 +1255,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/notifications-ak.html",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1231,7 +1267,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice30Sep2026a.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1243,7 +1279,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice11Sep2026a.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1255,7 +1291,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice10Sep2026a.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1267,7 +1303,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice07Sep2026a.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1279,7 +1315,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice02Sep2026a.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1291,7 +1327,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice25Aug2026a.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1303,7 +1339,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.mizoram.gov.in/",
     "notificationUrl": "https://mpsc.mizoram.gov.in/page/advertisement-2024-2025",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1315,7 +1351,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.mizoram.gov.in/",
     "notificationUrl": "https://mpsc.mizoram.gov.in/page/advertisement-2024-2025-ng",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1327,7 +1363,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.mizoram.gov.in/",
     "notificationUrl": "https://mpsc.mizoram.gov.in/page/advertisement-ng-2025-2026",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1339,7 +1375,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.mizoram.gov.in/",
     "notificationUrl": "https://mpsc.mizoram.gov.in/page/admit-card-direct-recruitment",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1351,7 +1387,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.mizoram.gov.in/",
     "notificationUrl": "https://mpsc.mizoram.gov.in/page/answer-key-ng",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1363,7 +1399,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.mizoram.gov.in/",
     "notificationUrl": "https://mpsc.mizoram.gov.in/page/answer-key",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1375,7 +1411,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.mizoram.gov.in/",
     "notificationUrl": "https://mpsc.mizoram.gov.in/page/result-2020-2021",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1387,7 +1423,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.mizoram.gov.in/",
     "notificationUrl": "https://mpsc.mizoram.gov.in/page/schedule-of-examination-ng",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1399,7 +1435,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.mizoram.gov.in/",
     "notificationUrl": "https://mpsc.mizoram.gov.in/page/personal-interview-ng",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1411,7 +1447,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.mizoram.gov.in/",
     "notificationUrl": "https://mpsc.mizoram.gov.in/page/result-ng",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1423,7 +1459,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.mizoram.gov.in/",
     "notificationUrl": "https://mpsc.mizoram.gov.in/page/result-ng-2025-2026",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1435,7 +1471,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://mpsc.mizoram.gov.in/",
     "notificationUrl": "https://mpsc.mizoram.gov.in/page/lde-admit-card",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1447,7 +1483,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/services/marksheet/ltd-exam",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1459,7 +1495,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/results/179302304373058",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1471,7 +1507,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/notification/179032099496984",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1483,7 +1519,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/notification/178963446190746",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1495,7 +1531,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/notification/178963338157961",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1507,7 +1543,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/applicant/exams",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1519,7 +1555,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/applicant/otr",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1531,7 +1567,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://npsc.nagaland.gov.in/",
     "notificationUrl": "https://npsc.nagaland.gov.in/results",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1543,7 +1579,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://uppsc.up.nic.in/",
     "notificationUrl": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk9q6upnHHyW7Pdh9qfF6wa",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1555,7 +1591,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/job-listing",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1567,7 +1603,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/e-migrate",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1579,7 +1615,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/job-listing?functionalAreas=Healthcare,Healthcare%20%26%20Medical",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1591,7 +1627,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/job-listing?isGovernmentJob=true",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1603,7 +1639,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/job-listing?pwdCandidateWelcome=true",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1615,7 +1651,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/job-listing?exServicemanPreferred=true",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1627,7 +1663,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/career-center",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1639,7 +1675,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/home/job-fair/jobFairs",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1651,7 +1687,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://www.ncs.gov.in/_layouts/15/ncsp/calendar.aspx",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1663,7 +1699,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://dget.ncs.gov.in/main.aspx",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1675,7 +1711,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/career-counsellors",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1687,7 +1723,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/sitemap.xml",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1699,7 +1735,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/job-listing?functionalAreas=IT%20and%20ITES,Telecom,IT%20Support%20%26%20BPO",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1711,7 +1747,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/robots.txt",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1723,7 +1759,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/notifications",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1735,7 +1771,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/notices",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1747,7 +1783,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/recruitment",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1759,7 +1795,7 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/recruitment-notices",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1771,9 +1807,21 @@ export const discoveredOfficialNotices = [
     "category": "Government Jobs",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/career",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-himachal-employment-8ee8c1173a990d5590cd",
+    "title": "Please Login To Renew Your Application",
+    "organization": "Himachal Pradesh Employment Portal",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-27",
+    "officialUrl": "https://eemis.hp.gov.in/",
+    "notificationUrl": "https://eemis.hp.gov.in/Home/UserLogin",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -1783,7 +1831,7 @@ export const discoveredOfficialNotices = [
     "category": "State Government",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "http://sewayojan.up.nic.in/",
     "notificationUrl": "http://sewayojan.up.nic.in/jobs.aspx",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1795,7 +1843,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Result",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.powergrid.in/en/job-opportunities1",
     "notificationUrl": "https://www.powergrid.in/en/voting-results-regulation-44-3",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1807,7 +1855,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.powergrid.in/en/job-opportunities1",
     "notificationUrl": "https://www.powergrid.in/en/general-information",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1819,7 +1867,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.powergrid.in/en/job-opportunities1",
     "notificationUrl": "https://www.powergrid.in/en/payment-information",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1831,7 +1879,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.powergrid.in/en/job-opportunities1",
     "notificationUrl": "https://www.powergrid.in/en/job-opportunities/recruitment-engineer-trainees-2027-through-gate-2027-advt-no-cc032026-dated",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1843,7 +1891,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.powergrid.in/en/job-opportunities1",
     "notificationUrl": "https://www.powergrid.in/en/job-opportunities/special-recruitment-drive-st-category-post-officer-trainee-cs-2026-advt-no-cc-02",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1855,7 +1903,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.powergrid.in/en/job-opportunities1",
     "notificationUrl": "https://www.powergrid.in/en/job-opportunities/recruitment-executive-positions-manager-electrical-dy-manager-electrical-0",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1867,7 +1915,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.powergrid.in/en/job-opportunities1",
     "notificationUrl": "https://www.powergrid.in/en/job-opportunities/recruitment-officer-trainee-law-2025-advt-no-cc062025-dated-23102025",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1879,7 +1927,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.powergrid.in/en/job-opportunities1",
     "notificationUrl": "https://www.powergrid.in/en/job-opportunities/recruitment-officer-trainee-finance-and-officer-trainee-cs-advt-no-cc052025-dated",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1891,7 +1939,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.powergrid.in/en/job-opportunities1",
     "notificationUrl": "https://www.powergrid.in/en/job-opportunities/recruitment-engineer-trainees-2026-through-gate-2026-advt-no-cc042025-dated",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1903,7 +1951,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.powergrid.in/en/job-opportunities1",
     "notificationUrl": "https://www.powergrid.in/en/job-opportunities/recruitment-executive-positions-manager-electrical-dy-manager-electrical",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1915,7 +1963,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.powergrid.in/en/job-opportunities1",
     "notificationUrl": "https://www.powergrid.in/en/job-opportunities/recruitment-officer-trainee-2024-advt-no-cc112024-dated-04122024",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1927,9 +1975,33 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.powergrid.in/en/job-opportunities1",
     "notificationUrl": "https://www.powergrid.in/en/job-opportunities/recruitment-trainee-engineer-electronics-powertel-through-gate-2024-advt-no",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-gail-244267a417f63de35c12",
+    "title": "Brief Advertisement in Hindi",
+    "organization": "GAIL India",
+    "category": "PSU / Engineering",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-27",
+    "officialUrl": "https://www.gailonline.com/Vacancies.html",
+    "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Khera-Ad-Hindi-27-10-2026.jpg",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-gail-b1290b01503e3cb4c355",
+    "title": "Brief Advertisement in English",
+    "organization": "GAIL India",
+    "category": "PSU / Engineering",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-27",
+    "officialUrl": "https://www.gailonline.com/Vacancies.html",
+    "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Khera-Ad-English-27-10-2026.jpg",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -1939,7 +2011,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Advertisement-English-14-10-2026.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1951,7 +2023,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed-Advertisement-in-Hindi-15-10-2026.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1963,7 +2035,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed-Adv-09-09-2026.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1975,7 +2047,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Detailed-Adv-hindi-09-09-26.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1987,7 +2059,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/SMALL-ADVERTISEMENT-English-AUG-18-26.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -1999,7 +2071,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/SMALL-ADVERTISEMENT-Hindi-AUG-18-26.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2011,7 +2083,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/BRIEF_ADVERTISEMENT_(ENGLISH_VERSION)_03-07-2026.jpg",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2023,7 +2095,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/BREIF_ADVERTIS_MENT_(HINDI_VERSION)_03-07-2026.jpg",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2035,7 +2107,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILED_ADD_SDMO_060426.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2047,33 +2119,9 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.gailonline.com/Vacancies.html",
     "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/Advertisement-Ranchi%20English_160326.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-gail-cf959bf7efb42ca4599b",
-    "title": "Detailed Advertisement PDF (263 KB)",
-    "organization": "GAIL India",
-    "category": "PSU / Engineering",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
-    "officialUrl": "https://www.gailonline.com/Vacancies.html",
-    "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/English_Detailed_Final_Factory_medical_Officer_130326.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-gail-f96e4017814300f5d945",
-    "title": "Detailed Advertisement PDF (228 KB))",
-    "organization": "GAIL India",
-    "category": "PSU / Engineering",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
-    "officialUrl": "https://www.gailonline.com/Vacancies.html",
-    "notificationUrl": "https://www.gailonline.com/careers/currentOpnning/DETAILED%20ADVERTISEMENT_030326.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -2083,7 +2131,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/index.php/career-growth-opportunities/career-advancement-opportunities",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2095,7 +2143,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/index.php/recruitment-system-ntpc",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2107,7 +2155,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://careers.ntpc.co.in/recruitment/",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2119,7 +2167,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Job_description_0.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2131,7 +2179,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/Appointment%20to%20the%20Post%20of%20CMD.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2143,7 +2191,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/NTPC-Recruitment-Ad.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2155,7 +2203,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://careers.ntpc.co.in/openings.php",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2167,7 +2215,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
     "notificationUrl": "https://careers.ntpc.co.in/",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2179,7 +2227,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Position%20Wise%20Application%20Count.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2191,7 +2239,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Selection%20Methodology%20for%20Recruitment%20of%20Officers.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2203,7 +2251,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/140X160%20MM%20AD.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2215,7 +2263,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Officers%2026-27.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2227,7 +2275,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Recruitment%20of%20Officers-%20July-26_Final_1.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2239,7 +2287,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Recruitment%20of%20Officers-%20July-26_2_Hindi.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2251,7 +2299,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Advertisement%20-Dir%20Marketing.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2263,7 +2311,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Public%20Notice%20-%20Recruitment%20Fraud%20Alert.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2275,7 +2323,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Mock%20Test%20for%20Recruitment%20of%20Officers.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2287,7 +2335,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Details%20of%20Applications%20received.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2299,7 +2347,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Certificate%20regarding%20physical%20limitation%20in%20an%20examinee%20to%20write.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2311,7 +2359,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Window%20Advertisement.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2323,7 +2371,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/roles-appointment-&amp;-functions",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2335,7 +2383,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.nhpcindia.com/welcome/job",
     "notificationUrl": "https://www.nhpcindia.com/assests/pzi_public/pdf_link/65d861a2a730d.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2347,7 +2395,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=86767062&assetClassPK=86767057",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2359,7 +2407,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=85961408&assetClassPK=85961403",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2371,7 +2419,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=84777603&assetClassPK=84777498",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2383,7 +2431,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=85961191&assetClassPK=85961186",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2395,7 +2443,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=72054824&assetClassPK=72054819",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2407,7 +2455,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Admit Card",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=70786478&assetClassPK=70786472",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2419,7 +2467,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=69695130&assetClassPK=69695125",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2431,7 +2479,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=68666079&assetClassPK=68666074",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2443,7 +2491,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=68621943&assetClassPK=68621938",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2455,7 +2503,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=62498009&assetClassPK=62498004",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2467,7 +2515,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=60924697&assetClassPK=60924692",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2479,7 +2527,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
     "notificationUrl": "https://www.ongcindia.com/web/eng/detail?assetEntry=54420549&assetClassPK=54420544",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2491,7 +2539,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Science & Engineering",
     "stage": "Recruitment",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
     "notificationUrl": "https://www.npcil.nic.in/content/270_1_CareerGrowthPromotionandDevelopmentAvenues.aspx",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2503,7 +2551,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Science & Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
     "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/PwD_Policy_23022026_01.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2515,7 +2563,7 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Science & Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
     "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/ST_SA_Shortlist_20042026.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
@@ -2527,17 +2575,17 @@ export const discoveredOfficialNotices = [
     "category": "PSU / Science & Engineering",
     "stage": "Notice",
     "status": "Detected on official source",
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-27",
     "officialUrl": "https://www.npcil.nic.in/content/289_1_Opportunities.aspx",
     "notificationUrl": "https://www.npcil.nic.in/WriteReadData/userfiles/file/Shortlisted_Candidates_ST_TN_14052026_01.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-26T23:53:13.628Z",
+  "generatedAt": "2026-10-27T04:59:05.914Z",
   "registeredSources": 78,
   "checkedSources": 40,
-  "discoveredItems": 211,
+  "discoveredItems": 215,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2673,7 +2721,7 @@ export const discoveryMeta = {
     },
     {
       "id": "sbi",
-      "discovered": 29,
+      "discovered": 32,
       "checked": true,
       "fetchedUrl": "https://sbi.co.in/web/careers",
       "method": "mixed",
@@ -2690,13 +2738,15 @@ export const discoveryMeta = {
     },
     {
       "id": "lic",
-      "discovered": 3,
+      "discovered": 5,
       "checked": true,
       "fetchedUrl": "https://licindia.in/careers",
       "method": "mixed",
       "pages": [
         "https://licindia.in/careers",
-        "https://licindia.in/notifications"
+        "https://licindia.in/sitemap.xml",
+        "https://licindia.in/notifications",
+        "https://licindia.in/notices"
       ]
     },
     {
@@ -2768,12 +2818,19 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 1,
+      "discovered": 7,
       "checked": true,
-      "fetchedUrl": "https://indiapost.gov.in/sitemap.xml",
+      "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
       "method": "mixed",
       "pages": [
-        "https://indiapost.gov.in/sitemap.xml"
+        "https://indiapost.gov.in/gdsonlineengagement",
+        "https://indiapost.gov.in/sitemap.xml",
+        "https://indiapost.gov.in/notifications",
+        "https://indiapost.gov.in/notices",
+        "https://indiapost.gov.in/recruitment",
+        "https://indiapost.gov.in/recruitment-notices",
+        "https://indiapost.gov.in/career",
+        "https://indiapost.gov.in/careers"
       ]
     },
     {
@@ -3203,11 +3260,20 @@ export const discoveryMeta = {
     },
     {
       "id": "himachal-employment",
-      "discovered": 0,
-      "checked": false,
-      "fetchedUrl": null,
-      "method": null,
-      "pages": []
+      "discovered": 1,
+      "checked": true,
+      "fetchedUrl": "https://eemis.hp.gov.in/",
+      "method": "fetch",
+      "pages": [
+        "https://eemis.hp.gov.in/",
+        "https://eemis.hp.gov.in/sitemap.xml",
+        "https://eemis.hp.gov.in/robots.txt",
+        "https://eemis.hp.gov.in/notifications",
+        "https://eemis.hp.gov.in/notices",
+        "https://eemis.hp.gov.in/recruitment",
+        "https://eemis.hp.gov.in/recruitment-notices",
+        "https://eemis.hp.gov.in/career"
+      ]
     },
     {
       "id": "jk-employment",
@@ -3228,19 +3294,10 @@ export const discoveryMeta = {
     {
       "id": "kerala-employment",
       "discovered": 0,
-      "checked": true,
-      "fetchedUrl": "https://www.employment.kerala.gov.in/",
-      "method": "mixed",
-      "pages": [
-        "https://www.employment.kerala.gov.in/",
-        "https://www.employment.kerala.gov.in/sitemap.xml",
-        "https://www.employment.kerala.gov.in/robots.txt",
-        "https://www.employment.kerala.gov.in/notifications",
-        "https://www.employment.kerala.gov.in/notices",
-        "https://www.employment.kerala.gov.in/recruitment",
-        "https://www.employment.kerala.gov.in/recruitment-notices",
-        "https://www.employment.kerala.gov.in/career"
-      ]
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "madhya-pradesh-employment",
