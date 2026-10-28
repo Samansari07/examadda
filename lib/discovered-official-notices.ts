@@ -397,6 +397,42 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-sbi-9d1d21f12cae1199e5d8",
+    "title": "WORLD OF OPPORTUNITIES",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/en/web/careers/world-of-opportunities",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-7459c359ea5ef82fc9a5",
+    "title": "BEST IN CLASS BENEFITS",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/en/web/careers/best-in-class-benefits",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-774d08f9a0e3050eadf2",
+    "title": "GROWTH ORIENTED CULTURE",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/en/web/careers/growth-oriented-culture",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-sbi-386c4767a2ba666f2611",
     "title": "The Everyday Stories",
     "organization": "State Bank of India",
@@ -574,6 +610,42 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-28",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://bank.sbi/web/careers/learning-development",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-2a10c3f593df59891c3e",
+    "title": "WORLD OF OPPORTUNITIES",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://bank.sbi/en/web/careers/world-of-opportunities",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-143463b265eb27f982ad",
+    "title": "BEST IN CLASS BENEFITS",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://bank.sbi/en/web/careers/best-in-class-benefits",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-9669f56f54c8540ed5f6",
+    "title": "GROWTH ORIENTED CULTURE",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://bank.sbi/en/web/careers/growth-oriented-culture",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -790,6 +862,150 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-28",
     "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
     "notificationUrl": "https://indiapost.gov.in/documents/recruitmentrules",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-bb54486f7c0018698892",
+    "title": "Previous Exam Question Paper(s)",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/sam_question_paper.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-83f1f31fa505c8024508",
+    "title": "Online Application Form (OAS)",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/FAQ.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-8e7d055bcc8609ce4e99",
+    "title": "Recent Recommendations �",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Recruitment.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-a93e5a3215b28be27898",
+    "title": "Exam Information �",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Exam-Information.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-0a027ba8038bc5d5ce30",
+    "title": "Results/ Answer Keys",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Results.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-c81eb535f46f2eea4a06",
+    "title": "Press Release regarding Combined Civil Services Main Examination Uploaded date:-09-07-2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_01_26_dated_09_07_2026.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-637e934b073804ed04d4",
+    "title": "Press release regarding Combined Civil Services Main Examination Advt.No.01/2026 uploaded date :14-07-2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_01_26_dated_14_07_2026.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-962fc114b86e9b8ce348",
+    "title": "The Jharkhand Examination (Measures Control and Prevention of Unfair Means in Recruitment) Act, 2023 (Jharkhand Act, 15,2023) uploaded date :29-11-2023",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/jharkhand%20gazette_29_11_2023.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-4996e1c2484128ee6ab2",
+    "title": "Press Release regarding Email ID for general queries recruitment & legal matters uploaded Date 18-12-2025",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_dated_18_12_2025.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-0643b4ca5330d78948c8",
+    "title": "Press release regarding Recruitment of Forest Range Officer and Assistant Conservator of Forest (Advt.No.-04/2024 and 03/2024) Dtd.10-08-2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_03_24_dated_10_08_2026.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-afdc41612096573c17c2",
+    "title": "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Notice.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-22c9c1db87a8865d9693",
+    "title": "Click here to download your application form for the recruitment of Civil Judge (Junior Division) Main Examination Advt.No.-22/2023 (18-07-2026)",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-28",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Civil_judge_junior_division_22_2023/login.php",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -1150,102 +1366,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-28",
     "officialUrl": "https://mpsc.meghalaya.gov.in/",
     "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice25Aug2026a.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-76cf7315d9eb6c4a2a06",
-    "title": "Limited Dept. Exam 2022 Marksheet",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-28",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/services/marksheet/ltd-exam",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-a89b91514a3819991c34",
-    "title": "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II) New",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-28",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/notification/179319148522342",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-1f410c3498c014034080",
-    "title": "Notification No. NPSC/CESE-2012 dt. 28.10.2026 (Interview Schedule for CESE 2026) New",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-28",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/routines/179317936779313",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-8c5e8c4359326654d2c1",
-    "title": "Notification No. NPSC/EXAM-5/2022 dt. 26.10.2026 (Written Results of Common Educational Services Examination 2026) New",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-28",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/results/179302304373058",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-1834ce196b1d1743b889",
-    "title": "Notification NO.NPSC.ADVT-1/04(VOL-1) dt. 25.09.2026 (CTSE 2026 Microbiology Exam cancelled )",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-28",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/notification/179032099496984",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-f4671f71158ee8699edf",
-    "title": "Exams View and Apply Exams. Open",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-28",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/applicant/exams",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-b792be0ded91ff7fc461",
-    "title": "OTR OTR service is currently closed. Please apply during the notified period. Open",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-28",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/applicant/otr",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-nagaland-psc-8883392d71997d226b77",
-    "title": "Results Browse and view the archives of results. Open",
-    "organization": "Nagaland Public Service Commission",
-    "category": "State Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-28",
-    "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/results",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -2246,10 +2366,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-28T16:03:04.797Z",
+  "generatedAt": "2026-10-28T21:04:11.146Z",
   "registeredSources": 78,
-  "checkedSources": 41,
-  "discoveredItems": 187,
+  "checkedSources": 42,
+  "discoveredItems": 197,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2385,7 +2505,7 @@ export const discoveryMeta = {
     },
     {
       "id": "sbi",
-      "discovered": 29,
+      "discovered": 35,
       "checked": true,
       "fetchedUrl": "https://sbi.co.in/web/careers",
       "method": "mixed",
@@ -2409,9 +2529,11 @@ export const discoveryMeta = {
       "pages": [
         "https://licindia.in/careers",
         "https://licindia.in/sitemap.xml",
+        "https://licindia.in/notifications",
         "https://licindia.in/notices",
         "https://licindia.in/recruitment",
         "https://licindia.in/recruitment-notices",
+        "https://licindia.in/career",
         "https://licindia.in/advertisement"
       ]
     },
@@ -2641,11 +2763,20 @@ export const discoveryMeta = {
     },
     {
       "id": "jharkhand-psc",
-      "discovered": 0,
-      "checked": false,
-      "fetchedUrl": null,
-      "method": null,
-      "pages": []
+      "discovered": 12,
+      "checked": true,
+      "fetchedUrl": "https://www.jpsc.gov.in/",
+      "method": "mixed",
+      "pages": [
+        "https://www.jpsc.gov.in/",
+        "https://www.jpsc.gov.in/sitemap.xml",
+        "https://www.jpsc.gov.in/robots.txt",
+        "https://www.jpsc.gov.in/notifications",
+        "https://www.jpsc.gov.in/notices",
+        "https://www.jpsc.gov.in/recruitment",
+        "https://www.jpsc.gov.in/recruitment-notices",
+        "https://www.jpsc.gov.in/career"
+      ]
     },
     {
       "id": "karnataka-psc",
@@ -2750,19 +2881,14 @@ export const discoveryMeta = {
     },
     {
       "id": "nagaland-psc",
-      "discovered": 8,
+      "discovered": 0,
       "checked": true,
-      "fetchedUrl": "https://npsc.nagaland.gov.in/",
+      "fetchedUrl": "https://npsc.nagaland.gov.in/sitemap.xml",
       "method": "mixed",
       "pages": [
-        "https://npsc.nagaland.gov.in/",
         "https://npsc.nagaland.gov.in/sitemap.xml",
         "https://npsc.nagaland.gov.in/robots.txt",
-        "https://npsc.nagaland.gov.in/notifications",
-        "https://npsc.nagaland.gov.in/notices",
-        "https://npsc.nagaland.gov.in/recruitment",
-        "https://npsc.nagaland.gov.in/recruitment-notices",
-        "https://npsc.nagaland.gov.in/career"
+        "https://npsc.nagaland.gov.in/notifications"
       ]
     },
     {
@@ -3126,11 +3252,11 @@ export const discoveryMeta = {
         "https://iocl.com/latest-job-opening",
         "https://iocl.com/sitemap.xml",
         "https://iocl.com/robots.txt",
-        "https://iocl.com/notifications",
         "https://iocl.com/notices",
         "https://iocl.com/recruitment",
         "https://iocl.com/recruitment-notices",
-        "https://iocl.com/career"
+        "https://iocl.com/career",
+        "https://iocl.com/careers"
       ]
     },
     {
