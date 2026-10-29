@@ -301,30 +301,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-ctet-65b953b91c3e8ca22786",
-    "title": "FINAL ANSWER KEY",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://ctet.nic.in/previous-year-final-answer-key/",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-ctet-da58ec7c67e2874d14a6",
-    "title": "Duplicate Certificate and Marksheet of CTET Examination upto 2016",
-    "organization": "CTET",
-    "category": "Teaching",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://ctet.nic.in/",
-    "notificationUrl": "https://ctet.nic.in/duplicate-marks-sheet-and-certificate/",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-sbi-b15b11ca79df3384be98",
     "title": "Recruitment Results & Archive",
     "organization": "State Bank of India",
@@ -394,6 +370,30 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-29",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/learning-development",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-386c4767a2ba666f2611",
+    "title": "The Everyday Stories",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-29",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/the-everyday-stories",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-a34d2f5e312e41f455de",
+    "title": "Post Your Query",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-29",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/post-your-query",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -1189,150 +1189,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-meghalaya-psc-900218e5945aa17464c5",
-    "title": "Stages of Recruitment",
-    "organization": "Meghalaya Public Service Commission",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://mpsc.meghalaya.gov.in/",
-    "notificationUrl": "https://mpsc.meghalaya.gov.in/stages_of_recruitment.html",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-meghalaya-psc-42c16975e4745309a332",
-    "title": "Results of Screening Test",
-    "organization": "Meghalaya Public Service Commission",
-    "category": "State Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://mpsc.meghalaya.gov.in/",
-    "notificationUrl": "https://mpsc.meghalaya.gov.in/result_screening.html",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-meghalaya-psc-a13fe269e27aacdce49f",
-    "title": "Results of Personal Interview",
-    "organization": "Meghalaya Public Service Commission",
-    "category": "State Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://mpsc.meghalaya.gov.in/",
-    "notificationUrl": "https://mpsc.meghalaya.gov.in/result_interview.html",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-meghalaya-psc-5ee77b871678ecb0a673",
-    "title": "Notification for Screening/Written Examination",
-    "organization": "Meghalaya Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://mpsc.meghalaya.gov.in/",
-    "notificationUrl": "https://mpsc.meghalaya.gov.in/notifications-st.html",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-meghalaya-psc-29b69c62dccbbbba981f",
-    "title": "Notification for Personal Interview",
-    "organization": "Meghalaya Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://mpsc.meghalaya.gov.in/",
-    "notificationUrl": "https://mpsc.meghalaya.gov.in/notifications-pi.html",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-meghalaya-psc-e908e1b9eec7b3fbcc8b",
-    "title": "Notification for Answer Keys",
-    "organization": "Meghalaya Public Service Commission",
-    "category": "State Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://mpsc.meghalaya.gov.in/",
-    "notificationUrl": "https://mpsc.meghalaya.gov.in/notifications-ak.html",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-meghalaya-psc-097559d4894089f773fc",
-    "title": "NOTICE PROGRAMME OF PERSONAL INTERVIEW Sub Divisional Officer / Assistant Engineer (Electrical) under P.H.E Department [May 2025] Research Assistant under P.H.E. Department (July 2019)",
-    "organization": "Meghalaya Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://mpsc.meghalaya.gov.in/",
-    "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice30Sep2026a.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-meghalaya-psc-e9f21251c527c4a5552c",
-    "title": "PROGRAMME FOR EXAMINATION. Investigator in the Directorate of Housing [March 2026] Sub Inspector of Supply in the Directorate of Food Civil Supplies and Consumer Affairs [Sep 2025]",
-    "organization": "Meghalaya Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://mpsc.meghalaya.gov.in/",
-    "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice11Sep2026a.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-meghalaya-psc-ecd32db9ad2f98483b6e",
-    "title": "PROGRAMME FOR THE HALF YEARLY DEPARTMENTAL EXAMINATION FOR IAS & IPS OFFICERS NOVEMBER, 2026.",
-    "organization": "Meghalaya Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://mpsc.meghalaya.gov.in/",
-    "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice10Sep2026a.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-meghalaya-psc-ca3c380771e55e493eba",
-    "title": "PROGRAMME FOR EXAMINATION. Scientific Officer for (Chemistry Division) under the Directorate of Forensic Science [May 2025] Senior Scientific Assistant in the Documents Division of the Directorate of Forensic Sciences [ April 2025)",
-    "organization": "Meghalaya Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://mpsc.meghalaya.gov.in/",
-    "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice07Sep2026a.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-meghalaya-psc-87ebfa8e48b444f12cb6",
-    "title": "NOTICE PROGRAMME OF PERSONAL INTERVIEW Mechanic Motor Vehicle (M.V) Instructor under the Directorate of Employment & Craftsmen Training, Department of Labour, Employment & Skill Development [June 2025]",
-    "organization": "Meghalaya Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://mpsc.meghalaya.gov.in/",
-    "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice02Sep2026a.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-meghalaya-psc-5aea3e8cd243a5e022ea",
-    "title": "PROGRAMME FOR EXAMINATION. Assistant Librarian under Meghalaya Administrative Training Institute (December 2025)",
-    "organization": "Meghalaya Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://mpsc.meghalaya.gov.in/",
-    "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice25Aug2026a.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-nagaland-psc-76cf7315d9eb6c4a2a06",
     "title": "Limited Dept. Exam 2022 Marksheet",
     "organization": "Nagaland Public Service Commission",
@@ -1678,18 +1534,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-29",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/career",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-8ee8c1173a990d5590cd",
-    "title": "Please Login To Renew Your Application",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-29",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/Home/UserLogin",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -2450,10 +2294,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-29T14:15:14.157Z",
+  "generatedAt": "2026-10-29T20:19:28.231Z",
   "registeredSources": 78,
-  "checkedSources": 42,
-  "discoveredItems": 204,
+  "checkedSources": 40,
+  "discoveredItems": 191,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2547,19 +2391,13 @@ export const discoveryMeta = {
     },
     {
       "id": "ctet",
-      "discovered": 2,
+      "discovered": 0,
       "checked": true,
-      "fetchedUrl": "https://ctet.nic.in/",
-      "method": "mixed",
+      "fetchedUrl": "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/",
+      "method": "fetch",
       "pages": [
-        "https://ctet.nic.in/",
         "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/",
-        "https://ctet.nic.in/document-category/public-notices/",
-        "https://ctet.nic.in/sitemap.xml",
-        "https://ctet.nic.in/notifications",
-        "https://ctet.nic.in/notices",
-        "https://ctet.nic.in/recruitment",
-        "https://ctet.nic.in/recruitment-notices"
+        "https://ctet.nic.in/document-category/public-notices/"
       ]
     },
     {
@@ -2589,7 +2427,7 @@ export const discoveryMeta = {
     },
     {
       "id": "sbi",
-      "discovered": 21,
+      "discovered": 29,
       "checked": true,
       "fetchedUrl": "https://sbi.co.in/web/careers",
       "method": "mixed",
@@ -2931,20 +2769,11 @@ export const discoveryMeta = {
     },
     {
       "id": "meghalaya-psc",
-      "discovered": 12,
-      "checked": true,
-      "fetchedUrl": "https://mpsc.meghalaya.gov.in/",
-      "method": "mixed",
-      "pages": [
-        "https://mpsc.meghalaya.gov.in/",
-        "https://mpsc.meghalaya.gov.in/sitemap.xml",
-        "https://mpsc.meghalaya.gov.in/robots.txt",
-        "https://mpsc.meghalaya.gov.in/notifications",
-        "https://mpsc.meghalaya.gov.in/notices",
-        "https://mpsc.meghalaya.gov.in/recruitment",
-        "https://mpsc.meghalaya.gov.in/recruitment-notices",
-        "https://mpsc.meghalaya.gov.in/career"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "mizoram-psc",
@@ -3141,20 +2970,11 @@ export const discoveryMeta = {
     },
     {
       "id": "himachal-employment",
-      "discovered": 1,
-      "checked": true,
-      "fetchedUrl": "https://eemis.hp.gov.in/",
-      "method": "fetch",
-      "pages": [
-        "https://eemis.hp.gov.in/",
-        "https://eemis.hp.gov.in/sitemap.xml",
-        "https://eemis.hp.gov.in/robots.txt",
-        "https://eemis.hp.gov.in/notifications",
-        "https://eemis.hp.gov.in/notices",
-        "https://eemis.hp.gov.in/recruitment",
-        "https://eemis.hp.gov.in/recruitment-notices",
-        "https://eemis.hp.gov.in/career"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "jk-employment",
@@ -3235,7 +3055,7 @@ export const discoveryMeta = {
       "discovered": 0,
       "checked": true,
       "fetchedUrl": "https://rajemployment.rajasthan.gov.in/",
-      "method": "mixed",
+      "method": "fetch",
       "pages": [
         "https://rajemployment.rajasthan.gov.in/",
         "https://rajemployment.rajasthan.gov.in/sitemap.xml",
