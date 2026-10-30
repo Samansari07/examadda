@@ -2231,7 +2231,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-b0408e9076d75cad",
+    "id": "auto-kerala-psc-37c45556314fa75d",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2239,11 +2239,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_omrexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_omrexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-bfc1c395481cde09",
+    "id": "auto-kerala-psc-274a1d8e868c2d27",
     "title": "Answer key-Online Exam",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2251,11 +2251,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_onlineexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_onlineexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-bf299afc332070c2",
+    "id": "auto-kerala-psc-d9b4642e91559d29",
     "title": "Exam Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2263,7 +2263,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/examinations",
+    "notificationUrl": "https://www.keralapsc.gov.in/examinations",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2279,7 +2279,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-05de1912b0b5a28f",
+    "id": "auto-kerala-psc-39e61c0337589778",
     "title": "Interview Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2287,7 +2287,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/interviews",
+    "notificationUrl": "https://www.keralapsc.gov.in/interviews",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2315,7 +2315,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
-    "id": "auto-kerala-psc-0011c91375f8ca04",
+    "id": "auto-kerala-psc-1a0587f41dadec15",
     "title": "OTV Schedule and Driving Test",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2323,11 +2323,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/otv-schedule-and-driving-test",
+    "notificationUrl": "https://www.keralapsc.gov.in/otv-schedule-and-driving-test",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-c019d0c423cf10b5",
+    "id": "auto-kerala-psc-1709d751f92d2140",
     "title": "Procedure for Interview Date Change Requests",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2335,11 +2335,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
+    "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-0f5b932826256159",
+    "id": "auto-kerala-psc-8c1bb50db9d6dc08",
     "title": "PSC Examination updates",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2347,11 +2347,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/psc-examination-updates",
+    "notificationUrl": "https://www.keralapsc.gov.in/psc-examination-updates",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-c4f57dea207a1fb4",
+    "id": "auto-kerala-psc-e89d8cfee71410b4",
     "title": "Question paper for Descriptive Examinations",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2359,7 +2359,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/question-paper-descriptive-exam",
+    "notificationUrl": "https://www.keralapsc.gov.in/question-paper-descriptive-exam",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2600,18 +2600,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-30",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/202609021737158592.pdf",
-    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-mcc-f6b46671a2fbdb52",
-    "title": "AIQ and State Schedule Round 2, 3 & Stray Vacancy 14",
-    "organization": "Medical Counselling Committee",
-    "category": "Medical Counselling",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://mcc.nic.in/current-events-ug/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/20260820667831297.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
@@ -3044,6 +3032,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-30",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/08/202608191035699529.pdf",
+    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-mcc-99ba6525c5b6607a",
+    "title": "SPECIAL STRAY VACANCY ROUND FOR MBBS AND 5TH ROUND OF BDS/B.S.C NURSING 2026",
+    "organization": "Medical Counselling Committee",
+    "category": "Medical Counselling",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://mcc.nic.in/current-events-ug/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/202610301406718444.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
@@ -11291,7 +11291,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
-    "id": "auto-sbi-cf016bbe3b0725a8",
+    "id": "auto-sbi-4782162c7e31b3f6",
     "title": "DOWNLOAD INTERVIEW CALL LETTER",
     "organization": "State Bank of India",
     "category": "Banking",
@@ -11600,18 +11600,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-30",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/57941334/12082026_SCO_05_TRADEFINANCE_select+list.pdf/3709c248-70b7-dd76-385b-188b3a5fcee8?t=1786529916666",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-sbi-bd9b15e306042e55",
-    "title": "LIST OF CANDIDATES PROVISIONALLY SELECTED (NEW)",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/documents/77530/52947104/sco_01_select+list.pdf/a70c9ada-d778-492a-c96d-3573733991cd?t=1749737013733",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
   },
   {
