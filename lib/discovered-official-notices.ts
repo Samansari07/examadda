@@ -157,6 +157,30 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-ctet-65b953b91c3e8ca22786",
+    "title": "FINAL ANSWER KEY",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://ctet.nic.in/previous-year-final-answer-key/",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-ctet-da58ec7c67e2874d14a6",
+    "title": "Duplicate Certificate and Marksheet of CTET Examination upto 2016",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://ctet.nic.in/duplicate-marks-sheet-and-certificate/",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-sbi-b15b11ca79df3384be98",
     "title": "Recruitment Results & Archive",
     "organization": "State Bank of India",
@@ -226,6 +250,30 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-30",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/learning-development",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-386c4767a2ba666f2611",
+    "title": "The Everyday Stories",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/the-everyday-stories",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-a34d2f5e312e41f455de",
+    "title": "Post Your Query",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/post-your-query",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -409,42 +457,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-lic-36501dff089b6310e1fe",
-    "title": "Want to be an LIC Agent",
-    "organization": "LIC",
-    "category": "Insurance",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://licindia.in/careers",
-    "notificationUrl": "https://agencycareer.licindia.in/agt_req/index1.php?_ga=2.132252684.382589343.1685778008-998430420.1685778008&amp;_gac=1.91017576.1685872184.Cj0KCQjw7PCjBhDwARIsANo7Cgnay0YVbEoO5MslMzNkmXXG6Ra5XrDaHLDJKjFV-6L6dFlvzbQ0PDAaAi9pEALw_wcB",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-lic-d34b124cde70b7df9ccf",
-    "title": "Recruitment of AAO Generalists Specialists Assistant Engineers 2025",
-    "organization": "LIC",
-    "category": "Insurance",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://licindia.in/careers",
-    "notificationUrl": "https://licindia.in/recruitment-of-aao-generalists/-specialists/-assistant-engineers-2025",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-lic-420580cc774907ae55d4",
-    "title": "Equal Opportunity Policy",
-    "organization": "LIC",
-    "category": "Insurance",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://licindia.in/careers",
-    "notificationUrl": "https://licindia.in/web/guest/equal-opportunity-policy",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-isro-3ab90b393ed540066119",
     "title": "ADVT NO. ISTRAC:02:2026 dated 27.06.2026: - Revised Answer Key and Post-Objection Response Sheets Read More",
     "organization": "ISRO",
@@ -586,18 +598,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/ICRB_Recruitment12.html",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-indiapost-8a788b092c421eb4884d",
-    "title": "Recruitment Rules Recruitment Rules",
-    "organization": "India Post",
-    "category": "Central Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
-    "notificationUrl": "https://indiapost.gov.in/documents/recruitmentrules",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -1453,18 +1453,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-himachal-employment-8ee8c1173a990d5590cd",
-    "title": "Please Login To Renew Your Application",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/Home/UserLogin",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-uttar-pradesh-employment-9cac558525b98ddfc3cb",
     "title": "आउटसोर्सिंग / प्राइवेट नौकरियां",
     "organization": "Uttar Pradesh Employment Portal",
@@ -2222,10 +2210,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-10-30T14:07:05.556Z",
+  "generatedAt": "2026-10-30T19:20:27.538Z",
   "registeredSources": 78,
-  "checkedSources": 40,
-  "discoveredItems": 185,
+  "checkedSources": 38,
+  "discoveredItems": 184,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2318,11 +2306,20 @@ export const discoveryMeta = {
     },
     {
       "id": "ctet",
-      "discovered": 0,
-      "checked": false,
-      "fetchedUrl": null,
-      "method": null,
-      "pages": []
+      "discovered": 2,
+      "checked": true,
+      "fetchedUrl": "https://ctet.nic.in/",
+      "method": "mixed",
+      "pages": [
+        "https://ctet.nic.in/",
+        "https://ctet.nic.in/document/public-notice-exam-dates-for-22nd-edition-of-ctet/",
+        "https://ctet.nic.in/document-category/public-notices/",
+        "https://ctet.nic.in/sitemap.xml",
+        "https://ctet.nic.in/notifications",
+        "https://ctet.nic.in/notices",
+        "https://ctet.nic.in/recruitment",
+        "https://ctet.nic.in/recruitment-notices"
+      ]
     },
     {
       "id": "railways",
@@ -2351,7 +2348,7 @@ export const discoveryMeta = {
     },
     {
       "id": "sbi",
-      "discovered": 21,
+      "discovered": 29,
       "checked": true,
       "fetchedUrl": "https://sbi.co.in/web/careers",
       "method": "mixed",
@@ -2368,20 +2365,11 @@ export const discoveryMeta = {
     },
     {
       "id": "lic",
-      "discovered": 7,
-      "checked": true,
-      "fetchedUrl": "https://licindia.in/careers",
-      "method": "mixed",
-      "pages": [
-        "https://licindia.in/careers",
-        "https://licindia.in/sitemap.xml",
-        "https://licindia.in/notifications",
-        "https://licindia.in/notices",
-        "https://licindia.in/recruitment",
-        "https://licindia.in/recruitment-notices",
-        "https://licindia.in/career",
-        "https://licindia.in/advertisement"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "epfo",
@@ -2452,20 +2440,11 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 7,
-      "checked": true,
-      "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
-      "method": "mixed",
-      "pages": [
-        "https://indiapost.gov.in/gdsonlineengagement",
-        "https://indiapost.gov.in/sitemap.xml",
-        "https://indiapost.gov.in/notifications",
-        "https://indiapost.gov.in/notices",
-        "https://indiapost.gov.in/recruitment",
-        "https://indiapost.gov.in/recruitment-notices",
-        "https://indiapost.gov.in/career",
-        "https://indiapost.gov.in/careers"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "indian-navy",
@@ -2903,20 +2882,11 @@ export const discoveryMeta = {
     },
     {
       "id": "himachal-employment",
-      "discovered": 1,
-      "checked": true,
-      "fetchedUrl": "https://eemis.hp.gov.in/",
-      "method": "fetch",
-      "pages": [
-        "https://eemis.hp.gov.in/",
-        "https://eemis.hp.gov.in/sitemap.xml",
-        "https://eemis.hp.gov.in/robots.txt",
-        "https://eemis.hp.gov.in/notifications",
-        "https://eemis.hp.gov.in/notices",
-        "https://eemis.hp.gov.in/recruitment",
-        "https://eemis.hp.gov.in/recruitment-notices",
-        "https://eemis.hp.gov.in/career"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "jk-employment",
