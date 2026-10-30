@@ -8,10 +8,10 @@ export type AutoNotification = {
 export const autoNotificationMeta = {
   "generatedAt": "2026-10-30",
   "sourceCount": 78,
-  "successfulSources": 40,
-  "healthySources": 40,
+  "successfulSources": 42,
+  "healthySources": 42,
   "degradedSources": 0,
-  "unreachableSources": 38,
+  "unreachableSources": 36,
   "failedSources": [
     "Assam Public Service Commission",
     "Haryana Employment Portal",
@@ -19,7 +19,6 @@ export const autoNotificationMeta = {
     "Bihar Public Service Commission",
     "Karnataka Public Service Commission",
     "Uttarakhand Public Service Commission",
-    "Himachal Pradesh Employment Portal",
     "IBPS",
     "Indian Coast Guard",
     "Chhattisgarh Public Service Commission",
@@ -33,7 +32,6 @@ export const autoNotificationMeta = {
     "Indian Army",
     "Gujarat Public Service Commission",
     "Sikkim Public Service Commission",
-    "Kerala Employment Portal",
     "West Bengal Employment Bank",
     "DRDO",
     "Haryana Public Service Commission",
@@ -93,6 +91,138 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official BHEL source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-ctet-c3530337d2101d93",
+    "title": "CTET PUBLIC NOTICE SEPT 2026",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/2026051163782266.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-da58ec7c67e2874d",
+    "title": "Duplicate Certificate and Marksheet of CTET Examination upto 2016",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://ctet.nic.in/duplicate-marks-sheet-and-certificate/",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-35e3f85dfe93437c",
+    "title": "ENTRAL BOARD OF SECONDARY EDUCATION (CBSE)\" target=\"_blank\" style=\"\"> CENTRAL BOARD OF SECONDARY EDUCATION (CBSE) Duplicate Certificate and Marksheet of CTET Examination upto 2016 Circular: Revised Fee for Duplicate MS/Certificate/Verification <",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032562.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-62baff57b3854bd2",
+    "title": "Office Memorandum, dated 19 Aug 2018 : Guidelines for conducting written examination for Persons with Benchmark Disabilities",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/03/2022032515.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-c31534fbbda464a8",
+    "title": "PUBLIC NOTICE : Validity Period of TET qualifying certificate",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2022/04/2022042551.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-3263ad107f9d8029",
+    "title": "PUBLIC NOTICE &#8211; CTET Feb 2026 &#8211; RESULT",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/03/202603311458590440.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-edf81a7aa7484554",
+    "title": "Public Notice: Calculation Sheet / Copy of OMR",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/04/202604011187448306.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-af485ea913268099",
+    "title": "PUBLIC NOTICE: CTET examination on 07th & 08th Feb2026",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/02/202602021259534220.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-988ed4272bbf3f80",
+    "title": "Public Notice: CTET Feb-2026 Key Challenge / Scanned Images of OMR (last Date 15/03/2026,up-to 11:59 PM)",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/03/202603121086699841.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-96e4ef1fd56a6b3d",
+    "title": "PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/06/202606151389616278.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-e3d502ed3ef8ab05",
+    "title": "PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW (last date 10.09.2026)",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260907461266783.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-ctet-5a670a71eaa755a5",
     "title": "PUBLIC NOTICE: Exam Dates for 22nd edition of CTET",
     "organization": "CTET",
@@ -102,6 +232,58 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-30",
     "officialUrl": "https://ctet.nic.in/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260914325514446.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-51bfdd12f6af4643",
+    "title": "PUBLIC NOTICE: PwD, Scribe etc. Dated 04.02.2026",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/02/202602052026341619.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ctet-339bbee92773cd8f",
+    "title": "Public Notice: re opening of Online Applications for the 22nd Edition of CTET",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/08/20260825641447501.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source.",
+    "applicationLastDate": "01 September 2026",
+    "applicationDates": "25 August 2026 to 01 September 2026"
+  },
+  {
+    "id": "auto-ctet-79e904896104e47b",
+    "title": "Public Notice: re opening of Online Applications for the 22nd Edition of CTET PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW CTET SEPT 2026 INFORMATION BULLETIN CTET PUBLIC NOTICE SEPT 2026 Public Notice: Calcu",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/202605111250310617.pdf",
+    "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source.",
+    "applicationLastDate": "01 September 2026",
+    "applicationDates": "25 August 2026 to 01 September 2026"
+  },
+  {
+    "id": "auto-ctet-6d9936db032fe15f",
+    "title": "re-exam PUBLIC NOTICE: Dated 24/02/2026",
+    "organization": "CTET",
+    "category": "Teaching",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://ctet.nic.in/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/02/202602251588838774.pdf",
     "description": "Detected automatically from the registered official CTET source. The original authority notice remains the controlling source."
   },
   {
@@ -2049,7 +2231,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-37c45556314fa75d",
+    "id": "auto-kerala-psc-b0408e9076d75cad",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2057,11 +2239,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_omrexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_omrexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-274a1d8e868c2d27",
+    "id": "auto-kerala-psc-bfc1c395481cde09",
     "title": "Answer key-Online Exam",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2069,11 +2251,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_onlineexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_onlineexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-d9b4642e91559d29",
+    "id": "auto-kerala-psc-bf299afc332070c2",
     "title": "Exam Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2081,7 +2263,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/examinations",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/examinations",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2097,7 +2279,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-39e61c0337589778",
+    "id": "auto-kerala-psc-05de1912b0b5a28f",
     "title": "Interview Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2105,7 +2287,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/interviews",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/interviews",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2133,7 +2315,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
-    "id": "auto-kerala-psc-1a0587f41dadec15",
+    "id": "auto-kerala-psc-0011c91375f8ca04",
     "title": "OTV Schedule and Driving Test",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2141,11 +2323,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/otv-schedule-and-driving-test",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/otv-schedule-and-driving-test",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-1709d751f92d2140",
+    "id": "auto-kerala-psc-c019d0c423cf10b5",
     "title": "Procedure for Interview Date Change Requests",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2153,11 +2335,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-8c1bb50db9d6dc08",
+    "id": "auto-kerala-psc-0f5b932826256159",
     "title": "PSC Examination updates",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2165,11 +2347,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/psc-examination-updates",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/psc-examination-updates",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-e89d8cfee71410b4",
+    "id": "auto-kerala-psc-c4f57dea207a1fb4",
     "title": "Question paper for Descriptive Examinations",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2177,7 +2359,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/question-paper-descriptive-exam",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/question-paper-descriptive-exam",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -5337,15 +5519,27 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-ae6746409f797340",
-    "title": "Advance Intimation for Allotment of Examination City to the Applicants of UGC NET June 2025 - reg.",
+    "id": "auto-nta-dfd5594a0a65b169",
+    "title": "73 Release of Admit Card for Joint CSIR UGC NET June 2026 Examination",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Admit Card",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260713164141.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nta-0167cd10e8037c62",
+    "title": "76 Advance Intimation of Examination City Allotted to the Applicants of the Joint CSIR-UGC NET June 2026 Examination",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/images/public-notice-for-advance-city-intimation-of-ugc-net-june-202529-june-2025.pdf",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260708182143.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
@@ -5565,18 +5759,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
-    "id": "auto-nta-26eed83973ed8325",
-    "title": "Correction in particulars of the Online Application Form for UGC – NET June 2025.",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/images/public-notice-for-correction-in-particulars-in-ugc-net-june-2025.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-nta-a9537aa65431c150",
     "title": "Declaration of Results of the January 2026-Semester Examination of the courses conducted in Computer Based Test (CBT) Mode under the Study Webs of Active Learning for Young Aspiring Minds (SWAYAM)-reg",
     "organization": "National Testing Agency",
@@ -5586,18 +5768,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260716153700.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-nta-531b90d63cd500ca",
-    "title": "Declaration of results of UGC NET June 2025 -reg.",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/images/press_release_ugc_net_june_2025.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
@@ -5611,18 +5781,6 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
-  },
-  {
-    "id": "auto-nta-8b47bb1f6460679c",
-    "title": "Display of Provisional Answer Key(s) and Question Paper with Recorded Responses for inviting Challenges to the Provisional Answer Key(s) of UGC - NET June 2025 Examination.",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Answer Key",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/images/public_noticeanswer_key_challengeugc_net_june_2025.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-nta-8ccad39f2f717601",
@@ -5649,18 +5807,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
-    "id": "auto-nta-32dccc4faa4af0bf",
-    "title": "Examination Schedule of UGC - NET June 2025 - reg.",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/images/public-notice-for-schedule-of-ugc-net-june-2025.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-nta-6561a0b4d4f35947",
     "title": "Extension of Facility for Submission of Bank Account Details for Refund of Examination Fee of NEET (UG)-2026-reg.",
     "organization": "National Testing Agency",
@@ -5683,18 +5829,6 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
-  },
-  {
-    "id": "auto-nta-fa4524ecff74a54d",
-    "title": "Extension of last date for submission of online application form for UGC – NET June 2025.",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/images/public-notice-for-extension-of-dates-for-ugc-net-june-2025.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-nta-82b80faa40bf3f6c",
@@ -5947,6 +6081,138 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+  },
+  {
+    "id": "auto-nta-933a762700a3753f",
+    "title": "Notice 20260621193322",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260621193322.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nta-f9bc3751bff1a5bf",
+    "title": "Notice 20260622151619",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260622151619.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nta-11838b9611d8c6e6",
+    "title": "Notice 20260623135541",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260623135541.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nta-936d2024a054ff63",
+    "title": "Notice 20260623193509",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260623193509.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nta-e92cd40fa7d97705",
+    "title": "Notice 20260624220615",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260624220615.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nta-47ce05a6c5e04d59",
+    "title": "Notice 20260625162829",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260625162829.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nta-4551058aa63a2bc0",
+    "title": "Notice 20260625183832",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260625183832.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nta-e7f21db1dfe61ae4",
+    "title": "Notice 20260701161241",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260701161241.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nta-8647fb1c55381eb5",
+    "title": "Notice 20260710141047",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260710141047.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nta-dd1a46e613e275ce",
+    "title": "Notice 20260710141109",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260710141109.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nta-b787d583928cb900",
+    "title": "Notice 20260713193549",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260713193549.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-nta-0a3c69647cfe3f6c",
@@ -6501,18 +6767,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
-    "id": "auto-nta-d1c7af1e04b23fe4",
-    "title": "Opening of the online portal for submission of Online Application Form for UGC-NET June 2025 - reg.",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/images/public-notice-opening-of-the-online-portal-for-submission-of-online-application-form-for-ugc-net-june-2025.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-nta-0f3cbc822a834792",
     "title": "Portal for Submitting Scribe Details by the PwD/PwBD Candidates of NEET (UG)-2026, Scheduled on 21 June 2026-reg.",
     "organization": "National Testing Agency",
@@ -6933,18 +7187,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-e9cfa0c8c3428402",
-    "title": "Release of Admit Card for UGC - NET June 2025 - reg.",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Admit Card",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/images/public-notice-for-admit-card-of-ugc-net-june-202527-june-2025.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-nta-d2168b400948b0db",
     "title": "Release of Admit Card of DUET 2019",
     "organization": "National Testing Agency",
@@ -6978,6 +7220,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "http://www.nta.ac.in/AdmitCard",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-nta-d620fdda857412cc",
+    "title": "Release of Admit Cards for Indian Council of Agricultural Research (ICAR) All India Entrance Examination for Admission [AIEEA]-PG and All India Competitive Examination (AICE)-JRF/SRF (Ph",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Admit Card",
+    "status": "Detected on official source",
+    "lastChecked": "2026-10-30",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260701161538.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
@@ -7050,42 +7304,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-10-30",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261008212430.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-nta-643b0876bf744a2e",
-    "title": "UGC NET EXAM JUNE 2025 SUBJECT/CATEGORY WISE CUTOFF MARKS.",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/images/ugc_net_exam_june_2025_subjectcategory_wise_cutoff_marks.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-nta-f90abc5d09f0356f",
-    "title": "UGC-NET December 2024: Final Answer Key",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Answer Key",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/AnswerKey.html",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-nta-822ba5fc8a890fc0",
-    "title": "UGC-NET June 2025 : Final Answer Key",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Answer Key",
-    "status": "Detected on official source",
-    "lastChecked": "2026-10-30",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/AnswerKey_june2025.html",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
