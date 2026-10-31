@@ -8,10 +8,10 @@ export type AutoNotification = {
 export const autoNotificationMeta = {
   "generatedAt": "2026-10-31",
   "sourceCount": 78,
-  "successfulSources": 39,
-  "healthySources": 39,
+  "successfulSources": 40,
+  "healthySources": 40,
   "degradedSources": 0,
-  "unreachableSources": 39,
+  "unreachableSources": 38,
   "failedSources": [
     "Assam Public Service Commission",
     "Jharkhand Public Service Commission",
@@ -20,7 +20,6 @@ export const autoNotificationMeta = {
     "Bihar Public Service Commission",
     "Karnataka Public Service Commission",
     "Uttarakhand Public Service Commission",
-    "Himachal Pradesh Employment Portal",
     "Rajasthan Employment Portal",
     "IBPS",
     "Indian Coast Guard",
