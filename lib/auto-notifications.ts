@@ -8,10 +8,10 @@ export type AutoNotification = {
 export const autoNotificationMeta = {
   "generatedAt": "2026-11-02",
   "sourceCount": 78,
-  "successfulSources": 42,
-  "healthySources": 42,
+  "successfulSources": 41,
+  "healthySources": 41,
   "degradedSources": 0,
-  "unreachableSources": 36,
+  "unreachableSources": 37,
   "failedSources": [
     "Assam Public Service Commission",
     "Haryana Employment Portal",
@@ -19,6 +19,7 @@ export const autoNotificationMeta = {
     "Bihar Public Service Commission",
     "Karnataka Public Service Commission",
     "Uttarakhand Public Service Commission",
+    "Himachal Pradesh Employment Portal",
     "Rajasthan Employment Portal",
     "IBPS",
     "Indian Coast Guard",
@@ -2387,30 +2388,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-lic-34daaf95b0f069b8",
-    "title": "Engagement of Chief Financial Officer- on contract basis",
-    "organization": "LIC",
-    "category": "Insurance",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://licindia.in/careers",
-    "notificationUrl": "https://licindia.in/engagement-of-chief-financial-officer-on-contract-basis",
-    "description": "Detected automatically from the registered official LIC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-lic-d34b124cde70b7df",
-    "title": "Recruitment of AAO Generalists Specialists Assistant Engineers 2025",
-    "organization": "LIC",
-    "category": "Insurance",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://licindia.in/careers",
-    "notificationUrl": "https://licindia.in/recruitment-of-aao-generalists/-specialists/-assistant-engineers-2025",
-    "description": "Detected automatically from the registered official LIC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-manipur-psc-470b27a66965a04d",
     "title": "Assistant Engineer/Manager Recruitment 2026 – Eligible & Rejected Candidates List, Exam Centre Selection and Admit Card Update. New Updated: 14/10/2026",
     "organization": "Manipur Public Service Commission",
@@ -2531,6 +2508,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-manipur-psc-4a5580f7828cda9e",
+    "title": "Rescheduling of the written examination for recruitment of Assistant Engineer/ Manager (Civil/ Electrical). New Updated: 02/11/2026",
+    "organization": "Manipur Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://mpscmanipur.gov.in/",
+    "notificationUrl": "https://mpscmanipur.gov.in/files/Reschedule%20of%20AE_%20Examination.pdf",
+    "description": "Detected automatically from the registered official Manipur Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-manipur-psc-6c18dfe3c2605e54",
     "title": "Results of the Written Examination and Interview Schedule for Recruitment to the Post of Research Assistant in the Planning Department. New Updated: 12/10/2026",
     "organization": "Manipur Public Service Commission",
@@ -2615,18 +2604,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-mcc-99a6e7dde4e5f674",
-    "title": "CLEAR VACANCY ROUND 2 (MBBS BDS B.SC NURSING) – UG COUNSELLING 2026",
-    "organization": "Medical Counselling Committee",
-    "category": "Medical Counselling",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://mcc.nic.in/current-events-ug/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/20260903254511963.pdf",
-    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-mcc-a83c7fd60bf2140f",
     "title": "CLEAR VACANCY ROUND 3 (MBBS BDS B.SC NURSING) – UG COUNSELLING 2026",
     "organization": "Medical Counselling Committee",
@@ -2636,18 +2613,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-02",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/202609251768661500.pdf",
-    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-mcc-f9ca85261928e2bc",
-    "title": "CLEAR VACANCY STRAY VACANCY ROUND (MBBS BDS B",
-    "organization": "Medical Counselling Committee",
-    "category": "Medical Counselling",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://mcc.nic.in/current-events-ug/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/20261011609899435.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
@@ -2744,6 +2709,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-02",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/202609051813548838.pdf",
+    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-mcc-d6c98fbfa3fb7ecc",
+    "title": "NOTICE FOR ADDITION OF SEATS IN SPECIAL ROUND UG 2026",
+    "organization": "Medical Counselling Committee",
+    "category": "Medical Counselling",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://mcc.nic.in/current-events-ug/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/11/202611021519458016.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
@@ -3035,7 +3012,19 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-mcc-99ba6525c5b6607a",
+    "id": "auto-mcc-72231f76df0e78d3",
+    "title": "Special Round Schedule for State 2026 dated 02.11.2026",
+    "organization": "Medical Counselling Committee",
+    "category": "Medical Counselling",
+    "stage": "Upcoming",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://mcc.nic.in/current-events-ug/",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/11/20261102860443934.pdf",
+    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-mcc-0ed41285cb7af95d",
     "title": "SPECIAL STRAY VACANCY ROUND FOR MBBS AND 5TH ROUND OF BDS/B.S.C NURSING 2026",
     "organization": "Medical Counselling Committee",
     "category": "Medical Counselling",
@@ -3043,7 +3032,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-02",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/10/202610301406718444.pdf",
+    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/11/20261102817404741.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
@@ -3056,18 +3045,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-02",
     "officialUrl": "https://mcc.nic.in/current-events-ug/",
     "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/202609151605377053.pdf",
-    "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-mcc-a8d91b1a891a1ba2",
-    "title": "VIRTUAL VACANCY ROUND 2 (MBBS BDS B.SC NURSING) – UG COUNSELLING 2026",
-    "organization": "Medical Counselling Committee",
-    "category": "Medical Counselling",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://mcc.nic.in/current-events-ug/",
-    "notificationUrl": "https://cdnbbsr.s3waas.gov.in/s3e0f7a4d0ef9b84b83b693bbf3feb8e6e/uploads/2026/09/202609031954399379.pdf",
     "description": "Detected automatically from the registered official Medical Counselling Committee source. The original authority notice remains the controlling source."
   },
   {
@@ -5256,7 +5233,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-cb6a235d3b14c66c",
-    "title": ">67 Examination Date and Schedule for National Initiative for Technical Teachers Training (NITTT) Examination for April-May 2026 Semester Candidates-reg",
+    "title": ">68 Examination Date and Schedule for National Initiative for Technical Teachers Training (NITTT) Examination for April-May 2026 Semester Candidates-reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Upcoming",
@@ -5268,7 +5245,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-d4c35eb8d5a31b48",
-    "title": "14 Vacancy Notification for Librarian - Administration Read More 15",
+    "title": "15 Vacancy Notification for Librarian - Administration Read More 16",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Recruitment",
@@ -5280,7 +5257,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-d3ff4f5f106a48ae",
-    "title": "15 Correction in Particulars of the Online Application Form of Rashtriya Indian Military College Entrance Examination (RIMCEE) Read More 16",
+    "title": "16 Correction in Particulars of the Online Application Form of Rashtriya Indian Military College Entrance Examination (RIMCEE) Read More 17",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5292,7 +5269,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-1a839306ae8f9c4e",
-    "title": "17 Issuance of Certificates for Joint CSIR-UGC NET June 2026, Examination",
+    "title": "18 Issuance of Certificates for Joint CSIR-UGC NET June 2026, Examination",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5304,7 +5281,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-a3dbb11471cbda4f",
-    "title": "18 Public Notice regarding Issuance of e-Certificates for UGC-NET June 2026 Examination Read More 19",
+    "title": "19 Public Notice regarding Issuance of e-Certificates for UGC-NET June 2026 Examination Read More 20",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5316,7 +5293,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-2b43d027984ba27a",
-    "title": "28 NOTICE INVITING QUOTATION (NIQ) FOR EMPANELMENT OF HOTELS IN THE VICINITY OF MINTO ROAD, NEW DELHI Read More 29",
+    "title": "29 NOTICE INVITING QUOTATION (NIQ) FOR EMPANELMENT OF HOTELS IN THE VICINITY OF MINTO ROAD, NEW DELHI Read More 30",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5328,7 +5305,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-0e2ec135aac97187",
-    "title": "29 Publication of the Examination Calendar of the National Testing Agency (NTA) up to March 2027 - reg",
+    "title": "30 Publication of the Examination Calendar of the National Testing Agency (NTA) up to March 2027 - reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Upcoming",
@@ -5340,7 +5317,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-f4a2376150e65c75",
-    "title": "33 Declaration of Result and Rank of the Joint CSIR-UGC NET June 2026 Examination Read More 34",
+    "title": "34 Declaration of Result and Rank of the Joint CSIR-UGC NET June 2026 Examination Read More 35",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Result",
@@ -5352,7 +5329,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-ad29ab9f2d8749b8",
-    "title": "36 Public Notice regarding Advisory to candidates appearing for UGC-NET Re-Examination at Centre in Delhi Read More 37",
+    "title": "37 Public Notice regarding Advisory to candidates appearing for UGC-NET Re-Examination at Centre in Delhi Read More 38",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5364,7 +5341,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-1c190153992ac8fa",
-    "title": "37 Release of Admit Card for the UGC-NET June 2026 re-examination on 9th and 10th September 2026 -reg Read More 38",
+    "title": "38 Release of Admit Card for the UGC-NET June 2026 re-examination on 9th and 10th September 2026 -reg Read More 39",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
@@ -5376,7 +5353,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-6bde38849098ca41",
-    "title": "39 Vacancy notification for Bilingual typist and operation assistant Read More 40",
+    "title": "40 Vacancy notification for Bilingual typist and operation assistant Read More 41",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Recruitment",
@@ -5388,7 +5365,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-494af61254739911",
-    "title": "40 Inviting Online Application Form for Rashtriya Indian Military College Entrance Examination (RIMCEE) - 2026 Read More 41",
+    "title": "41 Inviting Online Application Form for Rashtriya Indian Military College Entrance Examination (RIMCEE) - 2026 Read More 42",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5400,7 +5377,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-a93f42a3986a74a2",
-    "title": "41 Advance Intimation for Allotment of Re-Examination City to the Applicants of UGC-NET June 2026-reg Read More 42",
+    "title": "42 Advance Intimation for Allotment of Re-Examination City to the Applicants of UGC-NET June 2026-reg Read More 43",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5412,7 +5389,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-e3379aa7f7fb505b",
-    "title": "46 Release of Admit Cards for Re-Examination of 49 affected candidates of AIAPGET-2026 at Jaipur - reg",
+    "title": "47 Release of Admit Cards for Re-Examination of 49 affected candidates of AIAPGET-2026 at Jaipur - reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
@@ -5424,7 +5401,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-15e86bb687020fc9",
-    "title": "50 Conduct of Re-Examination For Affected Candidates At Shri Satya Sai PG College, Jaipur Read More 51",
+    "title": "51 Conduct of Re-Examination For Affected Candidates At Shri Satya Sai PG College, Jaipur Read More 52",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5436,7 +5413,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-8012da3cc732b9f0",
-    "title": "53 Public Notice regarding Re-conduct of the English, Commerce and Sociology papers Read More 54",
+    "title": "54 Public Notice regarding Re-conduct of the English, Commerce and Sociology papers Read More 55",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5448,7 +5425,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-4cfa52ea6bbe2aa6",
-    "title": "56 Public Notice regarding Challenge of Provisional Answer Keys for UGC-NET June 2026 Read More 57",
+    "title": "57 Public Notice regarding Challenge of Provisional Answer Keys for UGC-NET June 2026 Read More 58",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
@@ -5460,7 +5437,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-251cc0b46cc4b66a",
-    "title": "58 Provisional AnswerKey Public Notice CSIR NET, UGC NET, ICAR AIEEA (PG) &,AICE (PhD) Read More 59",
+    "title": "59 Provisional AnswerKey Public Notice CSIR NET, UGC NET, ICAR AIEEA (PG) &,AICE (PhD) Read More 60",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5472,7 +5449,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-c3f0ab9b36fcafa9",
-    "title": "61 NTA to Conduct NITTT Examination for April-May 2026 Semester in Remote Proctored Mode-reg",
+    "title": "62 NTA to Conduct NITTT Examination for April-May 2026 Semester in Remote Proctored Mode-reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5483,20 +5460,8 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nta-c5cece8921addc4f",
-    "title": "7 Revised Examination Calender-Reg Read More 8",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261026114247.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-nta-0516d50a5cf0b528",
-    "title": "71 Notice on Fake, Altered, or AI-Generated NEET (UG) 2026 Documents Read More 72",
+    "title": "72 Notice on Fake, Altered, or AI-Generated NEET (UG) 2026 Documents Read More 73",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5508,7 +5473,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-dbdda3c8ddb45f35",
-    "title": "72 NTA Successfully Conducts Joint CSIR-UGC NET June 2026 Examination Across the Nation Read More 73",
+    "title": "73 NTA Successfully Conducts Joint CSIR-UGC NET June 2026 Examination Across the Nation Read More 74",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5520,7 +5485,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-dfd5594a0a65b169",
-    "title": "76 Release of Admit Card for Joint CSIR UGC NET June 2026 Examination",
+    "title": "77 Release of Admit Card for Joint CSIR UGC NET June 2026 Examination",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
@@ -5531,8 +5496,20 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-nta-c5cece8921addc4f",
+    "title": "8 Revised Examination Calender-Reg Read More 9",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261026114247.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-nta-0167cd10e8037c62",
-    "title": "79 Advance Intimation of Examination City Allotted to the Applicants of the Joint CSIR-UGC NET June 2026 Examination",
+    "title": "80 Advance Intimation of Examination City Allotted to the Applicants of the Joint CSIR-UGC NET June 2026 Examination",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5544,7 +5521,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-b2c5d24f752778a1",
-    "title": "8 Inviting Online Application form for the Joint Entrance Examination (JEE)-2027 (Session 1) – Reg",
+    "title": "9 Inviting Online Application form for the Joint Entrance Examination (JEE)-2027 (Session 1) – Reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5604,7 +5581,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-abb6913a2dcd4782",
-    "title": "Advisory and Instructions regarding registration process for Joint Entrance Examination (Main) – 2027 (Session 1) Read More 5",
+    "title": "Advisory and Instructions regarding registration process for Joint Entrance Examination (Main) – 2027 (Session 1) Read More 6",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5652,7 +5629,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-83a1f04092a2f70d",
-    "title": "align_centre\">16 Declaration of the results of the National Initiative for Technical Teachers Training (NITTT) Examination held in July - August 2026-reg Read More 17",
+    "title": "align_centre\">17 Declaration of the results of the National Initiative for Technical Teachers Training (NITTT) Examination held in July - August 2026-reg Read More 18",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Result",
@@ -5784,7 +5761,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-c020937178ce032b",
-    "title": "d class=\"align_centre\">12 Opening of the online registration portal for submission of Online Application Form for UGC-NET December 2026 examination – reg Read More 13",
+    "title": "d class=\"align_centre\">13 Opening of the online registration portal for submission of Online Application Form for UGC-NET December 2026 examination – reg Read More 14",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -6060,7 +6037,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-1fcb0bc8214bc3c8",
-    "title": "n_centre\">57 Advance Intimation of Examination City allotted to the applicants of the All India Ayush Post Graduate Entrance Test (AIAPGET) – 2026 - Reg",
+    "title": "n_centre\">58 Advance Intimation of Examination City allotted to the applicants of the All India Ayush Post Graduate Entrance Test (AIAPGET) – 2026 - Reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -6129,18 +6106,6 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
-  },
-  {
-    "id": "auto-nta-e92cd40fa7d97705",
-    "title": "Notice 20260624220615",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260624220615.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-nta-47ce05a6c5e04d59",
@@ -7043,6 +7008,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
+    "id": "auto-nta-1ceec76c3c541bf8",
+    "title": "Public Notice regarding Correction in particulars of the Online Application Form for UGC-NET December 2026 Read More 2",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261102150155.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-nta-302364f5748d99d3",
     "title": "Public Notice UGC-NET June 2019",
     "organization": "National Testing Agency",
@@ -7116,7 +7093,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-268e1b417b77a02e",
-    "title": "r> 44 Declaration of Scores of the Joint CSIR-UGC NET June 2026 Examination Read More 45",
+    "title": "r> 45 Declaration of Scores of the Joint CSIR-UGC NET June 2026 Examination Read More 46",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -9851,6 +9828,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official POWERGRID source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-powergrid-5cd85f564d4445e2",
+    "title": "OutcomeQ2Results",
+    "organization": "POWERGRID",
+    "category": "PSU / Engineering",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://www.powergrid.in/en/job-opportunities1",
+    "notificationUrl": "https://www.powergrid.in/sites/default/files/quarter2/OutcomeQ2Results.pdf",
+    "description": "Detected automatically from the registered official POWERGRID source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-powergrid-6d99401300346404",
     "title": "Powergrid%20Annual%20Report%202025 26%20Final 1",
     "organization": "POWERGRID",
@@ -10859,6 +10848,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
+    "id": "auto-sbi-666dd7b898429508",
+    "title": "/SPLDRIVE/2026-27/16 DOWNLOAD ADVERTISEMENT (Hindi (592 KB) / English) (714 KB) (NEW) PRE-EXAMINATION TRAINING MATERIALS (NEW) NOTICE: THE ONLINE PRELIMINARY EXAMINATION IS TENTATIVELY SCHEDULED FOR 16",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/08/JA_2026_Backlog_Detailed_Advt_Eng.pdf",
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-sbi-d263e1ee444ba826",
     "title": "895078;\">(NEW) PRE-EXAMINATION TRAINING MATERIALS (NEW) DOWNLOAD PRELIMINARY EXAMINATION CALL LETTER (NEW) ACQUAINT YOURSELF BOOKLET(HINDI/ ENGLISH) (NEW) LINK FOR UPDATION OF SCRIBE DETAILS (NEW) <a aria-label=\"S",
     "organization": "State Bank of India",
@@ -10869,6 +10870,18 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+  },
+  {
+    "id": "auto-sbi-9eebe60eb86c5614",
+    "title": "APPLY ONLINE (02.11.2026 TO 23.11.2026)",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers",
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
   },
   {
     "id": "auto-sbi-5ab0b04b4266c77f",
@@ -11100,7 +11113,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-sbi-c8b1848d62462a4d",
-    "title": "class=\"accordion-content collapse\" id=\"a_section8\" data-parent=\"#jobLinks\"> DOWNLOAD ADVERTISEMENT( HINDI (645 KB) / English) (959 KB) (NEW) PRE-EXAMINATION TRAINING MATERIALS (NEW) <a aria-label=\"Download Call Letter\" href=\"https://ibpsreg",
+    "title": "class=\"accordion-content collapse\" id=\"a_section10\" data-parent=\"#jobLinks\"> DOWNLOAD ADVERTISEMENT( HINDI (645 KB) / English) (959 KB) (NEW) PRE-EXAMINATION TRAINING MATERIALS (NEW) <a aria-label=\"Download Call Letter\" href=\"https://ibpsreg",
     "organization": "State Bank of India",
     "category": "Banking",
     "stage": "Recruitment",
@@ -11891,18 +11904,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-sbi-666dd7b898429508",
-    "title": "R/SPLDRIVE/2026-27/16 DOWNLOAD ADVERTISEMENT (Hindi (592 KB) / English) (714 KB) (NEW) PRE-EXAMINATION TRAINING MATERIALS (NEW) NOTICE: THE ONLINE PRELIMINARY EXAMINATION IS TENTATIVELY SCHEDULED FOR 16",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/08/JA_2026_Backlog_Detailed_Advt_Eng.pdf",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-sbi-2d017bc98e1f0f41",
     "title": "Recruitment Results",
     "organization": "State Bank of India",
@@ -12021,30 +12022,6 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_15_SELECT_LIST_ZONAL+HEAD.pdf/cce7a053-fee6-7f09-652c-15a799435f47?t=1769606133274",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-tamil-nadu-psc-7dc9076582ba8112",
-    "title": "இணையவழியில் விண்ணப்பிக்க Apply online",
-    "organization": "Tamil Nadu Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://www.tnpsc.gov.in/",
-    "notificationUrl": "https://www.tnpsc.gov.in/",
-    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
-  },
-  {
-    "id": "auto-tamil-nadu-psc-3d0b2e9aec82682f",
-    "title": "நுழைவுச்சீட்டு / Hall Ticket ஒருங்கிணைந்த குடிமைப் பணிகள் தேர்வு IV (தொகுதி IV பணிகள்)(அறிவிக்கை எண் 11/2026) Combined Civil Services Examination-IV (Group IV Services) (Notification No",
-    "organization": "Tamil Nadu Public Service Commission",
-    "category": "State Government",
-    "stage": "Admit Card",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://www.tnpsc.gov.in/",
-    "notificationUrl": "https://tnpsc.gov.in/document/tamil/group4_tamil.pdf",
-    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-upsc-1e704a4ee163e39b",
@@ -12251,18 +12228,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-eed7c5cbd8fc0359",
-    "title": "Advertisement No.11 - 2026",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/11%20-%202026",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-5dbbca7b9df838a1",
     "title": "Advertisement No.52 - 2026 (Special)",
     "organization": "UPSC",
@@ -12323,18 +12288,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-e29852410d5db8ab",
-    "title": "CMSE-2026 - Application submission window extended till 23.09.2026 6.00 PM. Candidates may access the form through Login - Examinations - Apply for Examinations - CMSE-2026 Update",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/content/cmse-2026-application-submission-window-extended-till-23092026-600-pm-candidates-may-access",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-aa7dac9c0942bc5e",
     "title": "e - Admit Card: Combined Defence Services Examination (II), 2026",
     "organization": "UPSC",
@@ -12360,7 +12313,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-upsc-954dc9013a08c8ec",
-    "title": "ew-what-new view-id-what_new view-display-id-block view-what-new view-dom-id-18a43b7c31d1ad884caef3d061927271\"> Common mistakes done while filling OMR Sheet/Scannable Attendance List Notice regarding change in recruitment process for six (06) posts advertised vide Advt",
+    "title": "ew-what-new view-id-what_new view-display-id-block view-what-new view-dom-id-7e8fd18e503576ecaa7691ca512773e8\"> Common mistakes done while filling OMR Sheet/Scannable Attendance List Notice regarding change in recruitment process for six (06) posts advertised vide Advt",
     "organization": "UPSC",
     "category": "Central Government",
     "stage": "Recruitment",
@@ -12380,30 +12333,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-02",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Preliminary%29%20Examination%2C%202027/Exam%20Notification",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-4244b72a44cf2225",
-    "title": "Exam Notification: Combined Section Officers (Grade-&#039;B&#039;) LDCE - 2026 and Combined Stenographers (Grade - &#039;B&#039; - Grade - &#039;I&#039;) LDCE - 2022, 2023 and 2024",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%20%28Grade-%27B%27%29%20LDCE%20-%202026%20and%20Combined%20Stenographers%20%28Grade%20-%20%27B%27%20-%20Grade%20-%20%27I%27%29%20LDCE%20-%20%202022%2C%202023%20and%202024/Exam%20Notification",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-993c947b305827ab",
-    "title": "Exam Notification: Engineering Services (Preliminary) Examination, 2027",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202027/Exam%20Notification",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12455,30 +12384,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-1d125320e18ae517",
-    "title": "Extension of updation-login window for CAPF (ACs), Examination, 2026",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/content/extension-updation-login-window-capf-acs-examination-2026",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-2acd4c0d2cbd690a",
-    "title": "Final Result: 02 Posts of Assistant Director Grade-II (IEDS) (Leather & Footwear), Ministry of MSME",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/02%20Posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Leather%20&amp;%20Footwear),%20Ministry%20of%20MSME/Final%20Result",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-fe85a7814b80b34b",
     "title": "Final Result: 03 Posts of Assistant Director (Corporate Law), Ministry of Corporate Affairs",
     "organization": "UPSC",
@@ -12527,6 +12432,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-upsc-8bd17fa8c33ec41c",
+    "title": "Final Result: 363 Posts of Principal in Education Department, GNCTD",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/363%20Posts%20of%20Principal%20in%20Education%20Department,%20GNCTD/Final%20Result",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-upsc-8c9a5bad5f53e8dd",
     "title": "Final Result: CISF AC(EXE) LDCE-2026",
     "organization": "UPSC",
@@ -12536,6 +12453,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-02",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/CISF%20AC%28EXE%29%20LDCE-2026/Final%20Result",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-69c47ef1089e3e5c",
+    "title": "Final Result: Combined Geo-Scientist (Main) Examination, 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026/Final%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12563,6 +12492,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-upsc-e34079ce157b4c01",
+    "title": "Interview Details: 25 Posts Company Prosecutor, Ministry of Corporate Affairs",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/25%20Posts%20Company%20Prosecutor,%20Ministry%20of%20Corporate%20Affairs/Interview%20Details",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-upsc-302b0e06d5394dc1",
     "title": "Interview Schedule: Combined Geo-Scientist (Main) Examination, 2026",
     "organization": "UPSC",
@@ -12572,6 +12513,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-02",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026/Interview%20Schedule",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-f0f918d89a25edd4",
+    "title": "Interview Schedule: Combined Medical Services Examination, 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Upcoming",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Interview%20Schedule",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12587,6 +12540,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-upsc-1d25f3138637acd6",
+    "title": "Interview Schedule: Indian Economic Service - Indian Statistical Service Examination, 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Upcoming",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Indian%20Economic%20Service%20-%20Indian%20Statistical%20Service%20Examination%2C%202026/Interview%20Schedule",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-upsc-386f2131ccd5eb1d",
     "title": "Marks of Recommended Candidates (Reserve List): Central Armed Police Forces (ACs) Examination, 2024",
     "organization": "UPSC",
@@ -12596,6 +12561,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-02",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202024/Marks%20of%20Recommended%20Candidates%20%28Reserve%20List%29",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-86e2489c1f092d2a",
+    "title": "Marks of Recommended Candidates: Central Armed Police Forces (ACs) Examination, 2024",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202024/Marks%20of%20Recommended%20Candidates",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12659,18 +12636,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-40d47d27672e4493",
-    "title": "Notice: 01 Post of Data Processing Assistant, Ministry of Defence",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-02",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/01%20Post%20of%20Data%20Processing%20Assistant,%20Ministry%20of%20Defence/Notice",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-b7749fe9f48a1227",
     "title": "Notice: 02 Posts of Senior Scientific Assistant (Electrical), Ministry of Defence",
     "organization": "UPSC",
@@ -12680,6 +12645,30 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-02",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/02%20Posts%20of%20Senior%20Scientific%20Assistant%20(Electrical),%20Ministry%20of%20Defence/Notice",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-5b05d783210a93d8",
+    "title": "Notice: 04 Posts of Homoeopathic Physician in NDMC",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/04%20Posts%20of%20Homoeopathic%20Physician%20in%20NDMC/Notice",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-615820525f0d3ac9",
+    "title": "Notice: 124 Posts of Principal in Education Department, GNCTD",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/124%20Posts%20of%20Principal%20in%20Education%20Department,%20GNCTD/Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12704,6 +12693,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-02",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/18%20Posts%20of%20Veterinary%20Assistant%20Surgeon,%20Government%20of%20Puducherry/Notice",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-upsc-a78bc50fb035d80c",
+    "title": "Notice: 704 Posts of Vice-Principal in Education department, GNCTD",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/704%20Posts%20of%20Vice-Principal%20in%20Education%20department,%20GNCTD/Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12875,15 +12876,15 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-0e30f281af481f6f",
-    "title": "Written Result (with name): Combined Section Officers&#039; (Grade &#039;B&#039;) LDCE-2025 and Combined Stenographers&#039; (Grade &#039;B&#039;-Grade-&#039;I&#039;) LDCE-2019, 2020 & 2021",
+    "id": "auto-upsc-dcdc99f1c8c52e88",
+    "title": "Written Result (with name): National Defence Academy and Naval Academy Examination (II), 2026",
     "organization": "UPSC",
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
     "lastChecked": "2026-11-02",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Written%20Result%20%28with%20name%29",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026/Written%20Result%20%28with%20name%29",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12899,6 +12900,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-upsc-e8100609dbafab1e",
+    "title": "Written Result: Combined Defence Services Examination (II), 2026",
+    "organization": "UPSC",
+    "category": "Central Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-02",
+    "officialUrl": "https://www.upsc.gov.in/whats-new",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026/Written%20Result",
+    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-upsc-77ab69d34db22cd9",
     "title": "Written Result: Combined Medical Services Examination, 2026",
     "organization": "UPSC",
@@ -12911,15 +12924,15 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-8cb5f5cc5cd49542",
-    "title": "Written Result: Combined Section Officers&#039; (Grade &#039;B&#039;) LDCE-2025 and Combined Stenographers&#039; (Grade &#039;B&#039;-Grade-&#039;I&#039;) LDCE-2019, 2020 & 2021",
+    "id": "auto-upsc-00e8f63bc4b057ac",
+    "title": "Written Result: National Defence Academy and Naval Academy Examination (II), 2026",
     "organization": "UPSC",
     "category": "Central Government",
     "stage": "Result",
     "status": "Detected on official source",
     "lastChecked": "2026-11-02",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Written%20Result",
+    "notificationUrl": "https://www.upsc.gov.in/whats-new/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026/Written%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
