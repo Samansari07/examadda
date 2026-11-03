@@ -637,6 +637,18 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-indiapost-8a788b092c421eb4884d",
+    "title": "Recruitment Rules Recruitment Rules",
+    "organization": "India Post",
+    "category": "Central Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-03",
+    "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
+    "notificationUrl": "https://indiapost.gov.in/documents/recruitmentrules",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-jharkhand-psc-bb54486f7c0018698892",
     "title": "Previous Exam Question Paper(s)",
     "organization": "Jharkhand Public Service Commission",
@@ -781,102 +793,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-kerala-psc-b0408e9076d75cad8d56",
-    "title": "Answer Key-OMR Exams",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-03",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_omrexams",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-bfc1c395481cde091215",
-    "title": "Answer key-Online Exam",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-03",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_onlineexams",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-c4f57dea207a1fb4a647",
-    "title": "Question paper for Descriptive Examinations",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-03",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/question-paper-descriptive-exam",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-0f5b932826256159e36b",
-    "title": "PSC Examination updates",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-03",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/psc-examination-updates",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-c019d0c423cf10b55b16",
-    "title": "Procedure for Interview Date Change Requests",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-03",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-b789b81a3c6161aab023",
-    "title": "INTERVIEW - Assistant Professor in Community Medicine & Medical Gastroenterology (I NCA -Dheevara & III NCA - Muslim) - Medical Education (Cat.No.812/2025&895/25)",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-03",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/inter-812-895-25.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-1a0737318f088aac4364",
-    "title": "OMR Exam/ Online Exam - date change (Cat.No.187/25 , 188/25 , 451-453/25 & 629/25)",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-03",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/scrolling-date%20change.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-0c95777c26494c9df428",
-    "title": "Selection Pending for want",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-03",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/selection-pending-want",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-kerala-psc-37c45556314fa75d79c3",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
@@ -934,6 +850,42 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-03",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-b789b81a3c6161aab023",
+    "title": "INTERVIEW - Assistant Professor in Community Medicine & Medical Gastroenterology (I NCA -Dheevara & III NCA - Muslim) - Medical Education (Cat.No.812/2025&895/25)",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-03",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/inter-812-895-25.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-1a0737318f088aac4364",
+    "title": "OMR Exam/ Online Exam - date change (Cat.No.187/25 , 188/25 , 451-453/25 & 629/25)",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-03",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/scrolling-date%20change.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-0c95777c26494c9df428",
+    "title": "Selection Pending for want",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-03",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/selection-pending-want",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -2306,10 +2258,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-11-03T15:07:02.759Z",
+  "generatedAt": "2026-11-03T21:01:18.618Z",
   "registeredSources": 78,
   "checkedSources": 40,
-  "discoveredItems": 192,
+  "discoveredItems": 188,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2461,13 +2413,19 @@ export const discoveryMeta = {
     },
     {
       "id": "lic",
-      "discovered": 5,
+      "discovered": 7,
       "checked": true,
       "fetchedUrl": "https://licindia.in/careers",
-      "method": "fetch",
+      "method": "mixed",
       "pages": [
         "https://licindia.in/careers",
-        "https://licindia.in/notices"
+        "https://licindia.in/sitemap.xml",
+        "https://licindia.in/notifications",
+        "https://licindia.in/notices",
+        "https://licindia.in/recruitment",
+        "https://licindia.in/recruitment-notices",
+        "https://licindia.in/career",
+        "https://licindia.in/advertisement"
       ]
     },
     {
@@ -2539,11 +2497,20 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 0,
-      "checked": false,
-      "fetchedUrl": null,
-      "method": null,
-      "pages": []
+      "discovered": 7,
+      "checked": true,
+      "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
+      "method": "mixed",
+      "pages": [
+        "https://indiapost.gov.in/gdsonlineengagement",
+        "https://indiapost.gov.in/sitemap.xml",
+        "https://indiapost.gov.in/notifications",
+        "https://indiapost.gov.in/notices",
+        "https://indiapost.gov.in/recruitment",
+        "https://indiapost.gov.in/recruitment-notices",
+        "https://indiapost.gov.in/career",
+        "https://indiapost.gov.in/careers"
+      ]
     },
     {
       "id": "indian-navy",
@@ -2810,14 +2777,7 @@ export const discoveryMeta = {
       "fetchedUrl": "https://npsc.nagaland.gov.in/",
       "method": "mixed",
       "pages": [
-        "https://npsc.nagaland.gov.in/",
-        "https://npsc.nagaland.gov.in/sitemap.xml",
-        "https://npsc.nagaland.gov.in/robots.txt",
-        "https://npsc.nagaland.gov.in/notifications",
-        "https://npsc.nagaland.gov.in/notices",
-        "https://npsc.nagaland.gov.in/recruitment",
-        "https://npsc.nagaland.gov.in/recruitment-notices",
-        "https://npsc.nagaland.gov.in/career"
+        "https://npsc.nagaland.gov.in/"
       ]
     },
     {
@@ -2857,13 +2817,10 @@ export const discoveryMeta = {
     {
       "id": "tamil-nadu-psc",
       "discovered": 0,
-      "checked": true,
-      "fetchedUrl": "https://www.tnpsc.gov.in/",
-      "method": "mixed",
-      "pages": [
-        "https://www.tnpsc.gov.in/",
-        "https://www.tnpsc.gov.in/documents"
-      ]
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "telangana-psc",
