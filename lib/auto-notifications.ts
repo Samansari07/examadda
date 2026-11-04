@@ -8,10 +8,10 @@ export type AutoNotification = {
 export const autoNotificationMeta = {
   "generatedAt": "2026-11-04",
   "sourceCount": 78,
-  "successfulSources": 40,
-  "healthySources": 40,
+  "successfulSources": 42,
+  "healthySources": 42,
   "degradedSources": 0,
-  "unreachableSources": 38,
+  "unreachableSources": 36,
   "failedSources": [
     "Assam Public Service Commission",
     "Haryana Employment Portal",
@@ -19,7 +19,6 @@ export const autoNotificationMeta = {
     "Bihar Public Service Commission",
     "Karnataka Public Service Commission",
     "Uttarakhand Public Service Commission",
-    "Himachal Pradesh Employment Portal",
     "Rajasthan Employment Portal",
     "IBPS",
     "Indian Coast Guard",
@@ -37,7 +36,6 @@ export const autoNotificationMeta = {
     "West Bengal Employment Bank",
     "DRDO",
     "Haryana Public Service Commission",
-    "Tamil Nadu Public Service Commission",
     "Jharkhand Government Recruitment Portal",
     "Madhya Pradesh Employment Portal",
     "Andhra Pradesh Public Service Commission",
@@ -2221,7 +2219,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Jharkhand Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-37c45556314fa75d",
+    "id": "auto-kerala-psc-b0408e9076d75cad",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2229,11 +2227,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-04",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_omrexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_omrexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-274a1d8e868c2d27",
+    "id": "auto-kerala-psc-bfc1c395481cde09",
     "title": "Answer key-Online Exam",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2241,11 +2239,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-04",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_onlineexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_onlineexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-d9b4642e91559d29",
+    "id": "auto-kerala-psc-bf299afc332070c2",
     "title": "Exam Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2253,7 +2251,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-04",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/examinations",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/examinations",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2269,7 +2267,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-39e61c0337589778",
+    "id": "auto-kerala-psc-05de1912b0b5a28f",
     "title": "Interview Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2277,7 +2275,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-04",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/interviews",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/interviews",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2305,7 +2303,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
-    "id": "auto-kerala-psc-1a0587f41dadec15",
+    "id": "auto-kerala-psc-0011c91375f8ca04",
     "title": "OTV Schedule and Driving Test",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2313,11 +2311,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-04",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/otv-schedule-and-driving-test",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/otv-schedule-and-driving-test",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-1709d751f92d2140",
+    "id": "auto-kerala-psc-c019d0c423cf10b5",
     "title": "Procedure for Interview Date Change Requests",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2325,11 +2323,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-04",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-8c1bb50db9d6dc08",
+    "id": "auto-kerala-psc-0f5b932826256159",
     "title": "PSC Examination updates",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2337,11 +2335,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-04",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/psc-examination-updates",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/psc-examination-updates",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-e89d8cfee71410b4",
+    "id": "auto-kerala-psc-c4f57dea207a1fb4",
     "title": "Question paper for Descriptive Examinations",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2349,7 +2347,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-04",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/question-paper-descriptive-exam",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/question-paper-descriptive-exam",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -8185,18 +8183,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-ntpc-c2276bd1bb46326f",
-    "title": "php/jobs-ntpc\" typeof=\"schema:WebPage\" class=\"node node--type-page node--view-mode-full clearfix\"> Notice Advt",
-    "organization": "NTPC",
-    "category": "PSU / Engineering",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-04",
-    "officialUrl": "https://ntpc.co.in/index.php/jobs-ntpc",
-    "notificationUrl": "https://ntpc.co.in/sites/default/files/inline-files/NSB%20Advt.for%20the%20post%20of%20Director%20%281%29%20%281%29.pdf",
-    "description": "Detected automatically from the registered official NTPC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-ntpc-131a081a1e8849c8",
     "title": "Print Advertisements",
     "organization": "NTPC",
@@ -12059,6 +12045,30 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_15_SELECT_LIST_ZONAL+HEAD.pdf/cce7a053-fee6-7f09-652c-15a799435f47?t=1769606133274",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-7dc9076582ba8112",
+    "title": "இணையவழியில் விண்ணப்பிக்க Apply online",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-04",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-3d0b2e9aec82682f",
+    "title": "நுழைவுச்சீட்டு / Hall Ticket ஒருங்கிணைந்த குடிமைப் பணிகள் தேர்வு IV (தொகுதி IV பணிகள்)(அறிவிக்கை எண் 11/2026) Combined Civil Services Examination-IV (Group IV Services) (Notification No",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Admit Card",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-04",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://tnpsc.gov.in/document/tamil/group4_tamil.pdf",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-upsc-1e704a4ee163e39b",
