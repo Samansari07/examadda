@@ -277,6 +277,18 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-sbi-6c8eeed9baf2de2c03b3",
+    "title": "English (1 MB)",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-04",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/documents/77530/57941334/04112026_FINAL+DRAFT+ADVERTISEMENT+CRPD-SCO_29_ENGINEER.pdf/4d1be5a0-727d-61b5-1ea4-85570f437345?t=1793788834905",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-sbi-959dc0475febea7b43e1",
     "title": "ASSISTANT MANAGER (LAW)-JMGS-I : LIST OF CANDIDATES PROVISIONALLY SELECTED FOR INTERVIEW",
     "organization": "State Bank of India",
@@ -334,18 +346,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-04",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SCO_03_BMO_RESULT_10_FORMAT.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-a70d42df62574fce257b",
-    "title": "MARKS SECURED BY THE CANDIDATES IN PRELIMINARY EXAMINATION",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-04",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/popre-results-2026",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -634,18 +634,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-04",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/ICRB_Recruitment12.html",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-indiapost-8a788b092c421eb4884d",
-    "title": "Recruitment Rules Recruitment Rules",
-    "organization": "India Post",
-    "category": "Central Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-04",
-    "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
-    "notificationUrl": "https://indiapost.gov.in/documents/recruitmentrules",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -1513,18 +1501,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-himachal-employment-8ee8c1173a990d5590cd",
-    "title": "Please Login To Renew Your Application",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-04",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/Home/UserLogin",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-uttar-pradesh-employment-9cac558525b98ddfc3cb",
     "title": "आउटसोर्सिंग / प्राइवेट नौकरियां",
     "organization": "Uttar Pradesh Employment Portal",
@@ -2270,10 +2246,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-11-04T09:06:38.065Z",
+  "generatedAt": "2026-11-04T17:13:43.526Z",
   "registeredSources": 78,
-  "checkedSources": 42,
-  "discoveredItems": 189,
+  "checkedSources": 40,
+  "discoveredItems": 187,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2300,13 +2276,10 @@ export const discoveryMeta = {
       "method": "mixed",
       "pages": [
         "https://ssc.gov.in/",
-        "https://ssc.gov.in/notice-board",
         "https://ssc.gov.in/for-candidates",
         "https://ssccr.gov.in/",
         "https://ssccr.gov.in/candidate-corner",
-        "https://ssc.gov.in/sitemap.xml",
-        "https://ssc.gov.in/robots.txt",
-        "https://ssc.gov.in/notifications"
+        "https://ssc.gov.in/sitemap.xml"
       ]
     },
     {
@@ -2425,19 +2398,14 @@ export const discoveryMeta = {
     },
     {
       "id": "lic",
-      "discovered": 7,
+      "discovered": 5,
       "checked": true,
       "fetchedUrl": "https://licindia.in/careers",
       "method": "mixed",
       "pages": [
         "https://licindia.in/careers",
         "https://licindia.in/sitemap.xml",
-        "https://licindia.in/notifications",
-        "https://licindia.in/notices",
-        "https://licindia.in/recruitment",
-        "https://licindia.in/recruitment-notices",
-        "https://licindia.in/career",
-        "https://licindia.in/advertisement"
+        "https://licindia.in/notices"
       ]
     },
     {
@@ -2509,20 +2477,11 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 7,
-      "checked": true,
-      "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
-      "method": "mixed",
-      "pages": [
-        "https://indiapost.gov.in/gdsonlineengagement",
-        "https://indiapost.gov.in/sitemap.xml",
-        "https://indiapost.gov.in/notifications",
-        "https://indiapost.gov.in/notices",
-        "https://indiapost.gov.in/recruitment",
-        "https://indiapost.gov.in/recruitment-notices",
-        "https://indiapost.gov.in/career",
-        "https://indiapost.gov.in/careers"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "indian-navy",
@@ -2691,7 +2650,7 @@ export const discoveryMeta = {
     },
     {
       "id": "kerala-psc",
-      "discovered": 28,
+      "discovered": 38,
       "checked": true,
       "fetchedUrl": "https://www.keralapsc.gov.in/",
       "method": "mixed",
@@ -2701,7 +2660,9 @@ export const discoveryMeta = {
         "https://www.keralapsc.gov.in/robots.txt",
         "https://www.keralapsc.gov.in/notifications",
         "https://www.keralapsc.gov.in/notices",
-        "https://www.keralapsc.gov.in/recruitment"
+        "https://www.keralapsc.gov.in/recruitment",
+        "https://www.keralapsc.gov.in/recruitment-notices",
+        "https://www.keralapsc.gov.in/career"
       ]
     },
     {
@@ -2717,7 +2678,7 @@ export const discoveryMeta = {
       "discovered": 0,
       "checked": true,
       "fetchedUrl": "https://mpsc.gov.in/",
-      "method": "fetch",
+      "method": "mixed",
       "pages": [
         "https://mpsc.gov.in/",
         "https://mpsc.gov.in/sitemap.xml",
@@ -2961,20 +2922,11 @@ export const discoveryMeta = {
     },
     {
       "id": "himachal-employment",
-      "discovered": 1,
-      "checked": true,
-      "fetchedUrl": "https://eemis.hp.gov.in/",
-      "method": "fetch",
-      "pages": [
-        "https://eemis.hp.gov.in/",
-        "https://eemis.hp.gov.in/sitemap.xml",
-        "https://eemis.hp.gov.in/robots.txt",
-        "https://eemis.hp.gov.in/notifications",
-        "https://eemis.hp.gov.in/notices",
-        "https://eemis.hp.gov.in/recruitment",
-        "https://eemis.hp.gov.in/recruitment-notices",
-        "https://eemis.hp.gov.in/career"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "jk-employment",
