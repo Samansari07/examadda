@@ -8,10 +8,10 @@ export type AutoNotification = {
 export const autoNotificationMeta = {
   "generatedAt": "2026-11-05",
   "sourceCount": 78,
-  "successfulSources": 40,
-  "healthySources": 40,
+  "successfulSources": 42,
+  "healthySources": 42,
   "degradedSources": 0,
-  "unreachableSources": 38,
+  "unreachableSources": 36,
   "failedSources": [
     "Assam Public Service Commission",
     "Haryana Employment Portal",
@@ -19,7 +19,6 @@ export const autoNotificationMeta = {
     "Bihar Public Service Commission",
     "Karnataka Public Service Commission",
     "Uttarakhand Public Service Commission",
-    "Himachal Pradesh Employment Portal",
     "Rajasthan Employment Portal",
     "IBPS",
     "Indian Coast Guard",
@@ -28,7 +27,6 @@ export const autoNotificationMeta = {
     "West Bengal Public Service Commission",
     "Jammu & Kashmir Employment Portal",
     "Tamil Nadu Employment Portal",
-    "Indian Air Force",
     "Madhya Pradesh Public Service Commission",
     "Rajasthan Public Service Commission",
     "Karnataka Employment Wing",
@@ -2317,7 +2315,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-1709d751f92d2140",
+    "id": "auto-kerala-psc-c019d0c423cf10b5",
     "title": "Procedure for Interview Date Change Requests",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2325,7 +2323,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-05",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -12049,30 +12047,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-tamil-nadu-psc-7dc9076582ba8112",
-    "title": "இணையவழியில் விண்ணப்பிக்க Apply online",
-    "organization": "Tamil Nadu Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.tnpsc.gov.in/",
-    "notificationUrl": "https://www.tnpsc.gov.in/",
-    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
-  },
-  {
-    "id": "auto-tamil-nadu-psc-3d0b2e9aec82682f",
-    "title": "நுழைவுச்சீட்டு / Hall Ticket ஒருங்கிணைந்த குடிமைப் பணிகள் தேர்வு IV (தொகுதி IV பணிகள்)(அறிவிக்கை எண் 11/2026) Combined Civil Services Examination-IV (Group IV Services) (Notification No",
-    "organization": "Tamil Nadu Public Service Commission",
-    "category": "State Government",
-    "stage": "Admit Card",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.tnpsc.gov.in/",
-    "notificationUrl": "https://tnpsc.gov.in/document/tamil/group4_tamil.pdf",
-    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-1e704a4ee163e39b",
     "title": "Active Examinations",
     "organization": "UPSC",
@@ -12277,18 +12251,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-eed7c5cbd8fc0359",
-    "title": "Advertisement No.11 - 2026",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/11%20-%202026",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-5dbbca7b9df838a1",
     "title": "Advertisement No.52 - 2026 (Special)",
     "organization": "UPSC",
@@ -12310,54 +12272,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-05",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/recruitment/recruitment-advertisement",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-65ba17654844883d",
-    "title": "All candidates appearing in the UPSC Examination will undergo Face Authentication at the venue.",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/content/all-candidates-appearing-upsc-examination-will-undergo-face-authentication-venue",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-8512f108b47b491a",
-    "title": "Annual Calendar 2026",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/content/annual-calendar-2026",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-cc99e19c304df8f0",
-    "title": "Annual Calendar 2027",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Upcoming",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/content/annual-calendar-2027-0",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-e29852410d5db8ab",
-    "title": "CMSE-2026 - Application submission window extended till 23.09.2026 6.00 PM. Candidates may access the form through Login - Examinations - Apply for Examinations - CMSE-2026 Update",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/content/cmse-2026-application-submission-window-extended-till-23092026-600-pm-candidates-may-access",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12385,18 +12299,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-954dc9013a08c8ec",
-    "title": "ew-what-new view-id-what_new view-display-id-block view-what-new view-dom-id-18a43b7c31d1ad884caef3d061927271\"> Common mistakes done while filling OMR Sheet/Scannable Attendance List Notice regarding change in recruitment process for six (06) posts advertised vide Advt",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/sites/default/files/AssttPublProseGNCTD-Notice-Engl-170926Rev.pdf",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-ac9ae6278f96d876",
     "title": "Exam Notification: Combined Geo-Scientist (Preliminary) Examination, 2027",
     "organization": "UPSC",
@@ -12406,42 +12308,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-05",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Preliminary%29%20Examination%2C%202027/Exam%20Notification",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-4244b72a44cf2225",
-    "title": "Exam Notification: Combined Section Officers (Grade-&#039;B&#039;) LDCE - 2026 and Combined Stenographers (Grade - &#039;B&#039; - Grade - &#039;I&#039;) LDCE - 2022, 2023 and 2024",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%20%28Grade-%27B%27%29%20LDCE%20-%202026%20and%20Combined%20Stenographers%20%28Grade%20-%20%27B%27%20-%20Grade%20-%20%27I%27%29%20LDCE%20-%20%202022%2C%202023%20and%202024/Exam%20Notification",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-993c947b305827ab",
-    "title": "Exam Notification: Engineering Services (Preliminary) Examination, 2027",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202027/Exam%20Notification",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-498fcfab4c44ae76",
-    "title": "Examination Notifications",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/exams-related-info/exam-notification",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12457,18 +12323,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-d6d5e80c00edf5c7",
-    "title": "Examination Time Table: Indian Forest Service (Main) Examination, 2026",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Indian%20Forest%20Service%20%28Main%29%20Examination%2C%202026/Examination%20Time%20Table",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-614830a79ee1dbda",
     "title": "Examination Time Table: National Defence Academy and Naval Academy Examination (II), 2026",
     "organization": "UPSC",
@@ -12478,30 +12332,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-05",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026/Examination%20Time%20Table",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-1d125320e18ae517",
-    "title": "Extension of updation-login window for CAPF (ACs), Examination, 2026",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/content/extension-updation-login-window-capf-acs-examination-2026",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-2acd4c0d2cbd690a",
-    "title": "Final Result: 02 Posts of Assistant Director Grade-II (IEDS) (Leather & Footwear), Ministry of MSME",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/02%20Posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Leather%20&amp;%20Footwear),%20Ministry%20of%20MSME/Final%20Result",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12562,18 +12392,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-05",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/CISF%20AC%28EXE%29%20LDCE-2026/Final%20Result",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-a7e51b016f9c43cf",
-    "title": "Final Results",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/final-results",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12661,18 +12479,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-3523af1c3a887b4d",
-    "title": "National Defence Academy and Naval Academy Examination (I), 2027",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28I%29%2C%202027",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-e78c52290e669ba2",
     "title": "Notice regarding change in recruitment process for six (06) posts advertised vide Advt. No. 13-2025",
     "organization": "UPSC",
@@ -12685,18 +12491,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-40d47d27672e4493",
-    "title": "Notice: 01 Post of Data Processing Assistant, Ministry of Defence",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/01%20Post%20of%20Data%20Processing%20Assistant,%20Ministry%20of%20Defence/Notice",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-b7749fe9f48a1227",
     "title": "Notice: 02 Posts of Senior Scientific Assistant (Electrical), Ministry of Defence",
     "organization": "UPSC",
@@ -12706,42 +12500,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-05",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/02%20Posts%20of%20Senior%20Scientific%20Assistant%20(Electrical),%20Ministry%20of%20Defence/Notice",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-b9520389e41346c1",
-    "title": "Notice: 16 Posts of Senior Veterinary Officer, Andaman and Nicobar Administration",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/16%20Posts%20of%20Senior%20Veterinary%20Officer,%20Andaman%20and%20Nicobar%20Administration/Notice",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-bcf1934e74b5f65e",
-    "title": "Notice: 18 Posts of Veterinary Assistant Surgeon, Government of Puducherry",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/18%20Posts%20of%20Veterinary%20Assistant%20Surgeon,%20Government%20of%20Puducherry/Notice",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-6a20b4a62573e75f",
-    "title": "Notice: 74 Posts of Assistant Provident Fund Commissioner, EPFO",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/74%20Posts%20of%20Assistant%20Provident%20Fund%20Commissioner,%20EPFO/Notice",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12829,18 +12587,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-9fc5fcc9d94be072",
-    "title": "Single Window System / e-Appointment",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/single-window-system",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-d91b0be9059c32bb",
     "title": "Status of Lateral Recruitment Cases (Advertisement-wise)",
     "organization": "UPSC",
@@ -12862,18 +12608,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-05",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/recruitment/status-recruitment-cases-advertisementwise",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-bcd3dfeaffdd6d09",
-    "title": "Vacancies in UPSC",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/vacancy-circulars",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
@@ -12901,18 +12635,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-upsc-0e30f281af481f6f",
-    "title": "Written Result (with name): Combined Section Officers&#039; (Grade &#039;B&#039;) LDCE-2025 and Combined Stenographers&#039; (Grade &#039;B&#039;-Grade-&#039;I&#039;) LDCE-2019, 2020 & 2021",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Written%20Result%20%28with%20name%29",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-upsc-446f2ed29e34e67b",
     "title": "Written Result: Central Armed Police Forces (ACs) Examination, 2026",
     "organization": "UPSC",
@@ -12934,30 +12656,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-05",
     "officialUrl": "https://www.upsc.gov.in/whats-new",
     "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Written%20Result",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-8cb5f5cc5cd49542",
-    "title": "Written Result: Combined Section Officers&#039; (Grade &#039;B&#039;) LDCE-2025 and Combined Stenographers&#039; (Grade &#039;B&#039;-Grade-&#039;I&#039;) LDCE-2019, 2020 & 2021",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Written%20Result",
-    "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-upsc-cb79feeb14d78748",
-    "title": "Written Results",
-    "organization": "UPSC",
-    "category": "Central Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-05",
-    "officialUrl": "https://www.upsc.gov.in/whats-new",
-    "notificationUrl": "https://www.upsc.gov.in/written-results-",
     "description": "Detected automatically from the registered official UPSC source. The original authority notice remains the controlling source."
   }
 ];
