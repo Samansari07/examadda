@@ -289,6 +289,18 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-sbi-718ecfc65f108f8d5e13",
+    "title": "ZONAL HEAD (RETAIL) – INTERVIEW SCHEDULE",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-06",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/documents/77530/57941334/06112026_SCO_23_INT_SCH_ZH.pdf/8f9a4e60-78d3-597f-7c20-6c2b09db2142?t=1793962103821",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-sbi-959dc0475febea7b43e1",
     "title": "ASSISTANT MANAGER (LAW)-JMGS-I : LIST OF CANDIDATES PROVISIONALLY SELECTED FOR INTERVIEW",
     "organization": "State Bank of India",
@@ -334,18 +346,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-06",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/57941334/26102026_SCO_02_INT_SCH_DM.pdf/c561966e-48f9-19c2-c81c-b44753c0eaae?t=1793019436923",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-6eb36cba2e19c7d9d8fd",
-    "title": "LIST OF CANDIDATES PROVISIONALLY SELECTED FOR INTERVIEW",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-06",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SCO_03_BMO_RESULT_10_FORMAT.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -493,6 +493,30 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-isro-2e5a86c03fc4f73aba38",
+    "title": "Extension of time for receipt of applications to the post of Group-A and Group-B in DOS Secretariat, Bengaluru, on deputation basis - Advertisement No : A.26011/1/2025-I (Vol.II) dated 09.10.2026 Read More",
+    "organization": "ISRO",
+    "category": "Science & Engineering",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-06",
+    "officialUrl": "https://www.isro.gov.in/Careers.html",
+    "notificationUrl": "https://www.isro.gov.in/DOSRecruitment10.html",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-isro-b4c9d6ecdc9c30a44bcc",
+    "title": "Advertisement No. URSC:01:2026 dated 21.03.2026 - Final Answer keys for the written test to the post of Scientist/Engineer - 'SC' (Industrial Engineering) held on 27.09.2026. Read More",
+    "organization": "ISRO",
+    "category": "Science & Engineering",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-06",
+    "officialUrl": "https://www.isro.gov.in/Careers.html",
+    "notificationUrl": "https://www.isro.gov.in/URSCRecruitment2026_1.html",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-isro-6638ad895cae42b61a1d",
     "title": "Extension of time for receipt of applications to the post of Medical Officer 'SD' - HSFC Advt. No.HSFC:02:RMT:2026 dated 09.10.2026 Read More",
     "organization": "ISRO",
@@ -589,18 +613,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-isro-2e5a86c03fc4f73aba38",
-    "title": "Advt. No. A.26011/1/2025-I, Dated:15.10.2026 - Inviting applications for filling up of Group-A and Group-B posts in Department of Space Secretariat, Bengaluru on deputation basis Read More",
-    "organization": "ISRO",
-    "category": "Science & Engineering",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-06",
-    "officialUrl": "https://www.isro.gov.in/Careers.html",
-    "notificationUrl": "https://www.isro.gov.in/DOSRecruitment10.html",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-isro-027e6b845c47a84bfdef",
     "title": "Advt. No. ISRO:ICRB:03(EMC):2026 Dated 27-08-2026 - Date of conduct of Computer Based Test (CBT) is postponed to 29.10.2026 (Thursday) Read More",
     "organization": "ISRO",
@@ -613,18 +625,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-isro-b4c9d6ecdc9c30a44bcc",
-    "title": "Advertisement No. URSC:01:2026 dated 21.03.2026 -Answer keys for the written test to the post of Scientist/Engineer - 'SC' (Industrial Engineering) held on 27.09.2026. Read More",
-    "organization": "ISRO",
-    "category": "Science & Engineering",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-06",
-    "officialUrl": "https://www.isro.gov.in/Careers.html",
-    "notificationUrl": "https://www.isro.gov.in/URSCRecruitment2026_1.html",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-isro-d71bfb8a36812a928af3",
     "title": "Revised: Advt. No. DS_8C-12012/1/2026-Sec.VIII dated 30/09/2026 - Inviting applications for the post of Director. Read More",
     "organization": "ISRO",
@@ -634,18 +634,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-06",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/NESACRecruitment24.html",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-indiapost-8a788b092c421eb4884d",
-    "title": "Recruitment Rules Recruitment Rules",
-    "organization": "India Post",
-    "category": "Central Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-06",
-    "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
-    "notificationUrl": "https://indiapost.gov.in/documents/recruitmentrules",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -793,6 +781,102 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-kerala-psc-b0408e9076d75cad8d56",
+    "title": "Answer Key-OMR Exams",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-06",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_omrexams",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-bfc1c395481cde091215",
+    "title": "Answer key-Online Exam",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-06",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_onlineexams",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-c4f57dea207a1fb4a647",
+    "title": "Question paper for Descriptive Examinations",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-06",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/question-paper-descriptive-exam",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-0f5b932826256159e36b",
+    "title": "PSC Examination updates",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-06",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/psc-examination-updates",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-c019d0c423cf10b55b16",
+    "title": "Procedure for Interview Date Change Requests",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-06",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-b789b81a3c6161aab023",
+    "title": "INTERVIEW - Assistant Professor in Community Medicine & Medical Gastroenterology (I NCA -Dheevara & III NCA - Muslim) - Medical Education (Cat.No.812/2025&895/25)",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-06",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/inter-812-895-25.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-1a0737318f088aac4364",
+    "title": "OMR Exam/ Online Exam - date change (Cat.No.187/25 , 188/25 , 451-453/25 & 629/25)",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-06",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/scrolling-date%20change.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-0c95777c26494c9df428",
+    "title": "Selection Pending for want",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-06",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/selection-pending-want",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-kerala-psc-37c45556314fa75d79c3",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
@@ -850,42 +934,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-06",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-b789b81a3c6161aab023",
-    "title": "INTERVIEW - Assistant Professor in Community Medicine & Medical Gastroenterology (I NCA -Dheevara & III NCA - Muslim) - Medical Education (Cat.No.812/2025&895/25)",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-06",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/inter-812-895-25.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-1a0737318f088aac4364",
-    "title": "OMR Exam/ Online Exam - date change (Cat.No.187/25 , 188/25 , 451-453/25 & 629/25)",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-06",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/scrolling-date%20change.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-0c95777c26494c9df428",
-    "title": "Selection Pending for want",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-06",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/selection-pending-want",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -1513,18 +1561,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-himachal-employment-8ee8c1173a990d5590cd",
-    "title": "Please Login To Renew Your Application",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-06",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/Home/UserLogin",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-uttar-pradesh-employment-9cac558525b98ddfc3cb",
     "title": "आउटसोर्सिंग / प्राइवेट नौकरियां",
     "organization": "Uttar Pradesh Employment Portal",
@@ -2017,39 +2053,27 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-hpcl-9a869f5db7f19baec4e2",
-    "title": "Public Notice : Recruitment Fraud Alert",
+    "id": "discover-hpcl-48d42ecbcaf90f804d5a",
+    "title": "View Window Advertisement",
     "organization": "HPCL",
     "category": "PSU / Engineering",
-    "stage": "Recruitment",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-11-06",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
-    "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Public%20Notice%20-%20Recruitment%20Fraud%20Alert.pdf",
+    "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Advertisement%20of%20%20HPCL%20GAT%20-%20Refineries%20Division%20FY26-27.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-hpcl-ba8869c95494b8dcb0e5",
-    "title": "Mock Test for Recruitment of Officers",
+    "id": "discover-hpcl-ef7ec3ef03cca2024324",
+    "title": "View Window Advertisement (Content in Hindi)",
     "organization": "HPCL",
     "category": "PSU / Engineering",
-    "stage": "Recruitment",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-11-06",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
-    "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Mock%20Test%20for%20Recruitment%20of%20Officers.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-hpcl-778329ca3403922e633d",
-    "title": "Details of Applications received",
-    "organization": "HPCL",
-    "category": "PSU / Engineering",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-06",
-    "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
-    "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Details%20of%20Applications%20received.pdf",
+    "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Advertisement%20of%20%20HPCL%20GAT%20-%20Refineries%20Division%20FY26-27%20Hindi.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -2062,6 +2086,18 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-06",
     "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
     "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Certificate%20regarding%20physical%20limitation%20in%20an%20examinee%20to%20write.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-hpcl-4a44e330ecfa86078004",
+    "title": "Pre-Employment-Medical-Examination (700 KB)",
+    "organization": "HPCL",
+    "category": "PSU / Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-06",
+    "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
+    "notificationUrl": "https://www.hindustanpetroleum.com/images/Pre-Employment-Medical-Examination.pdf",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -2270,10 +2306,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-11-06T10:49:30.831Z",
+  "generatedAt": "2026-11-06T17:59:22.377Z",
   "registeredSources": 78,
-  "checkedSources": 42,
-  "discoveredItems": 189,
+  "checkedSources": 40,
+  "discoveredItems": 192,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2425,19 +2461,19 @@ export const discoveryMeta = {
     },
     {
       "id": "lic",
-      "discovered": 6,
+      "discovered": 7,
       "checked": true,
       "fetchedUrl": "https://licindia.in/careers",
       "method": "mixed",
       "pages": [
         "https://licindia.in/careers",
-        "https://licindia.in/sitemap.xml",
         "https://licindia.in/notifications",
         "https://licindia.in/notices",
         "https://licindia.in/recruitment",
         "https://licindia.in/recruitment-notices",
         "https://licindia.in/career",
-        "https://licindia.in/advertisement"
+        "https://licindia.in/advertisement",
+        "https://licindia.in/documents"
       ]
     },
     {
@@ -2509,20 +2545,11 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 7,
-      "checked": true,
-      "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
-      "method": "mixed",
-      "pages": [
-        "https://indiapost.gov.in/gdsonlineengagement",
-        "https://indiapost.gov.in/sitemap.xml",
-        "https://indiapost.gov.in/notifications",
-        "https://indiapost.gov.in/notices",
-        "https://indiapost.gov.in/recruitment",
-        "https://indiapost.gov.in/recruitment-notices",
-        "https://indiapost.gov.in/career",
-        "https://indiapost.gov.in/careers"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "indian-navy",
@@ -2963,20 +2990,11 @@ export const discoveryMeta = {
     },
     {
       "id": "himachal-employment",
-      "discovered": 1,
-      "checked": true,
-      "fetchedUrl": "https://eemis.hp.gov.in/",
-      "method": "fetch",
-      "pages": [
-        "https://eemis.hp.gov.in/",
-        "https://eemis.hp.gov.in/sitemap.xml",
-        "https://eemis.hp.gov.in/robots.txt",
-        "https://eemis.hp.gov.in/notifications",
-        "https://eemis.hp.gov.in/notices",
-        "https://eemis.hp.gov.in/recruitment",
-        "https://eemis.hp.gov.in/recruitment-notices",
-        "https://eemis.hp.gov.in/career"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "jk-employment",
