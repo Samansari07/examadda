@@ -157,6 +157,150 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-nta-db9ccc2d44c3a334e4c7",
+    "title": "Final Answer Key",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://ugcnet.nta.ac.in/",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nta-3254fc4bfe0bc053d613",
+    "title": "UGC-NET June 2025 : Final Answer Key",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://ugcnet.nta.ac.in/AnswerKey_june2025.html",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nta-3e11dfc35614b1f636e8",
+    "title": "UGC-NET December 2024: Final Answer Key",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://ugcnet.nta.ac.in/AnswerKey.html",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nta-5cf661326704ec52b98a",
+    "title": "Declaration of results of UGC NET June 2025 -reg.",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://ugcnet.nta.ac.in/images/press_release_ugc_net_june_2025.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nta-0b635993c3a0c3124d85",
+    "title": "UGC NET EXAM JUNE 2025 SUBJECT/CATEGORY WISE CUTOFF MARKS.",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://ugcnet.nta.ac.in/images/ugc_net_exam_june_2025_subjectcategory_wise_cutoff_marks.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nta-6292928d2f3281f97417",
+    "title": "Display of Provisional Answer Key(s) and Question Paper with Recorded Responses for inviting Challenges to the Provisional Answer Key(s) of UGC - NET June 2025 Examination.",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://ugcnet.nta.ac.in/images/public_noticeanswer_key_challengeugc_net_june_2025.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nta-c77bcae32b5a2d6b1b48",
+    "title": "Release of Admit Card for UGC - NET June 2025 - reg.",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Admit Card",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://ugcnet.nta.ac.in/images/public-notice-for-admit-card-of-ugc-net-june-202527-june-2025.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nta-550a83b2962e59d62064",
+    "title": "Advance Intimation for Allotment of Examination City to the Applicants of UGC NET June 2025 - reg.",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://ugcnet.nta.ac.in/images/public-notice-for-advance-city-intimation-of-ugc-net-june-202529-june-2025.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nta-6a496d7aebecd0b05b60",
+    "title": "Release of Admit Card for UGC – NET June 2025 – reg.",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Admit Card",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://ugcnet.nta.ac.in/images/public-notice-for-admit-card-of-ugc-net-june-202526-june-2025.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nta-a6fbe055f23e1bd96434",
+    "title": "Release of Admit Card for UGC – NET June 2025 – reg.",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Admit Card",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://ugcnet.nta.ac.in/images/public-notice-for-admit-card-of-ugc-net-june-2025.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nta-576dc5155b68e2514209",
+    "title": "Advance Intimation for Allotment of Examination City to the Applicants of UGC – NET June 2025 – reg.",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://ugcnet.nta.ac.in/images/public-notice-for-advance-city-intimation-of-ugc-net-june-202528-june-2025.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nta-1b7f54e5da94f0b2330a",
+    "title": "Advance Intimation for Allotment of Examination City to the Applicants of UGC - NET June 2025 - reg.",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://ugcnet.nta.ac.in/images/public-notice-for-advance-city-intimation-of-ugc-net-june-202526and27-june-2025.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-ctet-65b953b91c3e8ca22786",
     "title": "FINAL ANSWER KEY",
     "organization": "CTET",
@@ -250,6 +394,30 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-07",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/web/careers/learning-development",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-386c4767a2ba666f2611",
+    "title": "The Everyday Stories",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/the-everyday-stories",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-a34d2f5e312e41f455de",
+    "title": "Post Your Query",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/post-your-query",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -613,18 +781,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-indiapost-8a788b092c421eb4884d",
-    "title": "Recruitment Rules Recruitment Rules",
-    "organization": "India Post",
-    "category": "Central Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-07",
-    "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
-    "notificationUrl": "https://indiapost.gov.in/documents/recruitmentrules",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-jharkhand-psc-bb54486f7c0018698892",
     "title": "Previous Exam Question Paper(s)",
     "organization": "Jharkhand Public Service Commission",
@@ -769,6 +925,102 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-kerala-psc-b0408e9076d75cad8d56",
+    "title": "Answer Key-OMR Exams",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_omrexams",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-bfc1c395481cde091215",
+    "title": "Answer key-Online Exam",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_onlineexams",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-c4f57dea207a1fb4a647",
+    "title": "Question paper for Descriptive Examinations",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/question-paper-descriptive-exam",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-0f5b932826256159e36b",
+    "title": "PSC Examination updates",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/psc-examination-updates",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-c019d0c423cf10b55b16",
+    "title": "Procedure for Interview Date Change Requests",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-b789b81a3c6161aab023",
+    "title": "INTERVIEW - Assistant Professor in Community Medicine & Medical Gastroenterology (I NCA -Dheevara & III NCA - Muslim) - Medical Education (Cat.No.812/2025&895/25)",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/inter-812-895-25.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-1a0737318f088aac4364",
+    "title": "OMR Exam/ Online Exam - date change (Cat.No.187/25 , 188/25 , 451-453/25 & 629/25)",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/scrolling-date%20change.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-0c95777c26494c9df428",
+    "title": "Selection Pending for want",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-07",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/selection-pending-want",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-kerala-psc-37c45556314fa75d79c3",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
@@ -826,42 +1078,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-07",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-b789b81a3c6161aab023",
-    "title": "INTERVIEW - Assistant Professor in Community Medicine & Medical Gastroenterology (I NCA -Dheevara & III NCA - Muslim) - Medical Education (Cat.No.812/2025&895/25)",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-07",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/inter-812-895-25.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-1a0737318f088aac4364",
-    "title": "OMR Exam/ Online Exam - date change (Cat.No.187/25 , 188/25 , 451-453/25 & 629/25)",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-07",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/scrolling-date%20change.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-0c95777c26494c9df428",
-    "title": "Selection Pending for want",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-07",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/selection-pending-want",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -2234,10 +2450,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-11-07T16:26:16.869Z",
+  "generatedAt": "2026-11-07T20:55:37.166Z",
   "registeredSources": 78,
-  "checkedSources": 41,
-  "discoveredItems": 186,
+  "checkedSources": 40,
+  "discoveredItems": 204,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2283,7 +2499,7 @@ export const discoveryMeta = {
     },
     {
       "id": "nta",
-      "discovered": 0,
+      "discovered": 12,
       "checked": true,
       "fetchedUrl": "https://neet.nta.nic.in/",
       "method": "mixed",
@@ -2291,7 +2507,8 @@ export const discoveryMeta = {
         "https://neet.nta.nic.in/",
         "https://neet.nta.nic.in/public-notices/",
         "https://neet.nta.nic.in/admission-schedule/",
-        "https://jeemain.nta.nic.in/"
+        "https://jeemain.nta.nic.in/",
+        "https://ugcnet.nta.ac.in/"
       ]
     },
     {
@@ -2372,7 +2589,7 @@ export const discoveryMeta = {
     },
     {
       "id": "sbi",
-      "discovered": 21,
+      "discovered": 29,
       "checked": true,
       "fetchedUrl": "https://sbi.co.in/web/careers",
       "method": "mixed",
@@ -2389,14 +2606,13 @@ export const discoveryMeta = {
     },
     {
       "id": "lic",
-      "discovered": 6,
+      "discovered": 7,
       "checked": true,
       "fetchedUrl": "https://licindia.in/careers",
       "method": "mixed",
       "pages": [
         "https://licindia.in/careers",
         "https://licindia.in/sitemap.xml",
-        "https://licindia.in/notifications",
         "https://licindia.in/notices",
         "https://licindia.in/recruitment",
         "https://licindia.in/recruitment-notices",
@@ -2473,20 +2689,11 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 7,
-      "checked": true,
-      "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
-      "method": "mixed",
-      "pages": [
-        "https://indiapost.gov.in/gdsonlineengagement",
-        "https://indiapost.gov.in/sitemap.xml",
-        "https://indiapost.gov.in/notifications",
-        "https://indiapost.gov.in/notices",
-        "https://indiapost.gov.in/recruitment",
-        "https://indiapost.gov.in/recruitment-notices",
-        "https://indiapost.gov.in/career",
-        "https://indiapost.gov.in/careers"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "indian-navy",
