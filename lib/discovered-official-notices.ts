@@ -325,174 +325,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-sbi-b15b11ca79df3384be98",
-    "title": "Recruitment Results & Archive",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/recruitment-results-archive",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-19cf2c0156a7679144eb",
-    "title": "What are we looking for",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/what-are-we-looking-for",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-10e7fbee5bc66d02d8dc",
-    "title": "World of opportunities",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/world-of-opportunities",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-6bf6f5d206ebb8139cb2",
-    "title": "Growth oriented culture",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/growth-oriented-culture",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-bd9b0b2e4222e78e01b0",
-    "title": "Best in class benefits",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/best-in-class-benefits",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-a79e3b6e530f278e4d2a",
-    "title": "Learning & Development",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/learning-development",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-386c4767a2ba666f2611",
-    "title": "The Everyday Stories",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/the-everyday-stories",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-a34d2f5e312e41f455de",
-    "title": "Post Your Query",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/post-your-query",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-6c8eeed9baf2de2c03b3",
-    "title": "English (1 MB)",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/documents/77530/57941334/04112026_FINAL+DRAFT+ADVERTISEMENT+CRPD-SCO_29_ENGINEER.pdf/4d1be5a0-727d-61b5-1ea4-85570f437345?t=1793788834905",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-718ecfc65f108f8d5e13",
-    "title": "ZONAL HEAD (RETAIL) – INTERVIEW SCHEDULE",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/documents/77530/57941334/06112026_SCO_23_INT_SCH_ZH.pdf/8f9a4e60-78d3-597f-7c20-6c2b09db2142?t=1793962103821",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-959dc0475febea7b43e1",
-    "title": "ASSISTANT MANAGER (LAW)-JMGS-I : LIST OF CANDIDATES PROVISIONALLY SELECTED FOR INTERVIEW",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SCO_02_AM_RESULT_10_FORMAT.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-67df5436912eeb5ca935",
-    "title": "DEPUTY MANAGER (LAW)-MMGS-II: LIST OF CANDIDATES PROVISIONALLY SELECTED FOR INTERVIEW",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SCO_02_DM_RESULT_10_FORMAT.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-e328dd0fe72f6b44d884",
-    "title": "ASSISTANT MANAGER (LAW)-JMGS-I - INTERVIEW SCHEDULE",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/documents/77530/57941334/26102026_SCO_02_INT_SCH_AM.pdf/9212c674-a64a-ed85-f6a9-43b8ab4c7355?t=1793019403534",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-05a2b8f75582e8e64506",
-    "title": "DEPUTY MANAGER (LAW)-MMGS-II - INTERVIEW SCHEDULE",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-08",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/documents/77530/57941334/26102026_SCO_02_INT_SCH_DM.pdf/c561966e-48f9-19c2-c81c-b44753c0eaae?t=1793019436923",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-sbi-77a8893ae49381aa56d5",
     "title": "Recruitment Results & Archive",
     "organization": "State Bank of India",
@@ -2390,10 +2222,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-11-08T15:08:49.164Z",
+  "generatedAt": "2026-11-08T19:41:10.638Z",
   "registeredSources": 78,
-  "checkedSources": 41,
-  "discoveredItems": 199,
+  "checkedSources": 40,
+  "discoveredItems": 185,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2529,7 +2361,7 @@ export const discoveryMeta = {
     },
     {
       "id": "sbi",
-      "discovered": 29,
+      "discovered": 9,
       "checked": true,
       "fetchedUrl": "https://sbi.co.in/web/careers",
       "method": "mixed",
@@ -2549,10 +2381,9 @@ export const discoveryMeta = {
       "discovered": 3,
       "checked": true,
       "fetchedUrl": "https://licindia.in/careers",
-      "method": "mixed",
+      "method": "fetch",
       "pages": [
-        "https://licindia.in/careers",
-        "https://licindia.in/sitemap.xml"
+        "https://licindia.in/careers"
       ]
     },
     {
@@ -2625,12 +2456,10 @@ export const discoveryMeta = {
     {
       "id": "indiapost",
       "discovered": 0,
-      "checked": true,
-      "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
-      "method": "fetch",
-      "pages": [
-        "https://indiapost.gov.in/gdsonlineengagement"
-      ]
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "indian-navy",
