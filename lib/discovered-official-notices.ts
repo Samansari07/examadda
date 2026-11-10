@@ -397,30 +397,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-sbi-386c4767a2ba666f2611",
-    "title": "The Everyday Stories",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/the-everyday-stories",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-sbi-a34d2f5e312e41f455de",
-    "title": "Post Your Query",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-10",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/web/careers/post-your-query",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-sbi-6c8eeed9baf2de2c03b3",
     "title": "English (1 MB)",
     "organization": "State Bank of India",
@@ -781,6 +757,162 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-indiapost-8a788b092c421eb4884d",
+    "title": "Recruitment Rules Recruitment Rules",
+    "organization": "India Post",
+    "category": "Central Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
+    "notificationUrl": "https://indiapost.gov.in/documents/recruitmentrules",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-bb54486f7c0018698892",
+    "title": "Previous Exam Question Paper(s)",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/sam_question_paper.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-83f1f31fa505c8024508",
+    "title": "Online Application Form (OAS)",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/FAQ.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-8e7d055bcc8609ce4e99",
+    "title": "Recent Recommendations �",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Recruitment.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-a93e5a3215b28be27898",
+    "title": "Exam Information �",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Exam-Information.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-0a027ba8038bc5d5ce30",
+    "title": "Results/ Answer Keys",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Results.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-c81eb535f46f2eea4a06",
+    "title": "Press Release regarding Combined Civil Services Main Examination Uploaded date:-09-07-2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_01_26_dated_09_07_2026.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-637e934b073804ed04d4",
+    "title": "Press release regarding Combined Civil Services Main Examination Advt.No.01/2026 uploaded date :14-07-2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_01_26_dated_14_07_2026.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-962fc114b86e9b8ce348",
+    "title": "The Jharkhand Examination (Measures Control and Prevention of Unfair Means in Recruitment) Act, 2023 (Jharkhand Act, 15,2023) uploaded date :29-11-2023",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/jharkhand%20gazette_29_11_2023.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-4996e1c2484128ee6ab2",
+    "title": "Press Release regarding Email ID for general queries recruitment & legal matters uploaded Date 18-12-2025",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_dated_18_12_2025.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-0643b4ca5330d78948c8",
+    "title": "Press release regarding Recruitment of Forest Range Officer and Assistant Conservator of Forest (Advt.No.-04/2024 and 03/2024) Dtd.10-08-2026",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Press_Release_03_24_dated_10_08_2026.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-afdc41612096573c17c2",
+    "title": "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/data/Notice.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-jharkhand-psc-22c9c1db87a8865d9693",
+    "title": "Click here to download your application form for the recruitment of Civil Judge (Junior Division) Main Examination Advt.No.-22/2023 (18-07-2026)",
+    "organization": "Jharkhand Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.jpsc.gov.in/",
+    "notificationUrl": "https://www.jpsc.gov.in/Civil_judge_junior_division_22_2023/login.php",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-kerala-psc-37c45556314fa75d79c3",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
@@ -1081,6 +1213,18 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-meghalaya-psc-fd4e5046d5e847484771",
+    "title": "NOTICE TENTATIVE PROGRAMME FOR EXAMINATION Foreman under The Directorate of Printing and Stationery, Meghalaya [Dec 2025] Junior Football Coach under The Directorate of Sports and Youth Affairs Department [May 2026]",
+    "organization": "Meghalaya Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://mpsc.meghalaya.gov.in/",
+    "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice11Nov2026a.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-meghalaya-psc-097559d4894089f773fc",
     "title": "NOTICE PROGRAMME OF PERSONAL INTERVIEW Sub Divisional Officer / Assistant Engineer (Electrical) under P.H.E Department [May 2025] Research Assistant under P.H.E. Department (July 2019)",
     "organization": "Meghalaya Public Service Commission",
@@ -1141,18 +1285,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-meghalaya-psc-5aea3e8cd243a5e022ea",
-    "title": "PROGRAMME FOR EXAMINATION. Assistant Librarian under Meghalaya Administrative Training Institute (December 2025)",
-    "organization": "Meghalaya Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-10",
-    "officialUrl": "https://mpsc.meghalaya.gov.in/",
-    "notificationUrl": "https://mpsc.meghalaya.gov.in/programme/Notice25Aug2026a.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-nagaland-psc-76cf7315d9eb6c4a2a06",
     "title": "Limited Dept. Exam 2022 Marksheet",
     "organization": "Nagaland Public Service Commission",
@@ -1202,7 +1334,7 @@ export const discoveredOfficialNotices = [
   },
   {
     "id": "discover-nagaland-psc-8c5e8c4359326654d2c1",
-    "title": "Notification No. NPSC/EXAM-5/2022 dt. 26.10.2026 (Written Results of Common Educational Services Examination 2026) New",
+    "title": "Notification No. NPSC/EXAM-5/2022 dt. 26.10.2026 (Written Results of Common Educational Services Examination 2026)",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
     "stage": "Result",
@@ -1309,6 +1441,18 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-tamil-nadu-psc-077a18bd4e4d2379f6f6",
+    "title": "COMBINED CIVIL SERVICES EXAMINATION-IV (GROUP-IV SERVICES) (Certificate Verification)",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/english/latest_results.aspx?c=4593",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-tamil-nadu-psc-cd29420c34e6077c9cfb",
     "title": "DEPARTMENTAL EXAMINATIONS - MAY 2026 (Result)",
     "organization": "Tamil Nadu Public Service Commission",
@@ -1342,18 +1486,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-10",
     "officialUrl": "https://www.tnpsc.gov.in/",
     "notificationUrl": "https://www.tnpsc.gov.in/english/checkmemo.aspx?key=6889f3ab-95b2-412b-855f-51df0cf90da8&&type=1&&phase=daf608b3-91de-4c20-91fc-6926ba43f376&&valuekey=e4fa83d0-825e-41c9-bb63-b5d9acdaa77e",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-tamil-nadu-psc-077a18bd4e4d2379f6f6",
-    "title": "COMBINED TECHNICAL SERVICES EXAMINATION (DIPLOMA/ITI LEVEL ) (Certificate Verification)",
-    "organization": "Tamil Nadu Public Service Commission",
-    "category": "State Government",
-    "stage": "Result",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-10",
-    "officialUrl": "https://www.tnpsc.gov.in/",
-    "notificationUrl": "https://www.tnpsc.gov.in/english/latest_results.aspx?c=4593",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -1618,18 +1750,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-10",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/career",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-8ee8c1173a990d5590cd",
-    "title": "Please Login To Renew Your Application",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-10",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/Home/UserLogin",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -2378,10 +2498,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-11-10T09:44:47.307Z",
+  "generatedAt": "2026-11-10T17:47:54.330Z",
   "registeredSources": 78,
-  "checkedSources": 41,
-  "discoveredItems": 198,
+  "checkedSources": 40,
+  "discoveredItems": 208,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2517,7 +2637,7 @@ export const discoveryMeta = {
     },
     {
       "id": "sbi",
-      "discovered": 29,
+      "discovered": 21,
       "checked": true,
       "fetchedUrl": "https://sbi.co.in/web/careers",
       "method": "mixed",
@@ -2534,12 +2654,19 @@ export const discoveryMeta = {
     },
     {
       "id": "lic",
-      "discovered": 3,
+      "discovered": 6,
       "checked": true,
       "fetchedUrl": "https://licindia.in/careers",
-      "method": "fetch",
+      "method": "mixed",
       "pages": [
-        "https://licindia.in/careers"
+        "https://licindia.in/careers",
+        "https://licindia.in/sitemap.xml",
+        "https://licindia.in/notices",
+        "https://licindia.in/recruitment",
+        "https://licindia.in/recruitment-notices",
+        "https://licindia.in/career",
+        "https://licindia.in/advertisement",
+        "https://licindia.in/advertisements"
       ]
     },
     {
@@ -2611,12 +2738,19 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 0,
+      "discovered": 7,
       "checked": true,
       "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
-      "method": "fetch",
+      "method": "mixed",
       "pages": [
-        "https://indiapost.gov.in/gdsonlineengagement"
+        "https://indiapost.gov.in/gdsonlineengagement",
+        "https://indiapost.gov.in/sitemap.xml",
+        "https://indiapost.gov.in/notifications",
+        "https://indiapost.gov.in/notices",
+        "https://indiapost.gov.in/recruitment",
+        "https://indiapost.gov.in/recruitment-notices",
+        "https://indiapost.gov.in/career",
+        "https://indiapost.gov.in/careers"
       ]
     },
     {
@@ -2761,11 +2895,20 @@ export const discoveryMeta = {
     },
     {
       "id": "jharkhand-psc",
-      "discovered": 0,
-      "checked": false,
-      "fetchedUrl": null,
-      "method": null,
-      "pages": []
+      "discovered": 12,
+      "checked": true,
+      "fetchedUrl": "https://www.jpsc.gov.in/",
+      "method": "mixed",
+      "pages": [
+        "https://www.jpsc.gov.in/",
+        "https://www.jpsc.gov.in/sitemap.xml",
+        "https://www.jpsc.gov.in/robots.txt",
+        "https://www.jpsc.gov.in/notifications",
+        "https://www.jpsc.gov.in/notices",
+        "https://www.jpsc.gov.in/recruitment",
+        "https://www.jpsc.gov.in/recruitment-notices",
+        "https://www.jpsc.gov.in/career"
+      ]
     },
     {
       "id": "karnataka-psc",
@@ -2777,7 +2920,7 @@ export const discoveryMeta = {
     },
     {
       "id": "kerala-psc",
-      "discovered": 38,
+      "discovered": 23,
       "checked": true,
       "fetchedUrl": "https://www.keralapsc.gov.in/",
       "method": "mixed",
@@ -2786,10 +2929,7 @@ export const discoveryMeta = {
         "https://www.keralapsc.gov.in/sitemap.xml",
         "https://www.keralapsc.gov.in/robots.txt",
         "https://www.keralapsc.gov.in/notifications",
-        "https://www.keralapsc.gov.in/notices",
-        "https://www.keralapsc.gov.in/recruitment",
-        "https://www.keralapsc.gov.in/recruitment-notices",
-        "https://www.keralapsc.gov.in/career"
+        "https://www.keralapsc.gov.in/notices"
       ]
     },
     {
@@ -3049,20 +3189,11 @@ export const discoveryMeta = {
     },
     {
       "id": "himachal-employment",
-      "discovered": 1,
-      "checked": true,
-      "fetchedUrl": "https://eemis.hp.gov.in/",
-      "method": "fetch",
-      "pages": [
-        "https://eemis.hp.gov.in/",
-        "https://eemis.hp.gov.in/sitemap.xml",
-        "https://eemis.hp.gov.in/robots.txt",
-        "https://eemis.hp.gov.in/notifications",
-        "https://eemis.hp.gov.in/notices",
-        "https://eemis.hp.gov.in/recruitment",
-        "https://eemis.hp.gov.in/recruitment-notices",
-        "https://eemis.hp.gov.in/career"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "jk-employment",
@@ -3083,16 +3214,10 @@ export const discoveryMeta = {
     {
       "id": "kerala-employment",
       "discovered": 0,
-      "checked": true,
-      "fetchedUrl": "https://www.employment.kerala.gov.in/",
-      "method": "mixed",
-      "pages": [
-        "https://www.employment.kerala.gov.in/",
-        "https://www.employment.kerala.gov.in/sitemap.xml",
-        "https://www.employment.kerala.gov.in/robots.txt",
-        "https://www.employment.kerala.gov.in/notifications",
-        "https://www.employment.kerala.gov.in/notices"
-      ]
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "madhya-pradesh-employment",
@@ -3307,9 +3432,7 @@ export const discoveryMeta = {
         "https://www.ongcindia.com/web/eng/career/robots.txt",
         "https://www.ongcindia.com/web/eng/career/notifications",
         "https://www.ongcindia.com/web/eng/career/notices",
-        "https://www.ongcindia.com/web/eng/career/recruitment",
-        "https://www.ongcindia.com/web/eng/career/recruitment-notices",
-        "https://www.ongcindia.com/web/eng/career/career"
+        "https://www.ongcindia.com/web/eng/career/recruitment"
       ]
     },
     {
