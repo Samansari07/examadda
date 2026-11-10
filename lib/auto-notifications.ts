@@ -8,10 +8,10 @@ export type AutoNotification = {
 export const autoNotificationMeta = {
   "generatedAt": "2026-11-10",
   "sourceCount": 78,
-  "successfulSources": 41,
-  "healthySources": 41,
+  "successfulSources": 42,
+  "healthySources": 42,
   "degradedSources": 0,
-  "unreachableSources": 37,
+  "unreachableSources": 36,
   "failedSources": [
     "Assam Public Service Commission",
     "Haryana Employment Portal",
@@ -19,7 +19,6 @@ export const autoNotificationMeta = {
     "Bihar Public Service Commission",
     "Karnataka Public Service Commission",
     "Uttarakhand Public Service Commission",
-    "Himachal Pradesh Employment Portal",
     "Rajasthan Employment Portal",
     "IBPS",
     "Indian Coast Guard",
@@ -5233,7 +5232,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-1ceec76c3c541bf8",
-    "title": "11 Public Notice regarding Correction in particulars of the Online Application Form for UGC-NET December 2026 Read More 12",
+    "title": "12 Public Notice regarding Correction in particulars of the Online Application Form for UGC-NET December 2026 Read More 13",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5245,7 +5244,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-9c65b5007891feea",
-    "title": "12 Extension of Last Date for Successful Transaction of Examination Fee for UGC-NET December 2026 Examination – Reg",
+    "title": "13 Extension of Last Date for Successful Transaction of Examination Fee for UGC-NET December 2026 Examination – Reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5257,7 +5256,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-abb6913a2dcd4782",
-    "title": "15 Advisory and Instructions regarding registration process for Joint Entrance Examination (Main) – 2027 (Session 1) Read More 16",
+    "title": "16 Advisory and Instructions regarding registration process for Joint Entrance Examination (Main) – 2027 (Session 1) Read More 17",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5269,7 +5268,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-82b80faa40bf3f6c",
-    "title": "16 Extension of Last Date for Submission of Online Application Form for UGC-NET December 2026 Examination – Reg",
+    "title": "17 Extension of Last Date for Submission of Online Application Form for UGC-NET December 2026 Examination – Reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5281,7 +5280,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-c5cece8921addc4f",
-    "title": "18 Revised Examination Calender-Reg Read More 19",
+    "title": "19 Revised Examination Calender-Reg Read More 20",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5293,7 +5292,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-b2c5d24f752778a1",
-    "title": "19 Inviting Online Application form for the Joint Entrance Examination (JEE)-2027 (Session 1) – Reg",
+    "title": "20 Inviting Online Application form for the Joint Entrance Examination (JEE)-2027 (Session 1) – Reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5305,7 +5304,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-d4c35eb8d5a31b48",
-    "title": "25 Vacancy Notification for Librarian - Administration Read More 26",
+    "title": "26 Vacancy Notification for Librarian - Administration Read More 27",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Recruitment",
@@ -5317,7 +5316,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-d3ff4f5f106a48ae",
-    "title": "26 Correction in Particulars of the Online Application Form of Rashtriya Indian Military College Entrance Examination (RIMCEE) Read More 27",
+    "title": "27 Correction in Particulars of the Online Application Form of Rashtriya Indian Military College Entrance Examination (RIMCEE) Read More 28",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5329,7 +5328,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-1a839306ae8f9c4e",
-    "title": "28 Issuance of Certificates for Joint CSIR-UGC NET June 2026, Examination",
+    "title": "29 Issuance of Certificates for Joint CSIR-UGC NET June 2026, Examination",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5341,7 +5340,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-a3dbb11471cbda4f",
-    "title": "29 Public Notice regarding Issuance of e-Certificates for UGC-NET June 2026 Examination Read More 30",
+    "title": "30 Public Notice regarding Issuance of e-Certificates for UGC-NET June 2026 Examination Read More 31",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5353,7 +5352,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-2b43d027984ba27a",
-    "title": "39 NOTICE INVITING QUOTATION (NIQ) FOR EMPANELMENT OF HOTELS IN THE VICINITY OF MINTO ROAD, NEW DELHI Read More 40",
+    "title": "40 NOTICE INVITING QUOTATION (NIQ) FOR EMPANELMENT OF HOTELS IN THE VICINITY OF MINTO ROAD, NEW DELHI Read More 41",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5365,7 +5364,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-0e2ec135aac97187",
-    "title": "40 Publication of the Examination Calendar of the National Testing Agency (NTA) up to March 2027 - reg",
+    "title": "41 Publication of the Examination Calendar of the National Testing Agency (NTA) up to March 2027 - reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Upcoming",
@@ -5377,7 +5376,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-f4a2376150e65c75",
-    "title": "44 Declaration of Result and Rank of the Joint CSIR-UGC NET June 2026 Examination Read More 45",
+    "title": "45 Declaration of Result and Rank of the Joint CSIR-UGC NET June 2026 Examination Read More 46",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Result",
@@ -5389,7 +5388,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-ad29ab9f2d8749b8",
-    "title": "47 Public Notice regarding Advisory to candidates appearing for UGC-NET Re-Examination at Centre in Delhi Read More 48",
+    "title": "48 Public Notice regarding Advisory to candidates appearing for UGC-NET Re-Examination at Centre in Delhi Read More 49",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5401,7 +5400,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-1c190153992ac8fa",
-    "title": "48 Release of Admit Card for the UGC-NET June 2026 re-examination on 9th and 10th September 2026 -reg Read More 49",
+    "title": "49 Release of Admit Card for the UGC-NET June 2026 re-examination on 9th and 10th September 2026 -reg Read More 50",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
@@ -5413,7 +5412,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-6bde38849098ca41",
-    "title": "50 Vacancy notification for Bilingual typist and operation assistant Read More 51",
+    "title": "51 Vacancy notification for Bilingual typist and operation assistant Read More 52",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Recruitment",
@@ -5425,7 +5424,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-494af61254739911",
-    "title": "51 Inviting Online Application Form for Rashtriya Indian Military College Entrance Examination (RIMCEE) - 2026 Read More 52",
+    "title": "52 Inviting Online Application Form for Rashtriya Indian Military College Entrance Examination (RIMCEE) - 2026 Read More 53",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5437,7 +5436,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-a93f42a3986a74a2",
-    "title": "52 Advance Intimation for Allotment of Re-Examination City to the Applicants of UGC-NET June 2026-reg Read More 53",
+    "title": "53 Advance Intimation for Allotment of Re-Examination City to the Applicants of UGC-NET June 2026-reg Read More 54",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5449,7 +5448,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-e3379aa7f7fb505b",
-    "title": "57 Release of Admit Cards for Re-Examination of 49 affected candidates of AIAPGET-2026 at Jaipur - reg",
+    "title": "58 Release of Admit Cards for Re-Examination of 49 affected candidates of AIAPGET-2026 at Jaipur - reg",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Admit Card",
@@ -5461,7 +5460,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-15e86bb687020fc9",
-    "title": "61 Conduct of Re-Examination For Affected Candidates At Shri Satya Sai PG College, Jaipur Read More 62",
+    "title": "62 Conduct of Re-Examination For Affected Candidates At Shri Satya Sai PG College, Jaipur Read More 63",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5473,7 +5472,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-8012da3cc732b9f0",
-    "title": "64 Public Notice regarding Re-conduct of the English, Commerce and Sociology papers Read More 65",
+    "title": "65 Public Notice regarding Re-conduct of the English, Commerce and Sociology papers Read More 66",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5485,7 +5484,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-4cfa52ea6bbe2aa6",
-    "title": "67 Public Notice regarding Challenge of Provisional Answer Keys for UGC-NET June 2026 Read More 68",
+    "title": "68 Public Notice regarding Challenge of Provisional Answer Keys for UGC-NET June 2026 Read More 69",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Answer Key",
@@ -5593,7 +5592,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-83a1f04092a2f70d",
-    "title": "align_centre\">27 Declaration of the results of the National Initiative for Technical Teachers Training (NITTT) Examination held in July - August 2026-reg Read More 28",
+    "title": "align_centre\">28 Declaration of the results of the National Initiative for Technical Teachers Training (NITTT) Examination held in July - August 2026-reg Read More 29",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Result",
@@ -5761,7 +5760,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-c020937178ce032b",
-    "title": "d class=\"align_centre\">23 Opening of the online registration portal for submission of Online Application Form for UGC-NET December 2026 examination – reg Read More 24",
+    "title": "d class=\"align_centre\">24 Opening of the online registration portal for submission of Online Application Form for UGC-NET December 2026 examination – reg Read More 25",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5965,7 +5964,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-1f97bb1ce600ee81",
-    "title": "Inviting Online Application for Empanelment of Examination Centres for Conduct of NTA Examinations in Computer-Based Test (CBT) Mode and Pen and Paper Test (PPT) mode-reg Read More 3",
+    "title": "Inviting Online Application for Empanelment of Examination Centres for Conduct of NTA Examinations in Computer-Based Test (CBT) Mode and Pen and Paper Test (PPT) mode-reg Read More 4",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -5977,7 +5976,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-fd2a6793a0779ac5",
-    "title": "Inviting Online Application for Empanelment of Observers for Conduct of NTA Examinations in Computer-Based Test (CBT) Mode and Pen and Paper Test (PPT) mode-reg Read More 2",
+    "title": "Inviting Online Application for Empanelment of Observers for Conduct of NTA Examinations in Computer-Based Test (CBT) Mode and Pen and Paper Test (PPT) mode-reg Read More 3",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -6081,18 +6080,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-10",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://jeemain.nta.nic.in/",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-nta-1fcb0bc8214bc3c8",
-    "title": "n_centre\">68 Advance Intimation of Examination City allotted to the applicants of the All India Ayush Post Graduate Entrance Test (AIAPGET) – 2026 - Reg",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-10",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260813181124.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
@@ -6552,6 +6539,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-nta-52ddae9b1dfcc4b0",
+    "title": "Notice 20261110115638",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261110115638.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-nta-a06a46f1b3333cd1",
     "title": "Notice on Fake, Altered, or AI-Generated NEET (UG) 2026 Documents",
     "organization": "National Testing Agency",
@@ -6673,7 +6672,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-58d991432212334e",
-    "title": "Opening of the online registration portal for submission of Online Application Form for Common Entrance Examination for Army Cadet College-January 2027 Read More 7",
+    "title": "Opening of the online registration portal for submission of Online Application Form for Common Entrance Examination for Army Cadet College-January 2027 Read More 8",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -6877,7 +6876,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-2a7cb614bb5d09a3",
-    "title": "Public Notice for Extension of Last Date for Submission of Online Application Form for Joint CSIR-UGC NET December 2026 Read More 9",
+    "title": "Public Notice for Extension of Last Date for Submission of Online Application Form for Joint CSIR-UGC NET December 2026 Read More 10",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -7021,7 +7020,7 @@ export const autoNotifications:AutoNotification[] = [
   },
   {
     "id": "auto-nta-268e1b417b77a02e",
-    "title": "r> 55 Declaration of Scores of the Joint CSIR-UGC NET June 2026 Examination Read More 56",
+    "title": "r> 56 Declaration of Scores of the Joint CSIR-UGC NET June 2026 Examination Read More 57",
     "organization": "National Testing Agency",
     "category": "Entrance / Eligibility",
     "stage": "Notice",
@@ -12600,8 +12599,152 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-tamil-nadu-psc-7dc9076582ba8112",
-    "title": "இணையவழியில் விண்ணப்பிக்க Apply online",
+    "id": "auto-tamil-nadu-psc-f47bbbe1facf15c0",
+    "title": "COMBINED TECHNICAL SERVICES EXAMINATION (DIPLOMA / ITI LEVEL) (Counselling)",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/english/Counselling.aspx",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-077a18bd4e4d2379",
+    "title": "COMBINED TECHNICAL SERVICES EXAMINATION (DIPLOMA/ITI LEVEL ) (Certificate Verification)",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/english/latest_results.aspx?c=4593",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-c9f56c6d38533f07",
+    "title": "COMBINED TECHNICAL SERVICES EXAMINATION (ITI LEVEL - II) (Certificate Verification)",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/english/checkmemo.aspx?key=6889f3ab-95b2-412b-855f-51df0cf90da8&&type=1&&phase=daf608b3-91de-4c20-91fc-6926ba43f376&&valuekey=e4fa83d0-825e-41c9-bb63-b5d9acdaa77e",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-ca49fa464b7eafb0",
+    "title": "Combined Technical Services Examination (Non-Interview Posts) results",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://tnpsc.gov.in/results/cts/index.aspx?key=$KoWKOks454S0K234FDS54ww4dyy45422SLS",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-cd29420c34e6077c",
+    "title": "DEPARTMENTAL EXAMINATIONS - MAY 2026 (Result)",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/english/DResultView.aspx",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-548fa28417844967",
+    "title": "DPC - Schedule",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Upcoming",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/English/dpc_schedule.html",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-61594c993734c027",
+    "title": "Exam Dashboard",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://tnpsc.gov.in/examdashboard/web/index.aspx?key=ksojs2efre3WFDsw5",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-20fc809a42b7a0c0",
+    "title": "Group II & IIA Services - Preliminary Examination Results",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://tnpsc.gov.in/results/index.aspx",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-39cd195c66433d11",
+    "title": "Group IV Services - Examination Results",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://tnpsc.gov.in/results/index.html",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-4e02b61117814152",
+    "title": "How To Apply",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/English/guidelines.html",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-97f4f4f9ed7f43f4",
+    "title": "Objective Type (With Answer Keys) / Previous year Question papers",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Answer Key",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/English/answerkeys.aspx",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-89d42a1f0e983f78",
+    "title": "Objective Type (Without Tentative Answer Keys)",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Answer Key",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/English/question_paper_withoutkey.html",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-7248c711667466c0",
+    "title": "OneTime Registration New User",
     "organization": "Tamil Nadu Public Service Commission",
     "category": "State Government",
     "stage": "Notice",
@@ -12609,18 +12752,78 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-10",
     "officialUrl": "https://www.tnpsc.gov.in/",
     "notificationUrl": "https://www.tnpsc.gov.in/",
-    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead. Application status not confirmed automatically because no reliable closing date was extracted; check the official notice."
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
-    "id": "auto-tamil-nadu-psc-3d0b2e9aec82682f",
-    "title": "நுழைவுச்சீட்டு / Hall Ticket ஒருங்கிணைந்த குடிமைப் பணிகள் தேர்வு IV (தொகுதி IV பணிகள்)(அறிவிக்கை எண் 11/2026) Combined Civil Services Examination-IV (Group IV Services) (Notification No",
+    "id": "auto-tamil-nadu-psc-60d99dff29631039",
+    "title": "PRESS RELEASE REGARDING THE PUBLICATION OF AMENDMENT AND ADDENDUM 11B/2026 DATED 04.11.2026 TO THE NOTIFICATION FOR POSTS IN COMBINED CIVIL SERVICES EXAMINATION-IV (GROUP-IV SERVICES) (Press Release)",
     "organization": "Tamil Nadu Public Service Commission",
     "category": "State Government",
-    "stage": "Admit Card",
+    "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-11-10",
     "officialUrl": "https://www.tnpsc.gov.in/",
-    "notificationUrl": "https://tnpsc.gov.in/document/tamil/group4_tamil.pdf",
+    "notificationUrl": "https://www.tnpsc.gov.in/english/press_releases.aspx",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-12a335e4cb83e812",
+    "title": "Recruitment Requisition",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/Hod/RecruitmentRequisition.aspx",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-c07fd81f448e35f8",
+    "title": "Scheme of Examination",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/English/scheme.html",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-283b5253f7d111d5",
+    "title": "Selection Schedule",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Upcoming",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/DynamicPortals/SelectionSchedule/SelectionSchedule.aspx",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-d966e0a509611f45",
+    "title": "TENDER CANCELLATION NOTICE-LIMITED TENDER FOR VIDEOGRAPHING THE CONDUCT OF EXAMINATION IN ALL THE VENUES AT CHENNAI AND AT TNPSC OFFICE PREMISES AS REQUIRED BY THE TNPSC FROM TIME TO TIME ON A RENTAL BASIS (Tender)",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/english/tender.aspx",
+    "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-tamil-nadu-psc-fd446739be318fa2",
+    "title": "Updated Tentative Annual Recruitment Planner- 2023",
+    "organization": "Tamil Nadu Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-10",
+    "officialUrl": "https://www.tnpsc.gov.in/",
+    "notificationUrl": "https://www.tnpsc.gov.in/English/annual_planner.html",
     "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
