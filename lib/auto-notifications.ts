@@ -8,18 +8,18 @@ export type AutoNotification = {
 export const autoNotificationMeta = {
   "generatedAt": "2026-11-20",
   "sourceCount": 78,
-  "successfulSources": 43,
-  "healthySources": 43,
+  "successfulSources": 42,
+  "healthySources": 42,
   "degradedSources": 0,
-  "unreachableSources": 35,
+  "unreachableSources": 36,
   "failedSources": [
     "Assam Public Service Commission",
     "Jharkhand Public Service Commission",
+    "Uttar Pradesh Public Service Commission",
     "Haryana Employment Portal",
     "Indian Navy",
     "Karnataka Public Service Commission",
     "Uttarakhand Public Service Commission",
-    "Himachal Pradesh Employment Portal",
     "Rajasthan Employment Portal",
     "Indian Coast Guard",
     "Chhattisgarh Public Service Commission",
@@ -40,6 +40,7 @@ export const autoNotificationMeta = {
     "Madhya Pradesh Employment Portal",
     "Andhra Pradesh Public Service Commission",
     "Himachal Pradesh Public Service Commission",
+    "Telangana Public Service Commission",
     "Maharashtra Employment Portal",
     "Indian Railways / RRB",
     "ESIC",
@@ -1903,6 +1904,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-20",
     "officialUrl": "https://www.ibps.in/index.php/crp-updates/",
     "notificationUrl": "https://www.ibps.in/wp-content/uploads/Annexure-I_Updated_As-on-20.07.2026.pdf",
+    "description": "Detected automatically from the registered official IBPS source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-ibps-1210ebcee9bcbb11",
+    "title": "20 Nov 2026 Result Status of Online Main Examination for CRP-PO/MTs-XVI",
+    "organization": "IBPS",
+    "category": "Banking",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-20",
+    "officialUrl": "https://www.ibps.in/index.php/crp-updates/",
+    "notificationUrl": "http://ibpsreg.ibps.in/crppoxvijun26/fresta_nov26/login.php?appid=faa539a0e8fbd226743a6f2df8768c59",
     "description": "Detected automatically from the registered official IBPS source. The original authority notice remains the controlling source."
   },
   {
@@ -5266,15 +5279,15 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-nagaland-psc-babc0e59919c17f7",
-    "title": "Notification NO.NPSC/EXAM-5/2024 dt.29.10.2026 (Debarment)",
+    "id": "auto-nagaland-psc-1b5247c1de6256ba",
+    "title": "Notification No.NPSC/CESE-2012 dt. 19.11.2026 (CESE 2026 Second Shortlist) New",
     "organization": "Nagaland Public Service Commission",
     "category": "State Government",
     "stage": "Notice",
     "status": "Detected on official source",
     "lastChecked": "2026-11-20",
     "officialUrl": "https://npsc.nagaland.gov.in/",
-    "notificationUrl": "https://npsc.nagaland.gov.in/notification/179326214285643",
+    "notificationUrl": "https://npsc.nagaland.gov.in/notification/179514768486596",
     "description": "Detected automatically from the registered official Nagaland Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -5384,6 +5397,18 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/devPortalList",
     "description": "Detected automatically from the registered official National Career Service source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
+  },
+  {
+    "id": "auto-nta-3e9d3cbe61c9ab87",
+    "title": "> Publication of Vacancy Notification for Various Posts in the NTA Read More 6",
+    "organization": "National Testing Agency",
+    "category": "Entrance / Eligibility",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-20",
+    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
+    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261120110558.pdf",
+    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-nta-2a7cb614bb5d09a3",
@@ -5563,18 +5588,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-20",
     "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
     "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260916195948.pdf",
-    "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-nta-b4382d4394b56cb3",
-    "title": "5 Publication of Vacancy Notification for Various Posts in the NTA Read More 6",
-    "organization": "National Testing Agency",
-    "category": "Entrance / Eligibility",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-20",
-    "officialUrl": "https://www.nta.ac.in/NoticeBoardArchive",
-    "notificationUrl": "https://www.nta.ac.in/Download/Notice/Notice_20261112175300.pdf",
     "description": "Detected automatically from the registered official National Testing Agency source. The original authority notice remains the controlling source."
   },
   {
@@ -13016,54 +13029,6 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://www.tnpsc.gov.in/",
     "notificationUrl": "https://www.tnpsc.gov.in/English/annual_planner.html",
     "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-telangana-psc-5998bf04f850417f",
-    "title": "APPLICATION FOR MPSO / ASO (07/G/ES/2026)",
-    "organization": "Telangana Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-20",
-    "officialUrl": "https://www.tspsc.gov.in/",
-    "notificationUrl": "https://application.tgpsc.gov.in/CandidateEntryG072026",
-    "description": "Detected automatically from the registered official Telangana Public Service Commission source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-telangana-psc-3ff68d3ba86710ec",
-    "title": "CANDIDATE'S RESPONSE SHEET ALONG WITH FINAL KEY ASSISTANT ENVIRONMENTAL ENGINEER (02/OG/PC/2026)",
-    "organization": "Telangana Public Service Commission",
-    "category": "State Government",
-    "stage": "Answer Key",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-20",
-    "officialUrl": "https://www.tspsc.gov.in/",
-    "notificationUrl": "https://websitenew.tgpsc.gov.in/downloadresponcesheet?accessId=02OGnbtuqersUIopMQPK",
-    "description": "Detected automatically from the registered official Telangana Public Service Commission source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-telangana-psc-d907d2b7fca1fd34",
-    "title": "CANDIDATE'S RESPONSE SHEET ALONG WITH FINAL KEY ASSISTANT SCIENTIST (ANALYST GRADE -II) (01/OG/PC/2026)",
-    "organization": "Telangana Public Service Commission",
-    "category": "State Government",
-    "stage": "Answer Key",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-20",
-    "officialUrl": "https://www.tspsc.gov.in/",
-    "notificationUrl": "https://websitenew.tgpsc.gov.in/downloadresponcesheet?accessId=01OG26TiumiyreliersaCRS",
-    "description": "Detected automatically from the registered official Telangana Public Service Commission source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-telangana-psc-329619bf1d8e19d1",
-    "title": "OTR NEW REGISTRATION",
-    "organization": "Telangana Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-20",
-    "officialUrl": "https://www.tspsc.gov.in/",
-    "notificationUrl": "https://otr.tgpsc.gov.in/login?type=new",
-    "description": "Detected automatically from the registered official Telangana Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-upsc-b28fd49a50343e71",
