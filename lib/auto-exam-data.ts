@@ -5,10 +5,38 @@ export type AutoExamOverride = {
 };
 
 export const autoExamDataMeta = {
-  "generatedAt": "2026-11-21",
+  "generatedAt": "2026-11-22",
   "sourceCount": 78,
-  "overrideCount": 0,
+  "overrideCount": 1,
   "policy": "Only conservative values extracted from an official notice/bulletin are applied. Missing or ambiguous fields are never invented."
 };
 
-export const autoExamData:Record<string,AutoExamOverride> = {};
+export const autoExamData:Record<string,AutoExamOverride> = {
+  "sbi-po-2026": {
+    "slug": "sbi-po-2026",
+    "name": "SBI Probationary Officer",
+    "organization": "State Bank of India",
+    "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/11/Biodata_Form_for_PO.pdf",
+    "sourceUrl": "https://sbi.co.in/web/careers",
+    "lastVerified": "2026-11-22",
+    "detectedAt": "2026-11-22",
+    "confidence": "high",
+    "evidenceCount": 2,
+    "evidence": [
+      "qualification",
+      "nationality"
+    ],
+    "evidenceSnippets": [
+      "educational qualifications the aggregate marks of all subjects whether optional pass course or honors course should be shown in total marks marks obtained column please enclose copies of relevant certificates mark sheets marks educational qualification month year total marks percentage obtained of passing 10 10th std certificate proof of age 12 12th std cert",
+      "nationality religion a b 4 a father s husband s name and occupation profession designation b mother s name and occupation 5 a nationality father mother husband wife b place of birth of husband wife district state 6 a category tick the approp"
+    ],
+    "sourceTitle": "METRIC TEST IN REMOTE PROCTORED (RPA) MODE (NEW) --> NOTICE: THE INTERVIEWS FOR THE RECRUITMENT OF PROBATIONARY OFFICERS WILL COMMENCE FROM 01",
+    "cycleYear": 2026,
+    "cycleSlug": "sbi-po-2026",
+    "qualification": "rse should be shown in total marks marks obtained column please enclose copies of relevant certificates mark sheets marks educational qualification month year total marks percentage obtained of passing 10 10th std certificate proof of age 12 12th std certifica",
+    "nationality": "pation profession designation b mother s name and occupation 5 a nationality father mother husband wife b place of birth of husband wife district state 6 a category tick the approp",
+    "dataCertainty": "confirmed",
+    "applicationStatus": "unknown",
+    "refreshedThisCycle": true
+  }
+};
