@@ -697,6 +697,30 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-sbi-386c4767a2ba666f2611",
+    "title": "The Everyday Stories",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-21",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/the-everyday-stories",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-a34d2f5e312e41f455de",
+    "title": "Post Your Query",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-21",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/post-your-query",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-sbi-6c8eeed9baf2de2c03b3",
     "title": "English (1 MB)",
     "organization": "State Bank of India",
@@ -1054,6 +1078,18 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-21",
     "officialUrl": "https://www.isro.gov.in/Careers.html",
     "notificationUrl": "https://www.isro.gov.in/NESACRecruitment24.html",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-indiapost-8a788b092c421eb4884d",
+    "title": "Recruitment Rules Recruitment Rules",
+    "organization": "India Post",
+    "category": "Central Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-21",
+    "officialUrl": "https://indiapost.gov.in/gdsonlineengagement",
+    "notificationUrl": "https://indiapost.gov.in/documents/recruitmentrules",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -1585,6 +1621,114 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-nagaland-psc-76cf7315d9eb6c4a2a06",
+    "title": "Limited Dept. Exam 2022 Marksheet",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-21",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/services/marksheet/ltd-exam",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nagaland-psc-1b5247c1de6256bad0ad",
+    "title": "Notification No.NPSC/CESE-2012 dt. 19.11.2026 (CESE 2026 Second Shortlist) New",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-21",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/notification/179514768486596",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nagaland-psc-77e4652880c2b3a92bbf",
+    "title": "Notification NO.NPSC/ADVT-1/04(VOL-1) dt.16.11.2026 (CTSE 2026 Re-exam) New",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-21",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/notification/179482504377076",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nagaland-psc-cf5338e40bf52255ecc3",
+    "title": "Notification No. NPSC/EXAM-11/CESE/2021 dt. 16.11.2026 ( CESE 2026 Disability Certificate Re-verification) New",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-21",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/notification/179482429521853",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nagaland-psc-a123ea7d8d79cacc8b60",
+    "title": "Notification NPSC/EXAM-18/2023 dt. 13.11.2026 (Stenographer Recruitment Examination 2026) New",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-21",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/notification/179456175768197",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nagaland-psc-893266e8a7e6d5c10953",
+    "title": "Notification No. NPSC/EXAM-17/2021 dt. 12.11.2026 (Answer Keys of Combined Technical Services Examination 2026) (Updated) New",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-21",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/notification/179456594089030",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nagaland-psc-f4671f71158ee8699edf",
+    "title": "Exams View and Apply Exams. Open",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-21",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/applicant/exams",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nagaland-psc-b792be0ded91ff7fc461",
+    "title": "OTR OTR service is currently closed. Please apply during the notified period. Open",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-21",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/applicant/otr",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-nagaland-psc-8883392d71997d226b77",
+    "title": "Results Browse and view the archives of results. Open",
+    "organization": "Nagaland Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-21",
+    "officialUrl": "https://npsc.nagaland.gov.in/",
+    "notificationUrl": "https://npsc.nagaland.gov.in/results",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-tamil-nadu-psc-c07fd81f448e35f80e96",
     "title": "Scheme of Examination",
     "organization": "Tamil Nadu Public Service Commission",
@@ -1942,18 +2086,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-21",
     "officialUrl": "https://ncs.gov.in/devPortalList",
     "notificationUrl": "https://ncs.gov.in/career",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-himachal-employment-8ee8c1173a990d5590cd",
-    "title": "Please Login To Renew Your Application",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-21",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/Home/UserLogin",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -2558,10 +2690,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-11-21T09:45:03.573Z",
+  "generatedAt": "2026-11-21T17:29:29.227Z",
   "registeredSources": 78,
-  "checkedSources": 41,
-  "discoveredItems": 213,
+  "checkedSources": 40,
+  "discoveredItems": 224,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2599,7 +2731,7 @@ export const discoveryMeta = {
     },
     {
       "id": "ibps",
-      "discovered": 34,
+      "discovered": 35,
       "checked": true,
       "fetchedUrl": "https://www.ibps.in/index.php/crp-updates/",
       "method": "mixed",
@@ -2609,9 +2741,9 @@ export const discoveryMeta = {
         "https://www.ibps.in/index.php/rural-bank-xv/",
         "https://www.ibps.in/index.php/management-trainees-xvi/",
         "https://www.ibps.in/index.php/specialist-officers-xvi/",
-        "https://www.ibps.in/index.php/crp-updates/sitemap.xml",
         "https://www.ibps.in/index.php/crp-updates/robots.txt",
-        "https://www.ibps.in/index.php/crp-updates/notifications"
+        "https://www.ibps.in/index.php/crp-updates/notifications",
+        "https://www.ibps.in/index.php/crp-updates/recruitment-notices"
       ]
     },
     {
@@ -2706,7 +2838,7 @@ export const discoveryMeta = {
     },
     {
       "id": "sbi",
-      "discovered": 21,
+      "discovered": 29,
       "checked": true,
       "fetchedUrl": "https://sbi.co.in/web/careers",
       "method": "mixed",
@@ -2723,12 +2855,15 @@ export const discoveryMeta = {
     },
     {
       "id": "lic",
-      "discovered": 3,
+      "discovered": 5,
       "checked": true,
       "fetchedUrl": "https://licindia.in/careers",
-      "method": "fetch",
+      "method": "mixed",
       "pages": [
-        "https://licindia.in/careers"
+        "https://licindia.in/careers",
+        "https://licindia.in/sitemap.xml",
+        "https://licindia.in/notifications",
+        "https://licindia.in/notices"
       ]
     },
     {
@@ -2800,11 +2935,20 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 0,
-      "checked": false,
-      "fetchedUrl": null,
-      "method": null,
-      "pages": []
+      "discovered": 7,
+      "checked": true,
+      "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
+      "method": "mixed",
+      "pages": [
+        "https://indiapost.gov.in/gdsonlineengagement",
+        "https://indiapost.gov.in/sitemap.xml",
+        "https://indiapost.gov.in/notifications",
+        "https://indiapost.gov.in/notices",
+        "https://indiapost.gov.in/recruitment",
+        "https://indiapost.gov.in/recruitment-notices",
+        "https://indiapost.gov.in/career",
+        "https://indiapost.gov.in/careers"
+      ]
     },
     {
       "id": "indian-navy",
@@ -3066,12 +3210,12 @@ export const discoveryMeta = {
     },
     {
       "id": "nagaland-psc",
-      "discovered": 0,
+      "discovered": 9,
       "checked": true,
-      "fetchedUrl": "https://npsc.nagaland.gov.in/sitemap.xml",
+      "fetchedUrl": "https://npsc.nagaland.gov.in/",
       "method": "mixed",
       "pages": [
-        "https://npsc.nagaland.gov.in/sitemap.xml"
+        "https://npsc.nagaland.gov.in/"
       ]
     },
     {
@@ -3238,20 +3382,11 @@ export const discoveryMeta = {
     },
     {
       "id": "himachal-employment",
-      "discovered": 1,
-      "checked": true,
-      "fetchedUrl": "https://eemis.hp.gov.in/",
-      "method": "fetch",
-      "pages": [
-        "https://eemis.hp.gov.in/",
-        "https://eemis.hp.gov.in/sitemap.xml",
-        "https://eemis.hp.gov.in/robots.txt",
-        "https://eemis.hp.gov.in/notifications",
-        "https://eemis.hp.gov.in/notices",
-        "https://eemis.hp.gov.in/recruitment",
-        "https://eemis.hp.gov.in/recruitment-notices",
-        "https://eemis.hp.gov.in/career"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "jk-employment",
@@ -3313,19 +3448,10 @@ export const discoveryMeta = {
     {
       "id": "punjab-employment",
       "discovered": 0,
-      "checked": true,
-      "fetchedUrl": "https://www.pgrkam.com/",
-      "method": "fetch",
-      "pages": [
-        "https://www.pgrkam.com/",
-        "https://www.pgrkam.com/sitemap.xml",
-        "https://www.pgrkam.com/robots.txt",
-        "https://www.pgrkam.com/notifications",
-        "https://www.pgrkam.com/notices",
-        "https://www.pgrkam.com/recruitment",
-        "https://www.pgrkam.com/recruitment-notices",
-        "https://www.pgrkam.com/career"
-      ]
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "rajasthan-employment",
