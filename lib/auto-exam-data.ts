@@ -37,6 +37,7 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "nationality": "pation profession designation b mother s name and occupation 5 a nationality father mother husband wife b place of birth of husband wife district state 6 a category tick the approp",
     "dataCertainty": "confirmed",
     "applicationStatus": "unknown",
-    "refreshedThisCycle": true
+    "refreshedThisCycle": false,
+    "stale": true
   }
 };
