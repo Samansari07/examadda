@@ -601,6 +601,174 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-sbi-b15b11ca79df3384be98",
+    "title": "Recruitment Results & Archive",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/recruitment-results-archive",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-19cf2c0156a7679144eb",
+    "title": "What are we looking for",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/what-are-we-looking-for",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-10e7fbee5bc66d02d8dc",
+    "title": "World of opportunities",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/world-of-opportunities",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-6bf6f5d206ebb8139cb2",
+    "title": "Growth oriented culture",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/growth-oriented-culture",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-bd9b0b2e4222e78e01b0",
+    "title": "Best in class benefits",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/best-in-class-benefits",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-a79e3b6e530f278e4d2a",
+    "title": "Learning & Development",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/learning-development",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-386c4767a2ba666f2611",
+    "title": "The Everyday Stories",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/the-everyday-stories",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-a34d2f5e312e41f455de",
+    "title": "Post Your Query",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/web/careers/post-your-query",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-6c8eeed9baf2de2c03b3",
+    "title": "English (1 MB)",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/documents/77530/57941334/04112026_FINAL+DRAFT+ADVERTISEMENT+CRPD-SCO_29_ENGINEER.pdf/4d1be5a0-727d-61b5-1ea4-85570f437345?t=1793788834905",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-718ecfc65f108f8d5e13",
+    "title": "ZONAL HEAD (RETAIL) – INTERVIEW SCHEDULE",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/documents/77530/57941334/06112026_SCO_23_INT_SCH_ZH.pdf/8f9a4e60-78d3-597f-7c20-6c2b09db2142?t=1793962103821",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-c7693c4db2e6310a76f0",
+    "title": "DEPUTY CTO (ENTERPRISE ARCHITECTURE)- INTERVIEW SCHEDULE",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/documents/77530/57941334/19112026_SCO_13_INT_SCH_DYCTO.pdf/5d43a3b4-4527-ba83-9b47-37e0925fdcc0?t=1795087239884",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-7b59b3f805da88c9148e",
+    "title": "DEPUTY MANAGER (AI SPECIALISTS) - INTERVIEW SCHEDULE",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/documents/77530/57941334/18112026_SCO_11_INT_SCH.pdf/855e83b5-7c8a-3253-7996-57d3085d26e5?t=1795003900788",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-959dc0475febea7b43e1",
+    "title": "ASSISTANT MANAGER (LAW)-JMGS-I : LIST OF CANDIDATES PROVISIONALLY SELECTED FOR INTERVIEW",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SCO_02_AM_RESULT_10_FORMAT.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-sbi-67df5436912eeb5ca935",
+    "title": "DEPUTY MANAGER (LAW)-MMGS-II: LIST OF CANDIDATES PROVISIONALLY SELECTED FOR INTERVIEW",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/10/SCO_02_DM_RESULT_10_FORMAT.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-sbi-77a8893ae49381aa56d5",
     "title": "Recruitment Results & Archive",
     "organization": "State Bank of India",
@@ -1129,6 +1297,102 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
+    "id": "discover-kerala-psc-b0408e9076d75cad8d56",
+    "title": "Answer Key-OMR Exams",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_omrexams",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-bfc1c395481cde091215",
+    "title": "Answer key-Online Exam",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Result",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_onlineexams",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-c4f57dea207a1fb4a647",
+    "title": "Question paper for Descriptive Examinations",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/question-paper-descriptive-exam",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-0f5b932826256159e36b",
+    "title": "PSC Examination updates",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/psc-examination-updates",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-c019d0c423cf10b55b16",
+    "title": "Procedure for Interview Date Change Requests",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-b789b81a3c6161aab023",
+    "title": "INTERVIEW - Assistant Professor in Community Medicine & Medical Gastroenterology (I NCA -Dheevara & III NCA - Muslim) - Medical Education (Cat.No.812/2025&895/25)",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/inter-812-895-25.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-1a0737318f088aac4364",
+    "title": "OMR Exam/ Online Exam - date change (Cat.No.187/25 , 188/25 , 451-453/25 & 629/25)",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/scrolling-date%20change.pdf",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
+    "id": "discover-kerala-psc-0c95777c26494c9df428",
+    "title": "Selection Pending for want",
+    "organization": "Kerala Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.keralapsc.gov.in/",
+    "notificationUrl": "https://www.keralapsc.gov.in/selection-pending-want",
+    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
+  },
+  {
     "id": "discover-kerala-psc-37c45556314fa75d79c3",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
@@ -1186,42 +1450,6 @@ export const discoveredOfficialNotices = [
     "lastChecked": "2026-11-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
     "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-b789b81a3c6161aab023",
-    "title": "INTERVIEW - Assistant Professor in Community Medicine & Medical Gastroenterology (I NCA -Dheevara & III NCA - Muslim) - Medical Education (Cat.No.812/2025&895/25)",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-23",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/inter-812-895-25.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-1a0737318f088aac4364",
-    "title": "OMR Exam/ Online Exam - date change (Cat.No.187/25 , 188/25 , 451-453/25 & 629/25)",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-23",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/sites/default/files/inline-files/scrolling-date%20change.pdf",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
-    "id": "discover-kerala-psc-0c95777c26494c9df428",
-    "title": "Selection Pending for want",
-    "organization": "Kerala Public Service Commission",
-    "category": "State Government",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-23",
-    "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/selection-pending-want",
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
@@ -1981,18 +2209,6 @@ export const discoveredOfficialNotices = [
     "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
   },
   {
-    "id": "discover-himachal-employment-8ee8c1173a990d5590cd",
-    "title": "Please Login To Renew Your Application",
-    "organization": "Himachal Pradesh Employment Portal",
-    "category": "State Government",
-    "stage": "Recruitment",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-23",
-    "officialUrl": "https://eemis.hp.gov.in/",
-    "notificationUrl": "https://eemis.hp.gov.in/Home/UserLogin",
-    "description": "Discovered automatically from a registered official source. Verify the original authority notice before applying."
-  },
-  {
     "id": "discover-uttar-pradesh-employment-9cac558525b98ddfc3cb",
     "title": "आउटसोर्सिंग / प्राइवेट नौकरियां",
     "organization": "Uttar Pradesh Employment Portal",
@@ -2594,10 +2810,10 @@ export const discoveredOfficialNotices = [
   }
 ] as const;
 export const discoveryMeta = {
-  "generatedAt": "2026-11-23T09:01:36.301Z",
+  "generatedAt": "2026-11-23T21:20:13.202Z",
   "registeredSources": 78,
-  "checkedSources": 42,
-  "discoveredItems": 216,
+  "checkedSources": 41,
+  "discoveredItems": 234,
   "sourceResults": [
     {
       "id": "upsc",
@@ -2635,7 +2851,7 @@ export const discoveryMeta = {
     },
     {
       "id": "ibps",
-      "discovered": 31,
+      "discovered": 32,
       "checked": true,
       "fetchedUrl": "https://www.ibps.in/index.php/crp-updates/",
       "method": "mixed",
@@ -2742,7 +2958,7 @@ export const discoveryMeta = {
     },
     {
       "id": "sbi",
-      "discovered": 9,
+      "discovered": 29,
       "checked": true,
       "fetchedUrl": "https://sbi.co.in/web/careers",
       "method": "mixed",
@@ -2759,19 +2975,13 @@ export const discoveryMeta = {
     },
     {
       "id": "lic",
-      "discovered": 7,
+      "discovered": 3,
       "checked": true,
       "fetchedUrl": "https://licindia.in/careers",
       "method": "mixed",
       "pages": [
         "https://licindia.in/careers",
-        "https://licindia.in/sitemap.xml",
-        "https://licindia.in/notifications",
-        "https://licindia.in/notices",
-        "https://licindia.in/recruitment",
-        "https://licindia.in/recruitment-notices",
-        "https://licindia.in/career",
-        "https://licindia.in/advertisement"
+        "https://licindia.in/sitemap.xml"
       ]
     },
     {
@@ -2843,19 +3053,13 @@ export const discoveryMeta = {
     },
     {
       "id": "indiapost",
-      "discovered": 7,
+      "discovered": 1,
       "checked": true,
       "fetchedUrl": "https://indiapost.gov.in/gdsonlineengagement",
       "method": "mixed",
       "pages": [
         "https://indiapost.gov.in/gdsonlineengagement",
-        "https://indiapost.gov.in/sitemap.xml",
-        "https://indiapost.gov.in/notifications",
-        "https://indiapost.gov.in/notices",
-        "https://indiapost.gov.in/recruitment",
-        "https://indiapost.gov.in/recruitment-notices",
-        "https://indiapost.gov.in/career",
-        "https://indiapost.gov.in/careers"
+        "https://indiapost.gov.in/sitemap.xml"
       ]
     },
     {
@@ -3297,20 +3501,11 @@ export const discoveryMeta = {
     },
     {
       "id": "himachal-employment",
-      "discovered": 1,
-      "checked": true,
-      "fetchedUrl": "https://eemis.hp.gov.in/",
-      "method": "fetch",
-      "pages": [
-        "https://eemis.hp.gov.in/",
-        "https://eemis.hp.gov.in/sitemap.xml",
-        "https://eemis.hp.gov.in/robots.txt",
-        "https://eemis.hp.gov.in/notifications",
-        "https://eemis.hp.gov.in/notices",
-        "https://eemis.hp.gov.in/recruitment",
-        "https://eemis.hp.gov.in/recruitment-notices",
-        "https://eemis.hp.gov.in/career"
-      ]
+      "discovered": 0,
+      "checked": false,
+      "fetchedUrl": null,
+      "method": null,
+      "pages": []
     },
     {
       "id": "jk-employment",
