@@ -8,10 +8,10 @@ export type AutoNotification = {
 export const autoNotificationMeta = {
   "generatedAt": "2026-11-23",
   "sourceCount": 78,
-  "successfulSources": 40,
-  "healthySources": 40,
+  "successfulSources": 42,
+  "healthySources": 42,
   "degradedSources": 0,
-  "unreachableSources": 38,
+  "unreachableSources": 36,
   "failedSources": [
     "Assam Public Service Commission",
     "Jharkhand Public Service Commission",
@@ -19,7 +19,6 @@ export const autoNotificationMeta = {
     "Indian Navy",
     "Karnataka Public Service Commission",
     "Uttarakhand Public Service Commission",
-    "Himachal Pradesh Employment Portal",
     "Rajasthan Employment Portal",
     "Indian Coast Guard",
     "Chhattisgarh Public Service Commission",
@@ -42,7 +41,6 @@ export const autoNotificationMeta = {
     "Madhya Pradesh Employment Portal",
     "Andhra Pradesh Public Service Commission",
     "Himachal Pradesh Public Service Commission",
-    "Telangana Public Service Commission",
     "Maharashtra Employment Portal",
     "Indian Railways / RRB",
     "ESIC",
@@ -1441,6 +1439,66 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-hpcl-ca3a70e8d3a1c3ab",
+    "title": "Notice for Fake Website: LPG",
+    "organization": "HPCL",
+    "category": "PSU / Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
+    "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/Bewareoffraudsters_Ad_in_newspapers.pdf",
+    "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-hpcl-94b1e88ed45d55f4",
+    "title": "Notice for Fake Website: LPG (451 KB)",
+    "organization": "HPCL",
+    "category": "PSU / Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
+    "notificationUrl": "https://hpcladmin.hindustanpetroleum.com/img/UploadedFiles/News/Images/e9779bd56e30402bb9c5c0988dfcd08d.pdf",
+    "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-hpcl-1a490f3c68d5fecb",
+    "title": "Notice for Fake Website: Retail",
+    "organization": "HPCL",
+    "category": "PSU / Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
+    "notificationUrl": "https://www.hindustanpetroleum.com/documents/pdf/20190104_103405_new.pdf",
+    "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-hpcl-0d1c34222d7b851e",
+    "title": "Notice for Fake Website: Retail (441 KB)",
+    "organization": "HPCL",
+    "category": "PSU / Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
+    "notificationUrl": "https://hpcladmin.hindustanpetroleum.com/img/UploadedFiles/News/Images/dcd935efd2c94ffba9a14b34afffd4d4.pdf",
+    "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-hpcl-b6297fd76930a109",
+    "title": "Notice for Fake Website: Retail (441 KB) Notice for Fake Website: LPG (451 KB) Caution: Parallel Marketing System of LPG (81 KB) Most Viewed <a href=\"https:/",
+    "organization": "HPCL",
+    "category": "PSU / Engineering",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.hindustanpetroleum.com/job-openings",
+    "notificationUrl": "https://hpcladmin.hindustanpetroleum.com/img/UploadedFiles/News/Images/d9878da2c50340329f590f8c9b5fdead.pdf",
+    "description": "Detected automatically from the registered official HPCL source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-hpcl-4a44e330ecfa8607",
     "title": "Pre-Employment-Medical-Examination (700 KB)",
     "organization": "HPCL",
@@ -2137,7 +2195,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official ISRO source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-b0408e9076d75cad",
+    "id": "auto-kerala-psc-37c45556314fa75d",
     "title": "Answer Key-OMR Exams",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2145,11 +2203,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_omrexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_omrexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-bfc1c395481cde09",
+    "id": "auto-kerala-psc-274a1d8e868c2d27",
     "title": "Answer key-Online Exam",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2157,11 +2215,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/answerkey_onlineexams",
+    "notificationUrl": "https://www.keralapsc.gov.in/answerkey_onlineexams",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-bf299afc332070c2",
+    "id": "auto-kerala-psc-d9b4642e91559d29",
     "title": "Exam Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2169,7 +2227,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/examinations",
+    "notificationUrl": "https://www.keralapsc.gov.in/examinations",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2185,7 +2243,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-05de1912b0b5a28f",
+    "id": "auto-kerala-psc-39e61c0337589778",
     "title": "Interview Schedule",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2193,7 +2251,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/interviews",
+    "notificationUrl": "https://www.keralapsc.gov.in/interviews",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -2221,7 +2279,7 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source. Direct document link was not retained because it did not match the registered authority for this organization; the official authority page is shown instead."
   },
   {
-    "id": "auto-kerala-psc-0011c91375f8ca04",
+    "id": "auto-kerala-psc-1a0587f41dadec15",
     "title": "OTV Schedule and Driving Test",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2229,11 +2287,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/otv-schedule-and-driving-test",
+    "notificationUrl": "https://www.keralapsc.gov.in/otv-schedule-and-driving-test",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-c019d0c423cf10b5",
+    "id": "auto-kerala-psc-1709d751f92d2140",
     "title": "Procedure for Interview Date Change Requests",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2241,11 +2299,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/procedure-interview-date-change-requests",
+    "notificationUrl": "https://www.keralapsc.gov.in/procedure-interview-date-change-requests",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-0f5b932826256159",
+    "id": "auto-kerala-psc-8c1bb50db9d6dc08",
     "title": "PSC Examination updates",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2253,11 +2311,11 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/psc-examination-updates",
+    "notificationUrl": "https://www.keralapsc.gov.in/psc-examination-updates",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-kerala-psc-c4f57dea207a1fb4",
+    "id": "auto-kerala-psc-e89d8cfee71410b4",
     "title": "Question paper for Descriptive Examinations",
     "organization": "Kerala Public Service Commission",
     "category": "State Government",
@@ -2265,7 +2323,7 @@ export const autoNotifications:AutoNotification[] = [
     "status": "Detected on official source",
     "lastChecked": "2026-11-23",
     "officialUrl": "https://www.keralapsc.gov.in/",
-    "notificationUrl": "https://www.keralapsc.gov.in/index.php/question-paper-descriptive-exam",
+    "notificationUrl": "https://www.keralapsc.gov.in/question-paper-descriptive-exam",
     "description": "Detected automatically from the registered official Kerala Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
@@ -10345,18 +10403,6 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
   },
   {
-    "id": "auto-sbi-0f95ca059e3d36bf",
-    "title": "ASSISTANT VICE PRESIDENT (IS AUDIT) - LIST OF CANDIDATES PROVISIONALLY SELECTED",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-23",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/documents/77530/52947104/20112025_SCO_05_SELECT_LIST_AVP%28IS+Audit%29.pdf/fc5d0176-9a7c-ad54-d1da-c3b997ec3dab?t=1763617028475",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
-  },
-  {
     "id": "auto-sbi-aad8b0349038fdbf",
     "title": "ASSISTANT VICE PRESIDENT (IS AUDIT) - LIST OF CANDIDATES PROVISIONALLY SELECTED ANNOUNCED (109 KB)",
     "organization": "State Bank of India",
@@ -10750,18 +10796,6 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_05_INT_SCH_GM%28IS+AUDIT%29.pdf/48e926a3-5a35-1f17-3962-91acb2ca49c7?t=1760790294429",
-    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
-  },
-  {
-    "id": "auto-sbi-12b0982f3552bd0f",
-    "title": "GENERAL MANAGER (IS AUDIT) - LIST OF CANDIDATES PROVISIONALLY SELECTED",
-    "organization": "State Bank of India",
-    "category": "Banking",
-    "stage": "Notice",
-    "status": "Detected on official source",
-    "lastChecked": "2026-11-23",
-    "officialUrl": "https://sbi.co.in/web/careers",
-    "notificationUrl": "https://sbi.co.in/documents/77530/52947104/SCO_05_SELECT_LIST_GM%28IS+Audit%29.pdf/4b7dcc58-b253-ee02-ff09-9f175f5ca8a0?t=1764746072766",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
   },
   {
@@ -11233,6 +11267,18 @@ export const autoNotifications:AutoNotification[] = [
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
   },
   {
+    "id": "auto-sbi-ec18585647171145",
+    "title": "RECRUITMENT ARCHIVE",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Recruitment",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/en/web/careers/recruitment-results-archive",
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
+  },
+  {
     "id": "auto-sbi-2d017bc98e1f0f41",
     "title": "Recruitment Results",
     "organization": "State Bank of India",
@@ -11302,6 +11348,18 @@ export const autoNotifications:AutoNotification[] = [
     "lastChecked": "2026-11-23",
     "officialUrl": "https://sbi.co.in/web/careers",
     "notificationUrl": "https://sbi.co.in/documents/77530/52947104/02052026_sco_22_select+list_Senior+Special+Executive.pdf/333926a9-8bf8-d000-ea5a-2322bec10a58?t=1777708411690",
+    "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-sbi-a79f866b5e315f10",
+    "title": "THE LINK FOR DOWNLOADING THE INTERVIEW CALL LETTERS WILL BE MADE AVAILABLE SHORTLY (NEW) --> DOWNLOAD INTERVIEW CALL LETTER (NEW) BIODATA FORM (NEW) NOTICE (NEW) LINK FOR ONLINE PSYCHOMETRIC TEST IN REMOTE PROCTORED (RPA) MODE (NEW) <div class=\"accordion lateral accordion-close collapsed\" ar",
+    "organization": "State Bank of India",
+    "category": "Banking",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://sbi.co.in/web/careers",
+    "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/11/Notice_for_Psychometric_Test.pdf",
     "description": "Detected automatically from the registered official State Bank of India source. The original authority notice remains the controlling source."
   },
   {
@@ -11591,6 +11649,54 @@ export const autoNotifications:AutoNotification[] = [
     "officialUrl": "https://www.tnpsc.gov.in/",
     "notificationUrl": "https://www.tnpsc.gov.in/English/annual_planner.html",
     "description": "Detected automatically from the registered official Tamil Nadu Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-telangana-psc-5998bf04f850417f",
+    "title": "APPLICATION FOR MPSO / ASO (07/G/ES/2026)",
+    "organization": "Telangana Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.tspsc.gov.in/",
+    "notificationUrl": "https://application.tgpsc.gov.in/CandidateEntryG072026",
+    "description": "Detected automatically from the registered official Telangana Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-telangana-psc-3ff68d3ba86710ec",
+    "title": "CANDIDATE'S RESPONSE SHEET ALONG WITH FINAL KEY ASSISTANT ENVIRONMENTAL ENGINEER (02/OG/PC/2026)",
+    "organization": "Telangana Public Service Commission",
+    "category": "State Government",
+    "stage": "Answer Key",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.tspsc.gov.in/",
+    "notificationUrl": "https://websitenew.tgpsc.gov.in/downloadresponcesheet?accessId=02OGnbtuqersUIopMQPK",
+    "description": "Detected automatically from the registered official Telangana Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-telangana-psc-d907d2b7fca1fd34",
+    "title": "CANDIDATE'S RESPONSE SHEET ALONG WITH FINAL KEY ASSISTANT SCIENTIST (ANALYST GRADE -II) (01/OG/PC/2026)",
+    "organization": "Telangana Public Service Commission",
+    "category": "State Government",
+    "stage": "Answer Key",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.tspsc.gov.in/",
+    "notificationUrl": "https://websitenew.tgpsc.gov.in/downloadresponcesheet?accessId=01OG26TiumiyreliersaCRS",
+    "description": "Detected automatically from the registered official Telangana Public Service Commission source. The original authority notice remains the controlling source."
+  },
+  {
+    "id": "auto-telangana-psc-329619bf1d8e19d1",
+    "title": "OTR NEW REGISTRATION",
+    "organization": "Telangana Public Service Commission",
+    "category": "State Government",
+    "stage": "Notice",
+    "status": "Detected on official source",
+    "lastChecked": "2026-11-23",
+    "officialUrl": "https://www.tspsc.gov.in/",
+    "notificationUrl": "https://otr.tgpsc.gov.in/login?type=new",
+    "description": "Detected automatically from the registered official Telangana Public Service Commission source. The original authority notice remains the controlling source."
   },
   {
     "id": "auto-upsc-b28fd49a50343e71",
