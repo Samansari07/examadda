@@ -5,7 +5,7 @@ export type AutoExamOverride = {
 };
 
 export const autoExamDataMeta = {
-  "generatedAt": "2026-11-23",
+  "generatedAt": "2026-11-24",
   "sourceCount": 78,
   "overrideCount": 1,
   "policy": "Only conservative values extracted from an official notice/bulletin are applied. Missing or ambiguous fields are never invented."
@@ -18,8 +18,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "organization": "State Bank of India",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/11/Biodata_Form_for_PO.pdf",
     "sourceUrl": "https://sbi.co.in/web/careers",
-    "lastVerified": "2026-11-23",
-    "detectedAt": "2026-11-23",
+    "lastVerified": "2026-11-24",
+    "detectedAt": "2026-11-24",
     "confidence": "high",
     "evidenceCount": 2,
     "evidence": [
