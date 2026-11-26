@@ -5,7 +5,7 @@ export type AutoExamOverride = {
 };
 
 export const autoExamDataMeta = {
-  "generatedAt": "2026-11-26",
+  "generatedAt": "2026-11-27",
   "sourceCount": 78,
   "overrideCount": 1,
   "policy": "Only conservative values extracted from an official notice/bulletin are applied. Missing or ambiguous fields are never invented."
@@ -18,8 +18,8 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "organization": "State Bank of India",
     "notificationUrl": "https://sbi.co.in/webfiles/uploads/files_2627/11/Biodata_Form_for_PO.pdf",
     "sourceUrl": "https://sbi.co.in/web/careers",
-    "lastVerified": "2026-11-26",
-    "detectedAt": "2026-11-26",
+    "lastVerified": "2026-11-27",
+    "detectedAt": "2026-11-27",
     "confidence": "high",
     "evidenceCount": 2,
     "evidence": [
@@ -37,7 +37,6 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "nationality": "pation profession designation b mother s name and occupation 5 a nationality father mother husband wife b place of birth of husband wife district state 6 a category tick the approp",
     "dataCertainty": "confirmed",
     "applicationStatus": "unknown",
-    "refreshedThisCycle": false,
-    "stale": true
+    "refreshedThisCycle": true
   }
 };
