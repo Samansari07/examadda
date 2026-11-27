@@ -5,7 +5,7 @@ export type AutoExamOverride = {
 };
 
 export const autoExamDataMeta = {
-  "generatedAt": "2026-11-27",
+  "generatedAt": "2026-11-28",
   "sourceCount": 78,
   "overrideCount": 1,
   "policy": "Only conservative values extracted from an official notice/bulletin are applied. Missing or ambiguous fields are never invented."
@@ -37,6 +37,7 @@ export const autoExamData:Record<string,AutoExamOverride> = {
     "nationality": "pation profession designation b mother s name and occupation 5 a nationality father mother husband wife b place of birth of husband wife district state 6 a category tick the approp",
     "dataCertainty": "confirmed",
     "applicationStatus": "unknown",
-    "refreshedThisCycle": true
+    "refreshedThisCycle": false,
+    "stale": true
   }
 };
